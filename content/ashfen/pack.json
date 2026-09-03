@@ -796,6 +796,33 @@
     {
       "effects": [
         {
+          "flag": "mira_marsh_tip",
+          "op": "set_flag"
+        },
+        {
+          "actor": "mira",
+          "fact": "marsh_path",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "share_marsh_path",
+      "label": "Share marsh path with Mira",
+      "text": "You share the marsh path. Mira marks a hidden flue.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.base"
+          },
+          {
+            "has_flag": "marsh_friend"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
           "op": "move",
           "to": "stacks.midledge"
         }

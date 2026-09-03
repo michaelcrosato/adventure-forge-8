@@ -9,6 +9,7 @@ from adventure_forge.kernel.legal import enumerate_legal
 from adventure_forge.kernel.replay import new_game
 from adventure_forge.paths import repo_root, traces_dir
 from adventure_forge.verify.crawler import crawl
+from adventure_forge.verify.player_crawl import player_crawl
 from adventure_forge.verify.firewall import check_firewall
 from adventure_forge.verify.i1 import check_i1
 from adventure_forge.verify.i4 import check_i4
@@ -117,6 +118,9 @@ def run_verify() -> int:
         def crawler() -> None:
             crawl(content)
 
+        def play_crawler() -> None:
+            player_crawl(content)
+
         def tamper() -> None:
             check_tamper(content, traces)
 
@@ -124,6 +128,7 @@ def run_verify() -> int:
             ("I1 determinism", i1),
             ("I4 witnesses", i4),
             ("crawler", crawler),
+            ("player-crawler", play_crawler),
             ("kernel-purity", check_kernel_source_purity),
             ("language-budget", language),
             ("large-legal", check_large_legal),

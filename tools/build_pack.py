@@ -669,6 +669,22 @@ def build() -> dict:
             [{"op": "set_flag", "flag": "heard_bridge"}],
         ),
         action(
+            "share_marsh_path",
+            "Share marsh path with Mira",
+            "talk",
+            {
+                "all": [
+                    {"at": "stacks.base"},
+                    {"has_flag": "marsh_friend"},
+                ]
+            },
+            "You share the marsh path. Mira marks a hidden flue.",
+            [
+                {"op": "set_flag", "flag": "mira_marsh_tip"},
+                {"op": "remember", "actor": "mira", "fact": "marsh_path"},
+            ],
+        ),
+        action(
             "climb_to_mid",
             "Climb to the mid ledge",
             "do",
