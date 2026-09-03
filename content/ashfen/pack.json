@@ -1,0 +1,1985 @@
+{
+  "actions": [
+    {
+      "effects": [
+        {
+          "flag": "marsh_friend",
+          "op": "set_flag"
+        },
+        {
+          "actor": "eel_seller",
+          "fact": "spoke_cant",
+          "op": "remember"
+        },
+        {
+          "faction": "dockers",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "use_marsh_cant",
+      "label": "Use marsh cant",
+      "text": "You speak low marsh cant. The eel-seller nods.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "sheet": [
+              "tongue",
+              "cant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "watch_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "eel_seller",
+          "fact": "saw_papers",
+          "op": "remember"
+        },
+        {
+          "faction": "watch",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "show_city_papers",
+      "label": "Show city papers",
+      "text": "You show city papers. A watch pair eases back.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "has_item": "city_papers"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "thief_jailed",
+          "op": "set_flag"
+        },
+        {
+          "faction": "watch",
+          "n": 1,
+          "op": "add_rep"
+        },
+        {
+          "faction": "stackers",
+          "n": -2,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "call_the_watch",
+      "label": "Call the watch",
+      "text": "You call the watch. They drag a cutpurse off the stalls.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "creed",
+                  "oathbound"
+                ]
+              },
+              {
+                "sheet": [
+                  "origin",
+                  "cityward"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_tablet",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "slip_behind_stall",
+      "label": "Slip behind the stall",
+      "text": "You slide into the stall gap. You hear talk of a warehouse chest.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "body",
+                  "agile"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_tablet",
+          "op": "set_flag"
+        },
+        {
+          "faction": "dockers",
+          "n": -1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "threaten_seller",
+      "label": "Threaten the seller",
+      "text": "You crowd the board. He talks fast about a tablet in the warehouse.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ate_eels",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "buy_eels",
+      "label": "Buy smoked eels",
+      "text": "You buy smoked eels. Salt stings your lips.",
+      "when": {
+        "at": "saltfen.market"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_tablet",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_about_tablet",
+      "label": "Ask about the tablet",
+      "text": "He says the old compact tablet sits in the warehouse chest.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "any": [
+              {
+                "has_flag": "marsh_friend"
+              },
+              {
+                "has_flag": "watch_trust"
+              },
+              {
+                "has_flag": "heard_tablet"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "warehouse_open",
+          "op": "set_flag"
+        },
+        {
+          "op": "move",
+          "to": "saltfen.warehouse"
+        }
+      ],
+      "group": "do",
+      "id": "slip_inside",
+      "label": "Slip inside the warehouse",
+      "text": "You slip the side latch. The warehouse takes you in.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "not_flag": "warehouse_open"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "body",
+                  "agile"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "warehouse_open",
+          "op": "set_flag"
+        },
+        {
+          "op": "move",
+          "to": "saltfen.warehouse"
+        },
+        {
+          "faction": "watch",
+          "n": -1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "do",
+      "id": "force_the_door",
+      "label": "Force the warehouse door",
+      "text": "You force the bar. The door jumps. A watch horn sounds far off.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "not_flag": "warehouse_open"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "warehouse_open",
+          "op": "set_flag"
+        },
+        {
+          "op": "move",
+          "to": "saltfen.warehouse"
+        },
+        {
+          "faction": "watch",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "do",
+      "id": "show_seal_at_door",
+      "label": "Show seal at the warehouse",
+      "text": "You show the city seal. The ware-hand opens the door.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.market"
+          },
+          {
+            "not_flag": "warehouse_open"
+          },
+          {
+            "sheet": [
+              "origin",
+              "cityward"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "compact_tablet",
+          "op": "remove_item"
+        },
+        {
+          "flag": "tablet_given",
+          "op": "set_flag"
+        },
+        {
+          "faction": "dockers",
+          "n": 2,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "give_tablet",
+      "label": "Give tablet to the boss",
+      "text": "You set the tablet on his crate. He reads and lets out a breath.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.dock"
+          },
+          {
+            "has_item": "compact_tablet"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "compact_restored",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "sign_the_compact",
+      "label": "Sign the dock compact",
+      "text": "You sign. The crew repeat the compact in one voice.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.dock"
+          },
+          {
+            "has_flag": "tablet_given"
+          },
+          {
+            "any": [
+              {
+                "rep_gte": [
+                  "dockers",
+                  1
+                ]
+              },
+              {
+                "sheet": [
+                  "creed",
+                  "oathbound"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "compact_restored"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_tablet",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_boss_for_work",
+      "label": "Ask the boss for work",
+      "text": "He says the compact tablet is gone. Find it and the dock will hold.",
+      "when": {
+        "at": "saltfen.dock"
+      }
+    },
+    {
+      "effects": [
+        {
+          "faction": "watch",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "report_thief",
+      "label": "Report the cutpurse",
+      "text": "The sergeant logs the arrest. She says the stacks will hear of it.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.watchhouse"
+          },
+          {
+            "has_flag": "thief_jailed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_tablet",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_watch_about_tablet",
+      "label": "Ask the watch about the tablet",
+      "text": "She says the tablet is in the warehouse. Papers will open the door.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.watchhouse"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "tongue",
+                  "court"
+                ]
+              },
+              {
+                "sheet": [
+                  "origin",
+                  "cityward"
+                ]
+              },
+              {
+                "has_flag": "watch_trust"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "n": 1,
+          "op": "heal"
+        }
+      ],
+      "group": "talk",
+      "id": "buy_stew",
+      "label": "Buy stew",
+      "text": "You eat hot stew. Your hands steady.",
+      "when": {
+        "at": "saltfen.inn"
+      }
+    },
+    {
+      "effects": [
+        {
+          "n": 2,
+          "op": "heal"
+        }
+      ],
+      "group": "do",
+      "id": "rent_cot",
+      "label": "Rent a cot",
+      "text": "You lie down. The room ticks and you rise clearer.",
+      "when": {
+        "at": "saltfen.inn"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_bridge",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "hear_gossip",
+      "label": "Hear gossip",
+      "text": "A climber says the wind bridge needs a crawl, not a dash.",
+      "when": {
+        "at": "saltfen.inn"
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "brass_key",
+          "op": "add_item"
+        },
+        {
+          "flag": "found_brass_key",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "wade_mudflat",
+      "label": "Wade the mudflat",
+      "text": "You wade the low mud. A brass key sits in a drowned boot.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.tidegate"
+          },
+          {
+            "tide": "low"
+          },
+          {
+            "not_flag": "found_brass_key"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "brass_key",
+          "op": "add_item"
+        },
+        {
+          "flag": "found_brass_key",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "sort_the_heap",
+      "label": "Sort the heap",
+      "text": "You sort tags by metal. A brass key hides under a plate.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.salvage"
+          },
+          {
+            "sheet": [
+              "skill",
+              "craft"
+            ]
+          },
+          {
+            "not_flag": "found_brass_key"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "chest_open",
+          "op": "set_flag"
+        },
+        {
+          "item": "frayed_rope",
+          "op": "add_item"
+        }
+      ],
+      "group": "do",
+      "id": "open_warehouse_chest",
+      "label": "Open the side chest",
+      "text": "The brass key turns. Extra rope sits in the chest.",
+      "when": {
+        "all": [
+          {
+            "at": "saltfen.warehouse"
+          },
+          {
+            "has_item": "brass_key"
+          },
+          {
+            "not_flag": "chest_open"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "runner_helped",
+          "op": "set_flag"
+        },
+        {
+          "faction": "stackers",
+          "n": 1,
+          "op": "add_rep"
+        },
+        {
+          "actor": "wounded_runner",
+          "fact": "helped",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "help_runner",
+      "label": "Help the runner",
+      "text": "You bind her knee. She says Mira at the stacks will mark you kind.",
+      "when": {
+        "all": [
+          {
+            "at": "ashfen.causeway"
+          },
+          {
+            "not_flag": "runner_helped"
+          },
+          {
+            "not_flag": "runner_robbed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "runner_robbed",
+          "op": "set_flag"
+        },
+        {
+          "item": "frayed_rope",
+          "op": "add_item"
+        },
+        {
+          "faction": "stackers",
+          "n": -2,
+          "op": "add_rep"
+        }
+      ],
+      "group": "do",
+      "id": "rob_runner",
+      "label": "Rob the runner",
+      "text": "You take her coil. She swears the stacks will hear.",
+      "when": {
+        "all": [
+          {
+            "at": "ashfen.causeway"
+          },
+          {
+            "not_flag": "runner_helped"
+          },
+          {
+            "not_flag": "runner_robbed"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "creed",
+                  "freehand"
+                ]
+              },
+              {
+                "sheet": [
+                  "mark",
+                  "branded"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.switchback"
+        }
+      ],
+      "group": "do",
+      "id": "climb_switchback",
+      "label": "Climb the switchback",
+      "text": "You take the outer path. The first ledge holds.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.base"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "body",
+                  "agile"
+                ]
+              },
+              {
+                "has_item": "frayed_rope"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.switchback"
+        }
+      ],
+      "group": "do",
+      "id": "force_climb",
+      "label": "Force a climb",
+      "text": "You haul on stone and rope. The wall gives you a hold.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.base"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_bridge",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_mira_for_tip",
+      "label": "Ask Mira for a tip",
+      "text": "Mira says crawl the wind bridge. Dashing drops fools.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.base"
+          },
+          {
+            "rep_gte": [
+              "stackers",
+              0
+            ]
+          },
+          {
+            "not_flag": "thief_jailed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.midledge"
+        }
+      ],
+      "group": "do",
+      "id": "climb_to_mid",
+      "label": "Climb to the mid ledge",
+      "text": "You work up the inner stair. The mid ledge opens.",
+      "when": {
+        "at": "stacks.switchback"
+      }
+    },
+    {
+      "effects": [
+        {
+          "n": 1,
+          "op": "heal"
+        }
+      ],
+      "group": "do",
+      "id": "rest_on_ledge",
+      "label": "Rest on the ledge",
+      "text": "You sit out of the wind. Your breath comes back.",
+      "when": {
+        "at": "stacks.midledge"
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.windbridge"
+        }
+      ],
+      "group": "do",
+      "id": "climb_to_bridge",
+      "label": "Climb to the wind bridge",
+      "text": "You take the last stair. Planks wait over the gap.",
+      "when": {
+        "at": "stacks.midledge"
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.relic"
+        }
+      ],
+      "group": "do",
+      "id": "crawl_across",
+      "label": "Crawl across the bridge",
+      "text": "You crawl the planks. The relic room is close.",
+      "when": {
+        "at": "stacks.windbridge"
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.relic"
+        }
+      ],
+      "group": "do",
+      "id": "dash_across",
+      "label": "Dash across the bridge",
+      "text": "You dash. The planks hold for your light step.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.windbridge"
+          },
+          {
+            "sheet": [
+              "body",
+              "agile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.relic"
+        }
+      ],
+      "group": "do",
+      "id": "brace_planks",
+      "label": "Brace the planks",
+      "text": "You brace the worst plank and cross slow.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.windbridge"
+          },
+          {
+            "sheet": [
+              "body",
+              "hardy"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "guyline_cut",
+          "op": "set_flag"
+        },
+        {
+          "faction": "stackers",
+          "n": -1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "do",
+      "id": "cut_guyline",
+      "label": "Cut the guyline",
+      "text": "You cut the guyline. The span sags toward the undercroft.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.windbridge"
+          },
+          {
+            "sheet": [
+              "creed",
+              "freehand"
+            ]
+          },
+          {
+            "not_flag": "guyline_cut"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.undercroft"
+        }
+      ],
+      "group": "do",
+      "id": "drop_to_undercroft",
+      "label": "Drop to the undercroft",
+      "text": "You drop into the vault. Beams groan above.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.windbridge"
+          },
+          {
+            "has_flag": "guyline_cut"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "op": "move",
+          "to": "stacks.relic"
+        }
+      ],
+      "group": "do",
+      "id": "squeeze_to_relic",
+      "label": "Squeeze up to the relic",
+      "text": "You squeeze a cracked flue. The relic room opens above.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.undercroft"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "body",
+                  "agile"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "craft"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "beam_shored",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "shore_the_beam",
+      "label": "Shore the beam",
+      "text": "You shore the beam. The vault stops its grind.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.undercroft"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "body",
+                  "might"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "craft"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "beam_shored"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "copied_inscription",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "copy_inscription",
+      "label": "Copy the inscription",
+      "text": "You copy the bowl script. The lines name the compact as a later law.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.relic"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "copied_inscription"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "left_offering",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "leave_offering",
+      "label": "Leave an offering",
+      "text": "You leave a strip of cloth. The bowl stays still.",
+      "when": {
+        "all": [
+          {
+            "at": "stacks.relic"
+          },
+          {
+            "sheet": [
+              "creed",
+              "oathbound"
+            ]
+          },
+          {
+            "not_flag": "left_offering"
+          }
+        ]
+      }
+    }
+  ],
+  "actors": {
+    "dock_boss": {
+      "idle": "He counts barrels and does not look up.",
+      "name": "Dock boss"
+    },
+    "eel_seller": {
+      "idle": "He turns eels on the board and waits.",
+      "name": "Eel-seller"
+    },
+    "innkeep": {
+      "idle": "He wipes a cup and watches the door.",
+      "name": "Innkeep"
+    },
+    "mira": {
+      "idle": "She coils rope and eyes the first ledge.",
+      "name": "Mira"
+    },
+    "watch_sergeant": {
+      "idle": "She keeps a finger on the ledger.",
+      "name": "Watch sergeant"
+    },
+    "wounded_runner": {
+      "idle": "She sits on the shell track and binds a knee.",
+      "name": "Wounded runner"
+    }
+  },
+  "id": "ashfen-coast",
+  "items": {
+    "ash_relic": {
+      "kind": "relic",
+      "name": "ash relic"
+    },
+    "brass_key": {
+      "kind": "key",
+      "name": "brass key"
+    },
+    "city_papers": {
+      "kind": "key",
+      "name": "city papers"
+    },
+    "compact_tablet": {
+      "kind": "key",
+      "name": "compact tablet"
+    },
+    "frayed_rope": {
+      "kind": "gear",
+      "name": "frayed rope"
+    },
+    "salvage_000": {
+      "kind": "salvage",
+      "name": "bent hook"
+    },
+    "salvage_001": {
+      "kind": "salvage",
+      "name": "bent spike"
+    },
+    "salvage_002": {
+      "kind": "salvage",
+      "name": "bent buckle"
+    },
+    "salvage_003": {
+      "kind": "salvage",
+      "name": "bent shackle"
+    },
+    "salvage_004": {
+      "kind": "salvage",
+      "name": "bent needle"
+    },
+    "salvage_005": {
+      "kind": "salvage",
+      "name": "bent clasp"
+    },
+    "salvage_006": {
+      "kind": "salvage",
+      "name": "bent ring"
+    },
+    "salvage_007": {
+      "kind": "salvage",
+      "name": "bent wedge"
+    },
+    "salvage_008": {
+      "kind": "salvage",
+      "name": "bent plate"
+    },
+    "salvage_009": {
+      "kind": "salvage",
+      "name": "bent peg"
+    },
+    "salvage_010": {
+      "kind": "salvage",
+      "name": "rusted hook"
+    },
+    "salvage_011": {
+      "kind": "salvage",
+      "name": "rusted spike"
+    },
+    "salvage_012": {
+      "kind": "salvage",
+      "name": "rusted buckle"
+    },
+    "salvage_013": {
+      "kind": "salvage",
+      "name": "rusted shackle"
+    },
+    "salvage_014": {
+      "kind": "salvage",
+      "name": "rusted needle"
+    },
+    "salvage_015": {
+      "kind": "salvage",
+      "name": "rusted clasp"
+    },
+    "salvage_016": {
+      "kind": "salvage",
+      "name": "rusted ring"
+    },
+    "salvage_017": {
+      "kind": "salvage",
+      "name": "rusted wedge"
+    },
+    "salvage_018": {
+      "kind": "salvage",
+      "name": "rusted plate"
+    },
+    "salvage_019": {
+      "kind": "salvage",
+      "name": "rusted peg"
+    },
+    "salvage_020": {
+      "kind": "salvage",
+      "name": "salt hook"
+    },
+    "salvage_021": {
+      "kind": "salvage",
+      "name": "salt spike"
+    },
+    "salvage_022": {
+      "kind": "salvage",
+      "name": "salt buckle"
+    },
+    "salvage_023": {
+      "kind": "salvage",
+      "name": "salt shackle"
+    },
+    "salvage_024": {
+      "kind": "salvage",
+      "name": "salt needle"
+    },
+    "salvage_025": {
+      "kind": "salvage",
+      "name": "salt clasp"
+    },
+    "salvage_026": {
+      "kind": "salvage",
+      "name": "salt ring"
+    },
+    "salvage_027": {
+      "kind": "salvage",
+      "name": "salt wedge"
+    },
+    "salvage_028": {
+      "kind": "salvage",
+      "name": "salt plate"
+    },
+    "salvage_029": {
+      "kind": "salvage",
+      "name": "salt peg"
+    },
+    "salvage_030": {
+      "kind": "salvage",
+      "name": "tarred hook"
+    },
+    "salvage_031": {
+      "kind": "salvage",
+      "name": "tarred spike"
+    },
+    "salvage_032": {
+      "kind": "salvage",
+      "name": "tarred buckle"
+    },
+    "salvage_033": {
+      "kind": "salvage",
+      "name": "tarred shackle"
+    },
+    "salvage_034": {
+      "kind": "salvage",
+      "name": "tarred needle"
+    },
+    "salvage_035": {
+      "kind": "salvage",
+      "name": "tarred clasp"
+    },
+    "salvage_036": {
+      "kind": "salvage",
+      "name": "tarred ring"
+    },
+    "salvage_037": {
+      "kind": "salvage",
+      "name": "tarred wedge"
+    },
+    "salvage_038": {
+      "kind": "salvage",
+      "name": "tarred plate"
+    },
+    "salvage_039": {
+      "kind": "salvage",
+      "name": "tarred peg"
+    },
+    "salvage_040": {
+      "kind": "salvage",
+      "name": "cracked hook"
+    },
+    "salvage_041": {
+      "kind": "salvage",
+      "name": "cracked spike"
+    },
+    "salvage_042": {
+      "kind": "salvage",
+      "name": "cracked buckle"
+    },
+    "salvage_043": {
+      "kind": "salvage",
+      "name": "cracked shackle"
+    },
+    "salvage_044": {
+      "kind": "salvage",
+      "name": "cracked needle"
+    },
+    "salvage_045": {
+      "kind": "salvage",
+      "name": "cracked clasp"
+    },
+    "salvage_046": {
+      "kind": "salvage",
+      "name": "cracked ring"
+    },
+    "salvage_047": {
+      "kind": "salvage",
+      "name": "cracked wedge"
+    },
+    "salvage_048": {
+      "kind": "salvage",
+      "name": "cracked plate"
+    },
+    "salvage_049": {
+      "kind": "salvage",
+      "name": "cracked peg"
+    },
+    "salvage_050": {
+      "kind": "salvage",
+      "name": "braided hook"
+    },
+    "salvage_051": {
+      "kind": "salvage",
+      "name": "braided spike"
+    },
+    "salvage_052": {
+      "kind": "salvage",
+      "name": "braided buckle"
+    },
+    "salvage_053": {
+      "kind": "salvage",
+      "name": "braided shackle"
+    },
+    "salvage_054": {
+      "kind": "salvage",
+      "name": "braided needle"
+    },
+    "salvage_055": {
+      "kind": "salvage",
+      "name": "braided clasp"
+    },
+    "salvage_056": {
+      "kind": "salvage",
+      "name": "braided ring"
+    },
+    "salvage_057": {
+      "kind": "salvage",
+      "name": "braided wedge"
+    },
+    "salvage_058": {
+      "kind": "salvage",
+      "name": "braided plate"
+    },
+    "salvage_059": {
+      "kind": "salvage",
+      "name": "braided peg"
+    },
+    "salvage_060": {
+      "kind": "salvage",
+      "name": "pitted hook"
+    },
+    "salvage_061": {
+      "kind": "salvage",
+      "name": "pitted spike"
+    },
+    "salvage_062": {
+      "kind": "salvage",
+      "name": "pitted buckle"
+    },
+    "salvage_063": {
+      "kind": "salvage",
+      "name": "pitted shackle"
+    },
+    "salvage_064": {
+      "kind": "salvage",
+      "name": "pitted needle"
+    },
+    "salvage_065": {
+      "kind": "salvage",
+      "name": "pitted clasp"
+    },
+    "salvage_066": {
+      "kind": "salvage",
+      "name": "pitted ring"
+    },
+    "salvage_067": {
+      "kind": "salvage",
+      "name": "pitted wedge"
+    },
+    "salvage_068": {
+      "kind": "salvage",
+      "name": "pitted plate"
+    },
+    "salvage_069": {
+      "kind": "salvage",
+      "name": "pitted peg"
+    },
+    "salvage_070": {
+      "kind": "salvage",
+      "name": "pale hook"
+    },
+    "salvage_071": {
+      "kind": "salvage",
+      "name": "pale spike"
+    },
+    "salvage_072": {
+      "kind": "salvage",
+      "name": "pale buckle"
+    },
+    "salvage_073": {
+      "kind": "salvage",
+      "name": "pale shackle"
+    },
+    "salvage_074": {
+      "kind": "salvage",
+      "name": "pale needle"
+    },
+    "salvage_075": {
+      "kind": "salvage",
+      "name": "pale clasp"
+    },
+    "salvage_076": {
+      "kind": "salvage",
+      "name": "pale ring"
+    },
+    "salvage_077": {
+      "kind": "salvage",
+      "name": "pale wedge"
+    },
+    "salvage_078": {
+      "kind": "salvage",
+      "name": "pale plate"
+    },
+    "salvage_079": {
+      "kind": "salvage",
+      "name": "pale peg"
+    },
+    "salvage_080": {
+      "kind": "salvage",
+      "name": "hooked hook"
+    },
+    "salvage_081": {
+      "kind": "salvage",
+      "name": "hooked spike"
+    },
+    "salvage_082": {
+      "kind": "salvage",
+      "name": "hooked buckle"
+    },
+    "salvage_083": {
+      "kind": "salvage",
+      "name": "hooked shackle"
+    },
+    "salvage_084": {
+      "kind": "salvage",
+      "name": "hooked needle"
+    },
+    "salvage_085": {
+      "kind": "salvage",
+      "name": "hooked clasp"
+    },
+    "salvage_086": {
+      "kind": "salvage",
+      "name": "hooked ring"
+    },
+    "salvage_087": {
+      "kind": "salvage",
+      "name": "hooked wedge"
+    },
+    "salvage_088": {
+      "kind": "salvage",
+      "name": "hooked plate"
+    },
+    "salvage_089": {
+      "kind": "salvage",
+      "name": "hooked peg"
+    },
+    "salvage_090": {
+      "kind": "salvage",
+      "name": "knotted hook"
+    },
+    "salvage_091": {
+      "kind": "salvage",
+      "name": "knotted spike"
+    },
+    "salvage_092": {
+      "kind": "salvage",
+      "name": "knotted buckle"
+    },
+    "salvage_093": {
+      "kind": "salvage",
+      "name": "knotted shackle"
+    },
+    "salvage_094": {
+      "kind": "salvage",
+      "name": "knotted needle"
+    },
+    "salvage_095": {
+      "kind": "salvage",
+      "name": "knotted clasp"
+    },
+    "salvage_096": {
+      "kind": "salvage",
+      "name": "knotted ring"
+    },
+    "salvage_097": {
+      "kind": "salvage",
+      "name": "knotted wedge"
+    },
+    "salvage_098": {
+      "kind": "salvage",
+      "name": "knotted plate"
+    },
+    "salvage_099": {
+      "kind": "salvage",
+      "name": "knotted peg"
+    }
+  },
+  "locations": {
+    "ashfen.causeway": {
+      "actors": [
+        "wounded_runner"
+      ],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        },
+        {
+          "label": "Go to stack base",
+          "to": "stacks.base"
+        }
+      ],
+      "ground": [],
+      "name": "Ashfen Causeway",
+      "region": "saltfen",
+      "situation": "A raised track of packed shell. The stacks rise inland."
+    },
+    "saltfen.dock": {
+      "actors": [
+        "dock_boss"
+      ],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        },
+        {
+          "label": "Go to tide gate",
+          "to": "saltfen.tidegate"
+        }
+      ],
+      "ground": [
+        "frayed_rope"
+      ],
+      "name": "Saltfen Dock",
+      "region": "saltfen",
+      "situation": "Wet planks shift under the tide. Nets hang from tarred posts.",
+      "situation_if": [
+        {
+          "text": "The dock crew move with a shared list.",
+          "when": {
+            "has_flag": "compact_restored"
+          }
+        },
+        {
+          "text": "The mud smell feels like home.",
+          "when": {
+            "sheet": [
+              "origin",
+              "marshborn"
+            ]
+          }
+        },
+        {
+          "text": "Salt and tar sting your city nose.",
+          "when": {
+            "sheet": [
+              "origin",
+              "cityward"
+            ]
+          }
+        }
+      ]
+    },
+    "saltfen.inn": {
+      "actors": [
+        "innkeep"
+      ],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        }
+      ],
+      "ground": [],
+      "name": "Saltfen Inn",
+      "region": "saltfen",
+      "situation": "A cramped room. Stew ticks on a black stove."
+    },
+    "saltfen.market": {
+      "actors": [
+        "eel_seller"
+      ],
+      "exits": [
+        {
+          "label": "Go to dock",
+          "to": "saltfen.dock"
+        },
+        {
+          "label": "Go to watch-house",
+          "to": "saltfen.watchhouse"
+        },
+        {
+          "label": "Go to inn",
+          "to": "saltfen.inn"
+        },
+        {
+          "label": "Go to salvage yard",
+          "to": "saltfen.salvage"
+        },
+        {
+          "label": "Go to tide gate",
+          "to": "saltfen.tidegate"
+        },
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Enter warehouse",
+          "to": "saltfen.warehouse",
+          "when": {
+            "has_flag": "warehouse_open"
+          }
+        }
+      ],
+      "ground": [],
+      "name": "Saltfen Market",
+      "region": "saltfen",
+      "situation": "Stalls crowd the wet stone. Eel smoke hangs low.",
+      "situation_if": [
+        {
+          "text": "The eel-seller leaves a space at his board.",
+          "when": {
+            "has_flag": "marsh_friend"
+          }
+        },
+        {
+          "text": "A watch pair nod as you pass.",
+          "when": {
+            "has_flag": "watch_trust"
+          }
+        }
+      ]
+    },
+    "saltfen.salvage": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        }
+      ],
+      "ground": [
+        "salvage_000",
+        "salvage_001",
+        "salvage_002",
+        "salvage_003",
+        "salvage_004",
+        "salvage_005",
+        "salvage_006",
+        "salvage_007",
+        "salvage_008",
+        "salvage_009",
+        "salvage_010",
+        "salvage_011",
+        "salvage_012",
+        "salvage_013",
+        "salvage_014",
+        "salvage_015",
+        "salvage_016",
+        "salvage_017",
+        "salvage_018",
+        "salvage_019",
+        "salvage_020",
+        "salvage_021",
+        "salvage_022",
+        "salvage_023",
+        "salvage_024",
+        "salvage_025",
+        "salvage_026",
+        "salvage_027",
+        "salvage_028",
+        "salvage_029",
+        "salvage_030",
+        "salvage_031",
+        "salvage_032",
+        "salvage_033",
+        "salvage_034",
+        "salvage_035",
+        "salvage_036",
+        "salvage_037",
+        "salvage_038",
+        "salvage_039",
+        "salvage_040",
+        "salvage_041",
+        "salvage_042",
+        "salvage_043",
+        "salvage_044",
+        "salvage_045",
+        "salvage_046",
+        "salvage_047",
+        "salvage_048",
+        "salvage_049",
+        "salvage_050",
+        "salvage_051",
+        "salvage_052",
+        "salvage_053",
+        "salvage_054",
+        "salvage_055",
+        "salvage_056",
+        "salvage_057",
+        "salvage_058",
+        "salvage_059",
+        "salvage_060",
+        "salvage_061",
+        "salvage_062",
+        "salvage_063",
+        "salvage_064",
+        "salvage_065",
+        "salvage_066",
+        "salvage_067",
+        "salvage_068",
+        "salvage_069",
+        "salvage_070",
+        "salvage_071",
+        "salvage_072",
+        "salvage_073",
+        "salvage_074",
+        "salvage_075",
+        "salvage_076",
+        "salvage_077",
+        "salvage_078",
+        "salvage_079",
+        "salvage_080",
+        "salvage_081",
+        "salvage_082",
+        "salvage_083",
+        "salvage_084",
+        "salvage_085",
+        "salvage_086",
+        "salvage_087",
+        "salvage_088",
+        "salvage_089",
+        "salvage_090",
+        "salvage_091",
+        "salvage_092",
+        "salvage_093",
+        "salvage_094",
+        "salvage_095",
+        "salvage_096",
+        "salvage_097",
+        "salvage_098",
+        "salvage_099"
+      ],
+      "name": "Salvage Yard",
+      "region": "saltfen",
+      "situation": "Heaps of ship iron and rope fill the lot. Each piece has a tag."
+    },
+    "saltfen.tidegate": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to dock",
+          "to": "saltfen.dock"
+        },
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        }
+      ],
+      "ground": [],
+      "name": "Tide Gate",
+      "region": "saltfen",
+      "show_tide": true,
+      "situation": "A stone arch meets the mudflat. Water writes the hour."
+    },
+    "saltfen.warehouse": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        }
+      ],
+      "ground": [
+        "compact_tablet"
+      ],
+      "name": "Harbor Warehouse",
+      "region": "saltfen",
+      "situation": "Dust and salt crust the crates. One chest sits unlatched."
+    },
+    "saltfen.watchhouse": {
+      "actors": [
+        "watch_sergeant"
+      ],
+      "exits": [
+        {
+          "label": "Go to market",
+          "to": "saltfen.market"
+        }
+      ],
+      "ground": [],
+      "name": "Watch-house",
+      "region": "saltfen",
+      "situation": "A low stone room. A ledger sits open by the door."
+    },
+    "stacks.base": {
+      "actors": [
+        "mira"
+      ],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        }
+      ],
+      "ground": [],
+      "name": "Stack Base",
+      "region": "hollow_stacks",
+      "situation": "Broken towers lean over scree. Ropes hang from the first ledge.",
+      "situation_if": [
+        {
+          "text": "Climbers watch you like a snare.",
+          "when": {
+            "has_flag": "thief_jailed"
+          }
+        }
+      ]
+    },
+    "stacks.midledge": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Climb down the switchback",
+          "to": "stacks.switchback"
+        }
+      ],
+      "ground": [],
+      "name": "Mid Ledge",
+      "region": "hollow_stacks",
+      "situation": "A wide shelf of old floor. Birds nest in the beam holes."
+    },
+    "stacks.relic": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go back to the bridge",
+          "to": "stacks.windbridge"
+        }
+      ],
+      "ground": [
+        "ash_relic"
+      ],
+      "name": "Relic Chamber",
+      "region": "hollow_stacks",
+      "situation": "A round room. Ash cakes a stone bowl in the center."
+    },
+    "stacks.switchback": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Climb down to base",
+          "to": "stacks.base"
+        }
+      ],
+      "ground": [],
+      "name": "Switchback",
+      "region": "hollow_stacks",
+      "situation": "A narrow path cuts the outer wall. Wind tugs your shirt."
+    },
+    "stacks.undercroft": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Climb back to the bridge",
+          "to": "stacks.windbridge"
+        }
+      ],
+      "ground": [],
+      "name": "Undercroft",
+      "region": "hollow_stacks",
+      "situation": "A low vault under the bridge. Beams creak when you touch them."
+    },
+    "stacks.windbridge": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go back to the ledge",
+          "to": "stacks.midledge"
+        }
+      ],
+      "ground": [],
+      "name": "Wind Bridge",
+      "region": "hollow_stacks",
+      "situation": "Planks span a gap. A guyline hums in the wind."
+    }
+  },
+  "outcomes": {
+    "harbor_compact": {
+      "name": "Harbor Compact",
+      "when": {
+        "has_flag": "compact_restored"
+      }
+    },
+    "stack_relic": {
+      "name": "Stack Relic",
+      "when": {
+        "has_item": "ash_relic"
+      }
+    }
+  },
+  "regions": {
+    "hollow_stacks": {
+      "mechanic": "climb-collapse-vertical",
+      "name": "Hollow Stacks"
+    },
+    "saltfen": {
+      "mechanic": "law-trade-tides",
+      "name": "Saltfen Harbor"
+    }
+  },
+  "sheets": {
+    "city_oath": {
+      "body": "might",
+      "creed": "oathbound",
+      "mark": "clean",
+      "origin": "cityward",
+      "skill": "letters",
+      "tongue": "court"
+    },
+    "marsh_scout": {
+      "body": "agile",
+      "creed": "freehand",
+      "mark": "scarred",
+      "origin": "marshborn",
+      "skill": "hunt",
+      "tongue": "cant"
+    }
+  },
+  "start": {
+    "flags": {},
+    "hp": 6,
+    "inventory": [],
+    "location": "saltfen.dock",
+    "rep": {
+      "dockers": 0,
+      "stackers": 0,
+      "watch": 0
+    }
+  },
+  "version": "1"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "player-finding-mira-marsh-friend",
+  "kind": "player_surface_finding",
+  "status": "verified_replay",
+  "seed": 1,
+  "sheet": "marsh_scout",
+  "actions": [
+    "go:saltfen.market",
+    "use_marsh_cant",
+    "go:ashfen.causeway",
+    "go:stacks.base",
+    "talk:mira",
+    "ask_mira_for_tip"
+  ],
+  "claim": "After marsh cant, Mira at stack base offers no marsh-specific verb. Talk is generic idle. Ask Mira for a tip is the same line any non-jailed visitor gets.",
+  "expected_after_fix": "A marsh-friend-only legal action appears at stacks.base."
+}

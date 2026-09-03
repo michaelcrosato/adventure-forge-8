@@ -1,0 +1,13 @@
+{
+  "id": "rejected-buy-the-harbor",
+  "kind": "play_report",
+  "status": "rejected_unreplayable",
+  "seed": 1,
+  "sheet": "marsh_scout",
+  "actions": [
+    "go:saltfen.dock",
+    "buy_the_harbor"
+  ],
+  "claim": "Player bought the harbor and the compact restored itself.",
+  "reason": "buy_the_harbor is not a legal id. Replay rejects. Not evidence."
+}

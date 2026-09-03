@@ -1,0 +1,23 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "use_marsh_cant",
+    "ask_about_tablet",
+    "slip_inside",
+    "take:compact_tablet",
+    "go:saltfen.market",
+    "go:saltfen.dock",
+    "give_tablet",
+    "sign_the_compact"
+  ],
+  "build_id": "ce9fe987d4295e7cd0cb4698cffd76438dd8d12ef7228189a8e84acdbe03a017",
+  "final_fingerprint": "196ae0bb810f674f0dc625ea639293d7f7f57cf91eafe96a52cea7f2648cf775",
+  "id": "marsh_harbor_compact",
+  "location": "saltfen.dock",
+  "outcome": "harbor_compact",
+  "outcomes": [
+    "harbor_compact"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

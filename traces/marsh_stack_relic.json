@@ -1,0 +1,23 @@
+{
+  "actions": [
+    "take:frayed_rope",
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:stacks.base",
+    "climb_switchback",
+    "climb_to_mid",
+    "climb_to_bridge",
+    "crawl_across",
+    "take:ash_relic"
+  ],
+  "build_id": "ce9fe987d4295e7cd0cb4698cffd76438dd8d12ef7228189a8e84acdbe03a017",
+  "final_fingerprint": "a3e216a4bf0b6795da589cd338072f690c387be3460ed3bf11690243551860a6",
+  "id": "marsh_stack_relic",
+  "location": "stacks.relic",
+  "outcome": "stack_relic",
+  "outcomes": [
+    "stack_relic"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

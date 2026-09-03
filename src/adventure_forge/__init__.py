@@ -1,0 +1,5 @@
+"""Adventure Forge: deterministic adventure kernel."""
+
+ENGINE_VERSION = "0.1.0"
+
+__all__ = ["ENGINE_VERSION"]
