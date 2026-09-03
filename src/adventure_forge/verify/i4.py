@@ -2,21 +2,35 @@ from __future__ import annotations
 
 from adventure_forge.kernel.content import Content
 from adventure_forge.kernel.legal import enumerate_legal
-from adventure_forge.kernel.replay import new_game, replay
+from adventure_forge.kernel.replay import ReplayError, new_game, replay
 from adventure_forge.kernel.step import step
 
 
-def _load_ok(content: Content, trace: dict) -> None:
-    result = replay(content, trace["seed"], trace["sheet"], trace["actions"])
-    if content.build_id == trace.get("build_id") and result.fingerprint != trace["final_fingerprint"]:
-        raise AssertionError(
-            f"{trace['id']} fingerprint mismatch on same build"
-        )
+class TraceReject(AssertionError):
+    """I4 acceptor rejection. Tampered or stale evidence is not a proof."""
+
+
+def accept_trace(content: Content, trace: dict):
+    """Fail unless this trace is bound to the current pack and replays to its fingerprint."""
+    tid = trace.get("id", "?")
+    if not trace.get("build_id"):
+        raise TraceReject(f"{tid} missing build_id")
+    if trace["build_id"] != content.build_id:
+        raise TraceReject(f"{tid} build_id does not match current pack")
+    if not trace.get("final_fingerprint"):
+        raise TraceReject(f"{tid} missing final_fingerprint")
+    try:
+        result = replay(content, trace["seed"], trace["sheet"], trace["actions"])
+    except ReplayError as exc:
+        raise TraceReject(f"{tid} replay rejected: {exc}") from exc
+    if result.fingerprint != trace["final_fingerprint"]:
+        raise TraceReject(f"{tid} fingerprint mismatch")
+    if result.state.build_id != content.build_id:
+        raise TraceReject(f"{tid} replay state build_id drifted")
     outcome = trace.get("outcome")
     if outcome and outcome not in result.state.outcomes:
-        raise AssertionError(f"{trace['id']} missing outcome {outcome}: {result.state.outcomes}")
-    if result.state.build_id != content.build_id:
-        raise AssertionError("replay state build_id drifted")
+        raise TraceReject(f"{tid} missing outcome {outcome}: {result.state.outcomes}")
+    return result
 
 
 def check_i4(content: Content, traces: list[dict]) -> dict:
@@ -27,7 +41,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError(f"I4 missing traces {missing}")
 
     for trace in traces:
-        _load_ok(content, trace)
+        accept_trace(content, trace)
 
     compact = replay(content, by_id["marsh_harbor_compact"]["seed"], by_id["marsh_harbor_compact"]["sheet"], by_id["marsh_harbor_compact"]["actions"])
     relic = replay(content, by_id["marsh_stack_relic"]["seed"], by_id["marsh_stack_relic"]["sheet"], by_id["marsh_stack_relic"]["actions"])

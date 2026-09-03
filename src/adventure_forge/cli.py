@@ -6,7 +6,6 @@ import sys
 from pathlib import Path
 
 from adventure_forge.kernel.content import AXES, load_pack
-from adventure_forge.kernel.replay import replay
 from adventure_forge.play.session import PlaySession
 
 
@@ -105,15 +104,17 @@ def _cmd_play(args: argparse.Namespace) -> int:
 
 
 def _cmd_replay(args: argparse.Namespace) -> int:
+    from adventure_forge.verify.i4 import TraceReject, accept_trace
+
     content = load_pack()
     trace = json.loads(Path(args.trace).read_text(encoding="utf-8"))
-    result = replay(content, trace["seed"], trace["sheet"], trace["actions"])
+    try:
+        result = accept_trace(content, trace)
+    except TraceReject as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
     print(result.fingerprint)
     print("outcomes " + ",".join(result.state.outcomes))
-    if trace.get("final_fingerprint") and result.fingerprint != trace["final_fingerprint"]:
-        if trace.get("build_id") == content.build_id:
-            print("fingerprint mismatch on same build", file=sys.stderr)
-            return 1
     return 0
 
 
