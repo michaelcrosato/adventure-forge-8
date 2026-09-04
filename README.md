@@ -33,6 +33,12 @@ scripts/verify
 
 No LLM. I1 determinism, I4 witnesses, crawler, language/budget, unit checks. Tampering with build, seed, actions, or final state fails.
 
+## Deployment
+
+Vercel loads the dependency-free ASGI application declared in `pyproject.toml`.
+The root path provides a small landing page, and `/health` reports deployment
+health. The game and verification bar remain command-line applications.
+
 ## Layout
 
 - `src/adventure_forge/kernel/` — pure `step`, legal set, fingerprint, replay
