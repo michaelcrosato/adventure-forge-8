@@ -3394,12 +3394,266 @@
       "when": {
         "at": "pans.shed"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "smoke_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hal",
+          "fact": "wet_fish",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_wet_fish",
+      "label": "Know the wet fish",
+      "text": "You name the wet fish. Hal lets you hang and tend.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "smoke_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "smoke_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hal",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_cure_mark",
+      "label": "Read the cure mark",
+      "text": "You read the cure mark. Hal lets you hang and tend.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "smoke_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "brine_cure",
+          "op": "set_flag"
+        },
+        {
+          "flag": "smoke_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hal",
+          "fact": "brine",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "salt_the_racks",
+      "label": "Salt the racks",
+      "text": "You salt the racks. The brine sets the cure.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.racks"
+          },
+          {
+            "has_flag": "salt_raked"
+          },
+          {
+            "not_flag": "brine_cure"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "wet_fish",
+          "op": "remove_item"
+        },
+        {
+          "flag": "fish_hung",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "hang_the_fish",
+      "label": "Hang the wet fish",
+      "text": "You hang the wet fish. The racks take the drip.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.racks"
+          },
+          {
+            "has_flag": "smoke_trust"
+          },
+          {
+            "has_item": "wet_fish"
+          },
+          {
+            "not_flag": "fish_hung"
+          },
+          {
+            "not_flag": "smoke_cured"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "smoke_tended",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "tend_the_smoke",
+      "label": "Tend the smoke",
+      "text": "You tend the smoke. The racks take an even haze.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.hearth"
+          },
+          {
+            "has_flag": "fish_hung"
+          },
+          {
+            "not_flag": "smoke_tended"
+          },
+          {
+            "not_flag": "smoke_cured"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "cured_fish",
+          "op": "add_item"
+        },
+        {
+          "flag": "smoke_cured",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "take_the_cure",
+      "label": "Take down the cure",
+      "text": "You take down the cure. Wren marks the rack empty.",
+      "when": {
+        "all": [
+          {
+            "at": "smoke.loft"
+          },
+          {
+            "has_flag": "smoke_trust"
+          },
+          {
+            "has_flag": "smoke_tended"
+          },
+          {
+            "not_flag": "smoke_cured"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_smoke_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_hal_rule",
+      "label": "Ask Hal the rule",
+      "text": "Hal says hang wet fish. Then tend the smoke and take it down.",
+      "when": {
+        "at": "smoke.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_smoke_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_bea_hearth",
+      "label": "Ask Bea the hearth",
+      "text": "Bea says even smoke, not a kiln white.",
+      "when": {
+        "at": "smoke.hearth"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_smoke_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_wren_tally",
+      "label": "Ask Wren the tally",
+      "text": "Wren pays only when a rack comes down dry.",
+      "when": {
+        "at": "smoke.loft"
+      }
     }
   ],
   "actors": {
     "bailiff": {
       "idle": "He holds a staff across the gate.",
       "name": "Bailiff Kesh"
+    },
+    "bea": {
+      "idle": "She feeds chips to the hearth and watches the haze.",
+      "name": "Bea"
     },
     "bram": {
       "idle": "He spins a short strand and does not look up.",
@@ -3424,6 +3678,10 @@
     "eel_seller": {
       "idle": "He turns eels on the board and waits.",
       "name": "Eel-seller"
+    },
+    "hal": {
+      "idle": "He rubs salt from his palms and waits.",
+      "name": "Hal"
     },
     "ila": {
       "idle": "She sorts tags and does not speak.",
@@ -3528,6 +3786,10 @@
     "wounded_runner": {
       "idle": "She sits on the shell track and binds a knee.",
       "name": "Wounded runner"
+    },
+    "wren": {
+      "idle": "She taps a tally stick and eyes the pegs.",
+      "name": "Wren"
     }
   },
   "id": "ashfen-coast",
@@ -3551,6 +3813,10 @@
     "compact_tablet": {
       "kind": "key",
       "name": "compact tablet"
+    },
+    "cured_fish": {
+      "kind": "goods",
+      "name": "cured fish"
     },
     "frayed_rope": {
       "kind": "gear",
@@ -3975,6 +4241,10 @@
     "salvage_099": {
       "kind": "salvage",
       "name": "knotted peg"
+    },
+    "wet_fish": {
+      "kind": "goods",
+      "name": "wet fish"
     }
   },
   "locations": {
@@ -4026,6 +4296,10 @@
         {
           "label": "Go to salt pans",
           "to": "pans.path"
+        },
+        {
+          "label": "Go to smokehouse",
+          "to": "smoke.path"
         }
       ],
       "ground": [],
@@ -4777,6 +5051,10 @@
         {
           "label": "Go to pans yard",
           "to": "pans.yard"
+        },
+        {
+          "label": "Go to smokehouse",
+          "to": "smoke.path"
         }
       ],
       "ground": [],
@@ -5348,6 +5626,113 @@
       "region": "saltfen",
       "situation": "A low stone room. A ledger sits open by the door."
     },
+    "smoke.hearth": {
+      "actors": [
+        "bea"
+      ],
+      "exits": [
+        {
+          "label": "Go to smoke yard",
+          "to": "smoke.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Smoke Hearth",
+      "region": "smokehouse",
+      "situation": "A low hearth feeds the racks. Bea watches the draw."
+    },
+    "smoke.loft": {
+      "actors": [
+        "wren"
+      ],
+      "exits": [
+        {
+          "label": "Go to smoke yard",
+          "to": "smoke.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Cure Loft",
+      "region": "smokehouse",
+      "situation": "Dry fish hang from pegs. Wren waits with a tally stick."
+    },
+    "smoke.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to salt pans",
+          "to": "pans.path"
+        },
+        {
+          "label": "Go to smoke yard",
+          "to": "smoke.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Smoke Path",
+      "region": "smokehouse",
+      "situation": "A shed leaks a thin haze. Fish skins hang on the fence."
+    },
+    "smoke.racks": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to smoke yard",
+          "to": "smoke.yard"
+        }
+      ],
+      "ground": [
+        "wet_fish"
+      ],
+      "name": "Fish Racks",
+      "region": "smokehouse",
+      "situation": "Poles hold wet fish. Drip ticks on the boards.",
+      "situation_if": [
+        {
+          "text": "A brine cake would set the cure.",
+          "when": {
+            "has_flag": "salt_raked"
+          }
+        },
+        {
+          "text": "The rack is empty and dry.",
+          "when": {
+            "has_flag": "smoke_cured"
+          }
+        }
+      ]
+    },
+    "smoke.yard": {
+      "actors": [
+        "hal"
+      ],
+      "exits": [
+        {
+          "label": "Go to smoke path",
+          "to": "smoke.path"
+        },
+        {
+          "label": "Go to the fish racks",
+          "to": "smoke.racks"
+        },
+        {
+          "label": "Go to the smoke hearth",
+          "to": "smoke.hearth"
+        },
+        {
+          "label": "Go to the cure loft",
+          "to": "smoke.loft"
+        }
+      ],
+      "ground": [],
+      "name": "Smoke Yard",
+      "region": "smokehouse",
+      "situation": "Racks stand under a low roof. Hal waits by a cure mark."
+    },
     "stacks.base": {
       "actors": [
         "mira"
@@ -5500,6 +5885,12 @@
         "has_flag": "salt_raked"
       }
     },
+    "smoke_cured": {
+      "name": "Smoke Cured",
+      "when": {
+        "has_flag": "smoke_cured"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -5551,6 +5942,10 @@
     "saltfen": {
       "mechanic": "law-trade-tides",
       "name": "Saltfen Harbor"
+    },
+    "smokehouse": {
+      "mechanic": "hang-tend-salt-cure",
+      "name": "Smokehouse"
     }
   },
   "sheets": {
@@ -5587,6 +5982,7 @@
       "road": 0,
       "rope": 0,
       "salt": 0,
+      "smoke": 0,
       "stackers": 0,
       "watch": 0
     }

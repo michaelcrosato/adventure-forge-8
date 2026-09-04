@@ -12,13 +12,17 @@
     "rake_the_cake",
     "go:pans.yard",
     "go:pans.shed",
-    "weigh_the_cake"
+    "weigh_the_cake",
+    "go:pans.yard",
+    "go:pans.path",
+    "go:smoke.path",
+    "go:smoke.yard",
+    "go:smoke.racks"
   ],
   "build_id": "e31d4e748f571f92f84b0c738386020362ae231f1e95ed1ab488ee9dff868c17",
-  "final_fingerprint": "17e36bed9a32444422207fd7109b9bf27150ae38089097bc4bd2246f184f3fef",
-  "id": "marsh_salt_raked",
-  "location": "pans.shed",
-  "outcome": "salt_raked",
+  "final_fingerprint": "98f9e5effc652f67f9b2715fb010572d762de5d836a855726f344e2d3976a595",
+  "id": "cross_salt_smoke",
+  "location": "smoke.racks",
   "outcomes": [
     "salt_raked"
   ],

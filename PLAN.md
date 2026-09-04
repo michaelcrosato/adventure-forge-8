@@ -155,6 +155,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Lens Ruin | Low sun, shard, channel mark | Ruin |
 | Ropewalk | Twist, taut walk, hemp hank | Hamlet |
 | Salt Pans | Brine, rake, weigh | Hamlet |
+| Smokehouse | Hang, tend smoke, salt-cure | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -171,6 +172,7 @@ Authored outcomes:
 9. `lens_set` — the lens shard marks the channel.
 10. `rope_walked` — the hemp hank is walked taut.
 11. `salt_raked` — a salt cake is raked and weighed.
+12. `smoke_cured` — wet fish hangs, takes smoke, and comes down cured.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 

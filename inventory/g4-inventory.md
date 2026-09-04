@@ -65,10 +65,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | pans.beds | salt_pans | rake cake, rope rake line |
 | pans.well | salt_pans | Nell, draw brine |
 | pans.shed | salt_pans | Pim, weigh cake, salt_raked |
+| smoke.path | smokehouse | smoke on the wind, house access |
+| smoke.yard | smokehouse | Hal, wet fish vs cure mark |
+| smoke.racks | smokehouse | hang fish, salt racks |
+| smoke.hearth | smokehouse | Bea, tend smoke |
+| smoke.loft | smokehouse | Wren, take down cure, smoke_cured |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`
 
 ## Substrate
 

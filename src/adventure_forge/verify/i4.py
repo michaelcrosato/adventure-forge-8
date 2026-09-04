@@ -85,6 +85,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_salt",
         "cross_plain_salt",
         "cross_rope_salt",
+        "marsh_smoke_cured",
+        "divergence_marsh_smoke",
+        "divergence_city_smoke",
+        "cross_plain_smoke",
+        "cross_salt_smoke",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -104,6 +109,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     lens = replay(content, by_id["marsh_lens_set"]["seed"], by_id["marsh_lens_set"]["sheet"], by_id["marsh_lens_set"]["actions"])
     rope = replay(content, by_id["marsh_rope_walked"]["seed"], by_id["marsh_rope_walked"]["sheet"], by_id["marsh_rope_walked"]["actions"])
     salt = replay(content, by_id["marsh_salt_raked"]["seed"], by_id["marsh_salt_raked"]["sheet"], by_id["marsh_salt_raked"]["actions"])
+    smoke = replay(content, by_id["marsh_smoke_cured"]["seed"], by_id["marsh_smoke_cured"]["sheet"], by_id["marsh_smoke_cured"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -126,7 +132,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("rope_walked predicate failed")
     if "salt_raked" not in salt.state.outcomes:
         raise AssertionError("salt_raked predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint}) != 11:
+    if "smoke_cured" not in smoke.state.outcomes:
+        raise AssertionError("smoke_cured predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint}) != 12:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -364,6 +372,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "rope_walked" not in rope_salt.state.outcomes:
         raise AssertionError("cross rope-salt run lost rope_walked")
 
+    smoke_m = by_id["divergence_marsh_smoke"]
+    smoke_c = by_id["divergence_city_smoke"]
+    smoke_m_ids, smoke_c_ids = _diverge_legal(content, smoke_m, smoke_c)
+    if "know_the_wet_fish" not in smoke_m_ids:
+        raise AssertionError("marsh_scout missing know_the_wet_fish")
+    if "read_the_cure_mark" not in smoke_c_ids:
+        raise AssertionError("city_oath missing read_the_cure_mark")
+    if "know_the_wet_fish" in smoke_c_ids or "read_the_cure_mark" in smoke_m_ids:
+        raise AssertionError("smoke sheet verbs leaked across sheets")
+
+    plain_smoke = replay(content, by_id["cross_plain_smoke"]["seed"], by_id["cross_plain_smoke"]["sheet"], by_id["cross_plain_smoke"]["actions"])
+    salt_smoke = replay(content, by_id["cross_salt_smoke"]["seed"], by_id["cross_salt_smoke"]["sheet"], by_id["cross_salt_smoke"]["actions"])
+    if plain_smoke.state.location != salt_smoke.state.location:
+        raise AssertionError("smoke cross-area pair left different locations")
+    if plain_smoke.state.location != "smoke.racks":
+        raise AssertionError("smoke cross-area pair not at smoke.racks")
+    plain_smoke_ids = {a.id for a in enumerate_legal(plain_smoke.state, content)}
+    salt_smoke_ids = {a.id for a in enumerate_legal(salt_smoke.state, content)}
+    if "salt_the_racks" not in salt_smoke_ids:
+        raise AssertionError("salt raked did not unlock salt_the_racks")
+    if "salt_the_racks" in plain_smoke_ids:
+        raise AssertionError("salt_the_racks leaked without salt raked")
+    if "salt_raked" not in salt_smoke.state.outcomes:
+        raise AssertionError("cross salt-smoke run lost salt_raked")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -376,6 +409,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "lens_set": lens.fingerprint,
         "rope_walked": rope.fingerprint,
         "salt_raked": salt.fingerprint,
+        "smoke_cured": smoke.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -396,6 +430,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "rope_city_only": sorted(rope_c_ids - rope_m_ids),
         "salt_marsh_only": sorted(salt_m_ids - salt_c_ids),
         "salt_city_only": sorted(salt_c_ids - salt_m_ids),
+        "smoke_marsh_only": sorted(smoke_m_ids - smoke_c_ids),
+        "smoke_city_only": sorted(smoke_c_ids - smoke_m_ids),
     }
 
 

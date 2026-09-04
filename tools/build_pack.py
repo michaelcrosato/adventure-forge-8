@@ -82,6 +82,8 @@ def build() -> dict:
         "lens_shard": {"name": "lens shard", "kind": "glass"},
         "hemp_hank": {"name": "hemp hank", "kind": "goods"},
         "salt_cake": {"name": "salt cake", "kind": "goods"},
+        "wet_fish": {"name": "wet fish", "kind": "goods"},
+        "cured_fish": {"name": "cured fish", "kind": "goods"},
         **salvage_items,
     }
 
@@ -201,6 +203,7 @@ def build() -> dict:
                 {"to": "glass.path", "label": "Go to lens ruin"},
                 {"to": "rope.path", "label": "Go to ropewalk"},
                 {"to": "pans.path", "label": "Go to salt pans"},
+                {"to": "smoke.path", "label": "Go to smokehouse"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -797,6 +800,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "rope.path", "label": "Go to ropewalk"},
                 {"to": "pans.yard", "label": "Go to pans yard"},
+                {"to": "smoke.path", "label": "Go to smokehouse"},
             ],
             "ground": [],
             "actors": [],
@@ -847,6 +851,65 @@ def build() -> dict:
             "exits": [{"to": "pans.yard", "label": "Go to pans yard"}],
             "ground": [],
             "actors": ["pim"],
+        },
+        "smoke.path": {
+            "region": "smokehouse",
+            "name": "Smoke Path",
+            "situation": "A shed leaks a thin haze. Fish skins hang on the fence.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "pans.path", "label": "Go to salt pans"},
+                {"to": "smoke.yard", "label": "Go to smoke yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "smoke.yard": {
+            "region": "smokehouse",
+            "name": "Smoke Yard",
+            "situation": "Racks stand under a low roof. Hal waits by a cure mark.",
+            "exits": [
+                {"to": "smoke.path", "label": "Go to smoke path"},
+                {"to": "smoke.racks", "label": "Go to the fish racks"},
+                {"to": "smoke.hearth", "label": "Go to the smoke hearth"},
+                {"to": "smoke.loft", "label": "Go to the cure loft"},
+            ],
+            "ground": [],
+            "actors": ["hal"],
+        },
+        "smoke.racks": {
+            "region": "smokehouse",
+            "name": "Fish Racks",
+            "situation": "Poles hold wet fish. Drip ticks on the boards.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "salt_raked"},
+                    "text": "A brine cake would set the cure.",
+                },
+                {
+                    "when": {"has_flag": "smoke_cured"},
+                    "text": "The rack is empty and dry.",
+                },
+            ],
+            "exits": [{"to": "smoke.yard", "label": "Go to smoke yard"}],
+            "ground": ["wet_fish"],
+            "actors": [],
+        },
+        "smoke.hearth": {
+            "region": "smokehouse",
+            "name": "Smoke Hearth",
+            "situation": "A low hearth feeds the racks. Bea watches the draw.",
+            "exits": [{"to": "smoke.yard", "label": "Go to smoke yard"}],
+            "ground": [],
+            "actors": ["bea"],
+        },
+        "smoke.loft": {
+            "region": "smokehouse",
+            "name": "Cure Loft",
+            "situation": "Dry fish hang from pegs. Wren waits with a tally stick.",
+            "exits": [{"to": "smoke.yard", "label": "Go to smoke yard"}],
+            "ground": [],
+            "actors": ["wren"],
         },
     }
 
@@ -982,6 +1045,18 @@ def build() -> dict:
         "pim": {
             "name": "Pim",
             "idle": "He taps the scale and waits for a cake.",
+        },
+        "hal": {
+            "name": "Hal",
+            "idle": "He rubs salt from his palms and waits.",
+        },
+        "bea": {
+            "name": "Bea",
+            "idle": "She feeds chips to the hearth and watches the haze.",
+        },
+        "wren": {
+            "name": "Wren",
+            "idle": "She taps a tally stick and eyes the pegs.",
         },
     }
 
@@ -2732,6 +2807,139 @@ def build() -> dict:
             "Pim says a cake on the scale closes the rake.",
             [{"op": "set_flag", "flag": "heard_salt_rule"}],
         ),
+        action(
+            "know_the_wet_fish",
+            "Know the wet fish",
+            "talk",
+            {
+                "all": [
+                    {"at": "smoke.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "smoke_trust"},
+                ]
+            },
+            "You name the wet fish. Hal lets you hang and tend.",
+            [
+                {"op": "set_flag", "flag": "smoke_trust"},
+                {"op": "remember", "actor": "hal", "fact": "wet_fish"},
+            ],
+        ),
+        action(
+            "read_the_cure_mark",
+            "Read the cure mark",
+            "do",
+            {
+                "all": [
+                    {"at": "smoke.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "smoke_trust"},
+                ]
+            },
+            "You read the cure mark. Hal lets you hang and tend.",
+            [
+                {"op": "set_flag", "flag": "smoke_trust"},
+                {"op": "remember", "actor": "hal", "fact": "mark"},
+            ],
+        ),
+        action(
+            "salt_the_racks",
+            "Salt the racks",
+            "do",
+            {
+                "all": [
+                    {"at": "smoke.racks"},
+                    {"has_flag": "salt_raked"},
+                    {"not_flag": "brine_cure"},
+                ]
+            },
+            "You salt the racks. The brine sets the cure.",
+            [
+                {"op": "set_flag", "flag": "brine_cure"},
+                {"op": "set_flag", "flag": "smoke_trust"},
+                {"op": "remember", "actor": "hal", "fact": "brine"},
+            ],
+        ),
+        action(
+            "hang_the_fish",
+            "Hang the wet fish",
+            "do",
+            {
+                "all": [
+                    {"at": "smoke.racks"},
+                    {"has_flag": "smoke_trust"},
+                    {"has_item": "wet_fish"},
+                    {"not_flag": "fish_hung"},
+                    {"not_flag": "smoke_cured"},
+                ]
+            },
+            "You hang the wet fish. The racks take the drip.",
+            [
+                {"op": "remove_item", "item": "wet_fish"},
+                {"op": "set_flag", "flag": "fish_hung"},
+            ],
+        ),
+        action(
+            "tend_the_smoke",
+            "Tend the smoke",
+            "do",
+            {
+                "all": [
+                    {"at": "smoke.hearth"},
+                    {"has_flag": "fish_hung"},
+                    {"not_flag": "smoke_tended"},
+                    {"not_flag": "smoke_cured"},
+                ]
+            },
+            "You tend the smoke. The racks take an even haze.",
+            [{"op": "set_flag", "flag": "smoke_tended"}],
+        ),
+        action(
+            "take_the_cure",
+            "Take down the cure",
+            "talk",
+            {
+                "all": [
+                    {"at": "smoke.loft"},
+                    {"has_flag": "smoke_trust"},
+                    {"has_flag": "smoke_tended"},
+                    {"not_flag": "smoke_cured"},
+                ]
+            },
+            "You take down the cure. Wren marks the rack empty.",
+            [
+                {"op": "add_item", "item": "cured_fish"},
+                {"op": "set_flag", "flag": "smoke_cured"},
+            ],
+        ),
+        action(
+            "ask_hal_rule",
+            "Ask Hal the rule",
+            "talk",
+            {"at": "smoke.yard"},
+            "Hal says hang wet fish. Then tend the smoke and take it down.",
+            [{"op": "set_flag", "flag": "heard_smoke_rule"}],
+        ),
+        action(
+            "ask_bea_hearth",
+            "Ask Bea the hearth",
+            "talk",
+            {"at": "smoke.hearth"},
+            "Bea says even smoke, not a kiln white.",
+            [{"op": "set_flag", "flag": "heard_smoke_rule"}],
+        ),
+        action(
+            "ask_wren_tally",
+            "Ask Wren the tally",
+            "talk",
+            {"at": "smoke.loft"},
+            "Wren pays only when a rack comes down dry.",
+            [{"op": "set_flag", "flag": "heard_smoke_rule"}],
+        ),
     ]
 
     pack = {
@@ -2781,6 +2989,10 @@ def build() -> dict:
             "salt_pans": {
                 "name": "Salt Pans",
                 "mechanic": "brine-rake-weigh",
+            },
+            "smokehouse": {
+                "name": "Smokehouse",
+                "mechanic": "hang-tend-salt-cure",
             },
         },
         "locations": locations,
@@ -2832,11 +3044,15 @@ def build() -> dict:
                 "name": "Salt Raked",
                 "when": {"has_flag": "salt_raked"},
             },
+            "smoke_cured": {
+                "name": "Smoke Cured",
+                "when": {"has_flag": "smoke_cured"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0},
             "inventory": [],
             "flags": {},
         },

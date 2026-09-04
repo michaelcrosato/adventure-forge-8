@@ -22,7 +22,7 @@ Brine and rake. Draw brine, rake a cake, weigh it in the shed. No hemp twist, no
 
 ## Sheet / deed gates
 
-Same scene `salt.yard`: marshborn/hunt `know_the_brine_cut`; letters `read_the_pan_list`.
+Same scene `pans.yard`: marshborn/hunt `know_the_brine_cut`; letters `read_the_pan_list`.
 
 ## Cross-effect
 
