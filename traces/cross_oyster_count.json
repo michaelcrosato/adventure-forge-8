@@ -12,13 +12,17 @@
     "seed_the_beds",
     "go:oyster.yard",
     "go:oyster.shed",
-    "cull_the_beds"
+    "cull_the_beds",
+    "go:oyster.yard",
+    "go:oyster.path",
+    "go:count.path",
+    "go:count.yard",
+    "go:count.desk"
   ],
   "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
-  "final_fingerprint": "7360254f07e2c66eec072db2e3d926944d6a4ffea45e7604cf9b2dd0cf77a678",
-  "id": "marsh_oyster_culled",
-  "location": "oyster.shed",
-  "outcome": "oyster_culled",
+  "final_fingerprint": "224f82df949f0b38b31cd3874ed07a499baf2698570bb41b8431447e4037a645",
+  "id": "cross_oyster_count",
+  "location": "count.desk",
   "outcomes": [
     "oyster_culled"
   ],

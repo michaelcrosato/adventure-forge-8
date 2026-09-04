@@ -12,8 +12,8 @@
     "pole_the_crossing",
     "claim_the_landing"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "c942367d4e1bfadbf6e22c75e32f3b02e867404138767dfcef79635abfe141bd",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "2f2e25149b3bb23528df62341754b3e84eeaa3de2b77044b1e4fe3e77b8cfb56",
   "id": "marsh_ferry_crossed",
   "location": "ferry.far",
   "outcome": "ferry_crossed",

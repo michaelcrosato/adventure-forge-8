@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:pump.path",
-    "go:pump.yard",
-    "go:pump.tower"
+    "go:count.path",
+    "go:count.yard",
+    "go:count.desk"
   ],
   "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
-  "final_fingerprint": "7d90262f4463c403a4b311e16005bc9e1c2411e9701f29f28ce823a892220085",
-  "id": "cross_plain_pump",
-  "location": "pump.tower",
+  "final_fingerprint": "572c558cdf0b213c515e3dd489d03e8fc0a15df31e03c0782fe77ac6eef6f388",
+  "id": "cross_plain_count",
+  "location": "count.desk",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

@@ -95,10 +95,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | oyster.beds | oyster_park | seed spat, dry-bed work |
 | oyster.spat | oyster_park | Pip, spat bag |
 | oyster.shed | oyster_park | Gell, cull, oyster_culled |
+| count.path | counting_house | chalk dust, house access |
+| count.yard | counting_house | Voss, shell count vs tally roll |
+| count.desk | counting_house | Rhee, mark tally, oyster lot credit |
+| count.loft | counting_house | blank tally slate |
+| count.vault | counting_house | Orm, seal the day, tally_closed |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`
 
 ## Substrate
 

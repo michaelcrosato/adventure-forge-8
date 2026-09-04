@@ -5,8 +5,8 @@
     "go:camp.gate",
     "go:camp.yard"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "41fa92e7ca7f2739330888a068845ed2676d780f9fbf8b3d8ca820afbc9fa98b",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "c3c8ab902eb327d02441165e6a757279e5d0fd8cd4270232c7ba431a27a9d04b",
   "id": "divergence_marsh_camp",
   "location": "camp.yard",
   "outcomes": [],

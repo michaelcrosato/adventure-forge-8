@@ -4857,6 +4857,229 @@
       "when": {
         "at": "oyster.shed"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "count_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "voss",
+          "fact": "shell",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_shell_count",
+      "label": "Know the shell count",
+      "text": "You name the shell count. Voss lets you mark and seal.",
+      "when": {
+        "all": [
+          {
+            "at": "count.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "count_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "count_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "voss",
+          "fact": "roll",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_tally_roll",
+      "label": "Read the tally roll",
+      "text": "You read the tally roll. Voss lets you mark and seal.",
+      "when": {
+        "all": [
+          {
+            "at": "count.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "count_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "oyster_laid",
+          "op": "set_flag"
+        },
+        {
+          "flag": "count_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rhee",
+          "fact": "lot",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "lay_the_oyster_lot",
+      "label": "Lay the oyster lot",
+      "text": "You lay the oyster lot. The roll takes the credit.",
+      "when": {
+        "all": [
+          {
+            "at": "count.desk"
+          },
+          {
+            "has_flag": "oyster_culled"
+          },
+          {
+            "not_flag": "oyster_laid"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "tally_slate",
+          "op": "remove_item"
+        },
+        {
+          "flag": "tally_marked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "mark_the_tally",
+      "label": "Mark the tally",
+      "text": "You mark the tally. Rhee nods at the even line.",
+      "when": {
+        "all": [
+          {
+            "at": "count.desk"
+          },
+          {
+            "has_flag": "count_trust"
+          },
+          {
+            "has_item": "tally_slate"
+          },
+          {
+            "not_flag": "tally_marked"
+          },
+          {
+            "not_flag": "tally_closed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "tally_closed",
+          "op": "set_flag"
+        },
+        {
+          "actor": "orm",
+          "fact": "seal",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "seal_the_count",
+      "label": "Seal the count",
+      "text": "You seal the count. Orm shuts the vault on the day.",
+      "when": {
+        "all": [
+          {
+            "at": "count.vault"
+          },
+          {
+            "has_flag": "count_trust"
+          },
+          {
+            "has_flag": "tally_marked"
+          },
+          {
+            "not_flag": "tally_closed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_count_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_voss_rule",
+      "label": "Ask Voss the rule",
+      "text": "Voss says mark the tally. Then seal the day.",
+      "when": {
+        "at": "count.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_count_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_rhee_roll",
+      "label": "Ask Rhee the roll",
+      "text": "Rhee says the roll must close even.",
+      "when": {
+        "at": "count.desk"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_count_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_orm_seal",
+      "label": "Ask Orm the seal",
+      "text": "Orm seals only a tally that has been marked.",
+      "when": {
+        "at": "count.vault"
+      }
     }
   ],
   "actors": {
@@ -4992,6 +5215,10 @@
       "idle": "He watches the vanes and does not speak first.",
       "name": "Od"
     },
+    "orm": {
+      "idle": "He holds a seal and does not speak first.",
+      "name": "Orm"
+    },
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
@@ -5015,6 +5242,10 @@
     "ren": {
       "idle": "He lies still and watches the tent peak.",
       "name": "Ren"
+    },
+    "rhee": {
+      "idle": "She taps the quill and waits.",
+      "name": "Rhee"
     },
     "rook": {
       "idle": "He squints at the empty frame.",
@@ -5043,6 +5274,10 @@
     "venn": {
       "idle": "He keeps his palm on an empty niche.",
       "name": "Keeper Venn"
+    },
+    "voss": {
+      "idle": "He keeps a thumb on the open roll.",
+      "name": "Voss"
     },
     "watch_sergeant": {
       "idle": "She keeps a finger on the ledger.",
@@ -5531,6 +5766,10 @@
       "kind": "goods",
       "name": "spat bag"
     },
+    "tally_slate": {
+      "kind": "key",
+      "name": "tally slate"
+    },
     "toll_token": {
       "kind": "key",
       "name": "toll token"
@@ -5625,6 +5864,10 @@
         {
           "label": "Go to oyster park",
           "to": "oyster.path"
+        },
+        {
+          "label": "Go to counting house",
+          "to": "count.path"
         }
       ],
       "ground": [],
@@ -5748,6 +5991,121 @@
       "name": "Camp Yard",
       "region": "fever_camp",
       "situation": "Pallets sit in two rows. Joss keeps the sick from the well."
+    },
+    "count.desk": {
+      "actors": [
+        "rhee"
+      ],
+      "exits": [
+        {
+          "label": "Go to count yard",
+          "to": "count.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Tally Desk",
+      "region": "counting_house",
+      "situation": "Rhee keeps a dry quill. The tally roll lies blank.",
+      "situation_if": [
+        {
+          "text": "An oyster lot would close a gap in the roll.",
+          "when": {
+            "has_flag": "oyster_culled"
+          }
+        },
+        {
+          "text": "The roll is shut for the day.",
+          "when": {
+            "has_flag": "tally_closed"
+          }
+        }
+      ]
+    },
+    "count.loft": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to count yard",
+          "to": "count.yard"
+        }
+      ],
+      "ground": [
+        "tally_slate"
+      ],
+      "name": "Tally Loft",
+      "region": "counting_house",
+      "situation": "Blank slates lean on a rack. Dust sits on the top edge."
+    },
+    "count.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to oyster park",
+          "to": "oyster.path"
+        },
+        {
+          "label": "Go to count yard",
+          "to": "count.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Count Path",
+      "region": "counting_house",
+      "situation": "A low stone house sits inland. Chalk dust hangs in the door."
+    },
+    "count.vault": {
+      "actors": [
+        "orm"
+      ],
+      "exits": [
+        {
+          "label": "Go to count yard",
+          "to": "count.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Count Vault",
+      "region": "counting_house",
+      "situation": "An iron door stands shut. Orm waits with a seal.",
+      "situation_if": [
+        {
+          "text": "The seal is set and the door is shut.",
+          "when": {
+            "has_flag": "tally_closed"
+          }
+        }
+      ]
+    },
+    "count.yard": {
+      "actors": [
+        "voss"
+      ],
+      "exits": [
+        {
+          "label": "Go to count path",
+          "to": "count.path"
+        },
+        {
+          "label": "Go to the tally desk",
+          "to": "count.desk"
+        },
+        {
+          "label": "Go to the tally loft",
+          "to": "count.loft"
+        },
+        {
+          "label": "Go to the count vault",
+          "to": "count.vault"
+        }
+      ],
+      "ground": [],
+      "name": "Count Yard",
+      "region": "counting_house",
+      "situation": "Voss waits by a slate board. The day's count is still open."
     },
     "court.archive": {
       "actors": [
@@ -6605,6 +6963,10 @@
         {
           "label": "Go to oyster yard",
           "to": "oyster.yard"
+        },
+        {
+          "label": "Go to counting house",
+          "to": "count.path"
         }
       ],
       "ground": [],
@@ -7816,6 +8178,12 @@
         "has_item": "ash_relic"
       }
     },
+    "tally_closed": {
+      "name": "Tally Closed",
+      "when": {
+        "has_flag": "tally_closed"
+      }
+    },
     "weir_lifted": {
       "name": "Weir Lifted",
       "when": {
@@ -7824,6 +8192,10 @@
     }
   },
   "regions": {
+    "counting_house": {
+      "mechanic": "mark-tally-seal-day",
+      "name": "Counting House"
+    },
     "drowned_road": {
       "mechanic": "weather-turn-encounters",
       "name": "Drowned Road"
@@ -7918,6 +8290,7 @@
     "location": "saltfen.dock",
     "rep": {
       "camp": 0,
+      "count": 0,
       "court": 0,
       "dockers": 0,
       "dye": 0,

@@ -5,8 +5,8 @@
     "go:mill.lane",
     "go:mill.yard"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "3b1a5b209644295f2aa463922d57236c81a062f6095e55dfa610fe08a452b3b6",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "cec65be47a2ea80a3d5566d5e7403cda03be8e3bce5047d5953f6039a7c4c761",
   "id": "divergence_city_mill",
   "location": "mill.yard",
   "outcomes": [],

@@ -92,6 +92,7 @@ def build() -> dict:
         "vane_pin": {"name": "vane pin", "kind": "gear"},
         "spat_bag": {"name": "spat bag", "kind": "goods"},
         "oyster_lot": {"name": "oyster lot", "kind": "goods"},
+        "tally_slate": {"name": "tally slate", "kind": "key"},
         **salvage_items,
     }
 
@@ -217,6 +218,7 @@ def build() -> dict:
                 {"to": "ferry.path", "label": "Go to toll ferry"},
                 {"to": "pump.path", "label": "Go to windpump"},
                 {"to": "oyster.path", "label": "Go to oyster park"},
+                {"to": "count.path", "label": "Go to counting house"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1192,6 +1194,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "pump.path", "label": "Go to windpump"},
                 {"to": "oyster.yard", "label": "Go to oyster yard"},
+                {"to": "count.path", "label": "Go to counting house"},
             ],
             "ground": [],
             "actors": [],
@@ -1242,6 +1245,71 @@ def build() -> dict:
             "exits": [{"to": "oyster.yard", "label": "Go to oyster yard"}],
             "ground": [],
             "actors": ["gell"],
+        },
+        "count.path": {
+            "region": "counting_house",
+            "name": "Count Path",
+            "situation": "A low stone house sits inland. Chalk dust hangs in the door.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "oyster.path", "label": "Go to oyster park"},
+                {"to": "count.yard", "label": "Go to count yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "count.yard": {
+            "region": "counting_house",
+            "name": "Count Yard",
+            "situation": "Voss waits by a slate board. The day's count is still open.",
+            "exits": [
+                {"to": "count.path", "label": "Go to count path"},
+                {"to": "count.desk", "label": "Go to the tally desk"},
+                {"to": "count.loft", "label": "Go to the tally loft"},
+                {"to": "count.vault", "label": "Go to the count vault"},
+            ],
+            "ground": [],
+            "actors": ["voss"],
+        },
+        "count.desk": {
+            "region": "counting_house",
+            "name": "Tally Desk",
+            "situation": "Rhee keeps a dry quill. The tally roll lies blank.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "oyster_culled"},
+                    "text": "An oyster lot would close a gap in the roll.",
+                },
+                {
+                    "when": {"has_flag": "tally_closed"},
+                    "text": "The roll is shut for the day.",
+                },
+            ],
+            "exits": [{"to": "count.yard", "label": "Go to count yard"}],
+            "ground": [],
+            "actors": ["rhee"],
+        },
+        "count.loft": {
+            "region": "counting_house",
+            "name": "Tally Loft",
+            "situation": "Blank slates lean on a rack. Dust sits on the top edge.",
+            "exits": [{"to": "count.yard", "label": "Go to count yard"}],
+            "ground": ["tally_slate"],
+            "actors": [],
+        },
+        "count.vault": {
+            "region": "counting_house",
+            "name": "Count Vault",
+            "situation": "An iron door stands shut. Orm waits with a seal.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tally_closed"},
+                    "text": "The seal is set and the door is shut.",
+                }
+            ],
+            "exits": [{"to": "count.yard", "label": "Go to count yard"}],
+            "ground": [],
+            "actors": ["orm"],
         },
     }
 
@@ -1449,6 +1517,18 @@ def build() -> dict:
         "gell": {
             "name": "Gell",
             "idle": "He tests a shell and does not smile.",
+        },
+        "voss": {
+            "name": "Voss",
+            "idle": "He keeps a thumb on the open roll.",
+        },
+        "rhee": {
+            "name": "Rhee",
+            "idle": "She taps the quill and waits.",
+        },
+        "orm": {
+            "name": "Orm",
+            "idle": "He holds a seal and does not speak first.",
         },
     }
 
@@ -3973,6 +4053,124 @@ def build() -> dict:
             "Gell pays only for a cull that comes in even.",
             [{"op": "set_flag", "flag": "heard_oyster_rule"}],
         ),
+        action(
+            "know_the_shell_count",
+            "Know the shell count",
+            "talk",
+            {
+                "all": [
+                    {"at": "count.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "count_trust"},
+                ]
+            },
+            "You name the shell count. Voss lets you mark and seal.",
+            [
+                {"op": "set_flag", "flag": "count_trust"},
+                {"op": "remember", "actor": "voss", "fact": "shell"},
+            ],
+        ),
+        action(
+            "read_the_tally_roll",
+            "Read the tally roll",
+            "do",
+            {
+                "all": [
+                    {"at": "count.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "count_trust"},
+                ]
+            },
+            "You read the tally roll. Voss lets you mark and seal.",
+            [
+                {"op": "set_flag", "flag": "count_trust"},
+                {"op": "remember", "actor": "voss", "fact": "roll"},
+            ],
+        ),
+        action(
+            "lay_the_oyster_lot",
+            "Lay the oyster lot",
+            "do",
+            {
+                "all": [
+                    {"at": "count.desk"},
+                    {"has_flag": "oyster_culled"},
+                    {"not_flag": "oyster_laid"},
+                ]
+            },
+            "You lay the oyster lot. The roll takes the credit.",
+            [
+                {"op": "set_flag", "flag": "oyster_laid"},
+                {"op": "set_flag", "flag": "count_trust"},
+                {"op": "remember", "actor": "rhee", "fact": "lot"},
+            ],
+        ),
+        action(
+            "mark_the_tally",
+            "Mark the tally",
+            "do",
+            {
+                "all": [
+                    {"at": "count.desk"},
+                    {"has_flag": "count_trust"},
+                    {"has_item": "tally_slate"},
+                    {"not_flag": "tally_marked"},
+                    {"not_flag": "tally_closed"},
+                ]
+            },
+            "You mark the tally. Rhee nods at the even line.",
+            [
+                {"op": "remove_item", "item": "tally_slate"},
+                {"op": "set_flag", "flag": "tally_marked"},
+            ],
+        ),
+        action(
+            "seal_the_count",
+            "Seal the count",
+            "do",
+            {
+                "all": [
+                    {"at": "count.vault"},
+                    {"has_flag": "count_trust"},
+                    {"has_flag": "tally_marked"},
+                    {"not_flag": "tally_closed"},
+                ]
+            },
+            "You seal the count. Orm shuts the vault on the day.",
+            [
+                {"op": "set_flag", "flag": "tally_closed"},
+                {"op": "remember", "actor": "orm", "fact": "seal"},
+            ],
+        ),
+        action(
+            "ask_voss_rule",
+            "Ask Voss the rule",
+            "talk",
+            {"at": "count.yard"},
+            "Voss says mark the tally. Then seal the day.",
+            [{"op": "set_flag", "flag": "heard_count_rule"}],
+        ),
+        action(
+            "ask_rhee_roll",
+            "Ask Rhee the roll",
+            "talk",
+            {"at": "count.desk"},
+            "Rhee says the roll must close even.",
+            [{"op": "set_flag", "flag": "heard_count_rule"}],
+        ),
+        action(
+            "ask_orm_seal",
+            "Ask Orm the seal",
+            "talk",
+            {"at": "count.vault"},
+            "Orm seals only a tally that has been marked.",
+            [{"op": "set_flag", "flag": "heard_count_rule"}],
+        ),
     ]
 
     pack = {
@@ -4046,6 +4244,10 @@ def build() -> dict:
             "oyster_park": {
                 "name": "Oyster Park",
                 "mechanic": "spat-seed-cull",
+            },
+            "counting_house": {
+                "name": "Counting House",
+                "mechanic": "mark-tally-seal-day",
             },
         },
         "locations": locations,
@@ -4121,11 +4323,15 @@ def build() -> dict:
                 "name": "Oyster Culled",
                 "when": {"has_flag": "oyster_culled"},
             },
+            "tally_closed": {
+                "name": "Tally Closed",
+                "when": {"has_flag": "tally_closed"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0},
             "inventory": [],
             "flags": {},
         },

@@ -10,8 +10,8 @@
     "stoke_kiln",
     "fire_the_pact"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "ffd3422026ee3a1a0293ad5ff164e94decdb509910322a388c1e1ef807760b27",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "5a548dc6090001f7aca836131f52e388bf34b694c64592eac8aaf4937ca604e1",
   "id": "marsh_kiln_pact",
   "location": "mill.kiln",
   "outcome": "kiln_pact",

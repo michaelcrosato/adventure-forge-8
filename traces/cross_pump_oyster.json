@@ -20,8 +20,8 @@
     "go:oyster.yard",
     "go:oyster.beds"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "cd6c15e9760ff8e97eb4ede1f718973843f10387e5e9e43c15675b2ed588ce2f",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "5550e279473c5fd0b42f29cd4a02722c3cfbabc97344d0dbfb345e9475b55775",
   "id": "cross_pump_oyster",
   "location": "oyster.beds",
   "outcomes": [

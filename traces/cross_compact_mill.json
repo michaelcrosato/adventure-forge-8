@@ -14,8 +14,8 @@
     "go:mill.lane",
     "go:mill.yard"
   ],
-  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "0cfd3526b2a8dd8272c754196ac0a20881c822fe26015c27c227831ebe416337",
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "bff79ee4d04949f81c7722425a270a377d4d638cf8bca096124c94e30b1548e3",
   "id": "cross_compact_mill",
   "location": "mill.yard",
   "outcomes": [

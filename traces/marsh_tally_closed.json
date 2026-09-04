@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:count.path",
+    "go:count.yard",
+    "know_the_shell_count",
+    "go:count.loft",
+    "take:tally_slate",
+    "go:count.yard",
+    "go:count.desk",
+    "mark_the_tally",
+    "go:count.yard",
+    "go:count.vault",
+    "seal_the_count"
+  ],
+  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
+  "final_fingerprint": "2d585cf1f97c6e670f0834d828f91b490000d96cc2197cb88c92b381081dd05d",
+  "id": "marsh_tally_closed",
+  "location": "count.vault",
+  "outcome": "tally_closed",
+  "outcomes": [
+    "tally_closed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

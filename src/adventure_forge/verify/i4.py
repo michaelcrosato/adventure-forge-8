@@ -115,6 +115,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_oyster",
         "cross_plain_oyster",
         "cross_pump_oyster",
+        "marsh_tally_closed",
+        "divergence_marsh_count",
+        "divergence_city_count",
+        "cross_plain_count",
+        "cross_oyster_count",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -140,6 +145,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     ferry = replay(content, by_id["marsh_ferry_crossed"]["seed"], by_id["marsh_ferry_crossed"]["sheet"], by_id["marsh_ferry_crossed"]["actions"])
     pump = replay(content, by_id["marsh_flats_drained"]["seed"], by_id["marsh_flats_drained"]["sheet"], by_id["marsh_flats_drained"]["actions"])
     oyster = replay(content, by_id["marsh_oyster_culled"]["seed"], by_id["marsh_oyster_culled"]["sheet"], by_id["marsh_oyster_culled"]["actions"])
+    tally = replay(content, by_id["marsh_tally_closed"]["seed"], by_id["marsh_tally_closed"]["sheet"], by_id["marsh_tally_closed"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -174,7 +180,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("flats_drained predicate failed")
     if "oyster_culled" not in oyster.state.outcomes:
         raise AssertionError("oyster_culled predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint}) != 17:
+    if "tally_closed" not in tally.state.outcomes:
+        raise AssertionError("tally_closed predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint}) != 18:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -562,6 +570,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "flats_drained" not in pump_oyster.state.outcomes:
         raise AssertionError("cross pump-oyster run lost flats_drained")
 
+    count_m = by_id["divergence_marsh_count"]
+    count_c = by_id["divergence_city_count"]
+    count_m_ids, count_c_ids = _diverge_legal(content, count_m, count_c)
+    if "know_the_shell_count" not in count_m_ids:
+        raise AssertionError("marsh_scout missing know_the_shell_count")
+    if "read_the_tally_roll" not in count_c_ids:
+        raise AssertionError("city_oath missing read_the_tally_roll")
+    if "know_the_shell_count" in count_c_ids or "read_the_tally_roll" in count_m_ids:
+        raise AssertionError("count sheet verbs leaked across sheets")
+
+    plain_count = replay(content, by_id["cross_plain_count"]["seed"], by_id["cross_plain_count"]["sheet"], by_id["cross_plain_count"]["actions"])
+    oyster_count = replay(content, by_id["cross_oyster_count"]["seed"], by_id["cross_oyster_count"]["sheet"], by_id["cross_oyster_count"]["actions"])
+    if plain_count.state.location != oyster_count.state.location:
+        raise AssertionError("count cross-area pair left different locations")
+    if plain_count.state.location != "count.desk":
+        raise AssertionError("count cross-area pair not at count.desk")
+    plain_count_ids = {a.id for a in enumerate_legal(plain_count.state, content)}
+    oyster_count_ids = {a.id for a in enumerate_legal(oyster_count.state, content)}
+    if "lay_the_oyster_lot" not in oyster_count_ids:
+        raise AssertionError("oyster culled did not unlock lay_the_oyster_lot")
+    if "lay_the_oyster_lot" in plain_count_ids:
+        raise AssertionError("lay_the_oyster_lot leaked without oyster culled")
+    if "oyster_culled" not in oyster_count.state.outcomes:
+        raise AssertionError("cross oyster-count run lost oyster_culled")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -580,6 +613,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "ferry_crossed": ferry.fingerprint,
         "flats_drained": pump.fingerprint,
         "oyster_culled": oyster.fingerprint,
+        "tally_closed": tally.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -612,6 +646,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "pump_city_only": sorted(pump_c_ids - pump_m_ids),
         "oyster_marsh_only": sorted(oyster_m_ids - oyster_c_ids),
         "oyster_city_only": sorted(oyster_c_ids - oyster_m_ids),
+        "count_marsh_only": sorted(count_m_ids - count_c_ids),
+        "count_city_only": sorted(count_c_ids - count_m_ids),
     }
 
 
