@@ -1,0 +1,24 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:fold.lane",
+    "go:fold.green",
+    "know_the_soft_cut",
+    "go:fold.cut",
+    "cut_safe_peat",
+    "go:fold.green",
+    "go:fold.shed",
+    "set_the_share"
+  ],
+  "build_id": "eb38c651e5ffe71cc60ea049a1eaa162388793b748e6f552cad06fcab16a3aac",
+  "final_fingerprint": "7b2920dd1ff9302c325519f0d28fad9f1af8879ef0c11dddb106b96475bfdd03",
+  "id": "marsh_fold_held",
+  "location": "fold.shed",
+  "outcome": "fold_held",
+  "outcomes": [
+    "fold_held"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

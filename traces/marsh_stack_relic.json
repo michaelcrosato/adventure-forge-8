@@ -10,8 +10,8 @@
     "crawl_across",
     "take:ash_relic"
   ],
-  "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
-  "final_fingerprint": "aedaaa29cee290472e669f0165fa0f7f4c1f6542a501e5da1cd497f5f3f7a348",
+  "build_id": "eb38c651e5ffe71cc60ea049a1eaa162388793b748e6f552cad06fcab16a3aac",
+  "final_fingerprint": "eb65a9d2d828285a7cfc06dcceb285346a10efadc06707b31f6c5ff2da107d42",
   "id": "marsh_stack_relic",
   "location": "stacks.relic",
   "outcome": "stack_relic",

@@ -45,10 +45,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | name.hall | namehouse | Venn, speak vs copy, restore, living-name file |
 | name.crypt | namehouse | stolen bone name |
 | name.script | namehouse | Sarn, letters ink |
+| fold.lane | peat_fold | turf track, hamlet access |
+| fold.green | peat_fold | Brin, soft cut vs share board, restored-name kin |
+| fold.cut | peat_fold | Jase, safe brick vs deep flood |
+| fold.shed | peat_fold | Willa, peat share, fold_held |
+| fold.ditch | peat_fold | bail after a deep cut |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`
 
 ## Substrate
 

@@ -2,12 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:camp.gate"
+    "go:fold.lane",
+    "go:fold.green"
   ],
   "build_id": "eb38c651e5ffe71cc60ea049a1eaa162388793b748e6f552cad06fcab16a3aac",
-  "final_fingerprint": "1c8ab2bbe600980583b606c5dfe533a79eb6d8435331f9b323469113b9d069f6",
-  "id": "cross_plain_camp",
-  "location": "camp.gate",
+  "final_fingerprint": "600d01465db677fc3987cf6ece42703a46230fdf9f7adde2e627f8106d465d78",
+  "id": "divergence_marsh_fold",
+  "location": "fold.green",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

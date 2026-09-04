@@ -65,6 +65,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_name",
         "cross_plain_name",
         "cross_fever_name",
+        "marsh_fold_held",
+        "divergence_marsh_fold",
+        "divergence_city_fold",
+        "cross_plain_fold",
+        "cross_name_fold",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -80,6 +85,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     beacon = replay(content, by_id["marsh_road_beacon"]["seed"], by_id["marsh_road_beacon"]["sheet"], by_id["marsh_road_beacon"]["actions"])
     fever = replay(content, by_id["marsh_fever_broken"]["seed"], by_id["marsh_fever_broken"]["sheet"], by_id["marsh_fever_broken"]["actions"])
     named = replay(content, by_id["marsh_name_restored"]["seed"], by_id["marsh_name_restored"]["sheet"], by_id["marsh_name_restored"]["actions"])
+    fold = replay(content, by_id["marsh_fold_held"]["seed"], by_id["marsh_fold_held"]["sheet"], by_id["marsh_fold_held"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -94,7 +100,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("fever_broken predicate failed")
     if "name_restored" not in named.state.outcomes:
         raise AssertionError("name_restored predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint}) != 7:
+    if "fold_held" not in fold.state.outcomes:
+        raise AssertionError("fold_held predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint}) != 8:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -232,6 +240,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "fever_broken" not in fever_name.state.outcomes:
         raise AssertionError("cross fever-name run lost fever_broken")
 
+    fold_m = by_id["divergence_marsh_fold"]
+    fold_c = by_id["divergence_city_fold"]
+    fold_m_ids, fold_c_ids = _diverge_legal(content, fold_m, fold_c)
+    if "know_the_soft_cut" not in fold_m_ids:
+        raise AssertionError("marsh_scout missing know_the_soft_cut")
+    if "read_the_share_board" not in fold_c_ids:
+        raise AssertionError("city_oath missing read_the_share_board")
+    if "know_the_soft_cut" in fold_c_ids or "read_the_share_board" in fold_m_ids:
+        raise AssertionError("fold sheet verbs leaked across sheets")
+
+    plain_fold = replay(content, by_id["cross_plain_fold"]["seed"], by_id["cross_plain_fold"]["sheet"], by_id["cross_plain_fold"]["actions"])
+    name_fold = replay(content, by_id["cross_name_fold"]["seed"], by_id["cross_name_fold"]["sheet"], by_id["cross_name_fold"]["actions"])
+    if plain_fold.state.location != name_fold.state.location:
+        raise AssertionError("fold cross-area pair left different locations")
+    if plain_fold.state.location != "fold.green":
+        raise AssertionError("fold cross-area pair not at fold.green")
+    plain_fold_ids = {a.id for a in enumerate_legal(plain_fold.state, content)}
+    name_fold_ids = {a.id for a in enumerate_legal(name_fold.state, content)}
+    if "cite_the_restored_name" not in name_fold_ids:
+        raise AssertionError("name restored did not unlock cite_the_restored_name")
+    if "cite_the_restored_name" in plain_fold_ids:
+        raise AssertionError("cite_the_restored_name leaked without name restored")
+    if "name_restored" not in name_fold.state.outcomes:
+        raise AssertionError("cross name-fold run lost name_restored")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -240,6 +273,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "road_beacon": beacon.fingerprint,
         "fever_broken": fever.fingerprint,
         "name_restored": named.fingerprint,
+        "fold_held": fold.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -252,6 +286,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "camp_city_only": sorted(camp_c_ids - camp_m_ids),
         "name_marsh_only": sorted(name_m_ids - name_c_ids),
         "name_city_only": sorted(name_c_ids - name_m_ids),
+        "fold_marsh_only": sorted(fold_m_ids - fold_c_ids),
+        "fold_city_only": sorted(fold_c_ids - fold_m_ids),
     }
 
 

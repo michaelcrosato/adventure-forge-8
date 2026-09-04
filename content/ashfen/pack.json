@@ -2469,12 +2469,294 @@
       "when": {
         "at": "name.script"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "fold_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "brin",
+          "fact": "soft_cut",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_soft_cut",
+      "label": "Know the soft cut",
+      "text": "You name the soft seam. Brin lets you cut for the share.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.green"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "fold_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "fold_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "brin",
+          "fact": "board",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_share_board",
+      "label": "Read the share board",
+      "text": "You read the share board. Brin lets you cut by the list.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.green"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "fold_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "fold_cited_name",
+          "op": "set_flag"
+        },
+        {
+          "flag": "fold_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "brin",
+          "fact": "named_kin",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "cite_the_restored_name",
+      "label": "Cite the restored name",
+      "text": "You cite the restored name. Brin counts you as kin of the fold.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.green"
+          },
+          {
+            "has_flag": "name_restored"
+          },
+          {
+            "not_flag": "fold_cited_name"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "peat_brick",
+          "op": "add_item"
+        }
+      ],
+      "group": "do",
+      "id": "cut_safe_peat",
+      "label": "Cut a safe brick",
+      "text": "You cut a shallow brick. The face holds.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.cut"
+          },
+          {
+            "has_flag": "fold_trust"
+          },
+          {
+            "not_flag": "fold_flooded"
+          },
+          {
+            "not": {
+              "has_item": "peat_brick"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "fold_flooded",
+          "op": "set_flag"
+        },
+        {
+          "item": "peat_brick",
+          "op": "add_item"
+        }
+      ],
+      "group": "do",
+      "id": "force_a_deep_cut",
+      "label": "Force a deep cut",
+      "text": "You force a deep cut. Water fills the toe.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.cut"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          },
+          {
+            "not_flag": "fold_flooded"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "peat_brick",
+          "op": "remove_item"
+        },
+        {
+          "flag": "fold_held",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "set_the_share",
+      "label": "Set the peat share",
+      "text": "You set the brick on the board. Willa marks the share even.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.shed"
+          },
+          {
+            "has_item": "peat_brick"
+          },
+          {
+            "has_flag": "fold_trust"
+          },
+          {
+            "not_flag": "fold_held"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ditch_bailed",
+          "op": "set_flag"
+        },
+        {
+          "flag": "fold_flooded",
+          "op": "clear_flag"
+        }
+      ],
+      "group": "do",
+      "id": "bail_the_ditch",
+      "label": "Bail the ditch",
+      "text": "You bail the ditch. The cut face shows again.",
+      "when": {
+        "all": [
+          {
+            "at": "fold.ditch"
+          },
+          {
+            "has_flag": "fold_flooded"
+          },
+          {
+            "not_flag": "ditch_bailed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_fold_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_brin_rule",
+      "label": "Ask Brin the rule",
+      "text": "Brin says cut shallow. Then the brick goes on the board.",
+      "when": {
+        "at": "fold.green"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_fold_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_jase_face",
+      "label": "Ask Jase the face",
+      "text": "Jase says a deep cut drinks the ditch.",
+      "when": {
+        "at": "fold.cut"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_fold_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_willa_count",
+      "label": "Ask Willa the count",
+      "text": "Willa says a brick on the board holds the fold.",
+      "when": {
+        "at": "fold.shed"
+      }
     }
   ],
   "actors": {
     "bailiff": {
       "idle": "He holds a staff across the gate.",
       "name": "Bailiff Kesh"
+    },
+    "brin": {
+      "idle": "She keeps a thumb on the share list.",
+      "name": "Headwoman Brin"
     },
     "cal": {
       "idle": "She keeps one hand on the unlit lamp.",
@@ -2495,6 +2777,10 @@
     "innkeep": {
       "idle": "He wipes a cup and watches the door.",
       "name": "Innkeep"
+    },
+    "jase": {
+      "idle": "He tests the peat face with a spade.",
+      "name": "Jase"
     },
     "joss": {
       "idle": "She stands between the well and the cots.",
@@ -2552,6 +2838,10 @@
       "idle": "She keeps a finger on the ledger.",
       "name": "Watch sergeant"
     },
+    "willa": {
+      "idle": "She counts bricks and does not stack uneven.",
+      "name": "Willa"
+    },
     "wounded_runner": {
       "idle": "She sits on the shell track and binds a knee.",
       "name": "Wounded runner"
@@ -2586,6 +2876,10 @@
     "grain_sack": {
       "kind": "goods",
       "name": "grain sack"
+    },
+    "peat_brick": {
+      "kind": "goods",
+      "name": "peat brick"
     },
     "salvage_000": {
       "kind": "salvage",
@@ -3021,6 +3315,10 @@
         {
           "label": "Go to namehouse",
           "to": "name.path"
+        },
+        {
+          "label": "Go to peat fold",
+          "to": "fold.lane"
         }
       ],
       "ground": [],
@@ -3260,6 +3558,119 @@
       "region": "reed_court",
       "situation": "Wet flags hold a quiet crowd. Reeds hiss along the wall."
     },
+    "fold.cut": {
+      "actors": [
+        "jase"
+      ],
+      "exits": [
+        {
+          "label": "Go to the green",
+          "to": "fold.green"
+        }
+      ],
+      "ground": [],
+      "name": "Peat Cut",
+      "region": "peat_fold",
+      "situation": "A black face of peat. Water seeps at the toe.",
+      "situation_if": [
+        {
+          "text": "The cut stands in water.",
+          "when": {
+            "has_flag": "fold_flooded"
+          }
+        }
+      ]
+    },
+    "fold.ditch": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to the green",
+          "to": "fold.green"
+        }
+      ],
+      "ground": [],
+      "name": "Fold Ditch",
+      "region": "peat_fold",
+      "situation": "A narrow ditch takes the seepage. Reeds clog the mouth."
+    },
+    "fold.green": {
+      "actors": [
+        "brin"
+      ],
+      "exits": [
+        {
+          "label": "Go to fold lane",
+          "to": "fold.lane"
+        },
+        {
+          "label": "Go to the cut",
+          "to": "fold.cut"
+        },
+        {
+          "label": "Go to the shed",
+          "to": "fold.shed"
+        },
+        {
+          "label": "Go to the ditch",
+          "to": "fold.ditch"
+        }
+      ],
+      "ground": [],
+      "name": "Fold Green",
+      "region": "peat_fold",
+      "situation": "A wet common holds a share board. Brin stands by the list.",
+      "situation_if": [
+        {
+          "text": "Brin has heard a fold name come home.",
+          "when": {
+            "has_flag": "name_restored"
+          }
+        },
+        {
+          "text": "The share board is marked even.",
+          "when": {
+            "has_flag": "fold_held"
+          }
+        }
+      ]
+    },
+    "fold.lane": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to namehouse",
+          "to": "name.path"
+        },
+        {
+          "label": "Go to the green",
+          "to": "fold.green"
+        }
+      ],
+      "ground": [],
+      "name": "Fold Lane",
+      "region": "peat_fold",
+      "situation": "Black turf banks the track. Smoke from a peat fire hangs low."
+    },
+    "fold.shed": {
+      "actors": [
+        "willa"
+      ],
+      "exits": [
+        {
+          "label": "Go to the green",
+          "to": "fold.green"
+        }
+      ],
+      "ground": [],
+      "name": "Share Shed",
+      "region": "peat_fold",
+      "situation": "Dry bricks stack by a chalk board. Willa counts in pairs."
+    },
     "mill.kiln": {
       "actors": [
         "pell"
@@ -3448,6 +3859,10 @@
         {
           "label": "Go to name yard",
           "to": "name.yard"
+        },
+        {
+          "label": "Go to peat fold",
+          "to": "fold.lane"
         }
       ],
       "ground": [],
@@ -3991,6 +4406,12 @@
         "has_flag": "fever_broken"
       }
     },
+    "fold_held": {
+      "name": "Fold Held",
+      "when": {
+        "has_flag": "fold_held"
+      }
+    },
     "harbor_compact": {
       "name": "Harbor Compact",
       "when": {
@@ -4049,6 +4470,10 @@
       "mechanic": "names-rites-memory",
       "name": "Namehouse"
     },
+    "peat_fold": {
+      "mechanic": "peat-cut-share",
+      "name": "Peat Fold"
+    },
     "reed_court": {
       "mechanic": "law-witness-sentence",
       "name": "Reed Court"
@@ -4085,6 +4510,7 @@
       "camp": 0,
       "court": 0,
       "dockers": 0,
+      "fold": 0,
       "millers": 0,
       "names": 0,
       "road": 0,

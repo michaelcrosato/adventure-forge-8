@@ -78,6 +78,7 @@ def build() -> dict:
         "brass_key": {"name": "brass key", "kind": "key"},
         "grain_sack": {"name": "grain sack", "kind": "goods"},
         "bone_name": {"name": "bone name", "kind": "rite"},
+        "peat_brick": {"name": "peat brick", "kind": "goods"},
         **salvage_items,
     }
 
@@ -193,6 +194,7 @@ def build() -> dict:
                 {"to": "road.ford", "label": "Go to drowned road"},
                 {"to": "camp.gate", "label": "Go to fever camp"},
                 {"to": "name.path", "label": "Go to namehouse"},
+                {"to": "fold.lane", "label": "Go to peat fold"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -537,6 +539,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "camp.gate", "label": "Go to fever camp"},
                 {"to": "name.yard", "label": "Go to name yard"},
+                {"to": "fold.lane", "label": "Go to peat fold"},
             ],
             "ground": [],
             "actors": [],
@@ -587,6 +590,71 @@ def build() -> dict:
             "exits": [{"to": "name.yard", "label": "Go to name yard"}],
             "ground": [],
             "actors": ["sarn"],
+        },
+        "fold.lane": {
+            "region": "peat_fold",
+            "name": "Fold Lane",
+            "situation": "Black turf banks the track. Smoke from a peat fire hangs low.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "name.path", "label": "Go to namehouse"},
+                {"to": "fold.green", "label": "Go to the green"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "fold.green": {
+            "region": "peat_fold",
+            "name": "Fold Green",
+            "situation": "A wet common holds a share board. Brin stands by the list.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "name_restored"},
+                    "text": "Brin has heard a fold name come home.",
+                },
+                {
+                    "when": {"has_flag": "fold_held"},
+                    "text": "The share board is marked even.",
+                },
+            ],
+            "exits": [
+                {"to": "fold.lane", "label": "Go to fold lane"},
+                {"to": "fold.cut", "label": "Go to the cut"},
+                {"to": "fold.shed", "label": "Go to the shed"},
+                {"to": "fold.ditch", "label": "Go to the ditch"},
+            ],
+            "ground": [],
+            "actors": ["brin"],
+        },
+        "fold.cut": {
+            "region": "peat_fold",
+            "name": "Peat Cut",
+            "situation": "A black face of peat. Water seeps at the toe.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fold_flooded"},
+                    "text": "The cut stands in water.",
+                }
+            ],
+            "exits": [{"to": "fold.green", "label": "Go to the green"}],
+            "ground": [],
+            "actors": ["jase"],
+        },
+        "fold.shed": {
+            "region": "peat_fold",
+            "name": "Share Shed",
+            "situation": "Dry bricks stack by a chalk board. Willa counts in pairs.",
+            "exits": [{"to": "fold.green", "label": "Go to the green"}],
+            "ground": [],
+            "actors": ["willa"],
+        },
+        "fold.ditch": {
+            "region": "peat_fold",
+            "name": "Fold Ditch",
+            "situation": "A narrow ditch takes the seepage. Reeds clog the mouth.",
+            "exits": [{"to": "fold.green", "label": "Go to the green"}],
+            "ground": [],
+            "actors": [],
         },
     }
 
@@ -674,6 +742,18 @@ def build() -> dict:
         "sarn": {
             "name": "Sarn",
             "idle": "He scrapes a bone strip for ink.",
+        },
+        "brin": {
+            "name": "Headwoman Brin",
+            "idle": "She keeps a thumb on the share list.",
+        },
+        "jase": {
+            "name": "Jase",
+            "idle": "He tests the peat face with a spade.",
+        },
+        "willa": {
+            "name": "Willa",
+            "idle": "She counts bricks and does not stack uneven.",
         },
     }
 
@@ -1935,6 +2015,154 @@ def build() -> dict:
             "Sarn says letters can copy a name the mouth cannot hold.",
             [{"op": "set_flag", "flag": "heard_name_rule"}],
         ),
+        action(
+            "know_the_soft_cut",
+            "Know the soft cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "fold.green"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "fold_trust"},
+                ]
+            },
+            "You name the soft seam. Brin lets you cut for the share.",
+            [
+                {"op": "set_flag", "flag": "fold_trust"},
+                {"op": "remember", "actor": "brin", "fact": "soft_cut"},
+            ],
+        ),
+        action(
+            "read_the_share_board",
+            "Read the share board",
+            "do",
+            {
+                "all": [
+                    {"at": "fold.green"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "fold_trust"},
+                ]
+            },
+            "You read the share board. Brin lets you cut by the list.",
+            [
+                {"op": "set_flag", "flag": "fold_trust"},
+                {"op": "remember", "actor": "brin", "fact": "board"},
+            ],
+        ),
+        action(
+            "cite_the_restored_name",
+            "Cite the restored name",
+            "talk",
+            {
+                "all": [
+                    {"at": "fold.green"},
+                    {"has_flag": "name_restored"},
+                    {"not_flag": "fold_cited_name"},
+                ]
+            },
+            "You cite the restored name. Brin counts you as kin of the fold.",
+            [
+                {"op": "set_flag", "flag": "fold_cited_name"},
+                {"op": "set_flag", "flag": "fold_trust"},
+                {"op": "remember", "actor": "brin", "fact": "named_kin"},
+            ],
+        ),
+        action(
+            "cut_safe_peat",
+            "Cut a safe brick",
+            "do",
+            {
+                "all": [
+                    {"at": "fold.cut"},
+                    {"has_flag": "fold_trust"},
+                    {"not_flag": "fold_flooded"},
+                    {"not": {"has_item": "peat_brick"}},
+                ]
+            },
+            "You cut a shallow brick. The face holds.",
+            [{"op": "add_item", "item": "peat_brick"}],
+        ),
+        action(
+            "force_a_deep_cut",
+            "Force a deep cut",
+            "do",
+            {
+                "all": [
+                    {"at": "fold.cut"},
+                    {"sheet": ["body", "might"]},
+                    {"not_flag": "fold_flooded"},
+                ]
+            },
+            "You force a deep cut. Water fills the toe.",
+            [
+                {"op": "set_flag", "flag": "fold_flooded"},
+                {"op": "add_item", "item": "peat_brick"},
+            ],
+        ),
+        action(
+            "set_the_share",
+            "Set the peat share",
+            "talk",
+            {
+                "all": [
+                    {"at": "fold.shed"},
+                    {"has_item": "peat_brick"},
+                    {"has_flag": "fold_trust"},
+                    {"not_flag": "fold_held"},
+                ]
+            },
+            "You set the brick on the board. Willa marks the share even.",
+            [
+                {"op": "remove_item", "item": "peat_brick"},
+                {"op": "set_flag", "flag": "fold_held"},
+            ],
+        ),
+        action(
+            "bail_the_ditch",
+            "Bail the ditch",
+            "do",
+            {
+                "all": [
+                    {"at": "fold.ditch"},
+                    {"has_flag": "fold_flooded"},
+                    {"not_flag": "ditch_bailed"},
+                ]
+            },
+            "You bail the ditch. The cut face shows again.",
+            [
+                {"op": "set_flag", "flag": "ditch_bailed"},
+                {"op": "clear_flag", "flag": "fold_flooded"},
+            ],
+        ),
+        action(
+            "ask_brin_rule",
+            "Ask Brin the rule",
+            "talk",
+            {"at": "fold.green"},
+            "Brin says cut shallow. Then the brick goes on the board.",
+            [{"op": "set_flag", "flag": "heard_fold_rule"}],
+        ),
+        action(
+            "ask_jase_face",
+            "Ask Jase the face",
+            "talk",
+            {"at": "fold.cut"},
+            "Jase says a deep cut drinks the ditch.",
+            [{"op": "set_flag", "flag": "heard_fold_rule"}],
+        ),
+        action(
+            "ask_willa_count",
+            "Ask Willa the count",
+            "talk",
+            {"at": "fold.shed"},
+            "Willa says a brick on the board holds the fold.",
+            [{"op": "set_flag", "flag": "heard_fold_rule"}],
+        ),
     ]
 
     pack = {
@@ -1968,6 +2196,10 @@ def build() -> dict:
             "namehouse": {
                 "name": "Namehouse",
                 "mechanic": "names-rites-memory",
+            },
+            "peat_fold": {
+                "name": "Peat Fold",
+                "mechanic": "peat-cut-share",
             },
         },
         "locations": locations,
@@ -2003,11 +2235,15 @@ def build() -> dict:
                 "name": "Name Restored",
                 "when": {"has_flag": "name_restored"},
             },
+            "fold_held": {
+                "name": "Fold Held",
+                "when": {"has_flag": "fold_held"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0},
             "inventory": [],
             "flags": {},
         },
