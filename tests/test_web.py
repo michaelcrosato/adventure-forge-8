@@ -50,6 +50,8 @@ class WebEntrypointTests(unittest.TestCase):
     def test_unsupported_method(self) -> None:
         messages = request("/health", "POST")
         self.assertEqual(messages[0]["status"], 405)
+        headers = dict(messages[0]["headers"])
+        self.assertEqual(headers[b"allow"], b"GET, HEAD")
 
 
 if __name__ == "__main__":

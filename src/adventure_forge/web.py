@@ -27,12 +27,15 @@ async def _send_response(
     body: bytes,
     content_type: bytes,
     include_body: bool = True,
+    extra_headers: list[tuple[bytes, bytes]] | None = None,
 ) -> None:
     headers = [
         (b"content-type", content_type),
         (b"content-length", str(len(body)).encode("ascii")),
         (b"cache-control", b"no-store"),
     ]
+    if extra_headers:
+        headers.extend(extra_headers)
     await send({"type": "http.response.start", "status": status, "headers": headers})
     await send({"type": "http.response.body", "body": body if include_body else b""})
 
@@ -47,7 +50,7 @@ async def app(scope: dict[str, Any], receive: Callable[..., Awaitable[Any]], sen
             elif message["type"] == "lifespan.shutdown":
                 await send({"type": "lifespan.shutdown.complete"})
                 return
-        
+
     if scope["type"] != "http":
         return
 
@@ -61,6 +64,7 @@ async def app(scope: dict[str, Any], receive: Callable[..., Awaitable[Any]], sen
             status=405,
             body=_json_response({"error": "method_not_allowed"}),
             content_type=b"application/json; charset=utf-8",
+            extra_headers=[(b"allow", b"GET, HEAD")],
         )
         return
 
