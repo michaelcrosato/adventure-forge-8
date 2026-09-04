@@ -205,6 +205,7 @@ Large legal set: Saltfen salvage yard, 100+ programmed take-actions, no engine c
 Surfaces:
 
 - Player: `python -m adventure_forge play` (plain language, mapper-or-no-op).
+- Web: Vercel `/` and `/play` wrap the same `PlaySession` (not a second physics).
 - Builder: repository + `verify`.
 - Bar: `python -m adventure_forge verify` (also `scripts/verify`).
 
@@ -262,6 +263,6 @@ Play does not read traces as solutions except when a builder explicitly asks it 
 
 - Copying Skyrim or Baldur’s Gate 3 plots, factions, IP, 3D, shouts, or Larian combat.
 - Play-time LLM improvisation of rooms, rulings, or outcomes.
-- A GUI (CLI is enough).
+- A 3D or Larian GUI. A thin Vercel HTTP adapter of the CLI player is in scope.
 - Treating commit count, test count, or agent volume as success.
 - Keeping the four original briefs as live law.

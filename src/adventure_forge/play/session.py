@@ -104,25 +104,56 @@ class PlaySession:
             return TurnResult(obs, False, action_id, False, "That does nothing.")
         return TurnResult(obs, True, action_id, False, obs.text)
 
-    def save(self, path: Path) -> None:
-        payload = {
+    def dump(self, *, compact: bool = False) -> dict:
+        """Serializable player session. Compact form is seed + accepted ids for HTTP."""
+        if compact:
+            return {
+                "build_id": self.content.build_id,
+                "seed": self.cursor.seed,
+                "sheet": dict(self.state.sheet),
+                "actions": list(self.history),
+                "page": int(self.page),
+                "group": self.group,
+            }
+        return {
             "build_id": self.content.build_id,
             "seed": self.cursor.seed,
             "cursor": self.cursor.to_dict(),
-            "sheet": self.state.sheet,
+            "sheet": dict(self.state.sheet),
             "actions": list(self.history),
             "state": self.state.to_dict(),
             "fingerprint": self.fingerprint(),
+            "page": int(self.page),
+            "group": self.group,
         }
-        path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+    @classmethod
+    def from_dump(cls, content: Content, payload: dict) -> PlaySession:
+        if payload.get("build_id") != content.build_id:
+            raise ValueError("save build does not match current pack")
+        if "state" in payload and "cursor" in payload:
+            state = GameState.from_dict(payload["state"])
+            cursor = SeedCursor.from_dict(payload["cursor"])
+            session = cls(content, state, cursor)
+            session.history = list(payload.get("actions", []))
+            session.page = int(payload.get("page", 0))
+            group = payload.get("group")
+            session.group = None if group in {None, ""} else str(group)
+            return session
+        sheet = payload.get("sheet") or "marsh_scout"
+        session = cls.start(content, int(payload.get("seed", 1)), sheet)
+        for action_id in payload.get("actions", []):
+            result = session._step(str(action_id))
+            if not result.accepted:
+                raise ValueError("session replay rejected")
+        session.page = int(payload.get("page", 0))
+        group = payload.get("group")
+        session.group = None if group in {None, ""} else str(group)
+        return session
+
+    def save(self, path: Path) -> None:
+        path.write_text(json.dumps(self.dump(), indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     @classmethod
     def load(cls, content: Content, path: Path) -> PlaySession:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        if payload.get("build_id") != content.build_id:
-            raise ValueError("save build does not match current pack")
-        state = GameState.from_dict(payload["state"])
-        cursor = SeedCursor.from_dict(payload["cursor"])
-        session = cls(content, state, cursor)
-        session.history = list(payload.get("actions", []))
-        return session
+        return cls.from_dump(content, json.loads(path.read_text(encoding="utf-8")))

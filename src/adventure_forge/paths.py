@@ -3,10 +3,10 @@ from pathlib import Path
 
 def repo_root() -> Path:
     here = Path(__file__).resolve()
-    for parent in here.parents:
-        if (parent / "PLAN.md").is_file() and (parent / "content").is_dir():
+    for parent in [here, *here.parents, Path.cwd()]:
+        if (parent / "content" / "ashfen" / "pack.json").is_file():
             return parent
-    raise RuntimeError("cannot locate repo root (PLAN.md + content/)")
+    raise RuntimeError("cannot locate repo root (content/ashfen/pack.json)")
 
 
 def pack_path() -> Path:

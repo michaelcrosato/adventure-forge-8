@@ -8,7 +8,10 @@ from adventure_forge.paths import repo_root
 def check_firewall() -> None:
     play_dir = repo_root() / "src" / "adventure_forge" / "play"
     banned = ("orchestrator", "verify.runner", "verify.i4", "traces_dir")
-    for path in play_dir.glob("*.py"):
+    paths = list(play_dir.glob("*.py"))
+    paths.append(repo_root() / "src" / "adventure_forge" / "web.py")
+    paths.append(repo_root() / "app.py")
+    for path in paths:
         text = path.read_text(encoding="utf-8")
         for token in banned:
             if token in text:
