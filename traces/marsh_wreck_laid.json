@@ -14,8 +14,8 @@
     "go:wreck.altar",
     "lay_the_token"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "7075ba9464ce56da5bc644b409f44f5b56c8fe71267f2963a49ae0d5024347fc",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "f3496bc3f19e88dc77b550694c1f5d6966f17b5acdcf1087054e66ba52b4f41b",
   "id": "marsh_wreck_laid",
   "location": "wreck.altar",
   "outcome": "wreck_laid",

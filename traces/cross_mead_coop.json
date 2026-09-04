@@ -12,13 +12,17 @@
     "take:cask_bung",
     "go:mead.yard",
     "go:mead.tap",
-    "tap_the_cask"
+    "tap_the_cask",
+    "go:mead.yard",
+    "go:mead.path",
+    "go:coop.path",
+    "go:coop.yard",
+    "go:coop.hoop"
   ],
   "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "912eb2a2f88498f020cd478fc2ac1d27437f4c01ace88154ebe89776b0575285",
-  "id": "marsh_mead_drawn",
-  "location": "mead.tap",
-  "outcome": "mead_drawn",
+  "final_fingerprint": "57eb0316f5aac67ae49044b6c20edeb5c1fff93173fa2b4241a2ed765403d756",
+  "id": "cross_mead_coop",
+  "location": "coop.hoop",
   "outcomes": [
     "mead_drawn"
   ],

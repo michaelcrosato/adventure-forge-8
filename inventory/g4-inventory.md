@@ -120,10 +120,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | mead.mash | mead_house | Mal, mash must, hive pitch |
 | mead.crock | mead_house | cask bung |
 | mead.tap | mead_house | Sera, tap cask, mead_drawn |
+| coop.path | cooperage | wet staves on the bank, cooper access |
+| coop.yard | cooperage | Jute, stave soak vs hoop mark |
+| coop.soak | cooperage | Corm, soak stave |
+| coop.hoop | cooperage | stave set, mead-cask mark |
+| coop.raise | cooperage | Bess, raise barrel, barrel_raised |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`, `mead_drawn`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`, `mead_drawn`, `barrel_raised`
 
 ## Substrate
 

@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:road.ford",
-    "go:road.dike",
-    "go:road.hut"
+    "go:coop.path",
+    "go:coop.yard",
+    "go:coop.hoop"
   ],
   "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "cc6c0460fe38e1cd91246cfb314397754d6a61c8692990a575e9ea53b1d35444",
-  "id": "divergence_marsh_road",
-  "location": "road.hut",
+  "final_fingerprint": "72ab163260327e54b549c1ba807b99e8683ca29666225e84adfee733cd740057",
+  "id": "cross_plain_coop",
+  "location": "coop.hoop",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

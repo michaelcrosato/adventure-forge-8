@@ -15,8 +15,8 @@
     "go:court.yard",
     "go:court.hall"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "3f7f15f505bd7b2c94ca9a1bc750f35f72fd6345135acd88b27532fae181cee9",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "c48d88fe5d98f67b6938db7eff627ec331a7188a6bd5e249f2bb760963b1de6c",
   "id": "cross_kiln_court",
   "location": "court.hall",
   "outcomes": [

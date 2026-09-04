@@ -5,8 +5,8 @@
     "go:hive.path",
     "go:hive.yard"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "cefd82f17b1aed40c4bf8b20bd913a57ec5186a2d5ab70726006f77b230b9c8c",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "7fe7dd561bda56a8304dd569b8b7ca7bc585a45356b2127a3494de0229d904d4",
   "id": "divergence_marsh_hive",
   "location": "hive.yard",
   "outcomes": [],

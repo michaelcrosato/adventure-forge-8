@@ -5972,6 +5972,229 @@
       "when": {
         "at": "mead.tap"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "coop_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "jute",
+          "fact": "soak",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_stave_soak",
+      "label": "Know the stave soak",
+      "text": "You name the stave soak. Jute lets you soak and raise.",
+      "when": {
+        "all": [
+          {
+            "at": "coop.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "coop_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "coop_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "jute",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_hoop_mark",
+      "label": "Read the hoop mark",
+      "text": "You read the hoop mark. Jute lets you soak and raise.",
+      "when": {
+        "all": [
+          {
+            "at": "coop.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "coop_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "coop_marked",
+          "op": "set_flag"
+        },
+        {
+          "flag": "coop_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "corm",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "mark_the_mead_cask",
+      "label": "Mark the mead cask",
+      "text": "You mark the mead cask. The hoop takes the drawn size.",
+      "when": {
+        "all": [
+          {
+            "at": "coop.hoop"
+          },
+          {
+            "has_flag": "mead_drawn"
+          },
+          {
+            "not_flag": "coop_marked"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "coop_soaked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "soak_the_stave",
+      "label": "Soak the stave",
+      "text": "You soak the stave. The wood takes the water.",
+      "when": {
+        "all": [
+          {
+            "at": "coop.soak"
+          },
+          {
+            "has_flag": "coop_trust"
+          },
+          {
+            "not_flag": "coop_soaked"
+          },
+          {
+            "not_flag": "barrel_raised"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "stave_set",
+          "op": "remove_item"
+        },
+        {
+          "flag": "barrel_raised",
+          "op": "set_flag"
+        },
+        {
+          "actor": "bess",
+          "fact": "raise",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "raise_the_barrel",
+      "label": "Raise the barrel",
+      "text": "You raise the barrel. Bess marks the hoop set.",
+      "when": {
+        "all": [
+          {
+            "at": "coop.raise"
+          },
+          {
+            "has_flag": "coop_trust"
+          },
+          {
+            "has_flag": "coop_soaked"
+          },
+          {
+            "has_item": "stave_set"
+          },
+          {
+            "not_flag": "barrel_raised"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_coop_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_jute_rule",
+      "label": "Ask Jute the rule",
+      "text": "Jute says soak the stave. Then hoop and raise.",
+      "when": {
+        "at": "coop.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_coop_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_corm_soak",
+      "label": "Ask Corm the soak",
+      "text": "Corm says soak until the stave bends.",
+      "when": {
+        "at": "coop.soak"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_coop_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_bess_raise",
+      "label": "Ask Bess the raise",
+      "text": "Bess raises only a soaked stave.",
+      "when": {
+        "at": "coop.raise"
+      }
     }
   ],
   "actors": {
@@ -5986,6 +6209,10 @@
     "bea": {
       "idle": "She feeds chips to the hearth and watches the haze.",
       "name": "Bea"
+    },
+    "bess": {
+      "idle": "He keeps the raise frame and does not look up.",
+      "name": "Bess"
     },
     "bex": {
       "idle": "He keeps a token box shut and waits.",
@@ -6006,6 +6233,10 @@
     "cess": {
       "idle": "She mends a mouth of wicker and waits.",
       "name": "Cess"
+    },
+    "corm": {
+      "idle": "She turns the soak and waits.",
+      "name": "Corm"
     },
     "dock_boss": {
       "idle": "He counts barrels and does not look up.",
@@ -6062,6 +6293,10 @@
     "joss": {
       "idle": "She stands between the well and the cots.",
       "name": "Nurse Joss"
+    },
+    "jute": {
+      "idle": "He tests a stave and does not speak first.",
+      "name": "Jute"
     },
     "kade": {
       "idle": "She watches the silt and does not wade yet.",
@@ -6722,6 +6957,10 @@
       "kind": "goods",
       "name": "spat bag"
     },
+    "stave_set": {
+      "kind": "goods",
+      "name": "stave set"
+    },
     "tally_slate": {
       "kind": "key",
       "name": "tally slate"
@@ -6840,6 +7079,10 @@
         {
           "label": "Go to mead house",
           "to": "mead.path"
+        },
+        {
+          "label": "Go to cooperage",
+          "to": "coop.path"
         }
       ],
       "ground": [],
@@ -6963,6 +7206,113 @@
       "name": "Camp Yard",
       "region": "fever_camp",
       "situation": "Pallets sit in two rows. Joss keeps the sick from the well."
+    },
+    "coop.hoop": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to cooper yard",
+          "to": "coop.yard"
+        }
+      ],
+      "ground": [
+        "stave_set"
+      ],
+      "name": "Hoop Pegs",
+      "region": "cooperage",
+      "situation": "Iron hoops sit on a peg. A stave set lies ready.",
+      "situation_if": [
+        {
+          "text": "True mead would mark this hoop.",
+          "when": {
+            "has_flag": "mead_drawn"
+          }
+        },
+        {
+          "text": "The hoop sits still and even.",
+          "when": {
+            "has_flag": "barrel_raised"
+          }
+        }
+      ]
+    },
+    "coop.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to mead house",
+          "to": "mead.path"
+        },
+        {
+          "label": "Go to cooper yard",
+          "to": "coop.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Cooper Path",
+      "region": "cooperage",
+      "situation": "A cooper yard sits on the bank. Wet staves lean in a row."
+    },
+    "coop.raise": {
+      "actors": [
+        "bess"
+      ],
+      "exits": [
+        {
+          "label": "Go to cooper yard",
+          "to": "coop.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Raise Frame",
+      "region": "cooperage",
+      "situation": "Bess waits by a barrel form. The raise frame is set."
+    },
+    "coop.soak": {
+      "actors": [
+        "corm"
+      ],
+      "exits": [
+        {
+          "label": "Go to cooper yard",
+          "to": "coop.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Soak Trough",
+      "region": "cooperage",
+      "situation": "Corm keeps a soak trough. Staves lie in the water."
+    },
+    "coop.yard": {
+      "actors": [
+        "jute"
+      ],
+      "exits": [
+        {
+          "label": "Go to cooper path",
+          "to": "coop.path"
+        },
+        {
+          "label": "Go to the soak",
+          "to": "coop.soak"
+        },
+        {
+          "label": "Go to the hoop",
+          "to": "coop.hoop"
+        },
+        {
+          "label": "Go to the raise",
+          "to": "coop.raise"
+        }
+      ],
+      "ground": [],
+      "name": "Cooper Yard",
+      "region": "cooperage",
+      "situation": "Jute waits by a hoop mark. The soak smell is sharp."
     },
     "count.desk": {
       "actors": [
@@ -7939,6 +8289,10 @@
         {
           "label": "Go to mead yard",
           "to": "mead.yard"
+        },
+        {
+          "label": "Go to cooperage",
+          "to": "coop.path"
         }
       ],
       "ground": [],
@@ -9500,6 +9854,12 @@
     }
   },
   "outcomes": {
+    "barrel_raised": {
+      "name": "Barrel Raised",
+      "when": {
+        "has_flag": "barrel_raised"
+      }
+    },
     "dye_struck": {
       "name": "Dye Struck",
       "when": {
@@ -9638,6 +9998,10 @@
       "mechanic": "smoke-hive-set-skep",
       "name": "Bee Skeps"
     },
+    "cooperage": {
+      "mechanic": "soak-stave-raise-barrel",
+      "name": "Cooperage"
+    },
     "counting_house": {
       "mechanic": "mark-tally-seal-day",
       "name": "Counting House"
@@ -9748,6 +10112,7 @@
     "location": "saltfen.dock",
     "rep": {
       "camp": 0,
+      "coop": 0,
       "count": 0,
       "court": 0,
       "dockers": 0,

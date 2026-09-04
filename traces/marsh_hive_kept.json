@@ -14,8 +14,8 @@
     "go:hive.shed",
     "set_the_skep"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "3b405e02e2e7fad9dfc420766ba8c6b718ee87c5dde26eff5988dbc594ecb2a7",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "d8da8d1e91489642b6d95f53fd85f397a01d3c97877758ceb8cb6097fa4ffe06",
   "id": "marsh_hive_kept",
   "location": "hive.shed",
   "outcome": "hive_kept",

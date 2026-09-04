@@ -166,6 +166,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Wreck Chapel | Wash drowned token, lay on altar | Ruin |
 | Bee Skeps | Smoke hive, take comb, set skep | Hamlet |
 | Mead House | Mash must, bung, tap cask | Hamlet |
+| Cooperage | Soak stave, hoop, raise barrel | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -193,6 +194,7 @@ Authored outcomes:
 20. `wreck_laid` — a drowned token is washed and laid on the wreck altar.
 21. `hive_kept` — the hive is smoked, comb taken, and the skep set.
 22. `mead_drawn` — the must is mashed, bunged, and the cask tapped.
+23. `barrel_raised` — a stave is soaked, hooped, and the barrel raised.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -233,8 +235,9 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 19. **Slice 18:** Wreck Chapel — wash drowned token, lay on altar. Cross-effect: held ice unlocks keeping the drowned cold.
 20. **Slice 19:** Bee Skeps — smoke hive, take comb, set skep. Cross-effect: wreck laid unlocks a drowned ward on the skeps.
 21. **Slice 20:** Mead House — mash must, bung, tap cask. Cross-effect: hive kept unlocks true comb pitch on the mash.
-22. **Slice 21+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-23. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+22. **Slice 21:** Cooperage — soak stave, hoop, raise barrel. Cross-effect: mead drawn unlocks a mead-cask mark on the hoop.
+23. **Slice 22+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+24. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

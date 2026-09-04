@@ -97,6 +97,7 @@ def build() -> dict:
         "drowned_token": {"name": "drowned token", "kind": "rite"},
         "comb_cake": {"name": "comb cake", "kind": "goods"},
         "cask_bung": {"name": "cask bung", "kind": "goods"},
+        "stave_set": {"name": "stave set", "kind": "goods"},
         **salvage_items,
     }
 
@@ -227,6 +228,7 @@ def build() -> dict:
                 {"to": "wreck.path", "label": "Go to wreck chapel"},
                 {"to": "hive.path", "label": "Go to bee skeps"},
                 {"to": "mead.path", "label": "Go to mead house"},
+                {"to": "coop.path", "label": "Go to cooperage"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1510,6 +1512,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "hive.path", "label": "Go to bee skeps"},
                 {"to": "mead.yard", "label": "Go to mead yard"},
+                {"to": "coop.path", "label": "Go to cooperage"},
             ],
             "ground": [],
             "actors": [],
@@ -1560,6 +1563,65 @@ def build() -> dict:
             "exits": [{"to": "mead.yard", "label": "Go to mead yard"}],
             "ground": [],
             "actors": ["sera"],
+        },
+        "coop.path": {
+            "region": "cooperage",
+            "name": "Cooper Path",
+            "situation": "A cooper yard sits on the bank. Wet staves lean in a row.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mead.path", "label": "Go to mead house"},
+                {"to": "coop.yard", "label": "Go to cooper yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "coop.yard": {
+            "region": "cooperage",
+            "name": "Cooper Yard",
+            "situation": "Jute waits by a hoop mark. The soak smell is sharp.",
+            "exits": [
+                {"to": "coop.path", "label": "Go to cooper path"},
+                {"to": "coop.soak", "label": "Go to the soak"},
+                {"to": "coop.hoop", "label": "Go to the hoop"},
+                {"to": "coop.raise", "label": "Go to the raise"},
+            ],
+            "ground": [],
+            "actors": ["jute"],
+        },
+        "coop.soak": {
+            "region": "cooperage",
+            "name": "Soak Trough",
+            "situation": "Corm keeps a soak trough. Staves lie in the water.",
+            "exits": [{"to": "coop.yard", "label": "Go to cooper yard"}],
+            "ground": [],
+            "actors": ["corm"],
+        },
+        "coop.hoop": {
+            "region": "cooperage",
+            "name": "Hoop Pegs",
+            "situation": "Iron hoops sit on a peg. A stave set lies ready.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mead_drawn"},
+                    "text": "True mead would mark this hoop.",
+                },
+                {
+                    "when": {"has_flag": "barrel_raised"},
+                    "text": "The hoop sits still and even.",
+                },
+            ],
+            "exits": [{"to": "coop.yard", "label": "Go to cooper yard"}],
+            "ground": ["stave_set"],
+            "actors": [],
+        },
+        "coop.raise": {
+            "region": "cooperage",
+            "name": "Raise Frame",
+            "situation": "Bess waits by a barrel form. The raise frame is set.",
+            "exits": [{"to": "coop.yard", "label": "Go to cooper yard"}],
+            "ground": [],
+            "actors": ["bess"],
         },
     }
 
@@ -1827,6 +1889,18 @@ def build() -> dict:
         "sera": {
             "name": "Sera",
             "idle": "He keeps a tap peg and does not look up.",
+        },
+        "jute": {
+            "name": "Jute",
+            "idle": "He tests a stave and does not speak first.",
+        },
+        "corm": {
+            "name": "Corm",
+            "idle": "She turns the soak and waits.",
+        },
+        "bess": {
+            "name": "Bess",
+            "idle": "He keeps the raise frame and does not look up.",
         },
     }
 
@@ -4937,6 +5011,122 @@ def build() -> dict:
             "Sera taps only a bunged mash.",
             [{"op": "set_flag", "flag": "heard_mead_rule"}],
         ),
+        action(
+            "know_the_stave_soak",
+            "Know the stave soak",
+            "talk",
+            {
+                "all": [
+                    {"at": "coop.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "coop_trust"},
+                ]
+            },
+            "You name the stave soak. Jute lets you soak and raise.",
+            [
+                {"op": "set_flag", "flag": "coop_trust"},
+                {"op": "remember", "actor": "jute", "fact": "soak"},
+            ],
+        ),
+        action(
+            "read_the_hoop_mark",
+            "Read the hoop mark",
+            "do",
+            {
+                "all": [
+                    {"at": "coop.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "coop_trust"},
+                ]
+            },
+            "You read the hoop mark. Jute lets you soak and raise.",
+            [
+                {"op": "set_flag", "flag": "coop_trust"},
+                {"op": "remember", "actor": "jute", "fact": "mark"},
+            ],
+        ),
+        action(
+            "mark_the_mead_cask",
+            "Mark the mead cask",
+            "do",
+            {
+                "all": [
+                    {"at": "coop.hoop"},
+                    {"has_flag": "mead_drawn"},
+                    {"not_flag": "coop_marked"},
+                ]
+            },
+            "You mark the mead cask. The hoop takes the drawn size.",
+            [
+                {"op": "set_flag", "flag": "coop_marked"},
+                {"op": "set_flag", "flag": "coop_trust"},
+                {"op": "remember", "actor": "corm", "fact": "mark"},
+            ],
+        ),
+        action(
+            "soak_the_stave",
+            "Soak the stave",
+            "do",
+            {
+                "all": [
+                    {"at": "coop.soak"},
+                    {"has_flag": "coop_trust"},
+                    {"not_flag": "coop_soaked"},
+                    {"not_flag": "barrel_raised"},
+                ]
+            },
+            "You soak the stave. The wood takes the water.",
+            [{"op": "set_flag", "flag": "coop_soaked"}],
+        ),
+        action(
+            "raise_the_barrel",
+            "Raise the barrel",
+            "do",
+            {
+                "all": [
+                    {"at": "coop.raise"},
+                    {"has_flag": "coop_trust"},
+                    {"has_flag": "coop_soaked"},
+                    {"has_item": "stave_set"},
+                    {"not_flag": "barrel_raised"},
+                ]
+            },
+            "You raise the barrel. Bess marks the hoop set.",
+            [
+                {"op": "remove_item", "item": "stave_set"},
+                {"op": "set_flag", "flag": "barrel_raised"},
+                {"op": "remember", "actor": "bess", "fact": "raise"},
+            ],
+        ),
+        action(
+            "ask_jute_rule",
+            "Ask Jute the rule",
+            "talk",
+            {"at": "coop.yard"},
+            "Jute says soak the stave. Then hoop and raise.",
+            [{"op": "set_flag", "flag": "heard_coop_rule"}],
+        ),
+        action(
+            "ask_corm_soak",
+            "Ask Corm the soak",
+            "talk",
+            {"at": "coop.soak"},
+            "Corm says soak until the stave bends.",
+            [{"op": "set_flag", "flag": "heard_coop_rule"}],
+        ),
+        action(
+            "ask_bess_raise",
+            "Ask Bess the raise",
+            "talk",
+            {"at": "coop.raise"},
+            "Bess raises only a soaked stave.",
+            [{"op": "set_flag", "flag": "heard_coop_rule"}],
+        ),
     ]
 
     pack = {
@@ -5030,6 +5220,10 @@ def build() -> dict:
             "mead_house": {
                 "name": "Mead House",
                 "mechanic": "mash-must-tap-cask",
+            },
+            "cooperage": {
+                "name": "Cooperage",
+                "mechanic": "soak-stave-raise-barrel",
             },
         },
         "locations": locations,
@@ -5125,11 +5319,15 @@ def build() -> dict:
                 "name": "Mead Drawn",
                 "when": {"has_flag": "mead_drawn"},
             },
+            "barrel_raised": {
+                "name": "Barrel Raised",
+                "when": {"has_flag": "barrel_raised"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0, "coop": 0},
             "inventory": [],
             "flags": {},
         },

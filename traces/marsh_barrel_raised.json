@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:coop.path",
+    "go:coop.yard",
+    "know_the_stave_soak",
+    "go:coop.soak",
+    "soak_the_stave",
+    "go:coop.yard",
+    "go:coop.hoop",
+    "take:stave_set",
+    "go:coop.yard",
+    "go:coop.raise",
+    "raise_the_barrel"
+  ],
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "2bdc3761ebeed6bd8cb25cd9a5c726723324f72f9a1e065ff2ad89012f4bdd1c",
+  "id": "marsh_barrel_raised",
+  "location": "coop.raise",
+  "outcome": "barrel_raised",
+  "outcomes": [
+    "barrel_raised"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

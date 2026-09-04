@@ -5,8 +5,8 @@
     "go:smoke.path",
     "go:smoke.yard"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "886e3d4edcc7d7c53389892db1b9c3737d37be20fe53bcd7674cb00a06ace547",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "3e184925be4a238de67d212a3cb0fd68b9f5b512a9847e364fd12bc53248e623",
   "id": "divergence_marsh_smoke",
   "location": "smoke.yard",
   "outcomes": [],

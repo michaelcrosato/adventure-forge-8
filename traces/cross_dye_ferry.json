@@ -19,8 +19,8 @@
     "go:ferry.path",
     "go:ferry.yard"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "67e7da28220cbe1999f321eea19ccb35fa9dcf85100930c28a900f2c869f4147",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "4c00a1d70dd7814272394a22d63dc4be307c07f4e51a94a3ebb1483f40210813",
   "id": "cross_dye_ferry",
   "location": "ferry.yard",
   "outcomes": [

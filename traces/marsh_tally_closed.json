@@ -14,8 +14,8 @@
     "go:count.vault",
     "seal_the_count"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "cf4be51db9caf764b0b92cca602837528542c6232189b252d1d66652bbb560da",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "58ea03005922f05883bf883fc20008c32466862856ef9d72524615cb547f9636",
   "id": "marsh_tally_closed",
   "location": "count.vault",
   "outcome": "tally_closed",

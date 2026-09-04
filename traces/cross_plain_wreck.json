@@ -6,8 +6,8 @@
     "go:wreck.yard",
     "go:wreck.hull"
   ],
-  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "9e45cdcec6bd235f9161578b67f6c481f5e75b2ee15296d18b2904d5b2b9be7b",
+  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
+  "final_fingerprint": "edc4058723cbab8f72fc846effe4f391763813add0c1636b1b6a235fe95731e6",
   "id": "cross_plain_wreck",
   "location": "wreck.hull",
   "outcomes": [],
