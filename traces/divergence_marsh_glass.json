@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:glass.path",
+    "go:glass.yard",
+    "go:glass.nave"
+  ],
+  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
+  "final_fingerprint": "e46ff7da8e77ded593e9ae53064e757998df852fd4740fb1c5c372fe9b36a8a9",
+  "id": "divergence_marsh_glass",
+  "location": "glass.nave",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

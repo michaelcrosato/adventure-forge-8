@@ -2747,6 +2747,193 @@
       "when": {
         "at": "fold.shed"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "glass_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rook",
+          "fact": "low_sun",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_low_sun",
+      "label": "Know the low sun",
+      "text": "You name the low sun line. Rook lets you set a shard.",
+      "when": {
+        "all": [
+          {
+            "at": "glass.nave"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "glass_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "glass_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rook",
+          "fact": "chart",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_sun_chart",
+      "label": "Read the sun chart",
+      "text": "You read the sun chart. Rook lets you set a shard.",
+      "when": {
+        "all": [
+          {
+            "at": "glass.nave"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "glass_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "glass_lead_trade",
+          "op": "set_flag"
+        },
+        {
+          "flag": "glass_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rook",
+          "fact": "peat_pay",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "trade_peat_for_lead",
+      "label": "Trade peat credit for lead",
+      "text": "You trade peat credit. Rook hands over a strip of lead.",
+      "when": {
+        "all": [
+          {
+            "at": "glass.yard"
+          },
+          {
+            "has_flag": "fold_held"
+          },
+          {
+            "not_flag": "glass_lead_trade"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "lens_shard",
+          "op": "remove_item"
+        },
+        {
+          "flag": "lens_set",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "set_the_lens",
+      "label": "Set the lens shard",
+      "text": "You set the shard in the peg. A line of light marks the channel.",
+      "when": {
+        "all": [
+          {
+            "at": "glass.loft"
+          },
+          {
+            "has_item": "lens_shard"
+          },
+          {
+            "has_flag": "glass_trust"
+          },
+          {
+            "not_flag": "lens_set"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_glass_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_rook_rule",
+      "label": "Ask Rook the rule",
+      "text": "Rook says know the sun. Then set the shard in the loft.",
+      "when": {
+        "at": "glass.nave"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_glass_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_nim_shard",
+      "label": "Ask Nim for a shard",
+      "text": "Nim points at the bright shard in the pit.",
+      "when": {
+        "at": "glass.pit"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_glass_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_lise_peg",
+      "label": "Ask Lise the peg",
+      "text": "Lise says the peg takes one shard and no more.",
+      "when": {
+        "at": "glass.loft"
+      }
     }
   ],
   "actors": {
@@ -2786,6 +2973,10 @@
       "idle": "She stands between the well and the cots.",
       "name": "Nurse Joss"
     },
+    "lise": {
+      "idle": "She holds a sun chart to the hole.",
+      "name": "Lise"
+    },
     "magistrate": {
       "idle": "She waits with both palms on her knees.",
       "name": "Magistrate Orin"
@@ -2802,6 +2993,10 @@
       "idle": "She keeps a dry roll under her arm.",
       "name": "Clerk Nia"
     },
+    "nim": {
+      "idle": "She sorts shards and keeps her gloves on.",
+      "name": "Nim"
+    },
     "oat": {
       "idle": "He tends the still and does not taste the steam.",
       "name": "Oat"
@@ -2817,6 +3012,10 @@
     "ren": {
       "idle": "He lies still and watches the tent peak.",
       "name": "Ren"
+    },
+    "rook": {
+      "idle": "He squints at the empty frame.",
+      "name": "Rook"
     },
     "sarn": {
       "idle": "He scrapes a bone strip for ink.",
@@ -2876,6 +3075,10 @@
     "grain_sack": {
       "kind": "goods",
       "name": "grain sack"
+    },
+    "lens_shard": {
+      "kind": "glass",
+      "name": "lens shard"
     },
     "peat_brick": {
       "kind": "goods",
@@ -3319,6 +3522,10 @@
         {
           "label": "Go to peat fold",
           "to": "fold.lane"
+        },
+        {
+          "label": "Go to lens ruin",
+          "to": "glass.path"
         }
       ],
       "ground": [],
@@ -3649,6 +3856,10 @@
         {
           "label": "Go to the green",
           "to": "fold.green"
+        },
+        {
+          "label": "Go to lens ruin",
+          "to": "glass.path"
         }
       ],
       "ground": [],
@@ -3670,6 +3881,115 @@
       "name": "Share Shed",
       "region": "peat_fold",
       "situation": "Dry bricks stack by a chalk board. Willa counts in pairs."
+    },
+    "glass.loft": {
+      "actors": [
+        "lise"
+      ],
+      "exits": [
+        {
+          "label": "Go to the nave",
+          "to": "glass.nave"
+        }
+      ],
+      "ground": [],
+      "name": "Lens Loft",
+      "region": "lens_ruin",
+      "situation": "A narrow walk sits behind the frame. A peg waits for a shard."
+    },
+    "glass.nave": {
+      "actors": [
+        "rook"
+      ],
+      "exits": [
+        {
+          "label": "Go to glass yard",
+          "to": "glass.yard"
+        },
+        {
+          "label": "Go to the loft",
+          "to": "glass.loft"
+        }
+      ],
+      "ground": [],
+      "name": "Glass Nave",
+      "region": "lens_ruin",
+      "situation": "A round frame holds empty lead. Light falls on the floor.",
+      "situation_if": [
+        {
+          "text": "The shard throws a line on the stone.",
+          "when": {
+            "has_flag": "lens_set"
+          }
+        }
+      ]
+    },
+    "glass.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to peat fold",
+          "to": "fold.lane"
+        },
+        {
+          "label": "Go to glass yard",
+          "to": "glass.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Lens Path",
+      "region": "lens_ruin",
+      "situation": "Broken glass winks in the turf. A low ruin shows a round hole."
+    },
+    "glass.pit": {
+      "actors": [
+        "nim"
+      ],
+      "exits": [
+        {
+          "label": "Go to glass yard",
+          "to": "glass.yard"
+        }
+      ],
+      "ground": [
+        "lens_shard"
+      ],
+      "name": "Shard Pit",
+      "region": "lens_ruin",
+      "situation": "A pit of broken panes. One shard still takes the light."
+    },
+    "glass.yard": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to lens path",
+          "to": "glass.path"
+        },
+        {
+          "label": "Go to the nave",
+          "to": "glass.nave"
+        },
+        {
+          "label": "Go to the pit",
+          "to": "glass.pit"
+        }
+      ],
+      "ground": [],
+      "name": "Glass Yard",
+      "region": "lens_ruin",
+      "situation": "Lead strips lie in a crate. The nave wall is open to the sky.",
+      "situation_if": [
+        {
+          "text": "Rook will take peat credit for lead.",
+          "when": {
+            "has_flag": "fold_held"
+          }
+        }
+      ]
     },
     "mill.kiln": {
       "actors": [
@@ -4424,6 +4744,12 @@
         "has_flag": "kiln_pact_sealed"
       }
     },
+    "lens_set": {
+      "name": "Lens Set",
+      "when": {
+        "has_flag": "lens_set"
+      }
+    },
     "name_restored": {
       "name": "Name Restored",
       "when": {
@@ -4465,6 +4791,10 @@
     "kiln_mill": {
       "mechanic": "heat-craft-grain-debt",
       "name": "Kiln Mill"
+    },
+    "lens_ruin": {
+      "mechanic": "light-lens-channel",
+      "name": "Lens Ruin"
     },
     "namehouse": {
       "mechanic": "names-rites-memory",
@@ -4511,6 +4841,7 @@
       "court": 0,
       "dockers": 0,
       "fold": 0,
+      "glass": 0,
       "millers": 0,
       "names": 0,
       "road": 0,

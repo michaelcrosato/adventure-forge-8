@@ -70,6 +70,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_fold",
         "cross_plain_fold",
         "cross_name_fold",
+        "marsh_lens_set",
+        "divergence_marsh_glass",
+        "divergence_city_glass",
+        "cross_plain_glass",
+        "cross_fold_glass",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -86,6 +91,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     fever = replay(content, by_id["marsh_fever_broken"]["seed"], by_id["marsh_fever_broken"]["sheet"], by_id["marsh_fever_broken"]["actions"])
     named = replay(content, by_id["marsh_name_restored"]["seed"], by_id["marsh_name_restored"]["sheet"], by_id["marsh_name_restored"]["actions"])
     fold = replay(content, by_id["marsh_fold_held"]["seed"], by_id["marsh_fold_held"]["sheet"], by_id["marsh_fold_held"]["actions"])
+    lens = replay(content, by_id["marsh_lens_set"]["seed"], by_id["marsh_lens_set"]["sheet"], by_id["marsh_lens_set"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -102,7 +108,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("name_restored predicate failed")
     if "fold_held" not in fold.state.outcomes:
         raise AssertionError("fold_held predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint}) != 8:
+    if "lens_set" not in lens.state.outcomes:
+        raise AssertionError("lens_set predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint}) != 9:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -265,6 +273,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "name_restored" not in name_fold.state.outcomes:
         raise AssertionError("cross name-fold run lost name_restored")
 
+    glass_m = by_id["divergence_marsh_glass"]
+    glass_c = by_id["divergence_city_glass"]
+    glass_m_ids, glass_c_ids = _diverge_legal(content, glass_m, glass_c)
+    if "know_the_low_sun" not in glass_m_ids:
+        raise AssertionError("marsh_scout missing know_the_low_sun")
+    if "read_the_sun_chart" not in glass_c_ids:
+        raise AssertionError("city_oath missing read_the_sun_chart")
+    if "know_the_low_sun" in glass_c_ids or "read_the_sun_chart" in glass_m_ids:
+        raise AssertionError("glass sheet verbs leaked across sheets")
+
+    plain_glass = replay(content, by_id["cross_plain_glass"]["seed"], by_id["cross_plain_glass"]["sheet"], by_id["cross_plain_glass"]["actions"])
+    fold_glass = replay(content, by_id["cross_fold_glass"]["seed"], by_id["cross_fold_glass"]["sheet"], by_id["cross_fold_glass"]["actions"])
+    if plain_glass.state.location != fold_glass.state.location:
+        raise AssertionError("glass cross-area pair left different locations")
+    if plain_glass.state.location != "glass.yard":
+        raise AssertionError("glass cross-area pair not at glass.yard")
+    plain_glass_ids = {a.id for a in enumerate_legal(plain_glass.state, content)}
+    fold_glass_ids = {a.id for a in enumerate_legal(fold_glass.state, content)}
+    if "trade_peat_for_lead" not in fold_glass_ids:
+        raise AssertionError("fold held did not unlock trade_peat_for_lead")
+    if "trade_peat_for_lead" in plain_glass_ids:
+        raise AssertionError("trade_peat_for_lead leaked without fold held")
+    if "fold_held" not in fold_glass.state.outcomes:
+        raise AssertionError("cross fold-glass run lost fold_held")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -274,6 +307,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "fever_broken": fever.fingerprint,
         "name_restored": named.fingerprint,
         "fold_held": fold.fingerprint,
+        "lens_set": lens.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -288,6 +322,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "name_city_only": sorted(name_c_ids - name_m_ids),
         "fold_marsh_only": sorted(fold_m_ids - fold_c_ids),
         "fold_city_only": sorted(fold_c_ids - fold_m_ids),
+        "glass_marsh_only": sorted(glass_m_ids - glass_c_ids),
+        "glass_city_only": sorted(glass_c_ids - glass_m_ids),
     }
 
 

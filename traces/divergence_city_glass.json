@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:glass.path",
+    "go:glass.yard",
+    "go:glass.nave"
+  ],
+  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
+  "final_fingerprint": "02683e74f01ce3f755f5611a917f79374849765840d98d432153bfd8f857d3f0",
+  "id": "divergence_city_glass",
+  "location": "glass.nave",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

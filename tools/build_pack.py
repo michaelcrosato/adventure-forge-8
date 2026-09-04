@@ -79,6 +79,7 @@ def build() -> dict:
         "grain_sack": {"name": "grain sack", "kind": "goods"},
         "bone_name": {"name": "bone name", "kind": "rite"},
         "peat_brick": {"name": "peat brick", "kind": "goods"},
+        "lens_shard": {"name": "lens shard", "kind": "glass"},
         **salvage_items,
     }
 
@@ -195,6 +196,7 @@ def build() -> dict:
                 {"to": "camp.gate", "label": "Go to fever camp"},
                 {"to": "name.path", "label": "Go to namehouse"},
                 {"to": "fold.lane", "label": "Go to peat fold"},
+                {"to": "glass.path", "label": "Go to lens ruin"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -599,6 +601,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "name.path", "label": "Go to namehouse"},
                 {"to": "fold.green", "label": "Go to the green"},
+                {"to": "glass.path", "label": "Go to lens ruin"},
             ],
             "ground": [],
             "actors": [],
@@ -655,6 +658,69 @@ def build() -> dict:
             "exits": [{"to": "fold.green", "label": "Go to the green"}],
             "ground": [],
             "actors": [],
+        },
+        "glass.path": {
+            "region": "lens_ruin",
+            "name": "Lens Path",
+            "situation": "Broken glass winks in the turf. A low ruin shows a round hole.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "fold.lane", "label": "Go to peat fold"},
+                {"to": "glass.yard", "label": "Go to glass yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "glass.yard": {
+            "region": "lens_ruin",
+            "name": "Glass Yard",
+            "situation": "Lead strips lie in a crate. The nave wall is open to the sky.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fold_held"},
+                    "text": "Rook will take peat credit for lead.",
+                }
+            ],
+            "exits": [
+                {"to": "glass.path", "label": "Go to lens path"},
+                {"to": "glass.nave", "label": "Go to the nave"},
+                {"to": "glass.pit", "label": "Go to the pit"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "glass.nave": {
+            "region": "lens_ruin",
+            "name": "Glass Nave",
+            "situation": "A round frame holds empty lead. Light falls on the floor.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lens_set"},
+                    "text": "The shard throws a line on the stone.",
+                }
+            ],
+            "exits": [
+                {"to": "glass.yard", "label": "Go to glass yard"},
+                {"to": "glass.loft", "label": "Go to the loft"},
+            ],
+            "ground": [],
+            "actors": ["rook"],
+        },
+        "glass.loft": {
+            "region": "lens_ruin",
+            "name": "Lens Loft",
+            "situation": "A narrow walk sits behind the frame. A peg waits for a shard.",
+            "exits": [{"to": "glass.nave", "label": "Go to the nave"}],
+            "ground": [],
+            "actors": ["lise"],
+        },
+        "glass.pit": {
+            "region": "lens_ruin",
+            "name": "Shard Pit",
+            "situation": "A pit of broken panes. One shard still takes the light.",
+            "exits": [{"to": "glass.yard", "label": "Go to glass yard"}],
+            "ground": ["lens_shard"],
+            "actors": ["nim"],
         },
     }
 
@@ -754,6 +820,18 @@ def build() -> dict:
         "willa": {
             "name": "Willa",
             "idle": "She counts bricks and does not stack uneven.",
+        },
+        "rook": {
+            "name": "Rook",
+            "idle": "He squints at the empty frame.",
+        },
+        "nim": {
+            "name": "Nim",
+            "idle": "She sorts shards and keeps her gloves on.",
+        },
+        "lise": {
+            "name": "Lise",
+            "idle": "She holds a sun chart to the hole.",
         },
     }
 
@@ -2163,6 +2241,105 @@ def build() -> dict:
             "Willa says a brick on the board holds the fold.",
             [{"op": "set_flag", "flag": "heard_fold_rule"}],
         ),
+        action(
+            "know_the_low_sun",
+            "Know the low sun",
+            "talk",
+            {
+                "all": [
+                    {"at": "glass.nave"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "glass_trust"},
+                ]
+            },
+            "You name the low sun line. Rook lets you set a shard.",
+            [
+                {"op": "set_flag", "flag": "glass_trust"},
+                {"op": "remember", "actor": "rook", "fact": "low_sun"},
+            ],
+        ),
+        action(
+            "read_the_sun_chart",
+            "Read the sun chart",
+            "do",
+            {
+                "all": [
+                    {"at": "glass.nave"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "glass_trust"},
+                ]
+            },
+            "You read the sun chart. Rook lets you set a shard.",
+            [
+                {"op": "set_flag", "flag": "glass_trust"},
+                {"op": "remember", "actor": "rook", "fact": "chart"},
+            ],
+        ),
+        action(
+            "trade_peat_for_lead",
+            "Trade peat credit for lead",
+            "talk",
+            {
+                "all": [
+                    {"at": "glass.yard"},
+                    {"has_flag": "fold_held"},
+                    {"not_flag": "glass_lead_trade"},
+                ]
+            },
+            "You trade peat credit. Rook hands over a strip of lead.",
+            [
+                {"op": "set_flag", "flag": "glass_lead_trade"},
+                {"op": "set_flag", "flag": "glass_trust"},
+                {"op": "remember", "actor": "rook", "fact": "peat_pay"},
+            ],
+        ),
+        action(
+            "set_the_lens",
+            "Set the lens shard",
+            "do",
+            {
+                "all": [
+                    {"at": "glass.loft"},
+                    {"has_item": "lens_shard"},
+                    {"has_flag": "glass_trust"},
+                    {"not_flag": "lens_set"},
+                ]
+            },
+            "You set the shard in the peg. A line of light marks the channel.",
+            [
+                {"op": "remove_item", "item": "lens_shard"},
+                {"op": "set_flag", "flag": "lens_set"},
+            ],
+        ),
+        action(
+            "ask_rook_rule",
+            "Ask Rook the rule",
+            "talk",
+            {"at": "glass.nave"},
+            "Rook says know the sun. Then set the shard in the loft.",
+            [{"op": "set_flag", "flag": "heard_glass_rule"}],
+        ),
+        action(
+            "ask_nim_shard",
+            "Ask Nim for a shard",
+            "talk",
+            {"at": "glass.pit"},
+            "Nim points at the bright shard in the pit.",
+            [{"op": "set_flag", "flag": "heard_glass_rule"}],
+        ),
+        action(
+            "ask_lise_peg",
+            "Ask Lise the peg",
+            "talk",
+            {"at": "glass.loft"},
+            "Lise says the peg takes one shard and no more.",
+            [{"op": "set_flag", "flag": "heard_glass_rule"}],
+        ),
     ]
 
     pack = {
@@ -2200,6 +2377,10 @@ def build() -> dict:
             "peat_fold": {
                 "name": "Peat Fold",
                 "mechanic": "peat-cut-share",
+            },
+            "lens_ruin": {
+                "name": "Lens Ruin",
+                "mechanic": "light-lens-channel",
             },
         },
         "locations": locations,
@@ -2239,11 +2420,15 @@ def build() -> dict:
                 "name": "Fold Held",
                 "when": {"has_flag": "fold_held"},
             },
+            "lens_set": {
+                "name": "Lens Set",
+                "when": {"has_flag": "lens_set"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0},
             "inventory": [],
             "flags": {},
         },

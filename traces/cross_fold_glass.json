@@ -9,13 +9,16 @@
     "cut_safe_peat",
     "go:fold.green",
     "go:fold.shed",
-    "set_the_share"
+    "set_the_share",
+    "go:fold.green",
+    "go:fold.lane",
+    "go:glass.path",
+    "go:glass.yard"
   ],
   "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
-  "final_fingerprint": "44ccb041a1967c64cde8a80e7ca89287ef456f3f292110d4758fab6c695b462d",
-  "id": "marsh_fold_held",
-  "location": "fold.shed",
-  "outcome": "fold_held",
+  "final_fingerprint": "f0ede6b7b529aca6fddc413c777aa3ac7aa0932e9bfcd1667306fba48a179bc2",
+  "id": "cross_fold_glass",
+  "location": "glass.yard",
   "outcomes": [
     "fold_held"
   ],

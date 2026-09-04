@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:glass.path",
+    "go:glass.yard",
+    "go:glass.nave",
+    "know_the_low_sun",
+    "go:glass.yard",
+    "go:glass.pit",
+    "take:lens_shard",
+    "go:glass.yard",
+    "go:glass.nave",
+    "go:glass.loft",
+    "set_the_lens"
+  ],
+  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
+  "final_fingerprint": "9c4bec8477576a14fa1da4415bae9e9913e77e69d98998077d179a8f332b25d0",
+  "id": "marsh_lens_set",
+  "location": "glass.loft",
+  "outcome": "lens_set",
+  "outcomes": [
+    "lens_set"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

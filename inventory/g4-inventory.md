@@ -50,10 +50,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | fold.cut | peat_fold | Jase, safe brick vs deep flood |
 | fold.shed | peat_fold | Willa, peat share, fold_held |
 | fold.ditch | peat_fold | bail after a deep cut |
+| glass.path | lens_ruin | broken glass, ruin access |
+| glass.yard | lens_ruin | peat-credit lead trade |
+| glass.nave | lens_ruin | Rook, low sun vs sun chart |
+| glass.loft | lens_ruin | Lise, set shard, lens_set |
+| glass.pit | lens_ruin | Nim, lens shard |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`
 
 ## Substrate
 
