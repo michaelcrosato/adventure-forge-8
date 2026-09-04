@@ -35,7 +35,7 @@ No LLM. I1 determinism, I4 witnesses, crawler, language/budget, unit checks. Tam
 
 ## Deployment
 
-Vercel loads the dependency-free ASGI application declared in `pyproject.toml`.
+Vercel loads the root `app.py` adapter for the dependency-free ASGI application.
 The root path provides a small landing page, and `/health` reports deployment
 health. The game and verification bar remain command-line applications.
 

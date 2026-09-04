@@ -12,9 +12,6 @@ readme = "README.md"
 [project.scripts]
 adventure-forge = "adventure_forge.cli:main"
 
-[tool.vercel]
-entrypoint = "adventure_forge.web:app"
-
 [tool.setuptools.package-dir]
 "" = "src"
 

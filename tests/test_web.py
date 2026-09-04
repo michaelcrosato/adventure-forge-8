@@ -4,6 +4,7 @@ import asyncio
 import json
 import unittest
 
+import app as vercel_entrypoint
 from adventure_forge.web import app
 
 
@@ -22,6 +23,9 @@ def request(path: str = "/", method: str = "GET") -> list[dict]:
 
 
 class WebEntrypointTests(unittest.TestCase):
+    def test_root_module_exports_app(self) -> None:
+        self.assertIs(vercel_entrypoint.app, app)
+
     def test_home(self) -> None:
         messages = request()
         self.assertEqual(messages[0]["status"], 200)
