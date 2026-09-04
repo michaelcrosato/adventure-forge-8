@@ -77,6 +77,7 @@ def build() -> dict:
         "ash_relic": {"name": "ash relic", "kind": "relic"},
         "brass_key": {"name": "brass key", "kind": "key"},
         "grain_sack": {"name": "grain sack", "kind": "goods"},
+        "bone_name": {"name": "bone name", "kind": "rite"},
         **salvage_items,
     }
 
@@ -191,6 +192,7 @@ def build() -> dict:
                 {"to": "court.gate", "label": "Go to reed court"},
                 {"to": "road.ford", "label": "Go to drowned road"},
                 {"to": "camp.gate", "label": "Go to fever camp"},
+                {"to": "name.path", "label": "Go to namehouse"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -479,6 +481,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "road.ford", "label": "Go to ford"},
                 {"to": "camp.yard", "label": "Go to camp yard"},
+                {"to": "name.path", "label": "Go to namehouse"},
             ],
             "ground": [],
             "actors": [],
@@ -525,6 +528,65 @@ def build() -> dict:
             "exits": [{"to": "camp.yard", "label": "Go to camp yard"}],
             "ground": [],
             "actors": [],
+        },
+        "name.path": {
+            "region": "namehouse",
+            "name": "Namehouse Path",
+            "situation": "A cut of white stone sinks toward a low door. Wind names no one.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "camp.gate", "label": "Go to fever camp"},
+                {"to": "name.yard", "label": "Go to name yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "name.yard": {
+            "region": "namehouse",
+            "name": "Name Yard",
+            "situation": "Bone tags hang on a dry line. Ila watches the door.",
+            "exits": [
+                {"to": "name.path", "label": "Go to namehouse path"},
+                {"to": "name.hall", "label": "Go to name hall"},
+                {"to": "name.crypt", "label": "Go to crypt"},
+                {"to": "name.script", "label": "Go to script room"},
+            ],
+            "ground": [],
+            "actors": ["ila"],
+        },
+        "name.hall": {
+            "region": "namehouse",
+            "name": "Name Hall",
+            "situation": "A wall of small niches. Most tags are gone.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fever_broken"},
+                    "text": "Venn has heard a living name from the camp.",
+                },
+                {
+                    "when": {"has_flag": "name_restored"},
+                    "text": "One niche holds a bone name again.",
+                },
+            ],
+            "exits": [{"to": "name.yard", "label": "Go to name yard"}],
+            "ground": [],
+            "actors": ["venn"],
+        },
+        "name.crypt": {
+            "region": "namehouse",
+            "name": "Name Crypt",
+            "situation": "A cold shelf. One tag lies in the dust.",
+            "exits": [{"to": "name.yard", "label": "Go to name yard"}],
+            "ground": ["bone_name"],
+            "actors": [],
+        },
+        "name.script": {
+            "region": "namehouse",
+            "name": "Script Room",
+            "situation": "A desk of scraped bone. Ink sits in a shell.",
+            "exits": [{"to": "name.yard", "label": "Go to name yard"}],
+            "ground": [],
+            "actors": ["sarn"],
         },
     }
 
@@ -600,6 +662,18 @@ def build() -> dict:
         "oat": {
             "name": "Oat",
             "idle": "He tends the still and does not taste the steam.",
+        },
+        "venn": {
+            "name": "Keeper Venn",
+            "idle": "He keeps his palm on an empty niche.",
+        },
+        "ila": {
+            "name": "Ila",
+            "idle": "She sorts tags and does not speak.",
+        },
+        "sarn": {
+            "name": "Sarn",
+            "idle": "He scrapes a bone strip for ink.",
         },
     }
 
@@ -1762,6 +1836,105 @@ def build() -> dict:
             "Oat says the still needs herb or the written order.",
             [{"op": "set_flag", "flag": "heard_fever_rule"}],
         ),
+        action(
+            "speak_the_old_name",
+            "Speak the old name",
+            "talk",
+            {
+                "all": [
+                    {"at": "name.hall"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["tongue", "cant"]},
+                        ]
+                    },
+                    {"not_flag": "name_standing"},
+                ]
+            },
+            "You speak the old name. Venn grants you the wall.",
+            [
+                {"op": "set_flag", "flag": "name_standing"},
+                {"op": "remember", "actor": "venn", "fact": "old_name"},
+            ],
+        ),
+        action(
+            "copy_the_bone_name",
+            "Copy the bone name",
+            "do",
+            {
+                "all": [
+                    {"at": "name.hall"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "name_standing"},
+                ]
+            },
+            "You copy the missing name. Venn grants you the wall.",
+            [
+                {"op": "set_flag", "flag": "name_standing"},
+                {"op": "remember", "actor": "venn", "fact": "copied"},
+            ],
+        ),
+        action(
+            "file_ren_living",
+            "File Ren as living",
+            "talk",
+            {
+                "all": [
+                    {"at": "name.hall"},
+                    {"has_flag": "fever_broken"},
+                    {"not_flag": "ren_filed"},
+                ]
+            },
+            "You file Ren as living. Venn marks the wall for the living.",
+            [
+                {"op": "set_flag", "flag": "ren_filed"},
+                {"op": "set_flag", "flag": "name_standing"},
+                {"op": "remember", "actor": "venn", "fact": "ren_live"},
+            ],
+        ),
+        action(
+            "restore_the_name",
+            "Restore the name",
+            "do",
+            {
+                "all": [
+                    {"at": "name.hall"},
+                    {"has_item": "bone_name"},
+                    {"has_flag": "name_standing"},
+                    {"not_flag": "name_restored"},
+                ]
+            },
+            "You set the bone name in the niche. The wall holds.",
+            [
+                {"op": "remove_item", "item": "bone_name"},
+                {"op": "set_flag", "flag": "name_restored"},
+            ],
+        ),
+        action(
+            "ask_venn_rule",
+            "Ask Venn the rule",
+            "talk",
+            {"at": "name.hall"},
+            "Venn says speak or copy. Then set the stolen name back.",
+            [{"op": "set_flag", "flag": "heard_name_rule"}],
+        ),
+        action(
+            "ask_ila_tags",
+            "Ask Ila about tags",
+            "talk",
+            {"at": "name.yard"},
+            "Ila points at the crypt. The stolen tag lies there.",
+            [{"op": "set_flag", "flag": "heard_name_rule"}],
+        ),
+        action(
+            "ask_sarn_ink",
+            "Ask Sarn for ink",
+            "talk",
+            {"at": "name.script"},
+            "Sarn says letters can copy a name the mouth cannot hold.",
+            [{"op": "set_flag", "flag": "heard_name_rule"}],
+        ),
     ]
 
     pack = {
@@ -1791,6 +1964,10 @@ def build() -> dict:
             "fever_camp": {
                 "name": "Fever Camp",
                 "mechanic": "isolation-medicine",
+            },
+            "namehouse": {
+                "name": "Namehouse",
+                "mechanic": "names-rites-memory",
             },
         },
         "locations": locations,
@@ -1822,11 +1999,15 @@ def build() -> dict:
                 "name": "Fever Broken",
                 "when": {"has_flag": "fever_broken"},
             },
+            "name_restored": {
+                "name": "Name Restored",
+                "when": {"has_flag": "name_restored"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0},
             "inventory": [],
             "flags": {},
         },

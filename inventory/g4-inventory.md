@@ -40,10 +40,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | camp.ward | fever_camp | Ren, broth, fever_broken |
 | camp.still | fever_camp | Oat, brew from herb or recipe |
 | camp.pits | fever_camp | lime, hardy/craft |
+| name.path | namehouse | ruin cut, access |
+| name.yard | namehouse | Ila, tags, crypt access |
+| name.hall | namehouse | Venn, speak vs copy, restore, living-name file |
+| name.crypt | namehouse | stolen bone name |
+| name.script | namehouse | Sarn, letters ink |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`
 
 ## Substrate
 

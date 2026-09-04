@@ -9,13 +9,17 @@
     "brew_fever_broth",
     "go:camp.yard",
     "go:camp.ward",
-    "give_broth_to_ren"
+    "give_broth_to_ren",
+    "go:camp.yard",
+    "go:camp.gate",
+    "go:name.path",
+    "go:name.yard",
+    "go:name.hall"
   ],
   "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
-  "final_fingerprint": "c757b2b60160d4a210fbb2e4f2988c3e750a886e299c850aa9bdfb1545622a5e",
-  "id": "marsh_fever_broken",
-  "location": "camp.ward",
-  "outcome": "fever_broken",
+  "final_fingerprint": "0802a335ef83ee0f954e96a73ddb3ee4ee3ec75fcf99edcd32ec5f73cb4cd189",
+  "id": "cross_fever_name",
+  "location": "name.hall",
   "outcomes": [
     "fever_broken"
   ],

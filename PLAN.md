@@ -150,6 +150,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Reed Court | Standing, witness, sentence | Law |
 | Drowned Road | Turn weather, encounters, beacon | Travel |
 | Fever Camp | Isolation, herb/recipe broth, ward | Medicine |
+| Namehouse | Names, rites, restored bone-name | Ruin |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -161,6 +162,7 @@ Authored outcomes:
 4. `reed_sentence` — the reed court passes sentence.
 5. `road_beacon` — the drowned-road beacon is lit.
 6. `fever_broken` — the camp fever is broken.
+7. `name_restored` — the stolen bone-name is set back on the wall.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -184,9 +186,10 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 2. **Slice 1:** Kiln Mill — heat, craft, grain-debt. Cross-effect: compact restored unlocks dock rates at the mill yard.
 3. **Slice 2:** Reed Court — standing, witness, sentence. Cross-effect: kiln pact unlocks mill proof in the hall.
 4. **Slice 3:** Drowned Road — weather-as-turn, encounters, beacon. Cross-effect: reed sentence unlocks road standing.
-5. **Slice 4 (shipping):** Fever Camp — isolation and medicine. Cross-effect: road beacon unlocks a clean boat at the gate.
-6. **Slice 5+:** Authored pockets (ruins, hamlets) on generated substrate. Crawler hunts *sameness* and rejects reskins.
-7. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+5. **Slice 4:** Fever Camp — isolation and medicine. Cross-effect: road beacon unlocks a clean boat at the gate.
+6. **Slice 5 (shipping):** Namehouse ruin — names and rites. Cross-effect: fever broken unlocks filing Ren as living.
+7. **Slice 6+:** Authored pockets (hamlets) on generated substrate. Crawler hunts *sameness* and rejects reskins.
+8. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

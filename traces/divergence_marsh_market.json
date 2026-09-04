@@ -2,8 +2,8 @@
   "actions": [
     "go:saltfen.market"
   ],
-  "build_id": "43ff8a3baffb556cac8df3db1195ffd4ece209c9369999018ba15de24bc52e9a",
-  "final_fingerprint": "691d5851b400d62ab1605466c9b3d0d04b67060930cea5b473174f5794929b28",
+  "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
+  "final_fingerprint": "acf5421012047b4c57a33194c360932f231d9337d1f8e3f9f04815646f22f08b",
   "id": "divergence_marsh_market",
   "location": "saltfen.market",
   "outcomes": [],

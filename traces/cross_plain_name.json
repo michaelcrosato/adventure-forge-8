@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:road.ford",
-    "go:road.dike",
-    "go:road.hut"
+    "go:name.path",
+    "go:name.yard",
+    "go:name.hall"
   ],
   "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
-  "final_fingerprint": "ea32557a9adebbf69470550a26b343360e6905005cb404cd685e9da7d0534fc9",
-  "id": "cross_plain_road",
-  "location": "road.hut",
+  "final_fingerprint": "0de0caad0b04e3943833089a2745d0ac49d75dd6e95c316840ae55ae068e8f4c",
+  "id": "cross_plain_name",
+  "location": "name.hall",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

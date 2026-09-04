@@ -2282,6 +2282,193 @@
       "when": {
         "at": "camp.still"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "name_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "venn",
+          "fact": "old_name",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "speak_the_old_name",
+      "label": "Speak the old name",
+      "text": "You speak the old name. Venn grants you the wall.",
+      "when": {
+        "all": [
+          {
+            "at": "name.hall"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "tongue",
+                  "cant"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "name_standing"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "name_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "venn",
+          "fact": "copied",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "copy_the_bone_name",
+      "label": "Copy the bone name",
+      "text": "You copy the missing name. Venn grants you the wall.",
+      "when": {
+        "all": [
+          {
+            "at": "name.hall"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "name_standing"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ren_filed",
+          "op": "set_flag"
+        },
+        {
+          "flag": "name_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "venn",
+          "fact": "ren_live",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "file_ren_living",
+      "label": "File Ren as living",
+      "text": "You file Ren as living. Venn marks the wall for the living.",
+      "when": {
+        "all": [
+          {
+            "at": "name.hall"
+          },
+          {
+            "has_flag": "fever_broken"
+          },
+          {
+            "not_flag": "ren_filed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "bone_name",
+          "op": "remove_item"
+        },
+        {
+          "flag": "name_restored",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "restore_the_name",
+      "label": "Restore the name",
+      "text": "You set the bone name in the niche. The wall holds.",
+      "when": {
+        "all": [
+          {
+            "at": "name.hall"
+          },
+          {
+            "has_item": "bone_name"
+          },
+          {
+            "has_flag": "name_standing"
+          },
+          {
+            "not_flag": "name_restored"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_name_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_venn_rule",
+      "label": "Ask Venn the rule",
+      "text": "Venn says speak or copy. Then set the stolen name back.",
+      "when": {
+        "at": "name.hall"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_name_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_ila_tags",
+      "label": "Ask Ila about tags",
+      "text": "Ila points at the crypt. The stolen tag lies there.",
+      "when": {
+        "at": "name.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_name_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_sarn_ink",
+      "label": "Ask Sarn for ink",
+      "text": "Sarn says letters can copy a name the mouth cannot hold.",
+      "when": {
+        "at": "name.script"
+      }
     }
   ],
   "actors": {
@@ -2300,6 +2487,10 @@
     "eel_seller": {
       "idle": "He turns eels on the board and waits.",
       "name": "Eel-seller"
+    },
+    "ila": {
+      "idle": "She sorts tags and does not speak.",
+      "name": "Ila"
     },
     "innkeep": {
       "idle": "He wipes a cup and watches the door.",
@@ -2341,6 +2532,10 @@
       "idle": "He lies still and watches the tent peak.",
       "name": "Ren"
     },
+    "sarn": {
+      "idle": "He scrapes a bone strip for ink.",
+      "name": "Sarn"
+    },
     "sila": {
       "idle": "She counts sacks and does not smile.",
       "name": "Sila"
@@ -2348,6 +2543,10 @@
     "tam": {
       "idle": "He looks at the floor and does not speak first.",
       "name": "Tam"
+    },
+    "venn": {
+      "idle": "He keeps his palm on an empty niche.",
+      "name": "Keeper Venn"
     },
     "watch_sergeant": {
       "idle": "She keeps a finger on the ledger.",
@@ -2363,6 +2562,10 @@
     "ash_relic": {
       "kind": "relic",
       "name": "ash relic"
+    },
+    "bone_name": {
+      "kind": "rite",
+      "name": "bone name"
     },
     "brass_key": {
       "kind": "key",
@@ -2814,6 +3017,10 @@
         {
           "label": "Go to fever camp",
           "to": "camp.gate"
+        },
+        {
+          "label": "Go to namehouse",
+          "to": "name.path"
         }
       ],
       "ground": [],
@@ -2835,6 +3042,10 @@
         {
           "label": "Go to camp yard",
           "to": "camp.yard"
+        },
+        {
+          "label": "Go to namehouse",
+          "to": "name.path"
         }
       ],
       "ground": [],
@@ -3178,6 +3389,113 @@
           }
         }
       ]
+    },
+    "name.crypt": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to name yard",
+          "to": "name.yard"
+        }
+      ],
+      "ground": [
+        "bone_name"
+      ],
+      "name": "Name Crypt",
+      "region": "namehouse",
+      "situation": "A cold shelf. One tag lies in the dust."
+    },
+    "name.hall": {
+      "actors": [
+        "venn"
+      ],
+      "exits": [
+        {
+          "label": "Go to name yard",
+          "to": "name.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Name Hall",
+      "region": "namehouse",
+      "situation": "A wall of small niches. Most tags are gone.",
+      "situation_if": [
+        {
+          "text": "Venn has heard a living name from the camp.",
+          "when": {
+            "has_flag": "fever_broken"
+          }
+        },
+        {
+          "text": "One niche holds a bone name again.",
+          "when": {
+            "has_flag": "name_restored"
+          }
+        }
+      ]
+    },
+    "name.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to fever camp",
+          "to": "camp.gate"
+        },
+        {
+          "label": "Go to name yard",
+          "to": "name.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Namehouse Path",
+      "region": "namehouse",
+      "situation": "A cut of white stone sinks toward a low door. Wind names no one."
+    },
+    "name.script": {
+      "actors": [
+        "sarn"
+      ],
+      "exits": [
+        {
+          "label": "Go to name yard",
+          "to": "name.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Script Room",
+      "region": "namehouse",
+      "situation": "A desk of scraped bone. Ink sits in a shell."
+    },
+    "name.yard": {
+      "actors": [
+        "ila"
+      ],
+      "exits": [
+        {
+          "label": "Go to namehouse path",
+          "to": "name.path"
+        },
+        {
+          "label": "Go to name hall",
+          "to": "name.hall"
+        },
+        {
+          "label": "Go to crypt",
+          "to": "name.crypt"
+        },
+        {
+          "label": "Go to script room",
+          "to": "name.script"
+        }
+      ],
+      "ground": [],
+      "name": "Name Yard",
+      "region": "namehouse",
+      "situation": "Bone tags hang on a dry line. Ila watches the door."
     },
     "road.beacon": {
       "actors": [],
@@ -3685,6 +4003,12 @@
         "has_flag": "kiln_pact_sealed"
       }
     },
+    "name_restored": {
+      "name": "Name Restored",
+      "when": {
+        "has_flag": "name_restored"
+      }
+    },
     "reed_sentence": {
       "name": "Reed Sentence",
       "when": {
@@ -3720,6 +4044,10 @@
     "kiln_mill": {
       "mechanic": "heat-craft-grain-debt",
       "name": "Kiln Mill"
+    },
+    "namehouse": {
+      "mechanic": "names-rites-memory",
+      "name": "Namehouse"
     },
     "reed_court": {
       "mechanic": "law-witness-sentence",
@@ -3758,6 +4086,7 @@
       "court": 0,
       "dockers": 0,
       "millers": 0,
+      "names": 0,
       "road": 0,
       "stackers": 0,
       "watch": 0

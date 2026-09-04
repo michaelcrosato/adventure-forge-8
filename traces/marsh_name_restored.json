@@ -1,0 +1,26 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:name.path",
+    "go:name.yard",
+    "go:name.hall",
+    "speak_the_old_name",
+    "go:name.yard",
+    "go:name.crypt",
+    "take:bone_name",
+    "go:name.yard",
+    "go:name.hall",
+    "restore_the_name"
+  ],
+  "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
+  "final_fingerprint": "83303373f4c5de5b0ae260a215ca5faf887fef1b56f57eeaccf75df168957bf5",
+  "id": "marsh_name_restored",
+  "location": "name.hall",
+  "outcome": "name_restored",
+  "outcomes": [
+    "name_restored"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

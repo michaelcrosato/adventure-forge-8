@@ -6,8 +6,8 @@
     "go:court.yard",
     "go:court.hall"
   ],
-  "build_id": "43ff8a3baffb556cac8df3db1195ffd4ece209c9369999018ba15de24bc52e9a",
-  "final_fingerprint": "3e72a6f3b3ae0b28cf349498a16a987031520a9a29d322a80aa75a91b33f3d46",
+  "build_id": "f41f1e5dfc830a36848d4bc1471aee0f1bdec787ddebf7038875d0269244eb7a",
+  "final_fingerprint": "0fd91d3c5643f174b5d395a4ae79aadbf599712b2529d3a047608ac0fd161c25",
   "id": "cross_plain_court",
   "location": "court.hall",
   "outcomes": [],
