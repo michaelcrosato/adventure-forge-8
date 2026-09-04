@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:pickle.path",
+    "go:pickle.yard",
+    "know_the_pickle_cut",
+    "go:pickle.tub",
+    "pack_the_pickle",
+    "go:pickle.yard",
+    "go:pickle.pack",
+    "take:brine_jar",
+    "go:pickle.yard",
+    "go:pickle.lid",
+    "lid_the_pickle"
+  ],
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "f3c1f563f9a7cabf3bc95ff04048eb11f77569947a4b689aa4d260bb209b7d1b",
+  "id": "marsh_pickle_lidded",
+  "location": "pickle.lid",
+  "outcome": "pickle_lidded",
+  "outcomes": [
+    "pickle_lidded"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

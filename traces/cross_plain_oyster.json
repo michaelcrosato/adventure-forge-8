@@ -6,8 +6,8 @@
     "go:oyster.yard",
     "go:oyster.beds"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "c12285f2d62ee91833eb11a71a5c8b220a4356fdbb640e8bc5cb927ddaa22dc2",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "5b4ea10129700866a3a6d1acbaadd8a8aa62f28170b00adffe970305af94d3c6",
   "id": "cross_plain_oyster",
   "location": "oyster.beds",
   "outcomes": [],

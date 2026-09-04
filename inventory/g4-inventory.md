@@ -125,10 +125,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | coop.soak | cooperage | Corm, soak stave |
 | coop.hoop | cooperage | stave set, mead-cask mark |
 | coop.raise | cooperage | Bess, raise barrel, barrel_raised |
+| pickle.path | pickle_house | pickle house on the bank, pickle access |
+| pickle.yard | pickle_house | Rill, pickle cut vs pickle list |
+| pickle.tub | pickle_house | Ora, pack pickle |
+| pickle.pack | pickle_house | brine jar |
+| pickle.lid | pickle_house | Tov, lid pickle, hoop, pickle_lidded |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`, `mead_drawn`, `barrel_raised`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`, `mead_drawn`, `barrel_raised`, `pickle_lidded`
 
 ## Substrate
 

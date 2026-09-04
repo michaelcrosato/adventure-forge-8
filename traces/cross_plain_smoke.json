@@ -6,8 +6,8 @@
     "go:smoke.yard",
     "go:smoke.racks"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "635e6eee9b765c3a44c28de408bb1d30905878537e63b02e134e4be2b239ee49",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "e379b8478688c695e9bfbc12aaaf84d35b0babc4151d3d7b75383c7989c16464",
   "id": "cross_plain_smoke",
   "location": "smoke.racks",
   "outcomes": [],

@@ -5,8 +5,8 @@
     "go:rope.path",
     "go:rope.yard"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "519007644ba538aa5fb6ee4e5b35c49cfad56478178daf26e6f368787a94f988",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "d9ca587397ac4039d933eb9337ac24792da6cd7d91b736627aae6137bae7cd17",
   "id": "divergence_marsh_rope",
   "location": "rope.yard",
   "outcomes": [],

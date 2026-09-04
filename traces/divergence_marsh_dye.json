@@ -5,8 +5,8 @@
     "go:dye.path",
     "go:dye.yard"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "3be9460ce60c0a08424a771c64b75bc39d66ea5dfc801e68de568e60709da761",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "bdcb84cab5a1a7a3eda09637fb9c818ba4c8ecf817ef27606ef7675aff8dfeb1",
   "id": "divergence_marsh_dye",
   "location": "dye.yard",
   "outcomes": [],

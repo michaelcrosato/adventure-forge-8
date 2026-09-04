@@ -5,8 +5,8 @@
     "go:wreck.path",
     "go:wreck.yard"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "12a5f00f43a4ce8e4dea70782a9cad4dd4af4e1c8287d68e8b51db2033ebc5ef",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "d927ccb7edd2f0871c7be315d66b938945515efc923d6af35a63adb266ceff13",
   "id": "divergence_marsh_wreck",
   "location": "wreck.yard",
   "outcomes": [],

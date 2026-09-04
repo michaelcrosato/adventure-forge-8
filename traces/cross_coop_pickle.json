@@ -12,13 +12,17 @@
     "take:stave_set",
     "go:coop.yard",
     "go:coop.raise",
-    "raise_the_barrel"
+    "raise_the_barrel",
+    "go:coop.yard",
+    "go:coop.path",
+    "go:pickle.path",
+    "go:pickle.yard",
+    "go:pickle.lid"
   ],
   "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "0fe203df63167d48a0db5ca1d4f690ab1f02c722c6298a72cbd1d27190b11eee",
-  "id": "marsh_barrel_raised",
-  "location": "coop.raise",
-  "outcome": "barrel_raised",
+  "final_fingerprint": "5266f010d8f6958619ce11217713899367e4463e94d080f56c29caaf1627e30a",
+  "id": "cross_coop_pickle",
+  "location": "pickle.lid",
   "outcomes": [
     "barrel_raised"
   ],

@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:road.ford",
-    "go:road.dike",
-    "go:road.hut"
+    "go:pickle.path",
+    "go:pickle.yard",
+    "go:pickle.lid"
   ],
   "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "51b31281f5ea798d8df1fe593dc959bf929a9da6db7409f6895fa9685bcbe479",
-  "id": "cross_plain_road",
-  "location": "road.hut",
+  "final_fingerprint": "0936658bbf586e39e49c36eb447b9c840ac96ad284d8948c9ca247ebd8ce5cc5",
+  "id": "cross_plain_pickle",
+  "location": "pickle.lid",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

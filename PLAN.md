@@ -167,6 +167,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Bee Skeps | Smoke hive, take comb, set skep | Hamlet |
 | Mead House | Mash must, bung, tap cask | Hamlet |
 | Cooperage | Soak stave, hoop, raise barrel | Hamlet |
+| Pickle House | Pack brine, lid the pickle cask | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -195,6 +196,7 @@ Authored outcomes:
 21. `hive_kept` — the hive is smoked, comb taken, and the skep set.
 22. `mead_drawn` — the must is mashed, bunged, and the cask tapped.
 23. `barrel_raised` — a stave is soaked, hooped, and the barrel raised.
+24. `pickle_lidded` — cut is packed under brine and the pickle cask is lidded.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -236,8 +238,9 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 20. **Slice 19:** Bee Skeps — smoke hive, take comb, set skep. Cross-effect: wreck laid unlocks a drowned ward on the skeps.
 21. **Slice 20:** Mead House — mash must, bung, tap cask. Cross-effect: hive kept unlocks true comb pitch on the mash.
 22. **Slice 21:** Cooperage — soak stave, hoop, raise barrel. Cross-effect: mead drawn unlocks a mead-cask mark on the hoop.
-23. **Slice 22+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-24. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+23. **Slice 22:** Pickle House — pack brine, lid the pickle cask. Cross-effect: barrel raised unlocks a hoop on the pickle lid.
+24. **Slice 23+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+25. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

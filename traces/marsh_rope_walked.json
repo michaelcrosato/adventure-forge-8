@@ -11,8 +11,8 @@
     "go:rope.walk",
     "walk_the_rope"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "3a60478f6dcb1cfed72233c4455bc5c8354fec44d2939362c9ded10a0f70ecce",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "8b1309b08bb47662e960c6c1f327164d186087aa5dbec72f0cde951429329776",
   "id": "marsh_rope_walked",
   "location": "rope.walk",
   "outcome": "rope_walked",

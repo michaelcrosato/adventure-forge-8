@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:hive.path",
-    "go:hive.yard"
+    "go:pickle.path",
+    "go:pickle.yard"
   ],
   "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "15d799215297eab4680ce63246c8372fe21a74de3b0dbd822677ce99275d4d26",
-  "id": "divergence_city_hive",
-  "location": "hive.yard",
+  "final_fingerprint": "e6dbd3032c55a649c37961df484aaf3508d3c0911cad06ba73cc1970eeb5af51",
+  "id": "divergence_city_pickle",
+  "location": "pickle.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

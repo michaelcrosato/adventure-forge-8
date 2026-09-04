@@ -6,8 +6,8 @@
     "go:dye.yard",
     "go:dye.vats"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "dfc18788d61b71cd09a4b0a01ac86b14f4b9fb191e2521e1a421d9fc59b5ac46",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "98ad4d9da78ee63eb1bcb502e66e6a694c45bdfbf611e62a5ed1d6c18912b438",
   "id": "cross_plain_dye",
   "location": "dye.vats",
   "outcomes": [],

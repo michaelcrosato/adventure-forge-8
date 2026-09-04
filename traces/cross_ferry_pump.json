@@ -15,8 +15,8 @@
     "go:pump.yard",
     "go:pump.tower"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "dfe17c283a7ca386b69d5a83b8ef0da07f4cdff4b1044d4e1bbe58d527fd6e99",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "9a3660a0ac23332adac60c373e8f440b785996c18e014e9e3af7e3d62bfa1b4d",
   "id": "cross_ferry_pump",
   "location": "pump.tower",
   "outcomes": [

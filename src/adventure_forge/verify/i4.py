@@ -145,6 +145,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_coop",
         "cross_plain_coop",
         "cross_mead_coop",
+        "marsh_pickle_lidded",
+        "divergence_marsh_pickle",
+        "divergence_city_pickle",
+        "cross_plain_pickle",
+        "cross_coop_pickle",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -176,6 +181,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     hive = replay(content, by_id["marsh_hive_kept"]["seed"], by_id["marsh_hive_kept"]["sheet"], by_id["marsh_hive_kept"]["actions"])
     mead = replay(content, by_id["marsh_mead_drawn"]["seed"], by_id["marsh_mead_drawn"]["sheet"], by_id["marsh_mead_drawn"]["actions"])
     barrel = replay(content, by_id["marsh_barrel_raised"]["seed"], by_id["marsh_barrel_raised"]["sheet"], by_id["marsh_barrel_raised"]["actions"])
+    pickle = replay(content, by_id["marsh_pickle_lidded"]["seed"], by_id["marsh_pickle_lidded"]["sheet"], by_id["marsh_pickle_lidded"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -222,7 +228,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("mead_drawn predicate failed")
     if "barrel_raised" not in barrel.state.outcomes:
         raise AssertionError("barrel_raised predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint, wreck.fingerprint, hive.fingerprint, mead.fingerprint, barrel.fingerprint}) != 23:
+    if "pickle_lidded" not in pickle.state.outcomes:
+        raise AssertionError("pickle_lidded predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint, wreck.fingerprint, hive.fingerprint, mead.fingerprint, barrel.fingerprint, pickle.fingerprint}) != 24:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -760,6 +768,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "mead_drawn" not in mead_coop.state.outcomes:
         raise AssertionError("cross mead-coop run lost mead_drawn")
 
+    pickle_m = by_id["divergence_marsh_pickle"]
+    pickle_c = by_id["divergence_city_pickle"]
+    pickle_m_ids, pickle_c_ids = _diverge_legal(content, pickle_m, pickle_c)
+    if "know_the_pickle_cut" not in pickle_m_ids:
+        raise AssertionError("marsh_scout missing know_the_pickle_cut")
+    if "read_the_pickle_list" not in pickle_c_ids:
+        raise AssertionError("city_oath missing read_the_pickle_list")
+    if "know_the_pickle_cut" in pickle_c_ids or "read_the_pickle_list" in pickle_m_ids:
+        raise AssertionError("pickle sheet verbs leaked across sheets")
+
+    plain_pickle = replay(content, by_id["cross_plain_pickle"]["seed"], by_id["cross_plain_pickle"]["sheet"], by_id["cross_plain_pickle"]["actions"])
+    coop_pickle = replay(content, by_id["cross_coop_pickle"]["seed"], by_id["cross_coop_pickle"]["sheet"], by_id["cross_coop_pickle"]["actions"])
+    if plain_pickle.state.location != coop_pickle.state.location:
+        raise AssertionError("pickle cross-area pair left different locations")
+    if plain_pickle.state.location != "pickle.lid":
+        raise AssertionError("pickle cross-area pair not at pickle.lid")
+    plain_pickle_ids = {a.id for a in enumerate_legal(plain_pickle.state, content)}
+    coop_pickle_ids = {a.id for a in enumerate_legal(coop_pickle.state, content)}
+    if "hoop_the_pickle" not in coop_pickle_ids:
+        raise AssertionError("barrel raised did not unlock hoop_the_pickle")
+    if "hoop_the_pickle" in plain_pickle_ids:
+        raise AssertionError("hoop_the_pickle leaked without barrel raised")
+    if "barrel_raised" not in coop_pickle.state.outcomes:
+        raise AssertionError("cross coop-pickle run lost barrel_raised")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -784,6 +817,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "hive_kept": hive.fingerprint,
         "mead_drawn": mead.fingerprint,
         "barrel_raised": barrel.fingerprint,
+        "pickle_lidded": pickle.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -828,6 +862,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "mead_city_only": sorted(mead_c_ids - mead_m_ids),
         "coop_marsh_only": sorted(coop_m_ids - coop_c_ids),
         "coop_city_only": sorted(coop_c_ids - coop_m_ids),
+        "pickle_marsh_only": sorted(pickle_m_ids - pickle_c_ids),
+        "pickle_city_only": sorted(pickle_c_ids - pickle_m_ids),
     }
 
 

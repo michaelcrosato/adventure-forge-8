@@ -98,6 +98,7 @@ def build() -> dict:
         "comb_cake": {"name": "comb cake", "kind": "goods"},
         "cask_bung": {"name": "cask bung", "kind": "goods"},
         "stave_set": {"name": "stave set", "kind": "goods"},
+        "brine_jar": {"name": "brine jar", "kind": "goods"},
         **salvage_items,
     }
 
@@ -229,6 +230,7 @@ def build() -> dict:
                 {"to": "hive.path", "label": "Go to bee skeps"},
                 {"to": "mead.path", "label": "Go to mead house"},
                 {"to": "coop.path", "label": "Go to cooperage"},
+                {"to": "pickle.path", "label": "Go to pickle house"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1572,6 +1574,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "mead.path", "label": "Go to mead house"},
                 {"to": "coop.yard", "label": "Go to cooper yard"},
+                {"to": "pickle.path", "label": "Go to pickle house"},
             ],
             "ground": [],
             "actors": [],
@@ -1622,6 +1625,65 @@ def build() -> dict:
             "exits": [{"to": "coop.yard", "label": "Go to cooper yard"}],
             "ground": [],
             "actors": ["bess"],
+        },
+        "pickle.path": {
+            "region": "pickle_house",
+            "name": "Pickle Path",
+            "situation": "A pickle house sits on the bank. Brine steam hangs low.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "coop.path", "label": "Go to cooperage"},
+                {"to": "pickle.yard", "label": "Go to pickle yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pickle.yard": {
+            "region": "pickle_house",
+            "name": "Pickle Yard",
+            "situation": "Rill waits by a pickle mark. The brine smell is sharp.",
+            "exits": [
+                {"to": "pickle.path", "label": "Go to pickle path"},
+                {"to": "pickle.tub", "label": "Go to the tub"},
+                {"to": "pickle.pack", "label": "Go to the pack"},
+                {"to": "pickle.lid", "label": "Go to the lid"},
+            ],
+            "ground": [],
+            "actors": ["rill"],
+        },
+        "pickle.tub": {
+            "region": "pickle_house",
+            "name": "Pack Tub",
+            "situation": "Ora keeps a pack tub. Cut reed sits in brine.",
+            "exits": [{"to": "pickle.yard", "label": "Go to pickle yard"}],
+            "ground": [],
+            "actors": ["ora"],
+        },
+        "pickle.pack": {
+            "region": "pickle_house",
+            "name": "Brine Shelf",
+            "situation": "Brine jars sit on a shelf. One jar is full.",
+            "exits": [{"to": "pickle.yard", "label": "Go to pickle yard"}],
+            "ground": ["brine_jar"],
+            "actors": [],
+        },
+        "pickle.lid": {
+            "region": "pickle_house",
+            "name": "Lid Bench",
+            "situation": "Tov waits by a cask lid. A hoop peg hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "barrel_raised"},
+                    "text": "A raised hoop would bind this lid.",
+                },
+                {
+                    "when": {"has_flag": "pickle_lidded"},
+                    "text": "The lid sits still and even.",
+                },
+            ],
+            "exits": [{"to": "pickle.yard", "label": "Go to pickle yard"}],
+            "ground": [],
+            "actors": ["tov"],
         },
     }
 
@@ -1901,6 +1963,18 @@ def build() -> dict:
         "bess": {
             "name": "Bess",
             "idle": "He keeps the raise frame and does not look up.",
+        },
+        "rill": {
+            "name": "Rill",
+            "idle": "He sniffs the brine and does not speak first.",
+        },
+        "ora": {
+            "name": "Ora",
+            "idle": "She turns the pack and waits.",
+        },
+        "tov": {
+            "name": "Tov",
+            "idle": "He keeps a lid hoop and does not look up.",
         },
     }
 
@@ -5127,6 +5201,122 @@ def build() -> dict:
             "Bess raises only a soaked stave.",
             [{"op": "set_flag", "flag": "heard_coop_rule"}],
         ),
+        action(
+            "know_the_pickle_cut",
+            "Know the pickle cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "pickle.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "pickle_trust"},
+                ]
+            },
+            "You name the pickle cut. Rill lets you pack and lid.",
+            [
+                {"op": "set_flag", "flag": "pickle_trust"},
+                {"op": "remember", "actor": "rill", "fact": "cut"},
+            ],
+        ),
+        action(
+            "read_the_pickle_list",
+            "Read the pickle list",
+            "do",
+            {
+                "all": [
+                    {"at": "pickle.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "pickle_trust"},
+                ]
+            },
+            "You read the pickle list. Rill lets you pack and lid.",
+            [
+                {"op": "set_flag", "flag": "pickle_trust"},
+                {"op": "remember", "actor": "rill", "fact": "list"},
+            ],
+        ),
+        action(
+            "hoop_the_pickle",
+            "Hoop the pickle",
+            "do",
+            {
+                "all": [
+                    {"at": "pickle.lid"},
+                    {"has_flag": "barrel_raised"},
+                    {"not_flag": "pickle_hooped"},
+                ]
+            },
+            "You hoop the pickle. The lid takes a raised hoop.",
+            [
+                {"op": "set_flag", "flag": "pickle_hooped"},
+                {"op": "set_flag", "flag": "pickle_trust"},
+                {"op": "remember", "actor": "tov", "fact": "hoop"},
+            ],
+        ),
+        action(
+            "pack_the_pickle",
+            "Pack the pickle",
+            "do",
+            {
+                "all": [
+                    {"at": "pickle.tub"},
+                    {"has_flag": "pickle_trust"},
+                    {"not_flag": "pickle_packed"},
+                    {"not_flag": "pickle_lidded"},
+                ]
+            },
+            "You pack the pickle. The tub takes the cut.",
+            [{"op": "set_flag", "flag": "pickle_packed"}],
+        ),
+        action(
+            "lid_the_pickle",
+            "Lid the pickle",
+            "do",
+            {
+                "all": [
+                    {"at": "pickle.lid"},
+                    {"has_flag": "pickle_trust"},
+                    {"has_flag": "pickle_packed"},
+                    {"has_item": "brine_jar"},
+                    {"not_flag": "pickle_lidded"},
+                ]
+            },
+            "You lid the pickle. Tov marks the cask shut.",
+            [
+                {"op": "remove_item", "item": "brine_jar"},
+                {"op": "set_flag", "flag": "pickle_lidded"},
+                {"op": "remember", "actor": "tov", "fact": "lid"},
+            ],
+        ),
+        action(
+            "ask_rill_rule",
+            "Ask Rill the rule",
+            "talk",
+            {"at": "pickle.yard"},
+            "Rill says pack the pickle. Then brine and lid.",
+            [{"op": "set_flag", "flag": "heard_pickle_rule"}],
+        ),
+        action(
+            "ask_ora_pack",
+            "Ask Ora the pack",
+            "talk",
+            {"at": "pickle.tub"},
+            "Ora says pack until the cut sits under brine.",
+            [{"op": "set_flag", "flag": "heard_pickle_rule"}],
+        ),
+        action(
+            "ask_tov_lid",
+            "Ask Tov the lid",
+            "talk",
+            {"at": "pickle.lid"},
+            "Tov lids only a packed pickle.",
+            [{"op": "set_flag", "flag": "heard_pickle_rule"}],
+        ),
     ]
 
     pack = {
@@ -5224,6 +5414,10 @@ def build() -> dict:
             "cooperage": {
                 "name": "Cooperage",
                 "mechanic": "soak-stave-raise-barrel",
+            },
+            "pickle_house": {
+                "name": "Pickle House",
+                "mechanic": "pack-brine-lid-cask",
             },
         },
         "locations": locations,
@@ -5323,11 +5517,15 @@ def build() -> dict:
                 "name": "Barrel Raised",
                 "when": {"has_flag": "barrel_raised"},
             },
+            "pickle_lidded": {
+                "name": "Pickle Lidded",
+                "when": {"has_flag": "pickle_lidded"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0, "coop": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0, "coop": 0, "pickle": 0},
             "inventory": [],
             "flags": {},
         },

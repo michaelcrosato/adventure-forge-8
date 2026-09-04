@@ -19,8 +19,8 @@
     "go:coop.yard",
     "go:coop.hoop"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "57eb0316f5aac67ae49044b6c20edeb5c1fff93173fa2b4241a2ed765403d756",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "a3fc38e3a57cb0608cdaeb91d2249eeb01dc0dea54f3236e6f4b2fe242876fcc",
   "id": "cross_mead_coop",
   "location": "coop.hoop",
   "outcomes": [

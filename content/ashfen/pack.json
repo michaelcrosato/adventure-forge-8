@@ -6195,6 +6195,229 @@
       "when": {
         "at": "coop.raise"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pickle_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rill",
+          "fact": "cut",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_pickle_cut",
+      "label": "Know the pickle cut",
+      "text": "You name the pickle cut. Rill lets you pack and lid.",
+      "when": {
+        "all": [
+          {
+            "at": "pickle.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "pickle_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pickle_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rill",
+          "fact": "list",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_pickle_list",
+      "label": "Read the pickle list",
+      "text": "You read the pickle list. Rill lets you pack and lid.",
+      "when": {
+        "all": [
+          {
+            "at": "pickle.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "pickle_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pickle_hooped",
+          "op": "set_flag"
+        },
+        {
+          "flag": "pickle_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tov",
+          "fact": "hoop",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "hoop_the_pickle",
+      "label": "Hoop the pickle",
+      "text": "You hoop the pickle. The lid takes a raised hoop.",
+      "when": {
+        "all": [
+          {
+            "at": "pickle.lid"
+          },
+          {
+            "has_flag": "barrel_raised"
+          },
+          {
+            "not_flag": "pickle_hooped"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pickle_packed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "pack_the_pickle",
+      "label": "Pack the pickle",
+      "text": "You pack the pickle. The tub takes the cut.",
+      "when": {
+        "all": [
+          {
+            "at": "pickle.tub"
+          },
+          {
+            "has_flag": "pickle_trust"
+          },
+          {
+            "not_flag": "pickle_packed"
+          },
+          {
+            "not_flag": "pickle_lidded"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "brine_jar",
+          "op": "remove_item"
+        },
+        {
+          "flag": "pickle_lidded",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tov",
+          "fact": "lid",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "lid_the_pickle",
+      "label": "Lid the pickle",
+      "text": "You lid the pickle. Tov marks the cask shut.",
+      "when": {
+        "all": [
+          {
+            "at": "pickle.lid"
+          },
+          {
+            "has_flag": "pickle_trust"
+          },
+          {
+            "has_flag": "pickle_packed"
+          },
+          {
+            "has_item": "brine_jar"
+          },
+          {
+            "not_flag": "pickle_lidded"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pickle_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_rill_rule",
+      "label": "Ask Rill the rule",
+      "text": "Rill says pack the pickle. Then brine and lid.",
+      "when": {
+        "at": "pickle.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pickle_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_ora_pack",
+      "label": "Ask Ora the pack",
+      "text": "Ora says pack until the cut sits under brine.",
+      "when": {
+        "at": "pickle.tub"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pickle_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_tov_lid",
+      "label": "Ask Tov the lid",
+      "text": "Tov lids only a packed pickle.",
+      "when": {
+        "at": "pickle.lid"
+      }
     }
   ],
   "actors": {
@@ -6366,6 +6589,10 @@
       "idle": "He watches the vanes and does not speak first.",
       "name": "Od"
     },
+    "ora": {
+      "idle": "She turns the pack and waits.",
+      "name": "Ora"
+    },
     "orm": {
       "idle": "He holds a seal and does not speak first.",
       "name": "Orm"
@@ -6397,6 +6624,10 @@
     "rhee": {
       "idle": "She taps the quill and waits.",
       "name": "Rhee"
+    },
+    "rill": {
+      "idle": "He sniffs the brine and does not speak first.",
+      "name": "Rill"
     },
     "rook": {
       "idle": "He squints at the empty frame.",
@@ -6437,6 +6668,10 @@
     "tess": {
       "idle": "She keeps a hook in her belt and waits.",
       "name": "Tess"
+    },
+    "tov": {
+      "idle": "He keeps a lid hoop and does not look up.",
+      "name": "Tov"
     },
     "venn": {
       "idle": "He keeps his palm on an empty niche.",
@@ -6488,6 +6723,10 @@
     "brass_key": {
       "kind": "key",
       "name": "brass key"
+    },
+    "brine_jar": {
+      "kind": "goods",
+      "name": "brine jar"
     },
     "cask_bung": {
       "kind": "goods",
@@ -7083,6 +7322,10 @@
         {
           "label": "Go to cooperage",
           "to": "coop.path"
+        },
+        {
+          "label": "Go to pickle house",
+          "to": "pickle.path"
         }
       ],
       "ground": [],
@@ -7250,6 +7493,10 @@
         {
           "label": "Go to cooper yard",
           "to": "coop.yard"
+        },
+        {
+          "label": "Go to pickle house",
+          "to": "pickle.path"
         }
       ],
       "ground": [],
@@ -8803,6 +9050,113 @@
       "region": "salt_pans",
       "situation": "Rakes lean on a low wall. Dorr waits by a list of pans."
     },
+    "pickle.lid": {
+      "actors": [
+        "tov"
+      ],
+      "exits": [
+        {
+          "label": "Go to pickle yard",
+          "to": "pickle.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Lid Bench",
+      "region": "pickle_house",
+      "situation": "Tov waits by a cask lid. A hoop peg hangs.",
+      "situation_if": [
+        {
+          "text": "A raised hoop would bind this lid.",
+          "when": {
+            "has_flag": "barrel_raised"
+          }
+        },
+        {
+          "text": "The lid sits still and even.",
+          "when": {
+            "has_flag": "pickle_lidded"
+          }
+        }
+      ]
+    },
+    "pickle.pack": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to pickle yard",
+          "to": "pickle.yard"
+        }
+      ],
+      "ground": [
+        "brine_jar"
+      ],
+      "name": "Brine Shelf",
+      "region": "pickle_house",
+      "situation": "Brine jars sit on a shelf. One jar is full."
+    },
+    "pickle.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to cooperage",
+          "to": "coop.path"
+        },
+        {
+          "label": "Go to pickle yard",
+          "to": "pickle.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pickle Path",
+      "region": "pickle_house",
+      "situation": "A pickle house sits on the bank. Brine steam hangs low."
+    },
+    "pickle.tub": {
+      "actors": [
+        "ora"
+      ],
+      "exits": [
+        {
+          "label": "Go to pickle yard",
+          "to": "pickle.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pack Tub",
+      "region": "pickle_house",
+      "situation": "Ora keeps a pack tub. Cut reed sits in brine."
+    },
+    "pickle.yard": {
+      "actors": [
+        "rill"
+      ],
+      "exits": [
+        {
+          "label": "Go to pickle path",
+          "to": "pickle.path"
+        },
+        {
+          "label": "Go to the tub",
+          "to": "pickle.tub"
+        },
+        {
+          "label": "Go to the pack",
+          "to": "pickle.pack"
+        },
+        {
+          "label": "Go to the lid",
+          "to": "pickle.lid"
+        }
+      ],
+      "ground": [],
+      "name": "Pickle Yard",
+      "region": "pickle_house",
+      "situation": "Rill waits by a pickle mark. The brine smell is sharp."
+    },
     "pump.crank": {
       "actors": [],
       "exits": [
@@ -9938,6 +10292,12 @@
         "has_flag": "oyster_culled"
       }
     },
+    "pickle_lidded": {
+      "name": "Pickle Lidded",
+      "when": {
+        "has_flag": "pickle_lidded"
+      }
+    },
     "reed_sentence": {
       "name": "Reed Sentence",
       "when": {
@@ -10054,6 +10414,10 @@
       "mechanic": "peat-cut-share",
       "name": "Peat Fold"
     },
+    "pickle_house": {
+      "mechanic": "pack-brine-lid-cask",
+      "name": "Pickle House"
+    },
     "reed_court": {
       "mechanic": "law-witness-sentence",
       "name": "Reed Court"
@@ -10126,6 +10490,7 @@
       "millers": 0,
       "names": 0,
       "oyster": 0,
+      "pickle": 0,
       "pump": 0,
       "road": 0,
       "rope": 0,

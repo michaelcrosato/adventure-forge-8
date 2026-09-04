@@ -19,8 +19,8 @@
     "go:road.dike",
     "go:road.hut"
   ],
-  "build_id": "583a89a06eae2ed3167a46d0ff50cf4b9a88a5fe1eabc096c1bf6d6dc462ea33",
-  "final_fingerprint": "86245f9aa94514681f7dfd8b9c8d80880e8c2991042c940492d2f585f38231b7",
+  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
+  "final_fingerprint": "48152c5159eccb8f28a1061ff76d6fa1449365acaf08ff0c5beaa708de49ab88",
   "id": "cross_court_road",
   "location": "road.hut",
   "outcomes": [
