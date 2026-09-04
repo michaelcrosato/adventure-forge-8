@@ -1,0 +1,26 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:court.gate",
+    "go:court.yard",
+    "go:court.hall",
+    "speak_reed_custom",
+    "go:court.yard",
+    "go:court.cell",
+    "hear_tam_witness",
+    "go:court.yard",
+    "go:court.hall",
+    "pass_reed_sentence"
+  ],
+  "build_id": "a22e5ba358963839315f1a74ca67875d89ac24bf2d62d43718fd1b854f692f02",
+  "final_fingerprint": "d9f42133b8514ce366ee48df880cd7c714ea7b798a5d4c31d3033bdfb185f7c1",
+  "id": "marsh_reed_sentence",
+  "location": "court.hall",
+  "outcome": "reed_sentence",
+  "outcomes": [
+    "reed_sentence"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -2,13 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:mill.lane",
-    "go:mill.yard"
+    "go:court.gate",
+    "go:court.yard",
+    "go:court.hall"
   ],
   "build_id": "a22e5ba358963839315f1a74ca67875d89ac24bf2d62d43718fd1b854f692f02",
-  "final_fingerprint": "4d8ac482963612cef423e5b73dbfb689aff802b9558a472cb46c874c2cae50a8",
-  "id": "cross_plain_mill",
-  "location": "mill.yard",
+  "final_fingerprint": "385207c1c0ac6e4b72bd5c1e58cd1855af8264c98e28ac423a5fff295ab5664e",
+  "id": "cross_plain_court",
+  "location": "court.hall",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

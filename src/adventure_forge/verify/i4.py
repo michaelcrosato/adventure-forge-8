@@ -45,6 +45,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_mill",
         "cross_plain_mill",
         "cross_compact_mill",
+        "marsh_reed_sentence",
+        "divergence_marsh_court",
+        "divergence_city_court",
+        "cross_plain_court",
+        "cross_kiln_court",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -56,13 +61,16 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     compact = replay(content, by_id["marsh_harbor_compact"]["seed"], by_id["marsh_harbor_compact"]["sheet"], by_id["marsh_harbor_compact"]["actions"])
     relic = replay(content, by_id["marsh_stack_relic"]["seed"], by_id["marsh_stack_relic"]["sheet"], by_id["marsh_stack_relic"]["actions"])
     kiln = replay(content, by_id["marsh_kiln_pact"]["seed"], by_id["marsh_kiln_pact"]["sheet"], by_id["marsh_kiln_pact"]["actions"])
+    court = replay(content, by_id["marsh_reed_sentence"]["seed"], by_id["marsh_reed_sentence"]["sheet"], by_id["marsh_reed_sentence"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
         raise AssertionError("stack_relic predicate failed")
     if "kiln_pact" not in kiln.state.outcomes:
         raise AssertionError("kiln_pact predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint}) != 3:
+    if "reed_sentence" not in court.state.outcomes:
+        raise AssertionError("reed_sentence predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint}) != 4:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -100,14 +108,42 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "harbor_compact" not in with_compact.state.outcomes:
         raise AssertionError("cross compact run lost harbor_compact")
 
+    court_m = by_id["divergence_marsh_court"]
+    court_c = by_id["divergence_city_court"]
+    court_m_ids, court_c_ids = _diverge_legal(content, court_m, court_c)
+    if "speak_reed_custom" not in court_m_ids:
+        raise AssertionError("marsh_scout missing speak_reed_custom at court")
+    if "cite_city_law" not in court_c_ids:
+        raise AssertionError("city_oath missing cite_city_law at court")
+    if "speak_reed_custom" in court_c_ids or "cite_city_law" in court_m_ids:
+        raise AssertionError("court sheet verbs leaked across sheets")
+
+    plain_court = replay(content, by_id["cross_plain_court"]["seed"], by_id["cross_plain_court"]["sheet"], by_id["cross_plain_court"]["actions"])
+    kiln_court = replay(content, by_id["cross_kiln_court"]["seed"], by_id["cross_kiln_court"]["sheet"], by_id["cross_kiln_court"]["actions"])
+    if plain_court.state.location != kiln_court.state.location:
+        raise AssertionError("court cross-area pair left different locations")
+    if plain_court.state.location != "court.hall":
+        raise AssertionError("court cross-area pair not at court.hall")
+    plain_court_ids = {a.id for a in enumerate_legal(plain_court.state, content)}
+    kiln_court_ids = {a.id for a in enumerate_legal(kiln_court.state, content)}
+    if "name_mill_pact" not in kiln_court_ids:
+        raise AssertionError("kiln pact did not unlock name_mill_pact")
+    if "name_mill_pact" in plain_court_ids:
+        raise AssertionError("name_mill_pact leaked without kiln pact")
+    if "kiln_pact" not in kiln_court.state.outcomes:
+        raise AssertionError("cross kiln-court run lost kiln_pact")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
         "kiln_pact": kiln.fingerprint,
+        "reed_sentence": court.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
         "mill_city_only": sorted(mill_c_ids - mill_m_ids),
+        "court_marsh_only": sorted(court_m_ids - court_c_ids),
+        "court_city_only": sorted(court_c_ids - court_m_ids),
     }
 
 

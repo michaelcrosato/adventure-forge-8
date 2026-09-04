@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:court.gate",
+    "go:court.yard",
+    "go:court.hall"
+  ],
+  "build_id": "a22e5ba358963839315f1a74ca67875d89ac24bf2d62d43718fd1b854f692f02",
+  "final_fingerprint": "bab7c4dd6baabeea7b7663633ee578ad24faac18ace00a981d7c305a2033aed8",
+  "id": "divergence_city_court",
+  "location": "court.hall",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

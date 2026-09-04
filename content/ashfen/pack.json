@@ -1534,9 +1534,297 @@
       "when": {
         "at": "mill.loft"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "court_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "magistrate",
+          "fact": "reed_custom",
+          "op": "remember"
+        },
+        {
+          "faction": "court",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "speak_reed_custom",
+      "label": "Speak reed custom",
+      "text": "You speak reed custom. Orin grants you standing.",
+      "when": {
+        "all": [
+          {
+            "at": "court.hall"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "tongue",
+                  "cant"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "court_standing"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "court_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "magistrate",
+          "fact": "city_law",
+          "op": "remember"
+        },
+        {
+          "faction": "court",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "cite_city_law",
+      "label": "Cite city law",
+      "text": "You cite city law. Orin grants you standing.",
+      "when": {
+        "all": [
+          {
+            "at": "court.hall"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "cityward"
+                ]
+              },
+              {
+                "sheet": [
+                  "tongue",
+                  "court"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "court_standing"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "court_named_mill",
+          "op": "set_flag"
+        },
+        {
+          "flag": "court_standing",
+          "op": "set_flag"
+        },
+        {
+          "actor": "magistrate",
+          "fact": "mill_pact",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "name_mill_pact",
+      "label": "Name the mill pact",
+      "text": "You name the mill pact. Orin takes it as clean proof.",
+      "when": {
+        "all": [
+          {
+            "at": "court.hall"
+          },
+          {
+            "has_flag": "kiln_pact_sealed"
+          },
+          {
+            "not_flag": "court_named_mill"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "witness_heard",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tam",
+          "fact": "spoke",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "hear_tam_witness",
+      "label": "Hear Tam as witness",
+      "text": "Tam names the grain theft. He saw the cut at dusk.",
+      "when": {
+        "all": [
+          {
+            "at": "court.cell"
+          },
+          {
+            "not_flag": "witness_heard"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "swore_witness",
+          "op": "set_flag"
+        },
+        {
+          "faction": "court",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "swear_true_witness",
+      "label": "Swear true witness",
+      "text": "You swear Tam spoke true. Orin records the oath.",
+      "when": {
+        "all": [
+          {
+            "at": "court.hall"
+          },
+          {
+            "has_flag": "witness_heard"
+          },
+          {
+            "sheet": [
+              "creed",
+              "oathbound"
+            ]
+          },
+          {
+            "not_flag": "swore_witness"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "read_charter",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "read_reed_charter",
+      "label": "Read the reed charter",
+      "text": "You read the charter. Sentence needs a heard witness.",
+      "when": {
+        "all": [
+          {
+            "at": "court.archive"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "read_charter"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "reed_sentence_passed",
+          "op": "set_flag"
+        },
+        {
+          "faction": "court",
+          "n": 2,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "pass_reed_sentence",
+      "label": "Pass the reed sentence",
+      "text": "You pass sentence. Orin strikes the mat once.",
+      "when": {
+        "all": [
+          {
+            "at": "court.hall"
+          },
+          {
+            "has_flag": "court_standing"
+          },
+          {
+            "has_flag": "witness_heard"
+          },
+          {
+            "not_flag": "reed_sentence_passed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_court_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_kesh_rule",
+      "label": "Ask Kesh the rule",
+      "text": "Kesh says standing first, then a witness, then a sentence.",
+      "when": {
+        "at": "court.gate"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_court_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_nia_rolls",
+      "label": "Ask Nia for a roll",
+      "text": "Nia says the charter is short. Witness, then sentence.",
+      "when": {
+        "at": "court.archive"
+      }
     }
   ],
   "actors": {
+    "bailiff": {
+      "idle": "He holds a staff across the gate.",
+      "name": "Bailiff Kesh"
+    },
     "dock_boss": {
       "idle": "He counts barrels and does not look up.",
       "name": "Dock boss"
@@ -1549,6 +1837,10 @@
       "idle": "He wipes a cup and watches the door.",
       "name": "Innkeep"
     },
+    "magistrate": {
+      "idle": "She waits with both palms on her knees.",
+      "name": "Magistrate Orin"
+    },
     "miller": {
       "idle": "He keeps a thumb on the debt board.",
       "name": "Miller Brann"
@@ -1557,6 +1849,10 @@
       "idle": "She coils rope and eyes the first ledge.",
       "name": "Mira"
     },
+    "nia": {
+      "idle": "She keeps a dry roll under her arm.",
+      "name": "Clerk Nia"
+    },
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
@@ -1564,6 +1860,10 @@
     "sila": {
       "idle": "She counts sacks and does not smile.",
       "name": "Sila"
+    },
+    "tam": {
+      "idle": "He looks at the floor and does not speak first.",
+      "name": "Tam"
     },
     "watch_sergeant": {
       "idle": "She keeps a finger on the ledger.",
@@ -2018,12 +2318,131 @@
         {
           "label": "Go to mill lane",
           "to": "mill.lane"
+        },
+        {
+          "label": "Go to reed court",
+          "to": "court.gate"
         }
       ],
       "ground": [],
       "name": "Ashfen Causeway",
       "region": "saltfen",
       "situation": "A raised track of packed shell. The stacks rise inland."
+    },
+    "court.archive": {
+      "actors": [
+        "nia"
+      ],
+      "exits": [
+        {
+          "label": "Go to hall",
+          "to": "court.hall"
+        }
+      ],
+      "ground": [],
+      "name": "Reed Archive",
+      "region": "reed_court",
+      "situation": "Shelves of wet-ink rolls. The air smells of reed glue."
+    },
+    "court.cell": {
+      "actors": [
+        "tam"
+      ],
+      "exits": [
+        {
+          "label": "Go to court yard",
+          "to": "court.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Holding Cell",
+      "region": "reed_court",
+      "situation": "A damp cell. Tam sits on a board and waits."
+    },
+    "court.gate": {
+      "actors": [
+        "bailiff"
+      ],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to mill lane",
+          "to": "mill.lane"
+        },
+        {
+          "label": "Go to court yard",
+          "to": "court.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Reed Court Gate",
+      "region": "reed_court",
+      "situation": "Reed screens a low stone gate. A bailiff bars the path.",
+      "situation_if": [
+        {
+          "text": "The gate stands open after the sentence.",
+          "when": {
+            "has_flag": "reed_sentence_passed"
+          }
+        }
+      ]
+    },
+    "court.hall": {
+      "actors": [
+        "magistrate"
+      ],
+      "exits": [
+        {
+          "label": "Go to court yard",
+          "to": "court.yard"
+        },
+        {
+          "label": "Go to archive",
+          "to": "court.archive"
+        }
+      ],
+      "ground": [],
+      "name": "Reed Hall",
+      "region": "reed_court",
+      "situation": "A round hall. The magistrate sits on a reed mat.",
+      "situation_if": [
+        {
+          "text": "Orin has heard of the mill pact.",
+          "when": {
+            "has_flag": "kiln_pact_sealed"
+          }
+        },
+        {
+          "text": "The hall is still after the sentence.",
+          "when": {
+            "has_flag": "reed_sentence_passed"
+          }
+        }
+      ]
+    },
+    "court.yard": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to court gate",
+          "to": "court.gate"
+        },
+        {
+          "label": "Go to hall",
+          "to": "court.hall"
+        },
+        {
+          "label": "Go to cell",
+          "to": "court.cell"
+        }
+      ],
+      "ground": [],
+      "name": "Court Yard",
+      "region": "reed_court",
+      "situation": "Wet flags hold a quiet crowd. Reeds hiss along the wall."
     },
     "mill.kiln": {
       "actors": [
@@ -2064,6 +2483,10 @@
         {
           "label": "Go to mill yard",
           "to": "mill.yard"
+        },
+        {
+          "label": "Go to reed court",
+          "to": "court.gate"
         }
       ],
       "ground": [],
@@ -2535,6 +2958,12 @@
         "has_flag": "kiln_pact_sealed"
       }
     },
+    "reed_sentence": {
+      "name": "Reed Sentence",
+      "when": {
+        "has_flag": "reed_sentence_passed"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -2550,6 +2979,10 @@
     "kiln_mill": {
       "mechanic": "heat-craft-grain-debt",
       "name": "Kiln Mill"
+    },
+    "reed_court": {
+      "mechanic": "law-witness-sentence",
+      "name": "Reed Court"
     },
     "saltfen": {
       "mechanic": "law-trade-tides",
@@ -2580,6 +3013,7 @@
     "inventory": [],
     "location": "saltfen.dock",
     "rep": {
+      "court": 0,
       "dockers": 0,
       "millers": 0,
       "stackers": 0,

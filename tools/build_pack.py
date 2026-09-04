@@ -188,6 +188,7 @@ def build() -> dict:
                 {"to": "saltfen.market", "label": "Go to market"},
                 {"to": "stacks.base", "label": "Go to stack base"},
                 {"to": "mill.lane", "label": "Go to mill lane"},
+                {"to": "court.gate", "label": "Go to reed court"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -253,6 +254,7 @@ def build() -> dict:
             "exits": [
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "mill.yard", "label": "Go to mill yard"},
+                {"to": "court.gate", "label": "Go to reed court"},
             ],
             "ground": [],
             "actors": [],
@@ -318,6 +320,73 @@ def build() -> dict:
             "ground": [],
             "actors": [],
         },
+        "court.gate": {
+            "region": "reed_court",
+            "name": "Reed Court Gate",
+            "situation": "Reed screens a low stone gate. A bailiff bars the path.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "reed_sentence_passed"},
+                    "text": "The gate stands open after the sentence.",
+                }
+            ],
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mill.lane", "label": "Go to mill lane"},
+                {"to": "court.yard", "label": "Go to court yard"},
+            ],
+            "ground": [],
+            "actors": ["bailiff"],
+        },
+        "court.yard": {
+            "region": "reed_court",
+            "name": "Court Yard",
+            "situation": "Wet flags hold a quiet crowd. Reeds hiss along the wall.",
+            "exits": [
+                {"to": "court.gate", "label": "Go to court gate"},
+                {"to": "court.hall", "label": "Go to hall"},
+                {"to": "court.cell", "label": "Go to cell"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "court.hall": {
+            "region": "reed_court",
+            "name": "Reed Hall",
+            "situation": "A round hall. The magistrate sits on a reed mat.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kiln_pact_sealed"},
+                    "text": "Orin has heard of the mill pact.",
+                },
+                {
+                    "when": {"has_flag": "reed_sentence_passed"},
+                    "text": "The hall is still after the sentence.",
+                },
+            ],
+            "exits": [
+                {"to": "court.yard", "label": "Go to court yard"},
+                {"to": "court.archive", "label": "Go to archive"},
+            ],
+            "ground": [],
+            "actors": ["magistrate"],
+        },
+        "court.cell": {
+            "region": "reed_court",
+            "name": "Holding Cell",
+            "situation": "A damp cell. Tam sits on a board and waits.",
+            "exits": [{"to": "court.yard", "label": "Go to court yard"}],
+            "ground": [],
+            "actors": ["tam"],
+        },
+        "court.archive": {
+            "region": "reed_court",
+            "name": "Reed Archive",
+            "situation": "Shelves of wet-ink rolls. The air smells of reed glue.",
+            "exits": [{"to": "court.hall", "label": "Go to hall"}],
+            "ground": [],
+            "actors": ["nia"],
+        },
     }
 
     actors = {
@@ -356,6 +425,22 @@ def build() -> dict:
         "sila": {
             "name": "Sila",
             "idle": "She counts sacks and does not smile.",
+        },
+        "bailiff": {
+            "name": "Bailiff Kesh",
+            "idle": "He holds a staff across the gate.",
+        },
+        "magistrate": {
+            "name": "Magistrate Orin",
+            "idle": "She waits with both palms on her knees.",
+        },
+        "tam": {
+            "name": "Tam",
+            "idle": "He looks at the floor and does not speak first.",
+        },
+        "nia": {
+            "name": "Clerk Nia",
+            "idle": "She keeps a dry roll under her arm.",
         },
     }
 
@@ -1122,6 +1207,152 @@ def build() -> dict:
             "Sila says the kiln pact is the only clean write-off.",
             [{"op": "set_flag", "flag": "heard_kiln"}],
         ),
+        action(
+            "speak_reed_custom",
+            "Speak reed custom",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.hall"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["tongue", "cant"]},
+                        ]
+                    },
+                    {"not_flag": "court_standing"},
+                ]
+            },
+            "You speak reed custom. Orin grants you standing.",
+            [
+                {"op": "set_flag", "flag": "court_standing"},
+                {"op": "remember", "actor": "magistrate", "fact": "reed_custom"},
+                {"op": "add_rep", "faction": "court", "n": 1},
+            ],
+        ),
+        action(
+            "cite_city_law",
+            "Cite city law",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.hall"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "cityward"]},
+                            {"sheet": ["tongue", "court"]},
+                        ]
+                    },
+                    {"not_flag": "court_standing"},
+                ]
+            },
+            "You cite city law. Orin grants you standing.",
+            [
+                {"op": "set_flag", "flag": "court_standing"},
+                {"op": "remember", "actor": "magistrate", "fact": "city_law"},
+                {"op": "add_rep", "faction": "court", "n": 1},
+            ],
+        ),
+        action(
+            "name_mill_pact",
+            "Name the mill pact",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.hall"},
+                    {"has_flag": "kiln_pact_sealed"},
+                    {"not_flag": "court_named_mill"},
+                ]
+            },
+            "You name the mill pact. Orin takes it as clean proof.",
+            [
+                {"op": "set_flag", "flag": "court_named_mill"},
+                {"op": "set_flag", "flag": "court_standing"},
+                {"op": "remember", "actor": "magistrate", "fact": "mill_pact"},
+            ],
+        ),
+        action(
+            "hear_tam_witness",
+            "Hear Tam as witness",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.cell"},
+                    {"not_flag": "witness_heard"},
+                ]
+            },
+            "Tam names the grain theft. He saw the cut at dusk.",
+            [
+                {"op": "set_flag", "flag": "witness_heard"},
+                {"op": "remember", "actor": "tam", "fact": "spoke"},
+            ],
+        ),
+        action(
+            "swear_true_witness",
+            "Swear true witness",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.hall"},
+                    {"has_flag": "witness_heard"},
+                    {"sheet": ["creed", "oathbound"]},
+                    {"not_flag": "swore_witness"},
+                ]
+            },
+            "You swear Tam spoke true. Orin records the oath.",
+            [
+                {"op": "set_flag", "flag": "swore_witness"},
+                {"op": "add_rep", "faction": "court", "n": 1},
+            ],
+        ),
+        action(
+            "read_reed_charter",
+            "Read the reed charter",
+            "do",
+            {
+                "all": [
+                    {"at": "court.archive"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "read_charter"},
+                ]
+            },
+            "You read the charter. Sentence needs a heard witness.",
+            [{"op": "set_flag", "flag": "read_charter"}],
+        ),
+        action(
+            "pass_reed_sentence",
+            "Pass the reed sentence",
+            "talk",
+            {
+                "all": [
+                    {"at": "court.hall"},
+                    {"has_flag": "court_standing"},
+                    {"has_flag": "witness_heard"},
+                    {"not_flag": "reed_sentence_passed"},
+                ]
+            },
+            "You pass sentence. Orin strikes the mat once.",
+            [
+                {"op": "set_flag", "flag": "reed_sentence_passed"},
+                {"op": "add_rep", "faction": "court", "n": 2},
+            ],
+        ),
+        action(
+            "ask_kesh_rule",
+            "Ask Kesh the rule",
+            "talk",
+            {"at": "court.gate"},
+            "Kesh says standing first, then a witness, then a sentence.",
+            [{"op": "set_flag", "flag": "heard_court_rule"}],
+        ),
+        action(
+            "ask_nia_rolls",
+            "Ask Nia for a roll",
+            "talk",
+            {"at": "court.archive"},
+            "Nia says the charter is short. Witness, then sentence.",
+            [{"op": "set_flag", "flag": "heard_court_rule"}],
+        ),
     ]
 
     pack = {
@@ -1139,6 +1370,10 @@ def build() -> dict:
             "kiln_mill": {
                 "name": "Kiln Mill",
                 "mechanic": "heat-craft-grain-debt",
+            },
+            "reed_court": {
+                "name": "Reed Court",
+                "mechanic": "law-witness-sentence",
             },
         },
         "locations": locations,
@@ -1158,11 +1393,15 @@ def build() -> dict:
                 "name": "Kiln Pact",
                 "when": {"has_flag": "kiln_pact_sealed"},
             },
+            "reed_sentence": {
+                "name": "Reed Sentence",
+                "when": {"has_flag": "reed_sentence_passed"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0},
             "inventory": [],
             "flags": {},
         },

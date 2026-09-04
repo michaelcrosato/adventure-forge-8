@@ -25,10 +25,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | mill.kiln | kiln_mill | Pell, kindle/stoke/damp, fire grain pact |
 | mill.loft | kiln_mill | Sila, grain sack, debt talk |
 | mill.sluice | kiln_mill | might-gated sluice stone |
+| court.gate | reed_court | Bailiff Kesh, standing rule |
+| court.yard | reed_court | crowd, access to hall and cell |
+| court.hall | reed_court | Orin, reed custom vs city law, mill-pact proof, sentence |
+| court.cell | reed_court | Tam witness |
+| court.archive | reed_court | Nia, letters charter |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`
 
 ## Substrate
 

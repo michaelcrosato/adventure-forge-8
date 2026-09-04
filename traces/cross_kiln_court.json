@@ -8,13 +8,17 @@
     "go:mill.kiln",
     "kindle_kiln",
     "stoke_kiln",
-    "fire_the_pact"
+    "fire_the_pact",
+    "go:mill.yard",
+    "go:mill.lane",
+    "go:court.gate",
+    "go:court.yard",
+    "go:court.hall"
   ],
   "build_id": "a22e5ba358963839315f1a74ca67875d89ac24bf2d62d43718fd1b854f692f02",
-  "final_fingerprint": "de835288494fc037e323c65a0cdcfdf752cb297405992f523e9ce5015629e468",
-  "id": "marsh_kiln_pact",
-  "location": "mill.kiln",
-  "outcome": "kiln_pact",
+  "final_fingerprint": "51efe72bf4efd77abf34be9ef1e58092192e0841df1bf3e8f8c1e96034d4325a",
+  "id": "cross_kiln_court",
+  "location": "court.hall",
   "outcomes": [
     "kiln_pact"
   ],
