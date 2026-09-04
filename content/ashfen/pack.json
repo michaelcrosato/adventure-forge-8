@@ -5303,6 +5303,229 @@
       "when": {
         "at": "ice.door"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "wreck_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "luth",
+          "fact": "drowned",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_drowned_mark",
+      "label": "Know the drowned mark",
+      "text": "You name the drowned mark. Luth lets you wash and lay.",
+      "when": {
+        "all": [
+          {
+            "at": "wreck.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "wreck_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "wreck_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "luth",
+          "fact": "list",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_wreck_list",
+      "label": "Read the wreck list",
+      "text": "You read the wreck list. Luth lets you wash and lay.",
+      "when": {
+        "all": [
+          {
+            "at": "wreck.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "wreck_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "drowned_cold",
+          "op": "set_flag"
+        },
+        {
+          "flag": "wreck_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "kade",
+          "fact": "cold",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "keep_the_drowned_cold",
+      "label": "Keep the drowned cold",
+      "text": "You keep the drowned cold. The token holds.",
+      "when": {
+        "all": [
+          {
+            "at": "wreck.hull"
+          },
+          {
+            "has_flag": "ice_held"
+          },
+          {
+            "not_flag": "drowned_cold"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "drowned_token",
+          "op": "remove_item"
+        },
+        {
+          "flag": "token_washed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "wash_the_token",
+      "label": "Wash the token",
+      "text": "You wash the token. Brine takes the silt.",
+      "when": {
+        "all": [
+          {
+            "at": "wreck.wash"
+          },
+          {
+            "has_flag": "wreck_trust"
+          },
+          {
+            "has_item": "drowned_token"
+          },
+          {
+            "not_flag": "token_washed"
+          },
+          {
+            "not_flag": "wreck_laid"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "wreck_laid",
+          "op": "set_flag"
+        },
+        {
+          "actor": "efa",
+          "fact": "laid",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "lay_the_token",
+      "label": "Lay the token",
+      "text": "You lay the token. Efa marks the wreck rite done.",
+      "when": {
+        "all": [
+          {
+            "at": "wreck.altar"
+          },
+          {
+            "has_flag": "wreck_trust"
+          },
+          {
+            "has_flag": "token_washed"
+          },
+          {
+            "not_flag": "wreck_laid"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_wreck_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_luth_rule",
+      "label": "Ask Luth the rule",
+      "text": "Luth says wash the token. Then lay it on the altar.",
+      "when": {
+        "at": "wreck.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_wreck_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_kade_silt",
+      "label": "Ask Kade the silt",
+      "text": "Kade says the token lies in the silt.",
+      "when": {
+        "at": "wreck.hull"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_wreck_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_efa_altar",
+      "label": "Ask Efa the altar",
+      "text": "Efa lays only a token that has been washed.",
+      "when": {
+        "at": "wreck.altar"
+      }
     }
   ],
   "actors": {
@@ -5350,6 +5573,10 @@
       "idle": "He turns eels on the board and waits.",
       "name": "Eel-seller"
     },
+    "efa": {
+      "idle": "She keeps both palms on the altar rim.",
+      "name": "Efa"
+    },
     "fen": {
       "idle": "She stirs a vat and does not splash.",
       "name": "Fen"
@@ -5386,6 +5613,10 @@
       "idle": "She stands between the well and the cots.",
       "name": "Nurse Joss"
     },
+    "kade": {
+      "idle": "She watches the silt and does not wade yet.",
+      "name": "Kade"
+    },
     "kest": {
       "idle": "He keeps one hand on the bar.",
       "name": "Kest"
@@ -5397,6 +5628,10 @@
     "lise": {
       "idle": "She holds a sun chart to the hole.",
       "name": "Lise"
+    },
+    "luth": {
+      "idle": "He keeps a wreck list under his arm.",
+      "name": "Luth"
     },
     "magistrate": {
       "idle": "She waits with both palms on her knees.",
@@ -5560,6 +5795,10 @@
     "cured_fish": {
       "kind": "goods",
       "name": "cured fish"
+    },
+    "drowned_token": {
+      "kind": "rite",
+      "name": "drowned token"
     },
     "dyed_cloth": {
       "kind": "goods",
@@ -6111,6 +6350,10 @@
         {
           "label": "Go to ice cellar",
           "to": "ice.path"
+        },
+        {
+          "label": "Go to wreck chapel",
+          "to": "wreck.path"
         }
       ],
       "ground": [],
@@ -6978,6 +7221,10 @@
         {
           "label": "Go to ice yard",
           "to": "ice.yard"
+        },
+        {
+          "label": "Go to wreck chapel",
+          "to": "wreck.path"
         }
       ],
       "ground": [],
@@ -8435,6 +8682,113 @@
       "name": "Weir Yard",
       "region": "eel_weir",
       "situation": "Wicker mouths lean on a rail. Cess waits by a run mark."
+    },
+    "wreck.altar": {
+      "actors": [
+        "efa"
+      ],
+      "exits": [
+        {
+          "label": "Go to wreck yard",
+          "to": "wreck.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Wreck Altar",
+      "region": "wreck_chapel",
+      "situation": "A low altar faces the broken prow. Efa waits."
+    },
+    "wreck.hull": {
+      "actors": [
+        "kade"
+      ],
+      "exits": [
+        {
+          "label": "Go to wreck yard",
+          "to": "wreck.yard"
+        }
+      ],
+      "ground": [
+        "drowned_token"
+      ],
+      "name": "Wreck Hull",
+      "region": "wreck_chapel",
+      "situation": "Dark water sits in the hold. A token lies in the silt.",
+      "situation_if": [
+        {
+          "text": "Held ice would keep the drowned token cold.",
+          "when": {
+            "has_flag": "ice_held"
+          }
+        },
+        {
+          "text": "The silt sits empty where the token lay.",
+          "when": {
+            "has_flag": "wreck_laid"
+          }
+        }
+      ]
+    },
+    "wreck.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to ice cellar",
+          "to": "ice.path"
+        },
+        {
+          "label": "Go to wreck yard",
+          "to": "wreck.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Wreck Path",
+      "region": "wreck_chapel",
+      "situation": "Ribs of a wreck rise from the mud. A chapel sits in the hull."
+    },
+    "wreck.wash": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to wreck yard",
+          "to": "wreck.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Wreck Wash",
+      "region": "wreck_chapel",
+      "situation": "A stone bowl holds brine. The token must be washed."
+    },
+    "wreck.yard": {
+      "actors": [
+        "luth"
+      ],
+      "exits": [
+        {
+          "label": "Go to wreck path",
+          "to": "wreck.path"
+        },
+        {
+          "label": "Go to the wreck hull",
+          "to": "wreck.hull"
+        },
+        {
+          "label": "Go to the wreck wash",
+          "to": "wreck.wash"
+        },
+        {
+          "label": "Go to the wreck altar",
+          "to": "wreck.altar"
+        }
+      ],
+      "ground": [],
+      "name": "Wreck Yard",
+      "region": "wreck_chapel",
+      "situation": "Luth waits by a wreck list. Salt crusts the door."
     }
   },
   "outcomes": {
@@ -8551,6 +8905,12 @@
       "when": {
         "has_flag": "weir_lifted"
       }
+    },
+    "wreck_laid": {
+      "name": "Wreck Laid",
+      "when": {
+        "has_flag": "wreck_laid"
+      }
     }
   },
   "regions": {
@@ -8629,6 +8989,10 @@
     "windpump": {
       "mechanic": "vanes-crank-hold-flats",
       "name": "Windpump"
+    },
+    "wreck_chapel": {
+      "mechanic": "wash-token-lay-altar",
+      "name": "Wreck Chapel"
     }
   },
   "sheets": {
@@ -8674,7 +9038,8 @@
       "smoke": 0,
       "stackers": 0,
       "watch": 0,
-      "weir": 0
+      "weir": 0,
+      "wreck": 0
     }
   },
   "version": "1"

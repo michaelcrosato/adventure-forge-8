@@ -6,8 +6,8 @@
     "go:count.yard",
     "go:count.desk"
   ],
-  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
-  "final_fingerprint": "4d24c30e6081587848efd30f0dd4d2eec4d894a48d357509ec2871878168c8b7",
+  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
+  "final_fingerprint": "447dee3980d263d9decd0e056599f223aeb4ffe03ce1e98f8ae1521b9e2ac8ac",
   "id": "cross_plain_count",
   "location": "count.desk",
   "outcomes": [],

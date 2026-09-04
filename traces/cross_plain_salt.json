@@ -6,8 +6,8 @@
     "go:pans.yard",
     "go:pans.beds"
   ],
-  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
-  "final_fingerprint": "a7add88eb7bbd8d7c8313cca8a7444eb7574e46df326de24a688c551fdcac903",
+  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
+  "final_fingerprint": "355e56f31ec94b756dbbc4134500f335f403938f09cc7c37e06c0437190cbee5",
   "id": "cross_plain_salt",
   "location": "pans.beds",
   "outcomes": [],

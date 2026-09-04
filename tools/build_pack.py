@@ -94,6 +94,7 @@ def build() -> dict:
         "oyster_lot": {"name": "oyster lot", "kind": "goods"},
         "tally_slate": {"name": "tally slate", "kind": "key"},
         "ice_block": {"name": "ice block", "kind": "goods"},
+        "drowned_token": {"name": "drowned token", "kind": "rite"},
         **salvage_items,
     }
 
@@ -221,6 +222,7 @@ def build() -> dict:
                 {"to": "oyster.path", "label": "Go to oyster park"},
                 {"to": "count.path", "label": "Go to counting house"},
                 {"to": "ice.path", "label": "Go to ice cellar"},
+                {"to": "wreck.path", "label": "Go to wreck chapel"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1322,6 +1324,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "count.path", "label": "Go to counting house"},
                 {"to": "ice.yard", "label": "Go to ice yard"},
+                {"to": "wreck.path", "label": "Go to wreck chapel"},
             ],
             "ground": [],
             "actors": [],
@@ -1374,6 +1377,65 @@ def build() -> dict:
             "exits": [{"to": "ice.yard", "label": "Go to ice yard"}],
             "ground": [],
             "actors": ["kest"],
+        },
+        "wreck.path": {
+            "region": "wreck_chapel",
+            "name": "Wreck Path",
+            "situation": "Ribs of a wreck rise from the mud. A chapel sits in the hull.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "ice.path", "label": "Go to ice cellar"},
+                {"to": "wreck.yard", "label": "Go to wreck yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wreck.yard": {
+            "region": "wreck_chapel",
+            "name": "Wreck Yard",
+            "situation": "Luth waits by a wreck list. Salt crusts the door.",
+            "exits": [
+                {"to": "wreck.path", "label": "Go to wreck path"},
+                {"to": "wreck.hull", "label": "Go to the wreck hull"},
+                {"to": "wreck.wash", "label": "Go to the wreck wash"},
+                {"to": "wreck.altar", "label": "Go to the wreck altar"},
+            ],
+            "ground": [],
+            "actors": ["luth"],
+        },
+        "wreck.hull": {
+            "region": "wreck_chapel",
+            "name": "Wreck Hull",
+            "situation": "Dark water sits in the hold. A token lies in the silt.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ice_held"},
+                    "text": "Held ice would keep the drowned token cold.",
+                },
+                {
+                    "when": {"has_flag": "wreck_laid"},
+                    "text": "The silt sits empty where the token lay.",
+                },
+            ],
+            "exits": [{"to": "wreck.yard", "label": "Go to wreck yard"}],
+            "ground": ["drowned_token"],
+            "actors": ["kade"],
+        },
+        "wreck.wash": {
+            "region": "wreck_chapel",
+            "name": "Wreck Wash",
+            "situation": "A stone bowl holds brine. The token must be washed.",
+            "exits": [{"to": "wreck.yard", "label": "Go to wreck yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wreck.altar": {
+            "region": "wreck_chapel",
+            "name": "Wreck Altar",
+            "situation": "A low altar faces the broken prow. Efa waits.",
+            "exits": [{"to": "wreck.yard", "label": "Go to wreck yard"}],
+            "ground": [],
+            "actors": ["efa"],
         },
     }
 
@@ -1605,6 +1667,18 @@ def build() -> dict:
         "kest": {
             "name": "Kest",
             "idle": "He keeps one hand on the bar.",
+        },
+        "luth": {
+            "name": "Luth",
+            "idle": "He keeps a wreck list under his arm.",
+        },
+        "kade": {
+            "name": "Kade",
+            "idle": "She watches the silt and does not wade yet.",
+        },
+        "efa": {
+            "name": "Efa",
+            "idle": "She keeps both palms on the altar rim.",
         },
     }
 
@@ -4365,6 +4439,124 @@ def build() -> dict:
             "Kest bars only a hold that is packed.",
             [{"op": "set_flag", "flag": "heard_ice_rule"}],
         ),
+        action(
+            "know_the_drowned_mark",
+            "Know the drowned mark",
+            "talk",
+            {
+                "all": [
+                    {"at": "wreck.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wreck_trust"},
+                ]
+            },
+            "You name the drowned mark. Luth lets you wash and lay.",
+            [
+                {"op": "set_flag", "flag": "wreck_trust"},
+                {"op": "remember", "actor": "luth", "fact": "drowned"},
+            ],
+        ),
+        action(
+            "read_the_wreck_list",
+            "Read the wreck list",
+            "do",
+            {
+                "all": [
+                    {"at": "wreck.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wreck_trust"},
+                ]
+            },
+            "You read the wreck list. Luth lets you wash and lay.",
+            [
+                {"op": "set_flag", "flag": "wreck_trust"},
+                {"op": "remember", "actor": "luth", "fact": "list"},
+            ],
+        ),
+        action(
+            "keep_the_drowned_cold",
+            "Keep the drowned cold",
+            "do",
+            {
+                "all": [
+                    {"at": "wreck.hull"},
+                    {"has_flag": "ice_held"},
+                    {"not_flag": "drowned_cold"},
+                ]
+            },
+            "You keep the drowned cold. The token holds.",
+            [
+                {"op": "set_flag", "flag": "drowned_cold"},
+                {"op": "set_flag", "flag": "wreck_trust"},
+                {"op": "remember", "actor": "kade", "fact": "cold"},
+            ],
+        ),
+        action(
+            "wash_the_token",
+            "Wash the token",
+            "do",
+            {
+                "all": [
+                    {"at": "wreck.wash"},
+                    {"has_flag": "wreck_trust"},
+                    {"has_item": "drowned_token"},
+                    {"not_flag": "token_washed"},
+                    {"not_flag": "wreck_laid"},
+                ]
+            },
+            "You wash the token. Brine takes the silt.",
+            [
+                {"op": "remove_item", "item": "drowned_token"},
+                {"op": "set_flag", "flag": "token_washed"},
+            ],
+        ),
+        action(
+            "lay_the_token",
+            "Lay the token",
+            "do",
+            {
+                "all": [
+                    {"at": "wreck.altar"},
+                    {"has_flag": "wreck_trust"},
+                    {"has_flag": "token_washed"},
+                    {"not_flag": "wreck_laid"},
+                ]
+            },
+            "You lay the token. Efa marks the wreck rite done.",
+            [
+                {"op": "set_flag", "flag": "wreck_laid"},
+                {"op": "remember", "actor": "efa", "fact": "laid"},
+            ],
+        ),
+        action(
+            "ask_luth_rule",
+            "Ask Luth the rule",
+            "talk",
+            {"at": "wreck.yard"},
+            "Luth says wash the token. Then lay it on the altar.",
+            [{"op": "set_flag", "flag": "heard_wreck_rule"}],
+        ),
+        action(
+            "ask_kade_silt",
+            "Ask Kade the silt",
+            "talk",
+            {"at": "wreck.hull"},
+            "Kade says the token lies in the silt.",
+            [{"op": "set_flag", "flag": "heard_wreck_rule"}],
+        ),
+        action(
+            "ask_efa_altar",
+            "Ask Efa the altar",
+            "talk",
+            {"at": "wreck.altar"},
+            "Efa lays only a token that has been washed.",
+            [{"op": "set_flag", "flag": "heard_wreck_rule"}],
+        ),
     ]
 
     pack = {
@@ -4446,6 +4638,10 @@ def build() -> dict:
             "ice_cellar": {
                 "name": "Ice Cellar",
                 "mechanic": "pack-ice-hold-cold",
+            },
+            "wreck_chapel": {
+                "name": "Wreck Chapel",
+                "mechanic": "wash-token-lay-altar",
             },
         },
         "locations": locations,
@@ -4529,11 +4725,15 @@ def build() -> dict:
                 "name": "Ice Held",
                 "when": {"has_flag": "ice_held"},
             },
+            "wreck_laid": {
+                "name": "Wreck Laid",
+                "when": {"has_flag": "wreck_laid"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0},
             "inventory": [],
             "flags": {},
         },

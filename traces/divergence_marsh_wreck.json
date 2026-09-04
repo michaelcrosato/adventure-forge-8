@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:pans.path",
-    "go:pans.yard"
+    "go:wreck.path",
+    "go:wreck.yard"
   ],
   "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "cf2ce19b950beeb0c9bc70289f9f238b075a5d5da4be00c62df93bae2159bb45",
-  "id": "divergence_marsh_salt",
-  "location": "pans.yard",
+  "final_fingerprint": "71e2b388552afc9600c30283bf362eb7bc7e7625bf5b578cdd4cddfa967ebcaa",
+  "id": "divergence_marsh_wreck",
+  "location": "wreck.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

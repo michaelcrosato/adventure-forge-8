@@ -14,8 +14,8 @@
     "go:oyster.shed",
     "cull_the_beds"
   ],
-  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
-  "final_fingerprint": "3bd969f3960bec6fdf1d1eb96b0b84651c0dd1ca474641f12c6a0fdbd0d5fa7c",
+  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
+  "final_fingerprint": "b938fbffdaa292d864c92c872bb331a0bb401880a8c728e3c5b3d57fda9b2d9e",
   "id": "marsh_oyster_culled",
   "location": "oyster.shed",
   "outcome": "oyster_culled",

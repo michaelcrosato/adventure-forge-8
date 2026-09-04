@@ -12,13 +12,17 @@
     "pack_the_ice",
     "go:ice.yard",
     "go:ice.door",
-    "bar_the_door"
+    "bar_the_door",
+    "go:ice.yard",
+    "go:ice.path",
+    "go:wreck.path",
+    "go:wreck.yard",
+    "go:wreck.hull"
   ],
   "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "1c201aa733691750e2d9199d898ee413a482fd08127768a8bae19257d681094f",
-  "id": "marsh_ice_held",
-  "location": "ice.door",
-  "outcome": "ice_held",
+  "final_fingerprint": "61af4a6804092d1a7f7c4253e63e45c908a01b57e5b546557afe51e3f84e7651",
+  "id": "cross_ice_wreck",
+  "location": "wreck.hull",
   "outcomes": [
     "ice_held"
   ],

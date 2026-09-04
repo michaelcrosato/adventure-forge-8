@@ -105,10 +105,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | ice.pit | ice_cellar | Saff, ice block |
 | ice.hold | ice_cellar | pack ice in straw |
 | ice.door | ice_cellar | Kest, bar the door, ice_held |
+| wreck.path | wreck_chapel | wreck ribs, chapel access |
+| wreck.yard | wreck_chapel | Luth, drowned mark vs wreck list |
+| wreck.hull | wreck_chapel | Kade, drowned token, ice keep |
+| wreck.wash | wreck_chapel | wash the token |
+| wreck.altar | wreck_chapel | Efa, lay token, wreck_laid |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`
 
 ## Substrate
 

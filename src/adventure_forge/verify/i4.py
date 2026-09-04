@@ -125,6 +125,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_ice",
         "cross_plain_ice",
         "cross_count_ice",
+        "marsh_wreck_laid",
+        "divergence_marsh_wreck",
+        "divergence_city_wreck",
+        "cross_plain_wreck",
+        "cross_ice_wreck",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -152,6 +157,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     oyster = replay(content, by_id["marsh_oyster_culled"]["seed"], by_id["marsh_oyster_culled"]["sheet"], by_id["marsh_oyster_culled"]["actions"])
     tally = replay(content, by_id["marsh_tally_closed"]["seed"], by_id["marsh_tally_closed"]["sheet"], by_id["marsh_tally_closed"]["actions"])
     ice = replay(content, by_id["marsh_ice_held"]["seed"], by_id["marsh_ice_held"]["sheet"], by_id["marsh_ice_held"]["actions"])
+    wreck = replay(content, by_id["marsh_wreck_laid"]["seed"], by_id["marsh_wreck_laid"]["sheet"], by_id["marsh_wreck_laid"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -190,7 +196,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("tally_closed predicate failed")
     if "ice_held" not in ice.state.outcomes:
         raise AssertionError("ice_held predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint}) != 19:
+    if "wreck_laid" not in wreck.state.outcomes:
+        raise AssertionError("wreck_laid predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint, wreck.fingerprint}) != 20:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -628,6 +636,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "tally_closed" not in count_ice.state.outcomes:
         raise AssertionError("cross count-ice run lost tally_closed")
 
+    wreck_m = by_id["divergence_marsh_wreck"]
+    wreck_c = by_id["divergence_city_wreck"]
+    wreck_m_ids, wreck_c_ids = _diverge_legal(content, wreck_m, wreck_c)
+    if "know_the_drowned_mark" not in wreck_m_ids:
+        raise AssertionError("marsh_scout missing know_the_drowned_mark")
+    if "read_the_wreck_list" not in wreck_c_ids:
+        raise AssertionError("city_oath missing read_the_wreck_list")
+    if "know_the_drowned_mark" in wreck_c_ids or "read_the_wreck_list" in wreck_m_ids:
+        raise AssertionError("wreck sheet verbs leaked across sheets")
+
+    plain_wreck = replay(content, by_id["cross_plain_wreck"]["seed"], by_id["cross_plain_wreck"]["sheet"], by_id["cross_plain_wreck"]["actions"])
+    ice_wreck = replay(content, by_id["cross_ice_wreck"]["seed"], by_id["cross_ice_wreck"]["sheet"], by_id["cross_ice_wreck"]["actions"])
+    if plain_wreck.state.location != ice_wreck.state.location:
+        raise AssertionError("wreck cross-area pair left different locations")
+    if plain_wreck.state.location != "wreck.hull":
+        raise AssertionError("wreck cross-area pair not at wreck.hull")
+    plain_wreck_ids = {a.id for a in enumerate_legal(plain_wreck.state, content)}
+    ice_wreck_ids = {a.id for a in enumerate_legal(ice_wreck.state, content)}
+    if "keep_the_drowned_cold" not in ice_wreck_ids:
+        raise AssertionError("ice held did not unlock keep_the_drowned_cold")
+    if "keep_the_drowned_cold" in plain_wreck_ids:
+        raise AssertionError("keep_the_drowned_cold leaked without ice held")
+    if "ice_held" not in ice_wreck.state.outcomes:
+        raise AssertionError("cross ice-wreck run lost ice_held")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -648,6 +681,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "oyster_culled": oyster.fingerprint,
         "tally_closed": tally.fingerprint,
         "ice_held": ice.fingerprint,
+        "wreck_laid": wreck.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -684,6 +718,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "count_city_only": sorted(count_c_ids - count_m_ids),
         "ice_marsh_only": sorted(ice_m_ids - ice_c_ids),
         "ice_city_only": sorted(ice_c_ids - ice_m_ids),
+        "wreck_marsh_only": sorted(wreck_m_ids - wreck_c_ids),
+        "wreck_city_only": sorted(wreck_c_ids - wreck_m_ids),
     }
 
 

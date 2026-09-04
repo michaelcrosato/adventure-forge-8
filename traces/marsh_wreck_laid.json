@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wreck.path",
+    "go:wreck.yard",
+    "know_the_drowned_mark",
+    "go:wreck.hull",
+    "take:drowned_token",
+    "go:wreck.yard",
+    "go:wreck.wash",
+    "wash_the_token",
+    "go:wreck.yard",
+    "go:wreck.altar",
+    "lay_the_token"
+  ],
+  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
+  "final_fingerprint": "78e52e109411133916808d344ab13f317867ffcd46ce4d5e927e8c8e193cbb1f",
+  "id": "marsh_wreck_laid",
+  "location": "wreck.altar",
+  "outcome": "wreck_laid",
+  "outcomes": [
+    "wreck_laid"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

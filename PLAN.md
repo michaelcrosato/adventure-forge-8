@@ -163,6 +163,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Oyster Park | Seed spat, cull beds | Hamlet |
 | Counting House | Mark tally, seal the day | Social / institutional |
 | Ice Cellar | Pack ice, hold cold, bar door | Craft |
+| Wreck Chapel | Wash drowned token, lay on altar | Ruin |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -187,6 +188,7 @@ Authored outcomes:
 17. `oyster_culled` — spat is seeded and the beds are culled.
 18. `tally_closed` — the day's tally is marked and sealed.
 19. `ice_held` — ice is packed and the door is barred.
+20. `wreck_laid` — a drowned token is washed and laid on the wreck altar.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -224,8 +226,9 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 16. **Slice 15:** Oyster Park — seed spat, cull beds. Cross-effect: drained flats unlock dry-bed work.
 17. **Slice 16:** Counting House — mark tally, seal the day. Cross-effect: culled oysters unlock a lot credit at the desk.
 18. **Slice 17:** Ice Cellar — pack ice, hold cold, bar door. Cross-effect: closed tally unlocks an ice right at the yard.
-19. **Slice 18+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-20. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+19. **Slice 18:** Wreck Chapel — wash drowned token, lay on altar. Cross-effect: held ice unlocks keeping the drowned cold.
+20. **Slice 19+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+21. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

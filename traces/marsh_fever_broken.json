@@ -11,8 +11,8 @@
     "go:camp.ward",
     "give_broth_to_ren"
   ],
-  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
-  "final_fingerprint": "b37a6558f073849e7539c194f72fd21485808f37c49ecb6cdfe02d5307fc06bd",
+  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
+  "final_fingerprint": "e3a6b14cf98253015b7f204b7b726e7461b93fad732387d70c233482ddbaedd6",
   "id": "marsh_fever_broken",
   "location": "camp.ward",
   "outcome": "fever_broken",

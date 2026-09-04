@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:pump.path",
-    "go:pump.yard"
+    "go:wreck.path",
+    "go:wreck.yard"
   ],
   "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "69472f0748d6799cb7a7eb3761b48289c2e286edec8088e7fd4178f694befe1f",
-  "id": "divergence_city_pump",
-  "location": "pump.yard",
+  "final_fingerprint": "7fc92e3eb0b9a75b0d593216c5bd8c94918084e654a29de023a763735b1f4976",
+  "id": "divergence_city_wreck",
+  "location": "wreck.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"
