@@ -1,0 +1,25 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:ferry.path",
+    "go:ferry.yard",
+    "know_the_channel_cut",
+    "take:toll_token",
+    "go:ferry.slip",
+    "load_the_boat",
+    "go:ferry.boat",
+    "pole_the_crossing",
+    "claim_the_landing"
+  ],
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "ab980b9183228eb5a0c71e37a869c947c1de40380ec005912d61a3aa710800a4",
+  "id": "marsh_ferry_crossed",
+  "location": "ferry.far",
+  "outcome": "ferry_crossed",
+  "outcomes": [
+    "ferry_crossed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

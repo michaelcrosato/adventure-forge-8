@@ -88,6 +88,7 @@ def build() -> dict:
         "eel_catch": {"name": "eel catch", "kind": "goods"},
         "undyed_cloth": {"name": "undyed cloth", "kind": "goods"},
         "dyed_cloth": {"name": "dyed cloth", "kind": "goods"},
+        "toll_token": {"name": "toll token", "kind": "key"},
         **salvage_items,
     }
 
@@ -210,6 +211,7 @@ def build() -> dict:
                 {"to": "smoke.path", "label": "Go to smokehouse"},
                 {"to": "weir.path", "label": "Go to eel weir"},
                 {"to": "dye.path", "label": "Go to dye works"},
+                {"to": "ferry.path", "label": "Go to toll ferry"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -986,6 +988,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "weir.path", "label": "Go to eel weir"},
                 {"to": "dye.yard", "label": "Go to dye yard"},
+                {"to": "ferry.path", "label": "Go to toll ferry"},
             ],
             "ground": [],
             "actors": [],
@@ -1036,6 +1039,76 @@ def build() -> dict:
             "exits": [{"to": "dye.yard", "label": "Go to dye yard"}],
             "ground": ["undyed_cloth"],
             "actors": [],
+        },
+        "ferry.path": {
+            "region": "toll_ferry",
+            "name": "Ferry Path",
+            "situation": "A wide creek cuts the shell track. A hull waits at a post.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dye.path", "label": "Go to dye works"},
+                {"to": "ferry.yard", "label": "Go to ferry yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "ferry.yard": {
+            "region": "toll_ferry",
+            "name": "Ferry Yard",
+            "situation": "A board lists fares. Bex waits with a token box.",
+            "exits": [
+                {"to": "ferry.path", "label": "Go to ferry path"},
+                {"to": "ferry.slip", "label": "Go to the slip"},
+            ],
+            "ground": ["toll_token"],
+            "actors": ["bex"],
+        },
+        "ferry.slip": {
+            "region": "toll_ferry",
+            "name": "Ferry Slip",
+            "situation": "The hull knocks the posts. Ivo holds the line.",
+            "exits": [
+                {"to": "ferry.yard", "label": "Go to ferry yard"},
+                {
+                    "to": "ferry.boat",
+                    "label": "Board the boat",
+                    "when": {"has_flag": "boat_loaded"},
+                },
+            ],
+            "ground": [],
+            "actors": ["ivo"],
+        },
+        "ferry.boat": {
+            "region": "toll_ferry",
+            "name": "Ferry Boat",
+            "situation": "Wet boards lift on the pull. The far bank is a pale line.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "dye_struck"},
+                    "text": "A dyed cloth would pass as fare.",
+                },
+                {
+                    "when": {"has_flag": "ferry_crossed"},
+                    "text": "The hull has already made the far bank.",
+                },
+            ],
+            "exits": [{"to": "ferry.slip", "label": "Go to the slip"}],
+            "ground": [],
+            "actors": [],
+        },
+        "ferry.far": {
+            "region": "toll_ferry",
+            "name": "Far Landing",
+            "situation": "Shell and reed mark the far landing. Ama waits with a stamp.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ferry_crossed"},
+                    "text": "The stamp is wet on the board.",
+                }
+            ],
+            "exits": [{"to": "ferry.boat", "label": "Board the near boat"}],
+            "ground": [],
+            "actors": ["ama"],
         },
     }
 
@@ -1207,6 +1280,18 @@ def build() -> dict:
         "moss": {
             "name": "Moss",
             "idle": "She holds a dry line and watches the poles.",
+        },
+        "bex": {
+            "name": "Bex",
+            "idle": "He keeps a token box shut and waits.",
+        },
+        "ivo": {
+            "name": "Ivo",
+            "idle": "He holds the line and watches the hull.",
+        },
+        "ama": {
+            "name": "Ama",
+            "idle": "She holds a stamp and does not smile.",
         },
     }
 
@@ -3342,6 +3427,142 @@ def build() -> dict:
             "Moss pays only when a pole holds dry color.",
             [{"op": "set_flag", "flag": "heard_dye_rule"}],
         ),
+        action(
+            "know_the_channel_cut",
+            "Know the channel cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "ferry.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "ferry_trust"},
+                ]
+            },
+            "You name the channel cut. Bex lets you load and pole.",
+            [
+                {"op": "set_flag", "flag": "ferry_trust"},
+                {"op": "remember", "actor": "bex", "fact": "channel"},
+            ],
+        ),
+        action(
+            "read_the_toll_board",
+            "Read the toll board",
+            "do",
+            {
+                "all": [
+                    {"at": "ferry.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "ferry_trust"},
+                ]
+            },
+            "You read the toll board. Bex lets you load and pole.",
+            [
+                {"op": "set_flag", "flag": "ferry_trust"},
+                {"op": "remember", "actor": "bex", "fact": "board"},
+            ],
+        ),
+        action(
+            "show_the_dyed_fare",
+            "Show the dyed fare",
+            "do",
+            {
+                "all": [
+                    {"at": "ferry.yard"},
+                    {"has_flag": "dye_struck"},
+                    {"not_flag": "dyed_fare"},
+                ]
+            },
+            "You show the dyed fare. Bex lets you load and pole.",
+            [
+                {"op": "set_flag", "flag": "dyed_fare"},
+                {"op": "set_flag", "flag": "ferry_trust"},
+                {"op": "remember", "actor": "bex", "fact": "dyed"},
+            ],
+        ),
+        action(
+            "load_the_boat",
+            "Load the boat",
+            "do",
+            {
+                "all": [
+                    {"at": "ferry.slip"},
+                    {"has_flag": "ferry_trust"},
+                    {"has_item": "toll_token"},
+                    {"not_flag": "boat_loaded"},
+                    {"not_flag": "ferry_crossed"},
+                ]
+            },
+            "You load the boat. Ivo takes the token and the line.",
+            [
+                {"op": "remove_item", "item": "toll_token"},
+                {"op": "set_flag", "flag": "boat_loaded"},
+                {"op": "remember", "actor": "ivo", "fact": "loaded"},
+            ],
+        ),
+        action(
+            "pole_the_crossing",
+            "Pole the crossing",
+            "do",
+            {
+                "all": [
+                    {"at": "ferry.boat"},
+                    {"has_flag": "boat_loaded"},
+                    {"not_flag": "boat_poled"},
+                    {"not_flag": "ferry_crossed"},
+                ]
+            },
+            "You pole the crossing. The far bank takes the hull.",
+            [
+                {"op": "set_flag", "flag": "boat_poled"},
+                {"op": "move", "to": "ferry.far"},
+            ],
+        ),
+        action(
+            "claim_the_landing",
+            "Claim the landing",
+            "talk",
+            {
+                "all": [
+                    {"at": "ferry.far"},
+                    {"has_flag": "boat_poled"},
+                    {"not_flag": "ferry_crossed"},
+                ]
+            },
+            "You claim the landing. Ama stamps the fare paid.",
+            [
+                {"op": "set_flag", "flag": "ferry_crossed"},
+                {"op": "remember", "actor": "ama", "fact": "stamp"},
+            ],
+        ),
+        action(
+            "ask_bex_rule",
+            "Ask Bex the rule",
+            "talk",
+            {"at": "ferry.yard"},
+            "Bex says pay a token. Then load and pole across.",
+            [{"op": "set_flag", "flag": "heard_ferry_rule"}],
+        ),
+        action(
+            "ask_ivo_line",
+            "Ask Ivo the line",
+            "talk",
+            {"at": "ferry.slip"},
+            "Ivo says a loaded hull is the only crossing.",
+            [{"op": "set_flag", "flag": "heard_ferry_rule"}],
+        ),
+        action(
+            "ask_ama_stamp",
+            "Ask Ama the stamp",
+            "talk",
+            {"at": "ferry.far"},
+            "Ama stamps only a hull that poled from the near bank.",
+            [{"op": "set_flag", "flag": "heard_ferry_rule"}],
+        ),
     ]
 
     pack = {
@@ -3403,6 +3624,10 @@ def build() -> dict:
             "dye_works": {
                 "name": "Dye Works",
                 "mechanic": "charge-dip-hang-color",
+            },
+            "toll_ferry": {
+                "name": "Toll Ferry",
+                "mechanic": "fare-load-pole-crossing",
             },
         },
         "locations": locations,
@@ -3466,11 +3691,15 @@ def build() -> dict:
                 "name": "Dye Struck",
                 "when": {"has_flag": "dye_struck"},
             },
+            "ferry_crossed": {
+                "name": "Ferry Crossed",
+                "when": {"has_flag": "ferry_crossed"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0},
             "inventory": [],
             "flags": {},
         },

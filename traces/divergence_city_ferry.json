@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:pans.path",
-    "go:pans.yard"
+    "go:ferry.path",
+    "go:ferry.yard"
   ],
   "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
-  "final_fingerprint": "891e97e4790ea36f88e9af4700f07cc224a4fcee9aab4b26418e2f8b6a21374f",
-  "id": "divergence_city_salt",
-  "location": "pans.yard",
+  "final_fingerprint": "74b3f945050ad59d2606b66fc82b157cda9f5549186de1262311e0250bdfe1b2",
+  "id": "divergence_city_ferry",
+  "location": "ferry.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

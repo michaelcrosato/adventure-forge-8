@@ -6,8 +6,8 @@
     "go:name.yard",
     "go:name.hall"
   ],
-  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "897b18dae9f14e171952d2513a3b1682c64a88454dbf9bdbd7730cb846d3222c",
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "1201beac8b51209dcb6ba9bc0805f38a09c8bf330c4caf921d0c04c8ab4935d1",
   "id": "cross_plain_name",
   "location": "name.hall",
   "outcomes": [],

@@ -6,8 +6,8 @@
     "go:road.dike",
     "go:road.hut"
   ],
-  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "20b75b9e08ab26645559d28bf5c723ad9ecc2584d25312e897965aa47b8177fb",
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "b32e615d96241546dc038d0734f373aceabc2c6fb6832a89a0c2a0f4359ddab0",
   "id": "cross_plain_road",
   "location": "road.hut",
   "outcomes": [],

@@ -17,8 +17,8 @@
     "go:dye.yard",
     "go:dye.vats"
   ],
-  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "73ef6a8742500c6634eea9171d07cd6ff37f0fec63414b31885fdf45eb0f0028",
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "a10f64cb8d97e79a262a922fb68000bf7d87cc01cf7bf2ff1ed5fe9ad23bc8e5",
   "id": "cross_weir_dye",
   "location": "dye.vats",
   "outcomes": [

@@ -13,13 +13,16 @@
     "dip_the_cloth",
     "go:dye.yard",
     "go:dye.loft",
-    "hang_the_color"
+    "hang_the_color",
+    "go:dye.yard",
+    "go:dye.path",
+    "go:ferry.path",
+    "go:ferry.yard"
   ],
   "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
-  "final_fingerprint": "06cba442507e04399864e0dae1a75dd0bd564ea9457ee1d1e87bd207ebd14974",
-  "id": "marsh_dye_struck",
-  "location": "dye.loft",
-  "outcome": "dye_struck",
+  "final_fingerprint": "e3c14f1a3ae51dc2c8f57e44885e27bdcbcdd0f55ce6da93e6c15ea8f04917fd",
+  "id": "cross_dye_ferry",
+  "location": "ferry.yard",
   "outcomes": [
     "dye_struck"
   ],

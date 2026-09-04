@@ -19,8 +19,8 @@
     "go:smoke.yard",
     "go:smoke.racks"
   ],
-  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "9d1819cd90bbee87bd93d0fab712eebdea66aff2760be3e5ba50361307ad7820",
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "12ff27f0d08d02615d3641cfa842f9a63d77658449389cff11ea09c66345e0c0",
   "id": "cross_salt_smoke",
   "location": "smoke.racks",
   "outcomes": [

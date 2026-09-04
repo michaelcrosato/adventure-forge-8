@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:mill.lane",
-    "go:mill.yard"
+    "go:ferry.path",
+    "go:ferry.yard"
   ],
   "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
-  "final_fingerprint": "0275a6a4b89b2aad521b140deb7880c75ab95f9a26c0ceb5d18ca2469bda8138",
-  "id": "divergence_marsh_mill",
-  "location": "mill.yard",
+  "final_fingerprint": "927ba97b45a142022c3d6260c605ac604137d948a83a70075b37f56a09d4b416",
+  "id": "cross_plain_ferry",
+  "location": "ferry.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

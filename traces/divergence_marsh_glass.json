@@ -6,8 +6,8 @@
     "go:glass.yard",
     "go:glass.nave"
   ],
-  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "dff5fbf96616dd9c0672fed4512c0a1ad6ebfa00334d2638ac5a7918179379cf",
+  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
+  "final_fingerprint": "9fa7615e0d279577f6adea842cec329867dc21ab218f353a2e09d3c402231390",
   "id": "divergence_marsh_glass",
   "location": "glass.nave",
   "outcomes": [],
