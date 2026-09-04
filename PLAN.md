@@ -154,6 +154,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Peat Fold | Safe cut, share board, flood risk | Hamlet |
 | Lens Ruin | Low sun, shard, channel mark | Ruin |
 | Ropewalk | Twist, taut walk, hemp hank | Hamlet |
+| Salt Pans | Brine, rake, weigh | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -169,6 +170,7 @@ Authored outcomes:
 8. `fold_held` — the peat share is set even.
 9. `lens_set` — the lens shard marks the channel.
 10. `rope_walked` — the hemp hank is walked taut.
+11. `salt_raked` — a salt cake is raked and weighed.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -196,9 +198,11 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 6. **Slice 5:** Namehouse ruin — names and rites. Cross-effect: fever broken unlocks filing Ren as living.
 7. **Slice 6:** Peat Fold hamlet — safe cut and share. Cross-effect: restored name unlocks kin standing on the green.
 8. **Slice 7:** Lens Ruin — light path and shard. Cross-effect: fold peat credit buys lead.
-9. **Slice 8 (shipping):** Ropewalk — twist and taut walk. Cross-effect: set lens unlocks channel sight on the floor.
-10. **Slice 9+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-11. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+9. **Slice 8:** Ropewalk — twist and taut walk. Cross-effect: set lens unlocks channel sight on the floor.
+10. **Slice 9:** Salt Pans — brine, rake, weigh. Cross-effect: walked rope unlocks a rake line on the beds.
+11. **Slice 10:** Smokehouse — hang, tend smoke, salt-cure. Cross-effect: raked salt unlocks a brine cure on the racks.
+12. **Slice 11+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+13. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

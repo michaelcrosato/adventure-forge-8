@@ -80,6 +80,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_rope",
         "cross_plain_rope",
         "cross_lens_rope",
+        "marsh_salt_raked",
+        "divergence_marsh_salt",
+        "divergence_city_salt",
+        "cross_plain_salt",
+        "cross_rope_salt",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -98,6 +103,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     fold = replay(content, by_id["marsh_fold_held"]["seed"], by_id["marsh_fold_held"]["sheet"], by_id["marsh_fold_held"]["actions"])
     lens = replay(content, by_id["marsh_lens_set"]["seed"], by_id["marsh_lens_set"]["sheet"], by_id["marsh_lens_set"]["actions"])
     rope = replay(content, by_id["marsh_rope_walked"]["seed"], by_id["marsh_rope_walked"]["sheet"], by_id["marsh_rope_walked"]["actions"])
+    salt = replay(content, by_id["marsh_salt_raked"]["seed"], by_id["marsh_salt_raked"]["sheet"], by_id["marsh_salt_raked"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -118,7 +124,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("lens_set predicate failed")
     if "rope_walked" not in rope.state.outcomes:
         raise AssertionError("rope_walked predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint}) != 10:
+    if "salt_raked" not in salt.state.outcomes:
+        raise AssertionError("salt_raked predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint}) != 11:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -331,6 +339,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "lens_set" not in lens_rope.state.outcomes:
         raise AssertionError("cross lens-rope run lost lens_set")
 
+    salt_m = by_id["divergence_marsh_salt"]
+    salt_c = by_id["divergence_city_salt"]
+    salt_m_ids, salt_c_ids = _diverge_legal(content, salt_m, salt_c)
+    if "know_the_brine_cut" not in salt_m_ids:
+        raise AssertionError("marsh_scout missing know_the_brine_cut")
+    if "read_the_pan_list" not in salt_c_ids:
+        raise AssertionError("city_oath missing read_the_pan_list")
+    if "know_the_brine_cut" in salt_c_ids or "read_the_pan_list" in salt_m_ids:
+        raise AssertionError("salt sheet verbs leaked across sheets")
+
+    plain_salt = replay(content, by_id["cross_plain_salt"]["seed"], by_id["cross_plain_salt"]["sheet"], by_id["cross_plain_salt"]["actions"])
+    rope_salt = replay(content, by_id["cross_rope_salt"]["seed"], by_id["cross_rope_salt"]["sheet"], by_id["cross_rope_salt"]["actions"])
+    if plain_salt.state.location != rope_salt.state.location:
+        raise AssertionError("salt cross-area pair left different locations")
+    if plain_salt.state.location != "pans.beds":
+        raise AssertionError("salt cross-area pair not at pans.beds")
+    plain_salt_ids = {a.id for a in enumerate_legal(plain_salt.state, content)}
+    rope_salt_ids = {a.id for a in enumerate_legal(rope_salt.state, content)}
+    if "rig_the_rake_line" not in rope_salt_ids:
+        raise AssertionError("rope walked did not unlock rig_the_rake_line")
+    if "rig_the_rake_line" in plain_salt_ids:
+        raise AssertionError("rig_the_rake_line leaked without rope walked")
+    if "rope_walked" not in rope_salt.state.outcomes:
+        raise AssertionError("cross rope-salt run lost rope_walked")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -342,6 +375,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "fold_held": fold.fingerprint,
         "lens_set": lens.fingerprint,
         "rope_walked": rope.fingerprint,
+        "salt_raked": salt.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -360,6 +394,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "glass_city_only": sorted(glass_c_ids - glass_m_ids),
         "rope_marsh_only": sorted(rope_m_ids - rope_c_ids),
         "rope_city_only": sorted(rope_c_ids - rope_m_ids),
+        "salt_marsh_only": sorted(salt_m_ids - salt_c_ids),
+        "salt_city_only": sorted(salt_c_ids - salt_m_ids),
     }
 
 

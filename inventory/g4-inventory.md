@@ -60,10 +60,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | rope.walk | ropewalk | taut walk, channel sight, rope_walked |
 | rope.loft | ropewalk | Bram, hemp hank |
 | rope.end | ropewalk | Kite, taut-only pay |
+| pans.path | salt_pans | white crust, pans access |
+| pans.yard | salt_pans | Dorr, brine cut vs pan list |
+| pans.beds | salt_pans | rake cake, rope rake line |
+| pans.well | salt_pans | Nell, draw brine |
+| pans.shed | salt_pans | Pim, weigh cake, salt_raked |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`
 
 ## Substrate
 

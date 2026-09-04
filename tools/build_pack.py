@@ -81,6 +81,7 @@ def build() -> dict:
         "peat_brick": {"name": "peat brick", "kind": "goods"},
         "lens_shard": {"name": "lens shard", "kind": "glass"},
         "hemp_hank": {"name": "hemp hank", "kind": "goods"},
+        "salt_cake": {"name": "salt cake", "kind": "goods"},
         **salvage_items,
     }
 
@@ -199,6 +200,7 @@ def build() -> dict:
                 {"to": "fold.lane", "label": "Go to peat fold"},
                 {"to": "glass.path", "label": "Go to lens ruin"},
                 {"to": "rope.path", "label": "Go to ropewalk"},
+                {"to": "pans.path", "label": "Go to salt pans"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -733,6 +735,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "glass.path", "label": "Go to lens ruin"},
                 {"to": "rope.yard", "label": "Go to rope yard"},
+                {"to": "pans.path", "label": "Go to salt pans"},
             ],
             "ground": [],
             "actors": [],
@@ -785,6 +788,65 @@ def build() -> dict:
             "exits": [{"to": "rope.walk", "label": "Go to the walk"}],
             "ground": [],
             "actors": ["kite"],
+        },
+        "pans.path": {
+            "region": "salt_pans",
+            "name": "Pans Path",
+            "situation": "White crust edges the track. The pans flash in the flats.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "rope.path", "label": "Go to ropewalk"},
+                {"to": "pans.yard", "label": "Go to pans yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pans.yard": {
+            "region": "salt_pans",
+            "name": "Pans Yard",
+            "situation": "Rakes lean on a low wall. Dorr waits by a list of pans.",
+            "exits": [
+                {"to": "pans.path", "label": "Go to pans path"},
+                {"to": "pans.beds", "label": "Go to the beds"},
+                {"to": "pans.well", "label": "Go to the brine well"},
+                {"to": "pans.shed", "label": "Go to the weigh shed"},
+            ],
+            "ground": [],
+            "actors": ["dorr"],
+        },
+        "pans.beds": {
+            "region": "salt_pans",
+            "name": "Salt Beds",
+            "situation": "Shallow beds hold brine. A crust forms at the rims.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rope_walked"},
+                    "text": "A taut line could rake the beds even.",
+                },
+                {
+                    "when": {"has_flag": "salt_raked"},
+                    "text": "One bed is scraped clean.",
+                },
+            ],
+            "exits": [{"to": "pans.yard", "label": "Go to pans yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "pans.well": {
+            "region": "salt_pans",
+            "name": "Brine Well",
+            "situation": "A stone well tastes of salt. Nell keeps the bucket.",
+            "exits": [{"to": "pans.yard", "label": "Go to pans yard"}],
+            "ground": [],
+            "actors": ["nell"],
+        },
+        "pans.shed": {
+            "region": "salt_pans",
+            "name": "Weigh Shed",
+            "situation": "A beam scale sits on a crate. Pim waits with chalk.",
+            "exits": [{"to": "pans.yard", "label": "Go to pans yard"}],
+            "ground": [],
+            "actors": ["pim"],
         },
     }
 
@@ -908,6 +970,18 @@ def build() -> dict:
         "kite": {
             "name": "Kite",
             "idle": "He weighs a purse and watches the far pegs.",
+        },
+        "dorr": {
+            "name": "Dorr",
+            "idle": "He leans on a rake and watches the beds.",
+        },
+        "nell": {
+            "name": "Nell",
+            "idle": "She keeps the brine bucket from the well lip.",
+        },
+        "pim": {
+            "name": "Pim",
+            "idle": "He taps the scale and waits for a cake.",
         },
     }
 
@@ -2529,6 +2603,135 @@ def build() -> dict:
             "Kite pays only for a rope that lies taut.",
             [{"op": "set_flag", "flag": "heard_rope_rule"}],
         ),
+        action(
+            "know_the_brine_cut",
+            "Know the brine cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "pans.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "salt_trust"},
+                ]
+            },
+            "You name the brine cut. Dorr lets you draw and rake.",
+            [
+                {"op": "set_flag", "flag": "salt_trust"},
+                {"op": "remember", "actor": "dorr", "fact": "brine_cut"},
+            ],
+        ),
+        action(
+            "read_the_pan_list",
+            "Read the pan list",
+            "do",
+            {
+                "all": [
+                    {"at": "pans.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "salt_trust"},
+                ]
+            },
+            "You read the pan list. Dorr lets you draw and rake.",
+            [
+                {"op": "set_flag", "flag": "salt_trust"},
+                {"op": "remember", "actor": "dorr", "fact": "list"},
+            ],
+        ),
+        action(
+            "rig_the_rake_line",
+            "Rig the rake line",
+            "do",
+            {
+                "all": [
+                    {"at": "pans.beds"},
+                    {"has_flag": "rope_walked"},
+                    {"not_flag": "rake_rigged"},
+                ]
+            },
+            "You rig a taut rake line. The beds can be scraped even.",
+            [
+                {"op": "set_flag", "flag": "rake_rigged"},
+                {"op": "set_flag", "flag": "salt_trust"},
+                {"op": "remember", "actor": "dorr", "fact": "rake_line"},
+            ],
+        ),
+        action(
+            "draw_the_brine",
+            "Draw the brine",
+            "do",
+            {
+                "all": [
+                    {"at": "pans.well"},
+                    {"has_flag": "salt_trust"},
+                    {"not_flag": "brine_drawn"},
+                ]
+            },
+            "You draw brine. Nell nods at the full bucket.",
+            [{"op": "set_flag", "flag": "brine_drawn"}],
+        ),
+        action(
+            "rake_the_cake",
+            "Rake a salt cake",
+            "do",
+            {
+                "all": [
+                    {"at": "pans.beds"},
+                    {"has_flag": "salt_trust"},
+                    {"has_flag": "brine_drawn"},
+                    {"not": {"has_item": "salt_cake"}},
+                    {"not_flag": "salt_raked"},
+                ]
+            },
+            "You rake a white cake. The bed shows clean stone.",
+            [{"op": "add_item", "item": "salt_cake"}],
+        ),
+        action(
+            "weigh_the_cake",
+            "Weigh the salt cake",
+            "talk",
+            {
+                "all": [
+                    {"at": "pans.shed"},
+                    {"has_item": "salt_cake"},
+                    {"has_flag": "salt_trust"},
+                    {"not_flag": "salt_raked"},
+                ]
+            },
+            "You weigh the cake. Pim chalks the mark and the rake is done.",
+            [
+                {"op": "remove_item", "item": "salt_cake"},
+                {"op": "set_flag", "flag": "salt_raked"},
+            ],
+        ),
+        action(
+            "ask_dorr_rule",
+            "Ask Dorr the rule",
+            "talk",
+            {"at": "pans.yard"},
+            "Dorr says draw brine. Then rake a cake and weigh it.",
+            [{"op": "set_flag", "flag": "heard_salt_rule"}],
+        ),
+        action(
+            "ask_nell_well",
+            "Ask Nell the well",
+            "talk",
+            {"at": "pans.well"},
+            "Nell says the well is brine, not drink.",
+            [{"op": "set_flag", "flag": "heard_salt_rule"}],
+        ),
+        action(
+            "ask_pim_scale",
+            "Ask Pim the scale",
+            "talk",
+            {"at": "pans.shed"},
+            "Pim says a cake on the scale closes the rake.",
+            [{"op": "set_flag", "flag": "heard_salt_rule"}],
+        ),
     ]
 
     pack = {
@@ -2574,6 +2777,10 @@ def build() -> dict:
             "ropewalk": {
                 "name": "Ropewalk",
                 "mechanic": "twist-tension-cordage",
+            },
+            "salt_pans": {
+                "name": "Salt Pans",
+                "mechanic": "brine-rake-weigh",
             },
         },
         "locations": locations,
@@ -2621,11 +2828,15 @@ def build() -> dict:
                 "name": "Rope Walked",
                 "when": {"has_flag": "rope_walked"},
             },
+            "salt_raked": {
+                "name": "Salt Raked",
+                "when": {"has_flag": "salt_raked"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0},
             "inventory": [],
             "flags": {},
         },

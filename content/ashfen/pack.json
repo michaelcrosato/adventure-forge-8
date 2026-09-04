@@ -3149,6 +3149,251 @@
       "when": {
         "at": "rope.end"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "salt_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "dorr",
+          "fact": "brine_cut",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_brine_cut",
+      "label": "Know the brine cut",
+      "text": "You name the brine cut. Dorr lets you draw and rake.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "salt_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "salt_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "dorr",
+          "fact": "list",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_pan_list",
+      "label": "Read the pan list",
+      "text": "You read the pan list. Dorr lets you draw and rake.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "salt_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "rake_rigged",
+          "op": "set_flag"
+        },
+        {
+          "flag": "salt_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "dorr",
+          "fact": "rake_line",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "rig_the_rake_line",
+      "label": "Rig the rake line",
+      "text": "You rig a taut rake line. The beds can be scraped even.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.beds"
+          },
+          {
+            "has_flag": "rope_walked"
+          },
+          {
+            "not_flag": "rake_rigged"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "brine_drawn",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "draw_the_brine",
+      "label": "Draw the brine",
+      "text": "You draw brine. Nell nods at the full bucket.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.well"
+          },
+          {
+            "has_flag": "salt_trust"
+          },
+          {
+            "not_flag": "brine_drawn"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "salt_cake",
+          "op": "add_item"
+        }
+      ],
+      "group": "do",
+      "id": "rake_the_cake",
+      "label": "Rake a salt cake",
+      "text": "You rake a white cake. The bed shows clean stone.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.beds"
+          },
+          {
+            "has_flag": "salt_trust"
+          },
+          {
+            "has_flag": "brine_drawn"
+          },
+          {
+            "not": {
+              "has_item": "salt_cake"
+            }
+          },
+          {
+            "not_flag": "salt_raked"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "salt_cake",
+          "op": "remove_item"
+        },
+        {
+          "flag": "salt_raked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "weigh_the_cake",
+      "label": "Weigh the salt cake",
+      "text": "You weigh the cake. Pim chalks the mark and the rake is done.",
+      "when": {
+        "all": [
+          {
+            "at": "pans.shed"
+          },
+          {
+            "has_item": "salt_cake"
+          },
+          {
+            "has_flag": "salt_trust"
+          },
+          {
+            "not_flag": "salt_raked"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_salt_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_dorr_rule",
+      "label": "Ask Dorr the rule",
+      "text": "Dorr says draw brine. Then rake a cake and weigh it.",
+      "when": {
+        "at": "pans.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_salt_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_nell_well",
+      "label": "Ask Nell the well",
+      "text": "Nell says the well is brine, not drink.",
+      "when": {
+        "at": "pans.well"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_salt_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_pim_scale",
+      "label": "Ask Pim the scale",
+      "text": "Pim says a cake on the scale closes the rake.",
+      "when": {
+        "at": "pans.shed"
+      }
     }
   ],
   "actors": {
@@ -3171,6 +3416,10 @@
     "dock_boss": {
       "idle": "He counts barrels and does not look up.",
       "name": "Dock boss"
+    },
+    "dorr": {
+      "idle": "He leans on a rake and watches the beds.",
+      "name": "Dorr"
     },
     "eel_seller": {
       "idle": "He turns eels on the board and waits.",
@@ -3212,6 +3461,10 @@
       "idle": "She coils rope and eyes the first ledge.",
       "name": "Mira"
     },
+    "nell": {
+      "idle": "She keeps the brine bucket from the well lip.",
+      "name": "Nell"
+    },
     "nia": {
       "idle": "She keeps a dry roll under her arm.",
       "name": "Clerk Nia"
@@ -3227,6 +3480,10 @@
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
+    },
+    "pim": {
+      "idle": "He taps the scale and waits for a cake.",
+      "name": "Pim"
     },
     "rell": {
       "idle": "He watches the dike and the weather.",
@@ -3314,6 +3571,10 @@
     "peat_brick": {
       "kind": "goods",
       "name": "peat brick"
+    },
+    "salt_cake": {
+      "kind": "goods",
+      "name": "salt cake"
     },
     "salvage_000": {
       "kind": "salvage",
@@ -3761,6 +4022,10 @@
         {
           "label": "Go to ropewalk",
           "to": "rope.path"
+        },
+        {
+          "label": "Go to salt pans",
+          "to": "pans.path"
         }
       ],
       "ground": [],
@@ -4471,6 +4736,111 @@
       "region": "namehouse",
       "situation": "Bone tags hang on a dry line. Ila watches the door."
     },
+    "pans.beds": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to pans yard",
+          "to": "pans.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Salt Beds",
+      "region": "salt_pans",
+      "situation": "Shallow beds hold brine. A crust forms at the rims.",
+      "situation_if": [
+        {
+          "text": "A taut line could rake the beds even.",
+          "when": {
+            "has_flag": "rope_walked"
+          }
+        },
+        {
+          "text": "One bed is scraped clean.",
+          "when": {
+            "has_flag": "salt_raked"
+          }
+        }
+      ]
+    },
+    "pans.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to ropewalk",
+          "to": "rope.path"
+        },
+        {
+          "label": "Go to pans yard",
+          "to": "pans.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pans Path",
+      "region": "salt_pans",
+      "situation": "White crust edges the track. The pans flash in the flats."
+    },
+    "pans.shed": {
+      "actors": [
+        "pim"
+      ],
+      "exits": [
+        {
+          "label": "Go to pans yard",
+          "to": "pans.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Weigh Shed",
+      "region": "salt_pans",
+      "situation": "A beam scale sits on a crate. Pim waits with chalk."
+    },
+    "pans.well": {
+      "actors": [
+        "nell"
+      ],
+      "exits": [
+        {
+          "label": "Go to pans yard",
+          "to": "pans.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Brine Well",
+      "region": "salt_pans",
+      "situation": "A stone well tastes of salt. Nell keeps the bucket."
+    },
+    "pans.yard": {
+      "actors": [
+        "dorr"
+      ],
+      "exits": [
+        {
+          "label": "Go to pans path",
+          "to": "pans.path"
+        },
+        {
+          "label": "Go to the beds",
+          "to": "pans.beds"
+        },
+        {
+          "label": "Go to the brine well",
+          "to": "pans.well"
+        },
+        {
+          "label": "Go to the weigh shed",
+          "to": "pans.shed"
+        }
+      ],
+      "ground": [],
+      "name": "Pans Yard",
+      "region": "salt_pans",
+      "situation": "Rakes lean on a low wall. Dorr waits by a list of pans."
+    },
     "road.beacon": {
       "actors": [],
       "exits": [
@@ -4633,6 +5003,10 @@
         {
           "label": "Go to rope yard",
           "to": "rope.yard"
+        },
+        {
+          "label": "Go to salt pans",
+          "to": "pans.path"
         }
       ],
       "ground": [],
@@ -5120,6 +5494,12 @@
         "has_flag": "rope_walked"
       }
     },
+    "salt_raked": {
+      "name": "Salt Raked",
+      "when": {
+        "has_flag": "salt_raked"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -5164,6 +5544,10 @@
       "mechanic": "twist-tension-cordage",
       "name": "Ropewalk"
     },
+    "salt_pans": {
+      "mechanic": "brine-rake-weigh",
+      "name": "Salt Pans"
+    },
     "saltfen": {
       "mechanic": "law-trade-tides",
       "name": "Saltfen Harbor"
@@ -5202,6 +5586,7 @@
       "names": 0,
       "road": 0,
       "rope": 0,
+      "salt": 0,
       "stackers": 0,
       "watch": 0
     }

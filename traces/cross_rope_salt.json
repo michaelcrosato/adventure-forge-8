@@ -9,13 +9,17 @@
     "take:hemp_hank",
     "go:rope.yard",
     "go:rope.walk",
-    "walk_the_rope"
+    "walk_the_rope",
+    "go:rope.yard",
+    "go:rope.path",
+    "go:pans.path",
+    "go:pans.yard",
+    "go:pans.beds"
   ],
   "build_id": "cff8df54f3fc0dd3a48c66d6eaed47dfb9e86b76e13438f445f61822ee06ddae",
-  "final_fingerprint": "e99b619b6897b9235ec363fc2707c3c6a540371aeff086e556554ce120879872",
-  "id": "marsh_rope_walked",
-  "location": "rope.walk",
-  "outcome": "rope_walked",
+  "final_fingerprint": "b77655f4d19ffc9a46158e939b7832884c2534d33b3747d06bb303ecea2f7422",
+  "id": "cross_rope_salt",
+  "location": "pans.beds",
   "outcomes": [
     "rope_walked"
   ],

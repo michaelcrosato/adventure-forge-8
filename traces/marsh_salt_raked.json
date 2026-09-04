@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:pans.path",
+    "go:pans.yard",
+    "know_the_brine_cut",
+    "go:pans.well",
+    "draw_the_brine",
+    "go:pans.yard",
+    "go:pans.beds",
+    "rake_the_cake",
+    "go:pans.yard",
+    "go:pans.shed",
+    "weigh_the_cake"
+  ],
+  "build_id": "cff8df54f3fc0dd3a48c66d6eaed47dfb9e86b76e13438f445f61822ee06ddae",
+  "final_fingerprint": "534d9f1c38631a648c9b48e381fd67976bf7000e9bbb076840d1b95732529092",
+  "id": "marsh_salt_raked",
+  "location": "pans.shed",
+  "outcome": "salt_raked",
+  "outcomes": [
+    "salt_raked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}
