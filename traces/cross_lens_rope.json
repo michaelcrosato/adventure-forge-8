@@ -20,8 +20,8 @@
     "go:rope.yard",
     "go:rope.walk"
   ],
-  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
-  "final_fingerprint": "b5d7893664812c0662d2dd45f157efdf9782a59669b600879664462edd6ec082",
+  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
+  "final_fingerprint": "f4b3b01e7a26f3b447ecfef8e4b127a6190e38eba28c0cc6240e85e05f3e71ac",
   "id": "cross_lens_rope",
   "location": "rope.walk",
   "outcomes": [

@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:ice.path",
+    "go:ice.yard",
+    "know_the_ice_cut",
+    "go:ice.pit",
+    "take:ice_block",
+    "go:ice.yard",
+    "go:ice.hold",
+    "pack_the_ice",
+    "go:ice.yard",
+    "go:ice.door",
+    "bar_the_door"
+  ],
+  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
+  "final_fingerprint": "5eb668fd6d40f87331da251134bbd3de3e66cf391973d5c291071aca26902f8d",
+  "id": "marsh_ice_held",
+  "location": "ice.door",
+  "outcome": "ice_held",
+  "outcomes": [
+    "ice_held"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -5080,6 +5080,229 @@
       "when": {
         "at": "count.vault"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ice_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "yul",
+          "fact": "ice_cut",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_ice_cut",
+      "label": "Know the ice cut",
+      "text": "You name the ice cut. Yul lets you pack and bar.",
+      "when": {
+        "all": [
+          {
+            "at": "ice.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "ice_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ice_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "yul",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_cold_mark",
+      "label": "Read the cold mark",
+      "text": "You read the cold mark. Yul lets you pack and bar.",
+      "when": {
+        "all": [
+          {
+            "at": "ice.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "ice_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ice_right",
+          "op": "set_flag"
+        },
+        {
+          "flag": "ice_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "yul",
+          "fact": "right",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "cite_the_ice_right",
+      "label": "Cite the ice right",
+      "text": "You cite the ice right. Yul lets you pack and bar.",
+      "when": {
+        "all": [
+          {
+            "at": "ice.yard"
+          },
+          {
+            "has_flag": "tally_closed"
+          },
+          {
+            "not_flag": "ice_right"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "ice_block",
+          "op": "remove_item"
+        },
+        {
+          "flag": "ice_packed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "pack_the_ice",
+      "label": "Pack the ice",
+      "text": "You pack the ice. Straw takes the cold.",
+      "when": {
+        "all": [
+          {
+            "at": "ice.hold"
+          },
+          {
+            "has_flag": "ice_trust"
+          },
+          {
+            "has_item": "ice_block"
+          },
+          {
+            "not_flag": "ice_packed"
+          },
+          {
+            "not_flag": "ice_held"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "ice_held",
+          "op": "set_flag"
+        },
+        {
+          "actor": "kest",
+          "fact": "bar",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "bar_the_door",
+      "label": "Bar the door",
+      "text": "You bar the door. The hold keeps the cold.",
+      "when": {
+        "all": [
+          {
+            "at": "ice.door"
+          },
+          {
+            "has_flag": "ice_trust"
+          },
+          {
+            "has_flag": "ice_packed"
+          },
+          {
+            "not_flag": "ice_held"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_ice_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_yul_rule",
+      "label": "Ask Yul the rule",
+      "text": "Yul says pack the ice. Then bar the door.",
+      "when": {
+        "at": "ice.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_ice_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_saff_pit",
+      "label": "Ask Saff the pit",
+      "text": "Saff says cut only from the hard face.",
+      "when": {
+        "at": "ice.pit"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_ice_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_kest_bar",
+      "label": "Ask Kest the bar",
+      "text": "Kest bars only a hold that is packed.",
+      "when": {
+        "at": "ice.door"
+      }
     }
   ],
   "actors": {
@@ -5162,6 +5385,10 @@
     "joss": {
       "idle": "She stands between the well and the cots.",
       "name": "Nurse Joss"
+    },
+    "kest": {
+      "idle": "He keeps one hand on the bar.",
+      "name": "Kest"
     },
     "kite": {
       "idle": "He weighs a purse and watches the far pegs.",
@@ -5255,6 +5482,10 @@
       "idle": "She holds a pin and eyes the loose sails.",
       "name": "Rusk"
     },
+    "saff": {
+      "idle": "She tests the ice face with a saw.",
+      "name": "Saff"
+    },
     "sarn": {
       "idle": "He scrapes a bone strip for ink.",
       "name": "Sarn"
@@ -5298,6 +5529,10 @@
     "wren": {
       "idle": "She taps a tally stick and eyes the pegs.",
       "name": "Wren"
+    },
+    "yul": {
+      "idle": "He wraps straw around a block and waits.",
+      "name": "Yul"
     }
   },
   "id": "ashfen-coast",
@@ -5345,6 +5580,10 @@
     "hemp_hank": {
       "kind": "goods",
       "name": "hemp hank"
+    },
+    "ice_block": {
+      "kind": "goods",
+      "name": "ice block"
     },
     "lens_shard": {
       "kind": "glass",
@@ -5868,6 +6107,10 @@
         {
           "label": "Go to counting house",
           "to": "count.path"
+        },
+        {
+          "label": "Go to ice cellar",
+          "to": "ice.path"
         }
       ],
       "ground": [],
@@ -6050,6 +6293,10 @@
         {
           "label": "Go to count yard",
           "to": "count.yard"
+        },
+        {
+          "label": "Go to ice cellar",
+          "to": "ice.path"
         }
       ],
       "ground": [],
@@ -6677,6 +6924,115 @@
           "text": "Rook will take peat credit for lead.",
           "when": {
             "has_flag": "fold_held"
+          }
+        }
+      ]
+    },
+    "ice.door": {
+      "actors": [
+        "kest"
+      ],
+      "exits": [
+        {
+          "label": "Go to ice yard",
+          "to": "ice.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Ice Door",
+      "region": "ice_cellar",
+      "situation": "A thick door leans on a bar. Kest waits."
+    },
+    "ice.hold": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to ice yard",
+          "to": "ice.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Ice Hold",
+      "region": "ice_cellar",
+      "situation": "Straw and straw line a dark room. The air bites.",
+      "situation_if": [
+        {
+          "text": "The hold sits packed and still.",
+          "when": {
+            "has_flag": "ice_held"
+          }
+        }
+      ]
+    },
+    "ice.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to counting house",
+          "to": "count.path"
+        },
+        {
+          "label": "Go to ice yard",
+          "to": "ice.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Ice Path",
+      "region": "ice_cellar",
+      "situation": "A cut in the bank holds shade. Cold air leaks from a door."
+    },
+    "ice.pit": {
+      "actors": [
+        "saff"
+      ],
+      "exits": [
+        {
+          "label": "Go to ice yard",
+          "to": "ice.yard"
+        }
+      ],
+      "ground": [
+        "ice_block"
+      ],
+      "name": "Ice Pit",
+      "region": "ice_cellar",
+      "situation": "Sawdust covers a pit of ice. Saff keeps a saw."
+    },
+    "ice.yard": {
+      "actors": [
+        "yul"
+      ],
+      "exits": [
+        {
+          "label": "Go to ice path",
+          "to": "ice.path"
+        },
+        {
+          "label": "Go to the ice pit",
+          "to": "ice.pit"
+        },
+        {
+          "label": "Go to the ice hold",
+          "to": "ice.hold"
+        },
+        {
+          "label": "Go to the ice door",
+          "to": "ice.door"
+        }
+      ],
+      "ground": [],
+      "name": "Ice Yard",
+      "region": "ice_cellar",
+      "situation": "Yul waits by a cold mark. Straw wraps a block of ice.",
+      "situation_if": [
+        {
+          "text": "A closed tally would buy the ice right.",
+          "when": {
+            "has_flag": "tally_closed"
           }
         }
       ]
@@ -8118,6 +8474,12 @@
         "has_flag": "compact_restored"
       }
     },
+    "ice_held": {
+      "name": "Ice Held",
+      "when": {
+        "has_flag": "ice_held"
+      }
+    },
     "kiln_pact": {
       "name": "Kiln Pact",
       "when": {
@@ -8216,6 +8578,10 @@
       "mechanic": "climb-collapse-vertical",
       "name": "Hollow Stacks"
     },
+    "ice_cellar": {
+      "mechanic": "pack-ice-hold-cold",
+      "name": "Ice Cellar"
+    },
     "kiln_mill": {
       "mechanic": "heat-craft-grain-debt",
       "name": "Kiln Mill"
@@ -8297,6 +8663,7 @@
       "ferry": 0,
       "fold": 0,
       "glass": 0,
+      "ice": 0,
       "millers": 0,
       "names": 0,
       "oyster": 0,

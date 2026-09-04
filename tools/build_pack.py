@@ -93,6 +93,7 @@ def build() -> dict:
         "spat_bag": {"name": "spat bag", "kind": "goods"},
         "oyster_lot": {"name": "oyster lot", "kind": "goods"},
         "tally_slate": {"name": "tally slate", "kind": "key"},
+        "ice_block": {"name": "ice block", "kind": "goods"},
         **salvage_items,
     }
 
@@ -219,6 +220,7 @@ def build() -> dict:
                 {"to": "pump.path", "label": "Go to windpump"},
                 {"to": "oyster.path", "label": "Go to oyster park"},
                 {"to": "count.path", "label": "Go to counting house"},
+                {"to": "ice.path", "label": "Go to ice cellar"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1254,6 +1256,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "oyster.path", "label": "Go to oyster park"},
                 {"to": "count.yard", "label": "Go to count yard"},
+                {"to": "ice.path", "label": "Go to ice cellar"},
             ],
             "ground": [],
             "actors": [],
@@ -1310,6 +1313,67 @@ def build() -> dict:
             "exits": [{"to": "count.yard", "label": "Go to count yard"}],
             "ground": [],
             "actors": ["orm"],
+        },
+        "ice.path": {
+            "region": "ice_cellar",
+            "name": "Ice Path",
+            "situation": "A cut in the bank holds shade. Cold air leaks from a door.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "count.path", "label": "Go to counting house"},
+                {"to": "ice.yard", "label": "Go to ice yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "ice.yard": {
+            "region": "ice_cellar",
+            "name": "Ice Yard",
+            "situation": "Yul waits by a cold mark. Straw wraps a block of ice.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tally_closed"},
+                    "text": "A closed tally would buy the ice right.",
+                }
+            ],
+            "exits": [
+                {"to": "ice.path", "label": "Go to ice path"},
+                {"to": "ice.pit", "label": "Go to the ice pit"},
+                {"to": "ice.hold", "label": "Go to the ice hold"},
+                {"to": "ice.door", "label": "Go to the ice door"},
+            ],
+            "ground": [],
+            "actors": ["yul"],
+        },
+        "ice.pit": {
+            "region": "ice_cellar",
+            "name": "Ice Pit",
+            "situation": "Sawdust covers a pit of ice. Saff keeps a saw.",
+            "exits": [{"to": "ice.yard", "label": "Go to ice yard"}],
+            "ground": ["ice_block"],
+            "actors": ["saff"],
+        },
+        "ice.hold": {
+            "region": "ice_cellar",
+            "name": "Ice Hold",
+            "situation": "Straw and straw line a dark room. The air bites.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ice_held"},
+                    "text": "The hold sits packed and still.",
+                }
+            ],
+            "exits": [{"to": "ice.yard", "label": "Go to ice yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "ice.door": {
+            "region": "ice_cellar",
+            "name": "Ice Door",
+            "situation": "A thick door leans on a bar. Kest waits.",
+            "exits": [{"to": "ice.yard", "label": "Go to ice yard"}],
+            "ground": [],
+            "actors": ["kest"],
         },
     }
 
@@ -1529,6 +1593,18 @@ def build() -> dict:
         "orm": {
             "name": "Orm",
             "idle": "He holds a seal and does not speak first.",
+        },
+        "yul": {
+            "name": "Yul",
+            "idle": "He wraps straw around a block and waits.",
+        },
+        "saff": {
+            "name": "Saff",
+            "idle": "She tests the ice face with a saw.",
+        },
+        "kest": {
+            "name": "Kest",
+            "idle": "He keeps one hand on the bar.",
         },
     }
 
@@ -4171,6 +4247,124 @@ def build() -> dict:
             "Orm seals only a tally that has been marked.",
             [{"op": "set_flag", "flag": "heard_count_rule"}],
         ),
+        action(
+            "know_the_ice_cut",
+            "Know the ice cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "ice.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "ice_trust"},
+                ]
+            },
+            "You name the ice cut. Yul lets you pack and bar.",
+            [
+                {"op": "set_flag", "flag": "ice_trust"},
+                {"op": "remember", "actor": "yul", "fact": "ice_cut"},
+            ],
+        ),
+        action(
+            "read_the_cold_mark",
+            "Read the cold mark",
+            "do",
+            {
+                "all": [
+                    {"at": "ice.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "ice_trust"},
+                ]
+            },
+            "You read the cold mark. Yul lets you pack and bar.",
+            [
+                {"op": "set_flag", "flag": "ice_trust"},
+                {"op": "remember", "actor": "yul", "fact": "mark"},
+            ],
+        ),
+        action(
+            "cite_the_ice_right",
+            "Cite the ice right",
+            "do",
+            {
+                "all": [
+                    {"at": "ice.yard"},
+                    {"has_flag": "tally_closed"},
+                    {"not_flag": "ice_right"},
+                ]
+            },
+            "You cite the ice right. Yul lets you pack and bar.",
+            [
+                {"op": "set_flag", "flag": "ice_right"},
+                {"op": "set_flag", "flag": "ice_trust"},
+                {"op": "remember", "actor": "yul", "fact": "right"},
+            ],
+        ),
+        action(
+            "pack_the_ice",
+            "Pack the ice",
+            "do",
+            {
+                "all": [
+                    {"at": "ice.hold"},
+                    {"has_flag": "ice_trust"},
+                    {"has_item": "ice_block"},
+                    {"not_flag": "ice_packed"},
+                    {"not_flag": "ice_held"},
+                ]
+            },
+            "You pack the ice. Straw takes the cold.",
+            [
+                {"op": "remove_item", "item": "ice_block"},
+                {"op": "set_flag", "flag": "ice_packed"},
+            ],
+        ),
+        action(
+            "bar_the_door",
+            "Bar the door",
+            "do",
+            {
+                "all": [
+                    {"at": "ice.door"},
+                    {"has_flag": "ice_trust"},
+                    {"has_flag": "ice_packed"},
+                    {"not_flag": "ice_held"},
+                ]
+            },
+            "You bar the door. The hold keeps the cold.",
+            [
+                {"op": "set_flag", "flag": "ice_held"},
+                {"op": "remember", "actor": "kest", "fact": "bar"},
+            ],
+        ),
+        action(
+            "ask_yul_rule",
+            "Ask Yul the rule",
+            "talk",
+            {"at": "ice.yard"},
+            "Yul says pack the ice. Then bar the door.",
+            [{"op": "set_flag", "flag": "heard_ice_rule"}],
+        ),
+        action(
+            "ask_saff_pit",
+            "Ask Saff the pit",
+            "talk",
+            {"at": "ice.pit"},
+            "Saff says cut only from the hard face.",
+            [{"op": "set_flag", "flag": "heard_ice_rule"}],
+        ),
+        action(
+            "ask_kest_bar",
+            "Ask Kest the bar",
+            "talk",
+            {"at": "ice.door"},
+            "Kest bars only a hold that is packed.",
+            [{"op": "set_flag", "flag": "heard_ice_rule"}],
+        ),
     ]
 
     pack = {
@@ -4248,6 +4442,10 @@ def build() -> dict:
             "counting_house": {
                 "name": "Counting House",
                 "mechanic": "mark-tally-seal-day",
+            },
+            "ice_cellar": {
+                "name": "Ice Cellar",
+                "mechanic": "pack-ice-hold-cold",
             },
         },
         "locations": locations,
@@ -4327,11 +4525,15 @@ def build() -> dict:
                 "name": "Tally Closed",
                 "when": {"has_flag": "tally_closed"},
             },
+            "ice_held": {
+                "name": "Ice Held",
+                "when": {"has_flag": "ice_held"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0},
             "inventory": [],
             "flags": {},
         },

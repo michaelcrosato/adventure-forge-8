@@ -100,10 +100,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | count.desk | counting_house | Rhee, mark tally, oyster lot credit |
 | count.loft | counting_house | blank tally slate |
 | count.vault | counting_house | Orm, seal the day, tally_closed |
+| ice.path | ice_cellar | cold cut, cellar access |
+| ice.yard | ice_cellar | Yul, ice cut vs cold mark, ice right |
+| ice.pit | ice_cellar | Saff, ice block |
+| ice.hold | ice_cellar | pack ice in straw |
+| ice.door | ice_cellar | Kest, bar the door, ice_held |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`
 
 ## Substrate
 

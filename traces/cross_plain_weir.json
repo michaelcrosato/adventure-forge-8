@@ -6,8 +6,8 @@
     "go:weir.yard",
     "go:weir.stakes"
   ],
-  "build_id": "878d2c98a5d4fc0a1293834f70093de4208c3df15b86b593ace9519bb530c963",
-  "final_fingerprint": "d2a3e6e9de32db4a51614d0808863974ee66f3ac19058a610ebe418d9f0c9569",
+  "build_id": "fd873a03b3c27c810780bd3859830e63d68197ecf57ba285b5c668af93bab1c6",
+  "final_fingerprint": "ece0c55a0a6c5ffd2b6f92ffbd0d7217a601cd5b0200c5079e202cbe71508d78",
   "id": "cross_plain_weir",
   "location": "weir.stakes",
   "outcomes": [],
