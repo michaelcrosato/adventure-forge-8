@@ -12,13 +12,17 @@
     "take:comb_cake",
     "go:hive.yard",
     "go:hive.shed",
-    "set_the_skep"
+    "set_the_skep",
+    "go:hive.yard",
+    "go:hive.path",
+    "go:mead.path",
+    "go:mead.yard",
+    "go:mead.mash"
   ],
   "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "3b405e02e2e7fad9dfc420766ba8c6b718ee87c5dde26eff5988dbc594ecb2a7",
-  "id": "marsh_hive_kept",
-  "location": "hive.shed",
-  "outcome": "hive_kept",
+  "final_fingerprint": "4359f92e2c1edb2cedb84a2164ed5c1ddc834c38e6fe227abda6b48bdad17ab5",
+  "id": "cross_hive_mead",
+  "location": "mead.mash",
   "outcomes": [
     "hive_kept"
   ],

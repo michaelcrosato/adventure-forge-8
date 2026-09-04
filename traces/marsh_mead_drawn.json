@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:mead.path",
+    "go:mead.yard",
+    "know_the_wild_must",
+    "go:mead.mash",
+    "mash_the_must",
+    "go:mead.yard",
+    "go:mead.crock",
+    "take:cask_bung",
+    "go:mead.yard",
+    "go:mead.tap",
+    "tap_the_cask"
+  ],
+  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
+  "final_fingerprint": "83672be4a22267939b029e77b2811507c44158341aeeb71236339deeb7b6b38f",
+  "id": "marsh_mead_drawn",
+  "location": "mead.tap",
+  "outcome": "mead_drawn",
+  "outcomes": [
+    "mead_drawn"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

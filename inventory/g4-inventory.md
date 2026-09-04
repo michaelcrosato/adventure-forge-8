@@ -115,10 +115,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | hive.skeps | bee_skeps | Tansy, smoke hive, wreck bless |
 | hive.comb | bee_skeps | comb cake |
 | hive.shed | bee_skeps | Wick, set skep, hive_kept |
+| mead.path | mead_house | mash house on the bank, mead access |
+| mead.yard | mead_house | Hop, wild must vs cask mark |
+| mead.mash | mead_house | Mal, mash must, hive pitch |
+| mead.crock | mead_house | cask bung |
+| mead.tap | mead_house | Sera, tap cask, mead_drawn |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`, `mead_drawn`
 
 ## Substrate
 

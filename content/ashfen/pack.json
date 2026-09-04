@@ -5749,6 +5749,229 @@
       "when": {
         "at": "hive.shed"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mead_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hop",
+          "fact": "must",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_wild_must",
+      "label": "Know the wild must",
+      "text": "You name the wild must. Hop lets you mash and tap.",
+      "when": {
+        "all": [
+          {
+            "at": "mead.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "mead_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mead_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hop",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_cask_mark",
+      "label": "Read the cask mark",
+      "text": "You read the cask mark. Hop lets you mash and tap.",
+      "when": {
+        "all": [
+          {
+            "at": "mead.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "mead_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mead_pitched",
+          "op": "set_flag"
+        },
+        {
+          "flag": "mead_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "mal",
+          "fact": "pitch",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "pitch_true_comb",
+      "label": "Pitch true comb",
+      "text": "You pitch true comb. The mash takes the hive wax.",
+      "when": {
+        "all": [
+          {
+            "at": "mead.mash"
+          },
+          {
+            "has_flag": "hive_kept"
+          },
+          {
+            "not_flag": "mead_pitched"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mead_mashed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "mash_the_must",
+      "label": "Mash the must",
+      "text": "You mash the must. The crock takes the sweet.",
+      "when": {
+        "all": [
+          {
+            "at": "mead.mash"
+          },
+          {
+            "has_flag": "mead_trust"
+          },
+          {
+            "not_flag": "mead_mashed"
+          },
+          {
+            "not_flag": "mead_drawn"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "cask_bung",
+          "op": "remove_item"
+        },
+        {
+          "flag": "mead_drawn",
+          "op": "set_flag"
+        },
+        {
+          "actor": "sera",
+          "fact": "tap",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "tap_the_cask",
+      "label": "Tap the cask",
+      "text": "You tap the cask. Sera marks the mead drawn.",
+      "when": {
+        "all": [
+          {
+            "at": "mead.tap"
+          },
+          {
+            "has_flag": "mead_trust"
+          },
+          {
+            "has_flag": "mead_mashed"
+          },
+          {
+            "has_item": "cask_bung"
+          },
+          {
+            "not_flag": "mead_drawn"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_mead_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_hop_rule",
+      "label": "Ask Hop the rule",
+      "text": "Hop says mash the must. Then bung and tap.",
+      "when": {
+        "at": "mead.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_mead_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_mal_mash",
+      "label": "Ask Mal the mash",
+      "text": "Mal says mash until the comb breaks.",
+      "when": {
+        "at": "mead.mash"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_mead_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_sera_tap",
+      "label": "Ask Sera the tap",
+      "text": "Sera taps only a bunged mash.",
+      "when": {
+        "at": "mead.tap"
+      }
     }
   ],
   "actors": {
@@ -5816,6 +6039,10 @@
       "idle": "He tests the clay lip with a board.",
       "name": "Hobb"
     },
+    "hop": {
+      "idle": "He sniffs the mash and does not speak first.",
+      "name": "Hop"
+    },
     "ila": {
       "idle": "She sorts tags and does not speak.",
       "name": "Ila"
@@ -5859,6 +6086,10 @@
     "magistrate": {
       "idle": "She waits with both palms on her knees.",
       "name": "Magistrate Orin"
+    },
+    "mal": {
+      "idle": "She turns the mash and waits.",
+      "name": "Mal"
     },
     "meg": {
       "idle": "She keeps a tally stick by the door.",
@@ -5948,6 +6179,10 @@
       "idle": "He scrapes a bone strip for ink.",
       "name": "Sarn"
     },
+    "sera": {
+      "idle": "He keeps a tap peg and does not look up.",
+      "name": "Sera"
+    },
     "sila": {
       "idle": "She counts sacks and does not smile.",
       "name": "Sila"
@@ -6018,6 +6253,10 @@
     "brass_key": {
       "kind": "key",
       "name": "brass key"
+    },
+    "cask_bung": {
+      "kind": "goods",
+      "name": "cask bung"
     },
     "city_papers": {
       "kind": "key",
@@ -6597,6 +6836,10 @@
         {
           "label": "Go to bee skeps",
           "to": "hive.path"
+        },
+        {
+          "label": "Go to mead house",
+          "to": "mead.path"
         }
       ],
       "ground": [],
@@ -7443,6 +7686,10 @@
         {
           "label": "Go to hive yard",
           "to": "hive.yard"
+        },
+        {
+          "label": "Go to mead house",
+          "to": "mead.path"
         }
       ],
       "ground": [],
@@ -7633,6 +7880,113 @@
           }
         }
       ]
+    },
+    "mead.crock": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to mead yard",
+          "to": "mead.yard"
+        }
+      ],
+      "ground": [
+        "cask_bung"
+      ],
+      "name": "Crock Row",
+      "region": "mead_house",
+      "situation": "Open crocks sit on a board. A bung lies ready."
+    },
+    "mead.mash": {
+      "actors": [
+        "mal"
+      ],
+      "exits": [
+        {
+          "label": "Go to mead yard",
+          "to": "mead.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Mash Tun",
+      "region": "mead_house",
+      "situation": "Mal keeps a mash paddle. Comb lies in a tub.",
+      "situation_if": [
+        {
+          "text": "True comb would pitch this mash.",
+          "when": {
+            "has_flag": "hive_kept"
+          }
+        },
+        {
+          "text": "The mash sits still and even.",
+          "when": {
+            "has_flag": "mead_drawn"
+          }
+        }
+      ]
+    },
+    "mead.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to bee skeps",
+          "to": "hive.path"
+        },
+        {
+          "label": "Go to mead yard",
+          "to": "mead.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Mead Path",
+      "region": "mead_house",
+      "situation": "A mash house sits on the bank. Sweet steam hangs low."
+    },
+    "mead.tap": {
+      "actors": [
+        "sera"
+      ],
+      "exits": [
+        {
+          "label": "Go to mead yard",
+          "to": "mead.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Tap Bench",
+      "region": "mead_house",
+      "situation": "Sera waits by a cask. A tap peg hangs."
+    },
+    "mead.yard": {
+      "actors": [
+        "hop"
+      ],
+      "exits": [
+        {
+          "label": "Go to mead path",
+          "to": "mead.path"
+        },
+        {
+          "label": "Go to the mash",
+          "to": "mead.mash"
+        },
+        {
+          "label": "Go to the crock",
+          "to": "mead.crock"
+        },
+        {
+          "label": "Go to the tap",
+          "to": "mead.tap"
+        }
+      ],
+      "ground": [],
+      "name": "Mead Yard",
+      "region": "mead_house",
+      "situation": "Hop waits by a cask mark. The mash smell is sharp."
     },
     "mill.kiln": {
       "actors": [
@@ -9206,6 +9560,12 @@
         "has_flag": "lens_set"
       }
     },
+    "mead_drawn": {
+      "name": "Mead Drawn",
+      "when": {
+        "has_flag": "mead_drawn"
+      }
+    },
     "name_restored": {
       "name": "Name Restored",
       "when": {
@@ -9314,6 +9674,10 @@
       "mechanic": "light-lens-channel",
       "name": "Lens Ruin"
     },
+    "mead_house": {
+      "mechanic": "mash-must-tap-cask",
+      "name": "Mead House"
+    },
     "namehouse": {
       "mechanic": "names-rites-memory",
       "name": "Namehouse"
@@ -9393,6 +9757,7 @@
       "glass": 0,
       "hive": 0,
       "ice": 0,
+      "mead": 0,
       "millers": 0,
       "names": 0,
       "oyster": 0,

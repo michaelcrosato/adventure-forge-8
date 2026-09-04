@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:pump.path",
-    "go:pump.yard"
+    "go:mead.path",
+    "go:mead.yard"
   ],
   "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "94c82d648d0b3f7f04ed51d7579ef43cea9b685551b084fe72bdd65f95b70eb8",
-  "id": "divergence_city_pump",
-  "location": "pump.yard",
+  "final_fingerprint": "dfe198de8f73f23884b9d07bd7d60b23ec2979552cf0a98e56a83c55a4d6798e",
+  "id": "divergence_city_mead",
+  "location": "mead.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

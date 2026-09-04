@@ -2,14 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:road.ford",
-    "go:road.dike",
-    "go:road.hut"
+    "go:mead.path",
+    "go:mead.yard"
   ],
   "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
-  "final_fingerprint": "83bf30a9578d4986625d56dd00fdb922efea14927f42b359858f872ce8e1190d",
-  "id": "cross_plain_road",
-  "location": "road.hut",
+  "final_fingerprint": "04582047d0532d2bd3f30d1172e19d7eb2dedf9208fc0ec2354eccf7aeb0df39",
+  "id": "divergence_marsh_mead",
+  "location": "mead.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

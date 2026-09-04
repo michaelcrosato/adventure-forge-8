@@ -19,8 +19,8 @@
     "go:hive.yard",
     "go:hive.skeps"
   ],
-  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
-  "final_fingerprint": "6fc1bb7267dccbebdf3e4ecf494192be13909052462b929891e3cb953caf6d1f",
+  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
+  "final_fingerprint": "93b0f4278b8514f6f81f29944b02651fecebad56b315e61562c286d34b66b078",
   "id": "cross_wreck_hive",
   "location": "hive.skeps",
   "outcomes": [

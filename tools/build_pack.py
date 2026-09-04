@@ -96,6 +96,7 @@ def build() -> dict:
         "ice_block": {"name": "ice block", "kind": "goods"},
         "drowned_token": {"name": "drowned token", "kind": "rite"},
         "comb_cake": {"name": "comb cake", "kind": "goods"},
+        "cask_bung": {"name": "cask bung", "kind": "goods"},
         **salvage_items,
     }
 
@@ -225,6 +226,7 @@ def build() -> dict:
                 {"to": "ice.path", "label": "Go to ice cellar"},
                 {"to": "wreck.path", "label": "Go to wreck chapel"},
                 {"to": "hive.path", "label": "Go to bee skeps"},
+                {"to": "mead.path", "label": "Go to mead house"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1448,6 +1450,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "wreck.path", "label": "Go to wreck chapel"},
                 {"to": "hive.yard", "label": "Go to hive yard"},
+                {"to": "mead.path", "label": "Go to mead house"},
             ],
             "ground": [],
             "actors": [],
@@ -1498,6 +1501,65 @@ def build() -> dict:
             "exits": [{"to": "hive.yard", "label": "Go to hive yard"}],
             "ground": [],
             "actors": ["wick"],
+        },
+        "mead.path": {
+            "region": "mead_house",
+            "name": "Mead Path",
+            "situation": "A mash house sits on the bank. Sweet steam hangs low.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "hive.path", "label": "Go to bee skeps"},
+                {"to": "mead.yard", "label": "Go to mead yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "mead.yard": {
+            "region": "mead_house",
+            "name": "Mead Yard",
+            "situation": "Hop waits by a cask mark. The mash smell is sharp.",
+            "exits": [
+                {"to": "mead.path", "label": "Go to mead path"},
+                {"to": "mead.mash", "label": "Go to the mash"},
+                {"to": "mead.crock", "label": "Go to the crock"},
+                {"to": "mead.tap", "label": "Go to the tap"},
+            ],
+            "ground": [],
+            "actors": ["hop"],
+        },
+        "mead.mash": {
+            "region": "mead_house",
+            "name": "Mash Tun",
+            "situation": "Mal keeps a mash paddle. Comb lies in a tub.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hive_kept"},
+                    "text": "True comb would pitch this mash.",
+                },
+                {
+                    "when": {"has_flag": "mead_drawn"},
+                    "text": "The mash sits still and even.",
+                },
+            ],
+            "exits": [{"to": "mead.yard", "label": "Go to mead yard"}],
+            "ground": [],
+            "actors": ["mal"],
+        },
+        "mead.crock": {
+            "region": "mead_house",
+            "name": "Crock Row",
+            "situation": "Open crocks sit on a board. A bung lies ready.",
+            "exits": [{"to": "mead.yard", "label": "Go to mead yard"}],
+            "ground": ["cask_bung"],
+            "actors": [],
+        },
+        "mead.tap": {
+            "region": "mead_house",
+            "name": "Tap Bench",
+            "situation": "Sera waits by a cask. A tap peg hangs.",
+            "exits": [{"to": "mead.yard", "label": "Go to mead yard"}],
+            "ground": [],
+            "actors": ["sera"],
         },
     }
 
@@ -1753,6 +1815,18 @@ def build() -> dict:
         "wick": {
             "name": "Wick",
             "idle": "He mends a straw skep and does not look up.",
+        },
+        "hop": {
+            "name": "Hop",
+            "idle": "He sniffs the mash and does not speak first.",
+        },
+        "mal": {
+            "name": "Mal",
+            "idle": "She turns the mash and waits.",
+        },
+        "sera": {
+            "name": "Sera",
+            "idle": "He keeps a tap peg and does not look up.",
         },
     }
 
@@ -4747,6 +4821,122 @@ def build() -> dict:
             "Wick sets only a hive that has been smoked.",
             [{"op": "set_flag", "flag": "heard_hive_rule"}],
         ),
+        action(
+            "know_the_wild_must",
+            "Know the wild must",
+            "talk",
+            {
+                "all": [
+                    {"at": "mead.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "mead_trust"},
+                ]
+            },
+            "You name the wild must. Hop lets you mash and tap.",
+            [
+                {"op": "set_flag", "flag": "mead_trust"},
+                {"op": "remember", "actor": "hop", "fact": "must"},
+            ],
+        ),
+        action(
+            "read_the_cask_mark",
+            "Read the cask mark",
+            "do",
+            {
+                "all": [
+                    {"at": "mead.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "mead_trust"},
+                ]
+            },
+            "You read the cask mark. Hop lets you mash and tap.",
+            [
+                {"op": "set_flag", "flag": "mead_trust"},
+                {"op": "remember", "actor": "hop", "fact": "mark"},
+            ],
+        ),
+        action(
+            "pitch_true_comb",
+            "Pitch true comb",
+            "do",
+            {
+                "all": [
+                    {"at": "mead.mash"},
+                    {"has_flag": "hive_kept"},
+                    {"not_flag": "mead_pitched"},
+                ]
+            },
+            "You pitch true comb. The mash takes the hive wax.",
+            [
+                {"op": "set_flag", "flag": "mead_pitched"},
+                {"op": "set_flag", "flag": "mead_trust"},
+                {"op": "remember", "actor": "mal", "fact": "pitch"},
+            ],
+        ),
+        action(
+            "mash_the_must",
+            "Mash the must",
+            "do",
+            {
+                "all": [
+                    {"at": "mead.mash"},
+                    {"has_flag": "mead_trust"},
+                    {"not_flag": "mead_mashed"},
+                    {"not_flag": "mead_drawn"},
+                ]
+            },
+            "You mash the must. The crock takes the sweet.",
+            [{"op": "set_flag", "flag": "mead_mashed"}],
+        ),
+        action(
+            "tap_the_cask",
+            "Tap the cask",
+            "do",
+            {
+                "all": [
+                    {"at": "mead.tap"},
+                    {"has_flag": "mead_trust"},
+                    {"has_flag": "mead_mashed"},
+                    {"has_item": "cask_bung"},
+                    {"not_flag": "mead_drawn"},
+                ]
+            },
+            "You tap the cask. Sera marks the mead drawn.",
+            [
+                {"op": "remove_item", "item": "cask_bung"},
+                {"op": "set_flag", "flag": "mead_drawn"},
+                {"op": "remember", "actor": "sera", "fact": "tap"},
+            ],
+        ),
+        action(
+            "ask_hop_rule",
+            "Ask Hop the rule",
+            "talk",
+            {"at": "mead.yard"},
+            "Hop says mash the must. Then bung and tap.",
+            [{"op": "set_flag", "flag": "heard_mead_rule"}],
+        ),
+        action(
+            "ask_mal_mash",
+            "Ask Mal the mash",
+            "talk",
+            {"at": "mead.mash"},
+            "Mal says mash until the comb breaks.",
+            [{"op": "set_flag", "flag": "heard_mead_rule"}],
+        ),
+        action(
+            "ask_sera_tap",
+            "Ask Sera the tap",
+            "talk",
+            {"at": "mead.tap"},
+            "Sera taps only a bunged mash.",
+            [{"op": "set_flag", "flag": "heard_mead_rule"}],
+        ),
     ]
 
     pack = {
@@ -4836,6 +5026,10 @@ def build() -> dict:
             "bee_skeps": {
                 "name": "Bee Skeps",
                 "mechanic": "smoke-hive-set-skep",
+            },
+            "mead_house": {
+                "name": "Mead House",
+                "mechanic": "mash-must-tap-cask",
             },
         },
         "locations": locations,
@@ -4927,11 +5121,15 @@ def build() -> dict:
                 "name": "Hive Kept",
                 "when": {"has_flag": "hive_kept"},
             },
+            "mead_drawn": {
+                "name": "Mead Drawn",
+                "when": {"has_flag": "mead_drawn"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0},
             "inventory": [],
             "flags": {},
         },

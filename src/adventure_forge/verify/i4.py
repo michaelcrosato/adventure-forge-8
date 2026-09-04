@@ -135,6 +135,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_hive",
         "cross_plain_hive",
         "cross_wreck_hive",
+        "marsh_mead_drawn",
+        "divergence_marsh_mead",
+        "divergence_city_mead",
+        "cross_plain_mead",
+        "cross_hive_mead",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -164,6 +169,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     ice = replay(content, by_id["marsh_ice_held"]["seed"], by_id["marsh_ice_held"]["sheet"], by_id["marsh_ice_held"]["actions"])
     wreck = replay(content, by_id["marsh_wreck_laid"]["seed"], by_id["marsh_wreck_laid"]["sheet"], by_id["marsh_wreck_laid"]["actions"])
     hive = replay(content, by_id["marsh_hive_kept"]["seed"], by_id["marsh_hive_kept"]["sheet"], by_id["marsh_hive_kept"]["actions"])
+    mead = replay(content, by_id["marsh_mead_drawn"]["seed"], by_id["marsh_mead_drawn"]["sheet"], by_id["marsh_mead_drawn"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -206,7 +212,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("wreck_laid predicate failed")
     if "hive_kept" not in hive.state.outcomes:
         raise AssertionError("hive_kept predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint, wreck.fingerprint, hive.fingerprint}) != 21:
+    if "mead_drawn" not in mead.state.outcomes:
+        raise AssertionError("mead_drawn predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint, oyster.fingerprint, tally.fingerprint, ice.fingerprint, wreck.fingerprint, hive.fingerprint, mead.fingerprint}) != 22:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -694,6 +702,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "wreck_laid" not in wreck_hive.state.outcomes:
         raise AssertionError("cross wreck-hive run lost wreck_laid")
 
+    mead_m = by_id["divergence_marsh_mead"]
+    mead_c = by_id["divergence_city_mead"]
+    mead_m_ids, mead_c_ids = _diverge_legal(content, mead_m, mead_c)
+    if "know_the_wild_must" not in mead_m_ids:
+        raise AssertionError("marsh_scout missing know_the_wild_must")
+    if "read_the_cask_mark" not in mead_c_ids:
+        raise AssertionError("city_oath missing read_the_cask_mark")
+    if "know_the_wild_must" in mead_c_ids or "read_the_cask_mark" in mead_m_ids:
+        raise AssertionError("mead sheet verbs leaked across sheets")
+
+    plain_mead = replay(content, by_id["cross_plain_mead"]["seed"], by_id["cross_plain_mead"]["sheet"], by_id["cross_plain_mead"]["actions"])
+    hive_mead = replay(content, by_id["cross_hive_mead"]["seed"], by_id["cross_hive_mead"]["sheet"], by_id["cross_hive_mead"]["actions"])
+    if plain_mead.state.location != hive_mead.state.location:
+        raise AssertionError("mead cross-area pair left different locations")
+    if plain_mead.state.location != "mead.mash":
+        raise AssertionError("mead cross-area pair not at mead.mash")
+    plain_mead_ids = {a.id for a in enumerate_legal(plain_mead.state, content)}
+    hive_mead_ids = {a.id for a in enumerate_legal(hive_mead.state, content)}
+    if "pitch_true_comb" not in hive_mead_ids:
+        raise AssertionError("hive kept did not unlock pitch_true_comb")
+    if "pitch_true_comb" in plain_mead_ids:
+        raise AssertionError("pitch_true_comb leaked without hive kept")
+    if "hive_kept" not in hive_mead.state.outcomes:
+        raise AssertionError("cross hive-mead run lost hive_kept")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -716,6 +749,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "ice_held": ice.fingerprint,
         "wreck_laid": wreck.fingerprint,
         "hive_kept": hive.fingerprint,
+        "mead_drawn": mead.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -756,6 +790,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "wreck_city_only": sorted(wreck_c_ids - wreck_m_ids),
         "hive_marsh_only": sorted(hive_m_ids - hive_c_ids),
         "hive_city_only": sorted(hive_c_ids - hive_m_ids),
+        "mead_marsh_only": sorted(mead_m_ids - mead_c_ids),
+        "mead_city_only": sorted(mead_c_ids - mead_m_ids),
     }
 
 

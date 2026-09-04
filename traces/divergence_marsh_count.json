@@ -5,8 +5,8 @@
     "go:count.path",
     "go:count.yard"
   ],
-  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
-  "final_fingerprint": "7edec9b66c43b1c601c85b8d5dcdfaa8815f9f079bf9d752175a0580e769766d",
+  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
+  "final_fingerprint": "f6565ad3ea85b1005141ce1b24426af09f12f848d02c6005fd8fb5c32477a590",
   "id": "divergence_marsh_count",
   "location": "count.yard",
   "outcomes": [],

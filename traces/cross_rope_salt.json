@@ -16,8 +16,8 @@
     "go:pans.yard",
     "go:pans.beds"
   ],
-  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
-  "final_fingerprint": "e76790c52300f74ad36313441d209c7e81837ba0e825c2ebc4f3048e7a80f22f",
+  "build_id": "4a9dcb50826eb8c3c710d489643145e4da96ee9a576b33ee61025be8620e91c1",
+  "final_fingerprint": "7c6ce1308f421e3da3c6211ae6301d10e23cfcd611fefe430a24c2f8de802962",
   "id": "cross_rope_salt",
   "location": "pans.beds",
   "outcomes": [
