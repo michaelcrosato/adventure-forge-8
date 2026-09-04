@@ -8,6 +8,14 @@ def tide(state: GameState) -> str:
     return "low" if (state.turn // 4) % 2 == 0 else "high"
 
 
+WEATHER_CYCLE = ("clear", "rain", "fog")
+
+
+def weather(state: GameState) -> str:
+    """Turn-derived weather. No wall clock."""
+    return WEATHER_CYCLE[(state.turn // 3) % 3]
+
+
 @dataclass
 class GameState:
     build_id: str

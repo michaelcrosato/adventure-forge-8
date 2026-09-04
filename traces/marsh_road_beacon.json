@@ -1,0 +1,22 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:road.ford",
+    "go:road.dike",
+    "go:road.hut",
+    "track_drowned_prints",
+    "go:road.beacon",
+    "light_the_beacon"
+  ],
+  "build_id": "99470f8c6f3285b9ec8163e04c4985070e7f70e00cf012825acad8dc498988d5",
+  "final_fingerprint": "e044fee69fcb54bd542a9ef64cd6190d733ca2c79f2f994559a5e4a6a2ee952c",
+  "id": "marsh_road_beacon",
+  "location": "road.beacon",
+  "outcome": "road_beacon",
+  "outcomes": [
+    "road_beacon"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -11,13 +11,18 @@
     "hear_tam_witness",
     "go:court.yard",
     "go:court.hall",
-    "pass_reed_sentence"
+    "pass_reed_sentence",
+    "go:court.yard",
+    "go:court.gate",
+    "go:ashfen.causeway",
+    "go:road.ford",
+    "go:road.dike",
+    "go:road.hut"
   ],
   "build_id": "99470f8c6f3285b9ec8163e04c4985070e7f70e00cf012825acad8dc498988d5",
-  "final_fingerprint": "7775786c8ab4b3f12d8804b2ba6dadc424e91bd2ff9e358719192086e06f725e",
-  "id": "marsh_reed_sentence",
-  "location": "court.hall",
-  "outcome": "reed_sentence",
+  "final_fingerprint": "dc9431bbad753c44c03aaebec2991c02e82b16dbcbec9592b1ee4c879e74da4b",
+  "id": "cross_court_road",
+  "location": "road.hut",
   "outcomes": [
     "reed_sentence"
   ],

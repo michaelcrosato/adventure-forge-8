@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 from adventure_forge.kernel.ops import COND_KEYS
-from adventure_forge.kernel.state import GameState, tide
+from adventure_forge.kernel.state import GameState, tide, weather
 
 
 class UnknownCondition(ValueError):
@@ -54,6 +54,8 @@ def matches(cond: dict[str, Any] | None, state: GameState, content: Any | None =
         return state.hp >= int(val)
     if key == "tide":
         return tide(state) == val
+    if key == "weather":
+        return weather(state) == val
     if key == "in_region":
         if content is None:
             raise UnknownCondition("in_region requires content")

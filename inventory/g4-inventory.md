@@ -30,10 +30,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | court.hall | reed_court | Orin, reed custom vs city law, mill-pact proof, sentence |
 | court.cell | reed_court | Tam witness |
 | court.archive | reed_court | Nia, letters charter |
+| road.ford | drowned_road | weather shown, flats entry |
+| road.dike | drowned_road | Rell, rain berm, fog bell |
+| road.hut | drowned_road | Cal, hunt tracks vs might latch, sentence proof |
+| road.drownway | drowned_road | rain wade |
+| road.beacon | drowned_road | light pan, road_beacon outcome |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`
 
 ## Substrate
 

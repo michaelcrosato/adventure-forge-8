@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from adventure_forge.kernel.conditions import matches
 from adventure_forge.kernel.content import Content
 from adventure_forge.kernel.legal import LegalAction, enumerate_legal
-from adventure_forge.kernel.state import GameState, tide
+from adventure_forge.kernel.state import GameState, tide, weather
 
 # UI only. Never used to drop ids from the engine legal set.
 PAGE_SIZE = 12
@@ -37,6 +37,8 @@ def situation_text(state: GameState, content: Content) -> str:
             parts.append(str(extra["text"]))
     if loc.get("show_tide"):
         parts.append(f"The tide is {tide(state)}.")
+    if loc.get("show_weather"):
+        parts.append(f"The weather is {weather(state)}.")
     return " ".join(parts)
 
 

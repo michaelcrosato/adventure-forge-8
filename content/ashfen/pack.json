@@ -1818,12 +1818,235 @@
       "when": {
         "at": "court.archive"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "road_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cal",
+          "fact": "tracks",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "track_drowned_prints",
+      "label": "Track drowned prints",
+      "text": "You track wet prints to the beacon path. Cal nods.",
+      "when": {
+        "all": [
+          {
+            "at": "road.hut"
+          },
+          {
+            "sheet": [
+              "skill",
+              "hunt"
+            ]
+          },
+          {
+            "not_flag": "road_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "road_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cal",
+          "fact": "forced",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "force_hut_latch",
+      "label": "Force the hut latch",
+      "text": "You force the latch. Cal lets you take the lamp oil.",
+      "when": {
+        "all": [
+          {
+            "at": "road.hut"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          },
+          {
+            "not_flag": "road_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "road_named_sentence",
+          "op": "set_flag"
+        },
+        {
+          "flag": "road_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cal",
+          "fact": "sentence",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "name_the_sentence",
+      "label": "Name the reed sentence",
+      "text": "You name the reed sentence. Cal grants the road as owed.",
+      "when": {
+        "all": [
+          {
+            "at": "road.hut"
+          },
+          {
+            "has_flag": "reed_sentence_passed"
+          },
+          {
+            "not_flag": "road_named_sentence"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "walked_berm",
+          "op": "set_flag"
+        },
+        {
+          "flag": "road_trust",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "walk_the_flood_berm",
+      "label": "Walk the flood berm",
+      "text": "Rain lifts the berm path. You mark a dry line to the beacon.",
+      "when": {
+        "all": [
+          {
+            "at": "road.dike"
+          },
+          {
+            "weather": "rain"
+          },
+          {
+            "not_flag": "walked_berm"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "followed_bell",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "follow_the_bell",
+      "label": "Follow the fog bell",
+      "text": "You follow the bell through fog. The beacon post shows.",
+      "when": {
+        "all": [
+          {
+            "at": "road.dike"
+          },
+          {
+            "weather": "fog"
+          },
+          {
+            "not_flag": "followed_bell"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_weather",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_rell_weather",
+      "label": "Ask Rell the weather",
+      "text": "Rell says rain opens the berm. Fog hides the bell path.",
+      "when": {
+        "at": "road.dike"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "beacon_lit",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "light_the_beacon",
+      "label": "Light the road beacon",
+      "text": "You light the pan. The drowned road holds a line of fire.",
+      "when": {
+        "all": [
+          {
+            "at": "road.beacon"
+          },
+          {
+            "has_flag": "road_trust"
+          },
+          {
+            "not_flag": "beacon_lit"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "waded_drownway",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "wade_drownway_rain",
+      "label": "Wade the drownway",
+      "text": "You wade the rain cut. Poles lead you true.",
+      "when": {
+        "all": [
+          {
+            "at": "road.drownway"
+          },
+          {
+            "weather": "rain"
+          },
+          {
+            "not_flag": "waded_drownway"
+          }
+        ]
+      }
     }
   ],
   "actors": {
     "bailiff": {
       "idle": "He holds a staff across the gate.",
       "name": "Bailiff Kesh"
+    },
+    "cal": {
+      "idle": "She keeps one hand on the unlit lamp.",
+      "name": "Cal"
     },
     "dock_boss": {
       "idle": "He counts barrels and does not look up.",
@@ -1856,6 +2079,10 @@
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
+    },
+    "rell": {
+      "idle": "He watches the dike and the weather.",
+      "name": "Rell"
     },
     "sila": {
       "idle": "She counts sacks and does not smile.",
@@ -2322,6 +2549,10 @@
         {
           "label": "Go to reed court",
           "to": "court.gate"
+        },
+        {
+          "label": "Go to drowned road",
+          "to": "road.ford"
         }
       ],
       "ground": [],
@@ -2570,6 +2801,118 @@
               "origin",
               "marshborn"
             ]
+          }
+        }
+      ]
+    },
+    "road.beacon": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to hut",
+          "to": "road.hut"
+        },
+        {
+          "label": "Go to drownway",
+          "to": "road.drownway"
+        }
+      ],
+      "ground": [],
+      "name": "Road Beacon",
+      "region": "drowned_road",
+      "situation": "A stone post holds a dark pan. The flats wait for a light.",
+      "situation_if": [
+        {
+          "text": "The pan burns and the road holds.",
+          "when": {
+            "has_flag": "beacon_lit"
+          }
+        }
+      ]
+    },
+    "road.dike": {
+      "actors": [
+        "rell"
+      ],
+      "exits": [
+        {
+          "label": "Go to ford",
+          "to": "road.ford"
+        },
+        {
+          "label": "Go to hut",
+          "to": "road.hut"
+        },
+        {
+          "label": "Go to drownway",
+          "to": "road.drownway"
+        }
+      ],
+      "ground": [],
+      "name": "Sea Dike",
+      "region": "drowned_road",
+      "show_weather": true,
+      "situation": "A low dike cuts the flats. Water works the far side."
+    },
+    "road.drownway": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to dike",
+          "to": "road.dike"
+        },
+        {
+          "label": "Go to beacon",
+          "to": "road.beacon"
+        }
+      ],
+      "ground": [],
+      "name": "Drownway",
+      "region": "drowned_road",
+      "show_weather": true,
+      "situation": "The old road is a wet cut. Poles vanish in the flats."
+    },
+    "road.ford": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to dike",
+          "to": "road.dike"
+        }
+      ],
+      "ground": [],
+      "name": "Drowned Ford",
+      "region": "drowned_road",
+      "show_weather": true,
+      "situation": "A shell track sinks into the flats. Poles mark the old road."
+    },
+    "road.hut": {
+      "actors": [
+        "cal"
+      ],
+      "exits": [
+        {
+          "label": "Go to dike",
+          "to": "road.dike"
+        },
+        {
+          "label": "Go to beacon",
+          "to": "road.beacon"
+        }
+      ],
+      "ground": [],
+      "name": "Dike Hut",
+      "region": "drowned_road",
+      "situation": "A tarred hut leans on the dike. A lamp sits unlit.",
+      "situation_if": [
+        {
+          "text": "Cal has heard the reed sentence.",
+          "when": {
+            "has_flag": "reed_sentence_passed"
           }
         }
       ]
@@ -2964,6 +3307,12 @@
         "has_flag": "reed_sentence_passed"
       }
     },
+    "road_beacon": {
+      "name": "Road Beacon",
+      "when": {
+        "has_flag": "beacon_lit"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -2972,6 +3321,10 @@
     }
   },
   "regions": {
+    "drowned_road": {
+      "mechanic": "weather-turn-encounters",
+      "name": "Drowned Road"
+    },
     "hollow_stacks": {
       "mechanic": "climb-collapse-vertical",
       "name": "Hollow Stacks"
@@ -3016,6 +3369,7 @@
       "court": 0,
       "dockers": 0,
       "millers": 0,
+      "road": 0,
       "stackers": 0,
       "watch": 0
     }

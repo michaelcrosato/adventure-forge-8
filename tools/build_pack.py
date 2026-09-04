@@ -189,6 +189,7 @@ def build() -> dict:
                 {"to": "stacks.base", "label": "Go to stack base"},
                 {"to": "mill.lane", "label": "Go to mill lane"},
                 {"to": "court.gate", "label": "Go to reed court"},
+                {"to": "road.ford", "label": "Go to drowned road"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -387,6 +388,77 @@ def build() -> dict:
             "ground": [],
             "actors": ["nia"],
         },
+        "road.ford": {
+            "region": "drowned_road",
+            "name": "Drowned Ford",
+            "situation": "A shell track sinks into the flats. Poles mark the old road.",
+            "show_weather": True,
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "road.dike", "label": "Go to dike"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "road.dike": {
+            "region": "drowned_road",
+            "name": "Sea Dike",
+            "situation": "A low dike cuts the flats. Water works the far side.",
+            "show_weather": True,
+            "exits": [
+                {"to": "road.ford", "label": "Go to ford"},
+                {"to": "road.hut", "label": "Go to hut"},
+                {"to": "road.drownway", "label": "Go to drownway"},
+            ],
+            "ground": [],
+            "actors": ["rell"],
+        },
+        "road.hut": {
+            "region": "drowned_road",
+            "name": "Dike Hut",
+            "situation": "A tarred hut leans on the dike. A lamp sits unlit.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "reed_sentence_passed"},
+                    "text": "Cal has heard the reed sentence.",
+                }
+            ],
+            "exits": [
+                {"to": "road.dike", "label": "Go to dike"},
+                {"to": "road.beacon", "label": "Go to beacon"},
+            ],
+            "ground": [],
+            "actors": ["cal"],
+        },
+        "road.drownway": {
+            "region": "drowned_road",
+            "name": "Drownway",
+            "situation": "The old road is a wet cut. Poles vanish in the flats.",
+            "show_weather": True,
+            "exits": [
+                {"to": "road.dike", "label": "Go to dike"},
+                {"to": "road.beacon", "label": "Go to beacon"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "road.beacon": {
+            "region": "drowned_road",
+            "name": "Road Beacon",
+            "situation": "A stone post holds a dark pan. The flats wait for a light.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "beacon_lit"},
+                    "text": "The pan burns and the road holds.",
+                }
+            ],
+            "exits": [
+                {"to": "road.hut", "label": "Go to hut"},
+                {"to": "road.drownway", "label": "Go to drownway"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
     }
 
     actors = {
@@ -441,6 +513,14 @@ def build() -> dict:
         "nia": {
             "name": "Clerk Nia",
             "idle": "She keeps a dry roll under her arm.",
+        },
+        "rell": {
+            "name": "Rell",
+            "idle": "He watches the dike and the weather.",
+        },
+        "cal": {
+            "name": "Cal",
+            "idle": "She keeps one hand on the unlit lamp.",
         },
     }
 
@@ -1353,6 +1433,125 @@ def build() -> dict:
             "Nia says the charter is short. Witness, then sentence.",
             [{"op": "set_flag", "flag": "heard_court_rule"}],
         ),
+        action(
+            "track_drowned_prints",
+            "Track drowned prints",
+            "do",
+            {
+                "all": [
+                    {"at": "road.hut"},
+                    {"sheet": ["skill", "hunt"]},
+                    {"not_flag": "road_trust"},
+                ]
+            },
+            "You track wet prints to the beacon path. Cal nods.",
+            [
+                {"op": "set_flag", "flag": "road_trust"},
+                {"op": "remember", "actor": "cal", "fact": "tracks"},
+            ],
+        ),
+        action(
+            "force_hut_latch",
+            "Force the hut latch",
+            "do",
+            {
+                "all": [
+                    {"at": "road.hut"},
+                    {"sheet": ["body", "might"]},
+                    {"not_flag": "road_trust"},
+                ]
+            },
+            "You force the latch. Cal lets you take the lamp oil.",
+            [
+                {"op": "set_flag", "flag": "road_trust"},
+                {"op": "remember", "actor": "cal", "fact": "forced"},
+            ],
+        ),
+        action(
+            "name_the_sentence",
+            "Name the reed sentence",
+            "talk",
+            {
+                "all": [
+                    {"at": "road.hut"},
+                    {"has_flag": "reed_sentence_passed"},
+                    {"not_flag": "road_named_sentence"},
+                ]
+            },
+            "You name the reed sentence. Cal grants the road as owed.",
+            [
+                {"op": "set_flag", "flag": "road_named_sentence"},
+                {"op": "set_flag", "flag": "road_trust"},
+                {"op": "remember", "actor": "cal", "fact": "sentence"},
+            ],
+        ),
+        action(
+            "walk_the_flood_berm",
+            "Walk the flood berm",
+            "do",
+            {
+                "all": [
+                    {"at": "road.dike"},
+                    {"weather": "rain"},
+                    {"not_flag": "walked_berm"},
+                ]
+            },
+            "Rain lifts the berm path. You mark a dry line to the beacon.",
+            [
+                {"op": "set_flag", "flag": "walked_berm"},
+                {"op": "set_flag", "flag": "road_trust"},
+            ],
+        ),
+        action(
+            "follow_the_bell",
+            "Follow the fog bell",
+            "do",
+            {
+                "all": [
+                    {"at": "road.dike"},
+                    {"weather": "fog"},
+                    {"not_flag": "followed_bell"},
+                ]
+            },
+            "You follow the bell through fog. The beacon post shows.",
+            [{"op": "set_flag", "flag": "followed_bell"}],
+        ),
+        action(
+            "ask_rell_weather",
+            "Ask Rell the weather",
+            "talk",
+            {"at": "road.dike"},
+            "Rell says rain opens the berm. Fog hides the bell path.",
+            [{"op": "set_flag", "flag": "heard_weather"}],
+        ),
+        action(
+            "light_the_beacon",
+            "Light the road beacon",
+            "do",
+            {
+                "all": [
+                    {"at": "road.beacon"},
+                    {"has_flag": "road_trust"},
+                    {"not_flag": "beacon_lit"},
+                ]
+            },
+            "You light the pan. The drowned road holds a line of fire.",
+            [{"op": "set_flag", "flag": "beacon_lit"}],
+        ),
+        action(
+            "wade_drownway_rain",
+            "Wade the drownway",
+            "do",
+            {
+                "all": [
+                    {"at": "road.drownway"},
+                    {"weather": "rain"},
+                    {"not_flag": "waded_drownway"},
+                ]
+            },
+            "You wade the rain cut. Poles lead you true.",
+            [{"op": "set_flag", "flag": "waded_drownway"}],
+        ),
     ]
 
     pack = {
@@ -1374,6 +1573,10 @@ def build() -> dict:
             "reed_court": {
                 "name": "Reed Court",
                 "mechanic": "law-witness-sentence",
+            },
+            "drowned_road": {
+                "name": "Drowned Road",
+                "mechanic": "weather-turn-encounters",
             },
         },
         "locations": locations,
@@ -1397,11 +1600,15 @@ def build() -> dict:
                 "name": "Reed Sentence",
                 "when": {"has_flag": "reed_sentence_passed"},
             },
+            "road_beacon": {
+                "name": "Road Beacon",
+                "when": {"has_flag": "beacon_lit"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0},
             "inventory": [],
             "flags": {},
         },

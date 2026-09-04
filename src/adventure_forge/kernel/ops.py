@@ -18,6 +18,7 @@ COND_KEYS = frozenset(
         "has_outcome",
         "hp_gte",
         "tide",
+        "weather",
         "in_region",
     }
 )

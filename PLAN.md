@@ -148,6 +148,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Hollow Stacks | Vertical climb, guyline, collapse, relic | Spatial / risk |
 | Kiln Mill | Heat states, craft damper, grain-debt pact | Craft / debt |
 | Reed Court | Standing, witness, sentence | Law |
+| Drowned Road | Turn weather, encounters, beacon | Travel |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -157,6 +158,7 @@ Authored outcomes:
 2. `stack_relic` — the ash relic is taken.
 3. `kiln_pact` — the mill grain-debt is sealed in the kiln.
 4. `reed_sentence` — the reed court passes sentence.
+5. `road_beacon` — the drowned-road beacon is lit.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -178,8 +180,8 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 
 1. **Slice 0:** Saltfen + Stacks, two outcomes, sheet divergence, salvage stress scene.
 2. **Slice 1:** Kiln Mill — heat, craft, grain-debt. Cross-effect: compact restored unlocks dock rates at the mill yard.
-3. **Slice 2 (shipping):** Reed Court — standing, witness, sentence. Cross-effect: kiln pact unlocks mill proof in the hall.
-4. **Slice 3:** Drowned road — travel graph, weather-as-turn, encounters that write lasting flags.
+3. **Slice 2:** Reed Court — standing, witness, sentence. Cross-effect: kiln pact unlocks mill proof in the hall.
+4. **Slice 3 (shipping):** Drowned Road — weather-as-turn, encounters, beacon. Cross-effect: reed sentence unlocks road standing.
 5. **Slice 4+:** Authored pockets (camps, ruins, hamlets) on generated substrate. Crawler hunts *sameness* and rejects reskins.
 6. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 

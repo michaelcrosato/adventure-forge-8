@@ -2,13 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:mill.lane",
-    "go:mill.yard"
+    "go:road.ford",
+    "go:road.dike",
+    "go:road.hut"
   ],
   "build_id": "99470f8c6f3285b9ec8163e04c4985070e7f70e00cf012825acad8dc498988d5",
-  "final_fingerprint": "bdbf803c4656d975738cc541593714888b76549ffbcd49acdfe543f2815a3256",
-  "id": "divergence_city_mill",
-  "location": "mill.yard",
+  "final_fingerprint": "d7781a70a70ac3d5a837b8b5ccabcd9d73c5c43bc337ddac526c9db92aa83daa",
+  "id": "divergence_city_road",
+  "location": "road.hut",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"
