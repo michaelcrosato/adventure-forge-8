@@ -1,0 +1,24 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:rope.path",
+    "go:rope.yard",
+    "know_the_hemp_twist",
+    "go:rope.loft",
+    "take:hemp_hank",
+    "go:rope.yard",
+    "go:rope.walk",
+    "walk_the_rope"
+  ],
+  "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
+  "final_fingerprint": "c88e2ff6c420b024a124460f06baea6c3e6dc3ff6dc5337762e035e5c544ded8",
+  "id": "marsh_rope_walked",
+  "location": "rope.walk",
+  "outcome": "rope_walked",
+  "outcomes": [
+    "rope_walked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

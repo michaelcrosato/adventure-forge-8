@@ -153,6 +153,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Namehouse | Names, rites, restored bone-name | Ruin |
 | Peat Fold | Safe cut, share board, flood risk | Hamlet |
 | Lens Ruin | Low sun, shard, channel mark | Ruin |
+| Ropewalk | Twist, taut walk, hemp hank | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -167,6 +168,7 @@ Authored outcomes:
 7. `name_restored` — the stolen bone-name is set back on the wall.
 8. `fold_held` — the peat share is set even.
 9. `lens_set` — the lens shard marks the channel.
+10. `rope_walked` — the hemp hank is walked taut.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -193,9 +195,10 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 5. **Slice 4:** Fever Camp — isolation and medicine. Cross-effect: road beacon unlocks a clean boat at the gate.
 6. **Slice 5:** Namehouse ruin — names and rites. Cross-effect: fever broken unlocks filing Ren as living.
 7. **Slice 6:** Peat Fold hamlet — safe cut and share. Cross-effect: restored name unlocks kin standing on the green.
-8. **Slice 7 (shipping):** Lens Ruin — light path and shard. Cross-effect: fold peat credit buys lead.
-9. **Slice 8+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-10. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+8. **Slice 7:** Lens Ruin — light path and shard. Cross-effect: fold peat credit buys lead.
+9. **Slice 8 (shipping):** Ropewalk — twist and taut walk. Cross-effect: set lens unlocks channel sight on the floor.
+10. **Slice 9+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+11. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

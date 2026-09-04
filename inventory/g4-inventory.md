@@ -55,10 +55,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | glass.nave | lens_ruin | Rook, low sun vs sun chart |
 | glass.loft | lens_ruin | Lise, set shard, lens_set |
 | glass.pit | lens_ruin | Nim, lens shard |
+| rope.path | ropewalk | hemp dust, shed access |
+| rope.yard | ropewalk | Tess, hemp twist vs walk mark |
+| rope.walk | ropewalk | taut walk, channel sight, rope_walked |
+| rope.loft | ropewalk | Bram, hemp hank |
+| rope.end | ropewalk | Kite, taut-only pay |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`
 
 ## Substrate
 

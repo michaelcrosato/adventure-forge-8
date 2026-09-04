@@ -13,8 +13,8 @@
     "go:name.hall",
     "restore_the_name"
   ],
-  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
-  "final_fingerprint": "e19f164476fe2fb05ca3403b5cd09fcc1b4ca6627ae86ef6e2588e1ea3fe411c",
+  "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
+  "final_fingerprint": "703e396e818ee16a919a4f947da52f400fd716c9e562193e5a37132f3e06f399",
   "id": "marsh_name_restored",
   "location": "name.hall",
   "outcome": "name_restored",

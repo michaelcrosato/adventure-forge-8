@@ -12,13 +12,18 @@
     "go:glass.yard",
     "go:glass.nave",
     "go:glass.loft",
-    "set_the_lens"
+    "set_the_lens",
+    "go:glass.nave",
+    "go:glass.yard",
+    "go:glass.path",
+    "go:rope.path",
+    "go:rope.yard",
+    "go:rope.walk"
   ],
   "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
-  "final_fingerprint": "28b7e7d00f83144558b0da943ad4dd3930d30f11dc6ef874be41384a920506d7",
-  "id": "marsh_lens_set",
-  "location": "glass.loft",
-  "outcome": "lens_set",
+  "final_fingerprint": "ddf9f8fb90c96e9a34c633f509cd8f8f69857f38fd5f5db844eb635262a92de4",
+  "id": "cross_lens_rope",
+  "location": "rope.walk",
   "outcomes": [
     "lens_set"
   ],

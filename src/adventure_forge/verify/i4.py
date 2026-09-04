@@ -75,6 +75,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_glass",
         "cross_plain_glass",
         "cross_fold_glass",
+        "marsh_rope_walked",
+        "divergence_marsh_rope",
+        "divergence_city_rope",
+        "cross_plain_rope",
+        "cross_lens_rope",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -92,6 +97,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     named = replay(content, by_id["marsh_name_restored"]["seed"], by_id["marsh_name_restored"]["sheet"], by_id["marsh_name_restored"]["actions"])
     fold = replay(content, by_id["marsh_fold_held"]["seed"], by_id["marsh_fold_held"]["sheet"], by_id["marsh_fold_held"]["actions"])
     lens = replay(content, by_id["marsh_lens_set"]["seed"], by_id["marsh_lens_set"]["sheet"], by_id["marsh_lens_set"]["actions"])
+    rope = replay(content, by_id["marsh_rope_walked"]["seed"], by_id["marsh_rope_walked"]["sheet"], by_id["marsh_rope_walked"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -110,7 +116,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("fold_held predicate failed")
     if "lens_set" not in lens.state.outcomes:
         raise AssertionError("lens_set predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint}) != 9:
+    if "rope_walked" not in rope.state.outcomes:
+        raise AssertionError("rope_walked predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint}) != 10:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -298,6 +306,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "fold_held" not in fold_glass.state.outcomes:
         raise AssertionError("cross fold-glass run lost fold_held")
 
+    rope_m = by_id["divergence_marsh_rope"]
+    rope_c = by_id["divergence_city_rope"]
+    rope_m_ids, rope_c_ids = _diverge_legal(content, rope_m, rope_c)
+    if "know_the_hemp_twist" not in rope_m_ids:
+        raise AssertionError("marsh_scout missing know_the_hemp_twist")
+    if "read_the_walk_mark" not in rope_c_ids:
+        raise AssertionError("city_oath missing read_the_walk_mark")
+    if "know_the_hemp_twist" in rope_c_ids or "read_the_walk_mark" in rope_m_ids:
+        raise AssertionError("rope sheet verbs leaked across sheets")
+
+    plain_rope = replay(content, by_id["cross_plain_rope"]["seed"], by_id["cross_plain_rope"]["sheet"], by_id["cross_plain_rope"]["actions"])
+    lens_rope = replay(content, by_id["cross_lens_rope"]["seed"], by_id["cross_lens_rope"]["sheet"], by_id["cross_lens_rope"]["actions"])
+    if plain_rope.state.location != lens_rope.state.location:
+        raise AssertionError("rope cross-area pair left different locations")
+    if plain_rope.state.location != "rope.walk":
+        raise AssertionError("rope cross-area pair not at rope.walk")
+    plain_rope_ids = {a.id for a in enumerate_legal(plain_rope.state, content)}
+    lens_rope_ids = {a.id for a in enumerate_legal(lens_rope.state, content)}
+    if "sight_the_channel" not in lens_rope_ids:
+        raise AssertionError("lens set did not unlock sight_the_channel")
+    if "sight_the_channel" in plain_rope_ids:
+        raise AssertionError("sight_the_channel leaked without lens set")
+    if "lens_set" not in lens_rope.state.outcomes:
+        raise AssertionError("cross lens-rope run lost lens_set")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -308,6 +341,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "name_restored": named.fingerprint,
         "fold_held": fold.fingerprint,
         "lens_set": lens.fingerprint,
+        "rope_walked": rope.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -324,6 +358,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "fold_city_only": sorted(fold_c_ids - fold_m_ids),
         "glass_marsh_only": sorted(glass_m_ids - glass_c_ids),
         "glass_city_only": sorted(glass_c_ids - glass_m_ids),
+        "rope_marsh_only": sorted(rope_m_ids - rope_c_ids),
+        "rope_city_only": sorted(rope_c_ids - rope_m_ids),
     }
 
 

@@ -2934,12 +2934,231 @@
       "when": {
         "at": "glass.loft"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "rope_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tess",
+          "fact": "twist",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_hemp_twist",
+      "label": "Know the hemp twist",
+      "text": "You name the right twist. Tess lets you walk a hank.",
+      "when": {
+        "all": [
+          {
+            "at": "rope.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "rope_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "rope_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tess",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_walk_mark",
+      "label": "Read the walk mark",
+      "text": "You read the walk mark. Tess lets you walk a hank.",
+      "when": {
+        "all": [
+          {
+            "at": "rope.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "rope_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "rope_sighted",
+          "op": "set_flag"
+        },
+        {
+          "flag": "rope_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tess",
+          "fact": "channel",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "sight_the_channel",
+      "label": "Sight the channel line",
+      "text": "You sight the channel line on the floor. The walk holds true.",
+      "when": {
+        "all": [
+          {
+            "at": "rope.walk"
+          },
+          {
+            "has_flag": "lens_set"
+          },
+          {
+            "not_flag": "rope_sighted"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "hemp_hank",
+          "op": "remove_item"
+        },
+        {
+          "flag": "rope_walked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "walk_the_rope",
+      "label": "Walk the rope taut",
+      "text": "You walk the hank taut. Tess marks the pegs done.",
+      "when": {
+        "all": [
+          {
+            "at": "rope.walk"
+          },
+          {
+            "has_item": "hemp_hank"
+          },
+          {
+            "has_flag": "rope_trust"
+          },
+          {
+            "not_flag": "rope_walked"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "rope_hauled",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "haul_the_slack",
+      "label": "Haul the slack",
+      "text": "You haul the slack by force. The line jumps and holds.",
+      "when": {
+        "all": [
+          {
+            "at": "rope.walk"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          },
+          {
+            "not_flag": "rope_hauled"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_rope_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_tess_rule",
+      "label": "Ask Tess the rule",
+      "text": "Tess says know the twist. Then walk a hank taut.",
+      "when": {
+        "at": "rope.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_rope_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_bram_hank",
+      "label": "Ask Bram for a hank",
+      "text": "Bram points at the dry hank on the beam.",
+      "when": {
+        "at": "rope.loft"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_rope_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_kite_price",
+      "label": "Ask Kite the price",
+      "text": "Kite pays only for a rope that lies taut.",
+      "when": {
+        "at": "rope.end"
+      }
     }
   ],
   "actors": {
     "bailiff": {
       "idle": "He holds a staff across the gate.",
       "name": "Bailiff Kesh"
+    },
+    "bram": {
+      "idle": "He spins a short strand and does not look up.",
+      "name": "Bram"
     },
     "brin": {
       "idle": "She keeps a thumb on the share list.",
@@ -2972,6 +3191,10 @@
     "joss": {
       "idle": "She stands between the well and the cots.",
       "name": "Nurse Joss"
+    },
+    "kite": {
+      "idle": "He weighs a purse and watches the far pegs.",
+      "name": "Kite"
     },
     "lise": {
       "idle": "She holds a sun chart to the hole.",
@@ -3029,6 +3252,10 @@
       "idle": "He looks at the floor and does not speak first.",
       "name": "Tam"
     },
+    "tess": {
+      "idle": "She keeps a hook in her belt and waits.",
+      "name": "Tess"
+    },
     "venn": {
       "idle": "He keeps his palm on an empty niche.",
       "name": "Keeper Venn"
@@ -3075,6 +3302,10 @@
     "grain_sack": {
       "kind": "goods",
       "name": "grain sack"
+    },
+    "hemp_hank": {
+      "kind": "goods",
+      "name": "hemp hank"
     },
     "lens_shard": {
       "kind": "glass",
@@ -3526,6 +3757,10 @@
         {
           "label": "Go to lens ruin",
           "to": "glass.path"
+        },
+        {
+          "label": "Go to ropewalk",
+          "to": "rope.path"
         }
       ],
       "ground": [],
@@ -3938,6 +4173,10 @@
         {
           "label": "Go to glass yard",
           "to": "glass.yard"
+        },
+        {
+          "label": "Go to ropewalk",
+          "to": "rope.path"
         }
       ],
       "ground": [],
@@ -4347,6 +4586,113 @@
           }
         }
       ]
+    },
+    "rope.end": {
+      "actors": [
+        "kite"
+      ],
+      "exits": [
+        {
+          "label": "Go to the walk",
+          "to": "rope.walk"
+        }
+      ],
+      "ground": [],
+      "name": "Walk End",
+      "region": "ropewalk",
+      "situation": "The shed opens on a small landing. Kite waits with a purse."
+    },
+    "rope.loft": {
+      "actors": [
+        "bram"
+      ],
+      "exits": [
+        {
+          "label": "Go to rope yard",
+          "to": "rope.yard"
+        }
+      ],
+      "ground": [
+        "hemp_hank"
+      ],
+      "name": "Hemp Loft",
+      "region": "ropewalk",
+      "situation": "Dry hanks hang from the beams. Bram sits on a crate."
+    },
+    "rope.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to lens ruin",
+          "to": "glass.path"
+        },
+        {
+          "label": "Go to rope yard",
+          "to": "rope.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Ropewalk Path",
+      "region": "ropewalk",
+      "situation": "A long shed shows at the end of a shell track. Hemp dust hangs."
+    },
+    "rope.walk": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to rope yard",
+          "to": "rope.yard"
+        },
+        {
+          "label": "Go to the far end",
+          "to": "rope.end"
+        }
+      ],
+      "ground": [],
+      "name": "The Walk",
+      "region": "ropewalk",
+      "situation": "A long floor runs the shed. Pegs wait for a taut line.",
+      "situation_if": [
+        {
+          "text": "A line of light from the ruin cuts the floor.",
+          "when": {
+            "has_flag": "lens_set"
+          }
+        },
+        {
+          "text": "The new rope lies taut on the pegs.",
+          "when": {
+            "has_flag": "rope_walked"
+          }
+        }
+      ]
+    },
+    "rope.yard": {
+      "actors": [
+        "tess"
+      ],
+      "exits": [
+        {
+          "label": "Go to ropewalk path",
+          "to": "rope.path"
+        },
+        {
+          "label": "Go to the walk",
+          "to": "rope.walk"
+        },
+        {
+          "label": "Go to the loft",
+          "to": "rope.loft"
+        }
+      ],
+      "ground": [],
+      "name": "Rope Yard",
+      "region": "ropewalk",
+      "situation": "Hooks and hooks of unused strand. Tess waits by the door."
     },
     "saltfen.dock": {
       "actors": [
@@ -4768,6 +5114,12 @@
         "has_flag": "beacon_lit"
       }
     },
+    "rope_walked": {
+      "name": "Rope Walked",
+      "when": {
+        "has_flag": "rope_walked"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -4808,6 +5160,10 @@
       "mechanic": "law-witness-sentence",
       "name": "Reed Court"
     },
+    "ropewalk": {
+      "mechanic": "twist-tension-cordage",
+      "name": "Ropewalk"
+    },
     "saltfen": {
       "mechanic": "law-trade-tides",
       "name": "Saltfen Harbor"
@@ -4845,6 +5201,7 @@
       "millers": 0,
       "names": 0,
       "road": 0,
+      "rope": 0,
       "stackers": 0,
       "watch": 0
     }

@@ -80,6 +80,7 @@ def build() -> dict:
         "bone_name": {"name": "bone name", "kind": "rite"},
         "peat_brick": {"name": "peat brick", "kind": "goods"},
         "lens_shard": {"name": "lens shard", "kind": "glass"},
+        "hemp_hank": {"name": "hemp hank", "kind": "goods"},
         **salvage_items,
     }
 
@@ -197,6 +198,7 @@ def build() -> dict:
                 {"to": "name.path", "label": "Go to namehouse"},
                 {"to": "fold.lane", "label": "Go to peat fold"},
                 {"to": "glass.path", "label": "Go to lens ruin"},
+                {"to": "rope.path", "label": "Go to ropewalk"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -667,6 +669,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "fold.lane", "label": "Go to peat fold"},
                 {"to": "glass.yard", "label": "Go to glass yard"},
+                {"to": "rope.path", "label": "Go to ropewalk"},
             ],
             "ground": [],
             "actors": [],
@@ -721,6 +724,67 @@ def build() -> dict:
             "exits": [{"to": "glass.yard", "label": "Go to glass yard"}],
             "ground": ["lens_shard"],
             "actors": ["nim"],
+        },
+        "rope.path": {
+            "region": "ropewalk",
+            "name": "Ropewalk Path",
+            "situation": "A long shed shows at the end of a shell track. Hemp dust hangs.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "glass.path", "label": "Go to lens ruin"},
+                {"to": "rope.yard", "label": "Go to rope yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "rope.yard": {
+            "region": "ropewalk",
+            "name": "Rope Yard",
+            "situation": "Hooks and hooks of unused strand. Tess waits by the door.",
+            "exits": [
+                {"to": "rope.path", "label": "Go to ropewalk path"},
+                {"to": "rope.walk", "label": "Go to the walk"},
+                {"to": "rope.loft", "label": "Go to the loft"},
+            ],
+            "ground": [],
+            "actors": ["tess"],
+        },
+        "rope.walk": {
+            "region": "ropewalk",
+            "name": "The Walk",
+            "situation": "A long floor runs the shed. Pegs wait for a taut line.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lens_set"},
+                    "text": "A line of light from the ruin cuts the floor.",
+                },
+                {
+                    "when": {"has_flag": "rope_walked"},
+                    "text": "The new rope lies taut on the pegs.",
+                },
+            ],
+            "exits": [
+                {"to": "rope.yard", "label": "Go to rope yard"},
+                {"to": "rope.end", "label": "Go to the far end"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "rope.loft": {
+            "region": "ropewalk",
+            "name": "Hemp Loft",
+            "situation": "Dry hanks hang from the beams. Bram sits on a crate.",
+            "exits": [{"to": "rope.yard", "label": "Go to rope yard"}],
+            "ground": ["hemp_hank"],
+            "actors": ["bram"],
+        },
+        "rope.end": {
+            "region": "ropewalk",
+            "name": "Walk End",
+            "situation": "The shed opens on a small landing. Kite waits with a purse.",
+            "exits": [{"to": "rope.walk", "label": "Go to the walk"}],
+            "ground": [],
+            "actors": ["kite"],
         },
     }
 
@@ -832,6 +896,18 @@ def build() -> dict:
         "lise": {
             "name": "Lise",
             "idle": "She holds a sun chart to the hole.",
+        },
+        "tess": {
+            "name": "Tess",
+            "idle": "She keeps a hook in her belt and waits.",
+        },
+        "bram": {
+            "name": "Bram",
+            "idle": "He spins a short strand and does not look up.",
+        },
+        "kite": {
+            "name": "Kite",
+            "idle": "He weighs a purse and watches the far pegs.",
         },
     }
 
@@ -2340,6 +2416,119 @@ def build() -> dict:
             "Lise says the peg takes one shard and no more.",
             [{"op": "set_flag", "flag": "heard_glass_rule"}],
         ),
+        action(
+            "know_the_hemp_twist",
+            "Know the hemp twist",
+            "talk",
+            {
+                "all": [
+                    {"at": "rope.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "rope_trust"},
+                ]
+            },
+            "You name the right twist. Tess lets you walk a hank.",
+            [
+                {"op": "set_flag", "flag": "rope_trust"},
+                {"op": "remember", "actor": "tess", "fact": "twist"},
+            ],
+        ),
+        action(
+            "read_the_walk_mark",
+            "Read the walk mark",
+            "do",
+            {
+                "all": [
+                    {"at": "rope.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "rope_trust"},
+                ]
+            },
+            "You read the walk mark. Tess lets you walk a hank.",
+            [
+                {"op": "set_flag", "flag": "rope_trust"},
+                {"op": "remember", "actor": "tess", "fact": "mark"},
+            ],
+        ),
+        action(
+            "sight_the_channel",
+            "Sight the channel line",
+            "do",
+            {
+                "all": [
+                    {"at": "rope.walk"},
+                    {"has_flag": "lens_set"},
+                    {"not_flag": "rope_sighted"},
+                ]
+            },
+            "You sight the channel line on the floor. The walk holds true.",
+            [
+                {"op": "set_flag", "flag": "rope_sighted"},
+                {"op": "set_flag", "flag": "rope_trust"},
+                {"op": "remember", "actor": "tess", "fact": "channel"},
+            ],
+        ),
+        action(
+            "walk_the_rope",
+            "Walk the rope taut",
+            "do",
+            {
+                "all": [
+                    {"at": "rope.walk"},
+                    {"has_item": "hemp_hank"},
+                    {"has_flag": "rope_trust"},
+                    {"not_flag": "rope_walked"},
+                ]
+            },
+            "You walk the hank taut. Tess marks the pegs done.",
+            [
+                {"op": "remove_item", "item": "hemp_hank"},
+                {"op": "set_flag", "flag": "rope_walked"},
+            ],
+        ),
+        action(
+            "haul_the_slack",
+            "Haul the slack",
+            "do",
+            {
+                "all": [
+                    {"at": "rope.walk"},
+                    {"sheet": ["body", "might"]},
+                    {"not_flag": "rope_hauled"},
+                ]
+            },
+            "You haul the slack by force. The line jumps and holds.",
+            [{"op": "set_flag", "flag": "rope_hauled"}],
+        ),
+        action(
+            "ask_tess_rule",
+            "Ask Tess the rule",
+            "talk",
+            {"at": "rope.yard"},
+            "Tess says know the twist. Then walk a hank taut.",
+            [{"op": "set_flag", "flag": "heard_rope_rule"}],
+        ),
+        action(
+            "ask_bram_hank",
+            "Ask Bram for a hank",
+            "talk",
+            {"at": "rope.loft"},
+            "Bram points at the dry hank on the beam.",
+            [{"op": "set_flag", "flag": "heard_rope_rule"}],
+        ),
+        action(
+            "ask_kite_price",
+            "Ask Kite the price",
+            "talk",
+            {"at": "rope.end"},
+            "Kite pays only for a rope that lies taut.",
+            [{"op": "set_flag", "flag": "heard_rope_rule"}],
+        ),
     ]
 
     pack = {
@@ -2381,6 +2570,10 @@ def build() -> dict:
             "lens_ruin": {
                 "name": "Lens Ruin",
                 "mechanic": "light-lens-channel",
+            },
+            "ropewalk": {
+                "name": "Ropewalk",
+                "mechanic": "twist-tension-cordage",
             },
         },
         "locations": locations,
@@ -2424,11 +2617,15 @@ def build() -> dict:
                 "name": "Lens Set",
                 "when": {"has_flag": "lens_set"},
             },
+            "rope_walked": {
+                "name": "Rope Walked",
+                "when": {"has_flag": "rope_walked"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0},
             "inventory": [],
             "flags": {},
         },

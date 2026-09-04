@@ -2,14 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:name.path",
-    "go:name.yard",
-    "go:name.hall"
+    "go:rope.path",
+    "go:rope.yard"
   ],
   "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
-  "final_fingerprint": "94527ab9afbbfb03feb38051af6d63f488290f8f1e320ba5643f46c380957713",
-  "id": "divergence_marsh_name",
-  "location": "name.hall",
+  "final_fingerprint": "7ba98b63469c57f691ac2ec2ccbb79af3aad009be670d35be10dc4ffa0a178c4",
+  "id": "divergence_marsh_rope",
+  "location": "rope.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

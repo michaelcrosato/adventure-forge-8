@@ -10,8 +10,8 @@
     "give_tablet",
     "sign_the_compact"
   ],
-  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
-  "final_fingerprint": "39561cf424c1f27fe7fda51cfe08983d2fb03cf545eb41c6ce6fb17d4cf9582b",
+  "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
+  "final_fingerprint": "873ac4491b703084c2c469517699a967519912b90eff322a9f55a9bae7db0c78",
   "id": "marsh_harbor_compact",
   "location": "saltfen.dock",
   "outcome": "harbor_compact",

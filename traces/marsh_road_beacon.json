@@ -9,8 +9,8 @@
     "go:road.beacon",
     "light_the_beacon"
   ],
-  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
-  "final_fingerprint": "860010f2e1d7090305ce0a74a1e220a14525b3f303f945b29455bb79e2ef3b51",
+  "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
+  "final_fingerprint": "f45aa8626d344ef6ee528792936e2a4906d6974d7cb01129cf92844e83887c79",
   "id": "marsh_road_beacon",
   "location": "road.beacon",
   "outcome": "road_beacon",

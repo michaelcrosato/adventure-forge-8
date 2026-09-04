@@ -6,8 +6,8 @@
     "go:road.dike",
     "go:road.hut"
   ],
-  "build_id": "085e977feb80d52c69b586f932f15cd99810375b17ee7219ef623c8e42507d85",
-  "final_fingerprint": "66a661b93f1ca764dfd9fc2905f718d32239f780352843d37477806bcde788ae",
+  "build_id": "a59399eb4bd03a9bf5f6b919853b45471c1e9fe020526bc5e68092906fce4b2e",
+  "final_fingerprint": "e2c9096251002089d6f52d5610f3c88ecff80c2e435173f26939ff1b68ce4a70",
   "id": "divergence_marsh_road",
   "location": "road.hut",
   "outcomes": [],
