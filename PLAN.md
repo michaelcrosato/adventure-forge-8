@@ -159,6 +159,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Eel Weir | Set baskets, lift catch | Hamlet |
 | Dye Works | Charge vat, dip, hang color | Hamlet |
 | Toll Ferry | Fare token, load, pole to far bank | Travel |
+| Windpump | Set vanes, crank, hold the flats | Craft |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -179,6 +180,7 @@ Authored outcomes:
 13. `weir_lifted` — baskets are set and the eel catch is lifted.
 14. `dye_struck` — cloth takes vat color and hangs dry.
 15. `ferry_crossed` — a loaded hull is poled to the far bank.
+16. `flats_drained` — vanes are set, the pump is cranked, and the sump holds.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -212,8 +214,9 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 12. **Slice 11:** Eel Weir — set baskets, lift catch. Cross-effect: cured smoke unlocks bait on the stakes.
 13. **Slice 12:** Dye Works — charge vat, dip, hang color. Cross-effect: lifted weir unlocks eel-skin mordant on the vats.
 14. **Slice 13:** Toll Ferry — fare token, load, pole to far bank. Cross-effect: struck dye unlocks a dyed fare at the yard.
-15. **Slice 14+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-16. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+15. **Slice 14:** Windpump — set vanes, crank, hold the flats. Cross-effect: ferry crossed unlocks a sail brace on the tower.
+16. **Slice 15+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+17. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

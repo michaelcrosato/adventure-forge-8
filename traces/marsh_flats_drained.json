@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:pump.path",
+    "go:pump.yard",
+    "know_the_wind_cut",
+    "go:pump.tower",
+    "take:vane_pin",
+    "set_the_vanes",
+    "go:pump.yard",
+    "go:pump.crank",
+    "crank_the_pump",
+    "go:pump.yard",
+    "go:pump.sump",
+    "hold_the_draw"
+  ],
+  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
+  "final_fingerprint": "db31a19350d7045c72a8f105ebfb04cf7cf98971e4888a89e3a947c8ca2cea7f",
+  "id": "marsh_flats_drained",
+  "location": "pump.sump",
+  "outcome": "flats_drained",
+  "outcomes": [
+    "flats_drained"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

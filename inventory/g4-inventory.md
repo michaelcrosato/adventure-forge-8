@@ -85,10 +85,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | ferry.slip | toll_ferry | Ivo, load boat, gated board |
 | ferry.boat | toll_ferry | pole crossing moves to far bank |
 | ferry.far | toll_ferry | Ama, claim landing, ferry_crossed |
+| pump.path | windpump | sail ring, pump access from far bank |
+| pump.yard | windpump | Od, wind cut vs pump mark |
+| pump.tower | windpump | Rusk, set vanes, ferry sail brace |
+| pump.crank | windpump | crank the pump |
+| pump.sump | windpump | Hobb, hold the draw, flats_drained |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`
 
 ## Substrate
 

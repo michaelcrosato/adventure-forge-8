@@ -105,6 +105,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_ferry",
         "cross_plain_ferry",
         "cross_dye_ferry",
+        "marsh_flats_drained",
+        "divergence_marsh_pump",
+        "divergence_city_pump",
+        "cross_plain_pump",
+        "cross_ferry_pump",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -128,6 +133,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     weir = replay(content, by_id["marsh_weir_lifted"]["seed"], by_id["marsh_weir_lifted"]["sheet"], by_id["marsh_weir_lifted"]["actions"])
     dye = replay(content, by_id["marsh_dye_struck"]["seed"], by_id["marsh_dye_struck"]["sheet"], by_id["marsh_dye_struck"]["actions"])
     ferry = replay(content, by_id["marsh_ferry_crossed"]["seed"], by_id["marsh_ferry_crossed"]["sheet"], by_id["marsh_ferry_crossed"]["actions"])
+    pump = replay(content, by_id["marsh_flats_drained"]["seed"], by_id["marsh_flats_drained"]["sheet"], by_id["marsh_flats_drained"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -158,7 +164,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("dye_struck predicate failed")
     if "ferry_crossed" not in ferry.state.outcomes:
         raise AssertionError("ferry_crossed predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint}) != 15:
+    if "flats_drained" not in pump.state.outcomes:
+        raise AssertionError("flats_drained predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint, dye.fingerprint, ferry.fingerprint, pump.fingerprint}) != 16:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -496,6 +504,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "dye_struck" not in dye_ferry.state.outcomes:
         raise AssertionError("cross dye-ferry run lost dye_struck")
 
+    pump_m = by_id["divergence_marsh_pump"]
+    pump_c = by_id["divergence_city_pump"]
+    pump_m_ids, pump_c_ids = _diverge_legal(content, pump_m, pump_c)
+    if "know_the_wind_cut" not in pump_m_ids:
+        raise AssertionError("marsh_scout missing know_the_wind_cut")
+    if "read_the_pump_mark" not in pump_c_ids:
+        raise AssertionError("city_oath missing read_the_pump_mark")
+    if "know_the_wind_cut" in pump_c_ids or "read_the_pump_mark" in pump_m_ids:
+        raise AssertionError("pump sheet verbs leaked across sheets")
+
+    plain_pump = replay(content, by_id["cross_plain_pump"]["seed"], by_id["cross_plain_pump"]["sheet"], by_id["cross_plain_pump"]["actions"])
+    ferry_pump = replay(content, by_id["cross_ferry_pump"]["seed"], by_id["cross_ferry_pump"]["sheet"], by_id["cross_ferry_pump"]["actions"])
+    if plain_pump.state.location != ferry_pump.state.location:
+        raise AssertionError("pump cross-area pair left different locations")
+    if plain_pump.state.location != "pump.tower":
+        raise AssertionError("pump cross-area pair not at pump.tower")
+    plain_pump_ids = {a.id for a in enumerate_legal(plain_pump.state, content)}
+    ferry_pump_ids = {a.id for a in enumerate_legal(ferry_pump.state, content)}
+    if "brace_the_sail" not in ferry_pump_ids:
+        raise AssertionError("ferry crossed did not unlock brace_the_sail")
+    if "brace_the_sail" in plain_pump_ids:
+        raise AssertionError("brace_the_sail leaked without ferry crossed")
+    if "ferry_crossed" not in ferry_pump.state.outcomes:
+        raise AssertionError("cross ferry-pump run lost ferry_crossed")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -512,6 +545,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "weir_lifted": weir.fingerprint,
         "dye_struck": dye.fingerprint,
         "ferry_crossed": ferry.fingerprint,
+        "flats_drained": pump.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -540,6 +574,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "dye_city_only": sorted(dye_c_ids - dye_m_ids),
         "ferry_marsh_only": sorted(ferry_m_ids - ferry_c_ids),
         "ferry_city_only": sorted(ferry_c_ids - ferry_m_ids),
+        "pump_marsh_only": sorted(pump_m_ids - pump_c_ids),
+        "pump_city_only": sorted(pump_c_ids - pump_m_ids),
     }
 
 

@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:rope.path",
-    "go:rope.yard",
-    "go:rope.walk"
+    "go:pump.path",
+    "go:pump.yard",
+    "go:pump.tower"
   ],
   "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "54ecd322daa4cfd1db5c34ffced1d7e076f6374af4766ca4cb8aad361823d3fa",
-  "id": "cross_plain_rope",
-  "location": "rope.walk",
+  "final_fingerprint": "37273311ebad5dacd3f8101832e7ce401252fb71132d79135c963560c2afa3cf",
+  "id": "cross_plain_pump",
+  "location": "pump.tower",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

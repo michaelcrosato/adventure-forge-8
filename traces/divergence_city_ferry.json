@@ -5,8 +5,8 @@
     "go:ferry.path",
     "go:ferry.yard"
   ],
-  "build_id": "ae4f977ae5c4c51704866f09e0224dd31395b955a1c1bc2f0acee7defbe341a2",
-  "final_fingerprint": "74b3f945050ad59d2606b66fc82b157cda9f5549186de1262311e0250bdfe1b2",
+  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
+  "final_fingerprint": "0e592ebb7c9a88c97abb56cd795794f5084ad765cb58d129ddfaf7d0d41a2793",
   "id": "divergence_city_ferry",
   "location": "ferry.yard",
   "outcomes": [],

@@ -4376,6 +4376,260 @@
       "when": {
         "at": "ferry.far"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pump_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "od",
+          "fact": "wind_cut",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_wind_cut",
+      "label": "Know the wind cut",
+      "text": "You name the wind cut. Od lets you set and crank.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "pump_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pump_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "od",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_pump_mark",
+      "label": "Read the pump mark",
+      "text": "You read the pump mark. Od lets you set and crank.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "pump_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "sail_braced",
+          "op": "set_flag"
+        },
+        {
+          "flag": "pump_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "rusk",
+          "fact": "brace",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "brace_the_sail",
+      "label": "Brace the sail",
+      "text": "You brace the sail. The vanes hold to the wind.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.tower"
+          },
+          {
+            "has_flag": "ferry_crossed"
+          },
+          {
+            "not_flag": "sail_braced"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "vane_pin",
+          "op": "remove_item"
+        },
+        {
+          "flag": "vanes_set",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "set_the_vanes",
+      "label": "Set the vanes",
+      "text": "You set the vanes. The ring takes the wind.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.tower"
+          },
+          {
+            "has_flag": "pump_trust"
+          },
+          {
+            "has_item": "vane_pin"
+          },
+          {
+            "not_flag": "vanes_set"
+          },
+          {
+            "not_flag": "flats_drained"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pump_cranked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "crank_the_pump",
+      "label": "Crank the pump",
+      "text": "You crank the pump. Water climbs the well.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.crank"
+          },
+          {
+            "has_flag": "pump_trust"
+          },
+          {
+            "has_flag": "vanes_set"
+          },
+          {
+            "not_flag": "pump_cranked"
+          },
+          {
+            "not_flag": "flats_drained"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "flats_drained",
+          "op": "set_flag"
+        },
+        {
+          "actor": "hobb",
+          "fact": "held",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "hold_the_draw",
+      "label": "Hold the draw",
+      "text": "You hold the draw. The flats sit dry.",
+      "when": {
+        "all": [
+          {
+            "at": "pump.sump"
+          },
+          {
+            "has_flag": "pump_trust"
+          },
+          {
+            "has_flag": "pump_cranked"
+          },
+          {
+            "not_flag": "flats_drained"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pump_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_od_rule",
+      "label": "Ask Od the rule",
+      "text": "Od says set the vanes. Then crank and hold the draw.",
+      "when": {
+        "at": "pump.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pump_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_rusk_pin",
+      "label": "Ask Rusk the pin",
+      "text": "Rusk says a pin holds the ring true.",
+      "when": {
+        "at": "pump.tower"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_pump_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_hobb_cut",
+      "label": "Ask Hobb the cut",
+      "text": "Hobb says a firm board keeps the cut dry.",
+      "when": {
+        "at": "pump.sump"
+      }
     }
   ],
   "actors": {
@@ -4430,6 +4684,10 @@
     "hal": {
       "idle": "He rubs salt from his palms and waits.",
       "name": "Hal"
+    },
+    "hobb": {
+      "idle": "He tests the clay lip with a board.",
+      "name": "Hobb"
     },
     "ila": {
       "idle": "She sorts tags and does not speak.",
@@ -4499,6 +4757,10 @@
       "idle": "He tends the still and does not taste the steam.",
       "name": "Oat"
     },
+    "od": {
+      "idle": "He watches the vanes and does not speak first.",
+      "name": "Od"
+    },
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
@@ -4522,6 +4784,10 @@
     "rook": {
       "idle": "He squints at the empty frame.",
       "name": "Rook"
+    },
+    "rusk": {
+      "idle": "She holds a pin and eyes the loose sails.",
+      "name": "Rusk"
     },
     "sarn": {
       "idle": "He scrapes a bone strip for ink.",
@@ -5026,6 +5292,10 @@
       "kind": "goods",
       "name": "undyed cloth"
     },
+    "vane_pin": {
+      "kind": "gear",
+      "name": "vane pin"
+    },
     "weir_basket": {
       "kind": "gear",
       "name": "weir basket"
@@ -5100,6 +5370,10 @@
         {
           "label": "Go to toll ferry",
           "to": "ferry.path"
+        },
+        {
+          "label": "Go to windpump",
+          "to": "pump.path"
         }
       ],
       "ground": [],
@@ -5485,6 +5759,10 @@
         {
           "label": "Board the near boat",
           "to": "ferry.boat"
+        },
+        {
+          "label": "Go to windpump",
+          "to": "pump.path"
         }
       ],
       "ground": [],
@@ -6143,6 +6421,121 @@
       "name": "Pans Yard",
       "region": "salt_pans",
       "situation": "Rakes lean on a low wall. Dorr waits by a list of pans."
+    },
+    "pump.crank": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to pump yard",
+          "to": "pump.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pump Crank",
+      "region": "windpump",
+      "situation": "A long crank waits. The well mouth is still."
+    },
+    "pump.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to far landing",
+          "to": "ferry.far"
+        },
+        {
+          "label": "Go to pump yard",
+          "to": "pump.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pump Path",
+      "region": "windpump",
+      "situation": "A ring of sails stands on the leat. The flats shine wet."
+    },
+    "pump.sump": {
+      "actors": [
+        "hobb"
+      ],
+      "exits": [
+        {
+          "label": "Go to pump yard",
+          "to": "pump.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Pump Sump",
+      "region": "windpump",
+      "situation": "Water pools in a clay cut. Hobb waits with a board.",
+      "situation_if": [
+        {
+          "text": "The cut sits dry and firm.",
+          "when": {
+            "has_flag": "flats_drained"
+          }
+        }
+      ]
+    },
+    "pump.tower": {
+      "actors": [
+        "rusk"
+      ],
+      "exits": [
+        {
+          "label": "Go to pump yard",
+          "to": "pump.yard"
+        }
+      ],
+      "ground": [
+        "vane_pin"
+      ],
+      "name": "Vane Tower",
+      "region": "windpump",
+      "situation": "Loose vanes slap. A pin lies in the dust.",
+      "situation_if": [
+        {
+          "text": "A hull line would brace the sail.",
+          "when": {
+            "has_flag": "ferry_crossed"
+          }
+        },
+        {
+          "text": "The ring holds still and true.",
+          "when": {
+            "has_flag": "flats_drained"
+          }
+        }
+      ]
+    },
+    "pump.yard": {
+      "actors": [
+        "od"
+      ],
+      "exits": [
+        {
+          "label": "Go to pump path",
+          "to": "pump.path"
+        },
+        {
+          "label": "Go to the vane tower",
+          "to": "pump.tower"
+        },
+        {
+          "label": "Go to the crank",
+          "to": "pump.crank"
+        },
+        {
+          "label": "Go to the sump",
+          "to": "pump.sump"
+        }
+      ],
+      "ground": [],
+      "name": "Pump Yard",
+      "region": "windpump",
+      "situation": "Od waits by a mark on the post. The vanes tick above."
     },
     "road.beacon": {
       "actors": [],
@@ -6983,6 +7376,12 @@
         "has_flag": "fever_broken"
       }
     },
+    "flats_drained": {
+      "name": "Flats Drained",
+      "when": {
+        "has_flag": "flats_drained"
+      }
+    },
     "fold_held": {
       "name": "Fold Held",
       "when": {
@@ -7116,6 +7515,10 @@
     "toll_ferry": {
       "mechanic": "fare-load-pole-crossing",
       "name": "Toll Ferry"
+    },
+    "windpump": {
+      "mechanic": "vanes-crank-hold-flats",
+      "name": "Windpump"
     }
   },
   "sheets": {
@@ -7151,6 +7554,7 @@
       "glass": 0,
       "millers": 0,
       "names": 0,
+      "pump": 0,
       "road": 0,
       "rope": 0,
       "salt": 0,

@@ -89,6 +89,7 @@ def build() -> dict:
         "undyed_cloth": {"name": "undyed cloth", "kind": "goods"},
         "dyed_cloth": {"name": "dyed cloth", "kind": "goods"},
         "toll_token": {"name": "toll token", "kind": "key"},
+        "vane_pin": {"name": "vane pin", "kind": "gear"},
         **salvage_items,
     }
 
@@ -212,6 +213,7 @@ def build() -> dict:
                 {"to": "weir.path", "label": "Go to eel weir"},
                 {"to": "dye.path", "label": "Go to dye works"},
                 {"to": "ferry.path", "label": "Go to toll ferry"},
+                {"to": "pump.path", "label": "Go to windpump"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1106,9 +1108,77 @@ def build() -> dict:
                     "text": "The stamp is wet on the board.",
                 }
             ],
-            "exits": [{"to": "ferry.boat", "label": "Board the near boat"}],
+            "exits": [
+                {"to": "ferry.boat", "label": "Board the near boat"},
+                {"to": "pump.path", "label": "Go to windpump"},
+            ],
             "ground": [],
             "actors": ["ama"],
+        },
+        "pump.path": {
+            "region": "windpump",
+            "name": "Pump Path",
+            "situation": "A ring of sails stands on the leat. The flats shine wet.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "ferry.far", "label": "Go to far landing"},
+                {"to": "pump.yard", "label": "Go to pump yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pump.yard": {
+            "region": "windpump",
+            "name": "Pump Yard",
+            "situation": "Od waits by a mark on the post. The vanes tick above.",
+            "exits": [
+                {"to": "pump.path", "label": "Go to pump path"},
+                {"to": "pump.tower", "label": "Go to the vane tower"},
+                {"to": "pump.crank", "label": "Go to the crank"},
+                {"to": "pump.sump", "label": "Go to the sump"},
+            ],
+            "ground": [],
+            "actors": ["od"],
+        },
+        "pump.tower": {
+            "region": "windpump",
+            "name": "Vane Tower",
+            "situation": "Loose vanes slap. A pin lies in the dust.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ferry_crossed"},
+                    "text": "A hull line would brace the sail.",
+                },
+                {
+                    "when": {"has_flag": "flats_drained"},
+                    "text": "The ring holds still and true.",
+                },
+            ],
+            "exits": [{"to": "pump.yard", "label": "Go to pump yard"}],
+            "ground": ["vane_pin"],
+            "actors": ["rusk"],
+        },
+        "pump.crank": {
+            "region": "windpump",
+            "name": "Pump Crank",
+            "situation": "A long crank waits. The well mouth is still.",
+            "exits": [{"to": "pump.yard", "label": "Go to pump yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "pump.sump": {
+            "region": "windpump",
+            "name": "Pump Sump",
+            "situation": "Water pools in a clay cut. Hobb waits with a board.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flats_drained"},
+                    "text": "The cut sits dry and firm.",
+                }
+            ],
+            "exits": [{"to": "pump.yard", "label": "Go to pump yard"}],
+            "ground": [],
+            "actors": ["hobb"],
         },
     }
 
@@ -1292,6 +1362,18 @@ def build() -> dict:
         "ama": {
             "name": "Ama",
             "idle": "She holds a stamp and does not smile.",
+        },
+        "od": {
+            "name": "Od",
+            "idle": "He watches the vanes and does not speak first.",
+        },
+        "rusk": {
+            "name": "Rusk",
+            "idle": "She holds a pin and eyes the loose sails.",
+        },
+        "hobb": {
+            "name": "Hobb",
+            "idle": "He tests the clay lip with a board.",
         },
     }
 
@@ -3563,6 +3645,140 @@ def build() -> dict:
             "Ama stamps only a hull that poled from the near bank.",
             [{"op": "set_flag", "flag": "heard_ferry_rule"}],
         ),
+        action(
+            "know_the_wind_cut",
+            "Know the wind cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "pump.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "pump_trust"},
+                ]
+            },
+            "You name the wind cut. Od lets you set and crank.",
+            [
+                {"op": "set_flag", "flag": "pump_trust"},
+                {"op": "remember", "actor": "od", "fact": "wind_cut"},
+            ],
+        ),
+        action(
+            "read_the_pump_mark",
+            "Read the pump mark",
+            "do",
+            {
+                "all": [
+                    {"at": "pump.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "pump_trust"},
+                ]
+            },
+            "You read the pump mark. Od lets you set and crank.",
+            [
+                {"op": "set_flag", "flag": "pump_trust"},
+                {"op": "remember", "actor": "od", "fact": "mark"},
+            ],
+        ),
+        action(
+            "brace_the_sail",
+            "Brace the sail",
+            "do",
+            {
+                "all": [
+                    {"at": "pump.tower"},
+                    {"has_flag": "ferry_crossed"},
+                    {"not_flag": "sail_braced"},
+                ]
+            },
+            "You brace the sail. The vanes hold to the wind.",
+            [
+                {"op": "set_flag", "flag": "sail_braced"},
+                {"op": "set_flag", "flag": "pump_trust"},
+                {"op": "remember", "actor": "rusk", "fact": "brace"},
+            ],
+        ),
+        action(
+            "set_the_vanes",
+            "Set the vanes",
+            "do",
+            {
+                "all": [
+                    {"at": "pump.tower"},
+                    {"has_flag": "pump_trust"},
+                    {"has_item": "vane_pin"},
+                    {"not_flag": "vanes_set"},
+                    {"not_flag": "flats_drained"},
+                ]
+            },
+            "You set the vanes. The ring takes the wind.",
+            [
+                {"op": "remove_item", "item": "vane_pin"},
+                {"op": "set_flag", "flag": "vanes_set"},
+            ],
+        ),
+        action(
+            "crank_the_pump",
+            "Crank the pump",
+            "do",
+            {
+                "all": [
+                    {"at": "pump.crank"},
+                    {"has_flag": "pump_trust"},
+                    {"has_flag": "vanes_set"},
+                    {"not_flag": "pump_cranked"},
+                    {"not_flag": "flats_drained"},
+                ]
+            },
+            "You crank the pump. Water climbs the well.",
+            [{"op": "set_flag", "flag": "pump_cranked"}],
+        ),
+        action(
+            "hold_the_draw",
+            "Hold the draw",
+            "do",
+            {
+                "all": [
+                    {"at": "pump.sump"},
+                    {"has_flag": "pump_trust"},
+                    {"has_flag": "pump_cranked"},
+                    {"not_flag": "flats_drained"},
+                ]
+            },
+            "You hold the draw. The flats sit dry.",
+            [
+                {"op": "set_flag", "flag": "flats_drained"},
+                {"op": "remember", "actor": "hobb", "fact": "held"},
+            ],
+        ),
+        action(
+            "ask_od_rule",
+            "Ask Od the rule",
+            "talk",
+            {"at": "pump.yard"},
+            "Od says set the vanes. Then crank and hold the draw.",
+            [{"op": "set_flag", "flag": "heard_pump_rule"}],
+        ),
+        action(
+            "ask_rusk_pin",
+            "Ask Rusk the pin",
+            "talk",
+            {"at": "pump.tower"},
+            "Rusk says a pin holds the ring true.",
+            [{"op": "set_flag", "flag": "heard_pump_rule"}],
+        ),
+        action(
+            "ask_hobb_cut",
+            "Ask Hobb the cut",
+            "talk",
+            {"at": "pump.sump"},
+            "Hobb says a firm board keeps the cut dry.",
+            [{"op": "set_flag", "flag": "heard_pump_rule"}],
+        ),
     ]
 
     pack = {
@@ -3628,6 +3844,10 @@ def build() -> dict:
             "toll_ferry": {
                 "name": "Toll Ferry",
                 "mechanic": "fare-load-pole-crossing",
+            },
+            "windpump": {
+                "name": "Windpump",
+                "mechanic": "vanes-crank-hold-flats",
             },
         },
         "locations": locations,
@@ -3695,11 +3915,15 @@ def build() -> dict:
                 "name": "Ferry Crossed",
                 "when": {"has_flag": "ferry_crossed"},
             },
+            "flats_drained": {
+                "name": "Flats Drained",
+                "when": {"has_flag": "flats_drained"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0},
             "inventory": [],
             "flags": {},
         },

@@ -10,13 +10,15 @@
     "load_the_boat",
     "go:ferry.boat",
     "pole_the_crossing",
-    "claim_the_landing"
+    "claim_the_landing",
+    "go:pump.path",
+    "go:pump.yard",
+    "go:pump.tower"
   ],
   "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "8a2830797cda90f0728bbd70704c5db3f97faa1e99cdb7f3cecd9f02160069e5",
-  "id": "marsh_ferry_crossed",
-  "location": "ferry.far",
-  "outcome": "ferry_crossed",
+  "final_fingerprint": "fd3721ec440f7238f5f0b7b20c542e5ae36e0d4bc2bc69dbf60c27dcb9a50b7b",
+  "id": "cross_ferry_pump",
+  "location": "pump.tower",
   "outcomes": [
     "ferry_crossed"
   ],
