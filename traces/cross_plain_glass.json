@@ -5,8 +5,8 @@
     "go:glass.path",
     "go:glass.yard"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "5f470fbf2592195bf79330f1729551be82efb61cc482edd8811fa462dedea90d",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "6bd6ee64703b2afd738ef02ae74306a3f1d5571d72844122eba6f346854cc0d3",
   "id": "cross_plain_glass",
   "location": "glass.yard",
   "outcomes": [],

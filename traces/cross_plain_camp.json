@@ -4,8 +4,8 @@
     "go:ashfen.causeway",
     "go:camp.gate"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "be7810cce07da94e51dd40773fff865054528682ea42a792e42ae851cb78b755",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "01ee6d0486f7112f5d5d521ed22cd1390b4fc582f4646657b45baeae424150af",
   "id": "cross_plain_camp",
   "location": "camp.gate",
   "outcomes": [],

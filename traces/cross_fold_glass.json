@@ -15,8 +15,8 @@
     "go:glass.path",
     "go:glass.yard"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "c1fb28e7807e52048d93e9c9d53ad9d9d5686cb81ca95430cf103dcd05c2e83d",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "656fc54ada28326743bcb3666c17fd2407d4b78bc6954a1b0ec9bea6c00bb28e",
   "id": "cross_fold_glass",
   "location": "glass.yard",
   "outcomes": [

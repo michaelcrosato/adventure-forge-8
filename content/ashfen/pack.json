@@ -4630,6 +4630,233 @@
       "when": {
         "at": "pump.sump"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "oyster_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "wex",
+          "fact": "spat",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_spat_set",
+      "label": "Know the spat set",
+      "text": "You name the spat set. Wex lets you seed and cull.",
+      "when": {
+        "all": [
+          {
+            "at": "oyster.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "oyster_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "oyster_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "wex",
+          "fact": "list",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_bed_list",
+      "label": "Read the bed list",
+      "text": "You read the bed list. Wex lets you seed and cull.",
+      "when": {
+        "all": [
+          {
+            "at": "oyster.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "oyster_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "dry_beds",
+          "op": "set_flag"
+        },
+        {
+          "flag": "oyster_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "wex",
+          "fact": "dry",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "work_the_dry_beds",
+      "label": "Work the dry beds",
+      "text": "You work the dry beds. The stakes sit firm.",
+      "when": {
+        "all": [
+          {
+            "at": "oyster.beds"
+          },
+          {
+            "has_flag": "flats_drained"
+          },
+          {
+            "not_flag": "dry_beds"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "spat_bag",
+          "op": "remove_item"
+        },
+        {
+          "flag": "beds_seeded",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "seed_the_beds",
+      "label": "Seed the beds",
+      "text": "You seed the beds. The spat takes the mud.",
+      "when": {
+        "all": [
+          {
+            "at": "oyster.beds"
+          },
+          {
+            "has_flag": "oyster_trust"
+          },
+          {
+            "has_item": "spat_bag"
+          },
+          {
+            "not_flag": "beds_seeded"
+          },
+          {
+            "not_flag": "oyster_culled"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "oyster_lot",
+          "op": "add_item"
+        },
+        {
+          "flag": "oyster_culled",
+          "op": "set_flag"
+        },
+        {
+          "actor": "gell",
+          "fact": "cull",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "cull_the_beds",
+      "label": "Cull the beds",
+      "text": "You cull the beds. Gell marks the take even.",
+      "when": {
+        "all": [
+          {
+            "at": "oyster.shed"
+          },
+          {
+            "has_flag": "oyster_trust"
+          },
+          {
+            "has_flag": "beds_seeded"
+          },
+          {
+            "not_flag": "oyster_culled"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_oyster_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_wex_rule",
+      "label": "Ask Wex the rule",
+      "text": "Wex says seed the beds. Then cull the take.",
+      "when": {
+        "at": "oyster.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_oyster_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_pip_spat",
+      "label": "Ask Pip the spat",
+      "text": "Pip says keep the spat wet and cool.",
+      "when": {
+        "at": "oyster.spat"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_oyster_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_gell_cull",
+      "label": "Ask Gell the cull",
+      "text": "Gell pays only for a cull that comes in even.",
+      "when": {
+        "at": "oyster.shed"
+      }
     }
   ],
   "actors": {
@@ -4680,6 +4907,10 @@
     "fen": {
       "idle": "She stirs a vat and does not splash.",
       "name": "Fen"
+    },
+    "gell": {
+      "idle": "He tests a shell and does not smile.",
+      "name": "Gell"
     },
     "hal": {
       "idle": "He rubs salt from his palms and waits.",
@@ -4769,6 +5000,10 @@
       "idle": "He taps the scale and waits for a cake.",
       "name": "Pim"
     },
+    "pip": {
+      "idle": "She fans the spat trays and waits.",
+      "name": "Pip"
+    },
     "quill": {
       "idle": "He rubs stain from his wrists and waits.",
       "name": "Quill"
@@ -4812,6 +5047,10 @@
     "watch_sergeant": {
       "idle": "She keeps a finger on the ledger.",
       "name": "Watch sergeant"
+    },
+    "wex": {
+      "idle": "He keeps a thumb on the bed list.",
+      "name": "Wex"
     },
     "willa": {
       "idle": "She counts bricks and does not stack uneven.",
@@ -4875,6 +5114,10 @@
     "lens_shard": {
       "kind": "glass",
       "name": "lens shard"
+    },
+    "oyster_lot": {
+      "kind": "goods",
+      "name": "oyster lot"
     },
     "peat_brick": {
       "kind": "goods",
@@ -5284,6 +5527,10 @@
       "kind": "salvage",
       "name": "knotted peg"
     },
+    "spat_bag": {
+      "kind": "goods",
+      "name": "spat bag"
+    },
     "toll_token": {
       "kind": "key",
       "name": "toll token"
@@ -5374,6 +5621,10 @@
         {
           "label": "Go to windpump",
           "to": "pump.path"
+        },
+        {
+          "label": "Go to oyster park",
+          "to": "oyster.path"
         }
       ],
       "ground": [],
@@ -6313,6 +6564,113 @@
       "region": "namehouse",
       "situation": "Bone tags hang on a dry line. Ila watches the door."
     },
+    "oyster.beds": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to oyster yard",
+          "to": "oyster.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Oyster Beds",
+      "region": "oyster_park",
+      "situation": "Stakes mark the park. Empty shells click underfoot.",
+      "situation_if": [
+        {
+          "text": "The dry flats would let you work the beds.",
+          "when": {
+            "has_flag": "flats_drained"
+          }
+        },
+        {
+          "text": "The stakes sit empty and picked.",
+          "when": {
+            "has_flag": "oyster_culled"
+          }
+        }
+      ]
+    },
+    "oyster.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to windpump",
+          "to": "pump.path"
+        },
+        {
+          "label": "Go to oyster yard",
+          "to": "oyster.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Oyster Path",
+      "region": "oyster_park",
+      "situation": "Shell heaps edge the leat. The beds lie in the wet."
+    },
+    "oyster.shed": {
+      "actors": [
+        "gell"
+      ],
+      "exits": [
+        {
+          "label": "Go to oyster yard",
+          "to": "oyster.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Cull Shed",
+      "region": "oyster_park",
+      "situation": "A cull board waits. Gell holds a knife and a tally."
+    },
+    "oyster.spat": {
+      "actors": [
+        "pip"
+      ],
+      "exits": [
+        {
+          "label": "Go to oyster yard",
+          "to": "oyster.yard"
+        }
+      ],
+      "ground": [
+        "spat_bag"
+      ],
+      "name": "Spat House",
+      "region": "oyster_park",
+      "situation": "Trays of young spat sit in shade. Pip keeps the lid."
+    },
+    "oyster.yard": {
+      "actors": [
+        "wex"
+      ],
+      "exits": [
+        {
+          "label": "Go to oyster path",
+          "to": "oyster.path"
+        },
+        {
+          "label": "Go to the oyster beds",
+          "to": "oyster.beds"
+        },
+        {
+          "label": "Go to the spat house",
+          "to": "oyster.spat"
+        },
+        {
+          "label": "Go to the cull shed",
+          "to": "oyster.shed"
+        }
+      ],
+      "ground": [],
+      "name": "Oyster Yard",
+      "region": "oyster_park",
+      "situation": "Wex waits by a list of beds. Spat dust hangs."
+    },
     "pans.beds": {
       "actors": [],
       "exits": [
@@ -6449,6 +6807,10 @@
         {
           "label": "Go to pump yard",
           "to": "pump.yard"
+        },
+        {
+          "label": "Go to oyster park",
+          "to": "oyster.path"
         }
       ],
       "ground": [],
@@ -7412,6 +7774,12 @@
         "has_flag": "name_restored"
       }
     },
+    "oyster_culled": {
+      "name": "Oyster Culled",
+      "when": {
+        "has_flag": "oyster_culled"
+      }
+    },
     "reed_sentence": {
       "name": "Reed Sentence",
       "when": {
@@ -7488,6 +7856,10 @@
       "mechanic": "names-rites-memory",
       "name": "Namehouse"
     },
+    "oyster_park": {
+      "mechanic": "spat-seed-cull",
+      "name": "Oyster Park"
+    },
     "peat_fold": {
       "mechanic": "peat-cut-share",
       "name": "Peat Fold"
@@ -7554,6 +7926,7 @@
       "glass": 0,
       "millers": 0,
       "names": 0,
+      "oyster": 0,
       "pump": 0,
       "road": 0,
       "rope": 0,

@@ -6,8 +6,8 @@
     "go:rope.yard",
     "go:rope.walk"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "54ecd322daa4cfd1db5c34ffced1d7e076f6374af4766ca4cb8aad361823d3fa",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "9d51fb3e498c8b3d51e07a98c256fdfc69575c8f0b8d3b5e171bb671c6bf66ee",
   "id": "cross_plain_rope",
   "location": "rope.walk",
   "outcomes": [],

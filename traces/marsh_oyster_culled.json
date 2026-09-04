@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:oyster.path",
+    "go:oyster.yard",
+    "know_the_spat_set",
+    "go:oyster.spat",
+    "take:spat_bag",
+    "go:oyster.yard",
+    "go:oyster.beds",
+    "seed_the_beds",
+    "go:oyster.yard",
+    "go:oyster.shed",
+    "cull_the_beds"
+  ],
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "fa5e4ddb65129a9e5b3dee20f8d5ab71198806dfea4280990e0417d1104923d5",
+  "id": "marsh_oyster_culled",
+  "location": "oyster.shed",
+  "outcome": "oyster_culled",
+  "outcomes": [
+    "oyster_culled"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

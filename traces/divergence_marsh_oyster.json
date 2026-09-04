@@ -2,14 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:dye.path",
-    "go:dye.yard",
-    "go:dye.vats"
+    "go:oyster.path",
+    "go:oyster.yard"
   ],
   "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "8c7b96e2e75375298f9b3f210ad867fcbd1a4b06f1ecf25a251cc8c1a4f19d48",
-  "id": "cross_plain_dye",
-  "location": "dye.vats",
+  "final_fingerprint": "cc92dd74fb96e37184d49f44602f35d78b0f4db21467c3d6a423b20b5895b053",
+  "id": "divergence_marsh_oyster",
+  "location": "oyster.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

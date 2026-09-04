@@ -5,8 +5,8 @@
     "go:rope.path",
     "go:rope.yard"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "ad3e356ac15b0d602f87fcd938ee688e2886726efafde20a47bfcfe1a4264b3a",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "9d6de8da19f559732ace1b4b8833d13cfac920113fabaabe4157c72471b619c3",
   "id": "divergence_city_rope",
   "location": "rope.yard",
   "outcomes": [],

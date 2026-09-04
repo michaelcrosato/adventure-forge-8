@@ -90,10 +90,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | pump.tower | windpump | Rusk, set vanes, ferry sail brace |
 | pump.crank | windpump | crank the pump |
 | pump.sump | windpump | Hobb, hold the draw, flats_drained |
+| oyster.path | oyster_park | shell heaps, park access |
+| oyster.yard | oyster_park | Wex, spat set vs bed list |
+| oyster.beds | oyster_park | seed spat, dry-bed work |
+| oyster.spat | oyster_park | Pip, spat bag |
+| oyster.shed | oyster_park | Gell, cull, oyster_culled |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`
 
 ## Substrate
 

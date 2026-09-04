@@ -5,8 +5,8 @@
     "go:ferry.path",
     "go:ferry.yard"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "16fe0384272cee8d9678b6f5078d3a104e4462019786e6f1dbcb3a25b00c58a3",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "14ca2c9288c1fb190cd1130f754eab6ea7184e3e57647032036d21eea18952fe",
   "id": "cross_plain_ferry",
   "location": "ferry.yard",
   "outcomes": [],

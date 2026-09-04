@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:ferry.path",
-    "go:ferry.yard"
+    "go:oyster.path",
+    "go:oyster.yard"
   ],
   "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "743bb3cc44ab9e4f592fbe0e25835dec1c057a4f8810547067967dcd19adb300",
-  "id": "divergence_city_ferry",
-  "location": "ferry.yard",
+  "final_fingerprint": "7024cfc1d4133106cead2bb0adf472f69a9cda82b10d12d48d6b965b47792ed3",
+  "id": "divergence_city_oyster",
+  "location": "oyster.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

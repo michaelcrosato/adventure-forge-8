@@ -90,6 +90,8 @@ def build() -> dict:
         "dyed_cloth": {"name": "dyed cloth", "kind": "goods"},
         "toll_token": {"name": "toll token", "kind": "key"},
         "vane_pin": {"name": "vane pin", "kind": "gear"},
+        "spat_bag": {"name": "spat bag", "kind": "goods"},
+        "oyster_lot": {"name": "oyster lot", "kind": "goods"},
         **salvage_items,
     }
 
@@ -214,6 +216,7 @@ def build() -> dict:
                 {"to": "dye.path", "label": "Go to dye works"},
                 {"to": "ferry.path", "label": "Go to toll ferry"},
                 {"to": "pump.path", "label": "Go to windpump"},
+                {"to": "oyster.path", "label": "Go to oyster park"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1123,6 +1126,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "ferry.far", "label": "Go to far landing"},
                 {"to": "pump.yard", "label": "Go to pump yard"},
+                {"to": "oyster.path", "label": "Go to oyster park"},
             ],
             "ground": [],
             "actors": [],
@@ -1179,6 +1183,65 @@ def build() -> dict:
             "exits": [{"to": "pump.yard", "label": "Go to pump yard"}],
             "ground": [],
             "actors": ["hobb"],
+        },
+        "oyster.path": {
+            "region": "oyster_park",
+            "name": "Oyster Path",
+            "situation": "Shell heaps edge the leat. The beds lie in the wet.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "pump.path", "label": "Go to windpump"},
+                {"to": "oyster.yard", "label": "Go to oyster yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "oyster.yard": {
+            "region": "oyster_park",
+            "name": "Oyster Yard",
+            "situation": "Wex waits by a list of beds. Spat dust hangs.",
+            "exits": [
+                {"to": "oyster.path", "label": "Go to oyster path"},
+                {"to": "oyster.beds", "label": "Go to the oyster beds"},
+                {"to": "oyster.spat", "label": "Go to the spat house"},
+                {"to": "oyster.shed", "label": "Go to the cull shed"},
+            ],
+            "ground": [],
+            "actors": ["wex"],
+        },
+        "oyster.beds": {
+            "region": "oyster_park",
+            "name": "Oyster Beds",
+            "situation": "Stakes mark the park. Empty shells click underfoot.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flats_drained"},
+                    "text": "The dry flats would let you work the beds.",
+                },
+                {
+                    "when": {"has_flag": "oyster_culled"},
+                    "text": "The stakes sit empty and picked.",
+                },
+            ],
+            "exits": [{"to": "oyster.yard", "label": "Go to oyster yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "oyster.spat": {
+            "region": "oyster_park",
+            "name": "Spat House",
+            "situation": "Trays of young spat sit in shade. Pip keeps the lid.",
+            "exits": [{"to": "oyster.yard", "label": "Go to oyster yard"}],
+            "ground": ["spat_bag"],
+            "actors": ["pip"],
+        },
+        "oyster.shed": {
+            "region": "oyster_park",
+            "name": "Cull Shed",
+            "situation": "A cull board waits. Gell holds a knife and a tally.",
+            "exits": [{"to": "oyster.yard", "label": "Go to oyster yard"}],
+            "ground": [],
+            "actors": ["gell"],
         },
     }
 
@@ -1374,6 +1437,18 @@ def build() -> dict:
         "hobb": {
             "name": "Hobb",
             "idle": "He tests the clay lip with a board.",
+        },
+        "wex": {
+            "name": "Wex",
+            "idle": "He keeps a thumb on the bed list.",
+        },
+        "pip": {
+            "name": "Pip",
+            "idle": "She fans the spat trays and waits.",
+        },
+        "gell": {
+            "name": "Gell",
+            "idle": "He tests a shell and does not smile.",
         },
     }
 
@@ -3779,6 +3854,125 @@ def build() -> dict:
             "Hobb says a firm board keeps the cut dry.",
             [{"op": "set_flag", "flag": "heard_pump_rule"}],
         ),
+        action(
+            "know_the_spat_set",
+            "Know the spat set",
+            "talk",
+            {
+                "all": [
+                    {"at": "oyster.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "oyster_trust"},
+                ]
+            },
+            "You name the spat set. Wex lets you seed and cull.",
+            [
+                {"op": "set_flag", "flag": "oyster_trust"},
+                {"op": "remember", "actor": "wex", "fact": "spat"},
+            ],
+        ),
+        action(
+            "read_the_bed_list",
+            "Read the bed list",
+            "do",
+            {
+                "all": [
+                    {"at": "oyster.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "oyster_trust"},
+                ]
+            },
+            "You read the bed list. Wex lets you seed and cull.",
+            [
+                {"op": "set_flag", "flag": "oyster_trust"},
+                {"op": "remember", "actor": "wex", "fact": "list"},
+            ],
+        ),
+        action(
+            "work_the_dry_beds",
+            "Work the dry beds",
+            "do",
+            {
+                "all": [
+                    {"at": "oyster.beds"},
+                    {"has_flag": "flats_drained"},
+                    {"not_flag": "dry_beds"},
+                ]
+            },
+            "You work the dry beds. The stakes sit firm.",
+            [
+                {"op": "set_flag", "flag": "dry_beds"},
+                {"op": "set_flag", "flag": "oyster_trust"},
+                {"op": "remember", "actor": "wex", "fact": "dry"},
+            ],
+        ),
+        action(
+            "seed_the_beds",
+            "Seed the beds",
+            "do",
+            {
+                "all": [
+                    {"at": "oyster.beds"},
+                    {"has_flag": "oyster_trust"},
+                    {"has_item": "spat_bag"},
+                    {"not_flag": "beds_seeded"},
+                    {"not_flag": "oyster_culled"},
+                ]
+            },
+            "You seed the beds. The spat takes the mud.",
+            [
+                {"op": "remove_item", "item": "spat_bag"},
+                {"op": "set_flag", "flag": "beds_seeded"},
+            ],
+        ),
+        action(
+            "cull_the_beds",
+            "Cull the beds",
+            "do",
+            {
+                "all": [
+                    {"at": "oyster.shed"},
+                    {"has_flag": "oyster_trust"},
+                    {"has_flag": "beds_seeded"},
+                    {"not_flag": "oyster_culled"},
+                ]
+            },
+            "You cull the beds. Gell marks the take even.",
+            [
+                {"op": "add_item", "item": "oyster_lot"},
+                {"op": "set_flag", "flag": "oyster_culled"},
+                {"op": "remember", "actor": "gell", "fact": "cull"},
+            ],
+        ),
+        action(
+            "ask_wex_rule",
+            "Ask Wex the rule",
+            "talk",
+            {"at": "oyster.yard"},
+            "Wex says seed the beds. Then cull the take.",
+            [{"op": "set_flag", "flag": "heard_oyster_rule"}],
+        ),
+        action(
+            "ask_pip_spat",
+            "Ask Pip the spat",
+            "talk",
+            {"at": "oyster.spat"},
+            "Pip says keep the spat wet and cool.",
+            [{"op": "set_flag", "flag": "heard_oyster_rule"}],
+        ),
+        action(
+            "ask_gell_cull",
+            "Ask Gell the cull",
+            "talk",
+            {"at": "oyster.shed"},
+            "Gell pays only for a cull that comes in even.",
+            [{"op": "set_flag", "flag": "heard_oyster_rule"}],
+        ),
     ]
 
     pack = {
@@ -3848,6 +4042,10 @@ def build() -> dict:
             "windpump": {
                 "name": "Windpump",
                 "mechanic": "vanes-crank-hold-flats",
+            },
+            "oyster_park": {
+                "name": "Oyster Park",
+                "mechanic": "spat-seed-cull",
             },
         },
         "locations": locations,
@@ -3919,11 +4117,15 @@ def build() -> dict:
                 "name": "Flats Drained",
                 "when": {"has_flag": "flats_drained"},
             },
+            "oyster_culled": {
+                "name": "Oyster Culled",
+                "when": {"has_flag": "oyster_culled"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0},
             "inventory": [],
             "flags": {},
         },

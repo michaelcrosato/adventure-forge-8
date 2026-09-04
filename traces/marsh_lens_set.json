@@ -14,8 +14,8 @@
     "go:glass.loft",
     "set_the_lens"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "9871c4893d26b6a2377786613f6ca21a58cd6eef231a376927bc79de84801922",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "323063ee6d15e854129c4ee152852019c2d38749183d1b7b0d61a272626bca9b",
   "id": "marsh_lens_set",
   "location": "glass.loft",
   "outcome": "lens_set",

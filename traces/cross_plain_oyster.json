@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:oyster.path",
+    "go:oyster.yard",
+    "go:oyster.beds"
+  ],
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "eb11cc87ca89bdc61eab54db04e0206809e3c337fb41a45499b5dfb4955880f0",
+  "id": "cross_plain_oyster",
+  "location": "oyster.beds",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

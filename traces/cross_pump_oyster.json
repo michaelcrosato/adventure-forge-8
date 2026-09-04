@@ -13,13 +13,17 @@
     "crank_the_pump",
     "go:pump.yard",
     "go:pump.sump",
-    "hold_the_draw"
+    "hold_the_draw",
+    "go:pump.yard",
+    "go:pump.path",
+    "go:oyster.path",
+    "go:oyster.yard",
+    "go:oyster.beds"
   ],
   "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
-  "final_fingerprint": "79a6e6b0bd950f422edd6c7e2d90d7aa5c1fdde5b5a8c72cbecf6a0afbc0a551",
-  "id": "marsh_flats_drained",
-  "location": "pump.sump",
-  "outcome": "flats_drained",
+  "final_fingerprint": "cd6c15e9760ff8e97eb4ede1f718973843f10387e5e9e43c15675b2ed588ce2f",
+  "id": "cross_pump_oyster",
+  "location": "oyster.beds",
   "outcomes": [
     "flats_drained"
   ],

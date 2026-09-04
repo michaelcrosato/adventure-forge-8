@@ -6,8 +6,8 @@
     "go:court.yard",
     "go:court.hall"
   ],
-  "build_id": "ce6b66f172cf0b0f072d2209b10d907479a9804e419dc945856cd7b17829cdd9",
-  "final_fingerprint": "e01861872b0225bd2a6e3519c1c15ac9ac823abd9fcfaab2a275080509660440",
+  "build_id": "9e330abb5fcea40b0ffee63f146c21e61f62ee448933ebe70ecd0ddfdddc101c",
+  "final_fingerprint": "0c491b896d865c9050f2b6b733d20ce2bfd9c3bfc85cea90703abd435486a405",
   "id": "divergence_city_court",
   "location": "court.hall",
   "outcomes": [],
