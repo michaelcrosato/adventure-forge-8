@@ -55,6 +55,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_road",
         "cross_plain_road",
         "cross_court_road",
+        "marsh_fever_broken",
+        "divergence_marsh_camp",
+        "divergence_city_camp",
+        "cross_plain_camp",
+        "cross_beacon_camp",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -68,6 +73,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     kiln = replay(content, by_id["marsh_kiln_pact"]["seed"], by_id["marsh_kiln_pact"]["sheet"], by_id["marsh_kiln_pact"]["actions"])
     court = replay(content, by_id["marsh_reed_sentence"]["seed"], by_id["marsh_reed_sentence"]["sheet"], by_id["marsh_reed_sentence"]["actions"])
     beacon = replay(content, by_id["marsh_road_beacon"]["seed"], by_id["marsh_road_beacon"]["sheet"], by_id["marsh_road_beacon"]["actions"])
+    fever = replay(content, by_id["marsh_fever_broken"]["seed"], by_id["marsh_fever_broken"]["sheet"], by_id["marsh_fever_broken"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -78,7 +84,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("reed_sentence predicate failed")
     if "road_beacon" not in beacon.state.outcomes:
         raise AssertionError("road_beacon predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint}) != 5:
+    if "fever_broken" not in fever.state.outcomes:
+        raise AssertionError("fever_broken predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint}) != 6:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -166,12 +174,38 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "reed_sentence" not in court_road.state.outcomes:
         raise AssertionError("cross court-road run lost reed_sentence")
 
+    camp_m = by_id["divergence_marsh_camp"]
+    camp_c = by_id["divergence_city_camp"]
+    camp_m_ids, camp_c_ids = _diverge_legal(content, camp_m, camp_c)
+    if "cut_reed_herb" not in camp_m_ids:
+        raise AssertionError("marsh_scout missing cut_reed_herb")
+    if "read_isolation_order" not in camp_c_ids:
+        raise AssertionError("city_oath missing read_isolation_order")
+    if "cut_reed_herb" in camp_c_ids or "read_isolation_order" in camp_m_ids:
+        raise AssertionError("camp sheet verbs leaked across sheets")
+
+    plain_camp = replay(content, by_id["cross_plain_camp"]["seed"], by_id["cross_plain_camp"]["sheet"], by_id["cross_plain_camp"]["actions"])
+    beacon_camp = replay(content, by_id["cross_beacon_camp"]["seed"], by_id["cross_beacon_camp"]["sheet"], by_id["cross_beacon_camp"]["actions"])
+    if plain_camp.state.location != beacon_camp.state.location:
+        raise AssertionError("camp cross-area pair left different locations")
+    if plain_camp.state.location != "camp.gate":
+        raise AssertionError("camp cross-area pair not at camp.gate")
+    plain_camp_ids = {a.id for a in enumerate_legal(plain_camp.state, content)}
+    beacon_camp_ids = {a.id for a in enumerate_legal(beacon_camp.state, content)}
+    if "hail_clean_boat" not in beacon_camp_ids:
+        raise AssertionError("road beacon did not unlock hail_clean_boat")
+    if "hail_clean_boat" in plain_camp_ids:
+        raise AssertionError("hail_clean_boat leaked without beacon")
+    if "road_beacon" not in beacon_camp.state.outcomes:
+        raise AssertionError("cross beacon-camp run lost road_beacon")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
         "kiln_pact": kiln.fingerprint,
         "reed_sentence": court.fingerprint,
         "road_beacon": beacon.fingerprint,
+        "fever_broken": fever.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -180,6 +214,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "court_city_only": sorted(court_c_ids - court_m_ids),
         "road_marsh_only": sorted(road_m_ids - road_c_ids),
         "road_city_only": sorted(road_c_ids - road_m_ids),
+        "camp_marsh_only": sorted(camp_m_ids - camp_c_ids),
+        "camp_city_only": sorted(camp_c_ids - camp_m_ids),
     }
 
 

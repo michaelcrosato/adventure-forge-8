@@ -2,13 +2,12 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:mill.lane",
-    "go:mill.yard"
+    "go:camp.gate"
   ],
   "build_id": "43ff8a3baffb556cac8df3db1195ffd4ece209c9369999018ba15de24bc52e9a",
-  "final_fingerprint": "e0bd7835055227972135808df661ebcbad8834f913c9b0197f80a0c5521b2712",
-  "id": "divergence_marsh_mill",
-  "location": "mill.yard",
+  "final_fingerprint": "fddfe11fab74ccfc41f058db37c549a2b987548ed9d0eea84dc8dad4b4227b4c",
+  "id": "cross_plain_camp",
+  "location": "camp.gate",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

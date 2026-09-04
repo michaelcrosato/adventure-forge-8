@@ -35,10 +35,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | road.hut | drowned_road | Cal, hunt tracks vs might latch, sentence proof |
 | road.drownway | drowned_road | rain wade |
 | road.beacon | drowned_road | light pan, road_beacon outcome |
+| camp.gate | fever_camp | isolation line, clean-boat hail |
+| camp.yard | fever_camp | Joss, reed herb vs isolation order |
+| camp.ward | fever_camp | Ren, broth, fever_broken |
+| camp.still | fever_camp | Oat, brew from herb or recipe |
+| camp.pits | fever_camp | lime, hardy/craft |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`
 
 ## Substrate
 

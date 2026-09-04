@@ -190,6 +190,7 @@ def build() -> dict:
                 {"to": "mill.lane", "label": "Go to mill lane"},
                 {"to": "court.gate", "label": "Go to reed court"},
                 {"to": "road.ford", "label": "Go to drowned road"},
+                {"to": "camp.gate", "label": "Go to fever camp"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -396,6 +397,7 @@ def build() -> dict:
             "exits": [
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "road.dike", "label": "Go to dike"},
+                {"to": "camp.gate", "label": "Go to fever camp"},
             ],
             "ground": [],
             "actors": [],
@@ -456,6 +458,71 @@ def build() -> dict:
                 {"to": "road.hut", "label": "Go to hut"},
                 {"to": "road.drownway", "label": "Go to drownway"},
             ],
+            "ground": [],
+            "actors": [],
+        },
+        "camp.gate": {
+            "region": "fever_camp",
+            "name": "Fever Camp Gate",
+            "situation": "Lime marks a rope line. A lamp burns with a sour wick.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "beacon_lit"},
+                    "text": "A clean boat could see the road fire.",
+                },
+                {
+                    "when": {"has_flag": "fever_broken"},
+                    "text": "The rope line hangs slack.",
+                },
+            ],
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "road.ford", "label": "Go to ford"},
+                {"to": "camp.yard", "label": "Go to camp yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "camp.yard": {
+            "region": "fever_camp",
+            "name": "Camp Yard",
+            "situation": "Pallets sit in two rows. Joss keeps the sick from the well.",
+            "exits": [
+                {"to": "camp.gate", "label": "Go to camp gate"},
+                {"to": "camp.ward", "label": "Go to ward"},
+                {"to": "camp.still", "label": "Go to still"},
+                {"to": "camp.pits", "label": "Go to pits"},
+            ],
+            "ground": [],
+            "actors": ["joss"],
+        },
+        "camp.ward": {
+            "region": "fever_camp",
+            "name": "Sick Ward",
+            "situation": "Low cots fill the tent. Ren breathes in short hits.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fever_broken"},
+                    "text": "Ren sleeps cool.",
+                }
+            ],
+            "exits": [{"to": "camp.yard", "label": "Go to camp yard"}],
+            "ground": [],
+            "actors": ["ren"],
+        },
+        "camp.still": {
+            "region": "fever_camp",
+            "name": "Herb Still",
+            "situation": "A clay still ticks. Bitter steam beads on the lid.",
+            "exits": [{"to": "camp.yard", "label": "Go to camp yard"}],
+            "ground": [],
+            "actors": ["oat"],
+        },
+        "camp.pits": {
+            "region": "fever_camp",
+            "name": "Lime Pits",
+            "situation": "Open pits hold lime and rags. The air bites the nose.",
+            "exits": [{"to": "camp.yard", "label": "Go to camp yard"}],
             "ground": [],
             "actors": [],
         },
@@ -521,6 +588,18 @@ def build() -> dict:
         "cal": {
             "name": "Cal",
             "idle": "She keeps one hand on the unlit lamp.",
+        },
+        "joss": {
+            "name": "Nurse Joss",
+            "idle": "She stands between the well and the cots.",
+        },
+        "ren": {
+            "name": "Ren",
+            "idle": "He lies still and watches the tent peak.",
+        },
+        "oat": {
+            "name": "Oat",
+            "idle": "He tends the still and does not taste the steam.",
         },
     }
 
@@ -1552,6 +1631,137 @@ def build() -> dict:
             "You wade the rain cut. Poles lead you true.",
             [{"op": "set_flag", "flag": "waded_drownway"}],
         ),
+        action(
+            "cut_reed_herb",
+            "Cut reed herb",
+            "do",
+            {
+                "all": [
+                    {"at": "camp.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "herb_found"},
+                ]
+            },
+            "You cut reed herb. Joss lets you pass the still.",
+            [
+                {"op": "set_flag", "flag": "herb_found"},
+                {"op": "remember", "actor": "joss", "fact": "herb"},
+            ],
+        ),
+        action(
+            "read_isolation_order",
+            "Read the isolation order",
+            "do",
+            {
+                "all": [
+                    {"at": "camp.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "recipe_known"},
+                ]
+            },
+            "You read the isolation order. It names the still recipe.",
+            [
+                {"op": "set_flag", "flag": "recipe_known"},
+                {"op": "remember", "actor": "joss", "fact": "order"},
+            ],
+        ),
+        action(
+            "hail_clean_boat",
+            "Hail the clean boat",
+            "do",
+            {
+                "all": [
+                    {"at": "camp.gate"},
+                    {"has_flag": "beacon_lit"},
+                    {"not_flag": "camp_boat"},
+                ]
+            },
+            "You hail a clean boat. Cloth and oil come ashore.",
+            [
+                {"op": "set_flag", "flag": "camp_boat"},
+                {"op": "set_flag", "flag": "fever_trust"},
+                {"op": "remember", "actor": "joss", "fact": "boat"},
+            ],
+        ),
+        action(
+            "brew_fever_broth",
+            "Brew fever broth",
+            "do",
+            {
+                "all": [
+                    {"at": "camp.still"},
+                    {
+                        "any": [
+                            {"has_flag": "herb_found"},
+                            {"has_flag": "recipe_known"},
+                        ]
+                    },
+                    {"not_flag": "broth_made"},
+                ]
+            },
+            "You brew a bitter broth. The steam turns green.",
+            [
+                {"op": "set_flag", "flag": "broth_made"},
+                {"op": "remember", "actor": "oat", "fact": "brewed"},
+            ],
+        ),
+        action(
+            "give_broth_to_ren",
+            "Give Ren the broth",
+            "talk",
+            {
+                "all": [
+                    {"at": "camp.ward"},
+                    {"has_flag": "broth_made"},
+                    {"not_flag": "fever_broken"},
+                ]
+            },
+            "You give Ren the broth. His breath lengthens.",
+            [
+                {"op": "set_flag", "flag": "fever_broken"},
+                {"op": "remember", "actor": "ren", "fact": "drank"},
+            ],
+        ),
+        action(
+            "lime_the_pits",
+            "Lime the pits",
+            "do",
+            {
+                "all": [
+                    {"at": "camp.pits"},
+                    {
+                        "any": [
+                            {"sheet": ["skill", "craft"]},
+                            {"sheet": ["body", "hardy"]},
+                        ]
+                    },
+                    {"not_flag": "pits_limed"},
+                ]
+            },
+            "You lime the pits. The air hurts less.",
+            [{"op": "set_flag", "flag": "pits_limed"}],
+        ),
+        action(
+            "ask_joss_rule",
+            "Ask Joss the rule",
+            "talk",
+            {"at": "camp.yard"},
+            "Joss says brew first. Then the ward can rest.",
+            [{"op": "set_flag", "flag": "heard_fever_rule"}],
+        ),
+        action(
+            "ask_oat_still",
+            "Ask Oat the still",
+            "talk",
+            {"at": "camp.still"},
+            "Oat says the still needs herb or the written order.",
+            [{"op": "set_flag", "flag": "heard_fever_rule"}],
+        ),
     ]
 
     pack = {
@@ -1577,6 +1787,10 @@ def build() -> dict:
             "drowned_road": {
                 "name": "Drowned Road",
                 "mechanic": "weather-turn-encounters",
+            },
+            "fever_camp": {
+                "name": "Fever Camp",
+                "mechanic": "isolation-medicine",
             },
         },
         "locations": locations,
@@ -1604,11 +1818,15 @@ def build() -> dict:
                 "name": "Road Beacon",
                 "when": {"has_flag": "beacon_lit"},
             },
+            "fever_broken": {
+                "name": "Fever Broken",
+                "when": {"has_flag": "fever_broken"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0},
             "inventory": [],
             "flags": {},
         },

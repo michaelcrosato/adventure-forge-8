@@ -2037,6 +2037,251 @@
           }
         ]
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "herb_found",
+          "op": "set_flag"
+        },
+        {
+          "actor": "joss",
+          "fact": "herb",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "cut_reed_herb",
+      "label": "Cut reed herb",
+      "text": "You cut reed herb. Joss lets you pass the still.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "herb_found"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "recipe_known",
+          "op": "set_flag"
+        },
+        {
+          "actor": "joss",
+          "fact": "order",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_isolation_order",
+      "label": "Read the isolation order",
+      "text": "You read the isolation order. It names the still recipe.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "recipe_known"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "camp_boat",
+          "op": "set_flag"
+        },
+        {
+          "flag": "fever_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "joss",
+          "fact": "boat",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "hail_clean_boat",
+      "label": "Hail the clean boat",
+      "text": "You hail a clean boat. Cloth and oil come ashore.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.gate"
+          },
+          {
+            "has_flag": "beacon_lit"
+          },
+          {
+            "not_flag": "camp_boat"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "broth_made",
+          "op": "set_flag"
+        },
+        {
+          "actor": "oat",
+          "fact": "brewed",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "brew_fever_broth",
+      "label": "Brew fever broth",
+      "text": "You brew a bitter broth. The steam turns green.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.still"
+          },
+          {
+            "any": [
+              {
+                "has_flag": "herb_found"
+              },
+              {
+                "has_flag": "recipe_known"
+              }
+            ]
+          },
+          {
+            "not_flag": "broth_made"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "fever_broken",
+          "op": "set_flag"
+        },
+        {
+          "actor": "ren",
+          "fact": "drank",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "give_broth_to_ren",
+      "label": "Give Ren the broth",
+      "text": "You give Ren the broth. His breath lengthens.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.ward"
+          },
+          {
+            "has_flag": "broth_made"
+          },
+          {
+            "not_flag": "fever_broken"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "pits_limed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "lime_the_pits",
+      "label": "Lime the pits",
+      "text": "You lime the pits. The air hurts less.",
+      "when": {
+        "all": [
+          {
+            "at": "camp.pits"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "skill",
+                  "craft"
+                ]
+              },
+              {
+                "sheet": [
+                  "body",
+                  "hardy"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "pits_limed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_fever_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_joss_rule",
+      "label": "Ask Joss the rule",
+      "text": "Joss says brew first. Then the ward can rest.",
+      "when": {
+        "at": "camp.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_fever_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_oat_still",
+      "label": "Ask Oat the still",
+      "text": "Oat says the still needs herb or the written order.",
+      "when": {
+        "at": "camp.still"
+      }
     }
   ],
   "actors": {
@@ -2060,6 +2305,10 @@
       "idle": "He wipes a cup and watches the door.",
       "name": "Innkeep"
     },
+    "joss": {
+      "idle": "She stands between the well and the cots.",
+      "name": "Nurse Joss"
+    },
     "magistrate": {
       "idle": "She waits with both palms on her knees.",
       "name": "Magistrate Orin"
@@ -2076,6 +2325,10 @@
       "idle": "She keeps a dry roll under her arm.",
       "name": "Clerk Nia"
     },
+    "oat": {
+      "idle": "He tends the still and does not taste the steam.",
+      "name": "Oat"
+    },
     "pell": {
       "idle": "She watches the kiln mouth and waits.",
       "name": "Pell"
@@ -2083,6 +2336,10 @@
     "rell": {
       "idle": "He watches the dike and the weather.",
       "name": "Rell"
+    },
+    "ren": {
+      "idle": "He lies still and watches the tent peak.",
+      "name": "Ren"
     },
     "sila": {
       "idle": "She counts sacks and does not smile.",
@@ -2553,12 +2810,129 @@
         {
           "label": "Go to drowned road",
           "to": "road.ford"
+        },
+        {
+          "label": "Go to fever camp",
+          "to": "camp.gate"
         }
       ],
       "ground": [],
       "name": "Ashfen Causeway",
       "region": "saltfen",
       "situation": "A raised track of packed shell. The stacks rise inland."
+    },
+    "camp.gate": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to ford",
+          "to": "road.ford"
+        },
+        {
+          "label": "Go to camp yard",
+          "to": "camp.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Fever Camp Gate",
+      "region": "fever_camp",
+      "situation": "Lime marks a rope line. A lamp burns with a sour wick.",
+      "situation_if": [
+        {
+          "text": "A clean boat could see the road fire.",
+          "when": {
+            "has_flag": "beacon_lit"
+          }
+        },
+        {
+          "text": "The rope line hangs slack.",
+          "when": {
+            "has_flag": "fever_broken"
+          }
+        }
+      ]
+    },
+    "camp.pits": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to camp yard",
+          "to": "camp.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Lime Pits",
+      "region": "fever_camp",
+      "situation": "Open pits hold lime and rags. The air bites the nose."
+    },
+    "camp.still": {
+      "actors": [
+        "oat"
+      ],
+      "exits": [
+        {
+          "label": "Go to camp yard",
+          "to": "camp.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Herb Still",
+      "region": "fever_camp",
+      "situation": "A clay still ticks. Bitter steam beads on the lid."
+    },
+    "camp.ward": {
+      "actors": [
+        "ren"
+      ],
+      "exits": [
+        {
+          "label": "Go to camp yard",
+          "to": "camp.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Sick Ward",
+      "region": "fever_camp",
+      "situation": "Low cots fill the tent. Ren breathes in short hits.",
+      "situation_if": [
+        {
+          "text": "Ren sleeps cool.",
+          "when": {
+            "has_flag": "fever_broken"
+          }
+        }
+      ]
+    },
+    "camp.yard": {
+      "actors": [
+        "joss"
+      ],
+      "exits": [
+        {
+          "label": "Go to camp gate",
+          "to": "camp.gate"
+        },
+        {
+          "label": "Go to ward",
+          "to": "camp.ward"
+        },
+        {
+          "label": "Go to still",
+          "to": "camp.still"
+        },
+        {
+          "label": "Go to pits",
+          "to": "camp.pits"
+        }
+      ],
+      "ground": [],
+      "name": "Camp Yard",
+      "region": "fever_camp",
+      "situation": "Pallets sit in two rows. Joss keeps the sick from the well."
     },
     "court.archive": {
       "actors": [
@@ -2882,6 +3256,10 @@
         {
           "label": "Go to dike",
           "to": "road.dike"
+        },
+        {
+          "label": "Go to fever camp",
+          "to": "camp.gate"
         }
       ],
       "ground": [],
@@ -3289,6 +3667,12 @@
     }
   },
   "outcomes": {
+    "fever_broken": {
+      "name": "Fever Broken",
+      "when": {
+        "has_flag": "fever_broken"
+      }
+    },
     "harbor_compact": {
       "name": "Harbor Compact",
       "when": {
@@ -3324,6 +3708,10 @@
     "drowned_road": {
       "mechanic": "weather-turn-encounters",
       "name": "Drowned Road"
+    },
+    "fever_camp": {
+      "mechanic": "isolation-medicine",
+      "name": "Fever Camp"
     },
     "hollow_stacks": {
       "mechanic": "climb-collapse-vertical",
@@ -3366,6 +3754,7 @@
     "inventory": [],
     "location": "saltfen.dock",
     "rep": {
+      "camp": 0,
       "court": 0,
       "dockers": 0,
       "millers": 0,

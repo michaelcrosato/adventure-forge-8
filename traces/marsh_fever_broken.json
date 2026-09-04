@@ -1,0 +1,24 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:camp.gate",
+    "go:camp.yard",
+    "cut_reed_herb",
+    "go:camp.still",
+    "brew_fever_broth",
+    "go:camp.yard",
+    "go:camp.ward",
+    "give_broth_to_ren"
+  ],
+  "build_id": "43ff8a3baffb556cac8df3db1195ffd4ece209c9369999018ba15de24bc52e9a",
+  "final_fingerprint": "b5dc75ec54cc6a0165ea1c168fed1ffbe141b9265397af415dee17bce983aab9",
+  "id": "marsh_fever_broken",
+  "location": "camp.ward",
+  "outcome": "fever_broken",
+  "outcomes": [
+    "fever_broken"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}
