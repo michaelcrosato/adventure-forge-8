@@ -95,6 +95,7 @@ def build() -> dict:
         "tally_slate": {"name": "tally slate", "kind": "key"},
         "ice_block": {"name": "ice block", "kind": "goods"},
         "drowned_token": {"name": "drowned token", "kind": "rite"},
+        "comb_cake": {"name": "comb cake", "kind": "goods"},
         **salvage_items,
     }
 
@@ -223,6 +224,7 @@ def build() -> dict:
                 {"to": "count.path", "label": "Go to counting house"},
                 {"to": "ice.path", "label": "Go to ice cellar"},
                 {"to": "wreck.path", "label": "Go to wreck chapel"},
+                {"to": "hive.path", "label": "Go to bee skeps"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1386,6 +1388,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "ice.path", "label": "Go to ice cellar"},
                 {"to": "wreck.yard", "label": "Go to wreck yard"},
+                {"to": "hive.path", "label": "Go to bee skeps"},
             ],
             "ground": [],
             "actors": [],
@@ -1436,6 +1439,65 @@ def build() -> dict:
             "exits": [{"to": "wreck.yard", "label": "Go to wreck yard"}],
             "ground": [],
             "actors": ["efa"],
+        },
+        "hive.path": {
+            "region": "bee_skeps",
+            "name": "Hive Path",
+            "situation": "Skeps sit on a dry bank. Bees hang in a low cloud.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wreck.path", "label": "Go to wreck chapel"},
+                {"to": "hive.yard", "label": "Go to hive yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "hive.yard": {
+            "region": "bee_skeps",
+            "name": "Hive Yard",
+            "situation": "Sol waits by a hive mark. The hum is even.",
+            "exits": [
+                {"to": "hive.path", "label": "Go to hive path"},
+                {"to": "hive.skeps", "label": "Go to the skeps"},
+                {"to": "hive.comb", "label": "Go to the comb house"},
+                {"to": "hive.shed", "label": "Go to the hive shed"},
+            ],
+            "ground": [],
+            "actors": ["sol"],
+        },
+        "hive.skeps": {
+            "region": "bee_skeps",
+            "name": "Skep Row",
+            "situation": "Straw skeps sit in a row. Tansy keeps a rag of smoke.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wreck_laid"},
+                    "text": "A drowned ward would bless the hive.",
+                },
+                {
+                    "when": {"has_flag": "hive_kept"},
+                    "text": "The row sits still and even.",
+                },
+            ],
+            "exits": [{"to": "hive.yard", "label": "Go to hive yard"}],
+            "ground": [],
+            "actors": ["tansy"],
+        },
+        "hive.comb": {
+            "region": "bee_skeps",
+            "name": "Comb House",
+            "situation": "Open comb drips on a board. The air is sweet.",
+            "exits": [{"to": "hive.yard", "label": "Go to hive yard"}],
+            "ground": ["comb_cake"],
+            "actors": [],
+        },
+        "hive.shed": {
+            "region": "bee_skeps",
+            "name": "Hive Shed",
+            "situation": "Wick waits with a spare skep. Straw lies in a heap.",
+            "exits": [{"to": "hive.yard", "label": "Go to hive yard"}],
+            "ground": [],
+            "actors": ["wick"],
         },
     }
 
@@ -1679,6 +1741,18 @@ def build() -> dict:
         "efa": {
             "name": "Efa",
             "idle": "She keeps both palms on the altar rim.",
+        },
+        "sol": {
+            "name": "Sol",
+            "idle": "He listens to the hive and does not speak first.",
+        },
+        "tansy": {
+            "name": "Tansy",
+            "idle": "She keeps a rag of smoke and waits.",
+        },
+        "wick": {
+            "name": "Wick",
+            "idle": "He mends a straw skep and does not look up.",
         },
     }
 
@@ -4557,6 +4631,122 @@ def build() -> dict:
             "Efa lays only a token that has been washed.",
             [{"op": "set_flag", "flag": "heard_wreck_rule"}],
         ),
+        action(
+            "know_the_hive_hum",
+            "Know the hive hum",
+            "talk",
+            {
+                "all": [
+                    {"at": "hive.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "hive_trust"},
+                ]
+            },
+            "You name the hive hum. Sol lets you smoke and set.",
+            [
+                {"op": "set_flag", "flag": "hive_trust"},
+                {"op": "remember", "actor": "sol", "fact": "hum"},
+            ],
+        ),
+        action(
+            "read_the_skep_mark",
+            "Read the skep mark",
+            "do",
+            {
+                "all": [
+                    {"at": "hive.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "hive_trust"},
+                ]
+            },
+            "You read the skep mark. Sol lets you smoke and set.",
+            [
+                {"op": "set_flag", "flag": "hive_trust"},
+                {"op": "remember", "actor": "sol", "fact": "mark"},
+            ],
+        ),
+        action(
+            "bless_the_skep",
+            "Bless the skep",
+            "do",
+            {
+                "all": [
+                    {"at": "hive.skeps"},
+                    {"has_flag": "wreck_laid"},
+                    {"not_flag": "hive_blessed"},
+                ]
+            },
+            "You bless the skep. The hive takes the drowned ward.",
+            [
+                {"op": "set_flag", "flag": "hive_blessed"},
+                {"op": "set_flag", "flag": "hive_trust"},
+                {"op": "remember", "actor": "tansy", "fact": "bless"},
+            ],
+        ),
+        action(
+            "smoke_the_hive",
+            "Smoke the hive",
+            "do",
+            {
+                "all": [
+                    {"at": "hive.skeps"},
+                    {"has_flag": "hive_trust"},
+                    {"not_flag": "hive_smoked"},
+                    {"not_flag": "hive_kept"},
+                ]
+            },
+            "You smoke the hive. The bees drop and still.",
+            [{"op": "set_flag", "flag": "hive_smoked"}],
+        ),
+        action(
+            "set_the_skep",
+            "Set the skep",
+            "do",
+            {
+                "all": [
+                    {"at": "hive.shed"},
+                    {"has_flag": "hive_trust"},
+                    {"has_flag": "hive_smoked"},
+                    {"has_item": "comb_cake"},
+                    {"not_flag": "hive_kept"},
+                ]
+            },
+            "You set the skep. Wick marks the hive kept.",
+            [
+                {"op": "remove_item", "item": "comb_cake"},
+                {"op": "set_flag", "flag": "hive_kept"},
+                {"op": "remember", "actor": "wick", "fact": "set"},
+            ],
+        ),
+        action(
+            "ask_sol_rule",
+            "Ask Sol the rule",
+            "talk",
+            {"at": "hive.yard"},
+            "Sol says smoke the hive. Then take comb and set.",
+            [{"op": "set_flag", "flag": "heard_hive_rule"}],
+        ),
+        action(
+            "ask_tansy_smoke",
+            "Ask Tansy the smoke",
+            "talk",
+            {"at": "hive.skeps"},
+            "Tansy says a light smoke calms the hive.",
+            [{"op": "set_flag", "flag": "heard_hive_rule"}],
+        ),
+        action(
+            "ask_wick_skep",
+            "Ask Wick the skep",
+            "talk",
+            {"at": "hive.shed"},
+            "Wick sets only a hive that has been smoked.",
+            [{"op": "set_flag", "flag": "heard_hive_rule"}],
+        ),
     ]
 
     pack = {
@@ -4642,6 +4832,10 @@ def build() -> dict:
             "wreck_chapel": {
                 "name": "Wreck Chapel",
                 "mechanic": "wash-token-lay-altar",
+            },
+            "bee_skeps": {
+                "name": "Bee Skeps",
+                "mechanic": "smoke-hive-set-skep",
             },
         },
         "locations": locations,
@@ -4729,11 +4923,15 @@ def build() -> dict:
                 "name": "Wreck Laid",
                 "when": {"has_flag": "wreck_laid"},
             },
+            "hive_kept": {
+                "name": "Hive Kept",
+                "when": {"has_flag": "hive_kept"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0},
             "inventory": [],
             "flags": {},
         },

@@ -5,8 +5,8 @@
     "go:count.path",
     "go:count.yard"
   ],
-  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "16eb278819a0cdfb1b72cfc767a48aa018e67c710b241507c2de3c478f704777",
+  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
+  "final_fingerprint": "dcd11cf5ae1e6c718c3cbc2df72af673168e46a3f4d163c887e91725d786faf6",
   "id": "divergence_city_count",
   "location": "count.yard",
   "outcomes": [],

@@ -5,8 +5,8 @@
     "go:fold.lane",
     "go:fold.green"
   ],
-  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "0a5c90eab98bcb8b7bbde69f671ba360fb26ff577c06ba248ec215d0e750465c",
+  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
+  "final_fingerprint": "e838dc568ee1665bf90a4394b8d2269762543134f395646f4edffc99692e696a",
   "id": "cross_plain_fold",
   "location": "fold.green",
   "outcomes": [],

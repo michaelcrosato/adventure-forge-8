@@ -110,10 +110,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | wreck.hull | wreck_chapel | Kade, drowned token, ice keep |
 | wreck.wash | wreck_chapel | wash the token |
 | wreck.altar | wreck_chapel | Efa, lay token, wreck_laid |
+| hive.path | bee_skeps | skeps on the bank, hive access |
+| hive.yard | bee_skeps | Sol, hive hum vs skep mark |
+| hive.skeps | bee_skeps | Tansy, smoke hive, wreck bless |
+| hive.comb | bee_skeps | comb cake |
+| hive.shed | bee_skeps | Wick, set skep, hive_kept |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`, `ferry_crossed`, `flats_drained`, `oyster_culled`, `tally_closed`, `ice_held`, `wreck_laid`, `hive_kept`
 
 ## Substrate
 

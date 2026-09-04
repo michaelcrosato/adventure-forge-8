@@ -16,8 +16,8 @@
     "go:name.yard",
     "go:name.hall"
   ],
-  "build_id": "6db44fd59431c81204c51439bab5680369b3bd40aa9947428f354d0b12a7fc8a",
-  "final_fingerprint": "a4d331b8aca1af671924cce92c7db3dbde51872728459d35690e23fdb66f76b6",
+  "build_id": "66b1e6173aca01232e1d1c28b9d23c452cfeca33a5611d6a45dd76714d8f68e6",
+  "final_fingerprint": "6d913ed7b35641f8739cf659ffd71fb73af79cad41918535889adbed58cb69e0",
   "id": "cross_fever_name",
   "location": "name.hall",
   "outcomes": [

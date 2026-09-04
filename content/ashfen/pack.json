@@ -5526,6 +5526,229 @@
       "when": {
         "at": "wreck.altar"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "hive_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "sol",
+          "fact": "hum",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_hive_hum",
+      "label": "Know the hive hum",
+      "text": "You name the hive hum. Sol lets you smoke and set.",
+      "when": {
+        "all": [
+          {
+            "at": "hive.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "hive_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "hive_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "sol",
+          "fact": "mark",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_skep_mark",
+      "label": "Read the skep mark",
+      "text": "You read the skep mark. Sol lets you smoke and set.",
+      "when": {
+        "all": [
+          {
+            "at": "hive.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "hive_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "hive_blessed",
+          "op": "set_flag"
+        },
+        {
+          "flag": "hive_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "tansy",
+          "fact": "bless",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "bless_the_skep",
+      "label": "Bless the skep",
+      "text": "You bless the skep. The hive takes the drowned ward.",
+      "when": {
+        "all": [
+          {
+            "at": "hive.skeps"
+          },
+          {
+            "has_flag": "wreck_laid"
+          },
+          {
+            "not_flag": "hive_blessed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "hive_smoked",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "smoke_the_hive",
+      "label": "Smoke the hive",
+      "text": "You smoke the hive. The bees drop and still.",
+      "when": {
+        "all": [
+          {
+            "at": "hive.skeps"
+          },
+          {
+            "has_flag": "hive_trust"
+          },
+          {
+            "not_flag": "hive_smoked"
+          },
+          {
+            "not_flag": "hive_kept"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "comb_cake",
+          "op": "remove_item"
+        },
+        {
+          "flag": "hive_kept",
+          "op": "set_flag"
+        },
+        {
+          "actor": "wick",
+          "fact": "set",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "set_the_skep",
+      "label": "Set the skep",
+      "text": "You set the skep. Wick marks the hive kept.",
+      "when": {
+        "all": [
+          {
+            "at": "hive.shed"
+          },
+          {
+            "has_flag": "hive_trust"
+          },
+          {
+            "has_flag": "hive_smoked"
+          },
+          {
+            "has_item": "comb_cake"
+          },
+          {
+            "not_flag": "hive_kept"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_hive_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_sol_rule",
+      "label": "Ask Sol the rule",
+      "text": "Sol says smoke the hive. Then take comb and set.",
+      "when": {
+        "at": "hive.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_hive_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_tansy_smoke",
+      "label": "Ask Tansy the smoke",
+      "text": "Tansy says a light smoke calms the hive.",
+      "when": {
+        "at": "hive.skeps"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_hive_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_wick_skep",
+      "label": "Ask Wick the skep",
+      "text": "Wick sets only a hive that has been smoked.",
+      "when": {
+        "at": "hive.shed"
+      }
     }
   ],
   "actors": {
@@ -5729,9 +5952,17 @@
       "idle": "She counts sacks and does not smile.",
       "name": "Sila"
     },
+    "sol": {
+      "idle": "He listens to the hive and does not speak first.",
+      "name": "Sol"
+    },
     "tam": {
       "idle": "He looks at the floor and does not speak first.",
       "name": "Tam"
+    },
+    "tansy": {
+      "idle": "She keeps a rag of smoke and waits.",
+      "name": "Tansy"
     },
     "tess": {
       "idle": "She keeps a hook in her belt and waits.",
@@ -5752,6 +5983,10 @@
     "wex": {
       "idle": "He keeps a thumb on the bed list.",
       "name": "Wex"
+    },
+    "wick": {
+      "idle": "He mends a straw skep and does not look up.",
+      "name": "Wick"
     },
     "willa": {
       "idle": "She counts bricks and does not stack uneven.",
@@ -5787,6 +6022,10 @@
     "city_papers": {
       "kind": "key",
       "name": "city papers"
+    },
+    "comb_cake": {
+      "kind": "goods",
+      "name": "comb cake"
     },
     "compact_tablet": {
       "kind": "key",
@@ -6354,6 +6593,10 @@
         {
           "label": "Go to wreck chapel",
           "to": "wreck.path"
+        },
+        {
+          "label": "Go to bee skeps",
+          "to": "hive.path"
         }
       ],
       "ground": [],
@@ -7170,6 +7413,113 @@
           }
         }
       ]
+    },
+    "hive.comb": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to hive yard",
+          "to": "hive.yard"
+        }
+      ],
+      "ground": [
+        "comb_cake"
+      ],
+      "name": "Comb House",
+      "region": "bee_skeps",
+      "situation": "Open comb drips on a board. The air is sweet."
+    },
+    "hive.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to wreck chapel",
+          "to": "wreck.path"
+        },
+        {
+          "label": "Go to hive yard",
+          "to": "hive.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Hive Path",
+      "region": "bee_skeps",
+      "situation": "Skeps sit on a dry bank. Bees hang in a low cloud."
+    },
+    "hive.shed": {
+      "actors": [
+        "wick"
+      ],
+      "exits": [
+        {
+          "label": "Go to hive yard",
+          "to": "hive.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Hive Shed",
+      "region": "bee_skeps",
+      "situation": "Wick waits with a spare skep. Straw lies in a heap."
+    },
+    "hive.skeps": {
+      "actors": [
+        "tansy"
+      ],
+      "exits": [
+        {
+          "label": "Go to hive yard",
+          "to": "hive.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Skep Row",
+      "region": "bee_skeps",
+      "situation": "Straw skeps sit in a row. Tansy keeps a rag of smoke.",
+      "situation_if": [
+        {
+          "text": "A drowned ward would bless the hive.",
+          "when": {
+            "has_flag": "wreck_laid"
+          }
+        },
+        {
+          "text": "The row sits still and even.",
+          "when": {
+            "has_flag": "hive_kept"
+          }
+        }
+      ]
+    },
+    "hive.yard": {
+      "actors": [
+        "sol"
+      ],
+      "exits": [
+        {
+          "label": "Go to hive path",
+          "to": "hive.path"
+        },
+        {
+          "label": "Go to the skeps",
+          "to": "hive.skeps"
+        },
+        {
+          "label": "Go to the comb house",
+          "to": "hive.comb"
+        },
+        {
+          "label": "Go to the hive shed",
+          "to": "hive.shed"
+        }
+      ],
+      "ground": [],
+      "name": "Hive Yard",
+      "region": "bee_skeps",
+      "situation": "Sol waits by a hive mark. The hum is even."
     },
     "ice.door": {
       "actors": [
@@ -8743,6 +9093,10 @@
         {
           "label": "Go to wreck yard",
           "to": "wreck.yard"
+        },
+        {
+          "label": "Go to bee skeps",
+          "to": "hive.path"
         }
       ],
       "ground": [],
@@ -8826,6 +9180,12 @@
       "name": "Harbor Compact",
       "when": {
         "has_flag": "compact_restored"
+      }
+    },
+    "hive_kept": {
+      "name": "Hive Kept",
+      "when": {
+        "has_flag": "hive_kept"
       }
     },
     "ice_held": {
@@ -8914,6 +9274,10 @@
     }
   },
   "regions": {
+    "bee_skeps": {
+      "mechanic": "smoke-hive-set-skep",
+      "name": "Bee Skeps"
+    },
     "counting_house": {
       "mechanic": "mark-tally-seal-day",
       "name": "Counting House"
@@ -9027,6 +9391,7 @@
       "ferry": 0,
       "fold": 0,
       "glass": 0,
+      "hive": 0,
       "ice": 0,
       "millers": 0,
       "names": 0,
