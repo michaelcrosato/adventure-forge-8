@@ -75,10 +75,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | weir.stakes | eel_weir | set baskets, lift, smoke bait |
 | weir.pool | eel_weir | Noll, watch the run |
 | weir.hut | eel_weir | Meg, weir basket, count |
+| dye.path | dye_works | vat steam, works access |
+| dye.yard | dye_works | Quill, reed mordant vs vat list |
+| dye.vats | dye_works | Fen, charge, dip, eel-skin bind |
+| dye.loft | dye_works | Moss, hang color, dye_struck |
+| dye.store | dye_works | undyed cloth |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`, `dye_struck`
 
 ## Substrate
 

@@ -3866,6 +3866,259 @@
       "when": {
         "at": "weir.hut"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "dye_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "quill",
+          "fact": "reed",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_reed_mordant",
+      "label": "Know the reed mordant",
+      "text": "You name the reed mordant. Quill lets you charge and dip.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "dye_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "dye_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "quill",
+          "fact": "list",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_vat_list",
+      "label": "Read the vat list",
+      "text": "You read the vat list. Quill lets you charge and dip.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "dye_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "eel_mordant",
+          "op": "set_flag"
+        },
+        {
+          "flag": "dye_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "quill",
+          "fact": "eel_skin",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "bind_eel_skin",
+      "label": "Bind eel skin",
+      "text": "You bind eel skin. The vat takes a dark bite.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.vats"
+          },
+          {
+            "has_flag": "weir_lifted"
+          },
+          {
+            "not_flag": "eel_mordant"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "vat_charged",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "charge_the_vat",
+      "label": "Charge the vat",
+      "text": "You charge the vat. The liquor takes a reed stain.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.vats"
+          },
+          {
+            "has_flag": "dye_trust"
+          },
+          {
+            "not_flag": "vat_charged"
+          },
+          {
+            "not_flag": "dye_struck"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "undyed_cloth",
+          "op": "remove_item"
+        },
+        {
+          "flag": "cloth_dipped",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "dip_the_cloth",
+      "label": "Dip the cloth",
+      "text": "You dip the cloth. The vat drinks the white.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.vats"
+          },
+          {
+            "has_flag": "dye_trust"
+          },
+          {
+            "has_flag": "vat_charged"
+          },
+          {
+            "has_item": "undyed_cloth"
+          },
+          {
+            "not_flag": "cloth_dipped"
+          },
+          {
+            "not_flag": "dye_struck"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "dyed_cloth",
+          "op": "add_item"
+        },
+        {
+          "flag": "dye_struck",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "hang_the_color",
+      "label": "Hang the color",
+      "text": "You hang the color. Moss marks the loft dry.",
+      "when": {
+        "all": [
+          {
+            "at": "dye.loft"
+          },
+          {
+            "has_flag": "dye_trust"
+          },
+          {
+            "has_flag": "cloth_dipped"
+          },
+          {
+            "not_flag": "dye_struck"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_dye_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_quill_rule",
+      "label": "Ask Quill the rule",
+      "text": "Quill says charge the vat. Then dip and hang dry.",
+      "when": {
+        "at": "dye.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_dye_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_fen_vat",
+      "label": "Ask Fen the vat",
+      "text": "Fen says stir slow. A boil will ruin the cloth.",
+      "when": {
+        "at": "dye.vats"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_dye_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_moss_line",
+      "label": "Ask Moss the line",
+      "text": "Moss pays only when a pole holds dry color.",
+      "when": {
+        "at": "dye.loft"
+      }
     }
   ],
   "actors": {
@@ -3904,6 +4157,10 @@
     "eel_seller": {
       "idle": "He turns eels on the board and waits.",
       "name": "Eel-seller"
+    },
+    "fen": {
+      "idle": "She stirs a vat and does not splash.",
+      "name": "Fen"
     },
     "hal": {
       "idle": "He rubs salt from his palms and waits.",
@@ -3949,6 +4206,10 @@
       "idle": "She coils rope and eyes the first ledge.",
       "name": "Mira"
     },
+    "moss": {
+      "idle": "She holds a dry line and watches the poles.",
+      "name": "Moss"
+    },
     "nell": {
       "idle": "She keeps the brine bucket from the well lip.",
       "name": "Nell"
@@ -3976,6 +4237,10 @@
     "pim": {
       "idle": "He taps the scale and waits for a cake.",
       "name": "Pim"
+    },
+    "quill": {
+      "idle": "He rubs stain from his wrists and waits.",
+      "name": "Quill"
     },
     "rell": {
       "idle": "He watches the dike and the weather.",
@@ -4051,6 +4316,10 @@
     "cured_fish": {
       "kind": "goods",
       "name": "cured fish"
+    },
+    "dyed_cloth": {
+      "kind": "goods",
+      "name": "dyed cloth"
     },
     "eel_catch": {
       "kind": "goods",
@@ -4480,6 +4749,10 @@
       "kind": "salvage",
       "name": "knotted peg"
     },
+    "undyed_cloth": {
+      "kind": "goods",
+      "name": "undyed cloth"
+    },
     "weir_basket": {
       "kind": "gear",
       "name": "weir basket"
@@ -4546,6 +4819,10 @@
         {
           "label": "Go to eel weir",
           "to": "weir.path"
+        },
+        {
+          "label": "Go to dye works",
+          "to": "dye.path"
         }
       ],
       "ground": [],
@@ -4784,6 +5061,113 @@
       "name": "Court Yard",
       "region": "reed_court",
       "situation": "Wet flags hold a quiet crowd. Reeds hiss along the wall."
+    },
+    "dye.loft": {
+      "actors": [
+        "moss"
+      ],
+      "exits": [
+        {
+          "label": "Go to dye yard",
+          "to": "dye.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Dye Loft",
+      "region": "dye_works",
+      "situation": "Poles wait for wet cloth. Moss keeps a dry line clear."
+    },
+    "dye.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to eel weir",
+          "to": "weir.path"
+        },
+        {
+          "label": "Go to dye yard",
+          "to": "dye.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Dye Path",
+      "region": "dye_works",
+      "situation": "Vat steam hangs over a clay track. Stained rags mark the way."
+    },
+    "dye.store": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to dye yard",
+          "to": "dye.yard"
+        }
+      ],
+      "ground": [
+        "undyed_cloth"
+      ],
+      "name": "Cloth Store",
+      "region": "dye_works",
+      "situation": "White cloth sits in a dry chest. The air smells of lye."
+    },
+    "dye.vats": {
+      "actors": [
+        "fen"
+      ],
+      "exits": [
+        {
+          "label": "Go to dye yard",
+          "to": "dye.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Dye Vats",
+      "region": "dye_works",
+      "situation": "Three vats hold still liquor. Fen stirs with a long stick.",
+      "situation_if": [
+        {
+          "text": "Eel skin would bite the vat dark.",
+          "when": {
+            "has_flag": "weir_lifted"
+          }
+        },
+        {
+          "text": "One vat sits spent and cool.",
+          "when": {
+            "has_flag": "dye_struck"
+          }
+        }
+      ]
+    },
+    "dye.yard": {
+      "actors": [
+        "quill"
+      ],
+      "exits": [
+        {
+          "label": "Go to dye path",
+          "to": "dye.path"
+        },
+        {
+          "label": "Go to the vats",
+          "to": "dye.vats"
+        },
+        {
+          "label": "Go to the dye loft",
+          "to": "dye.loft"
+        },
+        {
+          "label": "Go to the cloth store",
+          "to": "dye.store"
+        }
+      ],
+      "ground": [],
+      "name": "Dye Yard",
+      "region": "dye_works",
+      "situation": "Pots of stain sit by a list. Quill waits with wet hands."
     },
     "fold.cut": {
       "actors": [
@@ -6104,6 +6488,10 @@
         {
           "label": "Go to weir yard",
           "to": "weir.yard"
+        },
+        {
+          "label": "Go to dye works",
+          "to": "dye.path"
         }
       ],
       "ground": [],
@@ -6182,6 +6570,12 @@
     }
   },
   "outcomes": {
+    "dye_struck": {
+      "name": "Dye Struck",
+      "when": {
+        "has_flag": "dye_struck"
+      }
+    },
     "fever_broken": {
       "name": "Fever Broken",
       "when": {
@@ -6266,6 +6660,10 @@
       "mechanic": "weather-turn-encounters",
       "name": "Drowned Road"
     },
+    "dye_works": {
+      "mechanic": "charge-dip-hang-color",
+      "name": "Dye Works"
+    },
     "eel_weir": {
       "mechanic": "set-baskets-lift-catch",
       "name": "Eel Weir"
@@ -6342,6 +6740,7 @@
       "camp": 0,
       "court": 0,
       "dockers": 0,
+      "dye": 0,
       "fold": 0,
       "glass": 0,
       "millers": 0,

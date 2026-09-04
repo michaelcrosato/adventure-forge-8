@@ -5,8 +5,8 @@
     "go:fold.lane",
     "go:fold.green"
   ],
-  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "dc7ecb241795ae74260750478895ebab46a8cd2359225dea054801441285136f",
+  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
+  "final_fingerprint": "2ca31386b568054a200dda907e6de4f9fa7eb5c6e5c1616877c339106e3369ac",
   "id": "divergence_city_fold",
   "location": "fold.green",
   "outcomes": [],

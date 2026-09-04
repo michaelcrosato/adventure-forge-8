@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dye.path",
+    "go:dye.yard",
+    "know_the_reed_mordant",
+    "go:dye.store",
+    "take:undyed_cloth",
+    "go:dye.yard",
+    "go:dye.vats",
+    "charge_the_vat",
+    "dip_the_cloth",
+    "go:dye.yard",
+    "go:dye.loft",
+    "hang_the_color"
+  ],
+  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
+  "final_fingerprint": "b8e4fab3b2543e6242e2d0ec05893552b0273d52191f9a7a4dd4d89bb6381d73",
+  "id": "marsh_dye_struck",
+  "location": "dye.loft",
+  "outcome": "dye_struck",
+  "outcomes": [
+    "dye_struck"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:smoke.path",
-    "go:smoke.yard"
+    "go:dye.path",
+    "go:dye.yard"
   ],
   "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
-  "final_fingerprint": "83b5ed6d00ced8da24e7a43f611b78b4b8f6a9099929174cd05e764b1a40b4b0",
-  "id": "divergence_city_smoke",
-  "location": "smoke.yard",
+  "final_fingerprint": "2d002ebb80eb4f9942eeef8ebdcff662f4d5c7579548a767c7b8f913057a7492",
+  "id": "divergence_city_dye",
+  "location": "dye.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

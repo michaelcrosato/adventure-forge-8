@@ -20,8 +20,8 @@
     "go:weir.yard",
     "go:weir.stakes"
   ],
-  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "36e0a4c6ead2c4e27d1f9d074a122467dc47118b3e427e9855da61389544a9a2",
+  "build_id": "bf2bda5b016af1048f07ffb7289e9597b4fb224486f0a435d1dc24bf11fc3a9f",
+  "final_fingerprint": "770d9705151f36d01d85de7a81648a4a7b6556970dc4c7a5e394480d6b28a1ee",
   "id": "cross_smoke_weir",
   "location": "weir.stakes",
   "outcomes": [

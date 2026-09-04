@@ -86,6 +86,8 @@ def build() -> dict:
         "cured_fish": {"name": "cured fish", "kind": "goods"},
         "weir_basket": {"name": "weir basket", "kind": "gear"},
         "eel_catch": {"name": "eel catch", "kind": "goods"},
+        "undyed_cloth": {"name": "undyed cloth", "kind": "goods"},
+        "dyed_cloth": {"name": "dyed cloth", "kind": "goods"},
         **salvage_items,
     }
 
@@ -207,6 +209,7 @@ def build() -> dict:
                 {"to": "pans.path", "label": "Go to salt pans"},
                 {"to": "smoke.path", "label": "Go to smokehouse"},
                 {"to": "weir.path", "label": "Go to eel weir"},
+                {"to": "dye.path", "label": "Go to dye works"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -923,6 +926,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "smoke.path", "label": "Go to smokehouse"},
                 {"to": "weir.yard", "label": "Go to weir yard"},
+                {"to": "dye.path", "label": "Go to dye works"},
             ],
             "ground": [],
             "actors": [],
@@ -973,6 +977,65 @@ def build() -> dict:
             "exits": [{"to": "weir.yard", "label": "Go to weir yard"}],
             "ground": ["weir_basket"],
             "actors": ["meg"],
+        },
+        "dye.path": {
+            "region": "dye_works",
+            "name": "Dye Path",
+            "situation": "Vat steam hangs over a clay track. Stained rags mark the way.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "weir.path", "label": "Go to eel weir"},
+                {"to": "dye.yard", "label": "Go to dye yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dye.yard": {
+            "region": "dye_works",
+            "name": "Dye Yard",
+            "situation": "Pots of stain sit by a list. Quill waits with wet hands.",
+            "exits": [
+                {"to": "dye.path", "label": "Go to dye path"},
+                {"to": "dye.vats", "label": "Go to the vats"},
+                {"to": "dye.loft", "label": "Go to the dye loft"},
+                {"to": "dye.store", "label": "Go to the cloth store"},
+            ],
+            "ground": [],
+            "actors": ["quill"],
+        },
+        "dye.vats": {
+            "region": "dye_works",
+            "name": "Dye Vats",
+            "situation": "Three vats hold still liquor. Fen stirs with a long stick.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "weir_lifted"},
+                    "text": "Eel skin would bite the vat dark.",
+                },
+                {
+                    "when": {"has_flag": "dye_struck"},
+                    "text": "One vat sits spent and cool.",
+                },
+            ],
+            "exits": [{"to": "dye.yard", "label": "Go to dye yard"}],
+            "ground": [],
+            "actors": ["fen"],
+        },
+        "dye.loft": {
+            "region": "dye_works",
+            "name": "Dye Loft",
+            "situation": "Poles wait for wet cloth. Moss keeps a dry line clear.",
+            "exits": [{"to": "dye.yard", "label": "Go to dye yard"}],
+            "ground": [],
+            "actors": ["moss"],
+        },
+        "dye.store": {
+            "region": "dye_works",
+            "name": "Cloth Store",
+            "situation": "White cloth sits in a dry chest. The air smells of lye.",
+            "exits": [{"to": "dye.yard", "label": "Go to dye yard"}],
+            "ground": ["undyed_cloth"],
+            "actors": [],
         },
     }
 
@@ -1132,6 +1195,18 @@ def build() -> dict:
         "meg": {
             "name": "Meg",
             "idle": "She keeps a tally stick by the door.",
+        },
+        "quill": {
+            "name": "Quill",
+            "idle": "He rubs stain from his wrists and waits.",
+        },
+        "fen": {
+            "name": "Fen",
+            "idle": "She stirs a vat and does not splash.",
+        },
+        "moss": {
+            "name": "Moss",
+            "idle": "She holds a dry line and watches the poles.",
         },
     }
 
@@ -3133,6 +3208,140 @@ def build() -> dict:
             "Meg counts only a lift that comes in wet.",
             [{"op": "set_flag", "flag": "heard_weir_rule"}],
         ),
+        action(
+            "know_the_reed_mordant",
+            "Know the reed mordant",
+            "talk",
+            {
+                "all": [
+                    {"at": "dye.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dye_trust"},
+                ]
+            },
+            "You name the reed mordant. Quill lets you charge and dip.",
+            [
+                {"op": "set_flag", "flag": "dye_trust"},
+                {"op": "remember", "actor": "quill", "fact": "reed"},
+            ],
+        ),
+        action(
+            "read_the_vat_list",
+            "Read the vat list",
+            "do",
+            {
+                "all": [
+                    {"at": "dye.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dye_trust"},
+                ]
+            },
+            "You read the vat list. Quill lets you charge and dip.",
+            [
+                {"op": "set_flag", "flag": "dye_trust"},
+                {"op": "remember", "actor": "quill", "fact": "list"},
+            ],
+        ),
+        action(
+            "bind_eel_skin",
+            "Bind eel skin",
+            "do",
+            {
+                "all": [
+                    {"at": "dye.vats"},
+                    {"has_flag": "weir_lifted"},
+                    {"not_flag": "eel_mordant"},
+                ]
+            },
+            "You bind eel skin. The vat takes a dark bite.",
+            [
+                {"op": "set_flag", "flag": "eel_mordant"},
+                {"op": "set_flag", "flag": "dye_trust"},
+                {"op": "remember", "actor": "quill", "fact": "eel_skin"},
+            ],
+        ),
+        action(
+            "charge_the_vat",
+            "Charge the vat",
+            "do",
+            {
+                "all": [
+                    {"at": "dye.vats"},
+                    {"has_flag": "dye_trust"},
+                    {"not_flag": "vat_charged"},
+                    {"not_flag": "dye_struck"},
+                ]
+            },
+            "You charge the vat. The liquor takes a reed stain.",
+            [{"op": "set_flag", "flag": "vat_charged"}],
+        ),
+        action(
+            "dip_the_cloth",
+            "Dip the cloth",
+            "do",
+            {
+                "all": [
+                    {"at": "dye.vats"},
+                    {"has_flag": "dye_trust"},
+                    {"has_flag": "vat_charged"},
+                    {"has_item": "undyed_cloth"},
+                    {"not_flag": "cloth_dipped"},
+                    {"not_flag": "dye_struck"},
+                ]
+            },
+            "You dip the cloth. The vat drinks the white.",
+            [
+                {"op": "remove_item", "item": "undyed_cloth"},
+                {"op": "set_flag", "flag": "cloth_dipped"},
+            ],
+        ),
+        action(
+            "hang_the_color",
+            "Hang the color",
+            "do",
+            {
+                "all": [
+                    {"at": "dye.loft"},
+                    {"has_flag": "dye_trust"},
+                    {"has_flag": "cloth_dipped"},
+                    {"not_flag": "dye_struck"},
+                ]
+            },
+            "You hang the color. Moss marks the loft dry.",
+            [
+                {"op": "add_item", "item": "dyed_cloth"},
+                {"op": "set_flag", "flag": "dye_struck"},
+            ],
+        ),
+        action(
+            "ask_quill_rule",
+            "Ask Quill the rule",
+            "talk",
+            {"at": "dye.yard"},
+            "Quill says charge the vat. Then dip and hang dry.",
+            [{"op": "set_flag", "flag": "heard_dye_rule"}],
+        ),
+        action(
+            "ask_fen_vat",
+            "Ask Fen the vat",
+            "talk",
+            {"at": "dye.vats"},
+            "Fen says stir slow. A boil will ruin the cloth.",
+            [{"op": "set_flag", "flag": "heard_dye_rule"}],
+        ),
+        action(
+            "ask_moss_line",
+            "Ask Moss the line",
+            "talk",
+            {"at": "dye.loft"},
+            "Moss pays only when a pole holds dry color.",
+            [{"op": "set_flag", "flag": "heard_dye_rule"}],
+        ),
     ]
 
     pack = {
@@ -3190,6 +3399,10 @@ def build() -> dict:
             "eel_weir": {
                 "name": "Eel Weir",
                 "mechanic": "set-baskets-lift-catch",
+            },
+            "dye_works": {
+                "name": "Dye Works",
+                "mechanic": "charge-dip-hang-color",
             },
         },
         "locations": locations,
@@ -3249,11 +3462,15 @@ def build() -> dict:
                 "name": "Weir Lifted",
                 "when": {"has_flag": "weir_lifted"},
             },
+            "dye_struck": {
+                "name": "Dye Struck",
+                "when": {"has_flag": "dye_struck"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0},
             "inventory": [],
             "flags": {},
         },
