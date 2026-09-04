@@ -76,6 +76,7 @@ def build() -> dict:
         "city_papers": {"name": "city papers", "kind": "key"},
         "ash_relic": {"name": "ash relic", "kind": "relic"},
         "brass_key": {"name": "brass key", "kind": "key"},
+        "grain_sack": {"name": "grain sack", "kind": "goods"},
         **salvage_items,
     }
 
@@ -186,6 +187,7 @@ def build() -> dict:
             "exits": [
                 {"to": "saltfen.market", "label": "Go to market"},
                 {"to": "stacks.base", "label": "Go to stack base"},
+                {"to": "mill.lane", "label": "Go to mill lane"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -244,6 +246,78 @@ def build() -> dict:
             "ground": [],
             "actors": [],
         },
+        "mill.lane": {
+            "region": "kiln_mill",
+            "name": "Mill Lane",
+            "situation": "Clay ruts climb from the shell road. Kiln smoke hangs inland.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mill.yard", "label": "Go to mill yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "mill.yard": {
+            "region": "kiln_mill",
+            "name": "Mill Yard",
+            "situation": "Sacks lean on a debt board. The mill wheel knocks slow.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "compact_restored"},
+                    "text": "The miller names dock rates.",
+                },
+                {
+                    "when": {"has_flag": "kiln_pact_sealed"},
+                    "text": "The debt board is blank.",
+                },
+                {
+                    "when": {"sheet": ["origin", "marshborn"]},
+                    "text": "Reed chaff on the sacks smells like home.",
+                },
+            ],
+            "exits": [
+                {"to": "mill.lane", "label": "Go to mill lane"},
+                {"to": "mill.kiln", "label": "Go to kiln"},
+                {"to": "mill.loft", "label": "Go to loft"},
+                {"to": "mill.sluice", "label": "Go to sluice"},
+            ],
+            "ground": [],
+            "actors": ["miller"],
+        },
+        "mill.kiln": {
+            "region": "kiln_mill",
+            "name": "Kiln",
+            "situation": "A brick kiln holds the heat. Ash cakes the damper bar.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kiln_hot"},
+                    "text": "The mouth runs white.",
+                },
+                {
+                    "when": {"has_flag": "kiln_lit"},
+                    "text": "A low fire ticks in the grate.",
+                },
+            ],
+            "exits": [{"to": "mill.yard", "label": "Go to mill yard"}],
+            "ground": [],
+            "actors": ["pell"],
+        },
+        "mill.loft": {
+            "region": "kiln_mill",
+            "name": "Grain Loft",
+            "situation": "Dust hangs between the beams. Rats tick in the sacks.",
+            "exits": [{"to": "mill.yard", "label": "Go to mill yard"}],
+            "ground": ["grain_sack"],
+            "actors": ["sila"],
+        },
+        "mill.sluice": {
+            "region": "kiln_mill",
+            "name": "Mill Sluice",
+            "situation": "Dark water turns the wheel. One stone sits off true.",
+            "exits": [{"to": "mill.yard", "label": "Go to mill yard"}],
+            "ground": [],
+            "actors": [],
+        },
     }
 
     actors = {
@@ -270,6 +344,18 @@ def build() -> dict:
         "mira": {
             "name": "Mira",
             "idle": "She coils rope and eyes the first ledge.",
+        },
+        "miller": {
+            "name": "Miller Brann",
+            "idle": "He keeps a thumb on the debt board.",
+        },
+        "pell": {
+            "name": "Pell",
+            "idle": "She watches the kiln mouth and waits.",
+        },
+        "sila": {
+            "name": "Sila",
+            "idle": "She counts sacks and does not smile.",
         },
     }
 
@@ -822,6 +908,220 @@ def build() -> dict:
             "You leave a strip of cloth. The bowl stays still.",
             [{"op": "set_flag", "flag": "left_offering"}],
         ),
+        action(
+            "offer_reed_grain",
+            "Offer reed grain",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"sheet": ["origin", "marshborn"]},
+                    {"not_flag": "mill_trust"},
+                ]
+            },
+            "You offer reed grain. Brann marks your name kind.",
+            [
+                {"op": "set_flag", "flag": "mill_trust"},
+                {"op": "remember", "actor": "miller", "fact": "reed_grain"},
+                {"op": "add_rep", "faction": "millers", "n": 1},
+            ],
+        ),
+        action(
+            "read_debt_ledger",
+            "Read the debt ledger",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "mill_ledger_read"},
+                ]
+            },
+            "You read the board. The mill holds the valley grain as debt.",
+            [
+                {"op": "set_flag", "flag": "mill_ledger_read"},
+                {"op": "remember", "actor": "miller", "fact": "saw_ledger"},
+            ],
+        ),
+        action(
+            "show_mill_papers",
+            "Show city papers",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"has_item": "city_papers"},
+                    {"not_flag": "mill_saw_papers"},
+                ]
+            },
+            "You show city papers. Sila's cousin at the board goes still.",
+            [
+                {"op": "set_flag", "flag": "mill_saw_papers"},
+                {"op": "add_rep", "faction": "millers", "n": -1},
+            ],
+        ),
+        action(
+            "cite_dock_compact",
+            "Cite the dock compact",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"has_flag": "compact_restored"},
+                    {"not_flag": "mill_honors_compact"},
+                ]
+            },
+            "You cite the dock compact. Brann drops the extra grain tax.",
+            [
+                {"op": "set_flag", "flag": "mill_honors_compact"},
+                {"op": "set_flag", "flag": "mill_trust"},
+                {"op": "remember", "actor": "miller", "fact": "dock_rates"},
+                {"op": "add_rep", "faction": "millers", "n": 1},
+            ],
+        ),
+        action(
+            "swear_mill_oath",
+            "Swear the mill oath",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"has_flag": "mill_ledger_read"},
+                    {"sheet": ["creed", "oathbound"]},
+                    {"not_flag": "mill_trust"},
+                ]
+            },
+            "You swear on the board. Brann takes the oath as bond.",
+            [
+                {"op": "set_flag", "flag": "mill_trust"},
+                {"op": "remember", "actor": "miller", "fact": "oath"},
+            ],
+        ),
+        action(
+            "pay_with_grain",
+            "Pay with a grain sack",
+            "talk",
+            {
+                "all": [
+                    {"at": "mill.yard"},
+                    {"has_item": "grain_sack"},
+                    {"not_flag": "mill_trust"},
+                ]
+            },
+            "You set a sack on the board. Brann cuts your name from debt.",
+            [
+                {"op": "remove_item", "item": "grain_sack"},
+                {"op": "set_flag", "flag": "mill_trust"},
+                {"op": "add_rep", "faction": "millers", "n": 1},
+            ],
+        ),
+        action(
+            "kindle_kiln",
+            "Kindle the kiln",
+            "do",
+            {
+                "all": [
+                    {"at": "mill.kiln"},
+                    {"not_flag": "kiln_lit"},
+                    {"not_flag": "kiln_hot"},
+                ]
+            },
+            "You kindle the kiln. Heat crawls up the brick.",
+            [{"op": "set_flag", "flag": "kiln_lit"}],
+        ),
+        action(
+            "stoke_kiln",
+            "Stoke the kiln",
+            "do",
+            {
+                "all": [
+                    {"at": "mill.kiln"},
+                    {"has_flag": "kiln_lit"},
+                    {"not_flag": "kiln_hot"},
+                ]
+            },
+            "You stoke until the kiln runs white.",
+            [
+                {"op": "clear_flag", "flag": "kiln_lit"},
+                {"op": "set_flag", "flag": "kiln_hot"},
+            ],
+        ),
+        action(
+            "damp_kiln",
+            "Damp the kiln",
+            "do",
+            {"all": [{"at": "mill.kiln"}, {"has_flag": "kiln_hot"}]},
+            "You damp the mouth. The white heat falls back.",
+            [
+                {"op": "clear_flag", "flag": "kiln_hot"},
+                {"op": "set_flag", "flag": "kiln_lit"},
+            ],
+        ),
+        action(
+            "set_damper",
+            "Set the damper",
+            "do",
+            {
+                "all": [
+                    {"at": "mill.kiln"},
+                    {"sheet": ["skill", "craft"]},
+                    {"not_flag": "damper_set"},
+                ]
+            },
+            "You set the damper. Pell nods at the even draw.",
+            [
+                {"op": "set_flag", "flag": "damper_set"},
+                {"op": "remember", "actor": "pell", "fact": "damper"},
+            ],
+        ),
+        action(
+            "ask_pell_heat",
+            "Ask Pell about heat",
+            "talk",
+            {"all": [{"at": "mill.kiln"}, {"has_flag": "mill_trust"}]},
+            "Pell says fire the pact only when the mouth runs white.",
+            [{"op": "set_flag", "flag": "heard_kiln"}],
+        ),
+        action(
+            "fire_the_pact",
+            "Fire the grain pact",
+            "do",
+            {
+                "all": [
+                    {"at": "mill.kiln"},
+                    {"has_flag": "kiln_hot"},
+                    {"has_flag": "mill_trust"},
+                    {"not_flag": "kiln_pact_sealed"},
+                ]
+            },
+            "You press the debt strip into the kiln. Brann names the pact sealed.",
+            [{"op": "set_flag", "flag": "kiln_pact_sealed"}],
+        ),
+        action(
+            "force_the_sluice",
+            "Force the sluice stone",
+            "do",
+            {
+                "all": [
+                    {"at": "mill.sluice"},
+                    {"sheet": ["body", "might"]},
+                    {"not_flag": "sluice_true"},
+                ]
+            },
+            "You force the stone true. The wheel runs even.",
+            [
+                {"op": "set_flag", "flag": "sluice_true"},
+                {"op": "add_rep", "faction": "millers", "n": 1},
+            ],
+        ),
+        action(
+            "ask_sila_debt",
+            "Ask Sila about debt",
+            "talk",
+            {"at": "mill.loft"},
+            "Sila says the kiln pact is the only clean write-off.",
+            [{"op": "set_flag", "flag": "heard_kiln"}],
+        ),
     ]
 
     pack = {
@@ -835,6 +1135,10 @@ def build() -> dict:
             "hollow_stacks": {
                 "name": "Hollow Stacks",
                 "mechanic": "climb-collapse-vertical",
+            },
+            "kiln_mill": {
+                "name": "Kiln Mill",
+                "mechanic": "heat-craft-grain-debt",
             },
         },
         "locations": locations,
@@ -850,11 +1154,15 @@ def build() -> dict:
                 "name": "Stack Relic",
                 "when": {"has_item": "ash_relic"},
             },
+            "kiln_pact": {
+                "name": "Kiln Pact",
+                "when": {"has_flag": "kiln_pact_sealed"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0},
             "inventory": [],
             "flags": {},
         },

@@ -1113,6 +1113,427 @@
           }
         ]
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mill_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "miller",
+          "fact": "reed_grain",
+          "op": "remember"
+        },
+        {
+          "faction": "millers",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "offer_reed_grain",
+      "label": "Offer reed grain",
+      "text": "You offer reed grain. Brann marks your name kind.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "sheet": [
+              "origin",
+              "marshborn"
+            ]
+          },
+          {
+            "not_flag": "mill_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mill_ledger_read",
+          "op": "set_flag"
+        },
+        {
+          "actor": "miller",
+          "fact": "saw_ledger",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "read_debt_ledger",
+      "label": "Read the debt ledger",
+      "text": "You read the board. The mill holds the valley grain as debt.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "mill_ledger_read"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mill_saw_papers",
+          "op": "set_flag"
+        },
+        {
+          "faction": "millers",
+          "n": -1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "show_mill_papers",
+      "label": "Show city papers",
+      "text": "You show city papers. Sila's cousin at the board goes still.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "has_item": "city_papers"
+          },
+          {
+            "not_flag": "mill_saw_papers"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mill_honors_compact",
+          "op": "set_flag"
+        },
+        {
+          "flag": "mill_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "miller",
+          "fact": "dock_rates",
+          "op": "remember"
+        },
+        {
+          "faction": "millers",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "cite_dock_compact",
+      "label": "Cite the dock compact",
+      "text": "You cite the dock compact. Brann drops the extra grain tax.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "has_flag": "compact_restored"
+          },
+          {
+            "not_flag": "mill_honors_compact"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "mill_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "miller",
+          "fact": "oath",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "swear_mill_oath",
+      "label": "Swear the mill oath",
+      "text": "You swear on the board. Brann takes the oath as bond.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "has_flag": "mill_ledger_read"
+          },
+          {
+            "sheet": [
+              "creed",
+              "oathbound"
+            ]
+          },
+          {
+            "not_flag": "mill_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "grain_sack",
+          "op": "remove_item"
+        },
+        {
+          "flag": "mill_trust",
+          "op": "set_flag"
+        },
+        {
+          "faction": "millers",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "talk",
+      "id": "pay_with_grain",
+      "label": "Pay with a grain sack",
+      "text": "You set a sack on the board. Brann cuts your name from debt.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.yard"
+          },
+          {
+            "has_item": "grain_sack"
+          },
+          {
+            "not_flag": "mill_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "kiln_lit",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "kindle_kiln",
+      "label": "Kindle the kiln",
+      "text": "You kindle the kiln. Heat crawls up the brick.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "not_flag": "kiln_lit"
+          },
+          {
+            "not_flag": "kiln_hot"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "kiln_lit",
+          "op": "clear_flag"
+        },
+        {
+          "flag": "kiln_hot",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "stoke_kiln",
+      "label": "Stoke the kiln",
+      "text": "You stoke until the kiln runs white.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "has_flag": "kiln_lit"
+          },
+          {
+            "not_flag": "kiln_hot"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "kiln_hot",
+          "op": "clear_flag"
+        },
+        {
+          "flag": "kiln_lit",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "damp_kiln",
+      "label": "Damp the kiln",
+      "text": "You damp the mouth. The white heat falls back.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "has_flag": "kiln_hot"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "damper_set",
+          "op": "set_flag"
+        },
+        {
+          "actor": "pell",
+          "fact": "damper",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "set_damper",
+      "label": "Set the damper",
+      "text": "You set the damper. Pell nods at the even draw.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "sheet": [
+              "skill",
+              "craft"
+            ]
+          },
+          {
+            "not_flag": "damper_set"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_kiln",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_pell_heat",
+      "label": "Ask Pell about heat",
+      "text": "Pell says fire the pact only when the mouth runs white.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "has_flag": "mill_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "kiln_pact_sealed",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "fire_the_pact",
+      "label": "Fire the grain pact",
+      "text": "You press the debt strip into the kiln. Brann names the pact sealed.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.kiln"
+          },
+          {
+            "has_flag": "kiln_hot"
+          },
+          {
+            "has_flag": "mill_trust"
+          },
+          {
+            "not_flag": "kiln_pact_sealed"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "sluice_true",
+          "op": "set_flag"
+        },
+        {
+          "faction": "millers",
+          "n": 1,
+          "op": "add_rep"
+        }
+      ],
+      "group": "do",
+      "id": "force_the_sluice",
+      "label": "Force the sluice stone",
+      "text": "You force the stone true. The wheel runs even.",
+      "when": {
+        "all": [
+          {
+            "at": "mill.sluice"
+          },
+          {
+            "sheet": [
+              "body",
+              "might"
+            ]
+          },
+          {
+            "not_flag": "sluice_true"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_kiln",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_sila_debt",
+      "label": "Ask Sila about debt",
+      "text": "Sila says the kiln pact is the only clean write-off.",
+      "when": {
+        "at": "mill.loft"
+      }
     }
   ],
   "actors": {
@@ -1128,9 +1549,21 @@
       "idle": "He wipes a cup and watches the door.",
       "name": "Innkeep"
     },
+    "miller": {
+      "idle": "He keeps a thumb on the debt board.",
+      "name": "Miller Brann"
+    },
     "mira": {
       "idle": "She coils rope and eyes the first ledge.",
       "name": "Mira"
+    },
+    "pell": {
+      "idle": "She watches the kiln mouth and waits.",
+      "name": "Pell"
+    },
+    "sila": {
+      "idle": "She counts sacks and does not smile.",
+      "name": "Sila"
     },
     "watch_sergeant": {
       "idle": "She keeps a finger on the ledger.",
@@ -1162,6 +1595,10 @@
     "frayed_rope": {
       "kind": "gear",
       "name": "frayed rope"
+    },
+    "grain_sack": {
+      "kind": "goods",
+      "name": "grain sack"
     },
     "salvage_000": {
       "kind": "salvage",
@@ -1577,12 +2014,142 @@
         {
           "label": "Go to stack base",
           "to": "stacks.base"
+        },
+        {
+          "label": "Go to mill lane",
+          "to": "mill.lane"
         }
       ],
       "ground": [],
       "name": "Ashfen Causeway",
       "region": "saltfen",
       "situation": "A raised track of packed shell. The stacks rise inland."
+    },
+    "mill.kiln": {
+      "actors": [
+        "pell"
+      ],
+      "exits": [
+        {
+          "label": "Go to mill yard",
+          "to": "mill.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Kiln",
+      "region": "kiln_mill",
+      "situation": "A brick kiln holds the heat. Ash cakes the damper bar.",
+      "situation_if": [
+        {
+          "text": "The mouth runs white.",
+          "when": {
+            "has_flag": "kiln_hot"
+          }
+        },
+        {
+          "text": "A low fire ticks in the grate.",
+          "when": {
+            "has_flag": "kiln_lit"
+          }
+        }
+      ]
+    },
+    "mill.lane": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to mill yard",
+          "to": "mill.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Mill Lane",
+      "region": "kiln_mill",
+      "situation": "Clay ruts climb from the shell road. Kiln smoke hangs inland."
+    },
+    "mill.loft": {
+      "actors": [
+        "sila"
+      ],
+      "exits": [
+        {
+          "label": "Go to mill yard",
+          "to": "mill.yard"
+        }
+      ],
+      "ground": [
+        "grain_sack"
+      ],
+      "name": "Grain Loft",
+      "region": "kiln_mill",
+      "situation": "Dust hangs between the beams. Rats tick in the sacks."
+    },
+    "mill.sluice": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to mill yard",
+          "to": "mill.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Mill Sluice",
+      "region": "kiln_mill",
+      "situation": "Dark water turns the wheel. One stone sits off true."
+    },
+    "mill.yard": {
+      "actors": [
+        "miller"
+      ],
+      "exits": [
+        {
+          "label": "Go to mill lane",
+          "to": "mill.lane"
+        },
+        {
+          "label": "Go to kiln",
+          "to": "mill.kiln"
+        },
+        {
+          "label": "Go to loft",
+          "to": "mill.loft"
+        },
+        {
+          "label": "Go to sluice",
+          "to": "mill.sluice"
+        }
+      ],
+      "ground": [],
+      "name": "Mill Yard",
+      "region": "kiln_mill",
+      "situation": "Sacks lean on a debt board. The mill wheel knocks slow.",
+      "situation_if": [
+        {
+          "text": "The miller names dock rates.",
+          "when": {
+            "has_flag": "compact_restored"
+          }
+        },
+        {
+          "text": "The debt board is blank.",
+          "when": {
+            "has_flag": "kiln_pact_sealed"
+          }
+        },
+        {
+          "text": "Reed chaff on the sacks smells like home.",
+          "when": {
+            "sheet": [
+              "origin",
+              "marshborn"
+            ]
+          }
+        }
+      ]
     },
     "saltfen.dock": {
       "actors": [
@@ -1962,6 +2529,12 @@
         "has_flag": "compact_restored"
       }
     },
+    "kiln_pact": {
+      "name": "Kiln Pact",
+      "when": {
+        "has_flag": "kiln_pact_sealed"
+      }
+    },
     "stack_relic": {
       "name": "Stack Relic",
       "when": {
@@ -1973,6 +2546,10 @@
     "hollow_stacks": {
       "mechanic": "climb-collapse-vertical",
       "name": "Hollow Stacks"
+    },
+    "kiln_mill": {
+      "mechanic": "heat-craft-grain-debt",
+      "name": "Kiln Mill"
     },
     "saltfen": {
       "mechanic": "law-trade-tides",
@@ -2004,6 +2581,7 @@
     "location": "saltfen.dock",
     "rep": {
       "dockers": 0,
+      "millers": 0,
       "stackers": 0,
       "watch": 0
     }

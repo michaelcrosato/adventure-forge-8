@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:mill.lane",
+    "go:mill.yard"
+  ],
+  "build_id": "724ddcc409feccd99a481e0c94ab2fe36c65e0655aed10fd46d5024b7f255d4d",
+  "final_fingerprint": "12c1f03ea356cc55fda185b7e66987e7b4eff1fb6c0159aec071e123f5709090",
+  "id": "divergence_marsh_mill",
+  "location": "mill.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -8,13 +8,16 @@
     "go:saltfen.market",
     "go:saltfen.dock",
     "give_tablet",
-    "sign_the_compact"
+    "sign_the_compact",
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:mill.lane",
+    "go:mill.yard"
   ],
   "build_id": "724ddcc409feccd99a481e0c94ab2fe36c65e0655aed10fd46d5024b7f255d4d",
-  "final_fingerprint": "be23b96b890868743b5225211d9807aef66a2e6002c2b972ecb802b1c4c90150",
-  "id": "marsh_harbor_compact",
-  "location": "saltfen.dock",
-  "outcome": "harbor_compact",
+  "final_fingerprint": "27091096baf94c0e4b9f0cd75f2fac8a78d607b89687134a21154b16f5b65304",
+  "id": "cross_compact_mill",
+  "location": "mill.yard",
   "outcomes": [
     "harbor_compact"
   ],

@@ -1,0 +1,23 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:mill.lane",
+    "go:mill.yard",
+    "offer_reed_grain",
+    "go:mill.kiln",
+    "kindle_kiln",
+    "stoke_kiln",
+    "fire_the_pact"
+  ],
+  "build_id": "724ddcc409feccd99a481e0c94ab2fe36c65e0655aed10fd46d5024b7f255d4d",
+  "final_fingerprint": "17714f89a73f809b1ca75f2f9c975be2327460a9ccc4e9c6223c46e8126805bc",
+  "id": "marsh_kiln_pact",
+  "location": "mill.kiln",
+  "outcome": "kiln_pact",
+  "outcomes": [
+    "kiln_pact"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:mill.lane",
+    "go:mill.yard"
+  ],
+  "build_id": "724ddcc409feccd99a481e0c94ab2fe36c65e0655aed10fd46d5024b7f255d4d",
+  "final_fingerprint": "6eaf41d4b5b439e603379a1af29f5d8bcfb90501ea11e62e02a821fa293c94d8",
+  "id": "divergence_city_mill",
+  "location": "mill.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}
