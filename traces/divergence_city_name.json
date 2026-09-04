@@ -6,8 +6,8 @@
     "go:name.yard",
     "go:name.hall"
   ],
-  "build_id": "e31d4e748f571f92f84b0c738386020362ae231f1e95ed1ab488ee9dff868c17",
-  "final_fingerprint": "e776cbbf730550167381a7eee8c911be316c6e61d465588eb00ee18578f56148",
+  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
+  "final_fingerprint": "c630c600033eb7d0d1dfe65394d9ddda0b3829ea3413d9e1f9159b10166c2f70",
   "id": "divergence_city_name",
   "location": "name.hall",
   "outcomes": [],

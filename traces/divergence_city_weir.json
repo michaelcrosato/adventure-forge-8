@@ -2,13 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:camp.gate",
-    "go:camp.yard"
+    "go:weir.path",
+    "go:weir.yard"
   ],
   "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "1bcd307a3fa53d713f289de4a614f8251012065f9af7293e37b9c48392a44d4a",
-  "id": "divergence_city_camp",
-  "location": "camp.yard",
+  "final_fingerprint": "e2e49a56d29cf77729b1ec9e808f1387096dd45d50481759d53b2f17912dcf86",
+  "id": "divergence_city_weir",
+  "location": "weir.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "city_oath"

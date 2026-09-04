@@ -3644,6 +3644,228 @@
       "when": {
         "at": "smoke.loft"
       }
+    },
+    {
+      "effects": [
+        {
+          "flag": "weir_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cess",
+          "fact": "eel_run",
+          "op": "remember"
+        }
+      ],
+      "group": "talk",
+      "id": "know_the_eel_run",
+      "label": "Know the eel run",
+      "text": "You name the eel run. Cess lets you set and lift.",
+      "when": {
+        "all": [
+          {
+            "at": "weir.yard"
+          },
+          {
+            "any": [
+              {
+                "sheet": [
+                  "origin",
+                  "marshborn"
+                ]
+              },
+              {
+                "sheet": [
+                  "skill",
+                  "hunt"
+                ]
+              }
+            ]
+          },
+          {
+            "not_flag": "weir_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "weir_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cess",
+          "fact": "right",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "read_the_weir_right",
+      "label": "Read the weir right",
+      "text": "You read the weir right. Cess lets you set and lift.",
+      "when": {
+        "all": [
+          {
+            "at": "weir.yard"
+          },
+          {
+            "sheet": [
+              "skill",
+              "letters"
+            ]
+          },
+          {
+            "not_flag": "weir_trust"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "weir_baited",
+          "op": "set_flag"
+        },
+        {
+          "flag": "weir_trust",
+          "op": "set_flag"
+        },
+        {
+          "actor": "cess",
+          "fact": "bait",
+          "op": "remember"
+        }
+      ],
+      "group": "do",
+      "id": "bait_the_weir",
+      "label": "Bait the weir",
+      "text": "You bait the stakes. Smoke draws the run in.",
+      "when": {
+        "all": [
+          {
+            "at": "weir.stakes"
+          },
+          {
+            "has_flag": "smoke_cured"
+          },
+          {
+            "not_flag": "weir_baited"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "weir_basket",
+          "op": "remove_item"
+        },
+        {
+          "flag": "baskets_set",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "set_the_baskets",
+      "label": "Set the baskets",
+      "text": "You set the baskets. The stakes hold the mouths.",
+      "when": {
+        "all": [
+          {
+            "at": "weir.stakes"
+          },
+          {
+            "has_flag": "weir_trust"
+          },
+          {
+            "has_item": "weir_basket"
+          },
+          {
+            "not_flag": "baskets_set"
+          },
+          {
+            "not_flag": "weir_lifted"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "item": "eel_catch",
+          "op": "add_item"
+        },
+        {
+          "flag": "weir_lifted",
+          "op": "set_flag"
+        }
+      ],
+      "group": "do",
+      "id": "lift_the_weir",
+      "label": "Lift the weir",
+      "text": "You lift the weir. Eels twist in the wet wicker.",
+      "when": {
+        "all": [
+          {
+            "at": "weir.stakes"
+          },
+          {
+            "has_flag": "weir_trust"
+          },
+          {
+            "has_flag": "baskets_set"
+          },
+          {
+            "not_flag": "weir_lifted"
+          }
+        ]
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_weir_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_cess_rule",
+      "label": "Ask Cess the rule",
+      "text": "Cess says set the baskets. Then lift the catch.",
+      "when": {
+        "at": "weir.yard"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_weir_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_noll_run",
+      "label": "Ask Noll the run",
+      "text": "Noll says the eels hug the posts at the turn.",
+      "when": {
+        "at": "weir.pool"
+      }
+    },
+    {
+      "effects": [
+        {
+          "flag": "heard_weir_rule",
+          "op": "set_flag"
+        }
+      ],
+      "group": "talk",
+      "id": "ask_meg_count",
+      "label": "Ask Meg the count",
+      "text": "Meg counts only a lift that comes in wet.",
+      "when": {
+        "at": "weir.hut"
+      }
     }
   ],
   "actors": {
@@ -3666,6 +3888,10 @@
     "cal": {
       "idle": "She keeps one hand on the unlit lamp.",
       "name": "Cal"
+    },
+    "cess": {
+      "idle": "She mends a mouth of wicker and waits.",
+      "name": "Cess"
     },
     "dock_boss": {
       "idle": "He counts barrels and does not look up.",
@@ -3711,6 +3937,10 @@
       "idle": "She waits with both palms on her knees.",
       "name": "Magistrate Orin"
     },
+    "meg": {
+      "idle": "She keeps a tally stick by the door.",
+      "name": "Meg"
+    },
     "miller": {
       "idle": "He keeps a thumb on the debt board.",
       "name": "Miller Brann"
@@ -3730,6 +3960,10 @@
     "nim": {
       "idle": "She sorts shards and keeps her gloves on.",
       "name": "Nim"
+    },
+    "noll": {
+      "idle": "He watches the pool and does not splash.",
+      "name": "Noll"
     },
     "oat": {
       "idle": "He tends the still and does not taste the steam.",
@@ -3817,6 +4051,10 @@
     "cured_fish": {
       "kind": "goods",
       "name": "cured fish"
+    },
+    "eel_catch": {
+      "kind": "goods",
+      "name": "eel catch"
     },
     "frayed_rope": {
       "kind": "gear",
@@ -4242,6 +4480,10 @@
       "kind": "salvage",
       "name": "knotted peg"
     },
+    "weir_basket": {
+      "kind": "gear",
+      "name": "weir basket"
+    },
     "wet_fish": {
       "kind": "goods",
       "name": "wet fish"
@@ -4300,6 +4542,10 @@
         {
           "label": "Go to smokehouse",
           "to": "smoke.path"
+        },
+        {
+          "label": "Go to eel weir",
+          "to": "weir.path"
         }
       ],
       "ground": [],
@@ -5670,6 +5916,10 @@
         {
           "label": "Go to smoke yard",
           "to": "smoke.yard"
+        },
+        {
+          "label": "Go to eel weir",
+          "to": "weir.path"
         }
       ],
       "ground": [],
@@ -5822,6 +6072,113 @@
       "name": "Wind Bridge",
       "region": "hollow_stacks",
       "situation": "Planks span a gap. A guyline hums in the wind."
+    },
+    "weir.hut": {
+      "actors": [
+        "meg"
+      ],
+      "exits": [
+        {
+          "label": "Go to weir yard",
+          "to": "weir.yard"
+        }
+      ],
+      "ground": [
+        "weir_basket"
+      ],
+      "name": "Weir Hut",
+      "region": "eel_weir",
+      "situation": "Dry baskets hang. Meg waits with a count board."
+    },
+    "weir.path": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to causeway",
+          "to": "ashfen.causeway"
+        },
+        {
+          "label": "Go to smokehouse",
+          "to": "smoke.path"
+        },
+        {
+          "label": "Go to weir yard",
+          "to": "weir.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Weir Path",
+      "region": "eel_weir",
+      "situation": "A stake line cuts the creek. Eel slime shines on the posts."
+    },
+    "weir.pool": {
+      "actors": [
+        "noll"
+      ],
+      "exits": [
+        {
+          "label": "Go to weir yard",
+          "to": "weir.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Eel Pool",
+      "region": "eel_weir",
+      "situation": "Dark water holds. Noll crouches at the lip."
+    },
+    "weir.stakes": {
+      "actors": [],
+      "exits": [
+        {
+          "label": "Go to weir yard",
+          "to": "weir.yard"
+        }
+      ],
+      "ground": [],
+      "name": "Weir Stakes",
+      "region": "eel_weir",
+      "situation": "Baskets sit empty on the posts. The creek pulls past.",
+      "situation_if": [
+        {
+          "text": "A strip of cure would bait the mouths.",
+          "when": {
+            "has_flag": "smoke_cured"
+          }
+        },
+        {
+          "text": "The baskets sit empty and wet.",
+          "when": {
+            "has_flag": "weir_lifted"
+          }
+        }
+      ]
+    },
+    "weir.yard": {
+      "actors": [
+        "cess"
+      ],
+      "exits": [
+        {
+          "label": "Go to weir path",
+          "to": "weir.path"
+        },
+        {
+          "label": "Go to the stakes",
+          "to": "weir.stakes"
+        },
+        {
+          "label": "Go to the eel pool",
+          "to": "weir.pool"
+        },
+        {
+          "label": "Go to the weir hut",
+          "to": "weir.hut"
+        }
+      ],
+      "ground": [],
+      "name": "Weir Yard",
+      "region": "eel_weir",
+      "situation": "Wicker mouths lean on a rail. Cess waits by a run mark."
     }
   },
   "outcomes": {
@@ -5896,12 +6253,22 @@
       "when": {
         "has_item": "ash_relic"
       }
+    },
+    "weir_lifted": {
+      "name": "Weir Lifted",
+      "when": {
+        "has_flag": "weir_lifted"
+      }
     }
   },
   "regions": {
     "drowned_road": {
       "mechanic": "weather-turn-encounters",
       "name": "Drowned Road"
+    },
+    "eel_weir": {
+      "mechanic": "set-baskets-lift-catch",
+      "name": "Eel Weir"
     },
     "fever_camp": {
       "mechanic": "isolation-medicine",
@@ -5984,7 +6351,8 @@
       "salt": 0,
       "smoke": 0,
       "stackers": 0,
-      "watch": 0
+      "watch": 0,
+      "weir": 0
     }
   },
   "version": "1"

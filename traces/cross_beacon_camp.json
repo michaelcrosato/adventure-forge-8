@@ -13,8 +13,8 @@
     "go:road.ford",
     "go:camp.gate"
   ],
-  "build_id": "e31d4e748f571f92f84b0c738386020362ae231f1e95ed1ab488ee9dff868c17",
-  "final_fingerprint": "9e3ff4f81944b214d7239a59c62e3f351dcb8fdb531997e2047a7f24edd6099b",
+  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
+  "final_fingerprint": "669e76532e7a3357cc72fa39770a09a5526771921c0589ad71a2884cd91ace21",
   "id": "cross_beacon_camp",
   "location": "camp.gate",
   "outcomes": [

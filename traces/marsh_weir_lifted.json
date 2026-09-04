@@ -1,0 +1,25 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:weir.path",
+    "go:weir.yard",
+    "know_the_eel_run",
+    "go:weir.hut",
+    "take:weir_basket",
+    "go:weir.yard",
+    "go:weir.stakes",
+    "set_the_baskets",
+    "lift_the_weir"
+  ],
+  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
+  "final_fingerprint": "9437e9bb5941016e892160dee21e0e0236e2772653ecab78f5c7fa8774323810",
+  "id": "marsh_weir_lifted",
+  "location": "weir.stakes",
+  "outcome": "weir_lifted",
+  "outcomes": [
+    "weir_lifted"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

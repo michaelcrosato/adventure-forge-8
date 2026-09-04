@@ -2,14 +2,14 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:name.path",
-    "go:name.yard",
-    "go:name.hall"
+    "go:weir.path",
+    "go:weir.yard",
+    "go:weir.stakes"
   ],
   "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "874eb9c748c8906e23cd38f77e826d31d36814ee3ff5821814b93b3611eaa137",
-  "id": "cross_plain_name",
-  "location": "name.hall",
+  "final_fingerprint": "2ebaeb963a1d4582e500576a70b1a32195a5ffac6538be50dc65e6d242c0700f",
+  "id": "cross_plain_weir",
+  "location": "weir.stakes",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

@@ -90,6 +90,11 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "divergence_city_smoke",
         "cross_plain_smoke",
         "cross_salt_smoke",
+        "marsh_weir_lifted",
+        "divergence_marsh_weir",
+        "divergence_city_weir",
+        "cross_plain_weir",
+        "cross_smoke_weir",
     )
     missing = [name for name in required if name not in by_id]
     if missing:
@@ -110,6 +115,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     rope = replay(content, by_id["marsh_rope_walked"]["seed"], by_id["marsh_rope_walked"]["sheet"], by_id["marsh_rope_walked"]["actions"])
     salt = replay(content, by_id["marsh_salt_raked"]["seed"], by_id["marsh_salt_raked"]["sheet"], by_id["marsh_salt_raked"]["actions"])
     smoke = replay(content, by_id["marsh_smoke_cured"]["seed"], by_id["marsh_smoke_cured"]["sheet"], by_id["marsh_smoke_cured"]["actions"])
+    weir = replay(content, by_id["marsh_weir_lifted"]["seed"], by_id["marsh_weir_lifted"]["sheet"], by_id["marsh_weir_lifted"]["actions"])
     if "harbor_compact" not in compact.state.outcomes:
         raise AssertionError("harbor_compact predicate failed")
     if "stack_relic" not in relic.state.outcomes:
@@ -134,7 +140,9 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         raise AssertionError("salt_raked predicate failed")
     if "smoke_cured" not in smoke.state.outcomes:
         raise AssertionError("smoke_cured predicate failed")
-    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint}) != 12:
+    if "weir_lifted" not in weir.state.outcomes:
+        raise AssertionError("weir_lifted predicate failed")
+    if len({compact.fingerprint, relic.fingerprint, kiln.fingerprint, court.fingerprint, beacon.fingerprint, fever.fingerprint, named.fingerprint, fold.fingerprint, lens.fingerprint, rope.fingerprint, salt.fingerprint, smoke.fingerprint, weir.fingerprint}) != 13:
         raise AssertionError("distinct outcomes share a fingerprint")
 
     marsh = by_id["divergence_marsh_market"]
@@ -397,6 +405,31 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
     if "salt_raked" not in salt_smoke.state.outcomes:
         raise AssertionError("cross salt-smoke run lost salt_raked")
 
+    weir_m = by_id["divergence_marsh_weir"]
+    weir_c = by_id["divergence_city_weir"]
+    weir_m_ids, weir_c_ids = _diverge_legal(content, weir_m, weir_c)
+    if "know_the_eel_run" not in weir_m_ids:
+        raise AssertionError("marsh_scout missing know_the_eel_run")
+    if "read_the_weir_right" not in weir_c_ids:
+        raise AssertionError("city_oath missing read_the_weir_right")
+    if "know_the_eel_run" in weir_c_ids or "read_the_weir_right" in weir_m_ids:
+        raise AssertionError("weir sheet verbs leaked across sheets")
+
+    plain_weir = replay(content, by_id["cross_plain_weir"]["seed"], by_id["cross_plain_weir"]["sheet"], by_id["cross_plain_weir"]["actions"])
+    smoke_weir = replay(content, by_id["cross_smoke_weir"]["seed"], by_id["cross_smoke_weir"]["sheet"], by_id["cross_smoke_weir"]["actions"])
+    if plain_weir.state.location != smoke_weir.state.location:
+        raise AssertionError("weir cross-area pair left different locations")
+    if plain_weir.state.location != "weir.stakes":
+        raise AssertionError("weir cross-area pair not at weir.stakes")
+    plain_weir_ids = {a.id for a in enumerate_legal(plain_weir.state, content)}
+    smoke_weir_ids = {a.id for a in enumerate_legal(smoke_weir.state, content)}
+    if "bait_the_weir" not in smoke_weir_ids:
+        raise AssertionError("smoke cured did not unlock bait_the_weir")
+    if "bait_the_weir" in plain_weir_ids:
+        raise AssertionError("bait_the_weir leaked without smoke cured")
+    if "smoke_cured" not in smoke_weir.state.outcomes:
+        raise AssertionError("cross smoke-weir run lost smoke_cured")
+
     return {
         "harbor_compact": compact.fingerprint,
         "stack_relic": relic.fingerprint,
@@ -410,6 +443,7 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "rope_walked": rope.fingerprint,
         "salt_raked": salt.fingerprint,
         "smoke_cured": smoke.fingerprint,
+        "weir_lifted": weir.fingerprint,
         "marsh_only": sorted(m_ids - c_ids),
         "city_only": sorted(c_ids - m_ids),
         "mill_marsh_only": sorted(mill_m_ids - mill_c_ids),
@@ -432,6 +466,8 @@ def check_i4(content: Content, traces: list[dict]) -> dict:
         "salt_city_only": sorted(salt_c_ids - salt_m_ids),
         "smoke_marsh_only": sorted(smoke_m_ids - smoke_c_ids),
         "smoke_city_only": sorted(smoke_c_ids - smoke_m_ids),
+        "weir_marsh_only": sorted(weir_m_ids - weir_c_ids),
+        "weir_city_only": sorted(weir_c_ids - weir_m_ids),
     }
 
 

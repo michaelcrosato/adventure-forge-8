@@ -6,8 +6,8 @@
     "go:road.dike",
     "go:road.hut"
   ],
-  "build_id": "e31d4e748f571f92f84b0c738386020362ae231f1e95ed1ab488ee9dff868c17",
-  "final_fingerprint": "9b424dc38e633b91d8ef1786d872059a7cf30d7f8f6c45e86d764bb9df356797",
+  "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
+  "final_fingerprint": "4826de8424a47f9f506e9fa3f03af9b03fd47f16035fc4e28967bb72205406e5",
   "id": "divergence_city_road",
   "location": "road.hut",
   "outcomes": [],

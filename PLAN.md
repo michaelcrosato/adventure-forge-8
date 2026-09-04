@@ -156,6 +156,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Ropewalk | Twist, taut walk, hemp hank | Hamlet |
 | Salt Pans | Brine, rake, weigh | Hamlet |
 | Smokehouse | Hang, tend smoke, salt-cure | Hamlet |
+| Eel Weir | Set baskets, lift catch | Hamlet |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -173,6 +174,7 @@ Authored outcomes:
 10. `rope_walked` — the hemp hank is walked taut.
 11. `salt_raked` — a salt cake is raked and weighed.
 12. `smoke_cured` — wet fish hangs, takes smoke, and comes down cured.
+13. `weir_lifted` — baskets are set and the eel catch is lifted.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -203,8 +205,9 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 9. **Slice 8:** Ropewalk — twist and taut walk. Cross-effect: set lens unlocks channel sight on the floor.
 10. **Slice 9:** Salt Pans — brine, rake, weigh. Cross-effect: walked rope unlocks a rake line on the beds.
 11. **Slice 10:** Smokehouse — hang, tend smoke, salt-cure. Cross-effect: raked salt unlocks a brine cure on the racks.
-12. **Slice 11+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-13. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+12. **Slice 11:** Eel Weir — set baskets, lift catch. Cross-effect: cured smoke unlocks bait on the stakes.
+13. **Slice 12+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+14. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
 
 The factory may generate substrate. Authored depth is what we claim.
 

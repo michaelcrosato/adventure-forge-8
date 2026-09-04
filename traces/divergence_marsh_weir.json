@@ -2,14 +2,13 @@
   "actions": [
     "go:saltfen.market",
     "go:ashfen.causeway",
-    "go:name.path",
-    "go:name.yard",
-    "go:name.hall"
+    "go:weir.path",
+    "go:weir.yard"
   ],
   "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "874eb9c748c8906e23cd38f77e826d31d36814ee3ff5821814b93b3611eaa137",
-  "id": "cross_plain_name",
-  "location": "name.hall",
+  "final_fingerprint": "be8ac3aa41cbfef7a8a51b3098f54d58a235d9935f5f2eed0ad7a4a7206cebe7",
+  "id": "divergence_marsh_weir",
+  "location": "weir.yard",
   "outcomes": [],
   "seed": 1,
   "sheet": "marsh_scout"

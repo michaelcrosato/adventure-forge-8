@@ -13,13 +13,17 @@
     "tend_the_smoke",
     "go:smoke.yard",
     "go:smoke.loft",
-    "take_the_cure"
+    "take_the_cure",
+    "go:smoke.yard",
+    "go:smoke.path",
+    "go:weir.path",
+    "go:weir.yard",
+    "go:weir.stakes"
   ],
   "build_id": "62361f3649647e2b2daaab5109156461d6306f1caec7c7db7c54cbc52a41cab5",
-  "final_fingerprint": "054eec2bd50123907305568920617936f6086e9f3081e66e6b3ee5bfafa09a54",
-  "id": "marsh_smoke_cured",
-  "location": "smoke.loft",
-  "outcome": "smoke_cured",
+  "final_fingerprint": "36e0a4c6ead2c4e27d1f9d074a122467dc47118b3e427e9855da61389544a9a2",
+  "id": "cross_smoke_weir",
+  "location": "weir.stakes",
   "outcomes": [
     "smoke_cured"
   ],

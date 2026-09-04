@@ -84,6 +84,8 @@ def build() -> dict:
         "salt_cake": {"name": "salt cake", "kind": "goods"},
         "wet_fish": {"name": "wet fish", "kind": "goods"},
         "cured_fish": {"name": "cured fish", "kind": "goods"},
+        "weir_basket": {"name": "weir basket", "kind": "gear"},
+        "eel_catch": {"name": "eel catch", "kind": "goods"},
         **salvage_items,
     }
 
@@ -204,6 +206,7 @@ def build() -> dict:
                 {"to": "rope.path", "label": "Go to ropewalk"},
                 {"to": "pans.path", "label": "Go to salt pans"},
                 {"to": "smoke.path", "label": "Go to smokehouse"},
+                {"to": "weir.path", "label": "Go to eel weir"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -860,6 +863,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "pans.path", "label": "Go to salt pans"},
                 {"to": "smoke.yard", "label": "Go to smoke yard"},
+                {"to": "weir.path", "label": "Go to eel weir"},
             ],
             "ground": [],
             "actors": [],
@@ -910,6 +914,65 @@ def build() -> dict:
             "exits": [{"to": "smoke.yard", "label": "Go to smoke yard"}],
             "ground": [],
             "actors": ["wren"],
+        },
+        "weir.path": {
+            "region": "eel_weir",
+            "name": "Weir Path",
+            "situation": "A stake line cuts the creek. Eel slime shines on the posts.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "smoke.path", "label": "Go to smokehouse"},
+                {"to": "weir.yard", "label": "Go to weir yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "weir.yard": {
+            "region": "eel_weir",
+            "name": "Weir Yard",
+            "situation": "Wicker mouths lean on a rail. Cess waits by a run mark.",
+            "exits": [
+                {"to": "weir.path", "label": "Go to weir path"},
+                {"to": "weir.stakes", "label": "Go to the stakes"},
+                {"to": "weir.pool", "label": "Go to the eel pool"},
+                {"to": "weir.hut", "label": "Go to the weir hut"},
+            ],
+            "ground": [],
+            "actors": ["cess"],
+        },
+        "weir.stakes": {
+            "region": "eel_weir",
+            "name": "Weir Stakes",
+            "situation": "Baskets sit empty on the posts. The creek pulls past.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "smoke_cured"},
+                    "text": "A strip of cure would bait the mouths.",
+                },
+                {
+                    "when": {"has_flag": "weir_lifted"},
+                    "text": "The baskets sit empty and wet.",
+                },
+            ],
+            "exits": [{"to": "weir.yard", "label": "Go to weir yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "weir.pool": {
+            "region": "eel_weir",
+            "name": "Eel Pool",
+            "situation": "Dark water holds. Noll crouches at the lip.",
+            "exits": [{"to": "weir.yard", "label": "Go to weir yard"}],
+            "ground": [],
+            "actors": ["noll"],
+        },
+        "weir.hut": {
+            "region": "eel_weir",
+            "name": "Weir Hut",
+            "situation": "Dry baskets hang. Meg waits with a count board.",
+            "exits": [{"to": "weir.yard", "label": "Go to weir yard"}],
+            "ground": ["weir_basket"],
+            "actors": ["meg"],
         },
     }
 
@@ -1057,6 +1120,18 @@ def build() -> dict:
         "wren": {
             "name": "Wren",
             "idle": "She taps a tally stick and eyes the pegs.",
+        },
+        "cess": {
+            "name": "Cess",
+            "idle": "She mends a mouth of wicker and waits.",
+        },
+        "noll": {
+            "name": "Noll",
+            "idle": "He watches the pool and does not splash.",
+        },
+        "meg": {
+            "name": "Meg",
+            "idle": "She keeps a tally stick by the door.",
         },
     }
 
@@ -2940,6 +3015,124 @@ def build() -> dict:
             "Wren pays only when a rack comes down dry.",
             [{"op": "set_flag", "flag": "heard_smoke_rule"}],
         ),
+        action(
+            "know_the_eel_run",
+            "Know the eel run",
+            "talk",
+            {
+                "all": [
+                    {"at": "weir.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "weir_trust"},
+                ]
+            },
+            "You name the eel run. Cess lets you set and lift.",
+            [
+                {"op": "set_flag", "flag": "weir_trust"},
+                {"op": "remember", "actor": "cess", "fact": "eel_run"},
+            ],
+        ),
+        action(
+            "read_the_weir_right",
+            "Read the weir right",
+            "do",
+            {
+                "all": [
+                    {"at": "weir.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "weir_trust"},
+                ]
+            },
+            "You read the weir right. Cess lets you set and lift.",
+            [
+                {"op": "set_flag", "flag": "weir_trust"},
+                {"op": "remember", "actor": "cess", "fact": "right"},
+            ],
+        ),
+        action(
+            "bait_the_weir",
+            "Bait the weir",
+            "do",
+            {
+                "all": [
+                    {"at": "weir.stakes"},
+                    {"has_flag": "smoke_cured"},
+                    {"not_flag": "weir_baited"},
+                ]
+            },
+            "You bait the stakes. Smoke draws the run in.",
+            [
+                {"op": "set_flag", "flag": "weir_baited"},
+                {"op": "set_flag", "flag": "weir_trust"},
+                {"op": "remember", "actor": "cess", "fact": "bait"},
+            ],
+        ),
+        action(
+            "set_the_baskets",
+            "Set the baskets",
+            "do",
+            {
+                "all": [
+                    {"at": "weir.stakes"},
+                    {"has_flag": "weir_trust"},
+                    {"has_item": "weir_basket"},
+                    {"not_flag": "baskets_set"},
+                    {"not_flag": "weir_lifted"},
+                ]
+            },
+            "You set the baskets. The stakes hold the mouths.",
+            [
+                {"op": "remove_item", "item": "weir_basket"},
+                {"op": "set_flag", "flag": "baskets_set"},
+            ],
+        ),
+        action(
+            "lift_the_weir",
+            "Lift the weir",
+            "do",
+            {
+                "all": [
+                    {"at": "weir.stakes"},
+                    {"has_flag": "weir_trust"},
+                    {"has_flag": "baskets_set"},
+                    {"not_flag": "weir_lifted"},
+                ]
+            },
+            "You lift the weir. Eels twist in the wet wicker.",
+            [
+                {"op": "add_item", "item": "eel_catch"},
+                {"op": "set_flag", "flag": "weir_lifted"},
+            ],
+        ),
+        action(
+            "ask_cess_rule",
+            "Ask Cess the rule",
+            "talk",
+            {"at": "weir.yard"},
+            "Cess says set the baskets. Then lift the catch.",
+            [{"op": "set_flag", "flag": "heard_weir_rule"}],
+        ),
+        action(
+            "ask_noll_run",
+            "Ask Noll the run",
+            "talk",
+            {"at": "weir.pool"},
+            "Noll says the eels hug the posts at the turn.",
+            [{"op": "set_flag", "flag": "heard_weir_rule"}],
+        ),
+        action(
+            "ask_meg_count",
+            "Ask Meg the count",
+            "talk",
+            {"at": "weir.hut"},
+            "Meg counts only a lift that comes in wet.",
+            [{"op": "set_flag", "flag": "heard_weir_rule"}],
+        ),
     ]
 
     pack = {
@@ -2993,6 +3186,10 @@ def build() -> dict:
             "smokehouse": {
                 "name": "Smokehouse",
                 "mechanic": "hang-tend-salt-cure",
+            },
+            "eel_weir": {
+                "name": "Eel Weir",
+                "mechanic": "set-baskets-lift-catch",
             },
         },
         "locations": locations,
@@ -3048,11 +3245,15 @@ def build() -> dict:
                 "name": "Smoke Cured",
                 "when": {"has_flag": "smoke_cured"},
             },
+            "weir_lifted": {
+                "name": "Weir Lifted",
+                "when": {"has_flag": "weir_lifted"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0},
             "inventory": [],
             "flags": {},
         },

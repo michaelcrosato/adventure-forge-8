@@ -70,10 +70,15 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 | smoke.racks | smokehouse | hang fish, salt racks |
 | smoke.hearth | smokehouse | Bea, tend smoke |
 | smoke.loft | smokehouse | Wren, take down cure, smoke_cured |
+| weir.path | eel_weir | stake line, weir access |
+| weir.yard | eel_weir | Cess, eel run vs weir right |
+| weir.stakes | eel_weir | set baskets, lift, smoke bait |
+| weir.pool | eel_weir | Noll, watch the run |
+| weir.hut | eel_weir | Meg, weir basket, count |
 
 ## Outcomes
 
-`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`
+`harbor_compact`, `stack_relic`, `kiln_pact`, `reed_sentence`, `road_beacon`, `fever_broken`, `name_restored`, `fold_held`, `lens_set`, `rope_walked`, `salt_raked`, `smoke_cured`, `weir_lifted`
 
 ## Substrate
 
