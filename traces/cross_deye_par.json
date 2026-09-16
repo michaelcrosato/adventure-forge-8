@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:deye.path",
+    "go:deye.yard",
+    "know_the_rim",
+    "go:deye.rim",
+    "score_the_deadeye",
+    "go:deye.yard",
+    "go:deye.reeve",
+    "reeve_the_strop",
+    "take:reeve_pin",
+    "go:deye.yard",
+    "go:deye.lanyard",
+    "seize_the_lanyard",
+    "go:deye.yard",
+    "go:deye.path",
+    "go:par.path",
+    "go:par.yard",
+    "go:par.truck"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9c0b2cfa46fd90fb4acc31c0cf2cc0d58c629ebd68372739899e2fb00a0d0f56",
+  "id": "cross_deye_par",
+  "location": "par.truck",
+  "outcomes": [
+    "lanyard_seized"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

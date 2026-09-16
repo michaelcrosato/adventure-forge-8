@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:soap.path",
+    "go:soap.yard",
+    "know_the_lye_run",
+    "go:soap.leach",
+    "leach_the_ash",
+    "go:soap.yard",
+    "go:soap.boil",
+    "boil_the_soap",
+    "take:soda_lye",
+    "go:soap.yard",
+    "go:soap.cut",
+    "cut_the_cakes",
+    "go:soap.yard",
+    "go:soap.path",
+    "go:full.path",
+    "go:full.yard",
+    "go:full.web"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9489b9b70e97745d3f02009708fc7573760e66c9c9d792b9b5254af89c17c86a",
+  "id": "cross_soap_full",
+  "location": "full.web",
+  "outcomes": [
+    "soap_cut"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

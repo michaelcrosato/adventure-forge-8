@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:horn.path",
+    "go:horn.yard",
+    "go:horn.scrape"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "511e03668ad7e54c8fecdaad02634976db0a94ea1c220b2e96241e24b793400c",
+  "id": "cross_plain_horn",
+  "location": "horn.scrape",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

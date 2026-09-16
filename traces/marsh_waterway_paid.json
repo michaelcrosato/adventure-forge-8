@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wtr.path",
+    "go:wtr.yard",
+    "know_the_snipe",
+    "go:wtr.snipe",
+    "snipe_the_waterway",
+    "go:wtr.yard",
+    "go:wtr.margin",
+    "dowel_the_margin",
+    "take:margin_dowel",
+    "go:wtr.yard",
+    "go:wtr.pay",
+    "pay_the_waterway"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "299724e9a0cde6c8d4088431d180e904652328bc66526d3812c42fc2788ea20c",
+  "id": "marsh_waterway_paid",
+  "location": "wtr.pay",
+  "outcome": "waterway_paid",
+  "outcomes": [
+    "waterway_paid"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:buoy.path",
+    "go:buoy.yard",
+    "know_the_shoal_line",
+    "go:buoy.cage",
+    "stuff_the_cage",
+    "go:buoy.yard",
+    "go:buoy.spar",
+    "lash_the_spar",
+    "take:buoy_cork",
+    "go:buoy.yard",
+    "go:buoy.drop",
+    "drop_the_buoy",
+    "go:buoy.yard",
+    "go:buoy.path",
+    "go:kelp.path",
+    "go:kelp.yard",
+    "go:kelp.bank"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "03f80e0b78ec49cdf67c3f54f86c4838c846d64d0d6a131457413fd76b4021a3",
+  "id": "cross_buoy_kelp",
+  "location": "kelp.bank",
+  "outcomes": [
+    "buoy_set"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

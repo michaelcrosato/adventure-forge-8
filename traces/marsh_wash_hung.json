@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wash.path",
+    "go:wash.yard",
+    "know_the_wash_run",
+    "go:wash.pan",
+    "soak_the_cloth",
+    "go:wash.yard",
+    "go:wash.beetle",
+    "beat_the_wash",
+    "take:wash_cloth",
+    "go:wash.yard",
+    "go:wash.line",
+    "hang_the_line"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "5779f3b9d804c594818048143c29deda3b10dfab9917e8dff5b170dd0503280c",
+  "id": "marsh_wash_hung",
+  "location": "wash.line",
+  "outcome": "wash_hung",
+  "outcomes": [
+    "wash_hung"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

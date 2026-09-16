@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cobble.path",
+    "go:cobble.yard",
+    "know_the_last",
+    "go:cobble.sole",
+    "last_the_sole",
+    "go:cobble.yard",
+    "go:cobble.awl",
+    "awl_the_upper",
+    "take:sole_peg",
+    "go:cobble.yard",
+    "go:cobble.heel",
+    "peg_the_heel",
+    "go:cobble.yard",
+    "go:cobble.path",
+    "go:cider.path",
+    "go:cider.yard",
+    "go:cider.fruit"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a1abcf1979bffab501bcf16cab8f10d4f220fe6b0f9b9374c9061aea6c0b4766",
+  "id": "cross_cobble_cider",
+  "location": "cider.fruit",
+  "outcomes": [
+    "heel_pegged"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

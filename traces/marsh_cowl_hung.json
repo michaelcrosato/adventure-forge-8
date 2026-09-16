@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:flue.path",
+    "go:flue.yard",
+    "know_the_parge",
+    "go:flue.parge",
+    "parge_the_flue",
+    "go:flue.yard",
+    "go:flue.throat",
+    "wad_the_throat",
+    "take:throat_wad",
+    "go:flue.yard",
+    "go:flue.cowl",
+    "hang_the_cowl"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "bfbf38bd3c98e2f08f01b247c11a4b06e18f826a67a433071063194d28af26ea",
+  "id": "marsh_cowl_hung",
+  "location": "flue.cowl",
+  "outcome": "cowl_hung",
+  "outcomes": [
+    "cowl_hung"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

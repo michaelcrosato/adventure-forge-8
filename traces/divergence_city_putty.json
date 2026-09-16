@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:putty.path",
+    "go:putty.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "3b19a61c12ff1d5c89f1b293c8fe2abc706708d9f2c8a620971491e5264b6b70",
+  "id": "divergence_city_putty",
+  "location": "putty.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

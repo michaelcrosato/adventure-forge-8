@@ -19,8 +19,8 @@
     "go:mead.yard",
     "go:mead.mash"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "9a32efb0a79b5c525ae23364b7868aba2306a9893b2df1035701478cd80e5ddc",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a91b8b0433bca77278c0b9229e397ab46e5bde11dedd570d8c153721355e4af1",
   "id": "cross_hive_mead",
   "location": "mead.mash",
   "outcomes": [

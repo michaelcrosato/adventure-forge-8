@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:trs.path",
+    "go:trs.yard",
+    "know_the_trestle",
+    "go:trs.trestle",
+    "score_the_trestle",
+    "go:trs.yard",
+    "go:trs.rest",
+    "tenon_the_rest",
+    "take:rest_tenon",
+    "go:trs.yard",
+    "go:trs.bib",
+    "seize_the_bib"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "f01ab4201e27468dd3617d4ab03640d4ec12778872bd2ea721aaf035a5af01ee",
+  "id": "marsh_bib_seized",
+  "location": "trs.bib",
+  "outcome": "bib_seized",
+  "outcomes": [
+    "bib_seized"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

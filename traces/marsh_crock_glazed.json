@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:crock.path",
+    "go:crock.yard",
+    "know_the_throw",
+    "go:crock.throw",
+    "throw_the_clay",
+    "go:crock.yard",
+    "go:crock.biscuit",
+    "fire_the_biscuit",
+    "take:biscuit_ware",
+    "go:crock.yard",
+    "go:crock.glaze",
+    "glaze_the_crock"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "226f6d325cf2d2c179c887f06c1e8832da9d206a95de8c8e408c1b890a0460c7",
+  "id": "marsh_crock_glazed",
+  "location": "crock.glaze",
+  "outcome": "crock_glazed",
+  "outcomes": [
+    "crock_glazed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

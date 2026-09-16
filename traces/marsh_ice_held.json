@@ -14,8 +14,8 @@
     "go:ice.door",
     "bar_the_door"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "213f4f9c500d7bf2e9d88bf6567a08230727080a1243fc29abc09c2271b0c7f8",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "5b6160a20fe0c330e9b1ce09b4c6efdf37a05a1a1d83f3b6dc3d4c29aab9c039",
   "id": "marsh_ice_held",
   "location": "ice.door",
   "outcome": "ice_held",

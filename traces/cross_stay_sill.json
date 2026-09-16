@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:stay.path",
+    "go:stay.yard",
+    "know_the_slot",
+    "go:stay.slot",
+    "slot_the_bar",
+    "go:stay.yard",
+    "go:stay.arm",
+    "rivet_the_arm",
+    "take:stay_peg",
+    "go:stay.yard",
+    "go:stay.eye",
+    "peg_the_stay",
+    "go:stay.yard",
+    "go:stay.path",
+    "go:sill.path",
+    "go:sill.yard",
+    "go:sill.bed"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "c2671865ac60eba4bd818c065ac5479c415851590c4a36340074bab3d1a50964",
+  "id": "cross_stay_sill",
+  "location": "sill.bed",
+  "outcomes": [
+    "casement_stayed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

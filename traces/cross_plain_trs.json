@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:trs.path",
+    "go:trs.yard",
+    "go:trs.trestle"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "bec2a741d182433fc164482a25943e9c3a1885b4079a049a8ef0227c4c29ae6d",
+  "id": "cross_plain_trs",
+  "location": "trs.trestle",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

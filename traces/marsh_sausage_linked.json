@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:link.path",
+    "go:link.yard",
+    "know_the_chop",
+    "go:link.chop",
+    "chop_the_forcemeat",
+    "go:link.yard",
+    "go:link.funnel",
+    "fill_the_skin",
+    "take:gut_skin",
+    "go:link.yard",
+    "go:link.tie",
+    "tie_the_links"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2c0c8eb31ca86e877757d9504017304c8f97b43c6ea612e80ca5bf0615635cb0",
+  "id": "marsh_sausage_linked",
+  "location": "link.tie",
+  "outcome": "sausage_linked",
+  "outcomes": [
+    "sausage_linked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:trun.path",
+    "go:trun.yard",
+    "know_the_billet",
+    "go:trun.billet",
+    "shave_the_billet",
+    "go:trun.yard",
+    "go:trun.auger",
+    "auger_the_hole",
+    "take:auger_bit",
+    "go:trun.yard",
+    "go:trun.maul",
+    "drive_the_trunnel",
+    "go:trun.yard",
+    "go:trun.path",
+    "go:dead.path",
+    "go:dead.yard",
+    "go:dead.dub"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "8a69c8d9fbccab7031d1483db4e8b8a47173953e7f76cecdc5c0cf1b874c9a18",
+  "id": "cross_trun_dead",
+  "location": "dead.dub",
+  "outcomes": [
+    "trunnel_driven"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

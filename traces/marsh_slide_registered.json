@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:grate.path",
+    "go:grate.yard",
+    "know_the_swage",
+    "go:grate.swage",
+    "swage_the_bar",
+    "go:grate.yard",
+    "go:grate.basket",
+    "rivet_the_basket",
+    "take:basket_rivet",
+    "go:grate.yard",
+    "go:grate.slide",
+    "register_the_slide"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "ed2a26e3d0572ecc04ffa51ea930aba670deb514480516eb3b9e91ee72a11d72",
+  "id": "marsh_slide_registered",
+  "location": "grate.slide",
+  "outcome": "slide_registered",
+  "outcomes": [
+    "slide_registered"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

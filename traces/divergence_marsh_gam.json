@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:gam.path",
+    "go:gam.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "94a0791c7428b770e332ffdbed09498602b7f3f5793c286fdbf7c1c317ff2a07",
+  "id": "divergence_marsh_gam",
+  "location": "gam.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -5,8 +5,8 @@
     "go:pickle.path",
     "go:pickle.yard"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "e6dbd3032c55a649c37961df484aaf3508d3c0911cad06ba73cc1970eeb5af51",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "56d50f6b221f908024c39d69ba4161776515ba8e06af94c4c4654957f98c0d97",
   "id": "divergence_city_pickle",
   "location": "pickle.yard",
   "outcomes": [],

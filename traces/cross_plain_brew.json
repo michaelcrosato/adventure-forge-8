@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:brew.path",
+    "go:brew.yard",
+    "go:brew.grist"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a0a3db31f88b7fbe8a2daf6c83050b3dc1aaffa212c920e15f8cbacd4284334f",
+  "id": "cross_plain_brew",
+  "location": "brew.grist",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

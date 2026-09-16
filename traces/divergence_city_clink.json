@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:clink.path",
+    "go:clink.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "6749bfc2f7f94384215d4e1b7e102b5c65afcd2cb1857466bfeb15da2edfe57f",
+  "id": "divergence_city_clink",
+  "location": "clink.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

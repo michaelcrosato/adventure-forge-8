@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:paint.path",
+    "go:paint.yard",
+    "know_the_mull",
+    "go:paint.mull",
+    "mull_the_colour",
+    "go:paint.yard",
+    "go:paint.oil",
+    "mix_the_oil",
+    "take:paint_brush",
+    "go:paint.yard",
+    "go:paint.brush",
+    "brush_the_coat",
+    "go:paint.yard",
+    "go:paint.path",
+    "go:varn.path",
+    "go:varn.yard",
+    "go:varn.cook"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "3eae9db60f9eb237585d55288a8f924fee8de17d8a866f449e275d593a1dd486",
+  "id": "cross_paint_varn",
+  "location": "varn.cook",
+  "outcomes": [
+    "coat_brushed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

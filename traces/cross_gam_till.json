@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:gam.path",
+    "go:gam.yard",
+    "know_the_woold",
+    "go:gam.woold",
+    "woold_the_bowsprit",
+    "go:gam.yard",
+    "go:gam.riding",
+    "ride_the_turns",
+    "take:riding_yarn",
+    "go:gam.yard",
+    "go:gam.frap",
+    "frap_the_gammon",
+    "go:gam.yard",
+    "go:gam.path",
+    "go:till.path",
+    "go:till.yard",
+    "go:till.shape"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9c57ebff780414cc636bbbf18c322cc0bf98fba987ef49378e442b443fe6c31d",
+  "id": "cross_gam_till",
+  "location": "till.shape",
+  "outcomes": [
+    "gammon_frapped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

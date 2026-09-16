@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:tread.path",
+    "go:tread.yard",
+    "know_the_going",
+    "go:tread.going",
+    "mark_the_going",
+    "go:tread.yard",
+    "go:tread.nosing",
+    "nosing_the_edge",
+    "take:nosing_iron",
+    "go:tread.yard",
+    "go:tread.end",
+    "return_the_end",
+    "go:tread.yard",
+    "go:tread.path",
+    "go:floor.path",
+    "go:floor.yard",
+    "go:floor.shot"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a3188ba231ac9ea81e0a4ea6909b00348230f4942b7c0166069d47fbd275468a",
+  "id": "cross_tread_floor",
+  "location": "floor.shot",
+  "outcomes": [
+    "end_returned"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

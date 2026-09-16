@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dairy.path",
+    "go:dairy.yard",
+    "know_the_rennet",
+    "go:dairy.keel",
+    "set_the_curd",
+    "go:dairy.yard",
+    "go:dairy.curd",
+    "wrap_the_curd",
+    "take:curd_wrap",
+    "go:dairy.yard",
+    "go:dairy.shelf",
+    "salt_the_wheel",
+    "go:dairy.yard",
+    "go:dairy.path",
+    "go:loom.path",
+    "go:loom.yard",
+    "go:loom.beam"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "70398291a5358cbf600649cc61d59dcb22bbf5034ba9f9454349bd5a6502f453",
+  "id": "cross_dairy_loom",
+  "location": "loom.beam",
+  "outcomes": [
+    "wheel_salted"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:rag.path",
+    "go:rag.yard",
+    "know_the_rag_run",
+    "go:rag.stamp",
+    "stamp_the_rag",
+    "go:rag.yard",
+    "go:rag.deckle",
+    "couch_the_sheet",
+    "take:wet_sheet",
+    "go:rag.yard",
+    "go:rag.post",
+    "pack_the_post",
+    "go:rag.yard",
+    "go:rag.path",
+    "go:osier.path",
+    "go:osier.yard",
+    "go:osier.holt"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "339260c636335302fd952c53c660b06bca90014bd6269fcda959c69a8a2d56de",
+  "id": "cross_rag_osier",
+  "location": "osier.holt",
+  "outcomes": [
+    "paper_laid"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:fid.path",
+    "go:fid.yard",
+    "know_the_turn",
+    "go:fid.turn",
+    "turn_the_fid",
+    "go:fid.yard",
+    "go:fid.ream",
+    "ream_the_eye",
+    "take:ream_bit",
+    "go:fid.yard",
+    "go:fid.splice",
+    "seize_the_eye"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2e4fc629497833adc1ac9f9d5282d4dfeeb4775a51d0356b9ae0d69e1b35540b",
+  "id": "marsh_eye_seized",
+  "location": "fid.splice",
+  "outcome": "eye_seized",
+  "outcomes": [
+    "eye_seized"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

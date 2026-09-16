@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:lime.path",
+    "go:lime.yard",
+    "know_the_shell_burn",
+    "go:lime.shell",
+    "break_the_shell",
+    "go:lime.yard",
+    "go:lime.charge",
+    "charge_the_lime",
+    "take:lime_shell",
+    "go:lime.yard",
+    "go:lime.slake",
+    "slake_the_lime",
+    "go:lime.yard",
+    "go:lime.path",
+    "go:mason.path",
+    "go:mason.yard",
+    "go:mason.mix"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "8515ff2325329f835ffd91744f581abdb964a4e580d8ee4d0a5b4730b6731448",
+  "id": "cross_lime_mason",
+  "location": "mason.mix",
+  "outcomes": [
+    "lime_slaked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

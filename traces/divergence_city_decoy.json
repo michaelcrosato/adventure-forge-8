@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:decoy.path",
+    "go:decoy.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "4fd31309bc9f75acb8c4a0bc8abbe57f2bfc19be66de4d7426a9641a0fe235f2",
+  "id": "divergence_city_decoy",
+  "location": "decoy.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:forge.path",
+    "go:forge.yard",
+    "know_the_bog_iron",
+    "go:forge.bellows",
+    "bank_the_bellows",
+    "go:forge.yard",
+    "go:forge.anvil",
+    "hammer_the_bloom",
+    "take:bloom_iron",
+    "go:forge.yard",
+    "go:forge.trough",
+    "quench_the_iron"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a72c04c27e3aeb6dc227dac202bc35b9a274dafe0a117f96899c7450d0250d07",
+  "id": "marsh_iron_quenched",
+  "location": "forge.trough",
+  "outcome": "iron_quenched",
+  "outcomes": [
+    "iron_quenched"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

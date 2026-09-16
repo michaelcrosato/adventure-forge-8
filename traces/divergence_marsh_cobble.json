@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cobble.path",
+    "go:cobble.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "5cba27a1b87a6aa3f31d6a1ade6c950c828441ed6abf3de7975c83bd6a7a228b",
+  "id": "divergence_marsh_cobble",
+  "location": "cobble.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

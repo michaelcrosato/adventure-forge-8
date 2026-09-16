@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:kni.path",
+    "go:kni.yard",
+    "know_the_knight",
+    "go:kni.knight",
+    "score_the_knight",
+    "go:kni.yard",
+    "go:kni.box",
+    "box_the_bit",
+    "take:bit_box",
+    "go:kni.yard",
+    "go:kni.lash",
+    "lash_the_knight"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9072a6b757a514b31707ce5d5caee70e24383002e90e4d4760892ba3d13285c3",
+  "id": "marsh_knight_lashed",
+  "location": "kni.lash",
+  "outcome": "knight_lashed",
+  "outcomes": [
+    "knight_lashed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

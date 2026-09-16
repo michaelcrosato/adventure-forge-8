@@ -14,8 +14,8 @@
     "go:coop.raise",
     "raise_the_barrel"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "0fe203df63167d48a0db5ca1d4f690ab1f02c722c6298a72cbd1d27190b11eee",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "28ff9d872d7f2c187d62cbfc946fdcb831003a399758e3d4d4ee9b10c37bd79e",
   "id": "marsh_barrel_raised",
   "location": "coop.raise",
   "outcome": "barrel_raised",

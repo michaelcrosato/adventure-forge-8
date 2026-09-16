@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:boom.path",
+    "go:boom.yard",
+    "go:boom.steeve"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "15dcfb9bb140da1328f9667f66e029e19f1bf0b6361bee751454392a03d1cbca",
+  "id": "cross_plain_boom",
+  "location": "boom.steeve",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

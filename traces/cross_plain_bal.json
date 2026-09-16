@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:bal.path",
+    "go:bal.yard",
+    "go:bal.square"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "e658ccf6693d36352dc82cea3a902912072f0ea48912537d661cea1057ef1247",
+  "id": "cross_plain_bal",
+  "location": "bal.square",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

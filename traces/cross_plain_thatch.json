@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:thatch.path",
+    "go:thatch.yard",
+    "go:thatch.ridge"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2880b909c92ed08eb7be4ec27cf6835a0c70c1231aa6f7c95a5d1799754825cc",
+  "id": "cross_plain_thatch",
+  "location": "thatch.ridge",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

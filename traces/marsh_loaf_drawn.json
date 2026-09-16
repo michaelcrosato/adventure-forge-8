@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:bake.path",
+    "go:bake.yard",
+    "know_the_sponge",
+    "go:bake.sponge",
+    "set_the_leaven",
+    "go:bake.yard",
+    "go:bake.oven",
+    "heat_the_oven",
+    "take:dough_loaf",
+    "go:bake.yard",
+    "go:bake.hatch",
+    "draw_the_batch"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "6385f061615d1abc2021b93537540ae7bf7910938ec6ef15a8ed9349ff64ff93",
+  "id": "marsh_loaf_drawn",
+  "location": "bake.hatch",
+  "outcome": "loaf_drawn",
+  "outcomes": [
+    "loaf_drawn"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

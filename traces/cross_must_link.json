@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:must.path",
+    "go:must.yard",
+    "know_the_seed",
+    "go:must.quern",
+    "mill_the_seed",
+    "go:must.yard",
+    "go:must.paste",
+    "wet_the_paste",
+    "take:paste_pot",
+    "go:must.yard",
+    "go:must.pot",
+    "pot_the_mustard",
+    "go:must.yard",
+    "go:must.path",
+    "go:link.path",
+    "go:link.yard",
+    "go:link.chop"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "4f11ac8ba223cccd8264fb1e5352e6daf55e4db3b2b0054ef23ebd89ace539d8",
+  "id": "cross_must_link",
+  "location": "link.chop",
+  "outcomes": [
+    "mustard_potted"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

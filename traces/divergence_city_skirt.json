@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:skirt.path",
+    "go:skirt.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "f3649e6e97acd744b0f454ef11afe1f0418115f132d74c12b82fccb61335eb9a",
+  "id": "divergence_city_skirt",
+  "location": "skirt.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

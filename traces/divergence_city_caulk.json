@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:caulk.path",
+    "go:caulk.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "c7835b73d3b0c73109efa32d421908d3595ad1f9d8ba5bfe7a5f118c9af64dd2",
+  "id": "divergence_city_caulk",
+  "location": "caulk.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

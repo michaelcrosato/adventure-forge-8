@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:boom.path",
+    "go:boom.yard",
+    "know_the_steeve",
+    "go:boom.steeve",
+    "steeve_the_boomkin",
+    "go:boom.yard",
+    "go:boom.bee",
+    "bee_the_iron",
+    "take:iron_bee",
+    "go:boom.yard",
+    "go:boom.guy",
+    "seize_the_guy",
+    "go:boom.yard",
+    "go:boom.path",
+    "go:chan.path",
+    "go:chan.yard",
+    "go:chan.face"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "7c7ba4f293f217f9de100252d926d4696d40502abba5c3151ff001cbc7ce2c2a",
+  "id": "cross_boom_chan",
+  "location": "chan.face",
+  "outcomes": [
+    "guy_seized"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

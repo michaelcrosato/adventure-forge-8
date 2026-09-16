@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:tran.path",
+    "go:tran.yard",
+    "know_the_wing",
+    "go:tran.wing",
+    "scribe_the_wing",
+    "go:tran.yard",
+    "go:tran.fashion",
+    "fit_the_fashion",
+    "take:fashion_iron",
+    "go:tran.yard",
+    "go:tran.stern",
+    "spike_the_stern"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "c4b3d243fca067d26fe1da10bcad5d5900c686c6e633260aa11eb255245744e9",
+  "id": "marsh_stern_spiked",
+  "location": "tran.stern",
+  "outcome": "stern_spiked",
+  "outcomes": [
+    "stern_spiked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

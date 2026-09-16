@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cros.path",
+    "go:cros.yard"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "81d105ad7d8d3884255dc9f9f092e3dea8f9222fdf4dcb511b77819673e5065b",
+  "id": "divergence_city_cros",
+  "location": "cros.yard",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "city_oath"
+}

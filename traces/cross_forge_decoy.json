@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:forge.path",
+    "go:forge.yard",
+    "know_the_bog_iron",
+    "go:forge.bellows",
+    "bank_the_bellows",
+    "go:forge.yard",
+    "go:forge.anvil",
+    "hammer_the_bloom",
+    "take:bloom_iron",
+    "go:forge.yard",
+    "go:forge.trough",
+    "quench_the_iron",
+    "go:forge.yard",
+    "go:forge.path",
+    "go:decoy.path",
+    "go:decoy.yard",
+    "go:decoy.tunnel"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "85ff530b4413d17c1e780f37cdfe15617070926401de115d5dbdd3b538fab3c9",
+  "id": "cross_forge_decoy",
+  "location": "decoy.tunnel",
+  "outcomes": [
+    "iron_quenched"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

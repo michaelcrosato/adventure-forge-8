@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:soap.path",
+    "go:soap.yard",
+    "go:soap.leach"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "75ee2c51a0447514858055d3dc63d392a4bf12ee84c0e329114ccdf4489c297a",
+  "id": "cross_plain_soap",
+  "location": "soap.leach",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

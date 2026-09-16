@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:skirt.path",
+    "go:skirt.yard",
+    "go:skirt.cope"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "8d9daa8bbf2525a1bf47c6d0b5d9b0f8007e31f55cfc7f148604b82908a9db86",
+  "id": "cross_plain_skirt",
+  "location": "skirt.cope",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

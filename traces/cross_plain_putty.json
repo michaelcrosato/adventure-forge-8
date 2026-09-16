@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:putty.path",
+    "go:putty.yard",
+    "go:putty.whip"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "22cb1e8c182ab43559fcc421055dc00a18507eb268f254c071d399b9da02679e",
+  "id": "cross_plain_putty",
+  "location": "putty.whip",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

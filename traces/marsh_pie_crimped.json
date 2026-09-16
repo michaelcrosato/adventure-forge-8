@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:pie.path",
+    "go:pie.yard",
+    "know_the_crust",
+    "go:pie.crust",
+    "roll_the_crust",
+    "go:pie.yard",
+    "go:pie.dish",
+    "fill_the_pie",
+    "take:pie_lid",
+    "go:pie.yard",
+    "go:pie.crimp",
+    "crimp_the_lid"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "d0eb0b60ef3764b1128ffebef04bfe3d18c20afb16a118f7f2c82ac6a76e6d33",
+  "id": "marsh_pie_crimped",
+  "location": "pie.crimp",
+  "outcome": "pie_crimped",
+  "outcomes": [
+    "pie_crimped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

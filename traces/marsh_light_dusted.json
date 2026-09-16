@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:putty.path",
+    "go:putty.yard",
+    "know_the_whip",
+    "go:putty.whip",
+    "whip_the_putty",
+    "go:putty.yard",
+    "go:putty.knife",
+    "knife_the_bed",
+    "take:putty_knife",
+    "go:putty.yard",
+    "go:putty.dust",
+    "dust_the_light"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "e5f6cdc02c14033f9879c6ea549a18c1a869e501e84bcf6f2095b2101d70cf07",
+  "id": "marsh_light_dusted",
+  "location": "putty.dust",
+  "outcome": "light_dusted",
+  "outcomes": [
+    "light_dusted"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:binn.path",
+    "go:binn.yard",
+    "know_the_hood",
+    "go:binn.hood",
+    "true_the_hood",
+    "go:binn.yard",
+    "go:binn.lamp",
+    "fill_the_lamp",
+    "take:lamp_oil",
+    "go:binn.yard",
+    "go:binn.card",
+    "lock_the_card",
+    "go:binn.yard",
+    "go:binn.path",
+    "go:futt.path",
+    "go:futt.yard",
+    "go:futt.cant"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "34ff53a9c6d6c1cba0758cfde5fee9ffd68dd6fba815a5cc7d23955d9afb7a0d",
+  "id": "cross_binn_futt",
+  "location": "futt.cant",
+  "outcomes": [
+    "card_locked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

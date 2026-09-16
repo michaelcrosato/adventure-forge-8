@@ -99,6 +99,126 @@ def build() -> dict:
         "cask_bung": {"name": "cask bung", "kind": "goods"},
         "stave_set": {"name": "stave set", "kind": "goods"},
         "brine_jar": {"name": "brine jar", "kind": "goods"},
+        "bloom_iron": {"name": "bloom iron", "kind": "goods"},
+        "pipe_net": {"name": "pipe net", "kind": "gear"},
+        "rush_pith": {"name": "rush pith", "kind": "goods"},
+        "oakum_wad": {"name": "oakum wad", "kind": "goods"},
+        "mesh_needle": {"name": "mesh needle", "kind": "gear"},
+        "sail_needle": {"name": "sail needle", "kind": "gear"},
+        "lead_sink": {"name": "lead sink", "kind": "gear"},
+        "chart_quill": {"name": "chart quill", "kind": "key"},
+        "buoy_cork": {"name": "buoy cork", "kind": "goods"},
+        "wrack_frond": {"name": "wrack frond", "kind": "goods"},
+        "soda_lye": {"name": "soda lye", "kind": "goods"},
+        "full_web": {"name": "full web", "kind": "goods"},
+        "coal_lump": {"name": "coal lump", "kind": "goods"},
+        "lime_shell": {"name": "lime shell", "kind": "goods"},
+        "mortar_hod": {"name": "mortar hod", "kind": "goods"},
+        "thatch_yealm": {"name": "thatch yealm", "kind": "goods"},
+        "catch_pail": {"name": "catch pail", "kind": "goods"},
+        "wash_cloth": {"name": "wash cloth", "kind": "goods"},
+        "wet_sheet": {"name": "wet sheet", "kind": "goods"},
+        "withy_rod": {"name": "withy rod", "kind": "goods"},
+        "dough_loaf": {"name": "dough loaf", "kind": "goods"},
+        "curd_wrap": {"name": "curd wrap", "kind": "goods"},
+        "shuttle_bob": {"name": "shuttle bob", "kind": "goods"},
+        "horn_pane": {"name": "horn pane", "kind": "goods"},
+        "ink_nib": {"name": "ink nib", "kind": "goods"},
+        "sole_peg": {"name": "sole peg", "kind": "goods"},
+        "pomace_wrap": {"name": "pomace wrap", "kind": "goods"},
+        "paste_pot": {"name": "paste pot", "kind": "goods"},
+        "gut_skin": {"name": "gut skin", "kind": "goods"},
+        "pie_lid": {"name": "pie lid", "kind": "goods"},
+        "jam_jar": {"name": "jam jar", "kind": "goods"},
+        "biscuit_ware": {"name": "biscuit ware", "kind": "goods"},
+        "oak_bark": {"name": "oak bark", "kind": "goods"},
+        "flax_tow": {"name": "flax tow", "kind": "goods"},
+        "nail_blank": {"name": "nail blank", "kind": "goods"},
+        "felloe_strake": {"name": "felloe strake", "kind": "goods"},
+        "green_malt": {"name": "green malt", "kind": "goods"},
+        "hop_cone": {"name": "hop cone", "kind": "goods"},
+        "cruet_cork": {"name": "cruet cork", "kind": "goods"},
+        "size_cake": {"name": "size cake", "kind": "goods"},
+        "millboard": {"name": "millboard", "kind": "goods"},
+        "gold_leaf": {"name": "gold leaf", "kind": "goods"},
+        "cabochon": {"name": "cabochon", "kind": "goods"},
+        "came_strip": {"name": "came strip", "kind": "goods"},
+        "sash_peg": {"name": "sash peg", "kind": "goods"},
+        "putty_knife": {"name": "putty knife", "kind": "goods"},
+        "paint_brush": {"name": "paint brush", "kind": "goods"},
+        "gum_cloth": {"name": "gum cloth", "kind": "goods"},
+        "latch_file": {"name": "latch file", "kind": "goods"},
+        "pintle_pin": {"name": "pintle pin", "kind": "goods"},
+        "stay_peg": {"name": "stay peg", "kind": "goods"},
+        "drip_iron": {"name": "drip iron", "kind": "goods"},
+        "return_sprig": {"name": "return sprig", "kind": "goods"},
+        "plinth_block": {"name": "plinth block", "kind": "goods"},
+        "rail_cap": {"name": "rail cap", "kind": "goods"},
+        "wall_plug": {"name": "wall plug", "kind": "goods"},
+        "scratch_key": {"name": "scratch key", "kind": "goods"},
+        "riser_wedge": {"name": "riser wedge", "kind": "goods"},
+        "finial_dowel": {"name": "finial dowel", "kind": "goods"},
+        "wreath_block": {"name": "wreath block", "kind": "goods"},
+        "flute_iron": {"name": "flute iron", "kind": "goods"},
+        "nosing_iron": {"name": "nosing iron", "kind": "goods"},
+        "groove_iron": {"name": "groove iron", "kind": "goods"},
+        "notch_saw": {"name": "notch saw", "kind": "goods"},
+        "hair_lime": {"name": "hair lime", "kind": "goods"},
+        "hob_plate": {"name": "hob plate", "kind": "goods"},
+        "corbel_pin": {"name": "corbel pin", "kind": "goods"},
+        "throat_wad": {"name": "throat wad", "kind": "goods"},
+        "pour_flask": {"name": "pour flask", "kind": "goods"},
+        "basket_rivet": {"name": "basket rivet", "kind": "goods"},
+        "strike_box": {"name": "strike box", "kind": "goods"},
+        "pallet_board": {"name": "pallet board", "kind": "goods"},
+        "punch_pin": {"name": "punch pin", "kind": "goods"},
+        "welt_boss": {"name": "welt boss", "kind": "goods"},
+        "sheave_score": {"name": "sheave score", "kind": "goods"},
+        "blade_spoon": {"name": "blade spoon", "kind": "goods"},
+        "poppet_wedge": {"name": "poppet wedge", "kind": "goods"},
+        "land_rove": {"name": "land rove", "kind": "goods"},
+        "pawl_tooth": {"name": "pawl tooth", "kind": "goods"},
+        "spile_staff": {"name": "spile staff", "kind": "goods"},
+        "auger_bit": {"name": "auger bit", "kind": "goods"},
+        "rabbet_iron": {"name": "rabbet iron", "kind": "goods"},
+        "range_mark": {"name": "range mark", "kind": "goods"},
+        "gripe_iron": {"name": "gripe iron", "kind": "goods"},
+        "ream_bit": {"name": "ream bit", "kind": "goods"},
+        "horn_gouge": {"name": "horn gouge", "kind": "goods"},
+        "pipe_lip": {"name": "pipe lip", "kind": "goods"},
+        "reeve_pin": {"name": "reeve pin", "kind": "goods"},
+        "rib_cord": {"name": "rib cord", "kind": "goods"},
+        "thwart_bolt": {"name": "thwart bolt", "kind": "goods"},
+        "riding_yarn": {"name": "riding yarn", "kind": "goods"},
+        "helm_iron": {"name": "helm iron", "kind": "goods"},
+        "roller_bush": {"name": "roller bush", "kind": "goods"},
+        "fashion_iron": {"name": "fashion iron", "kind": "goods"},
+        "drain_lead": {"name": "drain lead", "kind": "goods"},
+        "lamp_oil": {"name": "lamp oil", "kind": "goods"},
+        "butt_scarph": {"name": "butt scarph", "kind": "goods"},
+        "hounds_spread": {"name": "hounds spread", "kind": "goods"},
+        "margin_dowel": {"name": "margin dowel", "kind": "goods"},
+        "end_lodge": {"name": "end lodge", "kind": "goods"},
+        "rail_hance": {"name": "rail hance", "kind": "goods"},
+        "crane_band": {"name": "crane band", "kind": "goods"},
+        "iron_bee": {"name": "iron bee", "kind": "goods"},
+        "plate_iron": {"name": "plate iron", "kind": "goods"},
+        "jaw_mortise": {"name": "jaw mortise", "kind": "goods"},
+        "bit_box": {"name": "bit box", "kind": "goods"},
+        "ledge_lodge": {"name": "ledge lodge", "kind": "goods"},
+        "gate_mortise": {"name": "gate mortise", "kind": "goods"},
+        "plank_plane": {"name": "plank plane", "kind": "goods"},
+        "strake_plane": {"name": "strake plane", "kind": "goods"},
+        "rest_tenon": {"name": "rest tenon", "kind": "goods"},
+        "palm_bolt": {"name": "palm bolt", "kind": "goods"},
+        "chock_bolt": {"name": "chock bolt", "kind": "goods"},
+        "siding_iron": {"name": "siding iron", "kind": "goods"},
+        "filling_iron": {"name": "filling iron", "kind": "goods"},
+        "stopwater_iron": {"name": "stopwater iron", "kind": "goods"},
+        "counter_iron": {"name": "counter iron", "kind": "goods"},
+        "inner_iron": {"name": "inner iron", "kind": "goods"},
+        "prop_iron": {"name": "prop iron", "kind": "goods"},
+        "king_iron": {"name": "king iron", "kind": "goods"},
         **salvage_items,
     }
 
@@ -231,6 +351,126 @@ def build() -> dict:
                 {"to": "mead.path", "label": "Go to mead house"},
                 {"to": "coop.path", "label": "Go to cooperage"},
                 {"to": "pickle.path", "label": "Go to pickle house"},
+                {"to": "forge.path", "label": "Go to tide forge"},
+                {"to": "decoy.path", "label": "Go to decoy pond"},
+                {"to": "rush.path", "label": "Go to rushlight house"},
+                {"to": "caulk.path", "label": "Go to the caulkers"},
+                {"to": "net.path", "label": "Go to net loft"},
+                {"to": "sail.path", "label": "Go to sail loft"},
+                {"to": "lead.path", "label": "Go to the sounding"},
+                {"to": "chart.path", "label": "Go to chart house"},
+                {"to": "buoy.path", "label": "Go to the buoys"},
+                {"to": "kelp.path", "label": "Go to the kelp"},
+                {"to": "soap.path", "label": "Go to the soap"},
+                {"to": "full.path", "label": "Go to the fulling"},
+                {"to": "char.path", "label": "Go to the coppice"},
+                {"to": "lime.path", "label": "Go to the lime"},
+                {"to": "mason.path", "label": "Go to the masons"},
+                {"to": "thatch.path", "label": "Go to the thatch"},
+                {"to": "cistern.path", "label": "Go to the cistern"},
+                {"to": "wash.path", "label": "Go to the wash"},
+                {"to": "rag.path", "label": "Go to the rag mill"},
+                {"to": "osier.path", "label": "Go to the osiers"},
+                {"to": "bake.path", "label": "Go to the bakehouse"},
+                {"to": "dairy.path", "label": "Go to the dairy"},
+                {"to": "loom.path", "label": "Go to the loom"},
+                {"to": "horn.path", "label": "Go to the lanterns"},
+                {"to": "gall.path", "label": "Go to the galls"},
+                {"to": "cobble.path", "label": "Go to the cobblers"},
+                {"to": "cider.path", "label": "Go to the cider"},
+                {"to": "must.path", "label": "Go to the mustard"},
+                {"to": "link.path", "label": "Go to the sausages"},
+                {"to": "pie.path", "label": "Go to the pies"},
+                {"to": "jam.path", "label": "Go to the jam"},
+                {"to": "crock.path", "label": "Go to the crocks"},
+                {"to": "hide.path", "label": "Go to the hides"},
+                {"to": "flax.path", "label": "Go to the flax"},
+                {"to": "nail.path", "label": "Go to the nails"},
+                {"to": "wain.path", "label": "Go to the wains"},
+                {"to": "malt.path", "label": "Go to the malt"},
+                {"to": "brew.path", "label": "Go to the ale"},
+                {"to": "acet.path", "label": "Go to the vinegar"},
+                {"to": "glue.path", "label": "Go to the glue"},
+                {"to": "bind.path", "label": "Go to the bindery"},
+                {"to": "gilt.path", "label": "Go to the gilding"},
+                {"to": "gem.path", "label": "Go to the jeweler"},
+                {"to": "glaz.path", "label": "Go to the glazier"},
+                {"to": "sash.path", "label": "Go to the sashes"},
+                {"to": "putty.path", "label": "Go to the putty"},
+                {"to": "paint.path", "label": "Go to the paint"},
+                {"to": "varn.path", "label": "Go to the varnish"},
+                {"to": "latch.path", "label": "Go to the latch"},
+                {"to": "hinge.path", "label": "Go to the hinge"},
+                {"to": "stay.path", "label": "Go to the stay"},
+                {"to": "sill.path", "label": "Go to the sill"},
+                {"to": "case.path", "label": "Go to the casing"},
+                {"to": "skirt.path", "label": "Go to the skirting"},
+                {"to": "dado.path", "label": "Go to the dado"},
+                {"to": "pic.path", "label": "Go to the pictures"},
+                {"to": "corn.path", "label": "Go to the cornice"},
+                {"to": "stair.path", "label": "Go to the stairs"},
+                {"to": "newel.path", "label": "Go to the newel"},
+                {"to": "hand.path", "label": "Go to the handrail"},
+                {"to": "bal.path", "label": "Go to the balusters"},
+                {"to": "tread.path", "label": "Go to the treads"},
+                {"to": "floor.path", "label": "Go to the boards"},
+                {"to": "joist.path", "label": "Go to the joists"},
+                {"to": "lath.path", "label": "Go to the laths"},
+                {"to": "chim.path", "label": "Go to the chimney"},
+                {"to": "mant.path", "label": "Go to the mantel"},
+                {"to": "flue.path", "label": "Go to the flues"},
+                {"to": "fb.path", "label": "Go to the fireback"},
+                {"to": "grate.path", "label": "Go to the grate"},
+                {"to": "brick.path", "label": "Go to the bricks"},
+                {"to": "tile.path", "label": "Go to the tiles"},
+                {"to": "slate.path", "label": "Go to the slates"},
+                {"to": "flash.path", "label": "Go to the flash"},
+                {"to": "block.path", "label": "Go to the blocks"},
+                {"to": "oar.path", "label": "Go to the oars"},
+                {"to": "ways.path", "label": "Go to the ways"},
+                {"to": "clink.path", "label": "Go to the clinker"},
+                {"to": "wind.path", "label": "Go to the windlass"},
+                {"to": "offs.path", "label": "Go to the offsets"},
+                {"to": "trun.path", "label": "Go to the trunnels"},
+                {"to": "dead.path", "label": "Go to the deadwood"},
+                {"to": "mast.path", "label": "Go to the masts"},
+                {"to": "stem.path", "label": "Go to the stem"},
+                {"to": "fid.path", "label": "Go to the fid"},
+                {"to": "cleat.path", "label": "Go to the cleat"},
+                {"to": "haw.path", "label": "Go to the hawse"},
+                {"to": "deye.path", "label": "Go to the deadeye"},
+                {"to": "par.path", "label": "Go to the parrel"},
+                {"to": "bitt.path", "label": "Go to the bitts"},
+                {"to": "gam.path", "label": "Go to the gammon"},
+                {"to": "till.path", "label": "Go to the tiller"},
+                {"to": "cath.path", "label": "Go to the cathead"},
+                {"to": "tran.path", "label": "Go to the transom"},
+                {"to": "scup.path", "label": "Go to the scupper"},
+                {"to": "binn.path", "label": "Go to the binnacle"},
+                {"to": "futt.path", "label": "Go to the futtock"},
+                {"to": "cros.path", "label": "Go to the crosstrees"},
+                {"to": "wtr.path", "label": "Go to the waterway"},
+                {"to": "coam.path", "label": "Go to the coaming"},
+                {"to": "wale.path", "label": "Go to the gunwale"},
+                {"to": "dav.path", "label": "Go to the davit"},
+                {"to": "boom.path", "label": "Go to the boomkin"},
+                {"to": "chan.path", "label": "Go to the channel"},
+                {"to": "kev.path", "label": "Go to the kevel"},
+                {"to": "kni.path", "label": "Go to the knighthead"},
+                {"to": "carl.path", "label": "Go to the carling"},
+                {"to": "tab.path", "label": "Go to the tabernacle"},
+                {"to": "psh.path", "label": "Go to the planksheer"},
+                {"to": "spi.path", "label": "Go to the spirketting"},
+                {"to": "trs.path", "label": "Go to the trestle-trees"},
+                {"to": "brh.path", "label": "Go to the bow-hook"},
+                {"to": "lod.path", "label": "Go to the lodging-knee"},
+                {"to": "dag.path", "label": "Go to the dagger-knee"},
+                {"to": "rid.path", "label": "Go to the riders"},
+                {"to": "ksn.path", "label": "Go to the keelson"},
+                {"to": "cru.path", "label": "Go to the crutch"},
+                {"to": "ptr.path", "label": "Go to the pointer"},
+                {"to": "stn.path", "label": "Go to the stanchions"},
+                {"to": "pil.path", "label": "Go to the pillar"},
             ],
             "ground": [],
             "actors": ["wounded_runner"],
@@ -1634,6 +1874,7 @@ def build() -> dict:
                 {"to": "ashfen.causeway", "label": "Go to causeway"},
                 {"to": "coop.path", "label": "Go to cooperage"},
                 {"to": "pickle.yard", "label": "Go to pickle yard"},
+                {"to": "forge.path", "label": "Go to tide forge"},
             ],
             "ground": [],
             "actors": [],
@@ -1684,6 +1925,7425 @@ def build() -> dict:
             "exits": [{"to": "pickle.yard", "label": "Go to pickle yard"}],
             "ground": [],
             "actors": ["tov"],
+        },
+        "forge.path": {
+            "region": "tide_forge",
+            "name": "Forge Path",
+            "situation": "A tide forge sits on the bank. Bog smoke hangs low.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "pickle.path", "label": "Go to pickle house"},
+                {"to": "forge.yard", "label": "Go to forge yard"},
+                {"to": "decoy.path", "label": "Go to decoy pond"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "forge.yard": {
+            "region": "tide_forge",
+            "name": "Forge Yard",
+            "situation": "Keld waits by a forge mark. The bog-iron smell is sharp.",
+            "exits": [
+                {"to": "forge.path", "label": "Go to forge path"},
+                {"to": "forge.bellows", "label": "Go to the bellows"},
+                {"to": "forge.anvil", "label": "Go to the anvil"},
+                {"to": "forge.trough", "label": "Go to the trough"},
+            ],
+            "ground": [],
+            "actors": ["keld"],
+        },
+        "forge.bellows": {
+            "region": "tide_forge",
+            "name": "Bellows Pit",
+            "situation": "Brunt keeps the bellows. Tide wind feeds the fire.",
+            "exits": [{"to": "forge.yard", "label": "Go to forge yard"}],
+            "ground": [],
+            "actors": ["brunt"],
+        },
+        "forge.anvil": {
+            "region": "tide_forge",
+            "name": "Bloom Anvil",
+            "situation": "A bloom lies on the anvil. The hammer waits.",
+            "exits": [{"to": "forge.yard", "label": "Go to forge yard"}],
+            "ground": ["bloom_iron"],
+            "actors": [],
+        },
+        "forge.trough": {
+            "region": "tide_forge",
+            "name": "Quench Trough",
+            "situation": "Nessa waits by a quench trough. A brine pail hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "pickle_lidded"},
+                    "text": "Pickle brine would harden this quench.",
+                },
+                {
+                    "when": {"has_flag": "iron_quenched"},
+                    "text": "The trough sits still and even.",
+                },
+            ],
+            "exits": [{"to": "forge.yard", "label": "Go to forge yard"}],
+            "ground": [],
+            "actors": ["nessa"],
+        },
+        "decoy.path": {
+            "region": "decoy_pond",
+            "name": "Decoy Path",
+            "situation": "A decoy pond sits off the bank. Reed screens hide the water.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "forge.path", "label": "Go to tide forge"},
+                {"to": "decoy.yard", "label": "Go to decoy yard"},
+                {"to": "rush.path", "label": "Go to rushlight house"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "decoy.yard": {
+            "region": "decoy_pond",
+            "name": "Decoy Yard",
+            "situation": "Wisp waits by a decoy mark. The duck smell is sharp.",
+            "exits": [
+                {"to": "decoy.path", "label": "Go to decoy path"},
+                {"to": "decoy.pipes", "label": "Go to the pipes"},
+                {"to": "decoy.screen", "label": "Go to the screens"},
+                {"to": "decoy.tunnel", "label": "Go to the tunnel"},
+            ],
+            "ground": [],
+            "actors": ["wisp"],
+        },
+        "decoy.pipes": {
+            "region": "decoy_pond",
+            "name": "Pipe Mouths",
+            "situation": "Lark keeps the pipe mouths. Dark water runs in.",
+            "exits": [{"to": "decoy.yard", "label": "Go to decoy yard"}],
+            "ground": [],
+            "actors": ["lark"],
+        },
+        "decoy.screen": {
+            "region": "decoy_pond",
+            "name": "Reed Screens",
+            "situation": "A pipe net hangs on a reed screen. The drive path is open.",
+            "exits": [{"to": "decoy.yard", "label": "Go to decoy yard"}],
+            "ground": ["pipe_net"],
+            "actors": [],
+        },
+        "decoy.tunnel": {
+            "region": "decoy_pond",
+            "name": "Taking Tunnel",
+            "situation": "Nye waits in the taking tunnel. A bag hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "iron_quenched"},
+                    "text": "A quenched hook would hold this take.",
+                },
+                {
+                    "when": {"has_flag": "fowl_taken"},
+                    "text": "The tunnel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "decoy.yard", "label": "Go to decoy yard"}],
+            "ground": [],
+            "actors": ["nye"],
+        },
+        "rush.path": {
+            "region": "rushlight_house",
+            "name": "Rush Path",
+            "situation": "A rushlight house sits on the bank. Cut rush leans dry.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "decoy.path", "label": "Go to decoy pond"},
+                {"to": "rush.yard", "label": "Go to rush yard"},
+                {"to": "caulk.path", "label": "Go to the caulkers"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "rush.yard": {
+            "region": "rushlight_house",
+            "name": "Rush Yard",
+            "situation": "Moth waits by a pith mark. The rush smell is sharp.",
+            "exits": [
+                {"to": "rush.path", "label": "Go to rush path"},
+                {"to": "rush.peel", "label": "Go to the peel"},
+                {"to": "rush.pith", "label": "Go to the pith"},
+                {"to": "rush.bind", "label": "Go to the bind"},
+            ],
+            "ground": [],
+            "actors": ["moth"],
+        },
+        "rush.peel": {
+            "region": "rushlight_house",
+            "name": "Peel Board",
+            "situation": "Sedge keeps a peel board. Green rush lies ready.",
+            "exits": [{"to": "rush.yard", "label": "Go to rush yard"}],
+            "ground": [],
+            "actors": ["sedge"],
+        },
+        "rush.pith": {
+            "region": "rushlight_house",
+            "name": "Pith Rack",
+            "situation": "Peeled pith sits on a rack. One pith is dry.",
+            "exits": [{"to": "rush.yard", "label": "Go to rush yard"}],
+            "ground": ["rush_pith"],
+            "actors": [],
+        },
+        "rush.bind": {
+            "region": "rushlight_house",
+            "name": "Bind Peg",
+            "situation": "Nix waits by a bind peg. A tallow pot hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fowl_taken"},
+                    "text": "Fowl tallow would coat this pith.",
+                },
+                {
+                    "when": {"has_flag": "lights_bound"},
+                    "text": "The bind sits still and even.",
+                },
+            ],
+            "exits": [{"to": "rush.yard", "label": "Go to rush yard"}],
+            "ground": [],
+            "actors": ["nix"],
+        },
+        "caulk.path": {
+            "region": "caulk_yard",
+            "name": "Caulk Path",
+            "situation": "A caulk walk sits on the bank. Pitch smoke hangs low.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "rush.path", "label": "Go to rushlight house"},
+                {"to": "caulk.yard", "label": "Go to caulk yard"},
+                {"to": "net.path", "label": "Go to net loft"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "caulk.yard": {
+            "region": "caulk_yard",
+            "name": "Caulk Yard",
+            "situation": "Gull waits by a caulk mark. The pitch smell is sharp.",
+            "exits": [
+                {"to": "caulk.path", "label": "Go to caulk path"},
+                {"to": "caulk.oakum", "label": "Go to the oakum"},
+                {"to": "caulk.kettle", "label": "Go to the kettle"},
+                {"to": "caulk.seam", "label": "Go to the seam"},
+            ],
+            "ground": [],
+            "actors": ["gull"],
+        },
+        "caulk.oakum": {
+            "region": "caulk_yard",
+            "name": "Oakum Bench",
+            "situation": "Tarn keeps a tease bench. Old rope lies in bits.",
+            "exits": [{"to": "caulk.yard", "label": "Go to caulk yard"}],
+            "ground": [],
+            "actors": ["tarn"],
+        },
+        "caulk.kettle": {
+            "region": "caulk_yard",
+            "name": "Pitch Kettle",
+            "situation": "A pitch kettle sits hot. An oakum wad waits.",
+            "exits": [{"to": "caulk.yard", "label": "Go to caulk yard"}],
+            "ground": ["oakum_wad"],
+            "actors": [],
+        },
+        "caulk.seam": {
+            "region": "caulk_yard",
+            "name": "Open Seam",
+            "situation": "Pike waits by an open seam. A caulk iron hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lights_bound"},
+                    "text": "Bound lights would show this seam.",
+                },
+                {
+                    "when": {"has_flag": "seam_caulked"},
+                    "text": "The seam sits still and even.",
+                },
+            ],
+            "exits": [{"to": "caulk.yard", "label": "Go to caulk yard"}],
+            "ground": [],
+            "actors": ["pike"],
+        },
+        "net.path": {
+            "region": "net_loft",
+            "name": "Net Path",
+            "situation": "A net loft sits on the bank. Mesh hangs in the wind.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "caulk.path", "label": "Go to the caulkers"},
+                {"to": "net.yard", "label": "Go to net yard"},
+                {"to": "sail.path", "label": "Go to sail loft"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "net.yard": {
+            "region": "net_loft",
+            "name": "Net Yard",
+            "situation": "Cobb waits by a mesh mark. The tar smell is sharp.",
+            "exits": [
+                {"to": "net.path", "label": "Go to net path"},
+                {"to": "net.rig", "label": "Go to the rig"},
+                {"to": "net.mesh", "label": "Go to the mesh"},
+                {"to": "net.tar", "label": "Go to the tar"},
+            ],
+            "ground": [],
+            "actors": ["cobb"],
+        },
+        "net.rig": {
+            "region": "net_loft",
+            "name": "Hang Rails",
+            "situation": "Kip keeps the hang rails. Wet mesh sags.",
+            "exits": [{"to": "net.yard", "label": "Go to net yard"}],
+            "ground": [],
+            "actors": ["kip"],
+        },
+        "net.mesh": {
+            "region": "net_loft",
+            "name": "Mesh Bench",
+            "situation": "A mesh needle lies on the bench. The tear waits.",
+            "exits": [{"to": "net.yard", "label": "Go to net yard"}],
+            "ground": ["mesh_needle"],
+            "actors": [],
+        },
+        "net.tar": {
+            "region": "net_loft",
+            "name": "Tar Pot",
+            "situation": "Darn waits by a tar pot. A brush hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "seam_caulked"},
+                    "text": "True pitch would tar this mesh.",
+                },
+                {
+                    "when": {"has_flag": "net_tarred"},
+                    "text": "The tar pot sits still and even.",
+                },
+            ],
+            "exits": [{"to": "net.yard", "label": "Go to net yard"}],
+            "ground": [],
+            "actors": ["darn"],
+        },
+        "sail.path": {
+            "region": "sail_loft",
+            "name": "Sail Path",
+            "situation": "A sail loft sits on the bank. Canvas snaps in the wind.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "net.path", "label": "Go to net loft"},
+                {"to": "sail.yard", "label": "Go to sail yard"},
+                {"to": "lead.path", "label": "Go to the sounding"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "sail.yard": {
+            "region": "sail_loft",
+            "name": "Sail Yard",
+            "situation": "Gale waits by a sail mark. The canvas smell is sharp.",
+            "exits": [
+                {"to": "sail.path", "label": "Go to sail path"},
+                {"to": "sail.canvas", "label": "Go to the canvas"},
+                {"to": "sail.stitch", "label": "Go to the stitch"},
+                {"to": "sail.hoist", "label": "Go to the hoist"},
+            ],
+            "ground": [],
+            "actors": ["gale"],
+        },
+        "sail.canvas": {
+            "region": "sail_loft",
+            "name": "Canvas Table",
+            "situation": "Shear keeps a long table. White canvas lies ready.",
+            "exits": [{"to": "sail.yard", "label": "Go to sail yard"}],
+            "ground": [],
+            "actors": ["shear"],
+        },
+        "sail.stitch": {
+            "region": "sail_loft",
+            "name": "Stitch Board",
+            "situation": "A sail needle lies on the stitch board. The seam waits.",
+            "exits": [{"to": "sail.yard", "label": "Go to sail yard"}],
+            "ground": ["sail_needle"],
+            "actors": [],
+        },
+        "sail.hoist": {
+            "region": "sail_loft",
+            "name": "Hoist Spar",
+            "situation": "Haly waits by a hoist spar. A halliard hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "net_tarred"},
+                    "text": "Tarred twine would hold this hoist.",
+                },
+                {
+                    "when": {"has_flag": "sail_hoisted"},
+                    "text": "The hoist sits still and even.",
+                },
+            ],
+            "exits": [{"to": "sail.yard", "label": "Go to sail yard"}],
+            "ground": [],
+            "actors": ["haly"],
+        },
+        "lead.path": {
+            "region": "sounding_stage",
+            "name": "Lead Path",
+            "situation": "A sounding stage sits off the bank. A lead line hangs.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "sail.path", "label": "Go to sail loft"},
+                {"to": "lead.yard", "label": "Go to lead yard"},
+                {"to": "chart.path", "label": "Go to chart house"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "lead.yard": {
+            "region": "sounding_stage",
+            "name": "Lead Yard",
+            "situation": "Tern waits by a fathom mark. The mud smell is sharp.",
+            "exits": [
+                {"to": "lead.path", "label": "Go to lead path"},
+                {"to": "lead.coil", "label": "Go to the coil"},
+                {"to": "lead.marks", "label": "Go to the fathoms"},
+                {"to": "lead.cast", "label": "Go to the cast"},
+            ],
+            "ground": [],
+            "actors": ["tern"],
+        },
+        "lead.coil": {
+            "region": "sounding_stage",
+            "name": "Coil Pegs",
+            "situation": "Gage keeps the coil pegs. Wet line lies in rings.",
+            "exits": [{"to": "lead.yard", "label": "Go to lead yard"}],
+            "ground": [],
+            "actors": ["gage"],
+        },
+        "lead.marks": {
+            "region": "sounding_stage",
+            "name": "Fathom Bits",
+            "situation": "Cloth bits sit ready to mark the line. One lead sink waits.",
+            "exits": [{"to": "lead.yard", "label": "Go to lead yard"}],
+            "ground": ["lead_sink"],
+            "actors": [],
+        },
+        "lead.cast": {
+            "region": "sounding_stage",
+            "name": "Cast Lip",
+            "situation": "Plumb waits at the casting lip. The water is still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sail_hoisted"},
+                    "text": "A hoisted sail would let you sound under way.",
+                },
+                {
+                    "when": {"has_flag": "lead_cast"},
+                    "text": "The cast lip sits still and even.",
+                },
+            ],
+            "exits": [{"to": "lead.yard", "label": "Go to lead yard"}],
+            "ground": [],
+            "actors": ["plumb"],
+        },
+        "chart.path": {
+            "region": "chart_house",
+            "name": "Chart Path",
+            "situation": "A chart house sits on the bank. Dry paper smells of ink.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "lead.path", "label": "Go to the sounding"},
+                {"to": "chart.yard", "label": "Go to chart yard"},
+                {"to": "buoy.path", "label": "Go to the buoys"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "chart.yard": {
+            "region": "chart_house",
+            "name": "Chart Yard",
+            "situation": "Merc waits by a rutter mark. The ink smell is sharp.",
+            "exits": [
+                {"to": "chart.path", "label": "Go to chart path"},
+                {"to": "chart.board", "label": "Go to the board"},
+                {"to": "chart.ink", "label": "Go to the ink"},
+                {"to": "chart.press", "label": "Go to the press"},
+            ],
+            "ground": [],
+            "actors": ["merc"],
+        },
+        "chart.board": {
+            "region": "chart_house",
+            "name": "Ruler Board",
+            "situation": "Rule keeps a long board. A ruler lies ready.",
+            "exits": [{"to": "chart.yard", "label": "Go to chart yard"}],
+            "ground": [],
+            "actors": ["rule"],
+        },
+        "chart.ink": {
+            "region": "chart_house",
+            "name": "Ink Pot",
+            "situation": "A chart quill sits in a pot. The ink is thick.",
+            "exits": [{"to": "chart.yard", "label": "Go to chart yard"}],
+            "ground": ["chart_quill"],
+            "actors": [],
+        },
+        "chart.press": {
+            "region": "chart_house",
+            "name": "Seal Press",
+            "situation": "Wax waits by a press. A seal hangs.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lead_cast"},
+                    "text": "A true sounding would prick this chart.",
+                },
+                {
+                    "when": {"has_flag": "rutter_sealed"},
+                    "text": "The press sits still and even.",
+                },
+            ],
+            "exits": [{"to": "chart.yard", "label": "Go to chart yard"}],
+            "ground": [],
+            "actors": ["wax"],
+        },
+        "buoy.path": {
+            "region": "buoy_yard",
+            "name": "Buoy Path",
+            "situation": "A buoy yard sits on the bank. Cages wait for cork.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "chart.path", "label": "Go to chart house"},
+                {"to": "buoy.yard", "label": "Go to buoy yard"},
+                {"to": "kelp.path", "label": "Go to the kelp"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "buoy.yard": {
+            "region": "buoy_yard",
+            "name": "Buoy Yard",
+            "situation": "Flo waits by a shoal mark. The tide smell is sharp.",
+            "exits": [
+                {"to": "buoy.path", "label": "Go to buoy path"},
+                {"to": "buoy.cage", "label": "Go to the cage"},
+                {"to": "buoy.spar", "label": "Go to the spar"},
+                {"to": "buoy.drop", "label": "Go to the drop"},
+            ],
+            "ground": [],
+            "actors": ["flo"],
+        },
+        "buoy.cage": {
+            "region": "buoy_yard",
+            "name": "Cork Cage",
+            "situation": "Cork keeps empty cages. Dry bark waits in a heap.",
+            "exits": [{"to": "buoy.yard", "label": "Go to buoy yard"}],
+            "ground": [],
+            "actors": ["cork"],
+        },
+        "buoy.spar": {
+            "region": "buoy_yard",
+            "name": "Spar Bench",
+            "situation": "A spar and a cork wait. Lash line hangs ready.",
+            "exits": [{"to": "buoy.yard", "label": "Go to buoy yard"}],
+            "ground": ["buoy_cork"],
+            "actors": [],
+        },
+        "buoy.drop": {
+            "region": "buoy_yard",
+            "name": "Drop Lip",
+            "situation": "Nun waits at the drop. The channel is still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rutter_sealed"},
+                    "text": "A sealed rutter would place this buoy true.",
+                },
+                {
+                    "when": {"has_flag": "buoy_set"},
+                    "text": "The drop sits still and even.",
+                },
+            ],
+            "exits": [{"to": "buoy.yard", "label": "Go to buoy yard"}],
+            "ground": [],
+            "actors": ["nun"],
+        },
+        "kelp.path": {
+            "region": "kelp_shore",
+            "name": "Kelp Path",
+            "situation": "A kelp shore sits on the bank. Wrack waits on the stones.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "buoy.path", "label": "Go to the buoys"},
+                {"to": "kelp.yard", "label": "Go to kelp yard"},
+                {"to": "soap.path", "label": "Go to the soap"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "kelp.yard": {
+            "region": "kelp_shore",
+            "name": "Kelp Yard",
+            "situation": "Tang waits by a wrack mark. The salt smell is sharp.",
+            "exits": [
+                {"to": "kelp.path", "label": "Go to kelp path"},
+                {"to": "kelp.bank", "label": "Go to the wrack"},
+                {"to": "kelp.stones", "label": "Go to the stones"},
+                {"to": "kelp.hearth", "label": "Go to the hearth"},
+            ],
+            "ground": [],
+            "actors": ["tang"],
+        },
+        "kelp.bank": {
+            "region": "kelp_shore",
+            "name": "Wrack Bank",
+            "situation": "Drift keeps a cutting hook. Wet wrack hangs on the tide.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "buoy_set"},
+                    "text": "A set buoy would open the outer wrack.",
+                },
+            ],
+            "exits": [{"to": "kelp.yard", "label": "Go to kelp yard"}],
+            "ground": [],
+            "actors": ["drift"],
+        },
+        "kelp.stones": {
+            "region": "kelp_shore",
+            "name": "Dry Stones",
+            "situation": "A wrack frond lies on the stones. The sun is thin.",
+            "exits": [{"to": "kelp.yard", "label": "Go to kelp yard"}],
+            "ground": ["wrack_frond"],
+            "actors": [],
+        },
+        "kelp.hearth": {
+            "region": "kelp_shore",
+            "name": "Kelp Hearth",
+            "situation": "Ure waits at the hearth. Kelp ash stains the pit.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kelp_burned"},
+                    "text": "The hearth sits still and even.",
+                },
+            ],
+            "exits": [{"to": "kelp.yard", "label": "Go to kelp yard"}],
+            "ground": [],
+            "actors": ["ure"],
+        },
+        "soap.path": {
+            "region": "soap_house",
+            "name": "Soap Path",
+            "situation": "A soap house sits on the bank. Lye steam hangs in the air.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "kelp.path", "label": "Go to the kelp"},
+                {"to": "soap.yard", "label": "Go to soap yard"},
+                {"to": "full.path", "label": "Go to the fulling"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "soap.yard": {
+            "region": "soap_house",
+            "name": "Soap Yard",
+            "situation": "Soda waits by a lye mark. The fat smell is sharp.",
+            "exits": [
+                {"to": "soap.path", "label": "Go to soap path"},
+                {"to": "soap.leach", "label": "Go to the leach"},
+                {"to": "soap.boil", "label": "Go to the boil"},
+                {"to": "soap.cut", "label": "Go to the cakes"},
+            ],
+            "ground": [],
+            "actors": ["soda"],
+        },
+        "soap.leach": {
+            "region": "soap_house",
+            "name": "Leach Tub",
+            "situation": "Lye keeps the leach tub. Ash waits in a sieve.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kelp_burned"},
+                    "text": "Burned kelp would charge this lye true.",
+                },
+            ],
+            "exits": [{"to": "soap.yard", "label": "Go to soap yard"}],
+            "ground": [],
+            "actors": ["lye"],
+        },
+        "soap.boil": {
+            "region": "soap_house",
+            "name": "Soap Pan",
+            "situation": "A soda lye sits by the pan. Fat waits to boil.",
+            "exits": [{"to": "soap.yard", "label": "Go to soap yard"}],
+            "ground": ["soda_lye"],
+            "actors": [],
+        },
+        "soap.cut": {
+            "region": "soap_house",
+            "name": "Cut Board",
+            "situation": "Bar waits at the cut. Cakes cool on the board.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "soap_cut"},
+                    "text": "The cut sits still and even.",
+                },
+            ],
+            "exits": [{"to": "soap.yard", "label": "Go to soap yard"}],
+            "ground": [],
+            "actors": ["bar"],
+        },
+        "full.path": {
+            "region": "fulling_mill",
+            "name": "Full Path",
+            "situation": "A fulling mill sits on the bank. Wet cloth hangs on the air.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "soap.path", "label": "Go to the soap"},
+                {"to": "full.yard", "label": "Go to full yard"},
+                {"to": "char.path", "label": "Go to the coppice"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "full.yard": {
+            "region": "fulling_mill",
+            "name": "Full Yard",
+            "situation": "Tuck waits by a walk mark. The wet smell is sharp.",
+            "exits": [
+                {"to": "full.path", "label": "Go to full path"},
+                {"to": "full.web", "label": "Go to the web"},
+                {"to": "full.stocks", "label": "Go to the stocks"},
+                {"to": "full.tenters", "label": "Go to the tenters"},
+            ],
+            "ground": [],
+            "actors": ["tuck"],
+        },
+        "full.web": {
+            "region": "fulling_mill",
+            "name": "Wet Web",
+            "situation": "A wet web hangs on a rail. Water drips from the cloth.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "soap_cut"},
+                    "text": "Cut soap would full this web true.",
+                },
+            ],
+            "exits": [{"to": "full.yard", "label": "Go to full yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "full.stocks": {
+            "region": "fulling_mill",
+            "name": "Walk Stocks",
+            "situation": "Stock keeps the trough. A full web waits.",
+            "exits": [{"to": "full.yard", "label": "Go to full yard"}],
+            "ground": ["full_web"],
+            "actors": ["stock"],
+        },
+        "full.tenters": {
+            "region": "fulling_mill",
+            "name": "Tenter Rails",
+            "situation": "Peg waits at the tenters. Rails wait for a piece.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cloth_fulled"},
+                    "text": "The tenters sit still and even.",
+                },
+            ],
+            "exits": [{"to": "full.yard", "label": "Go to full yard"}],
+            "ground": [],
+            "actors": ["peg"],
+        },
+        "char.path": {
+            "region": "charcoal_clamp",
+            "name": "Char Path",
+            "situation": "A charcoal clamp sits inland. Coppice waits in a ring.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "full.path", "label": "Go to the fulling"},
+                {"to": "char.yard", "label": "Go to char yard"},
+                {"to": "lime.path", "label": "Go to the lime"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "char.yard": {
+            "region": "charcoal_clamp",
+            "name": "Char Yard",
+            "situation": "Copse waits by a coal mark. The smoke smell is sharp.",
+            "exits": [
+                {"to": "char.path", "label": "Go to char path"},
+                {"to": "char.copse", "label": "Go to the copse"},
+                {"to": "char.clamp", "label": "Go to the clamp"},
+                {"to": "char.draw", "label": "Go to the draw"},
+            ],
+            "ground": [],
+            "actors": ["copse"],
+        },
+        "char.copse": {
+            "region": "charcoal_clamp",
+            "name": "Coppice Ring",
+            "situation": "Coppice stands in a ring. A hook waits on a stump.",
+            "exits": [{"to": "char.yard", "label": "Go to char yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "char.clamp": {
+            "region": "charcoal_clamp",
+            "name": "Coal Clamp",
+            "situation": "Turf keeps the clamp. A coal lump waits.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cloth_fulled"},
+                    "text": "Fulled cloth would cover this clamp true.",
+                },
+            ],
+            "exits": [{"to": "char.yard", "label": "Go to char yard"}],
+            "ground": ["coal_lump"],
+            "actors": ["turf"],
+        },
+        "char.draw": {
+            "region": "charcoal_clamp",
+            "name": "Draw Pit",
+            "situation": "Draw waits at the pit. The clamp is still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coal_drawn"},
+                    "text": "The pit sits still and even.",
+                },
+            ],
+            "exits": [{"to": "char.yard", "label": "Go to char yard"}],
+            "ground": [],
+            "actors": ["draw"],
+        },
+        "lime.path": {
+            "region": "lime_kiln",
+            "name": "Lime Path",
+            "situation": "A lime kiln sits inland. Shells wait in a heap.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "char.path", "label": "Go to the coppice"},
+                {"to": "lime.yard", "label": "Go to lime yard"},
+                {"to": "mason.path", "label": "Go to the masons"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "lime.yard": {
+            "region": "lime_kiln",
+            "name": "Lime Yard",
+            "situation": "Shale waits by a lime mark. The dust smell is sharp.",
+            "exits": [
+                {"to": "lime.path", "label": "Go to lime path"},
+                {"to": "lime.shell", "label": "Go to the shells"},
+                {"to": "lime.charge", "label": "Go to the charge"},
+                {"to": "lime.slake", "label": "Go to the slake"},
+            ],
+            "ground": [],
+            "actors": ["shale"],
+        },
+        "lime.shell": {
+            "region": "lime_kiln",
+            "name": "Shell Heap",
+            "situation": "Broken shell lies in a heap. A mallet waits.",
+            "exits": [{"to": "lime.yard", "label": "Go to lime yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "lime.charge": {
+            "region": "lime_kiln",
+            "name": "Lime Charge",
+            "situation": "Flux keeps the charge. A lime shell waits.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coal_drawn"},
+                    "text": "Drawn coal would fire this charge true.",
+                },
+            ],
+            "exits": [{"to": "lime.yard", "label": "Go to lime yard"}],
+            "ground": ["lime_shell"],
+            "actors": ["flux"],
+        },
+        "lime.slake": {
+            "region": "lime_kiln",
+            "name": "Slake Trough",
+            "situation": "Slack waits at the slake. Water sits in a trough.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lime_slaked"},
+                    "text": "The slake sits still and even.",
+                },
+            ],
+            "exits": [{"to": "lime.yard", "label": "Go to lime yard"}],
+            "ground": [],
+            "actors": ["slack"],
+        },
+        "mason.path": {
+            "region": "mason_yard",
+            "name": "Mason Path",
+            "situation": "A mason yard sits inland. Stone waits in a heap.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "lime.path", "label": "Go to the lime"},
+                {"to": "mason.yard", "label": "Go to mason yard"},
+                {"to": "thatch.path", "label": "Go to the thatch"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "mason.yard": {
+            "region": "mason_yard",
+            "name": "Mason Yard",
+            "situation": "Mort waits by a bed joint. The dust smell is sharp.",
+            "exits": [
+                {"to": "mason.path", "label": "Go to mason path"},
+                {"to": "mason.mix", "label": "Go to the mix"},
+                {"to": "mason.course", "label": "Go to the course"},
+                {"to": "mason.point", "label": "Go to the joints"},
+            ],
+            "ground": [],
+            "actors": ["mort"],
+        },
+        "mason.mix": {
+            "region": "mason_yard",
+            "name": "Mortar Trough",
+            "situation": "Sand and lime wait in a trough. A hoe leans.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lime_slaked"},
+                    "text": "Slaked lime would temper this mix true.",
+                },
+            ],
+            "exits": [{"to": "mason.yard", "label": "Go to mason yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "mason.course": {
+            "region": "mason_yard",
+            "name": "Stone Course",
+            "situation": "Ashlar keeps the course. A mortar hod waits.",
+            "exits": [{"to": "mason.yard", "label": "Go to mason yard"}],
+            "ground": ["mortar_hod"],
+            "actors": ["ashlar"],
+        },
+        "mason.point": {
+            "region": "mason_yard",
+            "name": "Joint Wall",
+            "situation": "Joint waits at the wall. A trowel sits ready.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "joint_pointed"},
+                    "text": "The wall sits still and even.",
+                },
+            ],
+            "exits": [{"to": "mason.yard", "label": "Go to mason yard"}],
+            "ground": [],
+            "actors": ["joint"],
+        },
+        "thatch.path": {
+            "region": "thatch_croft",
+            "name": "Thatch Path",
+            "situation": "A thatch croft sits inland. Reed waits in a stand.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mason.path", "label": "Go to the masons"},
+                {"to": "thatch.yard", "label": "Go to thatch yard"},
+                {"to": "cistern.path", "label": "Go to the cistern"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "thatch.yard": {
+            "region": "thatch_croft",
+            "name": "Thatch Yard",
+            "situation": "Rick waits by a yealm mark. The dry smell is sharp.",
+            "exits": [
+                {"to": "thatch.path", "label": "Go to thatch path"},
+                {"to": "thatch.stand", "label": "Go to the stand"},
+                {"to": "thatch.yealm", "label": "Go to the yealm"},
+                {"to": "thatch.ridge", "label": "Go to the ridge"},
+            ],
+            "ground": [],
+            "actors": ["rick"],
+        },
+        "thatch.stand": {
+            "region": "thatch_croft",
+            "name": "Thatch Stand",
+            "situation": "A thatch stand waits. A hook hangs ready.",
+            "exits": [{"to": "thatch.yard", "label": "Go to thatch yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "thatch.yealm": {
+            "region": "thatch_croft",
+            "name": "Yealm Bind",
+            "situation": "Yealm keeps the bind. A thatch yealm waits.",
+            "exits": [{"to": "thatch.yard", "label": "Go to thatch yard"}],
+            "ground": ["thatch_yealm"],
+            "actors": ["yealm"],
+        },
+        "thatch.ridge": {
+            "region": "thatch_croft",
+            "name": "Roof Ridge",
+            "situation": "Ridge waits at the roof. Spars wait for a yealm.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "joint_pointed"},
+                    "text": "A pointed wall would take this roof true.",
+                },
+                {
+                    "when": {"has_flag": "roof_set"},
+                    "text": "The ridge sits still and even.",
+                },
+            ],
+            "exits": [{"to": "thatch.yard", "label": "Go to thatch yard"}],
+            "ground": [],
+            "actors": ["ridge"],
+        },
+        "cistern.path": {
+            "region": "rain_cistern",
+            "name": "Cistern Path",
+            "situation": "A rain cistern sits inland. An eave waits for a gutter.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "thatch.path", "label": "Go to the thatch"},
+                {"to": "cistern.yard", "label": "Go to cistern yard"},
+                {"to": "wash.path", "label": "Go to the wash"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cistern.yard": {
+            "region": "rain_cistern",
+            "name": "Cistern Yard",
+            "situation": "Eave waits by a run mark. The wet smell is sharp.",
+            "exits": [
+                {"to": "cistern.path", "label": "Go to cistern path"},
+                {"to": "cistern.eave", "label": "Go to the eave"},
+                {"to": "cistern.tun", "label": "Go to the tun"},
+                {"to": "cistern.dip", "label": "Go to the dip"},
+            ],
+            "ground": [],
+            "actors": ["eave"],
+        },
+        "cistern.eave": {
+            "region": "rain_cistern",
+            "name": "Eave Lip",
+            "situation": "A gutter waits on the eave. Pegs sit ready.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "roof_set"},
+                    "text": "A set roof would hang this gutter true.",
+                },
+            ],
+            "exits": [{"to": "cistern.yard", "label": "Go to cistern yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cistern.tun": {
+            "region": "rain_cistern",
+            "name": "Cistern Tun",
+            "situation": "Tun keeps the cistern. A catch pail waits.",
+            "exits": [{"to": "cistern.yard", "label": "Go to cistern yard"}],
+            "ground": ["catch_pail"],
+            "actors": ["tun"],
+        },
+        "cistern.dip": {
+            "region": "rain_cistern",
+            "name": "Dip Lip",
+            "situation": "Dip waits at the lip. Water sits still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cistern_filled"},
+                    "text": "The lip sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cistern.yard", "label": "Go to cistern yard"}],
+            "ground": [],
+            "actors": ["dip"],
+        },
+        "wash.path": {
+            "region": "wash_house",
+            "name": "Wash Path",
+            "situation": "A wash house sits inland. Wet cloth hangs on a line.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cistern.path", "label": "Go to the cistern"},
+                {"to": "wash.yard", "label": "Go to wash yard"},
+                {"to": "rag.path", "label": "Go to the rag mill"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wash.yard": {
+            "region": "wash_house",
+            "name": "Wash Yard",
+            "situation": "Suds waits by a wash mark. The soap smell is sharp.",
+            "exits": [
+                {"to": "wash.path", "label": "Go to wash path"},
+                {"to": "wash.pan", "label": "Go to the pan"},
+                {"to": "wash.beetle", "label": "Go to the beetle"},
+                {"to": "wash.line", "label": "Go to the line"},
+            ],
+            "ground": [],
+            "actors": ["suds"],
+        },
+        "wash.pan": {
+            "region": "wash_house",
+            "name": "Wash Pan",
+            "situation": "A wash pan waits. Water sits still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cistern_filled"},
+                    "text": "Cistern water would fill this pan true.",
+                },
+            ],
+            "exits": [{"to": "wash.yard", "label": "Go to wash yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wash.beetle": {
+            "region": "wash_house",
+            "name": "Wash Beetle",
+            "situation": "Bat keeps the beetle. A wash cloth waits.",
+            "exits": [{"to": "wash.yard", "label": "Go to wash yard"}],
+            "ground": ["wash_cloth"],
+            "actors": ["bat"],
+        },
+        "wash.line": {
+            "region": "wash_house",
+            "name": "Wash Line",
+            "situation": "Line waits at the pegs. The line hangs slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wash_hung"},
+                    "text": "The line sits still and even.",
+                },
+            ],
+            "exits": [{"to": "wash.yard", "label": "Go to wash yard"}],
+            "ground": [],
+            "actors": ["line"],
+        },
+        "rag.path": {
+            "region": "rag_mill",
+            "name": "Rag Mill Path",
+            "situation": "A rag mill sits inland. Hammers wait on wet pulp.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wash.path", "label": "Go to the wash"},
+                {"to": "rag.yard", "label": "Go to rag yard"},
+                {"to": "osier.path", "label": "Go to the osiers"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "rag.yard": {
+            "region": "rag_mill",
+            "name": "Rag Yard",
+            "situation": "Holl waits by a pulp mark. The rag smell is sharp.",
+            "exits": [
+                {"to": "rag.path", "label": "Go to rag path"},
+                {"to": "rag.stamp", "label": "Go to the stamp"},
+                {"to": "rag.deckle", "label": "Go to the deckle"},
+                {"to": "rag.post", "label": "Go to the post"},
+            ],
+            "ground": [],
+            "actors": ["holl"],
+        },
+        "rag.stamp": {
+            "region": "rag_mill",
+            "name": "Rag Stamp",
+            "situation": "Stamp hammers wait. Rags sit in a trough.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wash_hung"},
+                    "text": "Hung wash would sort this pulp true.",
+                },
+            ],
+            "exits": [{"to": "rag.yard", "label": "Go to rag yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "rag.deckle": {
+            "region": "rag_mill",
+            "name": "Deckle Vat",
+            "situation": "Deckle keeps the mold. A wet sheet waits.",
+            "exits": [{"to": "rag.yard", "label": "Go to rag yard"}],
+            "ground": ["wet_sheet"],
+            "actors": ["deckle"],
+        },
+        "rag.post": {
+            "region": "rag_mill",
+            "name": "Drying Post",
+            "situation": "Post waits at the drying posts. The post hangs slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "paper_laid"},
+                    "text": "The post sits still and even.",
+                },
+            ],
+            "exits": [{"to": "rag.yard", "label": "Go to rag yard"}],
+            "ground": [],
+            "actors": ["post"],
+        },
+        "osier.path": {
+            "region": "osier_holt",
+            "name": "Osier Path",
+            "situation": "An osier holt sits inland. Withies wait in a bed.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "rag.path", "label": "Go to the rag mill"},
+                {"to": "osier.yard", "label": "Go to osier yard"},
+                {"to": "bake.path", "label": "Go to the bakehouse"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "osier.yard": {
+            "region": "osier_holt",
+            "name": "Osier Yard",
+            "situation": "Holt waits by a withy mark. The green smell is sharp.",
+            "exits": [
+                {"to": "osier.path", "label": "Go to osier path"},
+                {"to": "osier.holt", "label": "Go to the holt"},
+                {"to": "osier.brake", "label": "Go to the brake"},
+                {"to": "osier.frame", "label": "Go to the frame"},
+            ],
+            "ground": [],
+            "actors": ["holt"],
+        },
+        "osier.holt": {
+            "region": "osier_holt",
+            "name": "Withy Holt",
+            "situation": "A withy bed waits. Rods sit green.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "paper_laid"},
+                    "text": "Laid paper would wrap this holt true.",
+                },
+            ],
+            "exits": [{"to": "osier.yard", "label": "Go to osier yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "osier.brake": {
+            "region": "osier_holt",
+            "name": "Rod Brake",
+            "situation": "Brake keeps the split. A withy rod waits.",
+            "exits": [{"to": "osier.yard", "label": "Go to osier yard"}],
+            "ground": ["withy_rod"],
+            "actors": ["brake"],
+        },
+        "osier.frame": {
+            "region": "osier_holt",
+            "name": "Frail Frame",
+            "situation": "Frail waits at the frame. The frame sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "frail_woven"},
+                    "text": "The frame sits still and even.",
+                },
+            ],
+            "exits": [{"to": "osier.yard", "label": "Go to osier yard"}],
+            "ground": [],
+            "actors": ["frail"],
+        },
+        "bake.path": {
+            "region": "bake_house",
+            "name": "Bakehouse Path",
+            "situation": "A bakehouse sits inland. Heat waits at an oven.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "osier.path", "label": "Go to the osiers"},
+                {"to": "bake.yard", "label": "Go to bake yard"},
+                {"to": "dairy.path", "label": "Go to the dairy"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "bake.yard": {
+            "region": "bake_house",
+            "name": "Bake Yard",
+            "situation": "Leaven waits by a sponge mark. The flour smell is sharp.",
+            "exits": [
+                {"to": "bake.path", "label": "Go to bake path"},
+                {"to": "bake.sponge", "label": "Go to the sponge"},
+                {"to": "bake.oven", "label": "Go to the oven"},
+                {"to": "bake.hatch", "label": "Go to the hatch"},
+            ],
+            "ground": [],
+            "actors": ["leaven"],
+        },
+        "bake.sponge": {
+            "region": "bake_house",
+            "name": "Sponge Trough",
+            "situation": "A sponge trough waits. Dough sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "frail_woven"},
+                    "text": "A woven frail would proof this sponge true.",
+                },
+            ],
+            "exits": [{"to": "bake.yard", "label": "Go to bake yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "bake.oven": {
+            "region": "bake_house",
+            "name": "Bake Oven",
+            "situation": "Oven keeps the heat. A dough loaf waits.",
+            "exits": [{"to": "bake.yard", "label": "Go to bake yard"}],
+            "ground": ["dough_loaf"],
+            "actors": ["oven"],
+        },
+        "bake.hatch": {
+            "region": "bake_house",
+            "name": "Oven Hatch",
+            "situation": "Hatch waits at the oven mouth. The hatch sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "loaf_drawn"},
+                    "text": "The hatch sits still and even.",
+                },
+            ],
+            "exits": [{"to": "bake.yard", "label": "Go to bake yard"}],
+            "ground": [],
+            "actors": ["hatch"],
+        },
+        "dairy.path": {
+            "region": "dairy_house",
+            "name": "Dairy Path",
+            "situation": "A dairy sits inland. Milk waits in a keeler.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "bake.path", "label": "Go to the bakehouse"},
+                {"to": "dairy.yard", "label": "Go to dairy yard"},
+                {"to": "loom.path", "label": "Go to the loom"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dairy.yard": {
+            "region": "dairy_house",
+            "name": "Dairy Yard",
+            "situation": "Keel waits by a rennet mark. The milk smell is sharp.",
+            "exits": [
+                {"to": "dairy.path", "label": "Go to dairy path"},
+                {"to": "dairy.keel", "label": "Go to the keeler"},
+                {"to": "dairy.curd", "label": "Go to the curd"},
+                {"to": "dairy.shelf", "label": "Go to the shelf"},
+            ],
+            "ground": [],
+            "actors": ["keel"],
+        },
+        "dairy.keel": {
+            "region": "dairy_house",
+            "name": "Milk Keeler",
+            "situation": "A keeler waits. Milk sits still.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "loaf_drawn"},
+                    "text": "Oven heat would scald this milk true.",
+                },
+            ],
+            "exits": [{"to": "dairy.yard", "label": "Go to dairy yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "dairy.curd": {
+            "region": "dairy_house",
+            "name": "Curd Board",
+            "situation": "Curd keeps the wrap. A curd wrap waits.",
+            "exits": [{"to": "dairy.yard", "label": "Go to dairy yard"}],
+            "ground": ["curd_wrap"],
+            "actors": ["curd"],
+        },
+        "dairy.shelf": {
+            "region": "dairy_house",
+            "name": "Cheese Shelf",
+            "situation": "Shelf waits at the wheels. The shelf sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wheel_salted"},
+                    "text": "The shelf sits still and even.",
+                },
+            ],
+            "exits": [{"to": "dairy.yard", "label": "Go to dairy yard"}],
+            "ground": [],
+            "actors": ["shelf"],
+        },
+        "loom.path": {
+            "region": "loom_shed",
+            "name": "Loom Path",
+            "situation": "A loom shed sits inland. A beam waits for warp.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dairy.path", "label": "Go to the dairy"},
+                {"to": "loom.yard", "label": "Go to loom yard"},
+                {"to": "horn.path", "label": "Go to the lanterns"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "loom.yard": {
+            "region": "loom_shed",
+            "name": "Loom Yard",
+            "situation": "Warp waits by a beam mark. The wool smell is sharp.",
+            "exits": [
+                {"to": "loom.path", "label": "Go to loom path"},
+                {"to": "loom.beam", "label": "Go to the beam"},
+                {"to": "loom.sley", "label": "Go to the sley"},
+                {"to": "loom.batten", "label": "Go to the batten"},
+            ],
+            "ground": [],
+            "actors": ["warp"],
+        },
+        "loom.beam": {
+            "region": "loom_shed",
+            "name": "Warp Beam",
+            "situation": "A warp beam waits. Threads sit slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wheel_salted"},
+                    "text": "Cheesecloth would wrap this warp true.",
+                },
+            ],
+            "exits": [{"to": "loom.yard", "label": "Go to loom yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "loom.sley": {
+            "region": "loom_shed",
+            "name": "Sley Reed",
+            "situation": "Sley keeps the reed. A shuttle bob waits.",
+            "exits": [{"to": "loom.yard", "label": "Go to loom yard"}],
+            "ground": ["shuttle_bob"],
+            "actors": ["sley"],
+        },
+        "loom.batten": {
+            "region": "loom_shed",
+            "name": "Loom Batten",
+            "situation": "Batten waits at the fell. The batten sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "web_sheared"},
+                    "text": "The batten sits still and even.",
+                },
+            ],
+            "exits": [{"to": "loom.yard", "label": "Go to loom yard"}],
+            "ground": [],
+            "actors": ["batten"],
+        },
+        "horn.path": {
+            "region": "horn_lantern",
+            "name": "Lantern Path",
+            "situation": "A lantern shed sits inland. Horn waits for a scrape.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "loom.path", "label": "Go to the loom"},
+                {"to": "horn.yard", "label": "Go to horn yard"},
+                {"to": "gall.path", "label": "Go to the galls"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "horn.yard": {
+            "region": "horn_lantern",
+            "name": "Horn Yard",
+            "situation": "Scrape waits by a horn mark. The horn smell is sharp.",
+            "exits": [
+                {"to": "horn.path", "label": "Go to horn path"},
+                {"to": "horn.scrape", "label": "Go to the scrape"},
+                {"to": "horn.pane", "label": "Go to the pane"},
+                {"to": "horn.hook", "label": "Go to the hook"},
+            ],
+            "ground": [],
+            "actors": ["scrape"],
+        },
+        "horn.scrape": {
+            "region": "horn_lantern",
+            "name": "Horn Scrape",
+            "situation": "A scrape board waits. Horn sits thick.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "web_sheared"},
+                    "text": "A sheared web would wick this horn true.",
+                },
+            ],
+            "exits": [{"to": "horn.yard", "label": "Go to horn yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "horn.pane": {
+            "region": "horn_lantern",
+            "name": "Pane Bench",
+            "situation": "Pane keeps the thin horn. A horn pane waits.",
+            "exits": [{"to": "horn.yard", "label": "Go to horn yard"}],
+            "ground": ["horn_pane"],
+            "actors": ["pane"],
+        },
+        "horn.hook": {
+            "region": "horn_lantern",
+            "name": "Lantern Hook",
+            "situation": "Hook waits at the lantern rail. The hook sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lantern_hung"},
+                    "text": "The hook sits still and even.",
+                },
+            ],
+            "exits": [{"to": "horn.yard", "label": "Go to horn yard"}],
+            "ground": [],
+            "actors": ["hook"],
+        },
+        "gall.path": {
+            "region": "gall_house",
+            "name": "Gall Path",
+            "situation": "A gall house sits inland. Oak galls wait for a crush.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "horn.path", "label": "Go to the lanterns"},
+                {"to": "gall.yard", "label": "Go to gall yard"},
+                {"to": "cobble.path", "label": "Go to the cobblers"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "gall.yard": {
+            "region": "gall_house",
+            "name": "Gall Yard",
+            "situation": "Gall waits by an ink mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "gall.path", "label": "Go to gall path"},
+                {"to": "gall.crush", "label": "Go to the crush"},
+                {"to": "gall.copper", "label": "Go to the copper"},
+                {"to": "gall.nib", "label": "Go to the nib"},
+            ],
+            "ground": [],
+            "actors": ["gall"],
+        },
+        "gall.crush": {
+            "region": "gall_house",
+            "name": "Gall Crush",
+            "situation": "A crush stone waits. Galls sit dry.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lantern_hung"},
+                    "text": "A hung lantern would light this crush true.",
+                },
+            ],
+            "exits": [{"to": "gall.yard", "label": "Go to gall yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "gall.copper": {
+            "region": "gall_house",
+            "name": "Copper Pot",
+            "situation": "Copper keeps the mix. An ink nib waits.",
+            "exits": [{"to": "gall.yard", "label": "Go to gall yard"}],
+            "ground": ["ink_nib"],
+            "actors": ["copper"],
+        },
+        "gall.nib": {
+            "region": "gall_house",
+            "name": "Nib Bench",
+            "situation": "Nib waits at the cut. The nib sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nib_cut"},
+                    "text": "The nib sits still and even.",
+                },
+            ],
+            "exits": [{"to": "gall.yard", "label": "Go to gall yard"}],
+            "ground": [],
+            "actors": ["nib"],
+        },
+        "cobble.path": {
+            "region": "cobble_shop",
+            "name": "Cobble Path",
+            "situation": "A cobble shop sits inland. A last waits for a sole.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "gall.path", "label": "Go to the galls"},
+                {"to": "cobble.yard", "label": "Go to cobble yard"},
+                {"to": "cider.path", "label": "Go to the cider"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cobble.yard": {
+            "region": "cobble_shop",
+            "name": "Cobble Yard",
+            "situation": "Last waits by a size mark. The leather smell is sharp.",
+            "exits": [
+                {"to": "cobble.path", "label": "Go to cobble path"},
+                {"to": "cobble.sole", "label": "Go to the sole"},
+                {"to": "cobble.awl", "label": "Go to the awl"},
+                {"to": "cobble.heel", "label": "Go to the heel"},
+            ],
+            "ground": [],
+            "actors": ["last"],
+        },
+        "cobble.sole": {
+            "region": "cobble_shop",
+            "name": "Last Sole",
+            "situation": "A wooden last waits. Leather sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nib_cut"},
+                    "text": "A cut nib would mark this last true.",
+                },
+            ],
+            "exits": [{"to": "cobble.yard", "label": "Go to cobble yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cobble.awl": {
+            "region": "cobble_shop",
+            "name": "Awl Bench",
+            "situation": "Awl keeps the punch. A sole peg waits.",
+            "exits": [{"to": "cobble.yard", "label": "Go to cobble yard"}],
+            "ground": ["sole_peg"],
+            "actors": ["awl"],
+        },
+        "cobble.heel": {
+            "region": "cobble_shop",
+            "name": "Heel Block",
+            "situation": "Heel waits at the pegs. The heel sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "heel_pegged"},
+                    "text": "The heel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cobble.yard", "label": "Go to cobble yard"}],
+            "ground": [],
+            "actors": ["heel"],
+        },
+        "cider.path": {
+            "region": "cider_house",
+            "name": "Cider Path",
+            "situation": "A cider house sits inland. Fruit waits for the mill.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cobble.path", "label": "Go to the cobblers"},
+                {"to": "cider.yard", "label": "Go to cider yard"},
+                {"to": "must.path", "label": "Go to the mustard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cider.yard": {
+            "region": "cider_house",
+            "name": "Cider Yard",
+            "situation": "Fruit waits by a mill mark. The apple smell is sharp.",
+            "exits": [
+                {"to": "cider.path", "label": "Go to cider path"},
+                {"to": "cider.fruit", "label": "Go to the fruit"},
+                {"to": "cider.cheese", "label": "Go to the cheese"},
+                {"to": "cider.keeve", "label": "Go to the keeve"},
+            ],
+            "ground": [],
+            "actors": ["fruit"],
+        },
+        "cider.fruit": {
+            "region": "cider_house",
+            "name": "Fruit Mill",
+            "situation": "A fruit mill waits. Apples sit in a hopper.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "heel_pegged"},
+                    "text": "A pegged heel hide would seal this hopper true.",
+                },
+            ],
+            "exits": [{"to": "cider.yard", "label": "Go to cider yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cider.cheese": {
+            "region": "cider_house",
+            "name": "Pomace Cheese",
+            "situation": "Cheese keeps the wrap. A pomace wrap waits.",
+            "exits": [{"to": "cider.yard", "label": "Go to cider yard"}],
+            "ground": ["pomace_wrap"],
+            "actors": ["cheese"],
+        },
+        "cider.keeve": {
+            "region": "cider_house",
+            "name": "Cider Keeve",
+            "situation": "Keeve waits at the vat. The keeve sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "keeve_bunged"},
+                    "text": "The keeve sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cider.yard", "label": "Go to cider yard"}],
+            "ground": [],
+            "actors": ["keeve"],
+        },
+        "must.path": {
+            "region": "mustard_mill",
+            "name": "Mustard Path",
+            "situation": "A mustard mill sits inland. Seed waits for a quern.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cider.path", "label": "Go to the cider"},
+                {"to": "must.yard", "label": "Go to mustard yard"},
+                {"to": "link.path", "label": "Go to the sausages"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "must.yard": {
+            "region": "mustard_mill",
+            "name": "Mustard Yard",
+            "situation": "Seed waits by a quern mark. The seed smell is sharp.",
+            "exits": [
+                {"to": "must.path", "label": "Go to mustard path"},
+                {"to": "must.quern", "label": "Go to the quern"},
+                {"to": "must.paste", "label": "Go to the paste"},
+                {"to": "must.pot", "label": "Go to the pot"},
+            ],
+            "ground": [],
+            "actors": ["seed"],
+        },
+        "must.quern": {
+            "region": "mustard_mill",
+            "name": "Seed Quern",
+            "situation": "A quern waits. Seed sits dry.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "keeve_bunged"},
+                    "text": "Bunged cider would wet this quern true.",
+                },
+            ],
+            "exits": [{"to": "must.yard", "label": "Go to mustard yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "must.paste": {
+            "region": "mustard_mill",
+            "name": "Paste Board",
+            "situation": "Paste keeps the mix. A paste pot waits.",
+            "exits": [{"to": "must.yard", "label": "Go to mustard yard"}],
+            "ground": ["paste_pot"],
+            "actors": ["paste"],
+        },
+        "must.pot": {
+            "region": "mustard_mill",
+            "name": "Mustard Pot",
+            "situation": "Pot waits at the lid. The pot sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mustard_potted"},
+                    "text": "The pot sits still and even.",
+                },
+            ],
+            "exits": [{"to": "must.yard", "label": "Go to mustard yard"}],
+            "ground": [],
+            "actors": ["pot"],
+        },
+        "link.path": {
+            "region": "sausage_house",
+            "name": "Sausage Path",
+            "situation": "A sausage house sits inland. A chop board waits.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "must.path", "label": "Go to the mustard"},
+                {"to": "link.yard", "label": "Go to sausage yard"},
+                {"to": "pie.path", "label": "Go to the pies"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "link.yard": {
+            "region": "sausage_house",
+            "name": "Sausage Yard",
+            "situation": "Chop waits by a board mark. The fat smell is sharp.",
+            "exits": [
+                {"to": "link.path", "label": "Go to sausage path"},
+                {"to": "link.chop", "label": "Go to the chop"},
+                {"to": "link.funnel", "label": "Go to the funnel"},
+                {"to": "link.tie", "label": "Go to the links"},
+            ],
+            "ground": [],
+            "actors": ["chop"],
+        },
+        "link.chop": {
+            "region": "sausage_house",
+            "name": "Chop Board",
+            "situation": "A chop board waits. Meat sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mustard_potted"},
+                    "text": "Potted mustard would season this chop true.",
+                },
+            ],
+            "exits": [{"to": "link.yard", "label": "Go to sausage yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "link.funnel": {
+            "region": "sausage_house",
+            "name": "Fill Funnel",
+            "situation": "Funnel keeps the fill. A gut skin waits.",
+            "exits": [{"to": "link.yard", "label": "Go to sausage yard"}],
+            "ground": ["gut_skin"],
+            "actors": ["funnel"],
+        },
+        "link.tie": {
+            "region": "sausage_house",
+            "name": "Link Tie",
+            "situation": "Tie waits at the strings. The links sit slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sausage_linked"},
+                    "text": "The links sit still and even.",
+                },
+            ],
+            "exits": [{"to": "link.yard", "label": "Go to sausage yard"}],
+            "ground": [],
+            "actors": ["tie"],
+        },
+        "pie.path": {
+            "region": "pie_house",
+            "name": "Pie Path",
+            "situation": "A pie house sits inland. A board waits for crust.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "link.path", "label": "Go to the sausages"},
+                {"to": "pie.yard", "label": "Go to pie yard"},
+                {"to": "jam.path", "label": "Go to the jam"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pie.yard": {
+            "region": "pie_house",
+            "name": "Pie Yard",
+            "situation": "Crust waits by a board mark. The paste smell is sharp.",
+            "exits": [
+                {"to": "pie.path", "label": "Go to pie path"},
+                {"to": "pie.crust", "label": "Go to the crust"},
+                {"to": "pie.dish", "label": "Go to the dish"},
+                {"to": "pie.crimp", "label": "Go to the crimp"},
+            ],
+            "ground": [],
+            "actors": ["crust"],
+        },
+        "pie.crust": {
+            "region": "pie_house",
+            "name": "Crust Board",
+            "situation": "A paste board waits. Flour sits dry.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sausage_linked"},
+                    "text": "Linked sausage fat would lard this crust true.",
+                },
+            ],
+            "exits": [{"to": "pie.yard", "label": "Go to pie yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "pie.dish": {
+            "region": "pie_house",
+            "name": "Pie Dish",
+            "situation": "Dish keeps the fill. A pie lid waits.",
+            "exits": [{"to": "pie.yard", "label": "Go to pie yard"}],
+            "ground": ["pie_lid"],
+            "actors": ["dish"],
+        },
+        "pie.crimp": {
+            "region": "pie_house",
+            "name": "Crimp Lip",
+            "situation": "Crimp waits at the rim. The lid sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "pie_crimped"},
+                    "text": "The lid sits still and even.",
+                },
+            ],
+            "exits": [{"to": "pie.yard", "label": "Go to pie yard"}],
+            "ground": [],
+            "actors": ["crimp"],
+        },
+        "jam.path": {
+            "region": "jam_house",
+            "name": "Jam Path",
+            "situation": "A jam house sits inland. A copper waits for pulp.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "pie.path", "label": "Go to the pies"},
+                {"to": "jam.yard", "label": "Go to jam yard"},
+                {"to": "crock.path", "label": "Go to the crocks"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "jam.yard": {
+            "region": "jam_house",
+            "name": "Jam Yard",
+            "situation": "Pulp waits by a copper mark. The fruit smell is sharp.",
+            "exits": [
+                {"to": "jam.path", "label": "Go to jam path"},
+                {"to": "jam.pulp", "label": "Go to the pulp"},
+                {"to": "jam.foam", "label": "Go to the foam"},
+                {"to": "jam.jar", "label": "Go to the jar"},
+            ],
+            "ground": [],
+            "actors": ["pulp"],
+        },
+        "jam.pulp": {
+            "region": "jam_house",
+            "name": "Pulp Copper",
+            "situation": "A copper waits. Fruit sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "pie_crimped"},
+                    "text": "Crimped pie glaze would set this pulp true.",
+                },
+            ],
+            "exits": [{"to": "jam.yard", "label": "Go to jam yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "jam.foam": {
+            "region": "jam_house",
+            "name": "Foam Skim",
+            "situation": "Foam keeps the skim. A jam jar waits.",
+            "exits": [{"to": "jam.yard", "label": "Go to jam yard"}],
+            "ground": ["jam_jar"],
+            "actors": ["foam"],
+        },
+        "jam.jar": {
+            "region": "jam_house",
+            "name": "Jar Lip",
+            "situation": "Jar waits at the lip. The jam sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "jam_jarred"},
+                    "text": "The jam sits still and even.",
+                },
+            ],
+            "exits": [{"to": "jam.yard", "label": "Go to jam yard"}],
+            "ground": [],
+            "actors": ["jar"],
+        },
+        "crock.path": {
+            "region": "crock_yard",
+            "name": "Crock Path",
+            "situation": "A crock yard sits inland. A wheel waits for clay.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "jam.path", "label": "Go to the jam"},
+                {"to": "crock.yard", "label": "Go to crock yard"},
+                {"to": "hide.path", "label": "Go to the hides"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "crock.yard": {
+            "region": "crock_yard",
+            "name": "Crock Yard",
+            "situation": "Throw waits by a wheel mark. The clay smell is sharp.",
+            "exits": [
+                {"to": "crock.path", "label": "Go to crock path"},
+                {"to": "crock.throw", "label": "Go to the throw"},
+                {"to": "crock.biscuit", "label": "Go to the biscuit"},
+                {"to": "crock.glaze", "label": "Go to the glaze"},
+            ],
+            "ground": [],
+            "actors": ["throw"],
+        },
+        "crock.throw": {
+            "region": "crock_yard",
+            "name": "Throw Wheel",
+            "situation": "A kick wheel waits. Clay sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "jam_jarred"},
+                    "text": "Jarred jam flux would set this clay true.",
+                },
+            ],
+            "exits": [{"to": "crock.yard", "label": "Go to crock yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "crock.biscuit": {
+            "region": "crock_yard",
+            "name": "Biscuit Fire",
+            "situation": "Biscuit keeps the fire. A biscuit ware waits.",
+            "exits": [{"to": "crock.yard", "label": "Go to crock yard"}],
+            "ground": ["biscuit_ware"],
+            "actors": ["biscuit"],
+        },
+        "crock.glaze": {
+            "region": "crock_yard",
+            "name": "Glaze Dip",
+            "situation": "Glaze waits at the dip. The ware sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "crock_glazed"},
+                    "text": "The ware sits still and even.",
+                },
+            ],
+            "exits": [{"to": "crock.yard", "label": "Go to crock yard"}],
+            "ground": [],
+            "actors": ["glaze"],
+        },
+        "hide.path": {
+            "region": "tannery",
+            "name": "Hide Path",
+            "situation": "A tannery sits inland. A beam waits for hide.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "crock.path", "label": "Go to the crocks"},
+                {"to": "hide.yard", "label": "Go to hide yard"},
+                {"to": "flax.path", "label": "Go to the flax"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "hide.yard": {
+            "region": "tannery",
+            "name": "Hide Yard",
+            "situation": "Flesh waits by a beam mark. The hide smell is sharp.",
+            "exits": [
+                {"to": "hide.path", "label": "Go to hide path"},
+                {"to": "hide.flesh", "label": "Go to the flesh"},
+                {"to": "hide.bate", "label": "Go to the bate"},
+                {"to": "hide.tan", "label": "Go to the tan"},
+            ],
+            "ground": [],
+            "actors": ["flesh"],
+        },
+        "hide.flesh": {
+            "region": "tannery",
+            "name": "Flesh Beam",
+            "situation": "A fleshing beam waits. Hide sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "crock_glazed"},
+                    "text": "Glazed crock rinse would set this hide true.",
+                },
+            ],
+            "exits": [{"to": "hide.yard", "label": "Go to hide yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "hide.bate": {
+            "region": "tannery",
+            "name": "Bate Tub",
+            "situation": "Bate keeps the tub. An oak bark waits.",
+            "exits": [{"to": "hide.yard", "label": "Go to hide yard"}],
+            "ground": ["oak_bark"],
+            "actors": ["bate"],
+        },
+        "hide.tan": {
+            "region": "tannery",
+            "name": "Tan Pit",
+            "situation": "Tan waits at the pit. The hide sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hide_tanned"},
+                    "text": "The hide sits still and even.",
+                },
+            ],
+            "exits": [{"to": "hide.yard", "label": "Go to hide yard"}],
+            "ground": [],
+            "actors": ["tan"],
+        },
+        "flax.path": {
+            "region": "flax_house",
+            "name": "Flax Path",
+            "situation": "A flax house sits inland. A pond waits for rett.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "hide.path", "label": "Go to the hides"},
+                {"to": "flax.yard", "label": "Go to flax yard"},
+                {"to": "nail.path", "label": "Go to the nails"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "flax.yard": {
+            "region": "flax_house",
+            "name": "Flax Yard",
+            "situation": "Rett waits by a pond mark. The flax smell is sharp.",
+            "exits": [
+                {"to": "flax.path", "label": "Go to flax path"},
+                {"to": "flax.rett", "label": "Go to the rett"},
+                {"to": "flax.heckle", "label": "Go to the heckle"},
+                {"to": "flax.spin", "label": "Go to the spindle"},
+            ],
+            "ground": [],
+            "actors": ["rett"],
+        },
+        "flax.rett": {
+            "region": "flax_house",
+            "name": "Rett Pond",
+            "situation": "A rett pond waits. Flax sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hide_tanned"},
+                    "text": "Tanned hide gloves would turn this rett true.",
+                },
+            ],
+            "exits": [{"to": "flax.yard", "label": "Go to flax yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "flax.heckle": {
+            "region": "flax_house",
+            "name": "Heckle Comb",
+            "situation": "Heckle keeps the comb. A flax tow waits.",
+            "exits": [{"to": "flax.yard", "label": "Go to flax yard"}],
+            "ground": ["flax_tow"],
+            "actors": ["heckle"],
+        },
+        "flax.spin": {
+            "region": "flax_house",
+            "name": "Spindle Whirl",
+            "situation": "Spindle waits at the whirl. The line sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flax_spun"},
+                    "text": "The line sits still and even.",
+                },
+            ],
+            "exits": [{"to": "flax.yard", "label": "Go to flax yard"}],
+            "ground": [],
+            "actors": ["spindle"],
+        },
+        "nail.path": {
+            "region": "nailery",
+            "name": "Nail Path",
+            "situation": "A nailery sits inland. A snip waits for rod.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "flax.path", "label": "Go to the flax"},
+                {"to": "nail.yard", "label": "Go to nail yard"},
+                {"to": "wain.path", "label": "Go to the wains"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "nail.yard": {
+            "region": "nailery",
+            "name": "Nail Yard",
+            "situation": "Snip waits by a rod mark. The iron smell is sharp.",
+            "exits": [
+                {"to": "nail.path", "label": "Go to nail path"},
+                {"to": "nail.snip", "label": "Go to the snip"},
+                {"to": "nail.head", "label": "Go to the header"},
+                {"to": "nail.shank", "label": "Go to the shank"},
+            ],
+            "ground": [],
+            "actors": ["snip"],
+        },
+        "nail.snip": {
+            "region": "nailery",
+            "name": "Rod Snip",
+            "situation": "A rod snip waits. Iron sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flax_spun"},
+                    "text": "Spun flax grip would set this snip true.",
+                },
+            ],
+            "exits": [{"to": "nail.yard", "label": "Go to nail yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "nail.head": {
+            "region": "nailery",
+            "name": "Header Die",
+            "situation": "Header keeps the die. A nail blank waits.",
+            "exits": [{"to": "nail.yard", "label": "Go to nail yard"}],
+            "ground": ["nail_blank"],
+            "actors": ["header"],
+        },
+        "nail.shank": {
+            "region": "nailery",
+            "name": "Shank Hardy",
+            "situation": "Shank waits at the hardy. The nail sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nail_pointed"},
+                    "text": "The nail sits still and even.",
+                },
+            ],
+            "exits": [{"to": "nail.yard", "label": "Go to nail yard"}],
+            "ground": [],
+            "actors": ["shank"],
+        },
+        "wain.path": {
+            "region": "wheelwright",
+            "name": "Wain Path",
+            "situation": "A wheelwright sits inland. A hub waits for dish.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "nail.path", "label": "Go to the nails"},
+                {"to": "wain.yard", "label": "Go to wain yard"},
+                {"to": "malt.path", "label": "Go to the malt"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wain.yard": {
+            "region": "wheelwright",
+            "name": "Wain Yard",
+            "situation": "Hub waits by a nave mark. The elm smell is sharp.",
+            "exits": [
+                {"to": "wain.path", "label": "Go to wain path"},
+                {"to": "wain.hub", "label": "Go to the hub"},
+                {"to": "wain.spoke", "label": "Go to the spoke"},
+                {"to": "wain.felloe", "label": "Go to the felloe"},
+            ],
+            "ground": [],
+            "actors": ["hub"],
+        },
+        "wain.hub": {
+            "region": "wheelwright",
+            "name": "Hub Lathe",
+            "situation": "A hub lathe waits. Elm sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nail_pointed"},
+                    "text": "Pointed nails would box this hub true.",
+                },
+            ],
+            "exits": [{"to": "wain.yard", "label": "Go to wain yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wain.spoke": {
+            "region": "wheelwright",
+            "name": "Spoke Mortise",
+            "situation": "Spoke keeps the mortise. A felloe strake waits.",
+            "exits": [{"to": "wain.yard", "label": "Go to wain yard"}],
+            "ground": ["felloe_strake"],
+            "actors": ["spoke"],
+        },
+        "wain.felloe": {
+            "region": "wheelwright",
+            "name": "Felloe Tyre",
+            "situation": "Felloe waits at the tyre. The rim sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tyre_set"},
+                    "text": "The rim sits still and even.",
+                },
+            ],
+            "exits": [{"to": "wain.yard", "label": "Go to wain yard"}],
+            "ground": [],
+            "actors": ["felloe"],
+        },
+        "malt.path": {
+            "region": "malt_house",
+            "name": "Malt Path",
+            "situation": "A malt house sits inland. A vat waits for steep.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wain.path", "label": "Go to the wains"},
+                {"to": "malt.yard", "label": "Go to malt yard"},
+                {"to": "brew.path", "label": "Go to the ale"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "malt.yard": {
+            "region": "malt_house",
+            "name": "Malt Yard",
+            "situation": "Steep waits by a vat mark. The barley smell is sharp.",
+            "exits": [
+                {"to": "malt.path", "label": "Go to malt path"},
+                {"to": "malt.steep", "label": "Go to the steep"},
+                {"to": "malt.piece", "label": "Go to the piece"},
+                {"to": "malt.oast", "label": "Go to the oast"},
+            ],
+            "ground": [],
+            "actors": ["steep"],
+        },
+        "malt.steep": {
+            "region": "malt_house",
+            "name": "Steep Vat",
+            "situation": "A steep vat waits. Barley sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tyre_set"},
+                    "text": "A tyred wain would fill this steep true.",
+                },
+            ],
+            "exits": [{"to": "malt.yard", "label": "Go to malt yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "malt.piece": {
+            "region": "malt_house",
+            "name": "Malt Floor",
+            "situation": "Piece keeps the floor. A green malt waits.",
+            "exits": [{"to": "malt.yard", "label": "Go to malt yard"}],
+            "ground": ["green_malt"],
+            "actors": ["piece"],
+        },
+        "malt.oast": {
+            "region": "malt_house",
+            "name": "Oast Hair",
+            "situation": "Oast waits at the hair. The malt sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "malt_oasted"},
+                    "text": "The malt sits still and even.",
+                },
+            ],
+            "exits": [{"to": "malt.yard", "label": "Go to malt yard"}],
+            "ground": [],
+            "actors": ["oast"],
+        },
+        "brew.path": {
+            "region": "brew_house",
+            "name": "Brew Path",
+            "situation": "A brew house sits inland. A hopper waits for grist.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "malt.path", "label": "Go to the malt"},
+                {"to": "brew.yard", "label": "Go to brew yard"},
+                {"to": "acet.path", "label": "Go to the vinegar"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "brew.yard": {
+            "region": "brew_house",
+            "name": "Brew Yard",
+            "situation": "Grist waits by a hopper mark. The malt smell is sharp.",
+            "exits": [
+                {"to": "brew.path", "label": "Go to brew path"},
+                {"to": "brew.grist", "label": "Go to the grist"},
+                {"to": "brew.wort", "label": "Go to the wort"},
+                {"to": "brew.gyle", "label": "Go to the gyle"},
+            ],
+            "ground": [],
+            "actors": ["grist"],
+        },
+        "brew.grist": {
+            "region": "brew_house",
+            "name": "Grist Hopper",
+            "situation": "A hopper waits. Grist sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "malt_oasted"},
+                    "text": "Oasted malt would charge this grist true.",
+                },
+            ],
+            "exits": [{"to": "brew.yard", "label": "Go to brew yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "brew.wort": {
+            "region": "brew_house",
+            "name": "Wort Copper",
+            "situation": "Wort keeps the copper. A hop cone waits.",
+            "exits": [{"to": "brew.yard", "label": "Go to brew yard"}],
+            "ground": ["hop_cone"],
+            "actors": ["wort"],
+        },
+        "brew.gyle": {
+            "region": "brew_house",
+            "name": "Gyle Rack",
+            "situation": "Gyle waits at the rack. The ale sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gyle_racked"},
+                    "text": "The ale sits still and even.",
+                },
+            ],
+            "exits": [{"to": "brew.yard", "label": "Go to brew yard"}],
+            "ground": [],
+            "actors": ["gyle"],
+        },
+        "acet.path": {
+            "region": "vinegar_house",
+            "name": "Vinegar Path",
+            "situation": "A vinegar house sits inland. A vat waits for mother.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "brew.path", "label": "Go to the ale"},
+                {"to": "acet.yard", "label": "Go to vinegar yard"},
+                {"to": "glue.path", "label": "Go to the glue"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "acet.yard": {
+            "region": "vinegar_house",
+            "name": "Vinegar Yard",
+            "situation": "Mother waits by a vat mark. The sour smell is sharp.",
+            "exits": [
+                {"to": "acet.path", "label": "Go to vinegar path"},
+                {"to": "acet.mother", "label": "Go to the mother"},
+                {"to": "acet.sour", "label": "Go to the sour"},
+                {"to": "acet.cruet", "label": "Go to the cruet"},
+            ],
+            "ground": [],
+            "actors": ["mother"],
+        },
+        "acet.mother": {
+            "region": "vinegar_house",
+            "name": "Mother Vat",
+            "situation": "A mother vat waits. Lees sit coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gyle_racked"},
+                    "text": "Racked ale would pitch this mother true.",
+                },
+            ],
+            "exits": [{"to": "acet.yard", "label": "Go to vinegar yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "acet.sour": {
+            "region": "vinegar_house",
+            "name": "Sour Acet",
+            "situation": "Sour keeps the acet. A cruet cork waits.",
+            "exits": [{"to": "acet.yard", "label": "Go to vinegar yard"}],
+            "ground": ["cruet_cork"],
+            "actors": ["sour"],
+        },
+        "acet.cruet": {
+            "region": "vinegar_house",
+            "name": "Cruet Lip",
+            "situation": "Cruet waits at the lip. The sour sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cruet_corked"},
+                    "text": "The sour sits still and even.",
+                },
+            ],
+            "exits": [{"to": "acet.yard", "label": "Go to vinegar yard"}],
+            "ground": [],
+            "actors": ["cruet"],
+        },
+        "glue.path": {
+            "region": "glue_house",
+            "name": "Glue Path",
+            "situation": "A glue house sits inland. A vat waits for parings.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "acet.path", "label": "Go to the vinegar"},
+                {"to": "glue.yard", "label": "Go to glue yard"},
+                {"to": "bind.path", "label": "Go to the bindery"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "glue.yard": {
+            "region": "glue_house",
+            "name": "Glue Yard",
+            "situation": "Paring waits by a scrap mark. The hide smell is sharp.",
+            "exits": [
+                {"to": "glue.path", "label": "Go to glue path"},
+                {"to": "glue.paring", "label": "Go to the paring"},
+                {"to": "glue.seethe", "label": "Go to the seethe"},
+                {"to": "glue.slab", "label": "Go to the slab"},
+            ],
+            "ground": [],
+            "actors": ["paring"],
+        },
+        "glue.paring": {
+            "region": "glue_house",
+            "name": "Paring Bench",
+            "situation": "A paring bench waits. Hide sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cruet_corked"},
+                    "text": "Corked vinegar would cut this size true.",
+                },
+            ],
+            "exits": [{"to": "glue.yard", "label": "Go to glue yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "glue.seethe": {
+            "region": "glue_house",
+            "name": "Size Vat",
+            "situation": "Seether keeps the size. A size cake waits.",
+            "exits": [{"to": "glue.yard", "label": "Go to glue yard"}],
+            "ground": ["size_cake"],
+            "actors": ["seether"],
+        },
+        "glue.slab": {
+            "region": "glue_house",
+            "name": "Glue Slab",
+            "situation": "Slab waits at the frame. The size sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "glue_caked"},
+                    "text": "The glue sits still and even.",
+                },
+            ],
+            "exits": [{"to": "glue.yard", "label": "Go to glue yard"}],
+            "ground": [],
+            "actors": ["slab"],
+        },
+        "bind.path": {
+            "region": "bindery",
+            "name": "Bindery Path",
+            "situation": "A bindery sits inland. A bench waits for quires.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "glue.path", "label": "Go to the glue"},
+                {"to": "bind.yard", "label": "Go to bind yard"},
+                {"to": "gilt.path", "label": "Go to the gilding"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "bind.yard": {
+            "region": "bindery",
+            "name": "Bindery Yard",
+            "situation": "Quire waits by a sewing frame. The paper smell is dry.",
+            "exits": [
+                {"to": "bind.path", "label": "Go to bind path"},
+                {"to": "bind.quire", "label": "Go to the quire"},
+                {"to": "bind.sew", "label": "Go to the sewing"},
+                {"to": "bind.nip", "label": "Go to the nip"},
+            ],
+            "ground": [],
+            "actors": ["quire"],
+        },
+        "bind.quire": {
+            "region": "bindery",
+            "name": "Gathering Bench",
+            "situation": "A gathering bench waits. Sheets sit coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "glue_caked"},
+                    "text": "Caked glue would size this quire true.",
+                },
+            ],
+            "exits": [{"to": "bind.yard", "label": "Go to bind yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "bind.sew": {
+            "region": "bindery",
+            "name": "Sewing Frame",
+            "situation": "Band keeps the sewing. A millboard waits.",
+            "exits": [{"to": "bind.yard", "label": "Go to bind yard"}],
+            "ground": ["millboard"],
+            "actors": ["band"],
+        },
+        "bind.nip": {
+            "region": "bindery",
+            "name": "Nipping Plough",
+            "situation": "Nip waits at the plough. The boards sit slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "book_bound"},
+                    "text": "The book sits still and even.",
+                },
+            ],
+            "exits": [{"to": "bind.yard", "label": "Go to bind yard"}],
+            "ground": [],
+            "actors": ["nip"],
+        },
+        "gilt.path": {
+            "region": "gilders_loft",
+            "name": "Gilding Path",
+            "situation": "A gilder's loft sits inland. A bole waits for leaf.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "bind.path", "label": "Go to the bindery"},
+                {"to": "gilt.yard", "label": "Go to gilt yard"},
+                {"to": "gem.path", "label": "Go to the jeweler"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "gilt.yard": {
+            "region": "gilders_loft",
+            "name": "Gilding Yard",
+            "situation": "Bole waits by a cushion mark. The gold smell is faint.",
+            "exits": [
+                {"to": "gilt.path", "label": "Go to gilt path"},
+                {"to": "gilt.bole", "label": "Go to the bole"},
+                {"to": "gilt.leaf", "label": "Go to the leaf"},
+                {"to": "gilt.burnish", "label": "Go to the burnish"},
+            ],
+            "ground": [],
+            "actors": ["bole"],
+        },
+        "gilt.bole": {
+            "region": "gilders_loft",
+            "name": "Bole Cushion",
+            "situation": "A bole cushion waits. Ground sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "book_bound"},
+                    "text": "A bound book would take this bole true.",
+                },
+            ],
+            "exits": [{"to": "gilt.yard", "label": "Go to gilt yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "gilt.leaf": {
+            "region": "gilders_loft",
+            "name": "Leaf Tip",
+            "situation": "Leaf keeps the tip. A gold leaf waits.",
+            "exits": [{"to": "gilt.yard", "label": "Go to gilt yard"}],
+            "ground": ["gold_leaf"],
+            "actors": ["leaf"],
+        },
+        "gilt.burnish": {
+            "region": "gilders_loft",
+            "name": "Burnish Stone",
+            "situation": "Burnish waits at the stone. The leaf sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "plate_burnished"},
+                    "text": "The gold sits still and even.",
+                },
+            ],
+            "exits": [{"to": "gilt.yard", "label": "Go to gilt yard"}],
+            "ground": [],
+            "actors": ["burnish"],
+        },
+        "gem.path": {
+            "region": "jeweler",
+            "name": "Jeweler Path",
+            "situation": "A jeweler sits inland. A foil waits for gold.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "gilt.path", "label": "Go to the gilding"},
+                {"to": "gem.yard", "label": "Go to gem yard"},
+                {"to": "glaz.path", "label": "Go to the glazier"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "gem.yard": {
+            "region": "jeweler",
+            "name": "Jeweler Yard",
+            "situation": "Foil waits by a cushion mark. The metal smell is sharp.",
+            "exits": [
+                {"to": "gem.path", "label": "Go to gem path"},
+                {"to": "gem.foil", "label": "Go to the foil"},
+                {"to": "gem.seat", "label": "Go to the seat"},
+                {"to": "gem.collet", "label": "Go to the collet"},
+            ],
+            "ground": [],
+            "actors": ["foil"],
+        },
+        "gem.foil": {
+            "region": "jeweler",
+            "name": "Foil Bench",
+            "situation": "A foil bench waits. Gold sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "plate_burnished"},
+                    "text": "Burnished gold would foil this seat true.",
+                },
+            ],
+            "exits": [{"to": "gem.yard", "label": "Go to gem yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "gem.seat": {
+            "region": "jeweler",
+            "name": "Bezel Seat",
+            "situation": "Seat keeps the bezel. A cabochon waits.",
+            "exits": [{"to": "gem.yard", "label": "Go to gem yard"}],
+            "ground": ["cabochon"],
+            "actors": ["seat"],
+        },
+        "gem.collet": {
+            "region": "jeweler",
+            "name": "Collet Rim",
+            "situation": "Collet waits at the rim. The gem sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "collet_closed"},
+                    "text": "The gem sits still and even.",
+                },
+            ],
+            "exits": [{"to": "gem.yard", "label": "Go to gem yard"}],
+            "ground": [],
+            "actors": ["collet"],
+        },
+        "glaz.path": {
+            "region": "glazier",
+            "name": "Glazier Path",
+            "situation": "A glazier sits inland. A quarry waits for score.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "gem.path", "label": "Go to the jeweler"},
+                {"to": "glaz.yard", "label": "Go to glazier yard"},
+                {"to": "sash.path", "label": "Go to the sashes"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "glaz.yard": {
+            "region": "glazier",
+            "name": "Glazier Yard",
+            "situation": "Score waits by a diamond mark. The glass smell is sharp.",
+            "exits": [
+                {"to": "glaz.path", "label": "Go to glazier path"},
+                {"to": "glaz.score", "label": "Go to the score"},
+                {"to": "glaz.groze", "label": "Go to the groze"},
+                {"to": "glaz.came", "label": "Go to the came"},
+            ],
+            "ground": [],
+            "actors": ["score"],
+        },
+        "glaz.score": {
+            "region": "glazier",
+            "name": "Scoring Bench",
+            "situation": "A scoring bench waits. Glass sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "collet_closed"},
+                    "text": "A closed collet would score this quarry true.",
+                },
+            ],
+            "exits": [{"to": "glaz.yard", "label": "Go to glazier yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "glaz.groze": {
+            "region": "glazier",
+            "name": "Grozing Iron",
+            "situation": "Groze keeps the iron. A came strip waits.",
+            "exits": [{"to": "glaz.yard", "label": "Go to glazier yard"}],
+            "ground": ["came_strip"],
+            "actors": ["groze"],
+        },
+        "glaz.came": {
+            "region": "glazier",
+            "name": "Came Lead",
+            "situation": "Came waits at the lead. The pane sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "pane_camed"},
+                    "text": "The pane sits still and even.",
+                },
+            ],
+            "exits": [{"to": "glaz.yard", "label": "Go to glazier yard"}],
+            "ground": [],
+            "actors": ["came"],
+        },
+        "sash.path": {
+            "region": "sash_house",
+            "name": "Sash Path",
+            "situation": "A sash house sits inland. A stile waits for rebate.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "glaz.path", "label": "Go to the glazier"},
+                {"to": "sash.yard", "label": "Go to sash yard"},
+                {"to": "putty.path", "label": "Go to the putty"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "sash.yard": {
+            "region": "sash_house",
+            "name": "Sash Yard",
+            "situation": "Stile waits by a rebate mark. The pine smell is sharp.",
+            "exits": [
+                {"to": "sash.path", "label": "Go to sash path"},
+                {"to": "sash.stile", "label": "Go to the stile"},
+                {"to": "sash.rail", "label": "Go to the rail"},
+                {"to": "sash.pin", "label": "Go to the pin"},
+            ],
+            "ground": [],
+            "actors": ["stile"],
+        },
+        "sash.stile": {
+            "region": "sash_house",
+            "name": "Stile Bench",
+            "situation": "A stile bench waits. Wood sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "pane_camed"},
+                    "text": "A camed pane would fill this rebate true.",
+                },
+            ],
+            "exits": [{"to": "sash.yard", "label": "Go to sash yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "sash.rail": {
+            "region": "sash_house",
+            "name": "Rail Tenon",
+            "situation": "Rail keeps the tenon. A sash peg waits.",
+            "exits": [{"to": "sash.yard", "label": "Go to sash yard"}],
+            "ground": ["sash_peg"],
+            "actors": ["rail"],
+        },
+        "sash.pin": {
+            "region": "sash_house",
+            "name": "Sash Pin",
+            "situation": "Pin waits at the frame. The sash sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sash_pinned"},
+                    "text": "The sash sits still and even.",
+                },
+            ],
+            "exits": [{"to": "sash.yard", "label": "Go to sash yard"}],
+            "ground": [],
+            "actors": ["pin"],
+        },
+        "putty.path": {
+            "region": "putty_house",
+            "name": "Putty Path",
+            "situation": "A putty house sits inland. A tub waits for whip.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "sash.path", "label": "Go to the sashes"},
+                {"to": "putty.yard", "label": "Go to putty yard"},
+                {"to": "paint.path", "label": "Go to the paint"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "putty.yard": {
+            "region": "putty_house",
+            "name": "Putty Yard",
+            "situation": "Whip waits by a chalk mark. The oil smell is sharp.",
+            "exits": [
+                {"to": "putty.path", "label": "Go to putty path"},
+                {"to": "putty.whip", "label": "Go to the whip"},
+                {"to": "putty.knife", "label": "Go to the knife"},
+                {"to": "putty.dust", "label": "Go to the dust"},
+            ],
+            "ground": [],
+            "actors": ["whip"],
+        },
+        "putty.whip": {
+            "region": "putty_house",
+            "name": "Whip Tub",
+            "situation": "A whip tub waits. Chalk sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sash_pinned"},
+                    "text": "A pinned sash would take this bed true.",
+                },
+            ],
+            "exits": [{"to": "putty.yard", "label": "Go to putty yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "putty.knife": {
+            "region": "putty_house",
+            "name": "Putty Knife",
+            "situation": "Knife keeps the bed. A putty knife waits.",
+            "exits": [{"to": "putty.yard", "label": "Go to putty yard"}],
+            "ground": ["putty_knife"],
+            "actors": ["knife"],
+        },
+        "putty.dust": {
+            "region": "putty_house",
+            "name": "Dust Light",
+            "situation": "Dust waits at the light. The putty sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "light_dusted"},
+                    "text": "The light sits still and even.",
+                },
+            ],
+            "exits": [{"to": "putty.yard", "label": "Go to putty yard"}],
+            "ground": [],
+            "actors": ["dust"],
+        },
+        "paint.path": {
+            "region": "paint_house",
+            "name": "Paint Path",
+            "situation": "A paint house sits inland. A stone waits for mull.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "putty.path", "label": "Go to the putty"},
+                {"to": "paint.yard", "label": "Go to paint yard"},
+                {"to": "varn.path", "label": "Go to the varnish"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "paint.yard": {
+            "region": "paint_house",
+            "name": "Paint Yard",
+            "situation": "Mull waits by a slab mark. The oil smell is sharp.",
+            "exits": [
+                {"to": "paint.path", "label": "Go to paint path"},
+                {"to": "paint.mull", "label": "Go to the mull"},
+                {"to": "paint.oil", "label": "Go to the oil"},
+                {"to": "paint.brush", "label": "Go to the brush"},
+            ],
+            "ground": [],
+            "actors": ["mull"],
+        },
+        "paint.mull": {
+            "region": "paint_house",
+            "name": "Mull Stone",
+            "situation": "A mull stone waits. Colour sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "light_dusted"},
+                    "text": "A dusted light would take this coat true.",
+                },
+            ],
+            "exits": [{"to": "paint.yard", "label": "Go to paint yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "paint.oil": {
+            "region": "paint_house",
+            "name": "Oil Pot",
+            "situation": "Oil keeps the pot. A paint brush waits.",
+            "exits": [{"to": "paint.yard", "label": "Go to paint yard"}],
+            "ground": ["paint_brush"],
+            "actors": ["oil"],
+        },
+        "paint.brush": {
+            "region": "paint_house",
+            "name": "Brush Coat",
+            "situation": "Brush waits at the coat. The paint sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coat_brushed"},
+                    "text": "The coat sits still and even.",
+                },
+            ],
+            "exits": [{"to": "paint.yard", "label": "Go to paint yard"}],
+            "ground": [],
+            "actors": ["brush"],
+        },
+        "varn.path": {
+            "region": "varnish_house",
+            "name": "Varnish Path",
+            "situation": "A varnish house sits inland. A pot waits for cook.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "paint.path", "label": "Go to the paint"},
+                {"to": "varn.yard", "label": "Go to varnish yard"},
+                {"to": "latch.path", "label": "Go to the latch"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "varn.yard": {
+            "region": "varnish_house",
+            "name": "Varnish Yard",
+            "situation": "Cook waits by a pot mark. The gum smell is sharp.",
+            "exits": [
+                {"to": "varn.path", "label": "Go to varnish path"},
+                {"to": "varn.cook", "label": "Go to the cook"},
+                {"to": "varn.strain", "label": "Go to the strain"},
+                {"to": "varn.flow", "label": "Go to the flow"},
+            ],
+            "ground": [],
+            "actors": ["cook"],
+        },
+        "varn.cook": {
+            "region": "varnish_house",
+            "name": "Cook Pot",
+            "situation": "A cook pot waits. Resin sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coat_brushed"},
+                    "text": "A brushed coat would take this gum true.",
+                },
+            ],
+            "exits": [{"to": "varn.yard", "label": "Go to varnish yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "varn.strain": {
+            "region": "varnish_house",
+            "name": "Strain Cloth",
+            "situation": "Strain keeps the cloth. A gum cloth waits.",
+            "exits": [{"to": "varn.yard", "label": "Go to varnish yard"}],
+            "ground": ["gum_cloth"],
+            "actors": ["strain"],
+        },
+        "varn.flow": {
+            "region": "varnish_house",
+            "name": "Flow Coat",
+            "situation": "Flow waits at the coat. The gum sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "varnish_flowed"},
+                    "text": "The varnish sits still and even.",
+                },
+            ],
+            "exits": [{"to": "varn.yard", "label": "Go to varnish yard"}],
+            "ground": [],
+            "actors": ["flow"],
+        },
+        "latch.path": {
+            "region": "latch_house",
+            "name": "Latch Path",
+            "situation": "A latch house sits inland. A keep waits for file.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "varn.path", "label": "Go to the varnish"},
+                {"to": "latch.yard", "label": "Go to latch yard"},
+                {"to": "hinge.path", "label": "Go to the hinge"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "latch.yard": {
+            "region": "latch_house",
+            "name": "Latch Yard",
+            "situation": "Keep waits by a plate mark. The iron smell is sharp.",
+            "exits": [
+                {"to": "latch.path", "label": "Go to latch path"},
+                {"to": "latch.keep", "label": "Go to the keep"},
+                {"to": "latch.catch", "label": "Go to the catch"},
+                {"to": "latch.hasp", "label": "Go to the hasp"},
+            ],
+            "ground": [],
+            "actors": ["keep"],
+        },
+        "latch.keep": {
+            "region": "latch_house",
+            "name": "Keep Plate",
+            "situation": "A keep plate waits. Iron sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "varnish_flowed"},
+                    "text": "A flowed coat would take this keep true.",
+                },
+            ],
+            "exits": [{"to": "latch.yard", "label": "Go to latch yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "latch.catch": {
+            "region": "latch_house",
+            "name": "Catch Plate",
+            "situation": "Catch keeps the plate. A latch file waits.",
+            "exits": [{"to": "latch.yard", "label": "Go to latch yard"}],
+            "ground": ["latch_file"],
+            "actors": ["catch"],
+        },
+        "latch.hasp": {
+            "region": "latch_house",
+            "name": "Hasp Bar",
+            "situation": "Hasp waits at the bar. The latch sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "latch_thrown"},
+                    "text": "The latch sits still and even.",
+                },
+            ],
+            "exits": [{"to": "latch.yard", "label": "Go to latch yard"}],
+            "ground": [],
+            "actors": ["hasp"],
+        },
+        "hinge.path": {
+            "region": "hinge_house",
+            "name": "Hinge Path",
+            "situation": "A hinge house sits inland. A knuckle waits for form.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "latch.path", "label": "Go to the latch"},
+                {"to": "hinge.yard", "label": "Go to hinge yard"},
+                {"to": "stay.path", "label": "Go to the stay"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "hinge.yard": {
+            "region": "hinge_house",
+            "name": "Hinge Yard",
+            "situation": "Knuckle waits by a cheek mark. The iron smell is sharp.",
+            "exits": [
+                {"to": "hinge.path", "label": "Go to hinge path"},
+                {"to": "hinge.knuckle", "label": "Go to the knuckle"},
+                {"to": "hinge.pintle", "label": "Go to the pintle"},
+                {"to": "hinge.gudgeon", "label": "Go to the gudgeon"},
+            ],
+            "ground": [],
+            "actors": ["knuckle"],
+        },
+        "hinge.knuckle": {
+            "region": "hinge_house",
+            "name": "Knuckle Form",
+            "situation": "A knuckle form waits. Iron sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "latch_thrown"},
+                    "text": "A thrown latch would take this hinge true.",
+                },
+            ],
+            "exits": [{"to": "hinge.yard", "label": "Go to hinge yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "hinge.pintle": {
+            "region": "hinge_house",
+            "name": "Pintle Drift",
+            "situation": "Pintle keeps the drift. A pintle pin waits.",
+            "exits": [{"to": "hinge.yard", "label": "Go to hinge yard"}],
+            "ground": ["pintle_pin"],
+            "actors": ["pintle"],
+        },
+        "hinge.gudgeon": {
+            "region": "hinge_house",
+            "name": "Gudgeon Cheek",
+            "situation": "Gudgeon waits at the cheek. The hinge sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gudgeon_shipped"},
+                    "text": "The hinge sits still and even.",
+                },
+            ],
+            "exits": [{"to": "hinge.yard", "label": "Go to hinge yard"}],
+            "ground": [],
+            "actors": ["gudgeon"],
+        },
+        "stay.path": {
+            "region": "stay_house",
+            "name": "Stay Path",
+            "situation": "A stay house sits inland. A slot waits for the bar.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "hinge.path", "label": "Go to the hinge"},
+                {"to": "stay.yard", "label": "Go to stay yard"},
+                {"to": "sill.path", "label": "Go to the sill"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "stay.yard": {
+            "region": "stay_house",
+            "name": "Stay Yard",
+            "situation": "Slot waits by a bar mark. The iron smell is sharp.",
+            "exits": [
+                {"to": "stay.path", "label": "Go to stay path"},
+                {"to": "stay.slot", "label": "Go to the slot"},
+                {"to": "stay.arm", "label": "Go to the arm"},
+                {"to": "stay.eye", "label": "Go to the eye"},
+            ],
+            "ground": [],
+            "actors": ["slot"],
+        },
+        "stay.slot": {
+            "region": "stay_house",
+            "name": "Stay Slot",
+            "situation": "A stay slot waits. Iron sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gudgeon_shipped"},
+                    "text": "A shipped gudgeon would take this stay true.",
+                },
+            ],
+            "exits": [{"to": "stay.yard", "label": "Go to stay yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "stay.arm": {
+            "region": "stay_house",
+            "name": "Stay Arm",
+            "situation": "Arm keeps the rivet. A stay peg waits.",
+            "exits": [{"to": "stay.yard", "label": "Go to stay yard"}],
+            "ground": ["stay_peg"],
+            "actors": ["arm"],
+        },
+        "stay.eye": {
+            "region": "stay_house",
+            "name": "Stay Eye",
+            "situation": "Eye waits at the casement. The stay sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "casement_stayed"},
+                    "text": "The stay sits still and even.",
+                },
+            ],
+            "exits": [{"to": "stay.yard", "label": "Go to stay yard"}],
+            "ground": [],
+            "actors": ["eye"],
+        },
+        "sill.path": {
+            "region": "sill_house",
+            "name": "Sill Path",
+            "situation": "A sill house sits inland. Oak waits for bed.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "stay.path", "label": "Go to the stay"},
+                {"to": "sill.yard", "label": "Go to sill yard"},
+                {"to": "case.path", "label": "Go to the casing"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "sill.yard": {
+            "region": "sill_house",
+            "name": "Sill Yard",
+            "situation": "Sill waits by a kerf mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "sill.path", "label": "Go to sill path"},
+                {"to": "sill.bed", "label": "Go to the bed"},
+                {"to": "sill.drip", "label": "Go to the drip"},
+                {"to": "sill.stool", "label": "Go to the stool"},
+            ],
+            "ground": [],
+            "actors": ["sill"],
+        },
+        "sill.bed": {
+            "region": "sill_house",
+            "name": "Sill Bed",
+            "situation": "A sill bed waits. Oak sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "casement_stayed"},
+                    "text": "A stayed casement would take this sill true.",
+                },
+            ],
+            "exits": [{"to": "sill.yard", "label": "Go to sill yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "sill.drip": {
+            "region": "sill_house",
+            "name": "Drip Kerf",
+            "situation": "Drip keeps the groove. A drip iron waits.",
+            "exits": [{"to": "sill.yard", "label": "Go to sill yard"}],
+            "ground": ["drip_iron"],
+            "actors": ["drip"],
+        },
+        "sill.stool": {
+            "region": "sill_house",
+            "name": "Window Stool",
+            "situation": "Stool waits at the board. The sill sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "stool_seated"},
+                    "text": "The stool sits still and even.",
+                },
+            ],
+            "exits": [{"to": "sill.yard", "label": "Go to sill yard"}],
+            "ground": [],
+            "actors": ["stool"],
+        },
+        "case.path": {
+            "region": "casing_house",
+            "name": "Casing Path",
+            "situation": "A casing house sits inland. A mitre waits for cut.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "sill.path", "label": "Go to the sill"},
+                {"to": "case.yard", "label": "Go to casing yard"},
+                {"to": "skirt.path", "label": "Go to the skirting"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "case.yard": {
+            "region": "casing_house",
+            "name": "Casing Yard",
+            "situation": "Mitre waits by a box mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "case.path", "label": "Go to casing path"},
+                {"to": "case.mitre", "label": "Go to the mitre"},
+                {"to": "case.jamb", "label": "Go to the jamb"},
+                {"to": "case.tack", "label": "Go to the tack"},
+            ],
+            "ground": [],
+            "actors": ["mitre"],
+        },
+        "case.mitre": {
+            "region": "casing_house",
+            "name": "Mitre Box",
+            "situation": "A mitre box waits. Oak sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "stool_seated"},
+                    "text": "A seated stool would take this casing true.",
+                },
+            ],
+            "exits": [{"to": "case.yard", "label": "Go to casing yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "case.jamb": {
+            "region": "casing_house",
+            "name": "Jamb Scribe",
+            "situation": "Jamb keeps the scribe. A return sprig waits.",
+            "exits": [{"to": "case.yard", "label": "Go to casing yard"}],
+            "ground": ["return_sprig"],
+            "actors": ["jamb"],
+        },
+        "case.tack": {
+            "region": "casing_house",
+            "name": "Casing Tack",
+            "situation": "Tack waits at the return. The casing sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "casing_tacked"},
+                    "text": "The casing sits still and even.",
+                },
+            ],
+            "exits": [{"to": "case.yard", "label": "Go to casing yard"}],
+            "ground": [],
+            "actors": ["tack"],
+        },
+        "skirt.path": {
+            "region": "skirting_house",
+            "name": "Skirting Path",
+            "situation": "A skirting house sits inland. A cope waits for cut.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "case.path", "label": "Go to the casing"},
+                {"to": "skirt.yard", "label": "Go to skirting yard"},
+                {"to": "dado.path", "label": "Go to the dado"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "skirt.yard": {
+            "region": "skirting_house",
+            "name": "Skirting Yard",
+            "situation": "Cope waits by a shoe mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "skirt.path", "label": "Go to skirting path"},
+                {"to": "skirt.cope", "label": "Go to the cope"},
+                {"to": "skirt.base", "label": "Go to the base"},
+                {"to": "skirt.plinth", "label": "Go to the plinth"},
+            ],
+            "ground": [],
+            "actors": ["cope"],
+        },
+        "skirt.cope": {
+            "region": "skirting_house",
+            "name": "Cope Cut",
+            "situation": "A cope cut waits. Oak sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "casing_tacked"},
+                    "text": "A tacked casing would take this plinth true.",
+                },
+            ],
+            "exits": [{"to": "skirt.yard", "label": "Go to skirting yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "skirt.base": {
+            "region": "skirting_house",
+            "name": "Base Plane",
+            "situation": "Base keeps the plane. A plinth block waits.",
+            "exits": [{"to": "skirt.yard", "label": "Go to skirting yard"}],
+            "ground": ["plinth_block"],
+            "actors": ["base"],
+        },
+        "skirt.plinth": {
+            "region": "skirting_house",
+            "name": "Plinth Shoe",
+            "situation": "Plinth waits at the shoe. The board sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "plinth_fixed"},
+                    "text": "The plinth sits still and even.",
+                },
+            ],
+            "exits": [{"to": "skirt.yard", "label": "Go to skirting yard"}],
+            "ground": [],
+            "actors": ["plinth"],
+        },
+        "dado.path": {
+            "region": "dado_house",
+            "name": "Dado Path",
+            "situation": "A dado house sits inland. A plough waits for cut.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "skirt.path", "label": "Go to the skirting"},
+                {"to": "dado.yard", "label": "Go to dado yard"},
+                {"to": "pic.path", "label": "Go to the pictures"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dado.yard": {
+            "region": "dado_house",
+            "name": "Dado Yard",
+            "situation": "Plough waits by a rail mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "dado.path", "label": "Go to dado path"},
+                {"to": "dado.plough", "label": "Go to the plough"},
+                {"to": "dado.panel", "label": "Go to the panel"},
+                {"to": "dado.cap", "label": "Go to the cap"},
+            ],
+            "ground": [],
+            "actors": ["plough"],
+        },
+        "dado.plough": {
+            "region": "dado_house",
+            "name": "Dado Plough",
+            "situation": "A dado plough waits. Oak sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "plinth_fixed"},
+                    "text": "A fixed plinth would take this dado true.",
+                },
+            ],
+            "exits": [{"to": "dado.yard", "label": "Go to dado yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "dado.panel": {
+            "region": "dado_house",
+            "name": "Dado Panel",
+            "situation": "Panel keeps the house. A rail cap waits.",
+            "exits": [{"to": "dado.yard", "label": "Go to dado yard"}],
+            "ground": ["rail_cap"],
+            "actors": ["panel"],
+        },
+        "dado.cap": {
+            "region": "dado_house",
+            "name": "Rail Cap",
+            "situation": "Cap waits at the rail. The dado sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rail_capped"},
+                    "text": "The rail sits still and even.",
+                },
+            ],
+            "exits": [{"to": "dado.yard", "label": "Go to dado yard"}],
+            "ground": [],
+            "actors": ["cap"],
+        },
+        "pic.path": {
+            "region": "picture_rail",
+            "name": "Picture Path",
+            "situation": "A picture rail shop sits inland. Chalk waits for height.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dado.path", "label": "Go to the dado"},
+                {"to": "pic.yard", "label": "Go to picture yard"},
+                {"to": "corn.path", "label": "Go to the cornice"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pic.yard": {
+            "region": "picture_rail",
+            "name": "Picture Yard",
+            "situation": "Chalk waits by a height mark. The dust smell is sharp.",
+            "exits": [
+                {"to": "pic.path", "label": "Go to picture path"},
+                {"to": "pic.chalk", "label": "Go to the chalk"},
+                {"to": "pic.plug", "label": "Go to the plug"},
+                {"to": "pic.spring", "label": "Go to the spring"},
+            ],
+            "ground": [],
+            "actors": ["chalk"],
+        },
+        "pic.chalk": {
+            "region": "picture_rail",
+            "name": "Chalk Line",
+            "situation": "A chalk line waits. The wall sits blank.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rail_capped"},
+                    "text": "A capped rail would set this height true.",
+                },
+            ],
+            "exits": [{"to": "pic.yard", "label": "Go to picture yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "pic.plug": {
+            "region": "picture_rail",
+            "name": "Plug Bench",
+            "situation": "Plug keeps the wall. A wall plug waits.",
+            "exits": [{"to": "pic.yard", "label": "Go to picture yard"}],
+            "ground": ["wall_plug"],
+            "actors": ["plug"],
+        },
+        "pic.spring": {
+            "region": "picture_rail",
+            "name": "Spring Bench",
+            "situation": "Spring waits at the mould. The rail sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rail_sprung"},
+                    "text": "The mould sits still and even.",
+                },
+            ],
+            "exits": [{"to": "pic.yard", "label": "Go to picture yard"}],
+            "ground": [],
+            "actors": ["spring"],
+        },
+        "corn.path": {
+            "region": "cornice_house",
+            "name": "Cornice Path",
+            "situation": "A cornice house sits inland. A cove waits for run.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "pic.path", "label": "Go to the pictures"},
+                {"to": "corn.yard", "label": "Go to cornice yard"},
+                {"to": "stair.path", "label": "Go to the stairs"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "corn.yard": {
+            "region": "cornice_house",
+            "name": "Cornice Yard",
+            "situation": "Cove waits by a mould mark. The lime smell is sharp.",
+            "exits": [
+                {"to": "corn.path", "label": "Go to cornice path"},
+                {"to": "corn.cove", "label": "Go to the cove"},
+                {"to": "corn.scratch", "label": "Go to the scratch"},
+                {"to": "corn.float", "label": "Go to the float"},
+            ],
+            "ground": [],
+            "actors": ["cove"],
+        },
+        "corn.cove": {
+            "region": "cornice_house",
+            "name": "Cove Run",
+            "situation": "A cove mould waits. The wall sits blank.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "rail_sprung"},
+                    "text": "A sprung rail would take this cove true.",
+                },
+            ],
+            "exits": [{"to": "corn.yard", "label": "Go to cornice yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "corn.scratch": {
+            "region": "cornice_house",
+            "name": "Scratch Key",
+            "situation": "Scratch keeps the key. A scratch key waits.",
+            "exits": [{"to": "corn.yard", "label": "Go to cornice yard"}],
+            "ground": ["scratch_key"],
+            "actors": ["scratch"],
+        },
+        "corn.float": {
+            "region": "cornice_house",
+            "name": "Float Bench",
+            "situation": "Float waits at the cornice. The cove sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cornice_floated"},
+                    "text": "The cornice sits still and even.",
+                },
+            ],
+            "exits": [{"to": "corn.yard", "label": "Go to cornice yard"}],
+            "ground": [],
+            "actors": ["float"],
+        },
+        "stair.path": {
+            "region": "stair_house",
+            "name": "Stair Path",
+            "situation": "A stair house sits inland. A string waits for gauge.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "corn.path", "label": "Go to the cornice"},
+                {"to": "stair.yard", "label": "Go to stair yard"},
+                {"to": "newel.path", "label": "Go to the newel"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "stair.yard": {
+            "region": "stair_house",
+            "name": "Stair Yard",
+            "situation": "String waits by a pitch mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "stair.path", "label": "Go to stair path"},
+                {"to": "stair.string", "label": "Go to the string"},
+                {"to": "stair.housing", "label": "Go to the housing"},
+                {"to": "stair.riser", "label": "Go to the riser"},
+            ],
+            "ground": [],
+            "actors": ["string"],
+        },
+        "stair.string": {
+            "region": "stair_house",
+            "name": "Stair String",
+            "situation": "A stair string waits. Oak sits unmarked.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cornice_floated"},
+                    "text": "A floated cornice would take this pitch true.",
+                },
+            ],
+            "exits": [{"to": "stair.yard", "label": "Go to stair yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "stair.housing": {
+            "region": "stair_house",
+            "name": "Stair Housing",
+            "situation": "Housing keeps the cut. A riser wedge waits.",
+            "exits": [{"to": "stair.yard", "label": "Go to stair yard"}],
+            "ground": ["riser_wedge"],
+            "actors": ["housing"],
+        },
+        "stair.riser": {
+            "region": "stair_house",
+            "name": "Riser Bench",
+            "situation": "Riser waits at the flight. The string sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "riser_wedged"},
+                    "text": "The flight sits still and even.",
+                },
+            ],
+            "exits": [{"to": "stair.yard", "label": "Go to stair yard"}],
+            "ground": [],
+            "actors": ["riser"],
+        },
+        "newel.path": {
+            "region": "newel_house",
+            "name": "Newel Path",
+            "situation": "A newel house sits inland. A blank waits for turn.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "stair.path", "label": "Go to the stairs"},
+                {"to": "newel.yard", "label": "Go to newel yard"},
+                {"to": "hand.path", "label": "Go to the handrail"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "newel.yard": {
+            "region": "newel_house",
+            "name": "Newel Yard",
+            "situation": "Blank waits by a lathe mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "newel.path", "label": "Go to newel path"},
+                {"to": "newel.blank", "label": "Go to the blank"},
+                {"to": "newel.mortise", "label": "Go to the mortise"},
+                {"to": "newel.dowel", "label": "Go to the dowel"},
+            ],
+            "ground": [],
+            "actors": ["blank"],
+        },
+        "newel.blank": {
+            "region": "newel_house",
+            "name": "Newel Blank",
+            "situation": "A newel blank waits. Oak sits square.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "riser_wedged"},
+                    "text": "A wedged riser would take this newel true.",
+                },
+            ],
+            "exits": [{"to": "newel.yard", "label": "Go to newel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "newel.mortise": {
+            "region": "newel_house",
+            "name": "Newel Mortise",
+            "situation": "Mortise keeps the seat. A finial dowel waits.",
+            "exits": [{"to": "newel.yard", "label": "Go to newel yard"}],
+            "ground": ["finial_dowel"],
+            "actors": ["mortise"],
+        },
+        "newel.dowel": {
+            "region": "newel_house",
+            "name": "Dowel Bench",
+            "situation": "Dowel waits at the finial. The newel sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "finial_dowelled"},
+                    "text": "The finial sits still and even.",
+                },
+            ],
+            "exits": [{"to": "newel.yard", "label": "Go to newel yard"}],
+            "ground": [],
+            "actors": ["dowel"],
+        },
+        "hand.path": {
+            "region": "handrail_house",
+            "name": "Handrail Path",
+            "situation": "A handrail shop sits inland. A stick waits for mould.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "newel.path", "label": "Go to the newel"},
+                {"to": "hand.yard", "label": "Go to handrail yard"},
+                {"to": "bal.path", "label": "Go to the balusters"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "hand.yard": {
+            "region": "handrail_house",
+            "name": "Handrail Yard",
+            "situation": "Stick waits by a mould mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "hand.path", "label": "Go to handrail path"},
+                {"to": "hand.stick", "label": "Go to the stick"},
+                {"to": "hand.scarf", "label": "Go to the scarf"},
+                {"to": "hand.wreath", "label": "Go to the wreath"},
+            ],
+            "ground": [],
+            "actors": ["stick"],
+        },
+        "hand.stick": {
+            "region": "handrail_house",
+            "name": "Mould Stick",
+            "situation": "A moulding stick waits. Oak sits square.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "finial_dowelled"},
+                    "text": "A dowelled newel would take this stick true.",
+                },
+            ],
+            "exits": [{"to": "hand.yard", "label": "Go to handrail yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "hand.scarf": {
+            "region": "handrail_house",
+            "name": "Scarf Bench",
+            "situation": "Scarf keeps the joint. A wreath block waits.",
+            "exits": [{"to": "hand.yard", "label": "Go to handrail yard"}],
+            "ground": ["wreath_block"],
+            "actors": ["scarf"],
+        },
+        "hand.wreath": {
+            "region": "handrail_house",
+            "name": "Wreath Bench",
+            "situation": "Wreath waits at the ramp. The rail sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ramp_wreathed"},
+                    "text": "The ramp sits still and even.",
+                },
+            ],
+            "exits": [{"to": "hand.yard", "label": "Go to handrail yard"}],
+            "ground": [],
+            "actors": ["wreath"],
+        },
+        "bal.path": {
+            "region": "baluster_house",
+            "name": "Baluster Path",
+            "situation": "A baluster shop sits inland. A square waits for rip.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "hand.path", "label": "Go to the handrail"},
+                {"to": "bal.yard", "label": "Go to baluster yard"},
+                {"to": "tread.path", "label": "Go to the treads"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "bal.yard": {
+            "region": "baluster_house",
+            "name": "Baluster Yard",
+            "situation": "Square waits by a rip mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "bal.path", "label": "Go to baluster path"},
+                {"to": "bal.square", "label": "Go to the square"},
+                {"to": "bal.flute", "label": "Go to the flute"},
+                {"to": "bal.neck", "label": "Go to the neck"},
+            ],
+            "ground": [],
+            "actors": ["square"],
+        },
+        "bal.square": {
+            "region": "baluster_house",
+            "name": "Rip Square",
+            "situation": "A rip square waits. Oak sits coarse.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "ramp_wreathed"},
+                    "text": "A wreathed ramp would take this square true.",
+                },
+            ],
+            "exits": [{"to": "bal.yard", "label": "Go to baluster yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "bal.flute": {
+            "region": "baluster_house",
+            "name": "Flute Bench",
+            "situation": "Flute keeps the shaft. A flute iron waits.",
+            "exits": [{"to": "bal.yard", "label": "Go to baluster yard"}],
+            "ground": ["flute_iron"],
+            "actors": ["flute"],
+        },
+        "bal.neck": {
+            "region": "baluster_house",
+            "name": "Neck Bench",
+            "situation": "Neck waits at the shoulder. The shaft sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "neck_shouldered"},
+                    "text": "The neck sits still and even.",
+                },
+            ],
+            "exits": [{"to": "bal.yard", "label": "Go to baluster yard"}],
+            "ground": [],
+            "actors": ["neck"],
+        },
+        "tread.path": {
+            "region": "tread_house",
+            "name": "Tread Path",
+            "situation": "A tread shop sits inland. A going waits for mark.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "bal.path", "label": "Go to the balusters"},
+                {"to": "tread.yard", "label": "Go to tread yard"},
+                {"to": "floor.path", "label": "Go to the boards"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "tread.yard": {
+            "region": "tread_house",
+            "name": "Tread Yard",
+            "situation": "Going waits by a pitch mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "tread.path", "label": "Go to tread path"},
+                {"to": "tread.going", "label": "Go to the going"},
+                {"to": "tread.nosing", "label": "Go to the nosing"},
+                {"to": "tread.end", "label": "Go to the return"},
+            ],
+            "ground": [],
+            "actors": ["going"],
+        },
+        "tread.going": {
+            "region": "tread_house",
+            "name": "Going Mark",
+            "situation": "A going mark waits. Oak sits unmarked.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "neck_shouldered"},
+                    "text": "A shouldered neck would take this going true.",
+                },
+            ],
+            "exits": [{"to": "tread.yard", "label": "Go to tread yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "tread.nosing": {
+            "region": "tread_house",
+            "name": "Nosing Bench",
+            "situation": "Nosing keeps the edge. A nosing iron waits.",
+            "exits": [{"to": "tread.yard", "label": "Go to tread yard"}],
+            "ground": ["nosing_iron"],
+            "actors": ["nosing"],
+        },
+        "tread.end": {
+            "region": "tread_house",
+            "name": "Return Bench",
+            "situation": "Return waits at the wrap. The tread sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "end_returned"},
+                    "text": "The return sits still and even.",
+                },
+            ],
+            "exits": [{"to": "tread.yard", "label": "Go to tread yard"}],
+            "ground": [],
+            "actors": ["wrap"],
+        },
+        "floor.path": {
+            "region": "floorboard_house",
+            "name": "Floor Path",
+            "situation": "A floor shop sits inland. A shot waits for the plane.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "tread.path", "label": "Go to the treads"},
+                {"to": "floor.yard", "label": "Go to floor yard"},
+                {"to": "joist.path", "label": "Go to the joists"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "floor.yard": {
+            "region": "floorboard_house",
+            "name": "Floor Yard",
+            "situation": "Shot waits by a shooting board. The oak smell is sharp.",
+            "exits": [
+                {"to": "floor.path", "label": "Go to floor path"},
+                {"to": "floor.shot", "label": "Go to the shot"},
+                {"to": "floor.tongue", "label": "Go to the tongue"},
+                {"to": "floor.secret", "label": "Go to the secret"},
+            ],
+            "ground": [],
+            "actors": ["shot"],
+        },
+        "floor.shot": {
+            "region": "floorboard_house",
+            "name": "Shot Bench",
+            "situation": "A shooting board waits. Oak sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "end_returned"},
+                    "text": "A returned end would set this shot true.",
+                },
+            ],
+            "exits": [{"to": "floor.yard", "label": "Go to floor yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "floor.tongue": {
+            "region": "floorboard_house",
+            "name": "Tongue Bench",
+            "situation": "Groove keeps the meeting. A groove iron waits.",
+            "exits": [{"to": "floor.yard", "label": "Go to floor yard"}],
+            "ground": ["groove_iron"],
+            "actors": ["groove"],
+        },
+        "floor.secret": {
+            "region": "floorboard_house",
+            "name": "Secret Bench",
+            "situation": "Blind waits at the secret. The board sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nail_secreted"},
+                    "text": "The secret sits still and even.",
+                },
+            ],
+            "exits": [{"to": "floor.yard", "label": "Go to floor yard"}],
+            "ground": [],
+            "actors": ["blind"],
+        },
+        "joist.path": {
+            "region": "joist_house",
+            "name": "Joist Path",
+            "situation": "A joist shop sits inland. A span waits for space.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "floor.path", "label": "Go to the boards"},
+                {"to": "joist.yard", "label": "Go to joist yard"},
+                {"to": "lath.path", "label": "Go to the laths"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "joist.yard": {
+            "region": "joist_house",
+            "name": "Joist Yard",
+            "situation": "Span waits by a spacing rod. The oak smell is sharp.",
+            "exits": [
+                {"to": "joist.path", "label": "Go to joist path"},
+                {"to": "joist.space", "label": "Go to the span"},
+                {"to": "joist.trimmer", "label": "Go to the trimmer"},
+                {"to": "joist.crown", "label": "Go to the camber"},
+            ],
+            "ground": [],
+            "actors": ["span"],
+        },
+        "joist.space": {
+            "region": "joist_house",
+            "name": "Span Bench",
+            "situation": "A spacing rod waits. Oak sits close.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "nail_secreted"},
+                    "text": "A secreted nail would set this span true.",
+                },
+            ],
+            "exits": [{"to": "joist.yard", "label": "Go to joist yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "joist.trimmer": {
+            "region": "joist_house",
+            "name": "Trimmer Bench",
+            "situation": "Trimmer keeps the well. A notch saw waits.",
+            "exits": [{"to": "joist.yard", "label": "Go to joist yard"}],
+            "ground": ["notch_saw"],
+            "actors": ["trimmer"],
+        },
+        "joist.crown": {
+            "region": "joist_house",
+            "name": "Camber Bench",
+            "situation": "Camber waits at the crown. The joist sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "camber_crowned"},
+                    "text": "The camber sits still and even.",
+                },
+            ],
+            "exits": [{"to": "joist.yard", "label": "Go to joist yard"}],
+            "ground": [],
+            "actors": ["camber"],
+        },
+        "lath.path": {
+            "region": "lath_house",
+            "name": "Lath Path",
+            "situation": "A lath shop sits inland. A rive waits for the split.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "joist.path", "label": "Go to the joists"},
+                {"to": "lath.yard", "label": "Go to lath yard"},
+                {"to": "chim.path", "label": "Go to the chimney"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "lath.yard": {
+            "region": "lath_house",
+            "name": "Lath Yard",
+            "situation": "Rive waits by a split block. The oak smell is sharp.",
+            "exits": [
+                {"to": "lath.path", "label": "Go to lath path"},
+                {"to": "lath.rive", "label": "Go to the rive"},
+                {"to": "lath.bay", "label": "Go to the bay"},
+                {"to": "lath.hair", "label": "Go to the hair"},
+            ],
+            "ground": [],
+            "actors": ["rive"],
+        },
+        "lath.rive": {
+            "region": "lath_house",
+            "name": "Rive Bench",
+            "situation": "A split block waits. Oak sits thick.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "camber_crowned"},
+                    "text": "A crowned camber would set this rive true.",
+                },
+            ],
+            "exits": [{"to": "lath.yard", "label": "Go to lath yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "lath.bay": {
+            "region": "lath_house",
+            "name": "Bay Bench",
+            "situation": "Bay keeps the studs. A hair lime waits.",
+            "exits": [{"to": "lath.yard", "label": "Go to lath yard"}],
+            "ground": ["hair_lime"],
+            "actors": ["bay"],
+        },
+        "lath.hair": {
+            "region": "lath_house",
+            "name": "Hair Bench",
+            "situation": "Hair waits at the coat. The bay sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coat_haired"},
+                    "text": "The coat sits still and even.",
+                },
+            ],
+            "exits": [{"to": "lath.yard", "label": "Go to lath yard"}],
+            "ground": [],
+            "actors": ["hair"],
+        },
+        "chim.path": {
+            "region": "chimney_house",
+            "name": "Chimney Path",
+            "situation": "A chimney shop sits inland. A flag waits for the bed.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "lath.path", "label": "Go to the laths"},
+                {"to": "chim.yard", "label": "Go to chimney yard"},
+                {"to": "mant.path", "label": "Go to the mantel"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "chim.yard": {
+            "region": "chimney_house",
+            "name": "Chimney Yard",
+            "situation": "Flag waits by a hearth stone. The oak smell is sharp.",
+            "exits": [
+                {"to": "chim.path", "label": "Go to chimney path"},
+                {"to": "chim.flag", "label": "Go to the flag"},
+                {"to": "chim.hob", "label": "Go to the hob"},
+                {"to": "chim.breast", "label": "Go to the breast"},
+            ],
+            "ground": [],
+            "actors": ["flag"],
+        },
+        "chim.flag": {
+            "region": "chimney_house",
+            "name": "Flag Bench",
+            "situation": "A hearth stone waits. Sand sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coat_haired"},
+                    "text": "A haired coat would set this flag true.",
+                },
+            ],
+            "exits": [{"to": "chim.yard", "label": "Go to chimney yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "chim.hob": {
+            "region": "chimney_house",
+            "name": "Hob Bench",
+            "situation": "Hob keeps the plate. A hob plate waits.",
+            "exits": [{"to": "chim.yard", "label": "Go to chimney yard"}],
+            "ground": ["hob_plate"],
+            "actors": ["hob"],
+        },
+        "chim.breast": {
+            "region": "chimney_house",
+            "name": "Breast Bench",
+            "situation": "Breast waits at the lime. The breast sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "breast_limed"},
+                    "text": "The breast sits still and even.",
+                },
+            ],
+            "exits": [{"to": "chim.yard", "label": "Go to chimney yard"}],
+            "ground": [],
+            "actors": ["breast"],
+        },
+        "mant.path": {
+            "region": "mantel_house",
+            "name": "Mantel Path",
+            "situation": "A mantel shop sits inland. A lintel waits for the bed.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "chim.path", "label": "Go to the chimney"},
+                {"to": "mant.yard", "label": "Go to mantel yard"},
+                {"to": "flue.path", "label": "Go to the flues"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "mant.yard": {
+            "region": "mantel_house",
+            "name": "Mantel Yard",
+            "situation": "Lintel waits by a bed mark. The oak smell is sharp.",
+            "exits": [
+                {"to": "mant.path", "label": "Go to mantel path"},
+                {"to": "mant.lintel", "label": "Go to the lintel"},
+                {"to": "mant.corbel", "label": "Go to the corbel"},
+                {"to": "mant.over", "label": "Go to the overmantel"},
+            ],
+            "ground": [],
+            "actors": ["lintel"],
+        },
+        "mant.lintel": {
+            "region": "mantel_house",
+            "name": "Lintel Bench",
+            "situation": "A lintel stone waits. Oak sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "breast_limed"},
+                    "text": "A limed breast would set this lintel true.",
+                },
+            ],
+            "exits": [{"to": "mant.yard", "label": "Go to mantel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "mant.corbel": {
+            "region": "mantel_house",
+            "name": "Corbel Bench",
+            "situation": "Corbel keeps the pad. A corbel pin waits.",
+            "exits": [{"to": "mant.yard", "label": "Go to mantel yard"}],
+            "ground": ["corbel_pin"],
+            "actors": ["corbel"],
+        },
+        "mant.over": {
+            "region": "mantel_house",
+            "name": "Overmantel Bench",
+            "situation": "Mantel waits at the pin. The shelf sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mantel_pinned"},
+                    "text": "The mantel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "mant.yard", "label": "Go to mantel yard"}],
+            "ground": [],
+            "actors": ["mantel"],
+        },
+        "flue.path": {
+            "region": "flue_house",
+            "name": "Flue Path",
+            "situation": "A flue shop sits inland. A parge waits for the smear.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mant.path", "label": "Go to the mantel"},
+                {"to": "flue.yard", "label": "Go to flue yard"},
+                {"to": "fb.path", "label": "Go to the fireback"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "flue.yard": {
+            "region": "flue_house",
+            "name": "Flue Yard",
+            "situation": "Parge waits by a smear board. The lime smell is sharp.",
+            "exits": [
+                {"to": "flue.path", "label": "Go to flue path"},
+                {"to": "flue.parge", "label": "Go to the parge"},
+                {"to": "flue.throat", "label": "Go to the throat"},
+                {"to": "flue.cowl", "label": "Go to the cowl"},
+            ],
+            "ground": [],
+            "actors": ["parge"],
+        },
+        "flue.parge": {
+            "region": "flue_house",
+            "name": "Parge Bench",
+            "situation": "A smear board waits. Lime sits thick.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mantel_pinned"},
+                    "text": "A pinned mantel would set this parge true.",
+                },
+            ],
+            "exits": [{"to": "flue.yard", "label": "Go to flue yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "flue.throat": {
+            "region": "flue_house",
+            "name": "Throat Bench",
+            "situation": "Throat keeps the wad. A throat wad waits.",
+            "exits": [{"to": "flue.yard", "label": "Go to flue yard"}],
+            "ground": ["throat_wad"],
+            "actors": ["throat"],
+        },
+        "flue.cowl": {
+            "region": "flue_house",
+            "name": "Cowl Bench",
+            "situation": "Cowl waits at the spin. The pot sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cowl_hung"},
+                    "text": "The cowl sits still and even.",
+                },
+            ],
+            "exits": [{"to": "flue.yard", "label": "Go to flue yard"}],
+            "ground": [],
+            "actors": ["cowl"],
+        },
+        "fb.path": {
+            "region": "fireback_house",
+            "name": "Fireback Path",
+            "situation": "A fireback shop sits inland. A sand waits for the mould.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "flue.path", "label": "Go to the flues"},
+                {"to": "fb.yard", "label": "Go to fireback yard"},
+                {"to": "grate.path", "label": "Go to the grate"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "fb.yard": {
+            "region": "fireback_house",
+            "name": "Fireback Yard",
+            "situation": "Sand waits by a mould box. The iron smell is sharp.",
+            "exits": [
+                {"to": "fb.path", "label": "Go to fireback path"},
+                {"to": "fb.sand", "label": "Go to the sand"},
+                {"to": "fb.pour", "label": "Go to the pour"},
+                {"to": "fb.bed", "label": "Go to the back"},
+            ],
+            "ground": [],
+            "actors": ["sand"],
+        },
+        "fb.sand": {
+            "region": "fireback_house",
+            "name": "Sand Bench",
+            "situation": "A mould box waits. Sand sits loose.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cowl_hung"},
+                    "text": "A hung cowl would set this mould true.",
+                },
+            ],
+            "exits": [{"to": "fb.yard", "label": "Go to fireback yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "fb.pour": {
+            "region": "fireback_house",
+            "name": "Pour Bench",
+            "situation": "Pour keeps the flask. A pour flask waits.",
+            "exits": [{"to": "fb.yard", "label": "Go to fireback yard"}],
+            "ground": ["pour_flask"],
+            "actors": ["pour"],
+        },
+        "fb.bed": {
+            "region": "fireback_house",
+            "name": "Back Bench",
+            "situation": "Back waits at the bed. The plate sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "back_bedded"},
+                    "text": "The back sits still and even.",
+                },
+            ],
+            "exits": [{"to": "fb.yard", "label": "Go to fireback yard"}],
+            "ground": [],
+            "actors": ["back"],
+        },
+        "grate.path": {
+            "region": "grate_house",
+            "name": "Grate Path",
+            "situation": "A grate shop sits inland. A swage waits for the bar.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "fb.path", "label": "Go to the fireback"},
+                {"to": "grate.yard", "label": "Go to grate yard"},
+                {"to": "brick.path", "label": "Go to the bricks"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "grate.yard": {
+            "region": "grate_house",
+            "name": "Grate Yard",
+            "situation": "Swage waits by a bar block. The iron smell is sharp.",
+            "exits": [
+                {"to": "grate.path", "label": "Go to grate path"},
+                {"to": "grate.swage", "label": "Go to the swage"},
+                {"to": "grate.basket", "label": "Go to the basket"},
+                {"to": "grate.slide", "label": "Go to the slide"},
+            ],
+            "ground": [],
+            "actors": ["swage"],
+        },
+        "grate.swage": {
+            "region": "grate_house",
+            "name": "Swage Bench",
+            "situation": "A swage block waits. Bar sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "back_bedded"},
+                    "text": "A bedded back would set this swage true.",
+                },
+            ],
+            "exits": [{"to": "grate.yard", "label": "Go to grate yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "grate.basket": {
+            "region": "grate_house",
+            "name": "Basket Bench",
+            "situation": "Basket keeps the rivet. A basket rivet waits.",
+            "exits": [{"to": "grate.yard", "label": "Go to grate yard"}],
+            "ground": ["basket_rivet"],
+            "actors": ["basket"],
+        },
+        "grate.slide": {
+            "region": "grate_house",
+            "name": "Slide Bench",
+            "situation": "Slide waits at the register. The plate sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "slide_registered"},
+                    "text": "The slide sits still and even.",
+                },
+            ],
+            "exits": [{"to": "grate.yard", "label": "Go to grate yard"}],
+            "ground": [],
+            "actors": ["slide"],
+        },
+        "brick.path": {
+            "region": "brick_yard",
+            "name": "Brick Path",
+            "situation": "A brick yard sits inland. A pug waits for the clay.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "grate.path", "label": "Go to the grate"},
+                {"to": "brick.yard", "label": "Go to brick yard"},
+                {"to": "tile.path", "label": "Go to the tiles"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "brick.yard": {
+            "region": "brick_yard",
+            "name": "Brick Yard",
+            "situation": "Pug waits by a clay trough. The wet smell is sharp.",
+            "exits": [
+                {"to": "brick.path", "label": "Go to brick path"},
+                {"to": "brick.pug", "label": "Go to the pug"},
+                {"to": "brick.strike", "label": "Go to the strike"},
+                {"to": "brick.hack", "label": "Go to the hack"},
+            ],
+            "ground": [],
+            "actors": ["pug"],
+        },
+        "brick.pug": {
+            "region": "brick_yard",
+            "name": "Pug Bench",
+            "situation": "A pug mill waits. Clay sits stiff.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "slide_registered"},
+                    "text": "A registered slide would set this pug true.",
+                },
+            ],
+            "exits": [{"to": "brick.yard", "label": "Go to brick yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "brick.strike": {
+            "region": "brick_yard",
+            "name": "Strike Bench",
+            "situation": "Strike keeps the box. A strike box waits.",
+            "exits": [{"to": "brick.yard", "label": "Go to brick yard"}],
+            "ground": ["strike_box"],
+            "actors": ["strike"],
+        },
+        "brick.hack": {
+            "region": "brick_yard",
+            "name": "Hack Bench",
+            "situation": "Hack waits at the row. The green sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hack_set"},
+                    "text": "The hack sits still and even.",
+                },
+            ],
+            "exits": [{"to": "brick.yard", "label": "Go to brick yard"}],
+            "ground": [],
+            "actors": ["hack"],
+        },
+        "tile.path": {
+            "region": "tile_house",
+            "name": "Tile Path",
+            "situation": "A tile shop sits inland. A horse waits for the drape.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "brick.path", "label": "Go to the bricks"},
+                {"to": "tile.yard", "label": "Go to tile yard"},
+                {"to": "slate.path", "label": "Go to the slates"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "tile.yard": {
+            "region": "tile_house",
+            "name": "Tile Yard",
+            "situation": "Horse waits by a clay bat. The wet smell is sharp.",
+            "exits": [
+                {"to": "tile.path", "label": "Go to tile path"},
+                {"to": "tile.horse", "label": "Go to the horse"},
+                {"to": "tile.pallet", "label": "Go to the pallet"},
+                {"to": "tile.arris", "label": "Go to the arris"},
+            ],
+            "ground": [],
+            "actors": ["horse"],
+        },
+        "tile.horse": {
+            "region": "tile_house",
+            "name": "Horse Bench",
+            "situation": "A pantile horse waits. Clay sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hack_set"},
+                    "text": "A set hack would set this horse true.",
+                },
+            ],
+            "exits": [{"to": "tile.yard", "label": "Go to tile yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "tile.pallet": {
+            "region": "tile_house",
+            "name": "Pallet Bench",
+            "situation": "Pallet keeps the board. A pallet board waits.",
+            "exits": [{"to": "tile.yard", "label": "Go to tile yard"}],
+            "ground": ["pallet_board"],
+            "actors": ["pallet"],
+        },
+        "tile.arris": {
+            "region": "tile_house",
+            "name": "Arris Bench",
+            "situation": "Arris waits at the nick. The edge sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "arris_nicked"},
+                    "text": "The arris sits still and even.",
+                },
+            ],
+            "exits": [{"to": "tile.yard", "label": "Go to tile yard"}],
+            "ground": [],
+            "actors": ["arris"],
+        },
+        "slate.path": {
+            "region": "slate_yard",
+            "name": "Slate Path",
+            "situation": "A slate yard sits inland. A scapple waits for the face.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "tile.path", "label": "Go to the tiles"},
+                {"to": "slate.yard", "label": "Go to slate yard"},
+                {"to": "flash.path", "label": "Go to the flash"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "slate.yard": {
+            "region": "slate_yard",
+            "name": "Slate Yard",
+            "situation": "Scapple waits by a split block. The stone smell is sharp.",
+            "exits": [
+                {"to": "slate.path", "label": "Go to slate path"},
+                {"to": "slate.scapple", "label": "Go to the scapple"},
+                {"to": "slate.punch", "label": "Go to the punch"},
+                {"to": "slate.lap", "label": "Go to the lap"},
+            ],
+            "ground": [],
+            "actors": ["scapple"],
+        },
+        "slate.scapple": {
+            "region": "slate_yard",
+            "name": "Scapple Bench",
+            "situation": "A scapple hammer waits. Face sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "arris_nicked"},
+                    "text": "A nicked arris would set this face true.",
+                },
+            ],
+            "exits": [{"to": "slate.yard", "label": "Go to slate yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "slate.punch": {
+            "region": "slate_yard",
+            "name": "Punch Bench",
+            "situation": "Punch keeps the pin. A punch pin waits.",
+            "exits": [{"to": "slate.yard", "label": "Go to slate yard"}],
+            "ground": ["punch_pin"],
+            "actors": ["punch"],
+        },
+        "slate.lap": {
+            "region": "slate_yard",
+            "name": "Lap Bench",
+            "situation": "Lap waits at the cover. The course sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "slate_lapped"},
+                    "text": "The lap sits still and even.",
+                },
+            ],
+            "exits": [{"to": "slate.yard", "label": "Go to slate yard"}],
+            "ground": [],
+            "actors": ["lap"],
+        },
+        "flash.path": {
+            "region": "flash_house",
+            "name": "Flash Path",
+            "situation": "A flashing shop sits inland. A roll waits for the sheet.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "slate.path", "label": "Go to the slates"},
+                {"to": "flash.yard", "label": "Go to flash yard"},
+                {"to": "block.path", "label": "Go to the blocks"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "flash.yard": {
+            "region": "flash_house",
+            "name": "Flash Yard",
+            "situation": "Roll waits by a lead sheet. The metal smell is sharp.",
+            "exits": [
+                {"to": "flash.path", "label": "Go to flash path"},
+                {"to": "flash.sheet", "label": "Go to the sheet"},
+                {"to": "flash.welt", "label": "Go to the welt"},
+                {"to": "flash.apron", "label": "Go to the apron"},
+            ],
+            "ground": [],
+            "actors": ["roll"],
+        },
+        "flash.sheet": {
+            "region": "flash_house",
+            "name": "Sheet Bench",
+            "situation": "A lead sheet waits. Roll sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "slate_lapped"},
+                    "text": "A lapped slate would set this sheet true.",
+                },
+            ],
+            "exits": [{"to": "flash.yard", "label": "Go to flash yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "flash.welt": {
+            "region": "flash_house",
+            "name": "Welt Bench",
+            "situation": "Welt keeps the boss. A welt boss waits.",
+            "exits": [{"to": "flash.yard", "label": "Go to flash yard"}],
+            "ground": ["welt_boss"],
+            "actors": ["welt"],
+        },
+        "flash.apron": {
+            "region": "flash_house",
+            "name": "Apron Bench",
+            "situation": "Apron waits at the dress. The flash sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flash_dressed"},
+                    "text": "The apron sits still and even.",
+                },
+            ],
+            "exits": [{"to": "flash.yard", "label": "Go to flash yard"}],
+            "ground": [],
+            "actors": ["apron"],
+        },
+        "block.path": {
+            "region": "block_loft",
+            "name": "Block Path",
+            "situation": "A block loft sits inland. A cheek waits for the bore.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "flash.path", "label": "Go to the flash"},
+                {"to": "block.yard", "label": "Go to block yard"},
+                {"to": "oar.path", "label": "Go to the oars"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "block.yard": {
+            "region": "block_loft",
+            "name": "Block Yard",
+            "situation": "Cheek waits by a block blank. The elm smell is sharp.",
+            "exits": [
+                {"to": "block.path", "label": "Go to block path"},
+                {"to": "block.cheek", "label": "Go to the cheek"},
+                {"to": "block.sheave", "label": "Go to the sheave"},
+                {"to": "block.strop", "label": "Go to the strop"},
+            ],
+            "ground": [],
+            "actors": ["cheek"],
+        },
+        "block.cheek": {
+            "region": "block_loft",
+            "name": "Cheek Bench",
+            "situation": "A cheek blank waits. Elm sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "flash_dressed"},
+                    "text": "A dressed flash would set this cheek true.",
+                },
+            ],
+            "exits": [{"to": "block.yard", "label": "Go to block yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "block.sheave": {
+            "region": "block_loft",
+            "name": "Sheave Bench",
+            "situation": "Sheave keeps the score. A sheave score waits.",
+            "exits": [{"to": "block.yard", "label": "Go to block yard"}],
+            "ground": ["sheave_score"],
+            "actors": ["sheave"],
+        },
+        "block.strop": {
+            "region": "block_loft",
+            "name": "Strop Bench",
+            "situation": "Strop waits at the hitch. The rope sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "block_stropped"},
+                    "text": "The strop sits still and even.",
+                },
+            ],
+            "exits": [{"to": "block.yard", "label": "Go to block yard"}],
+            "ground": [],
+            "actors": ["strop"],
+        },
+        "oar.path": {
+            "region": "oar_loft",
+            "name": "Oar Path",
+            "situation": "An oar loft sits inland. A shaft waits for the round.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "block.path", "label": "Go to the blocks"},
+                {"to": "ways.path", "label": "Go to the ways"},
+                {"to": "oar.yard", "label": "Go to oar yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "oar.yard": {
+            "region": "oar_loft",
+            "name": "Oar Yard",
+            "situation": "Shaft waits by an ash blank. The wood smell is sharp.",
+            "exits": [
+                {"to": "oar.path", "label": "Go to oar path"},
+                {"to": "oar.shaft", "label": "Go to the shaft"},
+                {"to": "oar.blade", "label": "Go to the blade"},
+                {"to": "oar.grip", "label": "Go to the grip"},
+            ],
+            "ground": [],
+            "actors": ["shaft"],
+        },
+        "oar.shaft": {
+            "region": "oar_loft",
+            "name": "Shaft Bench",
+            "situation": "A shaft blank waits. Ash sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "block_stropped"},
+                    "text": "A stropped block would set this shaft true.",
+                },
+            ],
+            "exits": [{"to": "oar.yard", "label": "Go to oar yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "oar.blade": {
+            "region": "oar_loft",
+            "name": "Blade Bench",
+            "situation": "Blade keeps the spoon. A blade spoon waits.",
+            "exits": [{"to": "oar.yard", "label": "Go to oar yard"}],
+            "ground": ["blade_spoon"],
+            "actors": ["blade"],
+        },
+        "oar.grip": {
+            "region": "oar_loft",
+            "name": "Grip Bench",
+            "situation": "Grip waits at the wrap. The leather sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "grip_bound"},
+                    "text": "The grip sits still and even.",
+                },
+            ],
+            "exits": [{"to": "oar.yard", "label": "Go to oar yard"}],
+            "ground": [],
+            "actors": ["grip"],
+        },
+        "ways.path": {
+            "region": "launch_ways",
+            "name": "Ways Path",
+            "situation": "Launch ways sit inland. Grease waits for the hull.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "oar.path", "label": "Go to the oars"},
+                {"to": "clink.path", "label": "Go to the clinker"},
+                {"to": "ways.yard", "label": "Go to ways yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "ways.yard": {
+            "region": "launch_ways",
+            "name": "Ways Yard",
+            "situation": "Grease waits by a tallow pot. The timber smell is sharp.",
+            "exits": [
+                {"to": "ways.path", "label": "Go to ways path"},
+                {"to": "ways.grease", "label": "Go to the grease"},
+                {"to": "ways.poppet", "label": "Go to the poppet"},
+                {"to": "ways.trigger", "label": "Go to the trigger"},
+            ],
+            "ground": [],
+            "actors": ["grease"],
+        },
+        "ways.grease": {
+            "region": "launch_ways",
+            "name": "Grease Bench",
+            "situation": "The ways wait dry. Tallow sits in the pot.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "grip_bound"},
+                    "text": "A bound grip would set this grease true.",
+                },
+            ],
+            "exits": [{"to": "ways.yard", "label": "Go to ways yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "ways.poppet": {
+            "region": "launch_ways",
+            "name": "Poppet Bench",
+            "situation": "Poppet keeps the chock. A poppet wedge waits.",
+            "exits": [{"to": "ways.yard", "label": "Go to ways yard"}],
+            "ground": ["poppet_wedge"],
+            "actors": ["poppet"],
+        },
+        "ways.trigger": {
+            "region": "launch_ways",
+            "name": "Trigger Bench",
+            "situation": "Trigger waits at the dog. The pin sits set.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hull_launched"},
+                    "text": "The hull sits still and even.",
+                },
+            ],
+            "exits": [{"to": "ways.yard", "label": "Go to ways yard"}],
+            "ground": [],
+            "actors": ["trigger"],
+        },
+        "clink.path": {
+            "region": "clinker_shed",
+            "name": "Clinker Path",
+            "situation": "A clinker shed sits inland. Steam waits for the strake.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "ways.path", "label": "Go to the ways"},
+                {"to": "wind.path", "label": "Go to the windlass"},
+                {"to": "clink.yard", "label": "Go to clinker yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "clink.yard": {
+            "region": "clinker_shed",
+            "name": "Clinker Yard",
+            "situation": "Steam waits by a steam chest. The oak smell is sharp.",
+            "exits": [
+                {"to": "clink.path", "label": "Go to clinker path"},
+                {"to": "clink.steam", "label": "Go to the steam"},
+                {"to": "clink.land", "label": "Go to the land"},
+                {"to": "clink.garboard", "label": "Go to the garboard"},
+            ],
+            "ground": [],
+            "actors": ["steam"],
+        },
+        "clink.steam": {
+            "region": "clinker_shed",
+            "name": "Steam Bench",
+            "situation": "The strake waits stiff. Steam sits in the chest.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hull_launched"},
+                    "text": "A launched hull would set this steam true.",
+                },
+            ],
+            "exits": [{"to": "clink.yard", "label": "Go to clinker yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "clink.land": {
+            "region": "clinker_shed",
+            "name": "Land Bench",
+            "situation": "Land keeps the rove. A land rove waits.",
+            "exits": [{"to": "clink.yard", "label": "Go to clinker yard"}],
+            "ground": ["land_rove"],
+            "actors": ["land"],
+        },
+        "clink.garboard": {
+            "region": "clinker_shed",
+            "name": "Garboard Bench",
+            "situation": "Garboard waits at the run. The plank sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "garboard_faired"},
+                    "text": "The garboard sits still and even.",
+                },
+            ],
+            "exits": [{"to": "clink.yard", "label": "Go to clinker yard"}],
+            "ground": [],
+            "actors": ["garboard"],
+        },
+        "wind.path": {
+            "region": "windlass_house",
+            "name": "Windlass Path",
+            "situation": "A windlass house sits inland. Bars wait for the ship.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "clink.path", "label": "Go to the clinker"},
+                {"to": "offs.path", "label": "Go to the offsets"},
+                {"to": "wind.yard", "label": "Go to windlass yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wind.yard": {
+            "region": "windlass_house",
+            "name": "Windlass Yard",
+            "situation": "Bars wait by a timber capstan. The tar smell is sharp.",
+            "exits": [
+                {"to": "wind.path", "label": "Go to windlass path"},
+                {"to": "wind.bars", "label": "Go to the bars"},
+                {"to": "wind.pawl", "label": "Go to the pawl"},
+                {"to": "wind.drum", "label": "Go to the drum"},
+            ],
+            "ground": [],
+            "actors": ["bars"],
+        },
+        "wind.bars": {
+            "region": "windlass_house",
+            "name": "Bars Bench",
+            "situation": "The sockets wait empty. Ash bars sit stacked.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "garboard_faired"},
+                    "text": "A faired garboard would set these bars true.",
+                },
+            ],
+            "exits": [{"to": "wind.yard", "label": "Go to windlass yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wind.pawl": {
+            "region": "windlass_house",
+            "name": "Pawl Bench",
+            "situation": "Pawl keeps the catch. A pawl tooth waits.",
+            "exits": [{"to": "wind.yard", "label": "Go to windlass yard"}],
+            "ground": ["pawl_tooth"],
+            "actors": ["pawl"],
+        },
+        "wind.drum": {
+            "region": "windlass_house",
+            "name": "Drum Bench",
+            "situation": "Drum waits at the turn. The cable sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "round_heaved"},
+                    "text": "The cable sits still and even.",
+                },
+            ],
+            "exits": [{"to": "wind.yard", "label": "Go to windlass yard"}],
+            "ground": [],
+            "actors": ["drum"],
+        },
+        "offs.path": {
+            "region": "mould_loft",
+            "name": "Offsets Path",
+            "situation": "A mould loft sits inland. Grid waits for the loft.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wind.path", "label": "Go to the windlass"},
+                {"to": "trun.path", "label": "Go to the trunnels"},
+                {"to": "offs.yard", "label": "Go to offsets yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "offs.yard": {
+            "region": "mould_loft",
+            "name": "Offsets Yard",
+            "situation": "Grid waits by a chalk floor. The pine smell is sharp.",
+            "exits": [
+                {"to": "offs.path", "label": "Go to offsets path"},
+                {"to": "offs.grid", "label": "Go to the grid"},
+                {"to": "offs.spile", "label": "Go to the spile"},
+                {"to": "offs.bevel", "label": "Go to the bevel"},
+            ],
+            "ground": [],
+            "actors": ["grid"],
+        },
+        "offs.grid": {
+            "region": "mould_loft",
+            "name": "Grid Bench",
+            "situation": "The floor waits blank. Chalk sits in the box.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "round_heaved"},
+                    "text": "A heaved round would set this grid true.",
+                },
+            ],
+            "exits": [{"to": "offs.yard", "label": "Go to offsets yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "offs.spile": {
+            "region": "mould_loft",
+            "name": "Spile Bench",
+            "situation": "Spile keeps the edge. A spile staff waits.",
+            "exits": [{"to": "offs.yard", "label": "Go to offsets yard"}],
+            "ground": ["spile_staff"],
+            "actors": ["spile"],
+        },
+        "offs.bevel": {
+            "region": "mould_loft",
+            "name": "Bevel Bench",
+            "situation": "Bevel waits at the station. The tick sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "station_bevelled"},
+                    "text": "The bevel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "offs.yard", "label": "Go to offsets yard"}],
+            "ground": [],
+            "actors": ["bevel"],
+        },
+        "trun.path": {
+            "region": "treenail_house",
+            "name": "Trunnel Path",
+            "situation": "A treenail house sits inland. Billet waits for the shave.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "offs.path", "label": "Go to the offsets"},
+                {"to": "dead.path", "label": "Go to the deadwood"},
+                {"to": "trun.yard", "label": "Go to trunnel yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "trun.yard": {
+            "region": "treenail_house",
+            "name": "Trunnel Yard",
+            "situation": "Billet waits by a locust blank. The oak smell is sharp.",
+            "exits": [
+                {"to": "trun.path", "label": "Go to trunnel path"},
+                {"to": "trun.billet", "label": "Go to the billet"},
+                {"to": "trun.auger", "label": "Go to the auger"},
+                {"to": "trun.maul", "label": "Go to the maul"},
+            ],
+            "ground": [],
+            "actors": ["billet"],
+        },
+        "trun.billet": {
+            "region": "treenail_house",
+            "name": "Billet Bench",
+            "situation": "The blank waits square. Locust sits proud.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "station_bevelled"},
+                    "text": "A bevelled station would set this billet true.",
+                },
+            ],
+            "exits": [{"to": "trun.yard", "label": "Go to trunnel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "trun.auger": {
+            "region": "treenail_house",
+            "name": "Auger Bench",
+            "situation": "Auger keeps the bite. An auger bit waits.",
+            "exits": [{"to": "trun.yard", "label": "Go to trunnel yard"}],
+            "ground": ["auger_bit"],
+            "actors": ["auger"],
+        },
+        "trun.maul": {
+            "region": "treenail_house",
+            "name": "Maul Bench",
+            "situation": "Maul waits at the set. The locust sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "trunnel_driven"},
+                    "text": "The trunnel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "trun.yard", "label": "Go to trunnel yard"}],
+            "ground": [],
+            "actors": ["maul"],
+        },
+        "dead.path": {
+            "region": "deadwood_yard",
+            "name": "Deadwood Path",
+            "situation": "A deadwood yard sits inland. Dub waits for the timber.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "trun.path", "label": "Go to the trunnels"},
+                {"to": "mast.path", "label": "Go to the masts"},
+                {"to": "dead.yard", "label": "Go to deadwood yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dead.yard": {
+            "region": "deadwood_yard",
+            "name": "Deadwood Yard",
+            "situation": "Dub waits by an oak baulk. The tar smell is sharp.",
+            "exits": [
+                {"to": "dead.path", "label": "Go to deadwood path"},
+                {"to": "dead.dub", "label": "Go to the dub"},
+                {"to": "dead.rabbet", "label": "Go to the rabbet"},
+                {"to": "dead.hog", "label": "Go to the hog"},
+            ],
+            "ground": [],
+            "actors": ["dub"],
+        },
+        "dead.dub": {
+            "region": "deadwood_yard",
+            "name": "Dub Bench",
+            "situation": "The baulk waits proud. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "trunnel_driven"},
+                    "text": "A driven trunnel would set this dub true.",
+                },
+            ],
+            "exits": [{"to": "dead.yard", "label": "Go to deadwood yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "dead.rabbet": {
+            "region": "deadwood_yard",
+            "name": "Rabbet Bench",
+            "situation": "Rabbet keeps the hood. A rabbet iron waits.",
+            "exits": [{"to": "dead.yard", "label": "Go to deadwood yard"}],
+            "ground": ["rabbet_iron"],
+            "actors": ["rabbet"],
+        },
+        "dead.hog": {
+            "region": "deadwood_yard",
+            "name": "Hog Bench",
+            "situation": "Hog waits at the bolt. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hog_bolted"},
+                    "text": "The hog sits still and even.",
+                },
+            ],
+            "exits": [{"to": "dead.yard", "label": "Go to deadwood yard"}],
+            "ground": [],
+            "actors": ["hog"],
+        },
+        "mast.path": {
+            "region": "mast_pond",
+            "name": "Mast Path",
+            "situation": "A mast pond sits inland. Sink waits for the pole.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dead.path", "label": "Go to the deadwood"},
+                {"to": "stem.path", "label": "Go to the stem"},
+                {"to": "mast.yard", "label": "Go to mast yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "mast.yard": {
+            "region": "mast_pond",
+            "name": "Mast Yard",
+            "situation": "Sink waits by a still pond. The pine smell is sharp.",
+            "exits": [
+                {"to": "mast.path", "label": "Go to mast path"},
+                {"to": "mast.sink", "label": "Go to the sink"},
+                {"to": "mast.range", "label": "Go to the range"},
+                {"to": "mast.partner", "label": "Go to the partner"},
+            ],
+            "ground": [],
+            "actors": ["sink"],
+        },
+        "mast.sink": {
+            "region": "mast_pond",
+            "name": "Sink Bench",
+            "situation": "The pond waits still. A fir pole sits dry.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hog_bolted"},
+                    "text": "A bolted hog would set this sink true.",
+                },
+            ],
+            "exits": [{"to": "mast.yard", "label": "Go to mast yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "mast.range": {
+            "region": "mast_pond",
+            "name": "Range Bench",
+            "situation": "Range keeps the lie. A range mark waits.",
+            "exits": [{"to": "mast.yard", "label": "Go to mast yard"}],
+            "ground": ["range_mark"],
+            "actors": ["range"],
+        },
+        "mast.partner": {
+            "region": "mast_pond",
+            "name": "Partner Bench",
+            "situation": "Partner waits at the step. The hoop sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "partner_hooped"},
+                    "text": "The partner sits still and even.",
+                },
+            ],
+            "exits": [{"to": "mast.yard", "label": "Go to mast yard"}],
+            "ground": [],
+            "actors": ["partner"],
+        },
+        "stem.path": {
+            "region": "stem_house",
+            "name": "Stem Path",
+            "situation": "A stem house sits inland. Hew waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "mast.path", "label": "Go to the masts"},
+                {"to": "fid.path", "label": "Go to the fid"},
+                {"to": "stem.yard", "label": "Go to stem yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "stem.yard": {
+            "region": "stem_house",
+            "name": "Stem Yard",
+            "situation": "Hew waits by a stem blank. The oak smell is sharp.",
+            "exits": [
+                {"to": "stem.path", "label": "Go to stem path"},
+                {"to": "stem.hew", "label": "Go to the hew"},
+                {"to": "stem.gripe", "label": "Go to the forefoot"},
+                {"to": "stem.knee", "label": "Go to the knee"},
+            ],
+            "ground": [],
+            "actors": ["hew"],
+        },
+        "stem.hew": {
+            "region": "stem_house",
+            "name": "Hew Bench",
+            "situation": "The stem waits proud. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "partner_hooped"},
+                    "text": "A hooped partner would set this hew true.",
+                },
+            ],
+            "exits": [{"to": "stem.yard", "label": "Go to stem yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "stem.gripe": {
+            "region": "stem_house",
+            "name": "Forefoot Bench",
+            "situation": "Gripe keeps the scarf. A gripe iron waits.",
+            "exits": [{"to": "stem.yard", "label": "Go to stem yard"}],
+            "ground": ["gripe_iron"],
+            "actors": ["gripe"],
+        },
+        "stem.knee": {
+            "region": "stem_house",
+            "name": "Knee Bench",
+            "situation": "Knee waits at the throat. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "knee_hung"},
+                    "text": "The knee sits still and even.",
+                },
+            ],
+            "exits": [{"to": "stem.yard", "label": "Go to stem yard"}],
+            "ground": [],
+            "actors": ["knee"],
+        },
+        "fid.path": {
+            "region": "fid_house",
+            "name": "Fid Path",
+            "situation": "A fid house sits inland. Turn waits for the lignum.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "stem.path", "label": "Go to the stem"},
+                {"to": "cleat.path", "label": "Go to the cleat"},
+                {"to": "fid.yard", "label": "Go to fid yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "fid.yard": {
+            "region": "fid_house",
+            "name": "Fid Yard",
+            "situation": "Turn waits by a lignum blank. The oil smell is sharp.",
+            "exits": [
+                {"to": "fid.path", "label": "Go to fid path"},
+                {"to": "fid.turn", "label": "Go to the turn"},
+                {"to": "fid.ream", "label": "Go to the ream"},
+                {"to": "fid.splice", "label": "Go to the splice"},
+            ],
+            "ground": [],
+            "actors": ["turn"],
+        },
+        "fid.turn": {
+            "region": "fid_house",
+            "name": "Turn Bench",
+            "situation": "The fid waits square. A gouge sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "knee_hung"},
+                    "text": "A hung knee would set this turn true.",
+                },
+            ],
+            "exits": [{"to": "fid.yard", "label": "Go to fid yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "fid.ream": {
+            "region": "fid_house",
+            "name": "Ream Bench",
+            "situation": "Ream keeps the bite. A ream bit waits.",
+            "exits": [{"to": "fid.yard", "label": "Go to fid yard"}],
+            "ground": ["ream_bit"],
+            "actors": ["ream"],
+        },
+        "fid.splice": {
+            "region": "fid_house",
+            "name": "Splice Bench",
+            "situation": "Seize waits at the hitch. The yarn sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "eye_seized"},
+                    "text": "The eye sits still and even.",
+                },
+            ],
+            "exits": [{"to": "fid.yard", "label": "Go to fid yard"}],
+            "ground": [],
+            "actors": ["seize"],
+        },
+        "cleat.path": {
+            "region": "cleat_house",
+            "name": "Cleat Path",
+            "situation": "A cleat house sits inland. Saw waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "fid.path", "label": "Go to the fid"},
+                {"to": "haw.path", "label": "Go to the hawse"},
+                {"to": "cleat.yard", "label": "Go to cleat yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cleat.yard": {
+            "region": "cleat_house",
+            "name": "Cleat Yard",
+            "situation": "Saw waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "cleat.path", "label": "Go to cleat path"},
+                {"to": "cleat.saw", "label": "Go to the saw"},
+                {"to": "cleat.horn", "label": "Go to the horn"},
+                {"to": "cleat.bolt", "label": "Go to the bolt"},
+            ],
+            "ground": [],
+            "actors": ["saw"],
+        },
+        "cleat.saw": {
+            "region": "cleat_house",
+            "name": "Saw Bench",
+            "situation": "The cleat waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "eye_seized"},
+                    "text": "A seized eye would set this saw true.",
+                },
+            ],
+            "exits": [{"to": "cleat.yard", "label": "Go to cleat yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cleat.horn": {
+            "region": "cleat_house",
+            "name": "Horn Bench",
+            "situation": "Horn keeps the throat. A horn gouge waits.",
+            "exits": [{"to": "cleat.yard", "label": "Go to cleat yard"}],
+            "ground": ["horn_gouge"],
+            "actors": ["horn"],
+        },
+        "cleat.bolt": {
+            "region": "cleat_house",
+            "name": "Bolt Bench",
+            "situation": "Bolt waits at the set. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "base_bolted"},
+                    "text": "The base sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cleat.yard", "label": "Go to cleat yard"}],
+            "ground": [],
+            "actors": ["bolt"],
+        },
+        "haw.path": {
+            "region": "hawse_house",
+            "name": "Hawse Path",
+            "situation": "A hawse house sits inland. Bore waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cleat.path", "label": "Go to the cleat"},
+                {"to": "deye.path", "label": "Go to the deadeye"},
+                {"to": "haw.yard", "label": "Go to hawse yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "haw.yard": {
+            "region": "hawse_house",
+            "name": "Hawse Yard",
+            "situation": "Bore waits by a hawse blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "haw.path", "label": "Go to hawse path"},
+                {"to": "haw.bore", "label": "Go to the bore"},
+                {"to": "haw.lip", "label": "Go to the lip"},
+                {"to": "haw.collar", "label": "Go to the collar"},
+            ],
+            "ground": [],
+            "actors": ["bore"],
+        },
+        "haw.bore": {
+            "region": "hawse_house",
+            "name": "Bore Bench",
+            "situation": "The hawse waits square. An auger sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "base_bolted"},
+                    "text": "A bolted base would set this bore true.",
+                },
+            ],
+            "exits": [{"to": "haw.yard", "label": "Go to hawse yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "haw.lip": {
+            "region": "hawse_house",
+            "name": "Lip Bench",
+            "situation": "Pipe keeps the lip. A pipe lip waits.",
+            "exits": [{"to": "haw.yard", "label": "Go to hawse yard"}],
+            "ground": ["pipe_lip"],
+            "actors": ["pipe"],
+        },
+        "haw.collar": {
+            "region": "hawse_house",
+            "name": "Collar Bench",
+            "situation": "Collar waits at the pay. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "collar_paid"},
+                    "text": "The collar sits still and even.",
+                },
+            ],
+            "exits": [{"to": "haw.yard", "label": "Go to hawse yard"}],
+            "ground": [],
+            "actors": ["collar"],
+        },
+        "deye.path": {
+            "region": "deadeye_loft",
+            "name": "Deadeye Path",
+            "situation": "A deadeye loft sits inland. Rim waits for the lignum.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "haw.path", "label": "Go to the hawse"},
+                {"to": "par.path", "label": "Go to the parrel"},
+                {"to": "deye.yard", "label": "Go to deadeye yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "deye.yard": {
+            "region": "deadeye_loft",
+            "name": "Deadeye Yard",
+            "situation": "Rim waits by a lignum blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "deye.path", "label": "Go to deadeye path"},
+                {"to": "deye.rim", "label": "Go to the rim"},
+                {"to": "deye.reeve", "label": "Go to the reeve"},
+                {"to": "deye.lanyard", "label": "Go to the lanyard"},
+            ],
+            "ground": [],
+            "actors": ["rim"],
+        },
+        "deye.rim": {
+            "region": "deadeye_loft",
+            "name": "Rim Bench",
+            "situation": "The deadeye waits square. A gouge sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "collar_paid"},
+                    "text": "A paid collar would set this rim true.",
+                },
+            ],
+            "exits": [{"to": "deye.yard", "label": "Go to deadeye yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "deye.reeve": {
+            "region": "deadeye_loft",
+            "name": "Reeve Bench",
+            "situation": "Reeve keeps the hitch. A reeve pin waits.",
+            "exits": [{"to": "deye.yard", "label": "Go to deadeye yard"}],
+            "ground": ["reeve_pin"],
+            "actors": ["reeve"],
+        },
+        "deye.lanyard": {
+            "region": "deadeye_loft",
+            "name": "Lanyard Bench",
+            "situation": "Lanyard waits at the fall. The yarn sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lanyard_seized"},
+                    "text": "The lanyard sits still and even.",
+                },
+            ],
+            "exits": [{"to": "deye.yard", "label": "Go to deadeye yard"}],
+            "ground": [],
+            "actors": ["lanyard"],
+        },
+        "par.path": {
+            "region": "parrel_house",
+            "name": "Parrel Path",
+            "situation": "A parrel house sits inland. Truck waits for the lignum.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "deye.path", "label": "Go to the deadeye"},
+                {"to": "bitt.path", "label": "Go to the bitts"},
+                {"to": "par.yard", "label": "Go to parrel yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "par.yard": {
+            "region": "parrel_house",
+            "name": "Parrel Yard",
+            "situation": "Truck waits by a lignum blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "par.path", "label": "Go to parrel path"},
+                {"to": "par.truck", "label": "Go to the truck"},
+                {"to": "par.rib", "label": "Go to the rib"},
+                {"to": "par.truss", "label": "Go to the truss"},
+            ],
+            "ground": [],
+            "actors": ["truck"],
+        },
+        "par.truck": {
+            "region": "parrel_house",
+            "name": "Truck Bench",
+            "situation": "The truck waits square. A gouge sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lanyard_seized"},
+                    "text": "A seized lanyard would set this truck true.",
+                },
+            ],
+            "exits": [{"to": "par.yard", "label": "Go to parrel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "par.rib": {
+            "region": "parrel_house",
+            "name": "Rib Bench",
+            "situation": "Rib keeps the hitch. A rib cord waits.",
+            "exits": [{"to": "par.yard", "label": "Go to parrel yard"}],
+            "ground": ["rib_cord"],
+            "actors": ["rib"],
+        },
+        "par.truss": {
+            "region": "parrel_house",
+            "name": "Truss Bench",
+            "situation": "Truss waits at the yard. The yarn sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "parrel_trussed"},
+                    "text": "The parrel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "par.yard", "label": "Go to parrel yard"}],
+            "ground": [],
+            "actors": ["truss"],
+        },
+        "bitt.path": {
+            "region": "bitts_house",
+            "name": "Bitts Path",
+            "situation": "A bitts house sits inland. Step waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "par.path", "label": "Go to the parrel"},
+                {"to": "gam.path", "label": "Go to the gammon"},
+                {"to": "bitt.yard", "label": "Go to bitts yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "bitt.yard": {
+            "region": "bitts_house",
+            "name": "Bitts Yard",
+            "situation": "Step waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "bitt.path", "label": "Go to bitts path"},
+                {"to": "bitt.step", "label": "Go to the step"},
+                {"to": "bitt.thwart", "label": "Go to the thwart"},
+                {"to": "bitt.belay", "label": "Go to the belay"},
+            ],
+            "ground": [],
+            "actors": ["step"],
+        },
+        "bitt.step": {
+            "region": "bitts_house",
+            "name": "Step Bench",
+            "situation": "The bitts wait square. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "parrel_trussed"},
+                    "text": "A trussed parrel would set this step true.",
+                },
+            ],
+            "exits": [{"to": "bitt.yard", "label": "Go to bitts yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "bitt.thwart": {
+            "region": "bitts_house",
+            "name": "Thwart Bench",
+            "situation": "Thwart keeps the cross. A thwart bolt waits.",
+            "exits": [{"to": "bitt.yard", "label": "Go to bitts yard"}],
+            "ground": ["thwart_bolt"],
+            "actors": ["thwart"],
+        },
+        "bitt.belay": {
+            "region": "bitts_house",
+            "name": "Belay Bench",
+            "situation": "Belay waits at the posts. The yarn sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cable_belayed"},
+                    "text": "The cable sits still and even.",
+                },
+            ],
+            "exits": [{"to": "bitt.yard", "label": "Go to bitts yard"}],
+            "ground": [],
+            "actors": ["belay"],
+        },
+        "gam.path": {
+            "region": "gammon_house",
+            "name": "Gammon Path",
+            "situation": "A gammon house sits inland. Woold waits for the hemp.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "bitt.path", "label": "Go to the bitts"},
+                {"to": "till.path", "label": "Go to the tiller"},
+                {"to": "gam.yard", "label": "Go to gammon yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "gam.yard": {
+            "region": "gammon_house",
+            "name": "Gammon Yard",
+            "situation": "Woold waits by a hemp coil. The tar smell is sharp.",
+            "exits": [
+                {"to": "gam.path", "label": "Go to gammon path"},
+                {"to": "gam.woold", "label": "Go to the woold"},
+                {"to": "gam.riding", "label": "Go to the riding"},
+                {"to": "gam.frap", "label": "Go to the frap"},
+            ],
+            "ground": [],
+            "actors": ["woold"],
+        },
+        "gam.woold": {
+            "region": "gammon_house",
+            "name": "Woold Bench",
+            "situation": "The bowsprit waits square. A mallet sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "cable_belayed"},
+                    "text": "A belayed cable would set this woold true.",
+                },
+            ],
+            "exits": [{"to": "gam.yard", "label": "Go to gammon yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "gam.riding": {
+            "region": "gammon_house",
+            "name": "Riding Bench",
+            "situation": "Riding keeps the hitch. A riding yarn waits.",
+            "exits": [{"to": "gam.yard", "label": "Go to gammon yard"}],
+            "ground": ["riding_yarn"],
+            "actors": ["riding"],
+        },
+        "gam.frap": {
+            "region": "gammon_house",
+            "name": "Frap Bench",
+            "situation": "Frap waits at the stem. The yarn sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gammon_frapped"},
+                    "text": "The gammon sits still and even.",
+                },
+            ],
+            "exits": [{"to": "gam.yard", "label": "Go to gammon yard"}],
+            "ground": [],
+            "actors": ["frap"],
+        },
+        "till.path": {
+            "region": "tiller_house",
+            "name": "Tiller Path",
+            "situation": "A tiller house sits inland. Shape waits for the ash.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "gam.path", "label": "Go to the gammon"},
+                {"to": "cath.path", "label": "Go to the cathead"},
+                {"to": "till.yard", "label": "Go to tiller yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "till.yard": {
+            "region": "tiller_house",
+            "name": "Tiller Yard",
+            "situation": "Shape waits by an ash blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "till.path", "label": "Go to tiller path"},
+                {"to": "till.shape", "label": "Go to the shape"},
+                {"to": "till.helm", "label": "Go to the helm"},
+                {"to": "till.yoke", "label": "Go to the yoke"},
+            ],
+            "ground": [],
+            "actors": ["shape"],
+        },
+        "till.shape": {
+            "region": "tiller_house",
+            "name": "Shape Bench",
+            "situation": "The tiller waits square. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "gammon_frapped"},
+                    "text": "A frapped gammon would set this shape true.",
+                },
+            ],
+            "exits": [{"to": "till.yard", "label": "Go to tiller yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "till.helm": {
+            "region": "tiller_house",
+            "name": "Helm Bench",
+            "situation": "Helm keeps the iron. A helm iron waits.",
+            "exits": [{"to": "till.yard", "label": "Go to tiller yard"}],
+            "ground": ["helm_iron"],
+            "actors": ["helm"],
+        },
+        "till.yoke": {
+            "region": "tiller_house",
+            "name": "Yoke Bench",
+            "situation": "Yoke waits at the head. The ash sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tiller_yoked"},
+                    "text": "The tiller sits still and even.",
+                },
+            ],
+            "exits": [{"to": "till.yard", "label": "Go to tiller yard"}],
+            "ground": [],
+            "actors": ["yoke"],
+        },
+        "cath.path": {
+            "region": "cathead_house",
+            "name": "Cathead Path",
+            "situation": "A cathead house sits inland. Bill waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "till.path", "label": "Go to the tiller"},
+                {"to": "tran.path", "label": "Go to the transom"},
+                {"to": "cath.yard", "label": "Go to cathead yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cath.yard": {
+            "region": "cathead_house",
+            "name": "Cathead Yard",
+            "situation": "Bill waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "cath.path", "label": "Go to cathead path"},
+                {"to": "cath.bill", "label": "Go to the bill"},
+                {"to": "cath.roller", "label": "Go to the roller"},
+                {"to": "cath.fluke", "label": "Go to the fluke"},
+            ],
+            "ground": [],
+            "actors": ["bill"],
+        },
+        "cath.bill": {
+            "region": "cathead_house",
+            "name": "Bill Bench",
+            "situation": "The cathead waits square. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "tiller_yoked"},
+                    "text": "A yoked tiller would set this bill true.",
+                },
+            ],
+            "exits": [{"to": "cath.yard", "label": "Go to cathead yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cath.roller": {
+            "region": "cathead_house",
+            "name": "Roller Bench",
+            "situation": "Roller keeps the bush. A roller bush waits.",
+            "exits": [{"to": "cath.yard", "label": "Go to cathead yard"}],
+            "ground": ["roller_bush"],
+            "actors": ["roller"],
+        },
+        "cath.fluke": {
+            "region": "cathead_house",
+            "name": "Fluke Bench",
+            "situation": "Fluke waits at the fish. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fluke_fished"},
+                    "text": "The fluke sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cath.yard", "label": "Go to cathead yard"}],
+            "ground": [],
+            "actors": ["fluke"],
+        },
+        "tran.path": {
+            "region": "transom_house",
+            "name": "Transom Path",
+            "situation": "A transom house sits inland. Wing waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cath.path", "label": "Go to the cathead"},
+                {"to": "scup.path", "label": "Go to the scupper"},
+                {"to": "tran.yard", "label": "Go to transom yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "tran.yard": {
+            "region": "transom_house",
+            "name": "Transom Yard",
+            "situation": "Wing waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "tran.path", "label": "Go to transom path"},
+                {"to": "tran.wing", "label": "Go to the wing"},
+                {"to": "tran.fashion", "label": "Go to the fashion"},
+                {"to": "tran.stern", "label": "Go to the stern"},
+            ],
+            "ground": [],
+            "actors": ["wing"],
+        },
+        "tran.wing": {
+            "region": "transom_house",
+            "name": "Wing Bench",
+            "situation": "The transom waits square. A scribe sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "fluke_fished"},
+                    "text": "A fished fluke would set this wing true.",
+                },
+            ],
+            "exits": [{"to": "tran.yard", "label": "Go to transom yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "tran.fashion": {
+            "region": "transom_house",
+            "name": "Fashion Bench",
+            "situation": "Fashion keeps the iron. A fashion iron waits.",
+            "exits": [{"to": "tran.yard", "label": "Go to transom yard"}],
+            "ground": ["fashion_iron"],
+            "actors": ["fashion"],
+        },
+        "tran.stern": {
+            "region": "transom_house",
+            "name": "Stern Bench",
+            "situation": "Stern waits at the spike. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "stern_spiked"},
+                    "text": "The transom sits still and even.",
+                },
+            ],
+            "exits": [{"to": "tran.yard", "label": "Go to transom yard"}],
+            "ground": [],
+            "actors": ["stern"],
+        },
+        "scup.path": {
+            "region": "scupper_house",
+            "name": "Scupper Path",
+            "situation": "A scupper house sits inland. Broach waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "tran.path", "label": "Go to the transom"},
+                {"to": "binn.path", "label": "Go to the binnacle"},
+                {"to": "scup.yard", "label": "Go to scupper yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "scup.yard": {
+            "region": "scupper_house",
+            "name": "Scupper Yard",
+            "situation": "Broach waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "scup.path", "label": "Go to scupper path"},
+                {"to": "scup.broach", "label": "Go to the broach"},
+                {"to": "scup.drain", "label": "Go to the drain"},
+                {"to": "scup.mouth", "label": "Go to the mouth"},
+            ],
+            "ground": [],
+            "actors": ["broach"],
+        },
+        "scup.broach": {
+            "region": "scupper_house",
+            "name": "Broach Bench",
+            "situation": "The scupper waits square. An auger sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "stern_spiked"},
+                    "text": "A spiked stern would set this broach true.",
+                },
+            ],
+            "exits": [{"to": "scup.yard", "label": "Go to scupper yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "scup.drain": {
+            "region": "scupper_house",
+            "name": "Drain Bench",
+            "situation": "Drain keeps the lead. A drain lead waits.",
+            "exits": [{"to": "scup.yard", "label": "Go to scupper yard"}],
+            "ground": ["drain_lead"],
+            "actors": ["drain"],
+        },
+        "scup.mouth": {
+            "region": "scupper_house",
+            "name": "Mouth Bench",
+            "situation": "Mouth waits at the lip. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mouth_plugged"},
+                    "text": "The scupper sits still and even.",
+                },
+            ],
+            "exits": [{"to": "scup.yard", "label": "Go to scupper yard"}],
+            "ground": [],
+            "actors": ["mouth"],
+        },
+        "binn.path": {
+            "region": "binnacle_house",
+            "name": "Binnacle Path",
+            "situation": "A binnacle house sits inland. Hood waits for the brass.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "scup.path", "label": "Go to the scupper"},
+                {"to": "futt.path", "label": "Go to the futtock"},
+                {"to": "binn.yard", "label": "Go to binnacle yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "binn.yard": {
+            "region": "binnacle_house",
+            "name": "Binnacle Yard",
+            "situation": "Hood waits by a brass hood. The tar smell is sharp.",
+            "exits": [
+                {"to": "binn.path", "label": "Go to binnacle path"},
+                {"to": "binn.hood", "label": "Go to the hood"},
+                {"to": "binn.lamp", "label": "Go to the lamp"},
+                {"to": "binn.card", "label": "Go to the card"},
+            ],
+            "ground": [],
+            "actors": ["hood"],
+        },
+        "binn.hood": {
+            "region": "binnacle_house",
+            "name": "Hood Bench",
+            "situation": "The binnacle waits square. A plumb sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "mouth_plugged"},
+                    "text": "A plugged mouth would set this hood true.",
+                },
+            ],
+            "exits": [{"to": "binn.yard", "label": "Go to binnacle yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "binn.lamp": {
+            "region": "binnacle_house",
+            "name": "Lamp Bench",
+            "situation": "Lamp keeps the oil. A lamp oil waits.",
+            "exits": [{"to": "binn.yard", "label": "Go to binnacle yard"}],
+            "ground": ["lamp_oil"],
+            "actors": ["lamp"],
+        },
+        "binn.card": {
+            "region": "binnacle_house",
+            "name": "Card Bench",
+            "situation": "Card waits at the lock. The brass sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "card_locked"},
+                    "text": "The card sits still and even.",
+                },
+            ],
+            "exits": [{"to": "binn.yard", "label": "Go to binnacle yard"}],
+            "ground": [],
+            "actors": ["card"],
+        },
+        "futt.path": {
+            "region": "futtock_house",
+            "name": "Futtock Path",
+            "situation": "A futtock house sits inland. Cant waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "binn.path", "label": "Go to the binnacle"},
+                {"to": "cros.path", "label": "Go to the crosstrees"},
+                {"to": "futt.yard", "label": "Go to futtock yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "futt.yard": {
+            "region": "futtock_house",
+            "name": "Futtock Yard",
+            "situation": "Cant waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "futt.path", "label": "Go to futtock path"},
+                {"to": "futt.cant", "label": "Go to the cant"},
+                {"to": "futt.butt", "label": "Go to the butt"},
+                {"to": "futt.belly", "label": "Go to the belly"},
+            ],
+            "ground": [],
+            "actors": ["cant"],
+        },
+        "futt.cant": {
+            "region": "futtock_house",
+            "name": "Cant Bench",
+            "situation": "The futtock waits square. An adze sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "card_locked"},
+                    "text": "A locked card would set this cant true.",
+                },
+            ],
+            "exits": [{"to": "futt.yard", "label": "Go to futtock yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "futt.butt": {
+            "region": "futtock_house",
+            "name": "Butt Bench",
+            "situation": "Butt keeps the scarph. A butt scarph waits.",
+            "exits": [{"to": "futt.yard", "label": "Go to futtock yard"}],
+            "ground": ["butt_scarph"],
+            "actors": ["butt"],
+        },
+        "futt.belly": {
+            "region": "futtock_house",
+            "name": "Belly Bench",
+            "situation": "Belly waits at the clench. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "belly_clenched"},
+                    "text": "The futtock sits still and even.",
+                },
+            ],
+            "exits": [{"to": "futt.yard", "label": "Go to futtock yard"}],
+            "ground": [],
+            "actors": ["belly"],
+        },
+        "cros.path": {
+            "region": "crosstree_house",
+            "name": "Crosstree Path",
+            "situation": "A crosstree house sits inland. Tree waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "futt.path", "label": "Go to the futtock"},
+                {"to": "wtr.path", "label": "Go to the waterway"},
+                {"to": "cros.yard", "label": "Go to crosstree yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cros.yard": {
+            "region": "crosstree_house",
+            "name": "Crosstree Yard",
+            "situation": "Tree waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "cros.path", "label": "Go to crosstree path"},
+                {"to": "cros.tree", "label": "Go to the tree"},
+                {"to": "cros.hounds", "label": "Go to the hounds"},
+                {"to": "cros.bolster", "label": "Go to the bolster"},
+            ],
+            "ground": [],
+            "actors": ["tree"],
+        },
+        "cros.tree": {
+            "region": "crosstree_house",
+            "name": "Tree Bench",
+            "situation": "The crosstree waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "belly_clenched"},
+                    "text": "A clenched belly would set this tree true.",
+                },
+            ],
+            "exits": [{"to": "cros.yard", "label": "Go to crosstree yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cros.hounds": {
+            "region": "crosstree_house",
+            "name": "Hounds Bench",
+            "situation": "Hounds keep the spread. A hounds spread waits.",
+            "exits": [{"to": "cros.yard", "label": "Go to crosstree yard"}],
+            "ground": ["hounds_spread"],
+            "actors": ["hounds"],
+        },
+        "cros.bolster": {
+            "region": "crosstree_house",
+            "name": "Bolster Bench",
+            "situation": "Bolster waits at the seize. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bolster_seized"},
+                    "text": "The bolster sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cros.yard", "label": "Go to crosstree yard"}],
+            "ground": [],
+            "actors": ["bolster"],
+        },
+        "wtr.path": {
+            "region": "waterway_house",
+            "name": "Waterway Path",
+            "situation": "A waterway house sits inland. Snipe waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cros.path", "label": "Go to the crosstrees"},
+                {"to": "coam.path", "label": "Go to the coaming"},
+                {"to": "wtr.yard", "label": "Go to waterway yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wtr.yard": {
+            "region": "waterway_house",
+            "name": "Waterway Yard",
+            "situation": "Snipe waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "wtr.path", "label": "Go to waterway path"},
+                {"to": "wtr.snipe", "label": "Go to the snipe"},
+                {"to": "wtr.margin", "label": "Go to the margin"},
+                {"to": "wtr.pay", "label": "Go to the pay"},
+            ],
+            "ground": [],
+            "actors": ["snipe"],
+        },
+        "wtr.snipe": {
+            "region": "waterway_house",
+            "name": "Snipe Bench",
+            "situation": "The waterway waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bolster_seized"},
+                    "text": "A seized bolster would set this snipe true.",
+                },
+            ],
+            "exits": [{"to": "wtr.yard", "label": "Go to waterway yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wtr.margin": {
+            "region": "waterway_house",
+            "name": "Margin Bench",
+            "situation": "Margin keeps the dowel. A margin dowel waits.",
+            "exits": [{"to": "wtr.yard", "label": "Go to waterway yard"}],
+            "ground": ["margin_dowel"],
+            "actors": ["margin"],
+        },
+        "wtr.pay": {
+            "region": "waterway_house",
+            "name": "Pay Bench",
+            "situation": "Pay waits at the pitch. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "waterway_paid"},
+                    "text": "The waterway sits still and even.",
+                },
+            ],
+            "exits": [{"to": "wtr.yard", "label": "Go to waterway yard"}],
+            "ground": [],
+            "actors": ["pay"],
+        },
+        "coam.path": {
+            "region": "coaming_house",
+            "name": "Coaming Path",
+            "situation": "A coaming house sits inland. Joggle waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wtr.path", "label": "Go to the waterway"},
+                {"to": "wale.path", "label": "Go to the gunwale"},
+                {"to": "coam.yard", "label": "Go to coaming yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "coam.yard": {
+            "region": "coaming_house",
+            "name": "Coaming Yard",
+            "situation": "Joggle waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "coam.path", "label": "Go to coaming path"},
+                {"to": "coam.joggle", "label": "Go to the joggle"},
+                {"to": "coam.lodge", "label": "Go to the lodge"},
+                {"to": "coam.coak", "label": "Go to the coak"},
+            ],
+            "ground": [],
+            "actors": ["joggle"],
+        },
+        "coam.joggle": {
+            "region": "coaming_house",
+            "name": "Joggle Bench",
+            "situation": "The coaming waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "waterway_paid"},
+                    "text": "A paid waterway would set this joggle true.",
+                },
+            ],
+            "exits": [{"to": "coam.yard", "label": "Go to coaming yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "coam.lodge": {
+            "region": "coaming_house",
+            "name": "Lodge Bench",
+            "situation": "Lodge keeps the end. An end lodge waits.",
+            "exits": [{"to": "coam.yard", "label": "Go to coaming yard"}],
+            "ground": ["end_lodge"],
+            "actors": ["lodge"],
+        },
+        "coam.coak": {
+            "region": "coaming_house",
+            "name": "Coak Bench",
+            "situation": "Coak waits at the punch. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coaming_coaked"},
+                    "text": "The coaming sits still and even.",
+                },
+            ],
+            "exits": [{"to": "coam.yard", "label": "Go to coaming yard"}],
+            "ground": [],
+            "actors": ["coak"],
+        },
+        "wale.path": {
+            "region": "gunwale_house",
+            "name": "Gunwale Path",
+            "situation": "A gunwale house sits inland. Covering waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "coam.path", "label": "Go to the coaming"},
+                {"to": "dav.path", "label": "Go to the davit"},
+                {"to": "wale.yard", "label": "Go to gunwale yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "wale.yard": {
+            "region": "gunwale_house",
+            "name": "Gunwale Yard",
+            "situation": "Covering waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "wale.path", "label": "Go to gunwale path"},
+                {"to": "wale.covering", "label": "Go to the covering"},
+                {"to": "wale.hance", "label": "Go to the hance"},
+                {"to": "wale.dump", "label": "Go to the dump"},
+            ],
+            "ground": [],
+            "actors": ["covering"],
+        },
+        "wale.covering": {
+            "region": "gunwale_house",
+            "name": "Covering Bench",
+            "situation": "The covering waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "coaming_coaked"},
+                    "text": "A coaked coaming would set this covering true.",
+                },
+            ],
+            "exits": [{"to": "wale.yard", "label": "Go to gunwale yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "wale.hance": {
+            "region": "gunwale_house",
+            "name": "Hance Bench",
+            "situation": "Hance keeps the rail. A rail hance waits.",
+            "exits": [{"to": "wale.yard", "label": "Go to gunwale yard"}],
+            "ground": ["rail_hance"],
+            "actors": ["hance"],
+        },
+        "wale.dump": {
+            "region": "gunwale_house",
+            "name": "Dump Bench",
+            "situation": "Dump waits at the bolt. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bolt_dumped"},
+                    "text": "The gunwale sits still and even.",
+                },
+            ],
+            "exits": [{"to": "wale.yard", "label": "Go to gunwale yard"}],
+            "ground": [],
+            "actors": ["dump"],
+        },
+        "dav.path": {
+            "region": "davit_house",
+            "name": "Davit Path",
+            "situation": "A davit house sits inland. Sweep waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "wale.path", "label": "Go to the gunwale"},
+                {"to": "boom.path", "label": "Go to the boomkin"},
+                {"to": "dav.yard", "label": "Go to davit yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dav.yard": {
+            "region": "davit_house",
+            "name": "Davit Yard",
+            "situation": "Sweep waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "dav.path", "label": "Go to davit path"},
+                {"to": "dav.sweep", "label": "Go to the sweep"},
+                {"to": "dav.crane", "label": "Go to the crane"},
+                {"to": "dav.ship", "label": "Go to the ship"},
+            ],
+            "ground": [],
+            "actors": ["sweep"],
+        },
+        "dav.sweep": {
+            "region": "davit_house",
+            "name": "Sweep Bench",
+            "situation": "The davit waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bolt_dumped"},
+                    "text": "A dumped bolt would set this sweep true.",
+                },
+            ],
+            "exits": [{"to": "dav.yard", "label": "Go to davit yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "dav.crane": {
+            "region": "davit_house",
+            "name": "Crane Bench",
+            "situation": "Crane keeps the band. A crane band waits.",
+            "exits": [{"to": "dav.yard", "label": "Go to davit yard"}],
+            "ground": ["crane_band"],
+            "actors": ["crane"],
+        },
+        "dav.ship": {
+            "region": "davit_house",
+            "name": "Ship Bench",
+            "situation": "Ship waits at the pin. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "davit_shipped"},
+                    "text": "The davit sits still and even.",
+                },
+            ],
+            "exits": [{"to": "dav.yard", "label": "Go to davit yard"}],
+            "ground": [],
+            "actors": ["ship"],
+        },
+        "boom.path": {
+            "region": "boomkin_house",
+            "name": "Boomkin Path",
+            "situation": "A boomkin house sits inland. Steeve waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dav.path", "label": "Go to the davit"},
+                {"to": "chan.path", "label": "Go to the channel"},
+                {"to": "boom.yard", "label": "Go to boomkin yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "boom.yard": {
+            "region": "boomkin_house",
+            "name": "Boomkin Yard",
+            "situation": "Steeve waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "boom.path", "label": "Go to boomkin path"},
+                {"to": "boom.steeve", "label": "Go to the steeve"},
+                {"to": "boom.bee", "label": "Go to the bee"},
+                {"to": "boom.guy", "label": "Go to the guy"},
+            ],
+            "ground": [],
+            "actors": ["steeve"],
+        },
+        "boom.steeve": {
+            "region": "boomkin_house",
+            "name": "Steeve Bench",
+            "situation": "The boomkin waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "davit_shipped"},
+                    "text": "A shipped davit would set this steeve true.",
+                },
+            ],
+            "exits": [{"to": "boom.yard", "label": "Go to boomkin yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "boom.bee": {
+            "region": "boomkin_house",
+            "name": "Bee Bench",
+            "situation": "Bee keeps the iron. An iron bee waits.",
+            "exits": [{"to": "boom.yard", "label": "Go to boomkin yard"}],
+            "ground": ["iron_bee"],
+            "actors": ["bee"],
+        },
+        "boom.guy": {
+            "region": "boomkin_house",
+            "name": "Guy Bench",
+            "situation": "Guy waits at the seizing. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "guy_seized"},
+                    "text": "The boomkin sits still and even.",
+                },
+            ],
+            "exits": [{"to": "boom.yard", "label": "Go to boomkin yard"}],
+            "ground": [],
+            "actors": ["guy"],
+        },
+        "chan.path": {
+            "region": "channel_house",
+            "name": "Channel Path",
+            "situation": "A channel house sits inland. Channel waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "boom.path", "label": "Go to the boomkin"},
+                {"to": "kev.path", "label": "Go to the kevel"},
+                {"to": "chan.yard", "label": "Go to channel yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "chan.yard": {
+            "region": "channel_house",
+            "name": "Channel Yard",
+            "situation": "Channel waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "chan.path", "label": "Go to channel path"},
+                {"to": "chan.face", "label": "Go to the face"},
+                {"to": "chan.plate", "label": "Go to the plate"},
+                {"to": "chan.strap", "label": "Go to the strap"},
+            ],
+            "ground": [],
+            "actors": ["channel"],
+        },
+        "chan.face": {
+            "region": "channel_house",
+            "name": "Face Bench",
+            "situation": "The channel waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "guy_seized"},
+                    "text": "A seized guy would set this face true.",
+                },
+            ],
+            "exits": [{"to": "chan.yard", "label": "Go to channel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "chan.plate": {
+            "region": "channel_house",
+            "name": "Plate Bench",
+            "situation": "Plate keeps the iron. A plate iron waits.",
+            "exits": [{"to": "chan.yard", "label": "Go to channel yard"}],
+            "ground": ["plate_iron"],
+            "actors": ["plate"],
+        },
+        "chan.strap": {
+            "region": "channel_house",
+            "name": "Strap Bench",
+            "situation": "Strap waits at the chain. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "strap_set"},
+                    "text": "The channel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "chan.yard", "label": "Go to channel yard"}],
+            "ground": [],
+            "actors": ["strap"],
+        },
+        "kev.path": {
+            "region": "kevel_house",
+            "name": "Kevel Path",
+            "situation": "A kevel house sits inland. Kevel waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "chan.path", "label": "Go to the channel"},
+                {"to": "kni.path", "label": "Go to the knighthead"},
+                {"to": "kev.yard", "label": "Go to kevel yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "kev.yard": {
+            "region": "kevel_house",
+            "name": "Kevel Yard",
+            "situation": "Kevel waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "kev.path", "label": "Go to kevel path"},
+                {"to": "kev.chamfer", "label": "Go to the chamfer"},
+                {"to": "kev.jaw", "label": "Go to the jaw"},
+                {"to": "kev.clench", "label": "Go to the clench"},
+            ],
+            "ground": [],
+            "actors": ["kevel"],
+        },
+        "kev.chamfer": {
+            "region": "kevel_house",
+            "name": "Chamfer Bench",
+            "situation": "The kevel waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "strap_set"},
+                    "text": "A set strap would set this chamfer true.",
+                },
+            ],
+            "exits": [{"to": "kev.yard", "label": "Go to kevel yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "kev.jaw": {
+            "region": "kevel_house",
+            "name": "Jaw Bench",
+            "situation": "Jaw keeps the mortise. A jaw mortise waits.",
+            "exits": [{"to": "kev.yard", "label": "Go to kevel yard"}],
+            "ground": ["jaw_mortise"],
+            "actors": ["jaw"],
+        },
+        "kev.clench": {
+            "region": "kevel_house",
+            "name": "Clench Bench",
+            "situation": "Clench waits at the ring. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kevel_clenched"},
+                    "text": "The kevel sits still and even.",
+                },
+            ],
+            "exits": [{"to": "kev.yard", "label": "Go to kevel yard"}],
+            "ground": [],
+            "actors": ["clench"],
+        },
+        "kni.path": {
+            "region": "knighthead_house",
+            "name": "Knighthead Path",
+            "situation": "A knighthead house sits inland. Knight waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "kev.path", "label": "Go to the kevel"},
+                {"to": "carl.path", "label": "Go to the carling"},
+                {"to": "kni.yard", "label": "Go to knighthead yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "kni.yard": {
+            "region": "knighthead_house",
+            "name": "Knighthead Yard",
+            "situation": "Knight waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "kni.path", "label": "Go to knighthead path"},
+                {"to": "kni.knight", "label": "Go to the knight"},
+                {"to": "kni.box", "label": "Go to the box"},
+                {"to": "kni.lash", "label": "Go to the lash"},
+            ],
+            "ground": [],
+            "actors": ["knight"],
+        },
+        "kni.knight": {
+            "region": "knighthead_house",
+            "name": "Knight Bench",
+            "situation": "The knighthead waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "kevel_clenched"},
+                    "text": "A clenched kevel would set this knight true.",
+                },
+            ],
+            "exits": [{"to": "kni.yard", "label": "Go to knighthead yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "kni.box": {
+            "region": "knighthead_house",
+            "name": "Box Bench",
+            "situation": "Box keeps the bit. A bit box waits.",
+            "exits": [{"to": "kni.yard", "label": "Go to knighthead yard"}],
+            "ground": ["bit_box"],
+            "actors": ["box"],
+        },
+        "kni.lash": {
+            "region": "knighthead_house",
+            "name": "Lash Bench",
+            "situation": "Lash waits at the seizing. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "knight_lashed"},
+                    "text": "The knighthead sits still and even.",
+                },
+            ],
+            "exits": [{"to": "kni.yard", "label": "Go to knighthead yard"}],
+            "ground": [],
+            "actors": ["lash"],
+        },
+        "carl.path": {
+            "region": "carling_house",
+            "name": "Carling Path",
+            "situation": "A carling house sits inland. Notch waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "kni.path", "label": "Go to the knighthead"},
+                {"to": "tab.path", "label": "Go to the tabernacle"},
+                {"to": "carl.yard", "label": "Go to carling yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "carl.yard": {
+            "region": "carling_house",
+            "name": "Carling Yard",
+            "situation": "Notch waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "carl.path", "label": "Go to carling path"},
+                {"to": "carl.notch", "label": "Go to the notch"},
+                {"to": "carl.ledge", "label": "Go to the ledge"},
+                {"to": "carl.spike", "label": "Go to the spike"},
+            ],
+            "ground": [],
+            "actors": ["notch"],
+        },
+        "carl.notch": {
+            "region": "carling_house",
+            "name": "Notch Bench",
+            "situation": "The carling waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "knight_lashed"},
+                    "text": "A lashed knight would set this notch true.",
+                },
+            ],
+            "exits": [{"to": "carl.yard", "label": "Go to carling yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "carl.ledge": {
+            "region": "carling_house",
+            "name": "Ledge Bench",
+            "situation": "Ledge keeps the lodge. A ledge lodge waits.",
+            "exits": [{"to": "carl.yard", "label": "Go to carling yard"}],
+            "ground": ["ledge_lodge"],
+            "actors": ["ledge"],
+        },
+        "carl.spike": {
+            "region": "carling_house",
+            "name": "Spike Bench",
+            "situation": "Spike waits at the deck. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "carling_spiked"},
+                    "text": "The carling sits still and even.",
+                },
+            ],
+            "exits": [{"to": "carl.yard", "label": "Go to carling yard"}],
+            "ground": [],
+            "actors": ["spike"],
+        },
+        "tab.path": {
+            "region": "tabernacle_house",
+            "name": "Tabernacle Path",
+            "situation": "A tabernacle house sits inland. Tabernacle waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "carl.path", "label": "Go to the carling"},
+                {"to": "psh.path", "label": "Go to the planksheer"},
+                {"to": "tab.yard", "label": "Go to tabernacle yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "tab.yard": {
+            "region": "tabernacle_house",
+            "name": "Tabernacle Yard",
+            "situation": "Tabernacle waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "tab.path", "label": "Go to tabernacle path"},
+                {"to": "tab.socket", "label": "Go to the socket"},
+                {"to": "tab.gate", "label": "Go to the gate"},
+                {"to": "tab.keeper", "label": "Go to the keeper"},
+            ],
+            "ground": [],
+            "actors": ["tabernacle"],
+        },
+        "tab.socket": {
+            "region": "tabernacle_house",
+            "name": "Socket Bench",
+            "situation": "The tabernacle waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "carling_spiked"},
+                    "text": "A spiked carling would set this socket true.",
+                },
+            ],
+            "exits": [{"to": "tab.yard", "label": "Go to tabernacle yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "tab.gate": {
+            "region": "tabernacle_house",
+            "name": "Gate Bench",
+            "situation": "Gate keeps the mortise. A gate mortise waits.",
+            "exits": [{"to": "tab.yard", "label": "Go to tabernacle yard"}],
+            "ground": ["gate_mortise"],
+            "actors": ["gate"],
+        },
+        "tab.keeper": {
+            "region": "tabernacle_house",
+            "name": "Keeper Bench",
+            "situation": "Keeper waits at the pin. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "keeper_pinned"},
+                    "text": "The tabernacle sits still and even.",
+                },
+            ],
+            "exits": [{"to": "tab.yard", "label": "Go to tabernacle yard"}],
+            "ground": [],
+            "actors": ["keeper"],
+        },
+        "psh.path": {
+            "region": "planksheer_house",
+            "name": "Planksheer Path",
+            "situation": "A planksheer house sits inland. Sheer waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "tab.path", "label": "Go to the tabernacle"},
+                {"to": "spi.path", "label": "Go to the spirketting"},
+                {"to": "psh.yard", "label": "Go to planksheer yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "psh.yard": {
+            "region": "planksheer_house",
+            "name": "Planksheer Yard",
+            "situation": "Sheer waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "psh.path", "label": "Go to planksheer path"},
+                {"to": "psh.sheer", "label": "Go to the sheer"},
+                {"to": "psh.plank", "label": "Go to the plank"},
+                {"to": "psh.edge", "label": "Go to the edge"},
+            ],
+            "ground": [],
+            "actors": ["sheer"],
+        },
+        "psh.sheer": {
+            "region": "planksheer_house",
+            "name": "Sheer Bench",
+            "situation": "The planksheer waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "keeper_pinned"},
+                    "text": "A pinned keeper would set this sheer true.",
+                },
+            ],
+            "exits": [{"to": "psh.yard", "label": "Go to planksheer yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "psh.plank": {
+            "region": "planksheer_house",
+            "name": "Plank Bench",
+            "situation": "Plank keeps the plane. A plank plane waits.",
+            "exits": [{"to": "psh.yard", "label": "Go to planksheer yard"}],
+            "ground": ["plank_plane"],
+            "actors": ["plank"],
+        },
+        "psh.edge": {
+            "region": "planksheer_house",
+            "name": "Edge Bench",
+            "situation": "Edge waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "edge_dumped"},
+                    "text": "The planksheer sits still and even.",
+                },
+            ],
+            "exits": [{"to": "psh.yard", "label": "Go to planksheer yard"}],
+            "ground": [],
+            "actors": ["edge"],
+        },
+        "spi.path": {
+            "region": "spirketting_house",
+            "name": "Spirketting Path",
+            "situation": "A spirketting house sits inland. Spirket waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "psh.path", "label": "Go to the planksheer"},
+                {"to": "trs.path", "label": "Go to the trestle-trees"},
+                {"to": "spi.yard", "label": "Go to spirketting yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "spi.yard": {
+            "region": "spirketting_house",
+            "name": "Spirketting Yard",
+            "situation": "Spirket waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "spi.path", "label": "Go to spirketting path"},
+                {"to": "spi.spirket", "label": "Go to the spirket"},
+                {"to": "spi.strake", "label": "Go to the strake"},
+                {"to": "spi.ring", "label": "Go to the ring"},
+            ],
+            "ground": [],
+            "actors": ["spirket"],
+        },
+        "spi.spirket": {
+            "region": "spirketting_house",
+            "name": "Spirket Bench",
+            "situation": "The spirketting waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "edge_dumped"},
+                    "text": "A dumped edge would set this spirket true.",
+                },
+            ],
+            "exits": [{"to": "spi.yard", "label": "Go to spirketting yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "spi.strake": {
+            "region": "spirketting_house",
+            "name": "Strake Bench",
+            "situation": "Strake keeps the plane. A strake plane waits.",
+            "exits": [{"to": "spi.yard", "label": "Go to spirketting yard"}],
+            "ground": ["strake_plane"],
+            "actors": ["strake"],
+        },
+        "spi.ring": {
+            "region": "spirketting_house",
+            "name": "Ring Bench",
+            "situation": "Ring waits at the clench. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "spirket_clenched"},
+                    "text": "The spirketting sits still and even.",
+                },
+            ],
+            "exits": [{"to": "spi.yard", "label": "Go to spirketting yard"}],
+            "ground": [],
+            "actors": ["ring"],
+        },
+        "trs.path": {
+            "region": "trestle_house",
+            "name": "Trestle Path",
+            "situation": "A trestle-tree house sits inland. Trestle waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "spi.path", "label": "Go to the spirketting"},
+                {"to": "brh.path", "label": "Go to the bow-hook"},
+                {"to": "trs.yard", "label": "Go to trestle yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "trs.yard": {
+            "region": "trestle_house",
+            "name": "Trestle Yard",
+            "situation": "Trestle waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "trs.path", "label": "Go to trestle path"},
+                {"to": "trs.trestle", "label": "Go to the trestle"},
+                {"to": "trs.rest", "label": "Go to the rest"},
+                {"to": "trs.bib", "label": "Go to the bib"},
+            ],
+            "ground": [],
+            "actors": ["trestle"],
+        },
+        "trs.trestle": {
+            "region": "trestle_house",
+            "name": "Trestle Bench",
+            "situation": "The trestle-tree waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "spirket_clenched"},
+                    "text": "A clenched spirket would set this trestle true.",
+                },
+            ],
+            "exits": [{"to": "trs.yard", "label": "Go to trestle yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "trs.rest": {
+            "region": "trestle_house",
+            "name": "Rest Bench",
+            "situation": "Rest keeps the tenon. A rest tenon waits.",
+            "exits": [{"to": "trs.yard", "label": "Go to trestle yard"}],
+            "ground": ["rest_tenon"],
+            "actors": ["rest"],
+        },
+        "trs.bib": {
+            "region": "trestle_house",
+            "name": "Bib Bench",
+            "situation": "Bib waits at the seizing. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bib_seized"},
+                    "text": "The trestle-tree sits still and even.",
+                },
+            ],
+            "exits": [{"to": "trs.yard", "label": "Go to trestle yard"}],
+            "ground": [],
+            "actors": ["bib"],
+        },
+        "brh.path": {
+            "region": "breast_hook_house",
+            "name": "Bow-hook Path",
+            "situation": "A breast-hook house sits inland. Crook waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "trs.path", "label": "Go to the trestle-trees"},
+                {"to": "lod.path", "label": "Go to the lodging-knee"},
+                {"to": "brh.yard", "label": "Go to bow-hook yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "brh.yard": {
+            "region": "breast_hook_house",
+            "name": "Bow-hook Yard",
+            "situation": "Crook waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "brh.path", "label": "Go to bow-hook path"},
+                {"to": "brh.crook", "label": "Go to the crook"},
+                {"to": "brh.palm", "label": "Go to the palm"},
+                {"to": "brh.fay", "label": "Go to the fay"},
+            ],
+            "ground": [],
+            "actors": ["crook"],
+        },
+        "brh.crook": {
+            "region": "breast_hook_house",
+            "name": "Crook Bench",
+            "situation": "The breast-hook waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "bib_seized"},
+                    "text": "A seized bib would set this crook true.",
+                },
+            ],
+            "exits": [{"to": "brh.yard", "label": "Go to bow-hook yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "brh.palm": {
+            "region": "breast_hook_house",
+            "name": "Palm Bench",
+            "situation": "Palm keeps the bolt. A palm bolt waits.",
+            "exits": [{"to": "brh.yard", "label": "Go to bow-hook yard"}],
+            "ground": ["palm_bolt"],
+            "actors": ["palm"],
+        },
+        "brh.fay": {
+            "region": "breast_hook_house",
+            "name": "Fay Bench",
+            "situation": "Fay waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hook_fayed"},
+                    "text": "The breast-hook sits still and even.",
+                },
+            ],
+            "exits": [{"to": "brh.yard", "label": "Go to bow-hook yard"}],
+            "ground": [],
+            "actors": ["fay"],
+        },
+        "lod.path": {
+            "region": "lodging_knee_house",
+            "name": "Lodging Path",
+            "situation": "A lodging-knee house sits inland. Lodging waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "brh.path", "label": "Go to the bow-hook"},
+                {"to": "dag.path", "label": "Go to the dagger-knee"},
+                {"to": "lod.yard", "label": "Go to lodging yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "lod.yard": {
+            "region": "lodging_knee_house",
+            "name": "Lodging Yard",
+            "situation": "Lodging waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "lod.path", "label": "Go to lodging path"},
+                {"to": "lod.lodging", "label": "Go to the lodging"},
+                {"to": "lod.chock", "label": "Go to the chock"},
+                {"to": "lod.nick", "label": "Go to the nick"},
+            ],
+            "ground": [],
+            "actors": ["lodging"],
+        },
+        "lod.lodging": {
+            "region": "lodging_knee_house",
+            "name": "Lodging Bench",
+            "situation": "The lodging-knee waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "hook_fayed"},
+                    "text": "A fayed hook would set this lodging true.",
+                },
+            ],
+            "exits": [{"to": "lod.yard", "label": "Go to lodging yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "lod.chock": {
+            "region": "lodging_knee_house",
+            "name": "Chock Bench",
+            "situation": "Chock keeps the bolt. A chock bolt waits.",
+            "exits": [{"to": "lod.yard", "label": "Go to lodging yard"}],
+            "ground": ["chock_bolt"],
+            "actors": ["chock"],
+        },
+        "lod.nick": {
+            "region": "lodging_knee_house",
+            "name": "Nick Bench",
+            "situation": "Nick waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lodging_nicked"},
+                    "text": "The lodging-knee sits still and even.",
+                },
+            ],
+            "exits": [{"to": "lod.yard", "label": "Go to lodging yard"}],
+            "ground": [],
+            "actors": ["nick"],
+        },
+        "dag.path": {
+            "region": "dagger_knee_house",
+            "name": "Dagger Path",
+            "situation": "A dagger-knee house sits inland. Dagger waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "lod.path", "label": "Go to the lodging-knee"},
+                {"to": "rid.path", "label": "Go to the riders"},
+                {"to": "dag.yard", "label": "Go to dagger yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "dag.yard": {
+            "region": "dagger_knee_house",
+            "name": "Dagger Yard",
+            "situation": "Dagger waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "dag.path", "label": "Go to dagger path"},
+                {"to": "dag.dagger", "label": "Go to the dagger"},
+                {"to": "dag.siding", "label": "Go to the siding"},
+                {"to": "dag.sirmark", "label": "Go to the sirmark"},
+            ],
+            "ground": [],
+            "actors": ["dagger"],
+        },
+        "dag.dagger": {
+            "region": "dagger_knee_house",
+            "name": "Dagger Bench",
+            "situation": "The dagger-knee waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "lodging_nicked"},
+                    "text": "A nicked lodging would set this dagger true.",
+                },
+            ],
+            "exits": [{"to": "dag.yard", "label": "Go to dagger yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "dag.siding": {
+            "region": "dagger_knee_house",
+            "name": "Siding Bench",
+            "situation": "Siding keeps the iron. A siding iron waits.",
+            "exits": [{"to": "dag.yard", "label": "Go to dagger yard"}],
+            "ground": ["siding_iron"],
+            "actors": ["siding"],
+        },
+        "dag.sirmark": {
+            "region": "dagger_knee_house",
+            "name": "Sirmark Bench",
+            "situation": "Sirmark waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sirmark_marked"},
+                    "text": "The dagger-knee sits still and even.",
+                },
+            ],
+            "exits": [{"to": "dag.yard", "label": "Go to dagger yard"}],
+            "ground": [],
+            "actors": ["sirmark"],
+        },
+        "rid.path": {
+            "region": "rider_house",
+            "name": "Rider Path",
+            "situation": "A rider house sits inland. Rider waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "dag.path", "label": "Go to the dagger-knee"},
+                {"to": "ksn.path", "label": "Go to the keelson"},
+                {"to": "rid.yard", "label": "Go to rider yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "rid.yard": {
+            "region": "rider_house",
+            "name": "Rider Yard",
+            "situation": "Rider waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "rid.path", "label": "Go to rider path"},
+                {"to": "rid.rider", "label": "Go to the rider"},
+                {"to": "rid.filling", "label": "Go to the filling"},
+                {"to": "rid.wring", "label": "Go to the wring"},
+            ],
+            "ground": [],
+            "actors": ["rider"],
+        },
+        "rid.rider": {
+            "region": "rider_house",
+            "name": "Rider Bench",
+            "situation": "The rider waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sirmark_marked"},
+                    "text": "A marked sirmark would set this rider true.",
+                },
+            ],
+            "exits": [{"to": "rid.yard", "label": "Go to rider yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "rid.filling": {
+            "region": "rider_house",
+            "name": "Filling Bench",
+            "situation": "Filling keeps the iron. A filling iron waits.",
+            "exits": [{"to": "rid.yard", "label": "Go to rider yard"}],
+            "ground": ["filling_iron"],
+            "actors": ["filling"],
+        },
+        "rid.wring": {
+            "region": "rider_house",
+            "name": "Wring Bench",
+            "situation": "Wring waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wring_dumped"},
+                    "text": "The rider sits still and even.",
+                },
+            ],
+            "exits": [{"to": "rid.yard", "label": "Go to rider yard"}],
+            "ground": [],
+            "actors": ["wring"],
+        },
+        "ksn.path": {
+            "region": "keelson_house",
+            "name": "Keelson Path",
+            "situation": "A keelson house sits inland. Keelson waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "rid.path", "label": "Go to the riders"},
+                {"to": "cru.path", "label": "Go to the crutch"},
+                {"to": "ksn.yard", "label": "Go to keelson yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "ksn.yard": {
+            "region": "keelson_house",
+            "name": "Keelson Yard",
+            "situation": "Keelson waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "ksn.path", "label": "Go to keelson path"},
+                {"to": "ksn.scarph", "label": "Go to the scarph"},
+                {"to": "ksn.stopwater", "label": "Go to the stopwater"},
+                {"to": "ksn.sister", "label": "Go to the sister"},
+            ],
+            "ground": [],
+            "actors": ["keelson"],
+        },
+        "ksn.scarph": {
+            "region": "keelson_house",
+            "name": "Scarph Bench",
+            "situation": "The keelson waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "wring_dumped"},
+                    "text": "A dumped wring would set this keelson true.",
+                },
+            ],
+            "exits": [{"to": "ksn.yard", "label": "Go to keelson yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "ksn.stopwater": {
+            "region": "keelson_house",
+            "name": "Stopwater Bench",
+            "situation": "Stopwater keeps the iron. A stopwater iron waits.",
+            "exits": [{"to": "ksn.yard", "label": "Go to keelson yard"}],
+            "ground": ["stopwater_iron"],
+            "actors": ["stopwater"],
+        },
+        "ksn.sister": {
+            "region": "keelson_house",
+            "name": "Sister Bench",
+            "situation": "Sister waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sister_bolted"},
+                    "text": "The keelson sits still and even.",
+                },
+            ],
+            "exits": [{"to": "ksn.yard", "label": "Go to keelson yard"}],
+            "ground": [],
+            "actors": ["sister"],
+        },
+        "cru.path": {
+            "region": "crutch_house",
+            "name": "Crutch Path",
+            "situation": "A crutch house sits inland. Crutch waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "ksn.path", "label": "Go to the keelson"},
+                {"to": "ptr.path", "label": "Go to the pointer"},
+                {"to": "cru.yard", "label": "Go to crutch yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "cru.yard": {
+            "region": "crutch_house",
+            "name": "Crutch Yard",
+            "situation": "Crutch waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "cru.path", "label": "Go to crutch path"},
+                {"to": "cru.adze", "label": "Go to the adze"},
+                {"to": "cru.counter", "label": "Go to the counter"},
+                {"to": "cru.crotch", "label": "Go to the crotch"},
+            ],
+            "ground": [],
+            "actors": ["crutch"],
+        },
+        "cru.adze": {
+            "region": "crutch_house",
+            "name": "Adze Bench",
+            "situation": "The crutch waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "sister_bolted"},
+                    "text": "A bolted sister would set this crutch true.",
+                },
+            ],
+            "exits": [{"to": "cru.yard", "label": "Go to crutch yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "cru.counter": {
+            "region": "crutch_house",
+            "name": "Counter Bench",
+            "situation": "Counter keeps the iron. A counter iron waits.",
+            "exits": [{"to": "cru.yard", "label": "Go to crutch yard"}],
+            "ground": ["counter_iron"],
+            "actors": ["counter"],
+        },
+        "cru.crotch": {
+            "region": "crutch_house",
+            "name": "Crotch Bench",
+            "situation": "Crotch waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "crotch_spiked"},
+                    "text": "The crutch sits still and even.",
+                },
+            ],
+            "exits": [{"to": "cru.yard", "label": "Go to crutch yard"}],
+            "ground": [],
+            "actors": ["crotch"],
+        },
+        "ptr.path": {
+            "region": "pointer_house",
+            "name": "Pointer Path",
+            "situation": "A pointer house sits inland. Pointer waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "cru.path", "label": "Go to the crutch"},
+                {"to": "stn.path", "label": "Go to the stanchions"},
+                {"to": "ptr.yard", "label": "Go to pointer yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "ptr.yard": {
+            "region": "pointer_house",
+            "name": "Pointer Yard",
+            "situation": "Pointer waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "ptr.path", "label": "Go to pointer path"},
+                {"to": "ptr.diagonal", "label": "Go to the diagonal"},
+                {"to": "ptr.inner", "label": "Go to the inner"},
+                {"to": "ptr.compound", "label": "Go to the compound"},
+            ],
+            "ground": [],
+            "actors": ["pointer"],
+        },
+        "ptr.diagonal": {
+            "region": "pointer_house",
+            "name": "Diagonal Bench",
+            "situation": "The pointer waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "crotch_spiked"},
+                    "text": "A spiked crotch would set this pointer true.",
+                },
+            ],
+            "exits": [{"to": "ptr.yard", "label": "Go to pointer yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "ptr.inner": {
+            "region": "pointer_house",
+            "name": "Inner Bench",
+            "situation": "Inner keeps the iron. An inner iron waits.",
+            "exits": [{"to": "ptr.yard", "label": "Go to pointer yard"}],
+            "ground": ["inner_iron"],
+            "actors": ["inner"],
+        },
+        "ptr.compound": {
+            "region": "pointer_house",
+            "name": "Compound Bench",
+            "situation": "Compound waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "compound_dumped"},
+                    "text": "The pointer sits still and even.",
+                },
+            ],
+            "exits": [{"to": "ptr.yard", "label": "Go to pointer yard"}],
+            "ground": [],
+            "actors": ["compound"],
+        },
+        "stn.path": {
+            "region": "stanchion_house",
+            "name": "Stanchion Path",
+            "situation": "A stanchion house sits inland. Stanchion waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "ptr.path", "label": "Go to the pointer"},
+                {"to": "pil.path", "label": "Go to the pillar"},
+                {"to": "stn.yard", "label": "Go to stanchion yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "stn.yard": {
+            "region": "stanchion_house",
+            "name": "Stanchion Yard",
+            "situation": "Stanchion waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "stn.path", "label": "Go to stanchion path"},
+                {"to": "stn.true", "label": "Go to the true"},
+                {"to": "stn.prop", "label": "Go to the prop"},
+                {"to": "stn.foot", "label": "Go to the foot"},
+            ],
+            "ground": [],
+            "actors": ["stanchion"],
+        },
+        "stn.true": {
+            "region": "stanchion_house",
+            "name": "True Bench",
+            "situation": "The stanchion waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "compound_dumped"},
+                    "text": "A dumped compound would set this stanchion true.",
+                },
+            ],
+            "exits": [{"to": "stn.yard", "label": "Go to stanchion yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "stn.prop": {
+            "region": "stanchion_house",
+            "name": "Prop Bench",
+            "situation": "Prop keeps the iron. A prop iron waits.",
+            "exits": [{"to": "stn.yard", "label": "Go to stanchion yard"}],
+            "ground": ["prop_iron"],
+            "actors": ["prop"],
+        },
+        "stn.foot": {
+            "region": "stanchion_house",
+            "name": "Foot Bench",
+            "situation": "Foot waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "foot_spiked"},
+                    "text": "The stanchion sits still and even.",
+                },
+            ],
+            "exits": [{"to": "stn.yard", "label": "Go to stanchion yard"}],
+            "ground": [],
+            "actors": ["foot"],
+        },
+        "pil.path": {
+            "region": "pillar_house",
+            "name": "Pillar Path",
+            "situation": "A pillar house sits inland. Pillar waits for the oak.",
+            "exits": [
+                {"to": "ashfen.causeway", "label": "Go to causeway"},
+                {"to": "stn.path", "label": "Go to the stanchions"},
+                {"to": "pil.yard", "label": "Go to pillar yard"},
+            ],
+            "ground": [],
+            "actors": [],
+        },
+        "pil.yard": {
+            "region": "pillar_house",
+            "name": "Pillar Yard",
+            "situation": "Pillar waits by an oak blank. The tar smell is sharp.",
+            "exits": [
+                {"to": "pil.path", "label": "Go to pillar path"},
+                {"to": "pil.samson", "label": "Go to the samson"},
+                {"to": "pil.king", "label": "Go to the king"},
+                {"to": "pil.queen", "label": "Go to the queen"},
+            ],
+            "ground": [],
+            "actors": ["pillar"],
+        },
+        "pil.samson": {
+            "region": "pillar_house",
+            "name": "Samson Bench",
+            "situation": "The pillar waits square. A saw sits idle.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "foot_spiked"},
+                    "text": "A spiked foot would set this pillar true.",
+                },
+            ],
+            "exits": [{"to": "pil.yard", "label": "Go to pillar yard"}],
+            "ground": [],
+            "actors": [],
+        },
+        "pil.king": {
+            "region": "pillar_house",
+            "name": "King Bench",
+            "situation": "King keeps the iron. A king iron waits.",
+            "exits": [{"to": "pil.yard", "label": "Go to pillar yard"}],
+            "ground": ["king_iron"],
+            "actors": ["king"],
+        },
+        "pil.queen": {
+            "region": "pillar_house",
+            "name": "Queen Bench",
+            "situation": "Queen waits at the iron. The oak sits slack.",
+            "situation_if": [
+                {
+                    "when": {"has_flag": "queen_shored"},
+                    "text": "The pillar sits still and even.",
+                },
+            ],
+            "exits": [{"to": "pil.yard", "label": "Go to pillar yard"}],
+            "ground": [],
+            "actors": ["queen"],
         },
     }
 
@@ -1975,6 +9635,1446 @@ def build() -> dict:
         "tov": {
             "name": "Tov",
             "idle": "He keeps a lid hoop and does not look up.",
+        },
+        "keld": {
+            "name": "Keld",
+            "idle": "He tests a bloom and does not speak first.",
+        },
+        "brunt": {
+            "name": "Brunt",
+            "idle": "She works the bellows and waits.",
+        },
+        "nessa": {
+            "name": "Nessa",
+            "idle": "He keeps a quench hook and does not look up.",
+        },
+        "wisp": {
+            "name": "Wisp",
+            "idle": "He watches the pond and does not speak first.",
+        },
+        "lark": {
+            "name": "Lark",
+            "idle": "She keeps a pipe mouth and waits.",
+        },
+        "nye": {
+            "name": "Nye",
+            "idle": "He holds a bag and does not look up.",
+        },
+        "moth": {
+            "name": "Moth",
+            "idle": "He tests a pith and does not speak first.",
+        },
+        "sedge": {
+            "name": "Sedge",
+            "idle": "She strips the rush and waits.",
+        },
+        "nix": {
+            "name": "Nix",
+            "idle": "He keeps a bind peg and does not look up.",
+        },
+        "gull": {
+            "name": "Gull",
+            "idle": "He tests a wad and does not speak first.",
+        },
+        "tarn": {
+            "name": "Tarn",
+            "idle": "She teases old rope and waits.",
+        },
+        "pike": {
+            "name": "Pike",
+            "idle": "He keeps a caulk iron and does not look up.",
+        },
+        "cobb": {
+            "name": "Cobb",
+            "idle": "He tests a mesh and does not speak first.",
+        },
+        "kip": {
+            "name": "Kip",
+            "idle": "She sets the hang rails and waits.",
+        },
+        "darn": {
+            "name": "Darn",
+            "idle": "He keeps a tar brush and does not look up.",
+        },
+        "gale": {
+            "name": "Gale",
+            "idle": "He tests a bolt rope and does not speak first.",
+        },
+        "shear": {
+            "name": "Shear",
+            "idle": "She marks the canvas and waits.",
+        },
+        "haly": {
+            "name": "Haly",
+            "idle": "He keeps a halliard and does not look up.",
+        },
+        "tern": {
+            "name": "Tern",
+            "idle": "He tests a lead and does not speak first.",
+        },
+        "gage": {
+            "name": "Gage",
+            "idle": "She turns the coil and waits.",
+        },
+        "plumb": {
+            "name": "Plumb",
+            "idle": "He keeps the line and does not look up.",
+        },
+        "merc": {
+            "name": "Merc",
+            "idle": "He tests a compass rose and does not speak first.",
+        },
+        "rule": {
+            "name": "Rule",
+            "idle": "She sets the ruler and waits.",
+        },
+        "wax": {
+            "name": "Wax",
+            "idle": "He keeps a wax seal and does not look up.",
+        },
+        "flo": {
+            "name": "Flo",
+            "idle": "She watches the channel and does not speak first.",
+        },
+        "cork": {
+            "name": "Cork",
+            "idle": "He stuffs a cage and waits.",
+        },
+        "nun": {
+            "name": "Nun",
+            "idle": "She keeps a buoy spar and does not look up.",
+        },
+        "tang": {
+            "name": "Tang",
+            "idle": "She watches the wrack line and does not speak first.",
+        },
+        "drift": {
+            "name": "Drift",
+            "idle": "He keeps a cutting hook and waits.",
+        },
+        "ure": {
+            "name": "Ure",
+            "idle": "She rakes kelp ash and does not look up.",
+        },
+        "soda": {
+            "name": "Soda",
+            "idle": "She tests a lye drop and does not speak first.",
+        },
+        "lye": {
+            "name": "Lye",
+            "idle": "He keeps the leach tub and waits.",
+        },
+        "bar": {
+            "name": "Bar",
+            "idle": "She keeps a wire and does not look up.",
+        },
+        "tuck": {
+            "name": "Tuck",
+            "idle": "He tests a wet web and does not speak first.",
+        },
+        "stock": {
+            "name": "Stock",
+            "idle": "He keeps the stocks and waits.",
+        },
+        "peg": {
+            "name": "Peg",
+            "idle": "She keeps a pin and does not look up.",
+        },
+        "copse": {
+            "name": "Copse",
+            "idle": "He tests a coppice stick and does not speak first.",
+        },
+        "turf": {
+            "name": "Turf",
+            "idle": "She keeps the clamp and waits.",
+        },
+        "draw": {
+            "name": "Draw",
+            "idle": "He rakes brands and does not look up.",
+        },
+        "shale": {
+            "name": "Shale",
+            "idle": "He tests a shell and does not speak first.",
+        },
+        "flux": {
+            "name": "Flux",
+            "idle": "She keeps the charge and waits.",
+        },
+        "slack": {
+            "name": "Slack",
+            "idle": "He turns the trough and does not look up.",
+        },
+        "mort": {
+            "name": "Mort",
+            "idle": "He tests a bed joint and does not speak first.",
+        },
+        "ashlar": {
+            "name": "Ashlar",
+            "idle": "She keeps the course and waits.",
+        },
+        "joint": {
+            "name": "Joint",
+            "idle": "He holds a trowel and does not look up.",
+        },
+        "rick": {
+            "name": "Rick",
+            "idle": "He tests a yealm and does not speak first.",
+        },
+        "yealm": {
+            "name": "Yealm",
+            "idle": "She keeps the bind and waits.",
+        },
+        "ridge": {
+            "name": "Ridge",
+            "idle": "He keeps a spar pin and does not look up.",
+        },
+        "eave": {
+            "name": "Eave",
+            "idle": "He tests a gutter peg and does not speak first.",
+        },
+        "tun": {
+            "name": "Tun",
+            "idle": "She keeps the cistern and waits.",
+        },
+        "dip": {
+            "name": "Dip",
+            "idle": "He holds a pail and does not look up.",
+        },
+        "suds": {
+            "name": "Suds",
+            "idle": "She tests a lather and does not speak first.",
+        },
+        "bat": {
+            "name": "Bat",
+            "idle": "He keeps the beetle and waits.",
+        },
+        "line": {
+            "name": "Line",
+            "idle": "She keeps a peg and does not look up.",
+        },
+        "holl": {
+            "name": "Holl",
+            "idle": "He tests a rag pulp and does not speak first.",
+        },
+        "deckle": {
+            "name": "Deckle",
+            "idle": "She keeps the mold and waits.",
+        },
+        "post": {
+            "name": "Post",
+            "idle": "He keeps a drying post and does not look up.",
+        },
+        "holt": {
+            "name": "Holt",
+            "idle": "He tests a withy bed and does not speak first.",
+        },
+        "brake": {
+            "name": "Brake",
+            "idle": "She keeps the split and waits.",
+        },
+        "frail": {
+            "name": "Frail",
+            "idle": "He keeps a frame peg and does not look up.",
+        },
+        "leaven": {
+            "name": "Leaven",
+            "idle": "She tests a sponge and does not speak first.",
+        },
+        "oven": {
+            "name": "Oven",
+            "idle": "He keeps the heat and waits.",
+        },
+        "hatch": {
+            "name": "Hatch",
+            "idle": "She keeps a peel and does not look up.",
+        },
+        "keel": {
+            "name": "Keel",
+            "idle": "He tests a rennet and does not speak first.",
+        },
+        "curd": {
+            "name": "Curd",
+            "idle": "She keeps the wrap and waits.",
+        },
+        "shelf": {
+            "name": "Shelf",
+            "idle": "He keeps a salt rub and does not look up.",
+        },
+        "warp": {
+            "name": "Warp",
+            "idle": "She tests a warp beam and does not speak first.",
+        },
+        "sley": {
+            "name": "Sley",
+            "idle": "He keeps the reed and waits.",
+        },
+        "batten": {
+            "name": "Batten",
+            "idle": "She keeps a shear and does not look up.",
+        },
+        "scrape": {
+            "name": "Scrape",
+            "idle": "He tests a horn plate and does not speak first.",
+        },
+        "pane": {
+            "name": "Pane",
+            "idle": "She keeps the thin horn and waits.",
+        },
+        "hook": {
+            "name": "Hook",
+            "idle": "He keeps a lantern hook and does not look up.",
+        },
+        "gall": {
+            "name": "Gall",
+            "idle": "He tests an oak gall and does not speak first.",
+        },
+        "copper": {
+            "name": "Copper",
+            "idle": "She keeps the black mix and waits.",
+        },
+        "nib": {
+            "name": "Nib",
+            "idle": "He keeps a quill knife and does not look up.",
+        },
+        "last": {
+            "name": "Last",
+            "idle": "She tests a wooden last and does not speak first.",
+        },
+        "awl": {
+            "name": "Awl",
+            "idle": "He keeps the punch and waits.",
+        },
+        "heel": {
+            "name": "Heel",
+            "idle": "She keeps a peg mallet and does not look up.",
+        },
+        "fruit": {
+            "name": "Fruit",
+            "idle": "He tests a mill stone and does not speak first.",
+        },
+        "cheese": {
+            "name": "Cheese",
+            "idle": "She keeps the pomace wrap and waits.",
+        },
+        "keeve": {
+            "name": "Keeve",
+            "idle": "He keeps a bung mallet and does not look up.",
+        },
+        "seed": {
+            "name": "Seed",
+            "idle": "She tests a dry seed and does not speak first.",
+        },
+        "paste": {
+            "name": "Paste",
+            "idle": "He keeps the wet mix and waits.",
+        },
+        "pot": {
+            "name": "Pot",
+            "idle": "She keeps a lid and does not look up.",
+        },
+        "chop": {
+            "name": "Chop",
+            "idle": "He tests a knife and does not speak first.",
+        },
+        "funnel": {
+            "name": "Funnel",
+            "idle": "She keeps the fill horn and waits.",
+        },
+        "tie": {
+            "name": "Tie",
+            "idle": "He keeps a link string and does not look up.",
+        },
+        "crust": {
+            "name": "Crust",
+            "idle": "She tests a paste and does not speak first.",
+        },
+        "dish": {
+            "name": "Dish",
+            "idle": "He keeps the fill and waits.",
+        },
+        "crimp": {
+            "name": "Crimp",
+            "idle": "She keeps a thumb and does not look up.",
+        },
+        "pulp": {
+            "name": "Pulp",
+            "idle": "She tests a copper and does not speak first.",
+        },
+        "foam": {
+            "name": "Foam",
+            "idle": "He keeps the skim ladle and waits.",
+        },
+        "jar": {
+            "name": "Jar",
+            "idle": "She keeps a jar lip and does not look up.",
+        },
+        "throw": {
+            "name": "Throw",
+            "idle": "She tests a wheel and does not speak first.",
+        },
+        "biscuit": {
+            "name": "Biscuit",
+            "idle": "He keeps the fire hole and waits.",
+        },
+        "glaze": {
+            "name": "Glaze",
+            "idle": "She keeps a dip pan and does not look up.",
+        },
+        "flesh": {
+            "name": "Flesh",
+            "idle": "She tests a beam and does not speak first.",
+        },
+        "bate": {
+            "name": "Bate",
+            "idle": "He keeps the bate tub and waits.",
+        },
+        "tan": {
+            "name": "Tan",
+            "idle": "She keeps a bark pit and does not look up.",
+        },
+        "rett": {
+            "name": "Rett",
+            "idle": "She tests a pond and does not speak first.",
+        },
+        "heckle": {
+            "name": "Heckle",
+            "idle": "He keeps the heckle comb and waits.",
+        },
+        "spindle": {
+            "name": "Spindle",
+            "idle": "She keeps a whirl and does not look up.",
+        },
+        "snip": {
+            "name": "Snip",
+            "idle": "She tests a rod snip and does not speak first.",
+        },
+        "header": {
+            "name": "Header",
+            "idle": "He keeps the header die and waits.",
+        },
+        "shank": {
+            "name": "Shank",
+            "idle": "She keeps a hardy and does not look up.",
+        },
+        "hub": {
+            "name": "Hub",
+            "idle": "She tests a hub lathe and does not speak first.",
+        },
+        "spoke": {
+            "name": "Spoke",
+            "idle": "He keeps the spoke mortise and waits.",
+        },
+        "felloe": {
+            "name": "Felloe",
+            "idle": "She keeps a tyre ring and does not look up.",
+        },
+        "steep": {
+            "name": "Steep",
+            "idle": "She tests a steep vat and does not speak first.",
+        },
+        "piece": {
+            "name": "Piece",
+            "idle": "He keeps the malt floor and waits.",
+        },
+        "oast": {
+            "name": "Oast",
+            "idle": "She keeps an oast hair and does not look up.",
+        },
+        "grist": {
+            "name": "Grist",
+            "idle": "She tests a hopper and does not speak first.",
+        },
+        "wort": {
+            "name": "Wort",
+            "idle": "He keeps the hop copper and waits.",
+        },
+        "gyle": {
+            "name": "Gyle",
+            "idle": "She keeps a rack cock and does not look up.",
+        },
+        "mother": {
+            "name": "Mother",
+            "idle": "She tests a mother vat and does not speak first.",
+        },
+        "sour": {
+            "name": "Sour",
+            "idle": "He keeps the acet tun and waits.",
+        },
+        "cruet": {
+            "name": "Cruet",
+            "idle": "She keeps a cruet lip and does not look up.",
+        },
+        "paring": {
+            "name": "Paring",
+            "idle": "She tests a scrap heap and does not speak first.",
+        },
+        "seether": {
+            "name": "Seether",
+            "idle": "He keeps the size vat and waits.",
+        },
+        "slab": {
+            "name": "Slab",
+            "idle": "She keeps a cooling frame and does not look up.",
+        },
+        "quire": {
+            "name": "Quire",
+            "idle": "She tests a gathering and does not speak first.",
+        },
+        "band": {
+            "name": "Band",
+            "idle": "He keeps the sewing frame and waits.",
+        },
+        "nip": {
+            "name": "Nip",
+            "idle": "She keeps a nipping plough and does not look up.",
+        },
+        "bole": {
+            "name": "Bole",
+            "idle": "She tests a bole cushion and does not speak first.",
+        },
+        "leaf": {
+            "name": "Leaf",
+            "idle": "He keeps the gold tip and waits.",
+        },
+        "burnish": {
+            "name": "Burnish",
+            "idle": "She keeps a burnish stone and does not look up.",
+        },
+        "foil": {
+            "name": "Foil",
+            "idle": "She tests a gold foil and does not speak first.",
+        },
+        "seat": {
+            "name": "Seat",
+            "idle": "He keeps the bezel seat and waits.",
+        },
+        "collet": {
+            "name": "Collet",
+            "idle": "She keeps a collet rim and does not look up.",
+        },
+        "score": {
+            "name": "Score",
+            "idle": "She tests a diamond point and does not speak first.",
+        },
+        "groze": {
+            "name": "Groze",
+            "idle": "He keeps the grozing iron and waits.",
+        },
+        "came": {
+            "name": "Came",
+            "idle": "She keeps a lead came and does not look up.",
+        },
+        "stile": {
+            "name": "Stile",
+            "idle": "She tests a rebate plane and does not speak first.",
+        },
+        "rail": {
+            "name": "Rail",
+            "idle": "He keeps the tenon saw and waits.",
+        },
+        "pin": {
+            "name": "Pin",
+            "idle": "She keeps a sash peg and does not look up.",
+        },
+        "whip": {
+            "name": "Whip",
+            "idle": "She tests a putty tub and does not speak first.",
+        },
+        "knife": {
+            "name": "Knife",
+            "idle": "He keeps the putty knife and waits.",
+        },
+        "dust": {
+            "name": "Dust",
+            "idle": "She keeps a dusting cloth and does not look up.",
+        },
+        "mull": {
+            "name": "Mull",
+            "idle": "She tests a mulling stone and does not speak first.",
+        },
+        "oil": {
+            "name": "Oil",
+            "idle": "He keeps the oil pot and waits.",
+        },
+        "brush": {
+            "name": "Brush",
+            "idle": "She keeps a paint brush and does not look up.",
+        },
+        "cook": {
+            "name": "Cook",
+            "idle": "She tests a resin pot and does not speak first.",
+        },
+        "strain": {
+            "name": "Strain",
+            "idle": "He keeps the gum cloth and waits.",
+        },
+        "flow": {
+            "name": "Flow",
+            "idle": "She keeps a varnish brush and does not look up.",
+        },
+        "keep": {
+            "name": "Keep",
+            "idle": "She tests a keep plate and does not speak first.",
+        },
+        "catch": {
+            "name": "Catch",
+            "idle": "He keeps the latch file and waits.",
+        },
+        "hasp": {
+            "name": "Hasp",
+            "idle": "She keeps a hasp bar and does not look up.",
+        },
+        "knuckle": {
+            "name": "Knuckle",
+            "idle": "She tests a knuckle form and does not speak first.",
+        },
+        "pintle": {
+            "name": "Pintle",
+            "idle": "He keeps the pintle pin and waits.",
+        },
+        "gudgeon": {
+            "name": "Gudgeon",
+            "idle": "She keeps a gudgeon cheek and does not look up.",
+        },
+        "slot": {
+            "name": "Slot",
+            "idle": "She tests a stay slot and does not speak first.",
+        },
+        "arm": {
+            "name": "Arm",
+            "idle": "He keeps the stay peg and waits.",
+        },
+        "eye": {
+            "name": "Eye",
+            "idle": "She keeps a stay eye and does not look up.",
+        },
+        "sill": {
+            "name": "Sill",
+            "idle": "She tests a sill bed and does not speak first.",
+        },
+        "drip": {
+            "name": "Drip",
+            "idle": "He keeps the drip iron and waits.",
+        },
+        "stool": {
+            "name": "Stool",
+            "idle": "She keeps a window stool and does not look up.",
+        },
+        "mitre": {
+            "name": "Mitre",
+            "idle": "She tests a mitre box and does not speak first.",
+        },
+        "jamb": {
+            "name": "Jamb",
+            "idle": "He keeps the return sprig and waits.",
+        },
+        "tack": {
+            "name": "Tack",
+            "idle": "She keeps a casing tack and does not look up.",
+        },
+        "cope": {
+            "name": "Cope",
+            "idle": "She tests a cope cut and does not speak first.",
+        },
+        "base": {
+            "name": "Base",
+            "idle": "He keeps the plinth block and waits.",
+        },
+        "plinth": {
+            "name": "Plinth",
+            "idle": "She keeps a plinth shoe and does not look up.",
+        },
+        "plough": {
+            "name": "Plough",
+            "idle": "She tests a dado plough and does not speak first.",
+        },
+        "panel": {
+            "name": "Panel",
+            "idle": "He keeps the rail cap and waits.",
+        },
+        "cap": {
+            "name": "Cap",
+            "idle": "She keeps a rail cap and does not look up.",
+        },
+        "chalk": {
+            "name": "Chalk",
+            "idle": "She tests a chalk line and does not speak first.",
+        },
+        "plug": {
+            "name": "Plug",
+            "idle": "He keeps the wall plug and waits.",
+        },
+        "spring": {
+            "name": "Spring",
+            "idle": "She keeps a sprung mould and does not look up.",
+        },
+        "cove": {
+            "name": "Cove",
+            "idle": "She tests a cove mould and does not speak first.",
+        },
+        "scratch": {
+            "name": "Scratch",
+            "idle": "He keeps the scratch key and waits.",
+        },
+        "float": {
+            "name": "Float",
+            "idle": "She keeps a cornice float and does not look up.",
+        },
+        "string": {
+            "name": "String",
+            "idle": "She tests a stair string and does not speak first.",
+        },
+        "housing": {
+            "name": "Housing",
+            "idle": "He keeps the riser wedge and waits.",
+        },
+        "riser": {
+            "name": "Riser",
+            "idle": "She keeps a riser wedge and does not look up.",
+        },
+        "blank": {
+            "name": "Blank",
+            "idle": "She tests a newel blank and does not speak first.",
+        },
+        "mortise": {
+            "name": "Mortise",
+            "idle": "He keeps the finial dowel and waits.",
+        },
+        "dowel": {
+            "name": "Dowel",
+            "idle": "She keeps a finial dowel and does not look up.",
+        },
+        "stick": {
+            "name": "Stick",
+            "idle": "She tests a moulding stick and does not speak first.",
+        },
+        "scarf": {
+            "name": "Scarf",
+            "idle": "He keeps the wreath block and waits.",
+        },
+        "wreath": {
+            "name": "Wreath",
+            "idle": "She keeps a wreath block and does not look up.",
+        },
+        "square": {
+            "name": "Square",
+            "idle": "She tests a rip square and does not speak first.",
+        },
+        "flute": {
+            "name": "Flute",
+            "idle": "He keeps the flute iron and waits.",
+        },
+        "neck": {
+            "name": "Neck",
+            "idle": "She keeps a neck shoulder and does not look up.",
+        },
+        "going": {
+            "name": "Going",
+            "idle": "She tests a going mark and does not speak first.",
+        },
+        "nosing": {
+            "name": "Nosing",
+            "idle": "He keeps the nosing iron and waits.",
+        },
+        "wrap": {
+            "name": "Return",
+            "idle": "She keeps a tread return and does not look up.",
+        },
+        "shot": {
+            "name": "Shot",
+            "idle": "She tests a shooting board and does not speak first.",
+        },
+        "groove": {
+            "name": "Groove",
+            "idle": "He keeps the groove iron and waits.",
+        },
+        "blind": {
+            "name": "Blind",
+            "idle": "She keeps a secret nail and does not look up.",
+        },
+        "span": {
+            "name": "Span",
+            "idle": "She tests a spacing rod and does not speak first.",
+        },
+        "trimmer": {
+            "name": "Trimmer",
+            "idle": "He keeps the notch saw and waits.",
+        },
+        "camber": {
+            "name": "Camber",
+            "idle": "She keeps a joist crown and does not look up.",
+        },
+        "rive": {
+            "name": "Rive",
+            "idle": "She tests a split block and does not speak first.",
+        },
+        "bay": {
+            "name": "Bay",
+            "idle": "He keeps the hair lime and waits.",
+        },
+        "hair": {
+            "name": "Hair",
+            "idle": "She keeps a hair coat and does not look up.",
+        },
+        "flag": {
+            "name": "Flag",
+            "idle": "She tests a hearth stone and does not speak first.",
+        },
+        "hob": {
+            "name": "Hob",
+            "idle": "He keeps the hob plate and waits.",
+        },
+        "breast": {
+            "name": "Breast",
+            "idle": "She keeps a lime wash and does not look up.",
+        },
+        "lintel": {
+            "name": "Lintel",
+            "idle": "She tests a lintel stone and does not speak first.",
+        },
+        "corbel": {
+            "name": "Corbel",
+            "idle": "He keeps the corbel pin and waits.",
+        },
+        "mantel": {
+            "name": "Mantel",
+            "idle": "She keeps a mantel pin and does not look up.",
+        },
+        "parge": {
+            "name": "Parge",
+            "idle": "She tests a smear board and does not speak first.",
+        },
+        "throat": {
+            "name": "Throat",
+            "idle": "He keeps the throat wad and waits.",
+        },
+        "cowl": {
+            "name": "Cowl",
+            "idle": "She keeps a flue cowl and does not look up.",
+        },
+        "sand": {
+            "name": "Sand",
+            "idle": "She tests a mould box and does not speak first.",
+        },
+        "pour": {
+            "name": "Pour",
+            "idle": "He keeps the pour flask and waits.",
+        },
+        "back": {
+            "name": "Back",
+            "idle": "She keeps a fireback plate and does not look up.",
+        },
+        "swage": {
+            "name": "Swage",
+            "idle": "She tests a bar block and does not speak first.",
+        },
+        "basket": {
+            "name": "Basket",
+            "idle": "He keeps the basket rivet and waits.",
+        },
+        "slide": {
+            "name": "Slide",
+            "idle": "She keeps a grate slide and does not look up.",
+        },
+        "pug": {
+            "name": "Pug",
+            "idle": "She tests a clay trough and does not speak first.",
+        },
+        "strike": {
+            "name": "Strike",
+            "idle": "He keeps the strike box and waits.",
+        },
+        "hack": {
+            "name": "Hack",
+            "idle": "She keeps a drying hack and does not look up.",
+        },
+        "horse": {
+            "name": "Horse",
+            "idle": "She tests a pantile horse and does not speak first.",
+        },
+        "pallet": {
+            "name": "Pallet",
+            "idle": "He keeps the pallet board and waits.",
+        },
+        "arris": {
+            "name": "Arris",
+            "idle": "She keeps a tile arris and does not look up.",
+        },
+        "scapple": {
+            "name": "Scapple",
+            "idle": "She tests a split face and does not speak first.",
+        },
+        "punch": {
+            "name": "Punch",
+            "idle": "He keeps the punch pin and waits.",
+        },
+        "lap": {
+            "name": "Lap",
+            "idle": "She keeps a slate lap and does not look up.",
+        },
+        "roll": {
+            "name": "Roll",
+            "idle": "She tests a lead sheet and does not speak first.",
+        },
+        "welt": {
+            "name": "Welt",
+            "idle": "He keeps the welt boss and waits.",
+        },
+        "apron": {
+            "name": "Apron",
+            "idle": "She keeps a flash apron and does not look up.",
+        },
+        "cheek": {
+            "name": "Cheek",
+            "idle": "She tests a block blank and does not speak first.",
+        },
+        "sheave": {
+            "name": "Sheave",
+            "idle": "He keeps the sheave score and waits.",
+        },
+        "strop": {
+            "name": "Strop",
+            "idle": "She keeps a block strop and does not look up.",
+        },
+        "shaft": {
+            "name": "Shaft",
+            "idle": "She tests an ash blank and does not speak first.",
+        },
+        "blade": {
+            "name": "Blade",
+            "idle": "He keeps the blade spoon and waits.",
+        },
+        "grip": {
+            "name": "Grip",
+            "idle": "She keeps an oar grip and does not look up.",
+        },
+        "grease": {
+            "name": "Grease",
+            "idle": "She tests the tallow pot and does not speak first.",
+        },
+        "poppet": {
+            "name": "Poppet",
+            "idle": "He keeps the poppet wedge and waits.",
+        },
+        "trigger": {
+            "name": "Trigger",
+            "idle": "She keeps a launch dog and does not look up.",
+        },
+        "steam": {
+            "name": "Steam",
+            "idle": "She tests the steam chest and does not speak first.",
+        },
+        "land": {
+            "name": "Land",
+            "idle": "He keeps the land rove and waits.",
+        },
+        "garboard": {
+            "name": "Garboard",
+            "idle": "She keeps a garboard plank and does not look up.",
+        },
+        "bars": {
+            "name": "Bars",
+            "idle": "She tests the ash bars and does not speak first.",
+        },
+        "pawl": {
+            "name": "Pawl",
+            "idle": "He keeps the pawl tooth and waits.",
+        },
+        "drum": {
+            "name": "Drum",
+            "idle": "She keeps a windlass drum and does not look up.",
+        },
+        "grid": {
+            "name": "Grid",
+            "idle": "She tests the chalk floor and does not speak first.",
+        },
+        "spile": {
+            "name": "Spile",
+            "idle": "He keeps the spile staff and waits.",
+        },
+        "bevel": {
+            "name": "Bevel",
+            "idle": "She keeps a station bevel and does not look up.",
+        },
+        "billet": {
+            "name": "Billet",
+            "idle": "She tests a locust blank and does not speak first.",
+        },
+        "auger": {
+            "name": "Auger",
+            "idle": "He keeps the auger bit and waits.",
+        },
+        "maul": {
+            "name": "Maul",
+            "idle": "She keeps a trunnel maul and does not look up.",
+        },
+        "dub": {
+            "name": "Dub",
+            "idle": "She tests an oak baulk and does not speak first.",
+        },
+        "rabbet": {
+            "name": "Rabbet",
+            "idle": "He keeps the rabbet iron and waits.",
+        },
+        "hog": {
+            "name": "Hog",
+            "idle": "She keeps a hog bolt and does not look up.",
+        },
+        "sink": {
+            "name": "Sink",
+            "idle": "She tests a fir pole and does not speak first.",
+        },
+        "range": {
+            "name": "Range",
+            "idle": "He keeps the range mark and waits.",
+        },
+        "partner": {
+            "name": "Partner",
+            "idle": "She keeps a mast hoop and does not look up.",
+        },
+        "hew": {
+            "name": "Hew",
+            "idle": "She tests a stem blank and does not speak first.",
+        },
+        "gripe": {
+            "name": "Gripe",
+            "idle": "He keeps the gripe iron and waits.",
+        },
+        "knee": {
+            "name": "Knee",
+            "idle": "She keeps a hanging knee and does not look up.",
+        },
+        "turn": {
+            "name": "Turn",
+            "idle": "She tests a lignum blank and does not speak first.",
+        },
+        "ream": {
+            "name": "Ream",
+            "idle": "He keeps the ream bit and waits.",
+        },
+        "seize": {
+            "name": "Seize",
+            "idle": "She keeps a marlin hitch and does not look up.",
+        },
+        "saw": {
+            "name": "Saw",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "horn": {
+            "name": "Horn",
+            "idle": "He keeps the horn gouge and waits.",
+        },
+        "bolt": {
+            "name": "Bolt",
+            "idle": "She keeps a cleat bolt and does not look up.",
+        },
+        "bore": {
+            "name": "Bore",
+            "idle": "She tests a hawse blank and does not speak first.",
+        },
+        "pipe": {
+            "name": "Pipe",
+            "idle": "He keeps the pipe lip and waits.",
+        },
+        "collar": {
+            "name": "Collar",
+            "idle": "She keeps a hawse collar and does not look up.",
+        },
+        "rim": {
+            "name": "Rim",
+            "idle": "She tests a lignum blank and does not speak first.",
+        },
+        "reeve": {
+            "name": "Reeve",
+            "idle": "He keeps the reeve pin and waits.",
+        },
+        "lanyard": {
+            "name": "Lanyard",
+            "idle": "She keeps a hemp fall and does not look up.",
+        },
+        "truck": {
+            "name": "Truck",
+            "idle": "She tests a lignum blank and does not speak first.",
+        },
+        "rib": {
+            "name": "Rib",
+            "idle": "He keeps the rib cord and waits.",
+        },
+        "truss": {
+            "name": "Truss",
+            "idle": "She keeps a yard truss and does not look up.",
+        },
+        "step": {
+            "name": "Step",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "thwart": {
+            "name": "Thwart",
+            "idle": "He keeps the thwart bolt and waits.",
+        },
+        "belay": {
+            "name": "Belay",
+            "idle": "She keeps a hemp cable and does not look up.",
+        },
+        "woold": {
+            "name": "Woold",
+            "idle": "She tests a hemp coil and does not speak first.",
+        },
+        "riding": {
+            "name": "Riding",
+            "idle": "He keeps the riding yarn and waits.",
+        },
+        "frap": {
+            "name": "Frap",
+            "idle": "She keeps a stem frap and does not look up.",
+        },
+        "shape": {
+            "name": "Shape",
+            "idle": "She tests an ash blank and does not speak first.",
+        },
+        "helm": {
+            "name": "Helm",
+            "idle": "He keeps the helm iron and waits.",
+        },
+        "yoke": {
+            "name": "Yoke",
+            "idle": "She keeps a tiller yoke and does not look up.",
+        },
+        "bill": {
+            "name": "Bill",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "roller": {
+            "name": "Roller",
+            "idle": "He keeps the roller bush and waits.",
+        },
+        "fluke": {
+            "name": "Fluke",
+            "idle": "She keeps a fish tackle and does not look up.",
+        },
+        "wing": {
+            "name": "Wing",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "fashion": {
+            "name": "Fashion",
+            "idle": "He keeps the fashion iron and waits.",
+        },
+        "stern": {
+            "name": "Stern",
+            "idle": "She keeps a transom spike and does not look up.",
+        },
+        "broach": {
+            "name": "Broach",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "drain": {
+            "name": "Drain",
+            "idle": "He keeps the drain lead and waits.",
+        },
+        "mouth": {
+            "name": "Mouth",
+            "idle": "She keeps a scupper lid and does not look up.",
+        },
+        "hood": {
+            "name": "Hood",
+            "idle": "She tests a brass hood and does not speak first.",
+        },
+        "lamp": {
+            "name": "Lamp",
+            "idle": "He keeps the lamp oil and waits.",
+        },
+        "card": {
+            "name": "Card",
+            "idle": "She keeps a compass card and does not look up.",
+        },
+        "cant": {
+            "name": "Cant",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "butt": {
+            "name": "Butt",
+            "idle": "He keeps the butt scarph and waits.",
+        },
+        "belly": {
+            "name": "Belly",
+            "idle": "She keeps a futtock clench and does not look up.",
+        },
+        "tree": {
+            "name": "Tree",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "hounds": {
+            "name": "Hounds",
+            "idle": "He keeps the hounds spread and waits.",
+        },
+        "bolster": {
+            "name": "Bolster",
+            "idle": "She keeps a mast bolster and does not look up.",
+        },
+        "snipe": {
+            "name": "Snipe",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "margin": {
+            "name": "Margin",
+            "idle": "He keeps the margin dowel and waits.",
+        },
+        "pay": {
+            "name": "Pay",
+            "idle": "She keeps a pitch ladle and does not look up.",
+        },
+        "joggle": {
+            "name": "Joggle",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "lodge": {
+            "name": "Lodge",
+            "idle": "He keeps the end lodge and waits.",
+        },
+        "coak": {
+            "name": "Coak",
+            "idle": "She keeps a coak punch and does not look up.",
+        },
+        "covering": {
+            "name": "Covering",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "hance": {
+            "name": "Hance",
+            "idle": "He keeps the rail hance and waits.",
+        },
+        "dump": {
+            "name": "Dump",
+            "idle": "She keeps a dump bolt and does not look up.",
+        },
+        "sweep": {
+            "name": "Sweep",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "crane": {
+            "name": "Crane",
+            "idle": "He keeps the crane band and waits.",
+        },
+        "ship": {
+            "name": "Ship",
+            "idle": "She keeps a davit pin and does not look up.",
+        },
+        "steeve": {
+            "name": "Steeve",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "bee": {
+            "name": "Bee",
+            "idle": "He keeps the iron bee and waits.",
+        },
+        "guy": {
+            "name": "Guy",
+            "idle": "She keeps a guy seizing and does not look up.",
+        },
+        "channel": {
+            "name": "Channel",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "plate": {
+            "name": "Plate",
+            "idle": "He keeps the plate iron and waits.",
+        },
+        "strap": {
+            "name": "Strap",
+            "idle": "She keeps a chain strap and does not look up.",
+        },
+        "kevel": {
+            "name": "Kevel",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "jaw": {
+            "name": "Jaw",
+            "idle": "He keeps the jaw mortise and waits.",
+        },
+        "clench": {
+            "name": "Clench",
+            "idle": "She keeps a clench ring and does not look up.",
+        },
+        "knight": {
+            "name": "Knight",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "box": {
+            "name": "Box",
+            "idle": "He keeps the bit box and waits.",
+        },
+        "lash": {
+            "name": "Lash",
+            "idle": "She keeps a lashing and does not look up.",
+        },
+        "notch": {
+            "name": "Notch",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "ledge": {
+            "name": "Ledge",
+            "idle": "He keeps the ledge lodge and waits.",
+        },
+        "spike": {
+            "name": "Spike",
+            "idle": "She keeps a deck spike and does not look up.",
+        },
+        "tabernacle": {
+            "name": "Tabernacle",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "gate": {
+            "name": "Gate",
+            "idle": "He keeps the gate mortise and waits.",
+        },
+        "keeper": {
+            "name": "Keeper",
+            "idle": "She keeps a keeper pin and does not look up.",
+        },
+        "sheer": {
+            "name": "Sheer",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "plank": {
+            "name": "Plank",
+            "idle": "He keeps the plank plane and waits.",
+        },
+        "edge": {
+            "name": "Edge",
+            "idle": "She keeps a dump iron and does not look up.",
+        },
+        "spirket": {
+            "name": "Spirket",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "strake": {
+            "name": "Strake",
+            "idle": "He keeps the strake plane and waits.",
+        },
+        "ring": {
+            "name": "Ring",
+            "idle": "She keeps a clench ring and does not look up.",
+        },
+        "trestle": {
+            "name": "Trestle",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "rest": {
+            "name": "Rest",
+            "idle": "He keeps the rest tenon and waits.",
+        },
+        "bib": {
+            "name": "Bib",
+            "idle": "She keeps a bib seizing and does not look up.",
+        },
+        "crook": {
+            "name": "Crook",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "palm": {
+            "name": "Palm",
+            "idle": "He keeps the palm bolt and waits.",
+        },
+        "fay": {
+            "name": "Fay",
+            "idle": "She keeps a faying iron and does not look up.",
+        },
+        "lodging": {
+            "name": "Lodging",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "chock": {
+            "name": "Chock",
+            "idle": "He keeps the chock bolt and waits.",
+        },
+        "nick": {
+            "name": "Nick",
+            "idle": "She keeps a nick iron and does not look up.",
+        },
+        "dagger": {
+            "name": "Dagger",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "siding": {
+            "name": "Siding",
+            "idle": "He keeps the siding iron and waits.",
+        },
+        "sirmark": {
+            "name": "Sirmark",
+            "idle": "She keeps a sirmark iron and does not look up.",
+        },
+        "rider": {
+            "name": "Rider",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "filling": {
+            "name": "Filling",
+            "idle": "He keeps the filling iron and waits.",
+        },
+        "wring": {
+            "name": "Wring",
+            "idle": "She keeps a wring iron and does not look up.",
+        },
+        "keelson": {
+            "name": "Keelson",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "stopwater": {
+            "name": "Stopwater",
+            "idle": "He keeps the stopwater iron and waits.",
+        },
+        "sister": {
+            "name": "Sister",
+            "idle": "She keeps a sister iron and does not look up.",
+        },
+        "crutch": {
+            "name": "Crutch",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "counter": {
+            "name": "Counter",
+            "idle": "He keeps the counter iron and waits.",
+        },
+        "crotch": {
+            "name": "Crotch",
+            "idle": "She keeps a crotch iron and does not look up.",
+        },
+        "pointer": {
+            "name": "Pointer",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "inner": {
+            "name": "Inner",
+            "idle": "He keeps the inner iron and waits.",
+        },
+        "compound": {
+            "name": "Compound",
+            "idle": "She keeps a compound iron and does not look up.",
+        },
+        "stanchion": {
+            "name": "Stanchion",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "prop": {
+            "name": "Prop",
+            "idle": "He keeps the prop iron and waits.",
+        },
+        "foot": {
+            "name": "Foot",
+            "idle": "She keeps a foot iron and does not look up.",
+        },
+        "pillar": {
+            "name": "Pillar",
+            "idle": "She tests an oak blank and does not speak first.",
+        },
+        "king": {
+            "name": "King",
+            "idle": "He keeps the king iron and waits.",
+        },
+        "queen": {
+            "name": "Queen",
+            "idle": "She keeps a queen iron and does not look up.",
         },
     }
 
@@ -5317,6 +14417,15830 @@ def build() -> dict:
             "Tov lids only a packed pickle.",
             [{"op": "set_flag", "flag": "heard_pickle_rule"}],
         ),
+        action(
+            "know_the_bog_iron",
+            "Know the bog iron",
+            "talk",
+            {
+                "all": [
+                    {"at": "forge.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "forge_trust"},
+                ]
+            },
+            "You name the bog iron. Keld lets you bank and quench.",
+            [
+                {"op": "set_flag", "flag": "forge_trust"},
+                {"op": "remember", "actor": "keld", "fact": "bog"},
+            ],
+        ),
+        action(
+            "read_the_forge_list",
+            "Read the forge list",
+            "do",
+            {
+                "all": [
+                    {"at": "forge.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "forge_trust"},
+                ]
+            },
+            "You read the forge list. Keld lets you bank and quench.",
+            [
+                {"op": "set_flag", "flag": "forge_trust"},
+                {"op": "remember", "actor": "keld", "fact": "list"},
+            ],
+        ),
+        action(
+            "brine_the_quench",
+            "Brine the quench",
+            "do",
+            {
+                "all": [
+                    {"at": "forge.trough"},
+                    {"has_flag": "pickle_lidded"},
+                    {"not_flag": "forge_brined"},
+                ]
+            },
+            "You brine the quench. The trough takes pickle brine.",
+            [
+                {"op": "set_flag", "flag": "forge_brined"},
+                {"op": "set_flag", "flag": "forge_trust"},
+                {"op": "remember", "actor": "nessa", "fact": "brine"},
+            ],
+        ),
+        action(
+            "bank_the_bellows",
+            "Bank the bellows",
+            "do",
+            {
+                "all": [
+                    {"at": "forge.bellows"},
+                    {"has_flag": "forge_trust"},
+                    {"not_flag": "forge_hot"},
+                    {"not_flag": "iron_quenched"},
+                ]
+            },
+            "You bank the bellows. The fire takes the tide wind.",
+            [{"op": "set_flag", "flag": "forge_hot"}],
+        ),
+        action(
+            "hammer_the_bloom",
+            "Hammer the bloom",
+            "do",
+            {
+                "all": [
+                    {"at": "forge.anvil"},
+                    {"has_flag": "forge_trust"},
+                    {"has_flag": "forge_hot"},
+                    {"not_flag": "forge_hammered"},
+                    {"not_flag": "iron_quenched"},
+                ]
+            },
+            "You hammer the bloom. The iron takes the shape.",
+            [{"op": "set_flag", "flag": "forge_hammered"}],
+        ),
+        action(
+            "quench_the_iron",
+            "Quench the iron",
+            "do",
+            {
+                "all": [
+                    {"at": "forge.trough"},
+                    {"has_flag": "forge_trust"},
+                    {"has_flag": "forge_hammered"},
+                    {"has_item": "bloom_iron"},
+                    {"not_flag": "iron_quenched"},
+                ]
+            },
+            "You quench the iron. Nessa marks the bloom hard.",
+            [
+                {"op": "remove_item", "item": "bloom_iron"},
+                {"op": "set_flag", "flag": "iron_quenched"},
+                {"op": "remember", "actor": "nessa", "fact": "quench"},
+            ],
+        ),
+        action(
+            "ask_keld_rule",
+            "Ask Keld the rule",
+            "talk",
+            {"at": "forge.yard"},
+            "Keld says bank the bellows. Then hammer and quench.",
+            [{"op": "set_flag", "flag": "heard_forge_rule"}],
+        ),
+        action(
+            "ask_brunt_bellows",
+            "Ask Brunt the bellows",
+            "talk",
+            {"at": "forge.bellows"},
+            "Brunt says bank until the fire is white.",
+            [{"op": "set_flag", "flag": "heard_forge_rule"}],
+        ),
+        action(
+            "ask_nessa_quench",
+            "Ask Nessa the quench",
+            "talk",
+            {"at": "forge.trough"},
+            "Nessa quenches only a hammered bloom.",
+            [{"op": "set_flag", "flag": "heard_forge_rule"}],
+        ),
+        action(
+            "know_the_decoy_run",
+            "Know the decoy run",
+            "talk",
+            {
+                "all": [
+                    {"at": "decoy.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "decoy_trust"},
+                ]
+            },
+            "You name the decoy run. Wisp lets you lay and bag.",
+            [
+                {"op": "set_flag", "flag": "decoy_trust"},
+                {"op": "remember", "actor": "wisp", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_decoy_list",
+            "Read the decoy list",
+            "do",
+            {
+                "all": [
+                    {"at": "decoy.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "decoy_trust"},
+                ]
+            },
+            "You read the decoy list. Wisp lets you lay and bag.",
+            [
+                {"op": "set_flag", "flag": "decoy_trust"},
+                {"op": "remember", "actor": "wisp", "fact": "list"},
+            ],
+        ),
+        action(
+            "hook_the_take",
+            "Hook the take",
+            "do",
+            {
+                "all": [
+                    {"at": "decoy.tunnel"},
+                    {"has_flag": "iron_quenched"},
+                    {"not_flag": "decoy_hooked"},
+                ]
+            },
+            "You hook the take. The tunnel takes a quenched hook.",
+            [
+                {"op": "set_flag", "flag": "decoy_hooked"},
+                {"op": "set_flag", "flag": "decoy_trust"},
+                {"op": "remember", "actor": "nye", "fact": "hook"},
+            ],
+        ),
+        action(
+            "lay_the_pipes",
+            "Lay the pipes",
+            "do",
+            {
+                "all": [
+                    {"at": "decoy.pipes"},
+                    {"has_flag": "decoy_trust"},
+                    {"not_flag": "decoy_laid"},
+                    {"not_flag": "fowl_taken"},
+                ]
+            },
+            "You lay the pipes. The water takes the curve.",
+            [{"op": "set_flag", "flag": "decoy_laid"}],
+        ),
+        action(
+            "drive_the_ducks",
+            "Drive the ducks",
+            "do",
+            {
+                "all": [
+                    {"at": "decoy.screen"},
+                    {"has_flag": "decoy_trust"},
+                    {"has_flag": "decoy_laid"},
+                    {"not_flag": "decoy_driven"},
+                    {"not_flag": "fowl_taken"},
+                ]
+            },
+            "You drive the ducks. The flock takes the pipe.",
+            [{"op": "set_flag", "flag": "decoy_driven"}],
+        ),
+        action(
+            "bag_the_fowl",
+            "Bag the fowl",
+            "do",
+            {
+                "all": [
+                    {"at": "decoy.tunnel"},
+                    {"has_flag": "decoy_trust"},
+                    {"has_flag": "decoy_driven"},
+                    {"has_item": "pipe_net"},
+                    {"not_flag": "fowl_taken"},
+                ]
+            },
+            "You bag the fowl. Nye marks the take.",
+            [
+                {"op": "remove_item", "item": "pipe_net"},
+                {"op": "set_flag", "flag": "fowl_taken"},
+                {"op": "remember", "actor": "nye", "fact": "bag"},
+            ],
+        ),
+        action(
+            "ask_wisp_rule",
+            "Ask Wisp the rule",
+            "talk",
+            {"at": "decoy.yard"},
+            "Wisp says lay the pipes. Then drive and bag.",
+            [{"op": "set_flag", "flag": "heard_decoy_rule"}],
+        ),
+        action(
+            "ask_lark_pipes",
+            "Ask Lark the pipes",
+            "talk",
+            {"at": "decoy.pipes"},
+            "Lark says lay until the pipe is dark.",
+            [{"op": "set_flag", "flag": "heard_decoy_rule"}],
+        ),
+        action(
+            "ask_nye_tunnel",
+            "Ask Nye the tunnel",
+            "talk",
+            {"at": "decoy.tunnel"},
+            "Nye bags only a driven flock.",
+            [{"op": "set_flag", "flag": "heard_decoy_rule"}],
+        ),
+        action(
+            "know_the_rush_peel",
+            "Know the rush peel",
+            "talk",
+            {
+                "all": [
+                    {"at": "rush.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "rush_trust"},
+                ]
+            },
+            "You name the rush peel. Moth lets you peel and bind.",
+            [
+                {"op": "set_flag", "flag": "rush_trust"},
+                {"op": "remember", "actor": "moth", "fact": "peel"},
+            ],
+        ),
+        action(
+            "read_the_rush_list",
+            "Read the rush list",
+            "do",
+            {
+                "all": [
+                    {"at": "rush.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "rush_trust"},
+                ]
+            },
+            "You read the rush list. Moth lets you peel and bind.",
+            [
+                {"op": "set_flag", "flag": "rush_trust"},
+                {"op": "remember", "actor": "moth", "fact": "list"},
+            ],
+        ),
+        action(
+            "tallow_the_rush",
+            "Tallow the rush",
+            "do",
+            {
+                "all": [
+                    {"at": "rush.bind"},
+                    {"has_flag": "fowl_taken"},
+                    {"not_flag": "rush_tallowed"},
+                ]
+            },
+            "You tallow the rush. The pith takes fowl fat.",
+            [
+                {"op": "set_flag", "flag": "rush_tallowed"},
+                {"op": "set_flag", "flag": "rush_trust"},
+                {"op": "remember", "actor": "nix", "fact": "tallow"},
+            ],
+        ),
+        action(
+            "peel_the_rush",
+            "Peel the rush",
+            "do",
+            {
+                "all": [
+                    {"at": "rush.peel"},
+                    {"has_flag": "rush_trust"},
+                    {"not_flag": "rush_peeled"},
+                    {"not_flag": "lights_bound"},
+                ]
+            },
+            "You peel the rush. The pith comes free.",
+            [{"op": "set_flag", "flag": "rush_peeled"}],
+        ),
+        action(
+            "bind_the_lights",
+            "Bind the lights",
+            "do",
+            {
+                "all": [
+                    {"at": "rush.bind"},
+                    {"has_flag": "rush_trust"},
+                    {"has_flag": "rush_peeled"},
+                    {"has_item": "rush_pith"},
+                    {"not_flag": "lights_bound"},
+                ]
+            },
+            "You bind the lights. Nix marks the bundle.",
+            [
+                {"op": "remove_item", "item": "rush_pith"},
+                {"op": "set_flag", "flag": "lights_bound"},
+                {"op": "remember", "actor": "nix", "fact": "bind"},
+            ],
+        ),
+        action(
+            "ask_moth_rule",
+            "Ask Moth the rule",
+            "talk",
+            {"at": "rush.yard"},
+            "Moth says peel the rush. Then pith and bind.",
+            [{"op": "set_flag", "flag": "heard_rush_rule"}],
+        ),
+        action(
+            "ask_sedge_peel",
+            "Ask Sedge the peel",
+            "talk",
+            {"at": "rush.peel"},
+            "Sedge says peel until the pith is white.",
+            [{"op": "set_flag", "flag": "heard_rush_rule"}],
+        ),
+        action(
+            "ask_nix_bind",
+            "Ask Nix the bind",
+            "talk",
+            {"at": "rush.bind"},
+            "Nix binds only a peeled pith.",
+            [{"op": "set_flag", "flag": "heard_rush_rule"}],
+        ),
+        action(
+            "know_the_oakum_tease",
+            "Know the oakum tease",
+            "talk",
+            {
+                "all": [
+                    {"at": "caulk.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "caulk_trust"},
+                ]
+            },
+            "You name the oakum tease. Gull lets you pick and caulk.",
+            [
+                {"op": "set_flag", "flag": "caulk_trust"},
+                {"op": "remember", "actor": "gull", "fact": "tease"},
+            ],
+        ),
+        action(
+            "read_the_caulk_list",
+            "Read the caulk list",
+            "do",
+            {
+                "all": [
+                    {"at": "caulk.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "caulk_trust"},
+                ]
+            },
+            "You read the caulk list. Gull lets you pick and caulk.",
+            [
+                {"op": "set_flag", "flag": "caulk_trust"},
+                {"op": "remember", "actor": "gull", "fact": "list"},
+            ],
+        ),
+        action(
+            "light_the_seam",
+            "Light the seam",
+            "do",
+            {
+                "all": [
+                    {"at": "caulk.seam"},
+                    {"has_flag": "lights_bound"},
+                    {"not_flag": "caulk_lit"},
+                ]
+            },
+            "You light the seam. The dark hull takes rushlight.",
+            [
+                {"op": "set_flag", "flag": "caulk_lit"},
+                {"op": "set_flag", "flag": "caulk_trust"},
+                {"op": "remember", "actor": "pike", "fact": "light"},
+            ],
+        ),
+        action(
+            "pick_the_oakum",
+            "Pick the oakum",
+            "do",
+            {
+                "all": [
+                    {"at": "caulk.oakum"},
+                    {"has_flag": "caulk_trust"},
+                    {"not_flag": "caulk_picked"},
+                    {"not_flag": "seam_caulked"},
+                ]
+            },
+            "You pick the oakum. The wad comes loose.",
+            [{"op": "set_flag", "flag": "caulk_picked"}],
+        ),
+        action(
+            "melt_the_pitch",
+            "Melt the pitch",
+            "do",
+            {
+                "all": [
+                    {"at": "caulk.kettle"},
+                    {"has_flag": "caulk_trust"},
+                    {"has_flag": "caulk_picked"},
+                    {"not_flag": "caulk_melted"},
+                    {"not_flag": "seam_caulked"},
+                ]
+            },
+            "You melt the pitch. The kettle takes a shine.",
+            [{"op": "set_flag", "flag": "caulk_melted"}],
+        ),
+        action(
+            "caulk_the_seam",
+            "Caulk the seam",
+            "do",
+            {
+                "all": [
+                    {"at": "caulk.seam"},
+                    {"has_flag": "caulk_trust"},
+                    {"has_flag": "caulk_melted"},
+                    {"has_item": "oakum_wad"},
+                    {"not_flag": "seam_caulked"},
+                ]
+            },
+            "You caulk the seam. Pike marks the hull tight.",
+            [
+                {"op": "remove_item", "item": "oakum_wad"},
+                {"op": "set_flag", "flag": "seam_caulked"},
+                {"op": "remember", "actor": "pike", "fact": "caulk"},
+            ],
+        ),
+        action(
+            "ask_gull_rule",
+            "Ask Gull the rule",
+            "talk",
+            {"at": "caulk.yard"},
+            "Gull says pick the oakum. Then pitch and caulk.",
+            [{"op": "set_flag", "flag": "heard_caulk_rule"}],
+        ),
+        action(
+            "ask_tarn_oakum",
+            "Ask Tarn the oakum",
+            "talk",
+            {"at": "caulk.oakum"},
+            "Tarn says pick until the wad is fine.",
+            [{"op": "set_flag", "flag": "heard_caulk_rule"}],
+        ),
+        action(
+            "ask_pike_seam",
+            "Ask Pike the seam",
+            "talk",
+            {"at": "caulk.seam"},
+            "Pike caulks only a pitched wad.",
+            [{"op": "set_flag", "flag": "heard_caulk_rule"}],
+        ),
+        action(
+            "know_the_mesh_hang",
+            "Know the mesh hang",
+            "talk",
+            {
+                "all": [
+                    {"at": "net.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "net_trust"},
+                ]
+            },
+            "You name the mesh hang. Cobb lets you rig and tar.",
+            [
+                {"op": "set_flag", "flag": "net_trust"},
+                {"op": "remember", "actor": "cobb", "fact": "hang"},
+            ],
+        ),
+        action(
+            "read_the_net_list",
+            "Read the net list",
+            "do",
+            {
+                "all": [
+                    {"at": "net.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "net_trust"},
+                ]
+            },
+            "You read the net list. Cobb lets you rig and tar.",
+            [
+                {"op": "set_flag", "flag": "net_trust"},
+                {"op": "remember", "actor": "cobb", "fact": "list"},
+            ],
+        ),
+        action(
+            "pitch_the_net",
+            "Pitch the net",
+            "do",
+            {
+                "all": [
+                    {"at": "net.tar"},
+                    {"has_flag": "seam_caulked"},
+                    {"not_flag": "net_pitched"},
+                ]
+            },
+            "You pitch the net. The mesh takes hull pitch.",
+            [
+                {"op": "set_flag", "flag": "net_pitched"},
+                {"op": "set_flag", "flag": "net_trust"},
+                {"op": "remember", "actor": "darn", "fact": "pitch"},
+            ],
+        ),
+        action(
+            "rig_the_net",
+            "Rig the net",
+            "do",
+            {
+                "all": [
+                    {"at": "net.rig"},
+                    {"has_flag": "net_trust"},
+                    {"not_flag": "net_rigged"},
+                    {"not_flag": "net_tarred"},
+                ]
+            },
+            "You rig the net. The hang takes the weight.",
+            [{"op": "set_flag", "flag": "net_rigged"}],
+        ),
+        action(
+            "mend_the_mesh",
+            "Mend the mesh",
+            "do",
+            {
+                "all": [
+                    {"at": "net.mesh"},
+                    {"has_flag": "net_trust"},
+                    {"has_flag": "net_rigged"},
+                    {"not_flag": "net_mended"},
+                    {"not_flag": "net_tarred"},
+                ]
+            },
+            "You mend the mesh. The tear closes.",
+            [{"op": "set_flag", "flag": "net_mended"}],
+        ),
+        action(
+            "tar_the_net",
+            "Tar the net",
+            "do",
+            {
+                "all": [
+                    {"at": "net.tar"},
+                    {"has_flag": "net_trust"},
+                    {"has_flag": "net_mended"},
+                    {"has_item": "mesh_needle"},
+                    {"not_flag": "net_tarred"},
+                ]
+            },
+            "You tar the net. Darn marks the mesh dark.",
+            [
+                {"op": "remove_item", "item": "mesh_needle"},
+                {"op": "set_flag", "flag": "net_tarred"},
+                {"op": "remember", "actor": "darn", "fact": "tar"},
+            ],
+        ),
+        action(
+            "ask_cobb_rule",
+            "Ask Cobb the rule",
+            "talk",
+            {"at": "net.yard"},
+            "Cobb says rig the net. Then mend and tar.",
+            [{"op": "set_flag", "flag": "heard_net_rule"}],
+        ),
+        action(
+            "ask_kip_rig",
+            "Ask Kip the rig",
+            "talk",
+            {"at": "net.rig"},
+            "Kip says rig until the hang is taut.",
+            [{"op": "set_flag", "flag": "heard_net_rule"}],
+        ),
+        action(
+            "ask_darn_tar",
+            "Ask Darn the tar",
+            "talk",
+            {"at": "net.tar"},
+            "Darn tars only a mended mesh.",
+            [{"op": "set_flag", "flag": "heard_net_rule"}],
+        ),
+        action(
+            "know_the_canvas_cut",
+            "Know the canvas cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "sail.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "sail_trust"},
+                ]
+            },
+            "You name the canvas cut. Gale lets you cut and hoist.",
+            [
+                {"op": "set_flag", "flag": "sail_trust"},
+                {"op": "remember", "actor": "gale", "fact": "cut"},
+            ],
+        ),
+        action(
+            "read_the_sail_list",
+            "Read the sail list",
+            "do",
+            {
+                "all": [
+                    {"at": "sail.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "sail_trust"},
+                ]
+            },
+            "You read the sail list. Gale lets you cut and hoist.",
+            [
+                {"op": "set_flag", "flag": "sail_trust"},
+                {"op": "remember", "actor": "gale", "fact": "list"},
+            ],
+        ),
+        action(
+            "tar_the_twine",
+            "Tar the twine",
+            "do",
+            {
+                "all": [
+                    {"at": "sail.hoist"},
+                    {"has_flag": "net_tarred"},
+                    {"not_flag": "sail_tarred"},
+                ]
+            },
+            "You tar the twine. The hoist takes net tar.",
+            [
+                {"op": "set_flag", "flag": "sail_tarred"},
+                {"op": "set_flag", "flag": "sail_trust"},
+                {"op": "remember", "actor": "haly", "fact": "twine"},
+            ],
+        ),
+        action(
+            "cut_the_canvas",
+            "Cut the canvas",
+            "do",
+            {
+                "all": [
+                    {"at": "sail.canvas"},
+                    {"has_flag": "sail_trust"},
+                    {"not_flag": "sail_cut"},
+                    {"not_flag": "sail_hoisted"},
+                ]
+            },
+            "You cut the canvas. The cloth takes the shape.",
+            [{"op": "set_flag", "flag": "sail_cut"}],
+        ),
+        action(
+            "stitch_the_sail",
+            "Stitch the sail",
+            "do",
+            {
+                "all": [
+                    {"at": "sail.stitch"},
+                    {"has_flag": "sail_trust"},
+                    {"has_flag": "sail_cut"},
+                    {"not_flag": "sail_stitched"},
+                    {"not_flag": "sail_hoisted"},
+                ]
+            },
+            "You stitch the sail. The seam holds.",
+            [{"op": "set_flag", "flag": "sail_stitched"}],
+        ),
+        action(
+            "hoist_the_sail",
+            "Hoist the sail",
+            "do",
+            {
+                "all": [
+                    {"at": "sail.hoist"},
+                    {"has_flag": "sail_trust"},
+                    {"has_flag": "sail_stitched"},
+                    {"has_item": "sail_needle"},
+                    {"not_flag": "sail_hoisted"},
+                ]
+            },
+            "You hoist the sail. Haly marks the spar set.",
+            [
+                {"op": "remove_item", "item": "sail_needle"},
+                {"op": "set_flag", "flag": "sail_hoisted"},
+                {"op": "remember", "actor": "haly", "fact": "hoist"},
+            ],
+        ),
+        action(
+            "ask_gale_rule",
+            "Ask Gale the rule",
+            "talk",
+            {"at": "sail.yard"},
+            "Gale says cut the canvas. Then stitch and hoist.",
+            [{"op": "set_flag", "flag": "heard_sail_rule"}],
+        ),
+        action(
+            "ask_shear_canvas",
+            "Ask Shear the canvas",
+            "talk",
+            {"at": "sail.canvas"},
+            "Shear says cut until the cloth is even.",
+            [{"op": "set_flag", "flag": "heard_sail_rule"}],
+        ),
+        action(
+            "ask_haly_hoist",
+            "Ask Haly the hoist",
+            "talk",
+            {"at": "sail.hoist"},
+            "Haly hoists only a stitched sail.",
+            [{"op": "set_flag", "flag": "heard_sail_rule"}],
+        ),
+        action(
+            "know_the_fathom_mark",
+            "Know the fathom mark",
+            "talk",
+            {
+                "all": [
+                    {"at": "lead.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "lead_trust"},
+                ]
+            },
+            "You name the fathom mark. Tern lets you coil and cast.",
+            [
+                {"op": "set_flag", "flag": "lead_trust"},
+                {"op": "remember", "actor": "tern", "fact": "fathom"},
+            ],
+        ),
+        action(
+            "read_the_lead_list",
+            "Read the lead list",
+            "do",
+            {
+                "all": [
+                    {"at": "lead.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "lead_trust"},
+                ]
+            },
+            "You read the lead list. Tern lets you coil and cast.",
+            [
+                {"op": "set_flag", "flag": "lead_trust"},
+                {"op": "remember", "actor": "tern", "fact": "list"},
+            ],
+        ),
+        action(
+            "sound_under_sail",
+            "Sound under sail",
+            "do",
+            {
+                "all": [
+                    {"at": "lead.cast"},
+                    {"has_flag": "sail_hoisted"},
+                    {"not_flag": "lead_under_sail"},
+                ]
+            },
+            "You sound under sail. The lead takes the way.",
+            [
+                {"op": "set_flag", "flag": "lead_under_sail"},
+                {"op": "set_flag", "flag": "lead_trust"},
+                {"op": "remember", "actor": "plumb", "fact": "sail"},
+            ],
+        ),
+        action(
+            "coil_the_line",
+            "Coil the line",
+            "do",
+            {
+                "all": [
+                    {"at": "lead.coil"},
+                    {"has_flag": "lead_trust"},
+                    {"not_flag": "lead_coiled"},
+                    {"not_flag": "lead_cast"},
+                ]
+            },
+            "You coil the line. The rings sit even.",
+            [{"op": "set_flag", "flag": "lead_coiled"}],
+        ),
+        action(
+            "mark_the_fathom",
+            "Mark the fathom",
+            "do",
+            {
+                "all": [
+                    {"at": "lead.marks"},
+                    {"has_flag": "lead_trust"},
+                    {"has_flag": "lead_coiled"},
+                    {"not_flag": "lead_marked"},
+                    {"not_flag": "lead_cast"},
+                ]
+            },
+            "You mark the fathom. The bits take their place.",
+            [{"op": "set_flag", "flag": "lead_marked"}],
+        ),
+        action(
+            "cast_the_lead",
+            "Cast the lead",
+            "do",
+            {
+                "all": [
+                    {"at": "lead.cast"},
+                    {"has_flag": "lead_trust"},
+                    {"has_flag": "lead_marked"},
+                    {"has_item": "lead_sink"},
+                    {"not_flag": "lead_cast"},
+                ]
+            },
+            "You cast the lead. Plumb marks the depth.",
+            [
+                {"op": "remove_item", "item": "lead_sink"},
+                {"op": "set_flag", "flag": "lead_cast"},
+                {"op": "remember", "actor": "plumb", "fact": "cast"},
+            ],
+        ),
+        action(
+            "ask_tern_rule",
+            "Ask Tern the rule",
+            "talk",
+            {"at": "lead.yard"},
+            "Tern says coil the line. Then mark and cast.",
+            [{"op": "set_flag", "flag": "heard_lead_rule"}],
+        ),
+        action(
+            "ask_gage_coil",
+            "Ask Gage the coil",
+            "talk",
+            {"at": "lead.coil"},
+            "Gage says coil until the rings are tight.",
+            [{"op": "set_flag", "flag": "heard_lead_rule"}],
+        ),
+        action(
+            "ask_plumb_cast",
+            "Ask Plumb the cast",
+            "talk",
+            {"at": "lead.cast"},
+            "Plumb casts only a marked line.",
+            [{"op": "set_flag", "flag": "heard_lead_rule"}],
+        ),
+        action(
+            "know_the_coast_hand",
+            "Know the coast hand",
+            "talk",
+            {
+                "all": [
+                    {"at": "chart.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "chart_trust"},
+                ]
+            },
+            "You name the coast hand. Merc lets you lay and seal.",
+            [
+                {"op": "set_flag", "flag": "chart_trust"},
+                {"op": "remember", "actor": "merc", "fact": "coast"},
+            ],
+        ),
+        action(
+            "read_the_rutter_list",
+            "Read the rutter list",
+            "do",
+            {
+                "all": [
+                    {"at": "chart.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "chart_trust"},
+                ]
+            },
+            "You read the rutter list. Merc lets you lay and seal.",
+            [
+                {"op": "set_flag", "flag": "chart_trust"},
+                {"op": "remember", "actor": "merc", "fact": "list"},
+            ],
+        ),
+        action(
+            "prick_the_fathom",
+            "Prick the fathom",
+            "do",
+            {
+                "all": [
+                    {"at": "chart.press"},
+                    {"has_flag": "lead_cast"},
+                    {"not_flag": "chart_pricked"},
+                ]
+            },
+            "You prick the fathom. The chart takes the sounding.",
+            [
+                {"op": "set_flag", "flag": "chart_pricked"},
+                {"op": "set_flag", "flag": "chart_trust"},
+                {"op": "remember", "actor": "wax", "fact": "prick"},
+            ],
+        ),
+        action(
+            "lay_the_ruler",
+            "Lay the ruler",
+            "do",
+            {
+                "all": [
+                    {"at": "chart.board"},
+                    {"has_flag": "chart_trust"},
+                    {"not_flag": "chart_laid"},
+                    {"not_flag": "rutter_sealed"},
+                ]
+            },
+            "You lay the ruler. The board takes a true line.",
+            [{"op": "set_flag", "flag": "chart_laid"}],
+        ),
+        action(
+            "ink_the_rutter",
+            "Ink the rutter",
+            "do",
+            {
+                "all": [
+                    {"at": "chart.ink"},
+                    {"has_flag": "chart_trust"},
+                    {"has_flag": "chart_laid"},
+                    {"not_flag": "chart_inked"},
+                    {"not_flag": "rutter_sealed"},
+                ]
+            },
+            "You ink the rutter. The page takes the coast.",
+            [{"op": "set_flag", "flag": "chart_inked"}],
+        ),
+        action(
+            "seal_the_rutter",
+            "Seal the rutter",
+            "do",
+            {
+                "all": [
+                    {"at": "chart.press"},
+                    {"has_flag": "chart_trust"},
+                    {"has_flag": "chart_inked"},
+                    {"has_item": "chart_quill"},
+                    {"not_flag": "rutter_sealed"},
+                ]
+            },
+            "You seal the rutter. Wax marks the book shut.",
+            [
+                {"op": "remove_item", "item": "chart_quill"},
+                {"op": "set_flag", "flag": "rutter_sealed"},
+                {"op": "remember", "actor": "wax", "fact": "seal"},
+            ],
+        ),
+        action(
+            "ask_merc_rule",
+            "Ask Merc the rule",
+            "talk",
+            {"at": "chart.yard"},
+            "Merc says lay the ruler. Then ink and seal.",
+            [{"op": "set_flag", "flag": "heard_chart_rule"}],
+        ),
+        action(
+            "ask_rule_board",
+            "Ask Rule the board",
+            "talk",
+            {"at": "chart.board"},
+            "Rule says lay until the line is true.",
+            [{"op": "set_flag", "flag": "heard_chart_rule"}],
+        ),
+        action(
+            "ask_wax_press",
+            "Ask Wax the press",
+            "talk",
+            {"at": "chart.press"},
+            "Wax seals only an inked rutter.",
+            [{"op": "set_flag", "flag": "heard_chart_rule"}],
+        ),
+        action(
+            "know_the_shoal_line",
+            "Know the shoal line",
+            "talk",
+            {
+                "all": [
+                    {"at": "buoy.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "buoy_trust"},
+                ]
+            },
+            "You name the shoal line. Flo lets you stuff and drop.",
+            [
+                {"op": "set_flag", "flag": "buoy_trust"},
+                {"op": "remember", "actor": "flo", "fact": "shoal"},
+            ],
+        ),
+        action(
+            "read_the_buoy_list",
+            "Read the buoy list",
+            "do",
+            {
+                "all": [
+                    {"at": "buoy.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "buoy_trust"},
+                ]
+            },
+            "You read the buoy list. Flo lets you stuff and drop.",
+            [
+                {"op": "set_flag", "flag": "buoy_trust"},
+                {"op": "remember", "actor": "flo", "fact": "list"},
+            ],
+        ),
+        action(
+            "place_by_rutter",
+            "Place by rutter",
+            "do",
+            {
+                "all": [
+                    {"at": "buoy.drop"},
+                    {"has_flag": "rutter_sealed"},
+                    {"not_flag": "buoy_placed"},
+                ]
+            },
+            "You place by rutter. The buoy takes the book.",
+            [
+                {"op": "set_flag", "flag": "buoy_placed"},
+                {"op": "set_flag", "flag": "buoy_trust"},
+                {"op": "remember", "actor": "nun", "fact": "rutter"},
+            ],
+        ),
+        action(
+            "stuff_the_cage",
+            "Stuff the cage",
+            "do",
+            {
+                "all": [
+                    {"at": "buoy.cage"},
+                    {"has_flag": "buoy_trust"},
+                    {"not_flag": "buoy_stuffed"},
+                    {"not_flag": "buoy_set"},
+                ]
+            },
+            "You stuff the cage. The cork sits tight.",
+            [{"op": "set_flag", "flag": "buoy_stuffed"}],
+        ),
+        action(
+            "lash_the_spar",
+            "Lash the spar",
+            "do",
+            {
+                "all": [
+                    {"at": "buoy.spar"},
+                    {"has_flag": "buoy_trust"},
+                    {"has_flag": "buoy_stuffed"},
+                    {"not_flag": "buoy_lashed"},
+                    {"not_flag": "buoy_set"},
+                ]
+            },
+            "You lash the spar. The cage holds fast.",
+            [{"op": "set_flag", "flag": "buoy_lashed"}],
+        ),
+        action(
+            "drop_the_buoy",
+            "Drop the buoy",
+            "do",
+            {
+                "all": [
+                    {"at": "buoy.drop"},
+                    {"has_flag": "buoy_trust"},
+                    {"has_flag": "buoy_lashed"},
+                    {"has_item": "buoy_cork"},
+                    {"not_flag": "buoy_set"},
+                ]
+            },
+            "You drop the buoy. Nun marks the shoal.",
+            [
+                {"op": "remove_item", "item": "buoy_cork"},
+                {"op": "set_flag", "flag": "buoy_set"},
+                {"op": "remember", "actor": "nun", "fact": "drop"},
+            ],
+        ),
+        action(
+            "ask_flo_rule",
+            "Ask Flo the rule",
+            "talk",
+            {"at": "buoy.yard"},
+            "Flo says stuff the cage. Then lash and drop.",
+            [{"op": "set_flag", "flag": "heard_buoy_rule"}],
+        ),
+        action(
+            "ask_cork_cage",
+            "Ask Cork the cage",
+            "talk",
+            {"at": "buoy.cage"},
+            "Cork says stuff until the cage is tight.",
+            [{"op": "set_flag", "flag": "heard_buoy_rule"}],
+        ),
+        action(
+            "ask_nun_drop",
+            "Ask Nun the drop",
+            "talk",
+            {"at": "buoy.drop"},
+            "Nun drops only a lashed spar.",
+            [{"op": "set_flag", "flag": "heard_buoy_rule"}],
+        ),
+        action(
+            "know_the_wrack_tide",
+            "Know the wrack tide",
+            "talk",
+            {
+                "all": [
+                    {"at": "kelp.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "kelp_trust"},
+                ]
+            },
+            "You name the wrack tide. Tang lets you cut and burn.",
+            [
+                {"op": "set_flag", "flag": "kelp_trust"},
+                {"op": "remember", "actor": "tang", "fact": "tide"},
+            ],
+        ),
+        action(
+            "read_the_kelp_list",
+            "Read the kelp list",
+            "do",
+            {
+                "all": [
+                    {"at": "kelp.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "kelp_trust"},
+                ]
+            },
+            "You read the kelp list. Tang lets you cut and burn.",
+            [
+                {"op": "set_flag", "flag": "kelp_trust"},
+                {"op": "remember", "actor": "tang", "fact": "list"},
+            ],
+        ),
+        action(
+            "cut_the_outer_bank",
+            "Cut the outer bank",
+            "do",
+            {
+                "all": [
+                    {"at": "kelp.bank"},
+                    {"has_flag": "buoy_set"},
+                    {"not_flag": "kelp_outer"},
+                ]
+            },
+            "You cut the outer bank. The wrack takes the buoy.",
+            [
+                {"op": "set_flag", "flag": "kelp_outer"},
+                {"op": "set_flag", "flag": "kelp_trust"},
+                {"op": "remember", "actor": "drift", "fact": "outer"},
+            ],
+        ),
+        action(
+            "cut_the_wrack",
+            "Cut the wrack",
+            "do",
+            {
+                "all": [
+                    {"at": "kelp.bank"},
+                    {"has_flag": "kelp_trust"},
+                    {"not_flag": "kelp_cut"},
+                    {"not_flag": "kelp_burned"},
+                ]
+            },
+            "You cut the wrack. The fronds come free.",
+            [{"op": "set_flag", "flag": "kelp_cut"}],
+        ),
+        action(
+            "dry_the_kelp",
+            "Dry the kelp",
+            "do",
+            {
+                "all": [
+                    {"at": "kelp.stones"},
+                    {"has_flag": "kelp_trust"},
+                    {"has_flag": "kelp_cut"},
+                    {"not_flag": "kelp_dried"},
+                    {"not_flag": "kelp_burned"},
+                ]
+            },
+            "You dry the kelp. The stones take the wet.",
+            [{"op": "set_flag", "flag": "kelp_dried"}],
+        ),
+        action(
+            "burn_the_kelp",
+            "Burn the kelp",
+            "do",
+            {
+                "all": [
+                    {"at": "kelp.hearth"},
+                    {"has_flag": "kelp_trust"},
+                    {"has_flag": "kelp_dried"},
+                    {"has_item": "wrack_frond"},
+                    {"not_flag": "kelp_burned"},
+                ]
+            },
+            "You burn the kelp. Ure rakes the ash.",
+            [
+                {"op": "remove_item", "item": "wrack_frond"},
+                {"op": "set_flag", "flag": "kelp_burned"},
+                {"op": "remember", "actor": "ure", "fact": "burn"},
+            ],
+        ),
+        action(
+            "ask_tang_rule",
+            "Ask Tang the rule",
+            "talk",
+            {"at": "kelp.yard"},
+            "Tang says cut the wrack. Then dry and burn.",
+            [{"op": "set_flag", "flag": "heard_kelp_rule"}],
+        ),
+        action(
+            "ask_drift_bank",
+            "Ask Drift the wrack",
+            "talk",
+            {"at": "kelp.bank"},
+            "Drift says cut until the fronds are free.",
+            [{"op": "set_flag", "flag": "heard_kelp_rule"}],
+        ),
+        action(
+            "ask_ure_hearth",
+            "Ask Ure the hearth",
+            "talk",
+            {"at": "kelp.hearth"},
+            "Ure burns only dry kelp.",
+            [{"op": "set_flag", "flag": "heard_kelp_rule"}],
+        ),
+        action(
+            "know_the_lye_run",
+            "Know the lye run",
+            "talk",
+            {
+                "all": [
+                    {"at": "soap.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "soap_trust"},
+                ]
+            },
+            "You name the lye run. Soda lets you leach and cut.",
+            [
+                {"op": "set_flag", "flag": "soap_trust"},
+                {"op": "remember", "actor": "soda", "fact": "lye"},
+            ],
+        ),
+        action(
+            "read_the_soap_list",
+            "Read the soap list",
+            "do",
+            {
+                "all": [
+                    {"at": "soap.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "soap_trust"},
+                ]
+            },
+            "You read the soap list. Soda lets you leach and cut.",
+            [
+                {"op": "set_flag", "flag": "soap_trust"},
+                {"op": "remember", "actor": "soda", "fact": "list"},
+            ],
+        ),
+        action(
+            "charge_the_soda",
+            "Charge the soda",
+            "do",
+            {
+                "all": [
+                    {"at": "soap.leach"},
+                    {"has_flag": "kelp_burned"},
+                    {"not_flag": "soap_soda"},
+                ]
+            },
+            "You charge the soda. The lye takes the kelp.",
+            [
+                {"op": "set_flag", "flag": "soap_soda"},
+                {"op": "set_flag", "flag": "soap_trust"},
+                {"op": "remember", "actor": "lye", "fact": "kelp"},
+            ],
+        ),
+        action(
+            "leach_the_ash",
+            "Leach the ash",
+            "do",
+            {
+                "all": [
+                    {"at": "soap.leach"},
+                    {"has_flag": "soap_trust"},
+                    {"not_flag": "soap_leached"},
+                    {"not_flag": "soap_cut"},
+                ]
+            },
+            "You leach the ash. The lye runs clear.",
+            [{"op": "set_flag", "flag": "soap_leached"}],
+        ),
+        action(
+            "boil_the_soap",
+            "Boil the soap",
+            "do",
+            {
+                "all": [
+                    {"at": "soap.boil"},
+                    {"has_flag": "soap_trust"},
+                    {"has_flag": "soap_leached"},
+                    {"not_flag": "soap_boiled"},
+                    {"not_flag": "soap_cut"},
+                ]
+            },
+            "You boil the soap. The pan takes a curd.",
+            [{"op": "set_flag", "flag": "soap_boiled"}],
+        ),
+        action(
+            "cut_the_cakes",
+            "Cut the cakes",
+            "do",
+            {
+                "all": [
+                    {"at": "soap.cut"},
+                    {"has_flag": "soap_trust"},
+                    {"has_flag": "soap_boiled"},
+                    {"has_item": "soda_lye"},
+                    {"not_flag": "soap_cut"},
+                ]
+            },
+            "You cut the cakes. Bar marks the bars.",
+            [
+                {"op": "remove_item", "item": "soda_lye"},
+                {"op": "set_flag", "flag": "soap_cut"},
+                {"op": "remember", "actor": "bar", "fact": "cut"},
+            ],
+        ),
+        action(
+            "ask_soda_rule",
+            "Ask Soda the rule",
+            "talk",
+            {"at": "soap.yard"},
+            "Soda says leach the ash. Then boil and cut.",
+            [{"op": "set_flag", "flag": "heard_soap_rule"}],
+        ),
+        action(
+            "ask_lye_leach",
+            "Ask Lye the leach",
+            "talk",
+            {"at": "soap.leach"},
+            "Lye says leach until the run is clear.",
+            [{"op": "set_flag", "flag": "heard_soap_rule"}],
+        ),
+        action(
+            "ask_bar_cut",
+            "Ask Bar the cut",
+            "talk",
+            {"at": "soap.cut"},
+            "Bar cuts only a boiled curd.",
+            [{"op": "set_flag", "flag": "heard_soap_rule"}],
+        ),
+        action(
+            "know_the_full_walk",
+            "Know the full walk",
+            "talk",
+            {
+                "all": [
+                    {"at": "full.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "full_trust"},
+                ]
+            },
+            "You name the full walk. Tuck lets you wet and hang.",
+            [
+                {"op": "set_flag", "flag": "full_trust"},
+                {"op": "remember", "actor": "tuck", "fact": "walk"},
+            ],
+        ),
+        action(
+            "read_the_full_list",
+            "Read the full list",
+            "do",
+            {
+                "all": [
+                    {"at": "full.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "full_trust"},
+                ]
+            },
+            "You read the full list. Tuck lets you wet and hang.",
+            [
+                {"op": "set_flag", "flag": "full_trust"},
+                {"op": "remember", "actor": "tuck", "fact": "list"},
+            ],
+        ),
+        action(
+            "soap_the_web",
+            "Soap the web",
+            "do",
+            {
+                "all": [
+                    {"at": "full.web"},
+                    {"has_flag": "soap_cut"},
+                    {"not_flag": "full_soaped"},
+                ]
+            },
+            "You soap the web. The cloth takes the cakes.",
+            [
+                {"op": "set_flag", "flag": "full_soaped"},
+                {"op": "set_flag", "flag": "full_trust"},
+                {"op": "remember", "actor": "tuck", "fact": "soap"},
+            ],
+        ),
+        action(
+            "wet_the_web",
+            "Wet the web",
+            "do",
+            {
+                "all": [
+                    {"at": "full.web"},
+                    {"has_flag": "full_trust"},
+                    {"not_flag": "full_wet"},
+                    {"not_flag": "cloth_fulled"},
+                ]
+            },
+            "You wet the web. The cloth hangs heavy.",
+            [{"op": "set_flag", "flag": "full_wet"}],
+        ),
+        action(
+            "walk_the_stocks",
+            "Walk the stocks",
+            "do",
+            {
+                "all": [
+                    {"at": "full.stocks"},
+                    {"has_flag": "full_trust"},
+                    {"has_flag": "full_wet"},
+                    {"not_flag": "full_walked"},
+                    {"not_flag": "cloth_fulled"},
+                ]
+            },
+            "You walk the stocks. The web thickens.",
+            [{"op": "set_flag", "flag": "full_walked"}],
+        ),
+        action(
+            "hang_the_piece",
+            "Hang the piece",
+            "do",
+            {
+                "all": [
+                    {"at": "full.tenters"},
+                    {"has_flag": "full_trust"},
+                    {"has_flag": "full_walked"},
+                    {"has_item": "full_web"},
+                    {"not_flag": "cloth_fulled"},
+                ]
+            },
+            "You hang the piece. Peg pins the rails.",
+            [
+                {"op": "remove_item", "item": "full_web"},
+                {"op": "set_flag", "flag": "cloth_fulled"},
+                {"op": "remember", "actor": "peg", "fact": "hang"},
+            ],
+        ),
+        action(
+            "ask_tuck_rule",
+            "Ask Tuck the rule",
+            "talk",
+            {"at": "full.yard"},
+            "Tuck says wet the web. Then walk and hang.",
+            [{"op": "set_flag", "flag": "heard_full_rule"}],
+        ),
+        action(
+            "ask_stock_walk",
+            "Ask Stock the walk",
+            "talk",
+            {"at": "full.stocks"},
+            "Stock says walk until the web is thick.",
+            [{"op": "set_flag", "flag": "heard_full_rule"}],
+        ),
+        action(
+            "ask_peg_hang",
+            "Ask Peg the hang",
+            "talk",
+            {"at": "full.tenters"},
+            "Peg hangs only a walked piece.",
+            [{"op": "set_flag", "flag": "heard_full_rule"}],
+        ),
+        action(
+            "know_the_coppice",
+            "Know the coppice",
+            "talk",
+            {
+                "all": [
+                    {"at": "char.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "char_trust"},
+                ]
+            },
+            "You name the coppice. Copse lets you cut and draw.",
+            [
+                {"op": "set_flag", "flag": "char_trust"},
+                {"op": "remember", "actor": "copse", "fact": "coppice"},
+            ],
+        ),
+        action(
+            "read_the_coal_list",
+            "Read the coal list",
+            "do",
+            {
+                "all": [
+                    {"at": "char.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "char_trust"},
+                ]
+            },
+            "You read the coal list. Copse lets you cut and draw.",
+            [
+                {"op": "set_flag", "flag": "char_trust"},
+                {"op": "remember", "actor": "copse", "fact": "list"},
+            ],
+        ),
+        action(
+            "cover_the_clamp",
+            "Cover the clamp",
+            "do",
+            {
+                "all": [
+                    {"at": "char.clamp"},
+                    {"has_flag": "cloth_fulled"},
+                    {"not_flag": "char_covered"},
+                ]
+            },
+            "You cover the clamp. The cloth holds the smoke.",
+            [
+                {"op": "set_flag", "flag": "char_covered"},
+                {"op": "set_flag", "flag": "char_trust"},
+                {"op": "remember", "actor": "turf", "fact": "cloth"},
+            ],
+        ),
+        action(
+            "cut_the_coppice",
+            "Cut the coppice",
+            "do",
+            {
+                "all": [
+                    {"at": "char.copse"},
+                    {"has_flag": "char_trust"},
+                    {"not_flag": "char_cut"},
+                    {"not_flag": "coal_drawn"},
+                ]
+            },
+            "You cut the coppice. The wood sits even.",
+            [{"op": "set_flag", "flag": "char_cut"}],
+        ),
+        action(
+            "stack_the_clamp",
+            "Stack the clamp",
+            "do",
+            {
+                "all": [
+                    {"at": "char.clamp"},
+                    {"has_flag": "char_trust"},
+                    {"has_flag": "char_cut"},
+                    {"not_flag": "char_stacked"},
+                    {"not_flag": "coal_drawn"},
+                ]
+            },
+            "You stack the clamp. The ring sits tight.",
+            [{"op": "set_flag", "flag": "char_stacked"}],
+        ),
+        action(
+            "draw_the_coal",
+            "Draw the coal",
+            "do",
+            {
+                "all": [
+                    {"at": "char.draw"},
+                    {"has_flag": "char_trust"},
+                    {"has_flag": "char_stacked"},
+                    {"has_item": "coal_lump"},
+                    {"not_flag": "coal_drawn"},
+                ]
+            },
+            "You draw the coal. Draw rakes the brands.",
+            [
+                {"op": "remove_item", "item": "coal_lump"},
+                {"op": "set_flag", "flag": "coal_drawn"},
+                {"op": "remember", "actor": "draw", "fact": "draw"},
+            ],
+        ),
+        action(
+            "ask_copse_rule",
+            "Ask Copse the rule",
+            "talk",
+            {"at": "char.yard"},
+            "Copse says cut the coppice. Then stack and draw.",
+            [{"op": "set_flag", "flag": "heard_char_rule"}],
+        ),
+        action(
+            "ask_turf_clamp",
+            "Ask Turf the clamp",
+            "talk",
+            {"at": "char.clamp"},
+            "Turf says stack until the ring is tight.",
+            [{"op": "set_flag", "flag": "heard_char_rule"}],
+        ),
+        action(
+            "ask_draw_coal",
+            "Ask Draw the coal",
+            "talk",
+            {"at": "char.draw"},
+            "Draw draws only a stacked clamp.",
+            [{"op": "set_flag", "flag": "heard_char_rule"}],
+        ),
+        action(
+            "know_the_shell_burn",
+            "Know the shell burn",
+            "talk",
+            {
+                "all": [
+                    {"at": "lime.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "lime_trust"},
+                ]
+            },
+            "You name the shell burn. Shale lets you break and slake.",
+            [
+                {"op": "set_flag", "flag": "lime_trust"},
+                {"op": "remember", "actor": "shale", "fact": "shell"},
+            ],
+        ),
+        action(
+            "read_the_lime_list",
+            "Read the lime list",
+            "do",
+            {
+                "all": [
+                    {"at": "lime.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "lime_trust"},
+                ]
+            },
+            "You read the lime list. Shale lets you break and slake.",
+            [
+                {"op": "set_flag", "flag": "lime_trust"},
+                {"op": "remember", "actor": "shale", "fact": "list"},
+            ],
+        ),
+        action(
+            "fire_with_coal",
+            "Fire with coal",
+            "do",
+            {
+                "all": [
+                    {"at": "lime.charge"},
+                    {"has_flag": "coal_drawn"},
+                    {"not_flag": "lime_coaled"},
+                ]
+            },
+            "You fire with coal. The charge takes the heat.",
+            [
+                {"op": "set_flag", "flag": "lime_coaled"},
+                {"op": "set_flag", "flag": "lime_trust"},
+                {"op": "remember", "actor": "flux", "fact": "coal"},
+            ],
+        ),
+        action(
+            "break_the_shell",
+            "Break the shell",
+            "do",
+            {
+                "all": [
+                    {"at": "lime.shell"},
+                    {"has_flag": "lime_trust"},
+                    {"not_flag": "lime_broken"},
+                    {"not_flag": "lime_slaked"},
+                ]
+            },
+            "You break the shell. The heap sits even.",
+            [{"op": "set_flag", "flag": "lime_broken"}],
+        ),
+        action(
+            "charge_the_lime",
+            "Charge the lime",
+            "do",
+            {
+                "all": [
+                    {"at": "lime.charge"},
+                    {"has_flag": "lime_trust"},
+                    {"has_flag": "lime_broken"},
+                    {"not_flag": "lime_charged"},
+                    {"not_flag": "lime_slaked"},
+                ]
+            },
+            "You charge the lime. The shells take the fire.",
+            [{"op": "set_flag", "flag": "lime_charged"}],
+        ),
+        action(
+            "slake_the_lime",
+            "Slake the lime",
+            "do",
+            {
+                "all": [
+                    {"at": "lime.slake"},
+                    {"has_flag": "lime_trust"},
+                    {"has_flag": "lime_charged"},
+                    {"has_item": "lime_shell"},
+                    {"not_flag": "lime_slaked"},
+                ]
+            },
+            "You slake the lime. Slack turns the trough.",
+            [
+                {"op": "remove_item", "item": "lime_shell"},
+                {"op": "set_flag", "flag": "lime_slaked"},
+                {"op": "remember", "actor": "slack", "fact": "slake"},
+            ],
+        ),
+        action(
+            "ask_shale_rule",
+            "Ask Shale the rule",
+            "talk",
+            {"at": "lime.yard"},
+            "Shale says break the shell. Then charge and slake.",
+            [{"op": "set_flag", "flag": "heard_lime_rule"}],
+        ),
+        action(
+            "ask_flux_charge",
+            "Ask Flux the charge",
+            "talk",
+            {"at": "lime.charge"},
+            "Flux says charge until the fire is even.",
+            [{"op": "set_flag", "flag": "heard_lime_rule"}],
+        ),
+        action(
+            "ask_slack_slake",
+            "Ask Slack the slake",
+            "talk",
+            {"at": "lime.slake"},
+            "Slack slakes only a charged lime.",
+            [{"op": "set_flag", "flag": "heard_lime_rule"}],
+        ),
+        action(
+            "know_the_bed_joint",
+            "Know the bed joint",
+            "talk",
+            {
+                "all": [
+                    {"at": "mason.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "mason_trust"},
+                ]
+            },
+            "You name the bed joint. Mort lets you mix and point.",
+            [
+                {"op": "set_flag", "flag": "mason_trust"},
+                {"op": "remember", "actor": "mort", "fact": "bed"},
+            ],
+        ),
+        action(
+            "read_the_mason_list",
+            "Read the mason list",
+            "do",
+            {
+                "all": [
+                    {"at": "mason.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "mason_trust"},
+                ]
+            },
+            "You read the mason list. Mort lets you mix and point.",
+            [
+                {"op": "set_flag", "flag": "mason_trust"},
+                {"op": "remember", "actor": "mort", "fact": "list"},
+            ],
+        ),
+        action(
+            "temper_the_lime",
+            "Temper the lime",
+            "do",
+            {
+                "all": [
+                    {"at": "mason.mix"},
+                    {"has_flag": "lime_slaked"},
+                    {"not_flag": "mason_tempered"},
+                ]
+            },
+            "You temper the lime. The mix takes the slake.",
+            [
+                {"op": "set_flag", "flag": "mason_tempered"},
+                {"op": "set_flag", "flag": "mason_trust"},
+                {"op": "remember", "actor": "mort", "fact": "lime"},
+            ],
+        ),
+        action(
+            "mix_the_mortar",
+            "Mix the mortar",
+            "do",
+            {
+                "all": [
+                    {"at": "mason.mix"},
+                    {"has_flag": "mason_trust"},
+                    {"not_flag": "mason_mixed"},
+                    {"not_flag": "joint_pointed"},
+                ]
+            },
+            "You mix the mortar. The trough sits even.",
+            [{"op": "set_flag", "flag": "mason_mixed"}],
+        ),
+        action(
+            "lay_the_course",
+            "Lay the course",
+            "do",
+            {
+                "all": [
+                    {"at": "mason.course"},
+                    {"has_flag": "mason_trust"},
+                    {"has_flag": "mason_mixed"},
+                    {"not_flag": "mason_laid"},
+                    {"not_flag": "joint_pointed"},
+                ]
+            },
+            "You lay the course. The stones sit true.",
+            [{"op": "set_flag", "flag": "mason_laid"}],
+        ),
+        action(
+            "point_the_joint",
+            "Point the joint",
+            "do",
+            {
+                "all": [
+                    {"at": "mason.point"},
+                    {"has_flag": "mason_trust"},
+                    {"has_flag": "mason_laid"},
+                    {"has_item": "mortar_hod"},
+                    {"not_flag": "joint_pointed"},
+                ]
+            },
+            "You point the joint. Joint fills the seam.",
+            [
+                {"op": "remove_item", "item": "mortar_hod"},
+                {"op": "set_flag", "flag": "joint_pointed"},
+                {"op": "remember", "actor": "joint", "fact": "point"},
+            ],
+        ),
+        action(
+            "ask_mort_rule",
+            "Ask Mort the rule",
+            "talk",
+            {"at": "mason.yard"},
+            "Mort says mix the mortar. Then lay and point.",
+            [{"op": "set_flag", "flag": "heard_mason_rule"}],
+        ),
+        action(
+            "ask_ashlar_course",
+            "Ask Ashlar the course",
+            "talk",
+            {"at": "mason.course"},
+            "Ashlar says lay until the course is true.",
+            [{"op": "set_flag", "flag": "heard_mason_rule"}],
+        ),
+        action(
+            "ask_joint_point",
+            "Ask Joint the point",
+            "talk",
+            {"at": "mason.point"},
+            "Joint points only a laid course.",
+            [{"op": "set_flag", "flag": "heard_mason_rule"}],
+        ),
+        action(
+            "know_the_yealm",
+            "Know the yealm",
+            "talk",
+            {
+                "all": [
+                    {"at": "thatch.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "thatch_trust"},
+                ]
+            },
+            "You name the yealm. Rick lets you cut and set.",
+            [
+                {"op": "set_flag", "flag": "thatch_trust"},
+                {"op": "remember", "actor": "rick", "fact": "yealm"},
+            ],
+        ),
+        action(
+            "read_the_thatch_list",
+            "Read the thatch list",
+            "do",
+            {
+                "all": [
+                    {"at": "thatch.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "thatch_trust"},
+                ]
+            },
+            "You read the thatch list. Rick lets you cut and set.",
+            [
+                {"op": "set_flag", "flag": "thatch_trust"},
+                {"op": "remember", "actor": "rick", "fact": "list"},
+            ],
+        ),
+        action(
+            "set_on_stone",
+            "Set on stone",
+            "do",
+            {
+                "all": [
+                    {"at": "thatch.ridge"},
+                    {"has_flag": "joint_pointed"},
+                    {"not_flag": "thatch_on_stone"},
+                ]
+            },
+            "You set on stone. The roof takes the wall.",
+            [
+                {"op": "set_flag", "flag": "thatch_on_stone"},
+                {"op": "set_flag", "flag": "thatch_trust"},
+                {"op": "remember", "actor": "ridge", "fact": "stone"},
+            ],
+        ),
+        action(
+            "cut_the_thatch",
+            "Cut the thatch",
+            "do",
+            {
+                "all": [
+                    {"at": "thatch.stand"},
+                    {"has_flag": "thatch_trust"},
+                    {"not_flag": "thatch_cut"},
+                    {"not_flag": "roof_set"},
+                ]
+            },
+            "You cut the thatch. The stand sits even.",
+            [{"op": "set_flag", "flag": "thatch_cut"}],
+        ),
+        action(
+            "bind_the_yealm",
+            "Bind the yealm",
+            "do",
+            {
+                "all": [
+                    {"at": "thatch.yealm"},
+                    {"has_flag": "thatch_trust"},
+                    {"has_flag": "thatch_cut"},
+                    {"not_flag": "thatch_bound"},
+                    {"not_flag": "roof_set"},
+                ]
+            },
+            "You bind the yealm. The bundle sits tight.",
+            [{"op": "set_flag", "flag": "thatch_bound"}],
+        ),
+        action(
+            "set_the_roof",
+            "Set the roof",
+            "do",
+            {
+                "all": [
+                    {"at": "thatch.ridge"},
+                    {"has_flag": "thatch_trust"},
+                    {"has_flag": "thatch_bound"},
+                    {"has_item": "thatch_yealm"},
+                    {"not_flag": "roof_set"},
+                ]
+            },
+            "You set the roof. Ridge pins the spars.",
+            [
+                {"op": "remove_item", "item": "thatch_yealm"},
+                {"op": "set_flag", "flag": "roof_set"},
+                {"op": "remember", "actor": "ridge", "fact": "set"},
+            ],
+        ),
+        action(
+            "ask_rick_rule",
+            "Ask Rick the rule",
+            "talk",
+            {"at": "thatch.yard"},
+            "Rick says cut the thatch. Then bind and set.",
+            [{"op": "set_flag", "flag": "heard_thatch_rule"}],
+        ),
+        action(
+            "ask_yealm_bind",
+            "Ask Yealm the bind",
+            "talk",
+            {"at": "thatch.yealm"},
+            "Yealm says bind until the bundle is tight.",
+            [{"op": "set_flag", "flag": "heard_thatch_rule"}],
+        ),
+        action(
+            "ask_ridge_set",
+            "Ask Ridge the set",
+            "talk",
+            {"at": "thatch.ridge"},
+            "Ridge sets only a bound yealm.",
+            [{"op": "set_flag", "flag": "heard_thatch_rule"}],
+        ),
+        action(
+            "know_the_eave_run",
+            "Know the eave run",
+            "talk",
+            {
+                "all": [
+                    {"at": "cistern.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cistern_trust"},
+                ]
+            },
+            "You name the eave run. Eave lets you hang and dip.",
+            [
+                {"op": "set_flag", "flag": "cistern_trust"},
+                {"op": "remember", "actor": "eave", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cistern_list",
+            "Read the cistern list",
+            "do",
+            {
+                "all": [
+                    {"at": "cistern.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cistern_trust"},
+                ]
+            },
+            "You read the cistern list. Eave lets you hang and dip.",
+            [
+                {"op": "set_flag", "flag": "cistern_trust"},
+                {"op": "remember", "actor": "eave", "fact": "list"},
+            ],
+        ),
+        action(
+            "hang_under_roof",
+            "Hang under roof",
+            "do",
+            {
+                "all": [
+                    {"at": "cistern.eave"},
+                    {"has_flag": "roof_set"},
+                    {"not_flag": "cistern_under"},
+                ]
+            },
+            "You hang under roof. The gutter takes the thatch.",
+            [
+                {"op": "set_flag", "flag": "cistern_under"},
+                {"op": "set_flag", "flag": "cistern_trust"},
+                {"op": "remember", "actor": "eave", "fact": "roof"},
+            ],
+        ),
+        action(
+            "hang_the_gutter",
+            "Hang the gutter",
+            "do",
+            {
+                "all": [
+                    {"at": "cistern.eave"},
+                    {"has_flag": "cistern_trust"},
+                    {"not_flag": "cistern_hung"},
+                    {"not_flag": "cistern_filled"},
+                ]
+            },
+            "You hang the gutter. The eave sits even.",
+            [{"op": "set_flag", "flag": "cistern_hung"}],
+        ),
+        action(
+            "set_the_tun",
+            "Set the tun",
+            "do",
+            {
+                "all": [
+                    {"at": "cistern.tun"},
+                    {"has_flag": "cistern_trust"},
+                    {"has_flag": "cistern_hung"},
+                    {"not_flag": "cistern_set"},
+                    {"not_flag": "cistern_filled"},
+                ]
+            },
+            "You set the tun. The cistern sits ready.",
+            [{"op": "set_flag", "flag": "cistern_set"}],
+        ),
+        action(
+            "dip_the_pail",
+            "Dip the pail",
+            "do",
+            {
+                "all": [
+                    {"at": "cistern.dip"},
+                    {"has_flag": "cistern_trust"},
+                    {"has_flag": "cistern_set"},
+                    {"has_item": "catch_pail"},
+                    {"not_flag": "cistern_filled"},
+                ]
+            },
+            "You dip the pail. Dip marks the fill.",
+            [
+                {"op": "remove_item", "item": "catch_pail"},
+                {"op": "set_flag", "flag": "cistern_filled"},
+                {"op": "remember", "actor": "dip", "fact": "dip"},
+            ],
+        ),
+        action(
+            "ask_eave_rule",
+            "Ask Eave the rule",
+            "talk",
+            {"at": "cistern.yard"},
+            "Eave says hang the gutter. Then set and dip.",
+            [{"op": "set_flag", "flag": "heard_cistern_rule"}],
+        ),
+        action(
+            "ask_tun_set",
+            "Ask Tun the set",
+            "talk",
+            {"at": "cistern.tun"},
+            "Tun says set until the cistern is true.",
+            [{"op": "set_flag", "flag": "heard_cistern_rule"}],
+        ),
+        action(
+            "ask_dip_pail",
+            "Ask Dip the pail",
+            "talk",
+            {"at": "cistern.dip"},
+            "Dip dips only a set tun.",
+            [{"op": "set_flag", "flag": "heard_cistern_rule"}],
+        ),
+        action(
+            "know_the_wash_run",
+            "Know the wash run",
+            "talk",
+            {
+                "all": [
+                    {"at": "wash.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wash_trust"},
+                ]
+            },
+            "You name the wash run. Suds lets you soak and hang.",
+            [
+                {"op": "set_flag", "flag": "wash_trust"},
+                {"op": "remember", "actor": "suds", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_wash_list",
+            "Read the wash list",
+            "do",
+            {
+                "all": [
+                    {"at": "wash.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wash_trust"},
+                ]
+            },
+            "You read the wash list. Suds lets you soak and hang.",
+            [
+                {"op": "set_flag", "flag": "wash_trust"},
+                {"op": "remember", "actor": "suds", "fact": "list"},
+            ],
+        ),
+        action(
+            "fill_the_pan",
+            "Fill the pan",
+            "do",
+            {
+                "all": [
+                    {"at": "wash.pan"},
+                    {"has_flag": "cistern_filled"},
+                    {"not_flag": "wash_filled"},
+                ]
+            },
+            "You fill the pan. The soak takes the cistern.",
+            [
+                {"op": "set_flag", "flag": "wash_filled"},
+                {"op": "set_flag", "flag": "wash_trust"},
+                {"op": "remember", "actor": "suds", "fact": "cistern"},
+            ],
+        ),
+        action(
+            "soak_the_cloth",
+            "Soak the cloth",
+            "do",
+            {
+                "all": [
+                    {"at": "wash.pan"},
+                    {"has_flag": "wash_trust"},
+                    {"not_flag": "wash_soaked"},
+                    {"not_flag": "wash_hung"},
+                ]
+            },
+            "You soak the cloth. The pan sits even.",
+            [{"op": "set_flag", "flag": "wash_soaked"}],
+        ),
+        action(
+            "beat_the_wash",
+            "Beat the wash",
+            "do",
+            {
+                "all": [
+                    {"at": "wash.beetle"},
+                    {"has_flag": "wash_trust"},
+                    {"has_flag": "wash_soaked"},
+                    {"not_flag": "wash_beaten"},
+                    {"not_flag": "wash_hung"},
+                ]
+            },
+            "You beat the wash. The cloth comes clean.",
+            [{"op": "set_flag", "flag": "wash_beaten"}],
+        ),
+        action(
+            "hang_the_line",
+            "Hang the line",
+            "do",
+            {
+                "all": [
+                    {"at": "wash.line"},
+                    {"has_flag": "wash_trust"},
+                    {"has_flag": "wash_beaten"},
+                    {"has_item": "wash_cloth"},
+                    {"not_flag": "wash_hung"},
+                ]
+            },
+            "You hang the line. Line pins the cloth.",
+            [
+                {"op": "remove_item", "item": "wash_cloth"},
+                {"op": "set_flag", "flag": "wash_hung"},
+                {"op": "remember", "actor": "line", "fact": "hang"},
+            ],
+        ),
+        action(
+            "ask_suds_rule",
+            "Ask Suds the rule",
+            "talk",
+            {"at": "wash.yard"},
+            "Suds says soak the cloth. Then beat and hang.",
+            [{"op": "set_flag", "flag": "heard_wash_rule"}],
+        ),
+        action(
+            "ask_bat_beat",
+            "Ask Bat the beat",
+            "talk",
+            {"at": "wash.beetle"},
+            "Bat says beat until the cloth is clean.",
+            [{"op": "set_flag", "flag": "heard_wash_rule"}],
+        ),
+        action(
+            "ask_line_hang",
+            "Ask Line the hang",
+            "talk",
+            {"at": "wash.line"},
+            "Line hangs only a beaten wash.",
+            [{"op": "set_flag", "flag": "heard_wash_rule"}],
+        ),
+        action(
+            "know_the_rag_run",
+            "Know the rag run",
+            "talk",
+            {
+                "all": [
+                    {"at": "rag.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "rag_trust"},
+                ]
+            },
+            "You name the rag run. Holl lets you stamp and pack.",
+            [
+                {"op": "set_flag", "flag": "rag_trust"},
+                {"op": "remember", "actor": "holl", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_rag_list",
+            "Read the rag list",
+            "do",
+            {
+                "all": [
+                    {"at": "rag.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "rag_trust"},
+                ]
+            },
+            "You read the rag list. Holl lets you stamp and pack.",
+            [
+                {"op": "set_flag", "flag": "rag_trust"},
+                {"op": "remember", "actor": "holl", "fact": "list"},
+            ],
+        ),
+        action(
+            "sort_the_white",
+            "Sort the white",
+            "do",
+            {
+                "all": [
+                    {"at": "rag.stamp"},
+                    {"has_flag": "wash_hung"},
+                    {"not_flag": "rag_white"},
+                ]
+            },
+            "You sort the white. The pulp takes the wash.",
+            [
+                {"op": "set_flag", "flag": "rag_white"},
+                {"op": "set_flag", "flag": "rag_trust"},
+                {"op": "remember", "actor": "holl", "fact": "wash"},
+            ],
+        ),
+        action(
+            "stamp_the_rag",
+            "Stamp the rag",
+            "do",
+            {
+                "all": [
+                    {"at": "rag.stamp"},
+                    {"has_flag": "rag_trust"},
+                    {"not_flag": "rag_stamped"},
+                    {"not_flag": "paper_laid"},
+                ]
+            },
+            "You stamp the rag. The hammers sit even.",
+            [{"op": "set_flag", "flag": "rag_stamped"}],
+        ),
+        action(
+            "couch_the_sheet",
+            "Couch the sheet",
+            "do",
+            {
+                "all": [
+                    {"at": "rag.deckle"},
+                    {"has_flag": "rag_trust"},
+                    {"has_flag": "rag_stamped"},
+                    {"not_flag": "rag_couched"},
+                    {"not_flag": "paper_laid"},
+                ]
+            },
+            "You couch the sheet. The mold comes true.",
+            [{"op": "set_flag", "flag": "rag_couched"}],
+        ),
+        action(
+            "pack_the_post",
+            "Pack the post",
+            "do",
+            {
+                "all": [
+                    {"at": "rag.post"},
+                    {"has_flag": "rag_trust"},
+                    {"has_flag": "rag_couched"},
+                    {"has_item": "wet_sheet"},
+                    {"not_flag": "paper_laid"},
+                ]
+            },
+            "You pack the post. Post pins the sheet.",
+            [
+                {"op": "remove_item", "item": "wet_sheet"},
+                {"op": "set_flag", "flag": "paper_laid"},
+                {"op": "remember", "actor": "post", "fact": "pack"},
+            ],
+        ),
+        action(
+            "ask_holl_rule",
+            "Ask Holl the rule",
+            "talk",
+            {"at": "rag.yard"},
+            "Holl says stamp the rag. Then couch and pack.",
+            [{"op": "set_flag", "flag": "heard_rag_rule"}],
+        ),
+        action(
+            "ask_deckle_couch",
+            "Ask Deckle the couch",
+            "talk",
+            {"at": "rag.deckle"},
+            "Deckle says couch until the sheet is true.",
+            [{"op": "set_flag", "flag": "heard_rag_rule"}],
+        ),
+        action(
+            "ask_post_pack",
+            "Ask Post the pack",
+            "talk",
+            {"at": "rag.post"},
+            "Post packs only a couched sheet.",
+            [{"op": "set_flag", "flag": "heard_rag_rule"}],
+        ),
+        action(
+            "know_the_holt_cut",
+            "Know the holt cut",
+            "talk",
+            {
+                "all": [
+                    {"at": "osier.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "osier_trust"},
+                ]
+            },
+            "You name the holt cut. Holt lets you cut and weave.",
+            [
+                {"op": "set_flag", "flag": "osier_trust"},
+                {"op": "remember", "actor": "holt", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_osier_list",
+            "Read the osier list",
+            "do",
+            {
+                "all": [
+                    {"at": "osier.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "osier_trust"},
+                ]
+            },
+            "You read the osier list. Holt lets you cut and weave.",
+            [
+                {"op": "set_flag", "flag": "osier_trust"},
+                {"op": "remember", "actor": "holt", "fact": "list"},
+            ],
+        ),
+        action(
+            "wrap_the_holt",
+            "Wrap the holt",
+            "do",
+            {
+                "all": [
+                    {"at": "osier.holt"},
+                    {"has_flag": "paper_laid"},
+                    {"not_flag": "osier_wrapped"},
+                ]
+            },
+            "You wrap the holt. The cut takes the paper.",
+            [
+                {"op": "set_flag", "flag": "osier_wrapped"},
+                {"op": "set_flag", "flag": "osier_trust"},
+                {"op": "remember", "actor": "holt", "fact": "paper"},
+            ],
+        ),
+        action(
+            "cut_the_holt",
+            "Cut the holt",
+            "do",
+            {
+                "all": [
+                    {"at": "osier.holt"},
+                    {"has_flag": "osier_trust"},
+                    {"not_flag": "osier_cut"},
+                    {"not_flag": "frail_woven"},
+                ]
+            },
+            "You cut the holt. The withies sit even.",
+            [{"op": "set_flag", "flag": "osier_cut"}],
+        ),
+        action(
+            "brake_the_rod",
+            "Brake the rod",
+            "do",
+            {
+                "all": [
+                    {"at": "osier.brake"},
+                    {"has_flag": "osier_trust"},
+                    {"has_flag": "osier_cut"},
+                    {"not_flag": "osier_braked"},
+                    {"not_flag": "frail_woven"},
+                ]
+            },
+            "You brake the rod. The withy comes split.",
+            [{"op": "set_flag", "flag": "osier_braked"}],
+        ),
+        action(
+            "weave_the_frail",
+            "Weave the frail",
+            "do",
+            {
+                "all": [
+                    {"at": "osier.frame"},
+                    {"has_flag": "osier_trust"},
+                    {"has_flag": "osier_braked"},
+                    {"has_item": "withy_rod"},
+                    {"not_flag": "frail_woven"},
+                ]
+            },
+            "You weave the frail. Frail pins the rod.",
+            [
+                {"op": "remove_item", "item": "withy_rod"},
+                {"op": "set_flag", "flag": "frail_woven"},
+                {"op": "remember", "actor": "frail", "fact": "weave"},
+            ],
+        ),
+        action(
+            "ask_holt_rule",
+            "Ask Holt the rule",
+            "talk",
+            {"at": "osier.yard"},
+            "Holt says cut the holt. Then brake and weave.",
+            [{"op": "set_flag", "flag": "heard_osier_rule"}],
+        ),
+        action(
+            "ask_brake_rod",
+            "Ask Brake the rod",
+            "talk",
+            {"at": "osier.brake"},
+            "Brake says brake until the rod is split.",
+            [{"op": "set_flag", "flag": "heard_osier_rule"}],
+        ),
+        action(
+            "ask_frail_weave",
+            "Ask Frail the weave",
+            "talk",
+            {"at": "osier.frame"},
+            "Frail weaves only a split rod.",
+            [{"op": "set_flag", "flag": "heard_osier_rule"}],
+        ),
+        action(
+            "know_the_sponge",
+            "Know the sponge",
+            "talk",
+            {
+                "all": [
+                    {"at": "bake.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "bake_trust"},
+                ]
+            },
+            "You name the sponge. Leaven lets you set and draw.",
+            [
+                {"op": "set_flag", "flag": "bake_trust"},
+                {"op": "remember", "actor": "leaven", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_bake_list",
+            "Read the bake list",
+            "do",
+            {
+                "all": [
+                    {"at": "bake.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "bake_trust"},
+                ]
+            },
+            "You read the bake list. Leaven lets you set and draw.",
+            [
+                {"op": "set_flag", "flag": "bake_trust"},
+                {"op": "remember", "actor": "leaven", "fact": "list"},
+            ],
+        ),
+        action(
+            "proof_in_frail",
+            "Proof in frail",
+            "do",
+            {
+                "all": [
+                    {"at": "bake.sponge"},
+                    {"has_flag": "frail_woven"},
+                    {"not_flag": "bake_proofed"},
+                ]
+            },
+            "You proof in frail. The sponge takes the basket.",
+            [
+                {"op": "set_flag", "flag": "bake_proofed"},
+                {"op": "set_flag", "flag": "bake_trust"},
+                {"op": "remember", "actor": "leaven", "fact": "frail"},
+            ],
+        ),
+        action(
+            "set_the_leaven",
+            "Set the leaven",
+            "do",
+            {
+                "all": [
+                    {"at": "bake.sponge"},
+                    {"has_flag": "bake_trust"},
+                    {"not_flag": "bake_set"},
+                    {"not_flag": "loaf_drawn"},
+                ]
+            },
+            "You set the leaven. The sponge sits even.",
+            [{"op": "set_flag", "flag": "bake_set"}],
+        ),
+        action(
+            "heat_the_oven",
+            "Heat the oven",
+            "do",
+            {
+                "all": [
+                    {"at": "bake.oven"},
+                    {"has_flag": "bake_trust"},
+                    {"has_flag": "bake_set"},
+                    {"not_flag": "bake_hot"},
+                    {"not_flag": "loaf_drawn"},
+                ]
+            },
+            "You heat the oven. The stone comes live.",
+            [{"op": "set_flag", "flag": "bake_hot"}],
+        ),
+        action(
+            "draw_the_batch",
+            "Draw the batch",
+            "do",
+            {
+                "all": [
+                    {"at": "bake.hatch"},
+                    {"has_flag": "bake_trust"},
+                    {"has_flag": "bake_hot"},
+                    {"has_item": "dough_loaf"},
+                    {"not_flag": "loaf_drawn"},
+                ]
+            },
+            "You draw the batch. Hatch pins the loaf.",
+            [
+                {"op": "remove_item", "item": "dough_loaf"},
+                {"op": "set_flag", "flag": "loaf_drawn"},
+                {"op": "remember", "actor": "hatch", "fact": "draw"},
+            ],
+        ),
+        action(
+            "ask_leaven_rule",
+            "Ask Leaven the rule",
+            "talk",
+            {"at": "bake.yard"},
+            "Leaven says set the leaven. Then heat and draw.",
+            [{"op": "set_flag", "flag": "heard_bake_rule"}],
+        ),
+        action(
+            "ask_oven_heat",
+            "Ask Oven the heat",
+            "talk",
+            {"at": "bake.oven"},
+            "Oven says heat until the stone is live.",
+            [{"op": "set_flag", "flag": "heard_bake_rule"}],
+        ),
+        action(
+            "ask_hatch_draw",
+            "Ask Hatch the draw",
+            "talk",
+            {"at": "bake.hatch"},
+            "Hatch draws only a hot batch.",
+            [{"op": "set_flag", "flag": "heard_bake_rule"}],
+        ),
+        action(
+            "know_the_rennet",
+            "Know the rennet",
+            "talk",
+            {
+                "all": [
+                    {"at": "dairy.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dairy_trust"},
+                ]
+            },
+            "You name the rennet. Keel lets you set and salt.",
+            [
+                {"op": "set_flag", "flag": "dairy_trust"},
+                {"op": "remember", "actor": "keel", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_dairy_list",
+            "Read the dairy list",
+            "do",
+            {
+                "all": [
+                    {"at": "dairy.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dairy_trust"},
+                ]
+            },
+            "You read the dairy list. Keel lets you set and salt.",
+            [
+                {"op": "set_flag", "flag": "dairy_trust"},
+                {"op": "remember", "actor": "keel", "fact": "list"},
+            ],
+        ),
+        action(
+            "scald_the_milk",
+            "Scald the milk",
+            "do",
+            {
+                "all": [
+                    {"at": "dairy.keel"},
+                    {"has_flag": "loaf_drawn"},
+                    {"not_flag": "dairy_scalded"},
+                ]
+            },
+            "You scald the milk. The keeler takes the heat.",
+            [
+                {"op": "set_flag", "flag": "dairy_scalded"},
+                {"op": "set_flag", "flag": "dairy_trust"},
+                {"op": "remember", "actor": "keel", "fact": "bake"},
+            ],
+        ),
+        action(
+            "set_the_curd",
+            "Set the curd",
+            "do",
+            {
+                "all": [
+                    {"at": "dairy.keel"},
+                    {"has_flag": "dairy_trust"},
+                    {"not_flag": "dairy_set"},
+                    {"not_flag": "wheel_salted"},
+                ]
+            },
+            "You set the curd. The keeler sits even.",
+            [{"op": "set_flag", "flag": "dairy_set"}],
+        ),
+        action(
+            "wrap_the_curd",
+            "Wrap the curd",
+            "do",
+            {
+                "all": [
+                    {"at": "dairy.curd"},
+                    {"has_flag": "dairy_trust"},
+                    {"has_flag": "dairy_set"},
+                    {"not_flag": "dairy_wrapped"},
+                    {"not_flag": "wheel_salted"},
+                ]
+            },
+            "You wrap the curd. The wrap comes tight.",
+            [{"op": "set_flag", "flag": "dairy_wrapped"}],
+        ),
+        action(
+            "salt_the_wheel",
+            "Salt the wheel",
+            "do",
+            {
+                "all": [
+                    {"at": "dairy.shelf"},
+                    {"has_flag": "dairy_trust"},
+                    {"has_flag": "dairy_wrapped"},
+                    {"has_item": "curd_wrap"},
+                    {"not_flag": "wheel_salted"},
+                ]
+            },
+            "You salt the wheel. Shelf pins the cheese.",
+            [
+                {"op": "remove_item", "item": "curd_wrap"},
+                {"op": "set_flag", "flag": "wheel_salted"},
+                {"op": "remember", "actor": "shelf", "fact": "salt"},
+            ],
+        ),
+        action(
+            "ask_keel_rule",
+            "Ask Keel the rule",
+            "talk",
+            {"at": "dairy.yard"},
+            "Keel says set the curd. Then wrap and salt.",
+            [{"op": "set_flag", "flag": "heard_dairy_rule"}],
+        ),
+        action(
+            "ask_curd_wrap",
+            "Ask Curd the wrap",
+            "talk",
+            {"at": "dairy.curd"},
+            "Curd says wrap until the curd is tight.",
+            [{"op": "set_flag", "flag": "heard_dairy_rule"}],
+        ),
+        action(
+            "ask_shelf_salt",
+            "Ask Shelf the salt",
+            "talk",
+            {"at": "dairy.shelf"},
+            "Shelf salts only a wrapped wheel.",
+            [{"op": "set_flag", "flag": "heard_dairy_rule"}],
+        ),
+        action(
+            "know_the_warp",
+            "Know the warp",
+            "talk",
+            {
+                "all": [
+                    {"at": "loom.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "loom_trust"},
+                ]
+            },
+            "You name the warp. Warp lets you beam and shear.",
+            [
+                {"op": "set_flag", "flag": "loom_trust"},
+                {"op": "remember", "actor": "warp", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_loom_list",
+            "Read the loom list",
+            "do",
+            {
+                "all": [
+                    {"at": "loom.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "loom_trust"},
+                ]
+            },
+            "You read the loom list. Warp lets you beam and shear.",
+            [
+                {"op": "set_flag", "flag": "loom_trust"},
+                {"op": "remember", "actor": "warp", "fact": "list"},
+            ],
+        ),
+        action(
+            "wrap_the_warp",
+            "Wrap the warp",
+            "do",
+            {
+                "all": [
+                    {"at": "loom.beam"},
+                    {"has_flag": "wheel_salted"},
+                    {"not_flag": "loom_wrapped"},
+                ]
+            },
+            "You wrap the warp. The beam takes the cloth.",
+            [
+                {"op": "set_flag", "flag": "loom_wrapped"},
+                {"op": "set_flag", "flag": "loom_trust"},
+                {"op": "remember", "actor": "warp", "fact": "dairy"},
+            ],
+        ),
+        action(
+            "warp_the_beam",
+            "Warp the beam",
+            "do",
+            {
+                "all": [
+                    {"at": "loom.beam"},
+                    {"has_flag": "loom_trust"},
+                    {"not_flag": "loom_warped"},
+                    {"not_flag": "web_sheared"},
+                ]
+            },
+            "You warp the beam. The threads sit even.",
+            [{"op": "set_flag", "flag": "loom_warped"}],
+        ),
+        action(
+            "throw_the_shuttle",
+            "Throw the shuttle",
+            "do",
+            {
+                "all": [
+                    {"at": "loom.sley"},
+                    {"has_flag": "loom_trust"},
+                    {"has_flag": "loom_warped"},
+                    {"not_flag": "loom_thrown"},
+                    {"not_flag": "web_sheared"},
+                ]
+            },
+            "You throw the shuttle. The web comes close.",
+            [{"op": "set_flag", "flag": "loom_thrown"}],
+        ),
+        action(
+            "shear_the_web",
+            "Shear the web",
+            "do",
+            {
+                "all": [
+                    {"at": "loom.batten"},
+                    {"has_flag": "loom_trust"},
+                    {"has_flag": "loom_thrown"},
+                    {"has_item": "shuttle_bob"},
+                    {"not_flag": "web_sheared"},
+                ]
+            },
+            "You shear the web. Batten pins the cut.",
+            [
+                {"op": "remove_item", "item": "shuttle_bob"},
+                {"op": "set_flag", "flag": "web_sheared"},
+                {"op": "remember", "actor": "batten", "fact": "shear"},
+            ],
+        ),
+        action(
+            "ask_warp_rule",
+            "Ask Warp the rule",
+            "talk",
+            {"at": "loom.yard"},
+            "Warp says warp the beam. Then throw and shear.",
+            [{"op": "set_flag", "flag": "heard_loom_rule"}],
+        ),
+        action(
+            "ask_sley_throw",
+            "Ask Sley the throw",
+            "talk",
+            {"at": "loom.sley"},
+            "Sley says throw until the web is close.",
+            [{"op": "set_flag", "flag": "heard_loom_rule"}],
+        ),
+        action(
+            "ask_batten_shear",
+            "Ask Batten the shear",
+            "talk",
+            {"at": "loom.batten"},
+            "Batten shears only a thrown web.",
+            [{"op": "set_flag", "flag": "heard_loom_rule"}],
+        ),
+        action(
+            "know_the_horn",
+            "Know the horn",
+            "talk",
+            {
+                "all": [
+                    {"at": "horn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "horn_trust"},
+                ]
+            },
+            "You name the horn. Scrape lets you scrape and hang.",
+            [
+                {"op": "set_flag", "flag": "horn_trust"},
+                {"op": "remember", "actor": "scrape", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_lantern_list",
+            "Read the lantern list",
+            "do",
+            {
+                "all": [
+                    {"at": "horn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "horn_trust"},
+                ]
+            },
+            "You read the lantern list. Scrape lets you scrape and hang.",
+            [
+                {"op": "set_flag", "flag": "horn_trust"},
+                {"op": "remember", "actor": "scrape", "fact": "list"},
+            ],
+        ),
+        action(
+            "wick_the_horn",
+            "Wick the horn",
+            "do",
+            {
+                "all": [
+                    {"at": "horn.scrape"},
+                    {"has_flag": "web_sheared"},
+                    {"not_flag": "horn_wicked"},
+                ]
+            },
+            "You wick the horn. The scrape takes the web.",
+            [
+                {"op": "set_flag", "flag": "horn_wicked"},
+                {"op": "set_flag", "flag": "horn_trust"},
+                {"op": "remember", "actor": "scrape", "fact": "loom"},
+            ],
+        ),
+        action(
+            "scrape_the_horn",
+            "Scrape the horn",
+            "do",
+            {
+                "all": [
+                    {"at": "horn.scrape"},
+                    {"has_flag": "horn_trust"},
+                    {"not_flag": "horn_scraped"},
+                    {"not_flag": "lantern_hung"},
+                ]
+            },
+            "You scrape the horn. The plate sits even.",
+            [{"op": "set_flag", "flag": "horn_scraped"}],
+        ),
+        action(
+            "set_the_pane",
+            "Set the pane",
+            "do",
+            {
+                "all": [
+                    {"at": "horn.pane"},
+                    {"has_flag": "horn_trust"},
+                    {"has_flag": "horn_scraped"},
+                    {"not_flag": "horn_set"},
+                    {"not_flag": "lantern_hung"},
+                ]
+            },
+            "You set the pane. The horn comes thin.",
+            [{"op": "set_flag", "flag": "horn_set"}],
+        ),
+        action(
+            "hang_the_lantern",
+            "Hang the lantern",
+            "do",
+            {
+                "all": [
+                    {"at": "horn.hook"},
+                    {"has_flag": "horn_trust"},
+                    {"has_flag": "horn_set"},
+                    {"has_item": "horn_pane"},
+                    {"not_flag": "lantern_hung"},
+                ]
+            },
+            "You hang the lantern. Hook pins the pane.",
+            [
+                {"op": "remove_item", "item": "horn_pane"},
+                {"op": "set_flag", "flag": "lantern_hung"},
+                {"op": "remember", "actor": "hook", "fact": "hang"},
+            ],
+        ),
+        action(
+            "ask_scrape_rule",
+            "Ask Scrape the rule",
+            "talk",
+            {"at": "horn.yard"},
+            "Scrape says scrape the horn. Then set and hang.",
+            [{"op": "set_flag", "flag": "heard_horn_rule"}],
+        ),
+        action(
+            "ask_pane_set",
+            "Ask Pane the set",
+            "talk",
+            {"at": "horn.pane"},
+            "Pane says set until the horn is thin.",
+            [{"op": "set_flag", "flag": "heard_horn_rule"}],
+        ),
+        action(
+            "ask_hook_hang",
+            "Ask Hook the hang",
+            "talk",
+            {"at": "horn.hook"},
+            "Hook hangs only a set pane.",
+            [{"op": "set_flag", "flag": "heard_horn_rule"}],
+        ),
+        action(
+            "know_the_gall_run",
+            "Know the gall run",
+            "talk",
+            {
+                "all": [
+                    {"at": "gall.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "gall_trust"},
+                ]
+            },
+            "You name the gall run. Gall lets you crush and cut.",
+            [
+                {"op": "set_flag", "flag": "gall_trust"},
+                {"op": "remember", "actor": "gall", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_ink_list",
+            "Read the ink list",
+            "do",
+            {
+                "all": [
+                    {"at": "gall.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "gall_trust"},
+                ]
+            },
+            "You read the ink list. Gall lets you crush and cut.",
+            [
+                {"op": "set_flag", "flag": "gall_trust"},
+                {"op": "remember", "actor": "gall", "fact": "list"},
+            ],
+        ),
+        action(
+            "light_the_crush",
+            "Light the crush",
+            "do",
+            {
+                "all": [
+                    {"at": "gall.crush"},
+                    {"has_flag": "lantern_hung"},
+                    {"not_flag": "gall_lit"},
+                ]
+            },
+            "You light the crush. Night work takes the lantern.",
+            [
+                {"op": "set_flag", "flag": "gall_lit"},
+                {"op": "set_flag", "flag": "gall_trust"},
+                {"op": "remember", "actor": "gall", "fact": "lantern"},
+            ],
+        ),
+        action(
+            "crush_the_gall",
+            "Crush the gall",
+            "do",
+            {
+                "all": [
+                    {"at": "gall.crush"},
+                    {"has_flag": "gall_trust"},
+                    {"not_flag": "gall_crushed"},
+                    {"not_flag": "nib_cut"},
+                ]
+            },
+            "You crush the gall. The pulp sits even.",
+            [{"op": "set_flag", "flag": "gall_crushed"}],
+        ),
+        action(
+            "mix_the_ink",
+            "Mix the ink",
+            "do",
+            {
+                "all": [
+                    {"at": "gall.copper"},
+                    {"has_flag": "gall_trust"},
+                    {"has_flag": "gall_crushed"},
+                    {"not_flag": "gall_mixed"},
+                    {"not_flag": "nib_cut"},
+                ]
+            },
+            "You mix the ink. The copper comes black.",
+            [{"op": "set_flag", "flag": "gall_mixed"}],
+        ),
+        action(
+            "cut_the_nib",
+            "Cut the nib",
+            "do",
+            {
+                "all": [
+                    {"at": "gall.nib"},
+                    {"has_flag": "gall_trust"},
+                    {"has_flag": "gall_mixed"},
+                    {"has_item": "ink_nib"},
+                    {"not_flag": "nib_cut"},
+                ]
+            },
+            "You cut the nib. Nib pins the ink.",
+            [
+                {"op": "remove_item", "item": "ink_nib"},
+                {"op": "set_flag", "flag": "nib_cut"},
+                {"op": "remember", "actor": "nib", "fact": "cut"},
+            ],
+        ),
+        action(
+            "ask_gall_rule",
+            "Ask Gall the rule",
+            "talk",
+            {"at": "gall.yard"},
+            "Gall says crush the gall. Then mix and cut.",
+            [{"op": "set_flag", "flag": "heard_gall_rule"}],
+        ),
+        action(
+            "ask_copper_mix",
+            "Ask Copper the mix",
+            "talk",
+            {"at": "gall.copper"},
+            "Copper says mix until the ink is black.",
+            [{"op": "set_flag", "flag": "heard_gall_rule"}],
+        ),
+        action(
+            "ask_nib_cut",
+            "Ask Nib the cut",
+            "talk",
+            {"at": "gall.nib"},
+            "Nib cuts only mixed ink.",
+            [{"op": "set_flag", "flag": "heard_gall_rule"}],
+        ),
+        action(
+            "know_the_last",
+            "Know the last",
+            "talk",
+            {
+                "all": [
+                    {"at": "cobble.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cobble_trust"},
+                ]
+            },
+            "You name the last. Last lets you last and peg.",
+            [
+                {"op": "set_flag", "flag": "cobble_trust"},
+                {"op": "remember", "actor": "last", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cobble_list",
+            "Read the cobble list",
+            "do",
+            {
+                "all": [
+                    {"at": "cobble.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cobble_trust"},
+                ]
+            },
+            "You read the cobble list. Last lets you last and peg.",
+            [
+                {"op": "set_flag", "flag": "cobble_trust"},
+                {"op": "remember", "actor": "last", "fact": "list"},
+            ],
+        ),
+        action(
+            "mark_the_last",
+            "Mark the last",
+            "do",
+            {
+                "all": [
+                    {"at": "cobble.sole"},
+                    {"has_flag": "nib_cut"},
+                    {"not_flag": "cobble_marked"},
+                ]
+            },
+            "You mark the last. The size takes the ink.",
+            [
+                {"op": "set_flag", "flag": "cobble_marked"},
+                {"op": "set_flag", "flag": "cobble_trust"},
+                {"op": "remember", "actor": "last", "fact": "ink"},
+            ],
+        ),
+        action(
+            "last_the_sole",
+            "Last the sole",
+            "do",
+            {
+                "all": [
+                    {"at": "cobble.sole"},
+                    {"has_flag": "cobble_trust"},
+                    {"not_flag": "cobble_lasted"},
+                    {"not_flag": "heel_pegged"},
+                ]
+            },
+            "You last the sole. The leather sits even.",
+            [{"op": "set_flag", "flag": "cobble_lasted"}],
+        ),
+        action(
+            "awl_the_upper",
+            "Awl the upper",
+            "do",
+            {
+                "all": [
+                    {"at": "cobble.awl"},
+                    {"has_flag": "cobble_trust"},
+                    {"has_flag": "cobble_lasted"},
+                    {"not_flag": "cobble_awled"},
+                    {"not_flag": "heel_pegged"},
+                ]
+            },
+            "You awl the upper. The holes come true.",
+            [{"op": "set_flag", "flag": "cobble_awled"}],
+        ),
+        action(
+            "peg_the_heel",
+            "Peg the heel",
+            "do",
+            {
+                "all": [
+                    {"at": "cobble.heel"},
+                    {"has_flag": "cobble_trust"},
+                    {"has_flag": "cobble_awled"},
+                    {"has_item": "sole_peg"},
+                    {"not_flag": "heel_pegged"},
+                ]
+            },
+            "You peg the heel. Heel pins the peg.",
+            [
+                {"op": "remove_item", "item": "sole_peg"},
+                {"op": "set_flag", "flag": "heel_pegged"},
+                {"op": "remember", "actor": "heel", "fact": "peg"},
+            ],
+        ),
+        action(
+            "ask_last_rule",
+            "Ask Last the rule",
+            "talk",
+            {"at": "cobble.yard"},
+            "Last says last the sole. Then awl and peg.",
+            [{"op": "set_flag", "flag": "heard_cobble_rule"}],
+        ),
+        action(
+            "ask_awl_upper",
+            "Ask Awl the upper",
+            "talk",
+            {"at": "cobble.awl"},
+            "Awl says punch until the upper is true.",
+            [{"op": "set_flag", "flag": "heard_cobble_rule"}],
+        ),
+        action(
+            "ask_heel_peg",
+            "Ask Heel the peg",
+            "talk",
+            {"at": "cobble.heel"},
+            "Heel pegs only an awled sole.",
+            [{"op": "set_flag", "flag": "heard_cobble_rule"}],
+        ),
+        action(
+            "know_the_fruit",
+            "Know the fruit",
+            "talk",
+            {
+                "all": [
+                    {"at": "cider.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cider_trust"},
+                ]
+            },
+            "You name the fruit. Fruit lets you mill and bung.",
+            [
+                {"op": "set_flag", "flag": "cider_trust"},
+                {"op": "remember", "actor": "fruit", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cider_list",
+            "Read the cider list",
+            "do",
+            {
+                "all": [
+                    {"at": "cider.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cider_trust"},
+                ]
+            },
+            "You read the cider list. Fruit lets you mill and bung.",
+            [
+                {"op": "set_flag", "flag": "cider_trust"},
+                {"op": "remember", "actor": "fruit", "fact": "list"},
+            ],
+        ),
+        action(
+            "leather_the_hopper",
+            "Leather the hopper",
+            "do",
+            {
+                "all": [
+                    {"at": "cider.fruit"},
+                    {"has_flag": "heel_pegged"},
+                    {"not_flag": "cider_leathered"},
+                ]
+            },
+            "You leather the hopper. The mill takes the hide.",
+            [
+                {"op": "set_flag", "flag": "cider_leathered"},
+                {"op": "set_flag", "flag": "cider_trust"},
+                {"op": "remember", "actor": "fruit", "fact": "cobble"},
+            ],
+        ),
+        action(
+            "mill_the_fruit",
+            "Mill the fruit",
+            "do",
+            {
+                "all": [
+                    {"at": "cider.fruit"},
+                    {"has_flag": "cider_trust"},
+                    {"not_flag": "cider_milled"},
+                    {"not_flag": "keeve_bunged"},
+                ]
+            },
+            "You mill the fruit. The pulp sits even.",
+            [{"op": "set_flag", "flag": "cider_milled"}],
+        ),
+        action(
+            "wrap_the_cheese",
+            "Wrap the cheese",
+            "do",
+            {
+                "all": [
+                    {"at": "cider.cheese"},
+                    {"has_flag": "cider_trust"},
+                    {"has_flag": "cider_milled"},
+                    {"not_flag": "cider_wrapped"},
+                    {"not_flag": "keeve_bunged"},
+                ]
+            },
+            "You wrap the cheese. The pomace comes tight.",
+            [{"op": "set_flag", "flag": "cider_wrapped"}],
+        ),
+        action(
+            "bung_the_keeve",
+            "Bung the keeve",
+            "do",
+            {
+                "all": [
+                    {"at": "cider.keeve"},
+                    {"has_flag": "cider_trust"},
+                    {"has_flag": "cider_wrapped"},
+                    {"has_item": "pomace_wrap"},
+                    {"not_flag": "keeve_bunged"},
+                ]
+            },
+            "You bung the keeve. Keeve pins the must.",
+            [
+                {"op": "remove_item", "item": "pomace_wrap"},
+                {"op": "set_flag", "flag": "keeve_bunged"},
+                {"op": "remember", "actor": "keeve", "fact": "bung"},
+            ],
+        ),
+        action(
+            "ask_fruit_rule",
+            "Ask Fruit the rule",
+            "talk",
+            {"at": "cider.yard"},
+            "Fruit says mill the fruit. Then wrap and bung.",
+            [{"op": "set_flag", "flag": "heard_cider_rule"}],
+        ),
+        action(
+            "ask_cheese_wrap",
+            "Ask Cheese the wrap",
+            "talk",
+            {"at": "cider.cheese"},
+            "Cheese says wrap until the pomace is tight.",
+            [{"op": "set_flag", "flag": "heard_cider_rule"}],
+        ),
+        action(
+            "ask_keeve_bung",
+            "Ask Keeve the bung",
+            "talk",
+            {"at": "cider.keeve"},
+            "Keeve bungs only wrapped must.",
+            [{"op": "set_flag", "flag": "heard_cider_rule"}],
+        ),
+        action(
+            "know_the_seed",
+            "Know the seed",
+            "talk",
+            {
+                "all": [
+                    {"at": "must.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "must_trust"},
+                ]
+            },
+            "You name the seed. Seed lets you mill and pot.",
+            [
+                {"op": "set_flag", "flag": "must_trust"},
+                {"op": "remember", "actor": "seed", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_mustard_list",
+            "Read the mustard list",
+            "do",
+            {
+                "all": [
+                    {"at": "must.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "must_trust"},
+                ]
+            },
+            "You read the mustard list. Seed lets you mill and pot.",
+            [
+                {"op": "set_flag", "flag": "must_trust"},
+                {"op": "remember", "actor": "seed", "fact": "list"},
+            ],
+        ),
+        action(
+            "cider_the_quern",
+            "Cider the quern",
+            "do",
+            {
+                "all": [
+                    {"at": "must.quern"},
+                    {"has_flag": "keeve_bunged"},
+                    {"not_flag": "must_wet"},
+                ]
+            },
+            "You cider the quern. The seed takes the keeve.",
+            [
+                {"op": "set_flag", "flag": "must_wet"},
+                {"op": "set_flag", "flag": "must_trust"},
+                {"op": "remember", "actor": "seed", "fact": "cider"},
+            ],
+        ),
+        action(
+            "mill_the_seed",
+            "Mill the seed",
+            "do",
+            {
+                "all": [
+                    {"at": "must.quern"},
+                    {"has_flag": "must_trust"},
+                    {"not_flag": "must_milled"},
+                    {"not_flag": "mustard_potted"},
+                ]
+            },
+            "You mill the seed. The quern sits even.",
+            [{"op": "set_flag", "flag": "must_milled"}],
+        ),
+        action(
+            "wet_the_paste",
+            "Wet the paste",
+            "do",
+            {
+                "all": [
+                    {"at": "must.paste"},
+                    {"has_flag": "must_trust"},
+                    {"has_flag": "must_milled"},
+                    {"not_flag": "must_pasted"},
+                    {"not_flag": "mustard_potted"},
+                ]
+            },
+            "You wet the paste. The mix comes thick.",
+            [{"op": "set_flag", "flag": "must_pasted"}],
+        ),
+        action(
+            "pot_the_mustard",
+            "Pot the mustard",
+            "do",
+            {
+                "all": [
+                    {"at": "must.pot"},
+                    {"has_flag": "must_trust"},
+                    {"has_flag": "must_pasted"},
+                    {"has_item": "paste_pot"},
+                    {"not_flag": "mustard_potted"},
+                ]
+            },
+            "You pot the mustard. Pot pins the lid.",
+            [
+                {"op": "remove_item", "item": "paste_pot"},
+                {"op": "set_flag", "flag": "mustard_potted"},
+                {"op": "remember", "actor": "pot", "fact": "pot"},
+            ],
+        ),
+        action(
+            "ask_seed_rule",
+            "Ask Seed the rule",
+            "talk",
+            {"at": "must.yard"},
+            "Seed says mill the seed. Then wet and pot.",
+            [{"op": "set_flag", "flag": "heard_must_rule"}],
+        ),
+        action(
+            "ask_paste_wet",
+            "Ask Paste the wet",
+            "talk",
+            {"at": "must.paste"},
+            "Paste says wet until the mix is thick.",
+            [{"op": "set_flag", "flag": "heard_must_rule"}],
+        ),
+        action(
+            "ask_pot_lid",
+            "Ask Pot the lid",
+            "talk",
+            {"at": "must.pot"},
+            "Pot lids only a wet paste.",
+            [{"op": "set_flag", "flag": "heard_must_rule"}],
+        ),
+        action(
+            "know_the_chop",
+            "Know the chop",
+            "talk",
+            {
+                "all": [
+                    {"at": "link.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "link_trust"},
+                ]
+            },
+            "You name the chop. Chop lets you fill and tie.",
+            [
+                {"op": "set_flag", "flag": "link_trust"},
+                {"op": "remember", "actor": "chop", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_sausage_list",
+            "Read the sausage list",
+            "do",
+            {
+                "all": [
+                    {"at": "link.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "link_trust"},
+                ]
+            },
+            "You read the sausage list. Chop lets you fill and tie.",
+            [
+                {"op": "set_flag", "flag": "link_trust"},
+                {"op": "remember", "actor": "chop", "fact": "list"},
+            ],
+        ),
+        action(
+            "mustard_the_chop",
+            "Mustard the chop",
+            "do",
+            {
+                "all": [
+                    {"at": "link.chop"},
+                    {"has_flag": "mustard_potted"},
+                    {"not_flag": "link_mustarded"},
+                ]
+            },
+            "You mustard the chop. The meat takes the pot.",
+            [
+                {"op": "set_flag", "flag": "link_mustarded"},
+                {"op": "set_flag", "flag": "link_trust"},
+                {"op": "remember", "actor": "chop", "fact": "mustard"},
+            ],
+        ),
+        action(
+            "chop_the_forcemeat",
+            "Chop the forcemeat",
+            "do",
+            {
+                "all": [
+                    {"at": "link.chop"},
+                    {"has_flag": "link_trust"},
+                    {"not_flag": "link_chopped"},
+                    {"not_flag": "sausage_linked"},
+                ]
+            },
+            "You chop the forcemeat. The board sits even.",
+            [{"op": "set_flag", "flag": "link_chopped"}],
+        ),
+        action(
+            "fill_the_skin",
+            "Fill the skin",
+            "do",
+            {
+                "all": [
+                    {"at": "link.funnel"},
+                    {"has_flag": "link_trust"},
+                    {"has_flag": "link_chopped"},
+                    {"not_flag": "link_filled"},
+                    {"not_flag": "sausage_linked"},
+                ]
+            },
+            "You fill the skin. The casing comes tight.",
+            [{"op": "set_flag", "flag": "link_filled"}],
+        ),
+        action(
+            "tie_the_links",
+            "Tie the links",
+            "do",
+            {
+                "all": [
+                    {"at": "link.tie"},
+                    {"has_flag": "link_trust"},
+                    {"has_flag": "link_filled"},
+                    {"has_item": "gut_skin"},
+                    {"not_flag": "sausage_linked"},
+                ]
+            },
+            "You tie the links. Tie pins the string.",
+            [
+                {"op": "remove_item", "item": "gut_skin"},
+                {"op": "set_flag", "flag": "sausage_linked"},
+                {"op": "remember", "actor": "tie", "fact": "tie"},
+            ],
+        ),
+        action(
+            "ask_chop_rule",
+            "Ask Chop the rule",
+            "talk",
+            {"at": "link.yard"},
+            "Chop says chop the forcemeat. Then fill and tie.",
+            [{"op": "set_flag", "flag": "heard_link_rule"}],
+        ),
+        action(
+            "ask_funnel_fill",
+            "Ask Funnel the fill",
+            "talk",
+            {"at": "link.funnel"},
+            "Funnel says fill until the skin is tight.",
+            [{"op": "set_flag", "flag": "heard_link_rule"}],
+        ),
+        action(
+            "ask_tie_link",
+            "Ask Tie the link",
+            "talk",
+            {"at": "link.tie"},
+            "Tie ties only a filled skin.",
+            [{"op": "set_flag", "flag": "heard_link_rule"}],
+        ),
+        action(
+            "know_the_crust",
+            "Know the crust",
+            "talk",
+            {
+                "all": [
+                    {"at": "pie.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "pie_trust"},
+                ]
+            },
+            "You name the crust. Crust lets you roll and crimp.",
+            [
+                {"op": "set_flag", "flag": "pie_trust"},
+                {"op": "remember", "actor": "crust", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_pie_list",
+            "Read the pie list",
+            "do",
+            {
+                "all": [
+                    {"at": "pie.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "pie_trust"},
+                ]
+            },
+            "You read the pie list. Crust lets you roll and crimp.",
+            [
+                {"op": "set_flag", "flag": "pie_trust"},
+                {"op": "remember", "actor": "crust", "fact": "list"},
+            ],
+        ),
+        action(
+            "lard_the_crust",
+            "Lard the crust",
+            "do",
+            {
+                "all": [
+                    {"at": "pie.crust"},
+                    {"has_flag": "sausage_linked"},
+                    {"not_flag": "pie_larded"},
+                ]
+            },
+            "You lard the crust. The paste takes the fat.",
+            [
+                {"op": "set_flag", "flag": "pie_larded"},
+                {"op": "set_flag", "flag": "pie_trust"},
+                {"op": "remember", "actor": "crust", "fact": "sausage"},
+            ],
+        ),
+        action(
+            "roll_the_crust",
+            "Roll the crust",
+            "do",
+            {
+                "all": [
+                    {"at": "pie.crust"},
+                    {"has_flag": "pie_trust"},
+                    {"not_flag": "pie_rolled"},
+                    {"not_flag": "pie_crimped"},
+                ]
+            },
+            "You roll the crust. The paste sits even.",
+            [{"op": "set_flag", "flag": "pie_rolled"}],
+        ),
+        action(
+            "fill_the_pie",
+            "Fill the pie",
+            "do",
+            {
+                "all": [
+                    {"at": "pie.dish"},
+                    {"has_flag": "pie_trust"},
+                    {"has_flag": "pie_rolled"},
+                    {"not_flag": "pie_filled"},
+                    {"not_flag": "pie_crimped"},
+                ]
+            },
+            "You fill the pie. The dish comes full.",
+            [{"op": "set_flag", "flag": "pie_filled"}],
+        ),
+        action(
+            "crimp_the_lid",
+            "Crimp the lid",
+            "do",
+            {
+                "all": [
+                    {"at": "pie.crimp"},
+                    {"has_flag": "pie_trust"},
+                    {"has_flag": "pie_filled"},
+                    {"has_item": "pie_lid"},
+                    {"not_flag": "pie_crimped"},
+                ]
+            },
+            "You crimp the lid. Crimp pins the rim.",
+            [
+                {"op": "remove_item", "item": "pie_lid"},
+                {"op": "set_flag", "flag": "pie_crimped"},
+                {"op": "remember", "actor": "crimp", "fact": "crimp"},
+            ],
+        ),
+        action(
+            "ask_crust_rule",
+            "Ask Crust the rule",
+            "talk",
+            {"at": "pie.yard"},
+            "Crust says roll the crust. Then fill and crimp.",
+            [{"op": "set_flag", "flag": "heard_pie_rule"}],
+        ),
+        action(
+            "ask_dish_fill",
+            "Ask Dish the fill",
+            "talk",
+            {"at": "pie.dish"},
+            "Dish says fill until the pie is full.",
+            [{"op": "set_flag", "flag": "heard_pie_rule"}],
+        ),
+        action(
+            "ask_crimp_lid",
+            "Ask Crimp the lid",
+            "talk",
+            {"at": "pie.crimp"},
+            "Crimp crimps only a filled pie.",
+            [{"op": "set_flag", "flag": "heard_pie_rule"}],
+        ),
+        action(
+            "know_the_pulp",
+            "Know the pulp",
+            "talk",
+            {
+                "all": [
+                    {"at": "jam.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "jam_trust"},
+                ]
+            },
+            "You name the pulp. Pulp lets you boil and jar.",
+            [
+                {"op": "set_flag", "flag": "jam_trust"},
+                {"op": "remember", "actor": "pulp", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_jam_list",
+            "Read the jam list",
+            "do",
+            {
+                "all": [
+                    {"at": "jam.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "jam_trust"},
+                ]
+            },
+            "You read the jam list. Pulp lets you boil and jar.",
+            [
+                {"op": "set_flag", "flag": "jam_trust"},
+                {"op": "remember", "actor": "pulp", "fact": "list"},
+            ],
+        ),
+        action(
+            "pie_the_glaze",
+            "Pie the glaze",
+            "do",
+            {
+                "all": [
+                    {"at": "jam.pulp"},
+                    {"has_flag": "pie_crimped"},
+                    {"not_flag": "jam_glazed"},
+                ]
+            },
+            "You glaze the pulp. The fruit takes the pie.",
+            [
+                {"op": "set_flag", "flag": "jam_glazed"},
+                {"op": "set_flag", "flag": "jam_trust"},
+                {"op": "remember", "actor": "pulp", "fact": "pie"},
+            ],
+        ),
+        action(
+            "boil_the_pulp",
+            "Boil the pulp",
+            "do",
+            {
+                "all": [
+                    {"at": "jam.pulp"},
+                    {"has_flag": "jam_trust"},
+                    {"not_flag": "jam_boiled"},
+                    {"not_flag": "jam_jarred"},
+                ]
+            },
+            "You boil the pulp. The fruit sits even.",
+            [{"op": "set_flag", "flag": "jam_boiled"}],
+        ),
+        action(
+            "skim_the_foam",
+            "Skim the foam",
+            "do",
+            {
+                "all": [
+                    {"at": "jam.foam"},
+                    {"has_flag": "jam_trust"},
+                    {"has_flag": "jam_boiled"},
+                    {"not_flag": "jam_skimmed"},
+                    {"not_flag": "jam_jarred"},
+                ]
+            },
+            "You skim the foam. The copper comes clear.",
+            [{"op": "set_flag", "flag": "jam_skimmed"}],
+        ),
+        action(
+            "jar_the_jam",
+            "Jar the jam",
+            "do",
+            {
+                "all": [
+                    {"at": "jam.jar"},
+                    {"has_flag": "jam_trust"},
+                    {"has_flag": "jam_skimmed"},
+                    {"has_item": "jam_jar"},
+                    {"not_flag": "jam_jarred"},
+                ]
+            },
+            "You jar the jam. Jar pins the lip.",
+            [
+                {"op": "remove_item", "item": "jam_jar"},
+                {"op": "set_flag", "flag": "jam_jarred"},
+                {"op": "remember", "actor": "jar", "fact": "jar"},
+            ],
+        ),
+        action(
+            "ask_pulp_rule",
+            "Ask Pulp the rule",
+            "talk",
+            {"at": "jam.yard"},
+            "Pulp says boil the pulp. Then skim and jar.",
+            [{"op": "set_flag", "flag": "heard_jam_rule"}],
+        ),
+        action(
+            "ask_foam_skim",
+            "Ask Foam the skim",
+            "talk",
+            {"at": "jam.foam"},
+            "Foam says skim until the foam is thin.",
+            [{"op": "set_flag", "flag": "heard_jam_rule"}],
+        ),
+        action(
+            "ask_jar_jam",
+            "Ask Jar the jam",
+            "talk",
+            {"at": "jam.jar"},
+            "Jar jars only skimmed jam.",
+            [{"op": "set_flag", "flag": "heard_jam_rule"}],
+        ),
+        action(
+            "know_the_throw",
+            "Know the throw",
+            "talk",
+            {
+                "all": [
+                    {"at": "crock.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "crock_trust"},
+                ]
+            },
+            "You name the throw. Throw lets you throw and glaze.",
+            [
+                {"op": "set_flag", "flag": "crock_trust"},
+                {"op": "remember", "actor": "throw", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_crock_list",
+            "Read the crock list",
+            "do",
+            {
+                "all": [
+                    {"at": "crock.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "crock_trust"},
+                ]
+            },
+            "You read the crock list. Throw lets you throw and glaze.",
+            [
+                {"op": "set_flag", "flag": "crock_trust"},
+                {"op": "remember", "actor": "throw", "fact": "list"},
+            ],
+        ),
+        action(
+            "jam_the_flux",
+            "Jam the flux",
+            "do",
+            {
+                "all": [
+                    {"at": "crock.throw"},
+                    {"has_flag": "jam_jarred"},
+                    {"not_flag": "crock_fluxed"},
+                ]
+            },
+            "You flux the clay. The wheel takes the jam.",
+            [
+                {"op": "set_flag", "flag": "crock_fluxed"},
+                {"op": "set_flag", "flag": "crock_trust"},
+                {"op": "remember", "actor": "throw", "fact": "jam"},
+            ],
+        ),
+        action(
+            "throw_the_clay",
+            "Throw the clay",
+            "do",
+            {
+                "all": [
+                    {"at": "crock.throw"},
+                    {"has_flag": "crock_trust"},
+                    {"not_flag": "crock_thrown"},
+                    {"not_flag": "crock_glazed"},
+                ]
+            },
+            "You throw the clay. The clay sits even.",
+            [{"op": "set_flag", "flag": "crock_thrown"}],
+        ),
+        action(
+            "fire_the_biscuit",
+            "Fire the biscuit",
+            "do",
+            {
+                "all": [
+                    {"at": "crock.biscuit"},
+                    {"has_flag": "crock_trust"},
+                    {"has_flag": "crock_thrown"},
+                    {"not_flag": "crock_fired"},
+                    {"not_flag": "crock_glazed"},
+                ]
+            },
+            "You fire the biscuit. The ware comes hard.",
+            [{"op": "set_flag", "flag": "crock_fired"}],
+        ),
+        action(
+            "glaze_the_crock",
+            "Glaze the crock",
+            "do",
+            {
+                "all": [
+                    {"at": "crock.glaze"},
+                    {"has_flag": "crock_trust"},
+                    {"has_flag": "crock_fired"},
+                    {"has_item": "biscuit_ware"},
+                    {"not_flag": "crock_glazed"},
+                ]
+            },
+            "You glaze the crock. Glaze pins the dip.",
+            [
+                {"op": "remove_item", "item": "biscuit_ware"},
+                {"op": "set_flag", "flag": "crock_glazed"},
+                {"op": "remember", "actor": "glaze", "fact": "glaze"},
+            ],
+        ),
+        action(
+            "ask_throw_rule",
+            "Ask Throw the rule",
+            "talk",
+            {"at": "crock.yard"},
+            "Throw says throw the clay. Then fire and glaze.",
+            [{"op": "set_flag", "flag": "heard_crock_rule"}],
+        ),
+        action(
+            "ask_biscuit_fire",
+            "Ask Biscuit the fire",
+            "talk",
+            {"at": "crock.biscuit"},
+            "Biscuit says fire until the ware is hard.",
+            [{"op": "set_flag", "flag": "heard_crock_rule"}],
+        ),
+        action(
+            "ask_glaze_dip",
+            "Ask Glaze the dip",
+            "talk",
+            {"at": "crock.glaze"},
+            "Glaze glazes only fired ware.",
+            [{"op": "set_flag", "flag": "heard_crock_rule"}],
+        ),
+        action(
+            "know_the_flesh",
+            "Know the flesh",
+            "talk",
+            {
+                "all": [
+                    {"at": "hide.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "hide_trust"},
+                ]
+            },
+            "You name the flesh. Flesh lets you flesh and tan.",
+            [
+                {"op": "set_flag", "flag": "hide_trust"},
+                {"op": "remember", "actor": "flesh", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_hide_list",
+            "Read the hide list",
+            "do",
+            {
+                "all": [
+                    {"at": "hide.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "hide_trust"},
+                ]
+            },
+            "You read the hide list. Flesh lets you flesh and tan.",
+            [
+                {"op": "set_flag", "flag": "hide_trust"},
+                {"op": "remember", "actor": "flesh", "fact": "list"},
+            ],
+        ),
+        action(
+            "crock_the_rinse",
+            "Crock the rinse",
+            "do",
+            {
+                "all": [
+                    {"at": "hide.flesh"},
+                    {"has_flag": "crock_glazed"},
+                    {"not_flag": "hide_rinsed"},
+                ]
+            },
+            "You rinse the hide. The beam takes the crock.",
+            [
+                {"op": "set_flag", "flag": "hide_rinsed"},
+                {"op": "set_flag", "flag": "hide_trust"},
+                {"op": "remember", "actor": "flesh", "fact": "crock"},
+            ],
+        ),
+        action(
+            "flesh_the_hide",
+            "Flesh the hide",
+            "do",
+            {
+                "all": [
+                    {"at": "hide.flesh"},
+                    {"has_flag": "hide_trust"},
+                    {"not_flag": "hide_fleshed"},
+                    {"not_flag": "hide_tanned"},
+                ]
+            },
+            "You flesh the hide. The hide sits even.",
+            [{"op": "set_flag", "flag": "hide_fleshed"}],
+        ),
+        action(
+            "bate_the_skin",
+            "Bate the skin",
+            "do",
+            {
+                "all": [
+                    {"at": "hide.bate"},
+                    {"has_flag": "hide_trust"},
+                    {"has_flag": "hide_fleshed"},
+                    {"not_flag": "hide_bated"},
+                    {"not_flag": "hide_tanned"},
+                ]
+            },
+            "You bate the skin. The hide comes slack.",
+            [{"op": "set_flag", "flag": "hide_bated"}],
+        ),
+        action(
+            "tan_the_hide",
+            "Tan the hide",
+            "do",
+            {
+                "all": [
+                    {"at": "hide.tan"},
+                    {"has_flag": "hide_trust"},
+                    {"has_flag": "hide_bated"},
+                    {"has_item": "oak_bark"},
+                    {"not_flag": "hide_tanned"},
+                ]
+            },
+            "You tan the hide. Tan pins the bark.",
+            [
+                {"op": "remove_item", "item": "oak_bark"},
+                {"op": "set_flag", "flag": "hide_tanned"},
+                {"op": "remember", "actor": "tan", "fact": "tan"},
+            ],
+        ),
+        action(
+            "ask_flesh_rule",
+            "Ask Flesh the rule",
+            "talk",
+            {"at": "hide.yard"},
+            "Flesh says flesh the hide. Then bate and tan.",
+            [{"op": "set_flag", "flag": "heard_hide_rule"}],
+        ),
+        action(
+            "ask_bate_skin",
+            "Ask Bate the skin",
+            "talk",
+            {"at": "hide.bate"},
+            "Bate says bate until the skin is slack.",
+            [{"op": "set_flag", "flag": "heard_hide_rule"}],
+        ),
+        action(
+            "ask_tan_hide",
+            "Ask Tan the hide",
+            "talk",
+            {"at": "hide.tan"},
+            "Tan tans only a bated hide.",
+            [{"op": "set_flag", "flag": "heard_hide_rule"}],
+        ),
+        action(
+            "know_the_rett",
+            "Know the rett",
+            "talk",
+            {
+                "all": [
+                    {"at": "flax.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "flax_trust"},
+                ]
+            },
+            "You name the rett. Rett lets you ret and spin.",
+            [
+                {"op": "set_flag", "flag": "flax_trust"},
+                {"op": "remember", "actor": "rett", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_flax_list",
+            "Read the flax list",
+            "do",
+            {
+                "all": [
+                    {"at": "flax.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "flax_trust"},
+                ]
+            },
+            "You read the flax list. Rett lets you ret and spin.",
+            [
+                {"op": "set_flag", "flag": "flax_trust"},
+                {"op": "remember", "actor": "rett", "fact": "list"},
+            ],
+        ),
+        action(
+            "glove_the_rett",
+            "Glove the rett",
+            "do",
+            {
+                "all": [
+                    {"at": "flax.rett"},
+                    {"has_flag": "hide_tanned"},
+                    {"not_flag": "flax_gloved"},
+                ]
+            },
+            "You glove the rett. The pond takes the hide.",
+            [
+                {"op": "set_flag", "flag": "flax_gloved"},
+                {"op": "set_flag", "flag": "flax_trust"},
+                {"op": "remember", "actor": "rett", "fact": "hide"},
+            ],
+        ),
+        action(
+            "ret_the_flax",
+            "Ret the flax",
+            "do",
+            {
+                "all": [
+                    {"at": "flax.rett"},
+                    {"has_flag": "flax_trust"},
+                    {"not_flag": "flax_retted"},
+                    {"not_flag": "flax_spun"},
+                ]
+            },
+            "You ret the flax. The flax sits even.",
+            [{"op": "set_flag", "flag": "flax_retted"}],
+        ),
+        action(
+            "heckle_the_tow",
+            "Heckle the tow",
+            "do",
+            {
+                "all": [
+                    {"at": "flax.heckle"},
+                    {"has_flag": "flax_trust"},
+                    {"has_flag": "flax_retted"},
+                    {"not_flag": "flax_heckled"},
+                    {"not_flag": "flax_spun"},
+                ]
+            },
+            "You heckle the tow. The comb comes clean.",
+            [{"op": "set_flag", "flag": "flax_heckled"}],
+        ),
+        action(
+            "spin_the_line",
+            "Spin the line",
+            "do",
+            {
+                "all": [
+                    {"at": "flax.spin"},
+                    {"has_flag": "flax_trust"},
+                    {"has_flag": "flax_heckled"},
+                    {"has_item": "flax_tow"},
+                    {"not_flag": "flax_spun"},
+                ]
+            },
+            "You spin the line. Spindle pins the whirl.",
+            [
+                {"op": "remove_item", "item": "flax_tow"},
+                {"op": "set_flag", "flag": "flax_spun"},
+                {"op": "remember", "actor": "spindle", "fact": "spin"},
+            ],
+        ),
+        action(
+            "ask_rett_rule",
+            "Ask Rett the rule",
+            "talk",
+            {"at": "flax.yard"},
+            "Rett says ret the flax. Then heckle and spin.",
+            [{"op": "set_flag", "flag": "heard_flax_rule"}],
+        ),
+        action(
+            "ask_heckle_tow",
+            "Ask Heckle the tow",
+            "talk",
+            {"at": "flax.heckle"},
+            "Heckle says heckle until the tow is fine.",
+            [{"op": "set_flag", "flag": "heard_flax_rule"}],
+        ),
+        action(
+            "ask_spindle_line",
+            "Ask Spindle the line",
+            "talk",
+            {"at": "flax.spin"},
+            "Spindle spins only heckled tow.",
+            [{"op": "set_flag", "flag": "heard_flax_rule"}],
+        ),
+        action(
+            "know_the_snip",
+            "Know the snip",
+            "talk",
+            {
+                "all": [
+                    {"at": "nail.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "nail_trust"},
+                ]
+            },
+            "You name the snip. Snip lets you snip and point.",
+            [
+                {"op": "set_flag", "flag": "nail_trust"},
+                {"op": "remember", "actor": "snip", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_nail_list",
+            "Read the nail list",
+            "do",
+            {
+                "all": [
+                    {"at": "nail.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "nail_trust"},
+                ]
+            },
+            "You read the nail list. Snip lets you snip and point.",
+            [
+                {"op": "set_flag", "flag": "nail_trust"},
+                {"op": "remember", "actor": "snip", "fact": "list"},
+            ],
+        ),
+        action(
+            "flax_the_grip",
+            "Flax the grip",
+            "do",
+            {
+                "all": [
+                    {"at": "nail.snip"},
+                    {"has_flag": "flax_spun"},
+                    {"not_flag": "nail_gripped"},
+                ]
+            },
+            "You wrap the snip. The rod takes the flax.",
+            [
+                {"op": "set_flag", "flag": "nail_gripped"},
+                {"op": "set_flag", "flag": "nail_trust"},
+                {"op": "remember", "actor": "snip", "fact": "flax"},
+            ],
+        ),
+        action(
+            "snip_the_rod",
+            "Snip the rod",
+            "do",
+            {
+                "all": [
+                    {"at": "nail.snip"},
+                    {"has_flag": "nail_trust"},
+                    {"not_flag": "nail_snipped"},
+                    {"not_flag": "nail_pointed"},
+                ]
+            },
+            "You snip the rod. The rod sits even.",
+            [{"op": "set_flag", "flag": "nail_snipped"}],
+        ),
+        action(
+            "head_the_nail",
+            "Head the nail",
+            "do",
+            {
+                "all": [
+                    {"at": "nail.head"},
+                    {"has_flag": "nail_trust"},
+                    {"has_flag": "nail_snipped"},
+                    {"not_flag": "nail_headed"},
+                    {"not_flag": "nail_pointed"},
+                ]
+            },
+            "You head the nail. The die comes full.",
+            [{"op": "set_flag", "flag": "nail_headed"}],
+        ),
+        action(
+            "point_the_shank",
+            "Point the shank",
+            "do",
+            {
+                "all": [
+                    {"at": "nail.shank"},
+                    {"has_flag": "nail_trust"},
+                    {"has_flag": "nail_headed"},
+                    {"has_item": "nail_blank"},
+                    {"not_flag": "nail_pointed"},
+                ]
+            },
+            "You point the shank. Shank pins the hardy.",
+            [
+                {"op": "remove_item", "item": "nail_blank"},
+                {"op": "set_flag", "flag": "nail_pointed"},
+                {"op": "remember", "actor": "shank", "fact": "point"},
+            ],
+        ),
+        action(
+            "ask_snip_rule",
+            "Ask Snip the rule",
+            "talk",
+            {"at": "nail.yard"},
+            "Snip says snip the rod. Then head and point.",
+            [{"op": "set_flag", "flag": "heard_nail_rule"}],
+        ),
+        action(
+            "ask_header_die",
+            "Ask Header the die",
+            "talk",
+            {"at": "nail.head"},
+            "Header says head until the blank is set.",
+            [{"op": "set_flag", "flag": "heard_nail_rule"}],
+        ),
+        action(
+            "ask_shank_hardy",
+            "Ask Shank the hardy",
+            "talk",
+            {"at": "nail.shank"},
+            "Shank points only a headed nail.",
+            [{"op": "set_flag", "flag": "heard_nail_rule"}],
+        ),
+        action(
+            "know_the_hub",
+            "Know the hub",
+            "talk",
+            {
+                "all": [
+                    {"at": "wain.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wain_trust"},
+                ]
+            },
+            "You name the hub. Hub lets you dish and tyre.",
+            [
+                {"op": "set_flag", "flag": "wain_trust"},
+                {"op": "remember", "actor": "hub", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_wain_list",
+            "Read the wain list",
+            "do",
+            {
+                "all": [
+                    {"at": "wain.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wain_trust"},
+                ]
+            },
+            "You read the wain list. Hub lets you dish and tyre.",
+            [
+                {"op": "set_flag", "flag": "wain_trust"},
+                {"op": "remember", "actor": "hub", "fact": "list"},
+            ],
+        ),
+        action(
+            "nail_the_box",
+            "Nail the box",
+            "do",
+            {
+                "all": [
+                    {"at": "wain.hub"},
+                    {"has_flag": "nail_pointed"},
+                    {"not_flag": "wain_boxed"},
+                ]
+            },
+            "You box the hub. The nave takes the nail.",
+            [
+                {"op": "set_flag", "flag": "wain_boxed"},
+                {"op": "set_flag", "flag": "wain_trust"},
+                {"op": "remember", "actor": "hub", "fact": "nail"},
+            ],
+        ),
+        action(
+            "dish_the_hub",
+            "Dish the hub",
+            "do",
+            {
+                "all": [
+                    {"at": "wain.hub"},
+                    {"has_flag": "wain_trust"},
+                    {"not_flag": "wain_dished"},
+                    {"not_flag": "tyre_set"},
+                ]
+            },
+            "You dish the hub. The hub sits even.",
+            [{"op": "set_flag", "flag": "wain_dished"}],
+        ),
+        action(
+            "set_the_spoke",
+            "Set the spoke",
+            "do",
+            {
+                "all": [
+                    {"at": "wain.spoke"},
+                    {"has_flag": "wain_trust"},
+                    {"has_flag": "wain_dished"},
+                    {"not_flag": "wain_spoked"},
+                    {"not_flag": "tyre_set"},
+                ]
+            },
+            "You set the spoke. The mortise comes tight.",
+            [{"op": "set_flag", "flag": "wain_spoked"}],
+        ),
+        action(
+            "tyre_the_felloe",
+            "Tyre the felloe",
+            "do",
+            {
+                "all": [
+                    {"at": "wain.felloe"},
+                    {"has_flag": "wain_trust"},
+                    {"has_flag": "wain_spoked"},
+                    {"has_item": "felloe_strake"},
+                    {"not_flag": "tyre_set"},
+                ]
+            },
+            "You tyre the felloe. Felloe pins the rim.",
+            [
+                {"op": "remove_item", "item": "felloe_strake"},
+                {"op": "set_flag", "flag": "tyre_set"},
+                {"op": "remember", "actor": "felloe", "fact": "tyre"},
+            ],
+        ),
+        action(
+            "ask_hub_rule",
+            "Ask Hub the rule",
+            "talk",
+            {"at": "wain.yard"},
+            "Hub says dish the hub. Then spoke and tyre.",
+            [{"op": "set_flag", "flag": "heard_wain_rule"}],
+        ),
+        action(
+            "ask_spoke_mortise",
+            "Ask Spoke the mortise",
+            "talk",
+            {"at": "wain.spoke"},
+            "Spoke says set until the mortise is tight.",
+            [{"op": "set_flag", "flag": "heard_wain_rule"}],
+        ),
+        action(
+            "ask_felloe_tyre",
+            "Ask Felloe the tyre",
+            "talk",
+            {"at": "wain.felloe"},
+            "Felloe tyres only a spoked wheel.",
+            [{"op": "set_flag", "flag": "heard_wain_rule"}],
+        ),
+        action(
+            "know_the_steep",
+            "Know the steep",
+            "talk",
+            {
+                "all": [
+                    {"at": "malt.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "malt_trust"},
+                ]
+            },
+            "You name the steep. Steep lets you steep and oast.",
+            [
+                {"op": "set_flag", "flag": "malt_trust"},
+                {"op": "remember", "actor": "steep", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_malt_list",
+            "Read the malt list",
+            "do",
+            {
+                "all": [
+                    {"at": "malt.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "malt_trust"},
+                ]
+            },
+            "You read the malt list. Steep lets you steep and oast.",
+            [
+                {"op": "set_flag", "flag": "malt_trust"},
+                {"op": "remember", "actor": "steep", "fact": "list"},
+            ],
+        ),
+        action(
+            "wain_the_steep",
+            "Wain the steep",
+            "do",
+            {
+                "all": [
+                    {"at": "malt.steep"},
+                    {"has_flag": "tyre_set"},
+                    {"not_flag": "malt_hauled"},
+                ]
+            },
+            "You fill the steep. The vat takes the wain.",
+            [
+                {"op": "set_flag", "flag": "malt_hauled"},
+                {"op": "set_flag", "flag": "malt_trust"},
+                {"op": "remember", "actor": "steep", "fact": "wain"},
+            ],
+        ),
+        action(
+            "steep_the_barley",
+            "Steep the barley",
+            "do",
+            {
+                "all": [
+                    {"at": "malt.steep"},
+                    {"has_flag": "malt_trust"},
+                    {"not_flag": "malt_steeped"},
+                    {"not_flag": "malt_oasted"},
+                ]
+            },
+            "You steep the barley. The barley sits even.",
+            [{"op": "set_flag", "flag": "malt_steeped"}],
+        ),
+        action(
+            "turn_the_piece",
+            "Turn the piece",
+            "do",
+            {
+                "all": [
+                    {"at": "malt.piece"},
+                    {"has_flag": "malt_trust"},
+                    {"has_flag": "malt_steeped"},
+                    {"not_flag": "malt_turned"},
+                    {"not_flag": "malt_oasted"},
+                ]
+            },
+            "You turn the piece. The floor comes even.",
+            [{"op": "set_flag", "flag": "malt_turned"}],
+        ),
+        action(
+            "oast_the_malt",
+            "Oast the malt",
+            "do",
+            {
+                "all": [
+                    {"at": "malt.oast"},
+                    {"has_flag": "malt_trust"},
+                    {"has_flag": "malt_turned"},
+                    {"has_item": "green_malt"},
+                    {"not_flag": "malt_oasted"},
+                ]
+            },
+            "You oast the malt. Oast pins the hair.",
+            [
+                {"op": "remove_item", "item": "green_malt"},
+                {"op": "set_flag", "flag": "malt_oasted"},
+                {"op": "remember", "actor": "oast", "fact": "oast"},
+            ],
+        ),
+        action(
+            "ask_steep_rule",
+            "Ask Steep the rule",
+            "talk",
+            {"at": "malt.yard"},
+            "Steep says steep the barley. Then turn and oast.",
+            [{"op": "set_flag", "flag": "heard_malt_rule"}],
+        ),
+        action(
+            "ask_piece_floor",
+            "Ask Piece the floor",
+            "talk",
+            {"at": "malt.piece"},
+            "Piece says turn until the floor is even.",
+            [{"op": "set_flag", "flag": "heard_malt_rule"}],
+        ),
+        action(
+            "ask_oast_hair",
+            "Ask Oast the hair",
+            "talk",
+            {"at": "malt.oast"},
+            "Oast oasts only turned malt.",
+            [{"op": "set_flag", "flag": "heard_malt_rule"}],
+        ),
+        action(
+            "know_the_grist",
+            "Know the grist",
+            "talk",
+            {
+                "all": [
+                    {"at": "brew.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "brew_trust"},
+                ]
+            },
+            "You name the grist. Grist lets you charge and rack.",
+            [
+                {"op": "set_flag", "flag": "brew_trust"},
+                {"op": "remember", "actor": "grist", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_brew_list",
+            "Read the brew list",
+            "do",
+            {
+                "all": [
+                    {"at": "brew.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "brew_trust"},
+                ]
+            },
+            "You read the brew list. Grist lets you charge and rack.",
+            [
+                {"op": "set_flag", "flag": "brew_trust"},
+                {"op": "remember", "actor": "grist", "fact": "list"},
+            ],
+        ),
+        action(
+            "malt_the_grist",
+            "Malt the grist",
+            "do",
+            {
+                "all": [
+                    {"at": "brew.grist"},
+                    {"has_flag": "malt_oasted"},
+                    {"not_flag": "brew_malted"},
+                ]
+            },
+            "You charge the malt. The hopper takes the oast.",
+            [
+                {"op": "set_flag", "flag": "brew_malted"},
+                {"op": "set_flag", "flag": "brew_trust"},
+                {"op": "remember", "actor": "grist", "fact": "malt"},
+            ],
+        ),
+        action(
+            "charge_the_grist",
+            "Charge the grist",
+            "do",
+            {
+                "all": [
+                    {"at": "brew.grist"},
+                    {"has_flag": "brew_trust"},
+                    {"not_flag": "brew_charged"},
+                    {"not_flag": "gyle_racked"},
+                ]
+            },
+            "You charge the grist. The grist sits even.",
+            [{"op": "set_flag", "flag": "brew_charged"}],
+        ),
+        action(
+            "hop_the_wort",
+            "Hop the wort",
+            "do",
+            {
+                "all": [
+                    {"at": "brew.wort"},
+                    {"has_flag": "brew_trust"},
+                    {"has_flag": "brew_charged"},
+                    {"not_flag": "brew_hopped"},
+                    {"not_flag": "gyle_racked"},
+                ]
+            },
+            "You hop the wort. The copper comes bitter.",
+            [{"op": "set_flag", "flag": "brew_hopped"}],
+        ),
+        action(
+            "rack_the_gyle",
+            "Rack the gyle",
+            "do",
+            {
+                "all": [
+                    {"at": "brew.gyle"},
+                    {"has_flag": "brew_trust"},
+                    {"has_flag": "brew_hopped"},
+                    {"has_item": "hop_cone"},
+                    {"not_flag": "gyle_racked"},
+                ]
+            },
+            "You rack the gyle. Gyle pins the rack.",
+            [
+                {"op": "remove_item", "item": "hop_cone"},
+                {"op": "set_flag", "flag": "gyle_racked"},
+                {"op": "remember", "actor": "gyle", "fact": "rack"},
+            ],
+        ),
+        action(
+            "ask_grist_rule",
+            "Ask Grist the rule",
+            "talk",
+            {"at": "brew.yard"},
+            "Grist says charge the grist. Then hop and rack.",
+            [{"op": "set_flag", "flag": "heard_brew_rule"}],
+        ),
+        action(
+            "ask_wort_hop",
+            "Ask Wort the hop",
+            "talk",
+            {"at": "brew.wort"},
+            "Wort says hop until the copper is bitter.",
+            [{"op": "set_flag", "flag": "heard_brew_rule"}],
+        ),
+        action(
+            "ask_gyle_rack",
+            "Ask Gyle the rack",
+            "talk",
+            {"at": "brew.gyle"},
+            "Gyle racks only hopped wort.",
+            [{"op": "set_flag", "flag": "heard_brew_rule"}],
+        ),
+        action(
+            "know_the_mother",
+            "Know the mother",
+            "talk",
+            {
+                "all": [
+                    {"at": "acet.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "acet_trust"},
+                ]
+            },
+            "You name the mother. Mother lets you pitch and cork.",
+            [
+                {"op": "set_flag", "flag": "acet_trust"},
+                {"op": "remember", "actor": "mother", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_vinegar_list",
+            "Read the vinegar list",
+            "do",
+            {
+                "all": [
+                    {"at": "acet.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "acet_trust"},
+                ]
+            },
+            "You read the vinegar list. Mother lets you pitch and cork.",
+            [
+                {"op": "set_flag", "flag": "acet_trust"},
+                {"op": "remember", "actor": "mother", "fact": "list"},
+            ],
+        ),
+        action(
+            "ale_the_mother",
+            "Ale the mother",
+            "do",
+            {
+                "all": [
+                    {"at": "acet.mother"},
+                    {"has_flag": "gyle_racked"},
+                    {"not_flag": "acet_aled"},
+                ]
+            },
+            "You pitch the ale. The mother takes the gyle.",
+            [
+                {"op": "set_flag", "flag": "acet_aled"},
+                {"op": "set_flag", "flag": "acet_trust"},
+                {"op": "remember", "actor": "mother", "fact": "ale"},
+            ],
+        ),
+        action(
+            "pitch_the_mother",
+            "Pitch the mother",
+            "do",
+            {
+                "all": [
+                    {"at": "acet.mother"},
+                    {"has_flag": "acet_trust"},
+                    {"not_flag": "acet_pitched"},
+                    {"not_flag": "cruet_corked"},
+                ]
+            },
+            "You pitch the mother. The lees sit even.",
+            [{"op": "set_flag", "flag": "acet_pitched"}],
+        ),
+        action(
+            "sour_the_ale",
+            "Sour the ale",
+            "do",
+            {
+                "all": [
+                    {"at": "acet.sour"},
+                    {"has_flag": "acet_trust"},
+                    {"has_flag": "acet_pitched"},
+                    {"not_flag": "acet_soured"},
+                    {"not_flag": "cruet_corked"},
+                ]
+            },
+            "You sour the ale. The acet comes sharp.",
+            [{"op": "set_flag", "flag": "acet_soured"}],
+        ),
+        action(
+            "cork_the_cruet",
+            "Cork the cruet",
+            "do",
+            {
+                "all": [
+                    {"at": "acet.cruet"},
+                    {"has_flag": "acet_trust"},
+                    {"has_flag": "acet_soured"},
+                    {"has_item": "cruet_cork"},
+                    {"not_flag": "cruet_corked"},
+                ]
+            },
+            "You cork the cruet. Cruet pins the lip.",
+            [
+                {"op": "remove_item", "item": "cruet_cork"},
+                {"op": "set_flag", "flag": "cruet_corked"},
+                {"op": "remember", "actor": "cruet", "fact": "cork"},
+            ],
+        ),
+        action(
+            "ask_mother_rule",
+            "Ask Mother the rule",
+            "talk",
+            {"at": "acet.yard"},
+            "Mother says pitch the mother. Then sour and cork.",
+            [{"op": "set_flag", "flag": "heard_acet_rule"}],
+        ),
+        action(
+            "ask_sour_acet",
+            "Ask Sour the acet",
+            "talk",
+            {"at": "acet.sour"},
+            "Sour says sour until the acet is sharp.",
+            [{"op": "set_flag", "flag": "heard_acet_rule"}],
+        ),
+        action(
+            "ask_cruet_cork",
+            "Ask Cruet the cork",
+            "talk",
+            {"at": "acet.cruet"},
+            "Cruet corks only soured ale.",
+            [{"op": "set_flag", "flag": "heard_acet_rule"}],
+        ),
+        action(
+            "know_the_paring",
+            "Know the paring",
+            "talk",
+            {
+                "all": [
+                    {"at": "glue.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "glue_trust"},
+                ]
+            },
+            "You name the paring. Paring lets you trim and cake.",
+            [
+                {"op": "set_flag", "flag": "glue_trust"},
+                {"op": "remember", "actor": "paring", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_glue_list",
+            "Read the glue list",
+            "do",
+            {
+                "all": [
+                    {"at": "glue.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "glue_trust"},
+                ]
+            },
+            "You read the glue list. Paring lets you trim and cake.",
+            [
+                {"op": "set_flag", "flag": "glue_trust"},
+                {"op": "remember", "actor": "paring", "fact": "list"},
+            ],
+        ),
+        action(
+            "acet_the_paring",
+            "Acet the paring",
+            "do",
+            {
+                "all": [
+                    {"at": "glue.paring"},
+                    {"has_flag": "cruet_corked"},
+                    {"not_flag": "glue_aceted"},
+                ]
+            },
+            "You sour the paring. The vinegar cuts the hide.",
+            [
+                {"op": "set_flag", "flag": "glue_aceted"},
+                {"op": "set_flag", "flag": "glue_trust"},
+                {"op": "remember", "actor": "paring", "fact": "acet"},
+            ],
+        ),
+        action(
+            "trim_the_paring",
+            "Trim the paring",
+            "do",
+            {
+                "all": [
+                    {"at": "glue.paring"},
+                    {"has_flag": "glue_trust"},
+                    {"not_flag": "glue_trimmed"},
+                    {"not_flag": "glue_caked"},
+                ]
+            },
+            "You trim the paring. The hide sits even.",
+            [{"op": "set_flag", "flag": "glue_trimmed"}],
+        ),
+        action(
+            "seethe_the_size",
+            "Seethe the size",
+            "do",
+            {
+                "all": [
+                    {"at": "glue.seethe"},
+                    {"has_flag": "glue_trust"},
+                    {"has_flag": "glue_trimmed"},
+                    {"not_flag": "glue_seethed"},
+                    {"not_flag": "glue_caked"},
+                ]
+            },
+            "You seethe the size. The liquor comes thick.",
+            [{"op": "set_flag", "flag": "glue_seethed"}],
+        ),
+        action(
+            "cake_the_glue",
+            "Cake the glue",
+            "do",
+            {
+                "all": [
+                    {"at": "glue.slab"},
+                    {"has_flag": "glue_trust"},
+                    {"has_flag": "glue_seethed"},
+                    {"has_item": "size_cake"},
+                    {"not_flag": "glue_caked"},
+                ]
+            },
+            "You cake the glue. Slab pins the frame.",
+            [
+                {"op": "remove_item", "item": "size_cake"},
+                {"op": "set_flag", "flag": "glue_caked"},
+                {"op": "remember", "actor": "slab", "fact": "cake"},
+            ],
+        ),
+        action(
+            "ask_paring_rule",
+            "Ask Paring the rule",
+            "talk",
+            {"at": "glue.yard"},
+            "Paring says trim the paring. Then seethe and cake.",
+            [{"op": "set_flag", "flag": "heard_glue_rule"}],
+        ),
+        action(
+            "ask_seether_size",
+            "Ask Seether the size",
+            "talk",
+            {"at": "glue.seethe"},
+            "Seether says seethe until the size is thick.",
+            [{"op": "set_flag", "flag": "heard_glue_rule"}],
+        ),
+        action(
+            "ask_slab_cake",
+            "Ask Slab the cake",
+            "talk",
+            {"at": "glue.slab"},
+            "Slab cakes only seethed size.",
+            [{"op": "set_flag", "flag": "heard_glue_rule"}],
+        ),
+        action(
+            "know_the_quire",
+            "Know the quire",
+            "talk",
+            {
+                "all": [
+                    {"at": "bind.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "bind_trust"},
+                ]
+            },
+            "You name the quire. Quire lets you gather and nip.",
+            [
+                {"op": "set_flag", "flag": "bind_trust"},
+                {"op": "remember", "actor": "quire", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_bind_list",
+            "Read the bind list",
+            "do",
+            {
+                "all": [
+                    {"at": "bind.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "bind_trust"},
+                ]
+            },
+            "You read the bind list. Quire lets you gather and nip.",
+            [
+                {"op": "set_flag", "flag": "bind_trust"},
+                {"op": "remember", "actor": "quire", "fact": "list"},
+            ],
+        ),
+        action(
+            "glue_the_quire",
+            "Glue the quire",
+            "do",
+            {
+                "all": [
+                    {"at": "bind.quire"},
+                    {"has_flag": "glue_caked"},
+                    {"not_flag": "bind_glued"},
+                ]
+            },
+            "You size the quire. The glue takes the sheet.",
+            [
+                {"op": "set_flag", "flag": "bind_glued"},
+                {"op": "set_flag", "flag": "bind_trust"},
+                {"op": "remember", "actor": "quire", "fact": "glue"},
+            ],
+        ),
+        action(
+            "gather_the_quire",
+            "Gather the quire",
+            "do",
+            {
+                "all": [
+                    {"at": "bind.quire"},
+                    {"has_flag": "bind_trust"},
+                    {"not_flag": "bind_gathered"},
+                    {"not_flag": "book_bound"},
+                ]
+            },
+            "You gather the quire. The sheets sit even.",
+            [{"op": "set_flag", "flag": "bind_gathered"}],
+        ),
+        action(
+            "sew_the_band",
+            "Sew the band",
+            "do",
+            {
+                "all": [
+                    {"at": "bind.sew"},
+                    {"has_flag": "bind_trust"},
+                    {"has_flag": "bind_gathered"},
+                    {"not_flag": "bind_sewn"},
+                    {"not_flag": "book_bound"},
+                ]
+            },
+            "You sew the band. The cords come tight.",
+            [{"op": "set_flag", "flag": "bind_sewn"}],
+        ),
+        action(
+            "nip_the_board",
+            "Nip the board",
+            "do",
+            {
+                "all": [
+                    {"at": "bind.nip"},
+                    {"has_flag": "bind_trust"},
+                    {"has_flag": "bind_sewn"},
+                    {"has_item": "millboard"},
+                    {"not_flag": "book_bound"},
+                ]
+            },
+            "You nip the board. Nip pins the cover.",
+            [
+                {"op": "remove_item", "item": "millboard"},
+                {"op": "set_flag", "flag": "book_bound"},
+                {"op": "remember", "actor": "nip", "fact": "nip"},
+            ],
+        ),
+        action(
+            "ask_quire_rule",
+            "Ask Quire the rule",
+            "talk",
+            {"at": "bind.yard"},
+            "Quire says gather the quire. Then sew and nip.",
+            [{"op": "set_flag", "flag": "heard_bind_rule"}],
+        ),
+        action(
+            "ask_band_stitch",
+            "Ask Band the stitch",
+            "talk",
+            {"at": "bind.sew"},
+            "Band says sew until the cords are tight.",
+            [{"op": "set_flag", "flag": "heard_bind_rule"}],
+        ),
+        action(
+            "ask_nip_finish",
+            "Ask Nip the finish",
+            "talk",
+            {"at": "bind.nip"},
+            "Nip nips only sewn boards.",
+            [{"op": "set_flag", "flag": "heard_bind_rule"}],
+        ),
+        action(
+            "know_the_bole",
+            "Know the bole",
+            "talk",
+            {
+                "all": [
+                    {"at": "gilt.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "gilt_trust"},
+                ]
+            },
+            "You name the bole. Bole lets you lay and burnish.",
+            [
+                {"op": "set_flag", "flag": "gilt_trust"},
+                {"op": "remember", "actor": "bole", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_gilt_list",
+            "Read the gilt list",
+            "do",
+            {
+                "all": [
+                    {"at": "gilt.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "gilt_trust"},
+                ]
+            },
+            "You read the gilt list. Bole lets you lay and burnish.",
+            [
+                {"op": "set_flag", "flag": "gilt_trust"},
+                {"op": "remember", "actor": "bole", "fact": "list"},
+            ],
+        ),
+        action(
+            "bind_the_bole",
+            "Bind the bole",
+            "do",
+            {
+                "all": [
+                    {"at": "gilt.bole"},
+                    {"has_flag": "book_bound"},
+                    {"not_flag": "gilt_bound"},
+                ]
+            },
+            "You set the book. The bole takes the cover.",
+            [
+                {"op": "set_flag", "flag": "gilt_bound"},
+                {"op": "set_flag", "flag": "gilt_trust"},
+                {"op": "remember", "actor": "bole", "fact": "bind"},
+            ],
+        ),
+        action(
+            "bole_the_ground",
+            "Bole the ground",
+            "do",
+            {
+                "all": [
+                    {"at": "gilt.bole"},
+                    {"has_flag": "gilt_trust"},
+                    {"not_flag": "gilt_boled"},
+                    {"not_flag": "plate_burnished"},
+                ]
+            },
+            "You bole the ground. The clay sits even.",
+            [{"op": "set_flag", "flag": "gilt_boled"}],
+        ),
+        action(
+            "lay_the_leaf",
+            "Lay the leaf",
+            "do",
+            {
+                "all": [
+                    {"at": "gilt.leaf"},
+                    {"has_flag": "gilt_trust"},
+                    {"has_flag": "gilt_boled"},
+                    {"not_flag": "gilt_laid"},
+                    {"not_flag": "plate_burnished"},
+                ]
+            },
+            "You lay the leaf. The gold comes flat.",
+            [{"op": "set_flag", "flag": "gilt_laid"}],
+        ),
+        action(
+            "burnish_the_plate",
+            "Burnish the plate",
+            "do",
+            {
+                "all": [
+                    {"at": "gilt.burnish"},
+                    {"has_flag": "gilt_trust"},
+                    {"has_flag": "gilt_laid"},
+                    {"has_item": "gold_leaf"},
+                    {"not_flag": "plate_burnished"},
+                ]
+            },
+            "You burnish the plate. Burnish pins the gold.",
+            [
+                {"op": "remove_item", "item": "gold_leaf"},
+                {"op": "set_flag", "flag": "plate_burnished"},
+                {"op": "remember", "actor": "burnish", "fact": "shine"},
+            ],
+        ),
+        action(
+            "ask_bole_rule",
+            "Ask Bole the rule",
+            "talk",
+            {"at": "gilt.yard"},
+            "Bole says bole the ground. Then lay and burnish.",
+            [{"op": "set_flag", "flag": "heard_gilt_rule"}],
+        ),
+        action(
+            "ask_leaf_lay",
+            "Ask Leaf the lay",
+            "talk",
+            {"at": "gilt.leaf"},
+            "Leaf says lay until the gold is flat.",
+            [{"op": "set_flag", "flag": "heard_gilt_rule"}],
+        ),
+        action(
+            "ask_burnish_shine",
+            "Ask Burnish the shine",
+            "talk",
+            {"at": "gilt.burnish"},
+            "Burnish shines only laid leaf.",
+            [{"op": "set_flag", "flag": "heard_gilt_rule"}],
+        ),
+        action(
+            "know_the_foil",
+            "Know the foil",
+            "talk",
+            {
+                "all": [
+                    {"at": "gem.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "gem_trust"},
+                ]
+            },
+            "You name the foil. Foil lets you beat and close.",
+            [
+                {"op": "set_flag", "flag": "gem_trust"},
+                {"op": "remember", "actor": "foil", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_gem_list",
+            "Read the gem list",
+            "do",
+            {
+                "all": [
+                    {"at": "gem.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "gem_trust"},
+                ]
+            },
+            "You read the gem list. Foil lets you beat and close.",
+            [
+                {"op": "set_flag", "flag": "gem_trust"},
+                {"op": "remember", "actor": "foil", "fact": "list"},
+            ],
+        ),
+        action(
+            "gilt_the_foil",
+            "Gilt the foil",
+            "do",
+            {
+                "all": [
+                    {"at": "gem.foil"},
+                    {"has_flag": "plate_burnished"},
+                    {"not_flag": "gem_gilted"},
+                ]
+            },
+            "You gilt the foil. The gold takes the seat.",
+            [
+                {"op": "set_flag", "flag": "gem_gilted"},
+                {"op": "set_flag", "flag": "gem_trust"},
+                {"op": "remember", "actor": "foil", "fact": "gilt"},
+            ],
+        ),
+        action(
+            "beat_the_foil",
+            "Beat the foil",
+            "do",
+            {
+                "all": [
+                    {"at": "gem.foil"},
+                    {"has_flag": "gem_trust"},
+                    {"not_flag": "gem_beaten"},
+                    {"not_flag": "collet_closed"},
+                ]
+            },
+            "You beat the foil. The gold sits even.",
+            [{"op": "set_flag", "flag": "gem_beaten"}],
+        ),
+        action(
+            "seat_the_gem",
+            "Seat the gem",
+            "do",
+            {
+                "all": [
+                    {"at": "gem.seat"},
+                    {"has_flag": "gem_trust"},
+                    {"has_flag": "gem_beaten"},
+                    {"not_flag": "gem_seated"},
+                    {"not_flag": "collet_closed"},
+                ]
+            },
+            "You seat the gem. The cabochon sits true.",
+            [{"op": "set_flag", "flag": "gem_seated"}],
+        ),
+        action(
+            "close_the_collet",
+            "Close the collet",
+            "do",
+            {
+                "all": [
+                    {"at": "gem.collet"},
+                    {"has_flag": "gem_trust"},
+                    {"has_flag": "gem_seated"},
+                    {"has_item": "cabochon"},
+                    {"not_flag": "collet_closed"},
+                ]
+            },
+            "You close the collet. Collet pins the rim.",
+            [
+                {"op": "remove_item", "item": "cabochon"},
+                {"op": "set_flag", "flag": "collet_closed"},
+                {"op": "remember", "actor": "collet", "fact": "close"},
+            ],
+        ),
+        action(
+            "ask_foil_rule",
+            "Ask Foil the rule",
+            "talk",
+            {"at": "gem.yard"},
+            "Foil says beat the foil. Then seat and close.",
+            [{"op": "set_flag", "flag": "heard_gem_rule"}],
+        ),
+        action(
+            "ask_seat_gem",
+            "Ask Seat the bezel",
+            "talk",
+            {"at": "gem.seat"},
+            "Seat says seat until the gem sits true.",
+            [{"op": "set_flag", "flag": "heard_gem_rule"}],
+        ),
+        action(
+            "ask_collet_rim",
+            "Ask Collet the rim",
+            "talk",
+            {"at": "gem.collet"},
+            "Collet closes only seated gems.",
+            [{"op": "set_flag", "flag": "heard_gem_rule"}],
+        ),
+        action(
+            "know_the_score",
+            "Know the score",
+            "talk",
+            {
+                "all": [
+                    {"at": "glaz.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "glaz_trust"},
+                ]
+            },
+            "You name the score. Score lets you groze and came.",
+            [
+                {"op": "set_flag", "flag": "glaz_trust"},
+                {"op": "remember", "actor": "score", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_glazier_list",
+            "Read the glazier list",
+            "do",
+            {
+                "all": [
+                    {"at": "glaz.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "glaz_trust"},
+                ]
+            },
+            "You read the glazier list. Score lets you groze and came.",
+            [
+                {"op": "set_flag", "flag": "glaz_trust"},
+                {"op": "remember", "actor": "score", "fact": "list"},
+            ],
+        ),
+        action(
+            "gem_the_score",
+            "Gem the score",
+            "do",
+            {
+                "all": [
+                    {"at": "glaz.score"},
+                    {"has_flag": "collet_closed"},
+                    {"not_flag": "glaz_gemmed"},
+                ]
+            },
+            "You set the diamond. The score takes the point.",
+            [
+                {"op": "set_flag", "flag": "glaz_gemmed"},
+                {"op": "set_flag", "flag": "glaz_trust"},
+                {"op": "remember", "actor": "score", "fact": "gem"},
+            ],
+        ),
+        action(
+            "score_the_quarry",
+            "Score the quarry",
+            "do",
+            {
+                "all": [
+                    {"at": "glaz.score"},
+                    {"has_flag": "glaz_trust"},
+                    {"not_flag": "glaz_scored"},
+                    {"not_flag": "pane_camed"},
+                ]
+            },
+            "You score the quarry. The cut sits even.",
+            [{"op": "set_flag", "flag": "glaz_scored"}],
+        ),
+        action(
+            "groze_the_edge",
+            "Groze the edge",
+            "do",
+            {
+                "all": [
+                    {"at": "glaz.groze"},
+                    {"has_flag": "glaz_trust"},
+                    {"has_flag": "glaz_scored"},
+                    {"not_flag": "glaz_grozed"},
+                    {"not_flag": "pane_camed"},
+                ]
+            },
+            "You groze the edge. The bite comes true.",
+            [{"op": "set_flag", "flag": "glaz_grozed"}],
+        ),
+        action(
+            "came_the_pane",
+            "Came the pane",
+            "do",
+            {
+                "all": [
+                    {"at": "glaz.came"},
+                    {"has_flag": "glaz_trust"},
+                    {"has_flag": "glaz_grozed"},
+                    {"has_item": "came_strip"},
+                    {"not_flag": "pane_camed"},
+                ]
+            },
+            "You came the pane. Came pins the lead.",
+            [
+                {"op": "remove_item", "item": "came_strip"},
+                {"op": "set_flag", "flag": "pane_camed"},
+                {"op": "remember", "actor": "came", "fact": "came"},
+            ],
+        ),
+        action(
+            "ask_score_rule",
+            "Ask Score the rule",
+            "talk",
+            {"at": "glaz.yard"},
+            "Score says score the quarry. Then groze and came.",
+            [{"op": "set_flag", "flag": "heard_glaz_rule"}],
+        ),
+        action(
+            "ask_groze_iron",
+            "Ask Groze the iron",
+            "talk",
+            {"at": "glaz.groze"},
+            "Groze says groze until the bite is true.",
+            [{"op": "set_flag", "flag": "heard_glaz_rule"}],
+        ),
+        action(
+            "ask_came_lead",
+            "Ask Came the lead",
+            "talk",
+            {"at": "glaz.came"},
+            "Came leads only grozed panes.",
+            [{"op": "set_flag", "flag": "heard_glaz_rule"}],
+        ),
+        action(
+            "know_the_stile",
+            "Know the stile",
+            "talk",
+            {
+                "all": [
+                    {"at": "sash.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "sash_trust"},
+                ]
+            },
+            "You name the stile. Stile lets you rebate and pin.",
+            [
+                {"op": "set_flag", "flag": "sash_trust"},
+                {"op": "remember", "actor": "stile", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_sash_list",
+            "Read the sash list",
+            "do",
+            {
+                "all": [
+                    {"at": "sash.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "sash_trust"},
+                ]
+            },
+            "You read the sash list. Stile lets you rebate and pin.",
+            [
+                {"op": "set_flag", "flag": "sash_trust"},
+                {"op": "remember", "actor": "stile", "fact": "list"},
+            ],
+        ),
+        action(
+            "came_the_rebate",
+            "Came the rebate",
+            "do",
+            {
+                "all": [
+                    {"at": "sash.stile"},
+                    {"has_flag": "pane_camed"},
+                    {"not_flag": "sash_camed"},
+                ]
+            },
+            "You set the pane. The rebate takes the came.",
+            [
+                {"op": "set_flag", "flag": "sash_camed"},
+                {"op": "set_flag", "flag": "sash_trust"},
+                {"op": "remember", "actor": "stile", "fact": "came"},
+            ],
+        ),
+        action(
+            "rebate_the_stile",
+            "Rebate the stile",
+            "do",
+            {
+                "all": [
+                    {"at": "sash.stile"},
+                    {"has_flag": "sash_trust"},
+                    {"not_flag": "sash_rebated"},
+                    {"not_flag": "sash_pinned"},
+                ]
+            },
+            "You rebate the stile. The groove sits even.",
+            [{"op": "set_flag", "flag": "sash_rebated"}],
+        ),
+        action(
+            "tenon_the_rail",
+            "Tenon the rail",
+            "do",
+            {
+                "all": [
+                    {"at": "sash.rail"},
+                    {"has_flag": "sash_trust"},
+                    {"has_flag": "sash_rebated"},
+                    {"not_flag": "sash_tenoned"},
+                    {"not_flag": "sash_pinned"},
+                ]
+            },
+            "You tenon the rail. The joint comes tight.",
+            [{"op": "set_flag", "flag": "sash_tenoned"}],
+        ),
+        action(
+            "pin_the_sash",
+            "Pin the sash",
+            "do",
+            {
+                "all": [
+                    {"at": "sash.pin"},
+                    {"has_flag": "sash_trust"},
+                    {"has_flag": "sash_tenoned"},
+                    {"has_item": "sash_peg"},
+                    {"not_flag": "sash_pinned"},
+                ]
+            },
+            "You pin the sash. Pin locks the frame.",
+            [
+                {"op": "remove_item", "item": "sash_peg"},
+                {"op": "set_flag", "flag": "sash_pinned"},
+                {"op": "remember", "actor": "pin", "fact": "pin"},
+            ],
+        ),
+        action(
+            "ask_stile_rule",
+            "Ask Stile the rule",
+            "talk",
+            {"at": "sash.yard"},
+            "Stile says rebate the stile. Then tenon and pin.",
+            [{"op": "set_flag", "flag": "heard_sash_rule"}],
+        ),
+        action(
+            "ask_rail_tenon",
+            "Ask Rail the tenon",
+            "talk",
+            {"at": "sash.rail"},
+            "Rail says tenon until the joint is tight.",
+            [{"op": "set_flag", "flag": "heard_sash_rule"}],
+        ),
+        action(
+            "ask_pin_wedge",
+            "Ask Pin the wedge",
+            "talk",
+            {"at": "sash.pin"},
+            "Pin pins only tenoned sashes.",
+            [{"op": "set_flag", "flag": "heard_sash_rule"}],
+        ),
+        action(
+            "know_the_whip",
+            "Know the whip",
+            "talk",
+            {
+                "all": [
+                    {"at": "putty.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "putty_trust"},
+                ]
+            },
+            "You name the whip. Whip lets you knife and dust.",
+            [
+                {"op": "set_flag", "flag": "putty_trust"},
+                {"op": "remember", "actor": "whip", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_putty_list",
+            "Read the putty list",
+            "do",
+            {
+                "all": [
+                    {"at": "putty.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "putty_trust"},
+                ]
+            },
+            "You read the putty list. Whip lets you knife and dust.",
+            [
+                {"op": "set_flag", "flag": "putty_trust"},
+                {"op": "remember", "actor": "whip", "fact": "list"},
+            ],
+        ),
+        action(
+            "sash_the_bed",
+            "Sash the bed",
+            "do",
+            {
+                "all": [
+                    {"at": "putty.whip"},
+                    {"has_flag": "sash_pinned"},
+                    {"not_flag": "putty_sashed"},
+                ]
+            },
+            "You bed the sash. The putty takes the frame.",
+            [
+                {"op": "set_flag", "flag": "putty_sashed"},
+                {"op": "set_flag", "flag": "putty_trust"},
+                {"op": "remember", "actor": "whip", "fact": "sash"},
+            ],
+        ),
+        action(
+            "whip_the_putty",
+            "Whip the putty",
+            "do",
+            {
+                "all": [
+                    {"at": "putty.whip"},
+                    {"has_flag": "putty_trust"},
+                    {"not_flag": "putty_whipped"},
+                    {"not_flag": "light_dusted"},
+                ]
+            },
+            "You whip the putty. The mix sits even.",
+            [{"op": "set_flag", "flag": "putty_whipped"}],
+        ),
+        action(
+            "knife_the_bed",
+            "Knife the bed",
+            "do",
+            {
+                "all": [
+                    {"at": "putty.knife"},
+                    {"has_flag": "putty_trust"},
+                    {"has_flag": "putty_whipped"},
+                    {"not_flag": "putty_knifed"},
+                    {"not_flag": "light_dusted"},
+                ]
+            },
+            "You knife the bed. The fillet comes true.",
+            [{"op": "set_flag", "flag": "putty_knifed"}],
+        ),
+        action(
+            "dust_the_light",
+            "Dust the light",
+            "do",
+            {
+                "all": [
+                    {"at": "putty.dust"},
+                    {"has_flag": "putty_trust"},
+                    {"has_flag": "putty_knifed"},
+                    {"has_item": "putty_knife"},
+                    {"not_flag": "light_dusted"},
+                ]
+            },
+            "You dust the light. Dust pins the chalk.",
+            [
+                {"op": "remove_item", "item": "putty_knife"},
+                {"op": "set_flag", "flag": "light_dusted"},
+                {"op": "remember", "actor": "dust", "fact": "dust"},
+            ],
+        ),
+        action(
+            "ask_whip_rule",
+            "Ask Whip the rule",
+            "talk",
+            {"at": "putty.yard"},
+            "Whip says whip the putty. Then knife and dust.",
+            [{"op": "set_flag", "flag": "heard_putty_rule"}],
+        ),
+        action(
+            "ask_knife_lip",
+            "Ask Knife the lip",
+            "talk",
+            {"at": "putty.knife"},
+            "Knife says knife until the bed is tight.",
+            [{"op": "set_flag", "flag": "heard_putty_rule"}],
+        ),
+        action(
+            "ask_dust_chalk",
+            "Ask Dust the chalk",
+            "talk",
+            {"at": "putty.dust"},
+            "Dust dusts only knifed beds.",
+            [{"op": "set_flag", "flag": "heard_putty_rule"}],
+        ),
+        action(
+            "know_the_mull",
+            "Know the mull",
+            "talk",
+            {
+                "all": [
+                    {"at": "paint.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "paint_trust"},
+                ]
+            },
+            "You name the mull. Mull lets you mix and brush.",
+            [
+                {"op": "set_flag", "flag": "paint_trust"},
+                {"op": "remember", "actor": "mull", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_paint_list",
+            "Read the paint list",
+            "do",
+            {
+                "all": [
+                    {"at": "paint.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "paint_trust"},
+                ]
+            },
+            "You read the paint list. Mull lets you mix and brush.",
+            [
+                {"op": "set_flag", "flag": "paint_trust"},
+                {"op": "remember", "actor": "mull", "fact": "list"},
+            ],
+        ),
+        action(
+            "dust_the_coat",
+            "Dust the coat",
+            "do",
+            {
+                "all": [
+                    {"at": "paint.mull"},
+                    {"has_flag": "light_dusted"},
+                    {"not_flag": "paint_dusted"},
+                ]
+            },
+            "You prime the light. The coat takes the sash.",
+            [
+                {"op": "set_flag", "flag": "paint_dusted"},
+                {"op": "set_flag", "flag": "paint_trust"},
+                {"op": "remember", "actor": "mull", "fact": "dust"},
+            ],
+        ),
+        action(
+            "mull_the_colour",
+            "Mull the colour",
+            "do",
+            {
+                "all": [
+                    {"at": "paint.mull"},
+                    {"has_flag": "paint_trust"},
+                    {"not_flag": "paint_mulled"},
+                    {"not_flag": "coat_brushed"},
+                ]
+            },
+            "You mull the colour. The paste sits even.",
+            [{"op": "set_flag", "flag": "paint_mulled"}],
+        ),
+        action(
+            "mix_the_oil",
+            "Mix the oil",
+            "do",
+            {
+                "all": [
+                    {"at": "paint.oil"},
+                    {"has_flag": "paint_trust"},
+                    {"has_flag": "paint_mulled"},
+                    {"not_flag": "paint_mixed"},
+                    {"not_flag": "coat_brushed"},
+                ]
+            },
+            "You mix the oil. The paint comes true.",
+            [{"op": "set_flag", "flag": "paint_mixed"}],
+        ),
+        action(
+            "brush_the_coat",
+            "Brush the coat",
+            "do",
+            {
+                "all": [
+                    {"at": "paint.brush"},
+                    {"has_flag": "paint_trust"},
+                    {"has_flag": "paint_mixed"},
+                    {"has_item": "paint_brush"},
+                    {"not_flag": "coat_brushed"},
+                ]
+            },
+            "You brush the coat. Brush pins the film.",
+            [
+                {"op": "remove_item", "item": "paint_brush"},
+                {"op": "set_flag", "flag": "coat_brushed"},
+                {"op": "remember", "actor": "brush", "fact": "coat"},
+            ],
+        ),
+        action(
+            "ask_mull_rule",
+            "Ask Mull the rule",
+            "talk",
+            {"at": "paint.yard"},
+            "Mull says mull the colour. Then mix and brush.",
+            [{"op": "set_flag", "flag": "heard_paint_rule"}],
+        ),
+        action(
+            "ask_oil_mix",
+            "Ask Oil the mix",
+            "talk",
+            {"at": "paint.oil"},
+            "Oil says mix until the paint is even.",
+            [{"op": "set_flag", "flag": "heard_paint_rule"}],
+        ),
+        action(
+            "ask_brush_nap",
+            "Ask Brush the nap",
+            "talk",
+            {"at": "paint.brush"},
+            "Brush coats only mixed paint.",
+            [{"op": "set_flag", "flag": "heard_paint_rule"}],
+        ),
+        action(
+            "know_the_cook",
+            "Know the cook",
+            "talk",
+            {
+                "all": [
+                    {"at": "varn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "varn_trust"},
+                ]
+            },
+            "You name the cook. Cook lets you strain and flow.",
+            [
+                {"op": "set_flag", "flag": "varn_trust"},
+                {"op": "remember", "actor": "cook", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_varnish_list",
+            "Read the varnish list",
+            "do",
+            {
+                "all": [
+                    {"at": "varn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "varn_trust"},
+                ]
+            },
+            "You read the varnish list. Cook lets you strain and flow.",
+            [
+                {"op": "set_flag", "flag": "varn_trust"},
+                {"op": "remember", "actor": "cook", "fact": "list"},
+            ],
+        ),
+        action(
+            "prime_the_gum",
+            "Prime the gum",
+            "do",
+            {
+                "all": [
+                    {"at": "varn.cook"},
+                    {"has_flag": "coat_brushed"},
+                    {"not_flag": "varn_primed"},
+                ]
+            },
+            "You set the coat. The gum takes the brush.",
+            [
+                {"op": "set_flag", "flag": "varn_primed"},
+                {"op": "set_flag", "flag": "varn_trust"},
+                {"op": "remember", "actor": "cook", "fact": "gum"},
+            ],
+        ),
+        action(
+            "cook_the_resin",
+            "Cook the resin",
+            "do",
+            {
+                "all": [
+                    {"at": "varn.cook"},
+                    {"has_flag": "varn_trust"},
+                    {"not_flag": "varn_cooked"},
+                    {"not_flag": "varnish_flowed"},
+                ]
+            },
+            "You cook the resin. The gum sits even.",
+            [{"op": "set_flag", "flag": "varn_cooked"}],
+        ),
+        action(
+            "strain_the_gum",
+            "Strain the gum",
+            "do",
+            {
+                "all": [
+                    {"at": "varn.strain"},
+                    {"has_flag": "varn_trust"},
+                    {"has_flag": "varn_cooked"},
+                    {"not_flag": "varn_strained"},
+                    {"not_flag": "varnish_flowed"},
+                ]
+            },
+            "You strain the gum. The varnish comes true.",
+            [{"op": "set_flag", "flag": "varn_strained"}],
+        ),
+        action(
+            "flow_the_coat",
+            "Flow the coat",
+            "do",
+            {
+                "all": [
+                    {"at": "varn.flow"},
+                    {"has_flag": "varn_trust"},
+                    {"has_flag": "varn_strained"},
+                    {"has_item": "gum_cloth"},
+                    {"not_flag": "varnish_flowed"},
+                ]
+            },
+            "You flow the coat. Flow pins the film.",
+            [
+                {"op": "remove_item", "item": "gum_cloth"},
+                {"op": "set_flag", "flag": "varnish_flowed"},
+                {"op": "remember", "actor": "flow", "fact": "coat"},
+            ],
+        ),
+        action(
+            "ask_cook_gum",
+            "Ask Cook the gum",
+            "talk",
+            {"at": "varn.yard"},
+            "Cook says cook the resin. Then strain and flow.",
+            [{"op": "set_flag", "flag": "heard_varn_rule"}],
+        ),
+        action(
+            "ask_strain_cloth",
+            "Ask Strain the cloth",
+            "talk",
+            {"at": "varn.strain"},
+            "Strain says strain until the gum is clear.",
+            [{"op": "set_flag", "flag": "heard_varn_rule"}],
+        ),
+        action(
+            "ask_flow_film",
+            "Ask Flow the film",
+            "talk",
+            {"at": "varn.flow"},
+            "Flow coats only strained gum.",
+            [{"op": "set_flag", "flag": "heard_varn_rule"}],
+        ),
+        action(
+            "know_the_keep",
+            "Know the keep",
+            "talk",
+            {
+                "all": [
+                    {"at": "latch.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "latch_trust"},
+                ]
+            },
+            "You name the keep. Keep lets you fit and throw.",
+            [
+                {"op": "set_flag", "flag": "latch_trust"},
+                {"op": "remember", "actor": "keep", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_latch_list",
+            "Read the latch list",
+            "do",
+            {
+                "all": [
+                    {"at": "latch.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "latch_trust"},
+                ]
+            },
+            "You read the latch list. Keep lets you fit and throw.",
+            [
+                {"op": "set_flag", "flag": "latch_trust"},
+                {"op": "remember", "actor": "keep", "fact": "list"},
+            ],
+        ),
+        action(
+            "varnish_the_keep",
+            "Varnish the keep",
+            "do",
+            {
+                "all": [
+                    {"at": "latch.keep"},
+                    {"has_flag": "varnish_flowed"},
+                    {"not_flag": "latch_primed"},
+                ]
+            },
+            "You set the coat. The keep takes the film.",
+            [
+                {"op": "set_flag", "flag": "latch_primed"},
+                {"op": "set_flag", "flag": "latch_trust"},
+                {"op": "remember", "actor": "keep", "fact": "gum"},
+            ],
+        ),
+        action(
+            "file_the_keep",
+            "File the keep",
+            "do",
+            {
+                "all": [
+                    {"at": "latch.keep"},
+                    {"has_flag": "latch_trust"},
+                    {"not_flag": "latch_filed"},
+                    {"not_flag": "latch_thrown"},
+                ]
+            },
+            "You file the keep. The plate sits even.",
+            [{"op": "set_flag", "flag": "latch_filed"}],
+        ),
+        action(
+            "fit_the_catch",
+            "Fit the catch",
+            "do",
+            {
+                "all": [
+                    {"at": "latch.catch"},
+                    {"has_flag": "latch_trust"},
+                    {"has_flag": "latch_filed"},
+                    {"not_flag": "latch_fitted"},
+                    {"not_flag": "latch_thrown"},
+                ]
+            },
+            "You fit the catch. The latch comes true.",
+            [{"op": "set_flag", "flag": "latch_fitted"}],
+        ),
+        action(
+            "throw_the_latch",
+            "Throw the latch",
+            "do",
+            {
+                "all": [
+                    {"at": "latch.hasp"},
+                    {"has_flag": "latch_trust"},
+                    {"has_flag": "latch_fitted"},
+                    {"has_item": "latch_file"},
+                    {"not_flag": "latch_thrown"},
+                ]
+            },
+            "You throw the latch. Hasp pins the bar.",
+            [
+                {"op": "remove_item", "item": "latch_file"},
+                {"op": "set_flag", "flag": "latch_thrown"},
+                {"op": "remember", "actor": "hasp", "fact": "bar"},
+            ],
+        ),
+        action(
+            "ask_keep_rule",
+            "Ask Keep the rule",
+            "talk",
+            {"at": "latch.yard"},
+            "Keep says file the keep. Then fit and throw.",
+            [{"op": "set_flag", "flag": "heard_latch_rule"}],
+        ),
+        action(
+            "ask_catch_plate",
+            "Ask Catch the plate",
+            "talk",
+            {"at": "latch.catch"},
+            "Catch says fit until the plate is tight.",
+            [{"op": "set_flag", "flag": "heard_latch_rule"}],
+        ),
+        action(
+            "ask_hasp_bar",
+            "Ask Hasp the bar",
+            "talk",
+            {"at": "latch.hasp"},
+            "Hasp throws only fitted catches.",
+            [{"op": "set_flag", "flag": "heard_latch_rule"}],
+        ),
+        action(
+            "know_the_knuckle",
+            "Know the knuckle",
+            "talk",
+            {
+                "all": [
+                    {"at": "hinge.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "hinge_trust"},
+                ]
+            },
+            "You name the knuckle. Knuckle lets you drift and ship.",
+            [
+                {"op": "set_flag", "flag": "hinge_trust"},
+                {"op": "remember", "actor": "knuckle", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_hinge_list",
+            "Read the hinge list",
+            "do",
+            {
+                "all": [
+                    {"at": "hinge.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "hinge_trust"},
+                ]
+            },
+            "You read the hinge list. Knuckle lets you drift and ship.",
+            [
+                {"op": "set_flag", "flag": "hinge_trust"},
+                {"op": "remember", "actor": "knuckle", "fact": "list"},
+            ],
+        ),
+        action(
+            "latch_the_knuckle",
+            "Latch the knuckle",
+            "do",
+            {
+                "all": [
+                    {"at": "hinge.knuckle"},
+                    {"has_flag": "latch_thrown"},
+                    {"not_flag": "hinge_primed"},
+                ]
+            },
+            "You set the latch. The knuckle takes the bar.",
+            [
+                {"op": "set_flag", "flag": "hinge_primed"},
+                {"op": "set_flag", "flag": "hinge_trust"},
+                {"op": "remember", "actor": "knuckle", "fact": "bar"},
+            ],
+        ),
+        action(
+            "form_the_knuckle",
+            "Form the knuckle",
+            "do",
+            {
+                "all": [
+                    {"at": "hinge.knuckle"},
+                    {"has_flag": "hinge_trust"},
+                    {"not_flag": "hinge_formed"},
+                    {"not_flag": "gudgeon_shipped"},
+                ]
+            },
+            "You form the knuckle. The wrap sits even.",
+            [{"op": "set_flag", "flag": "hinge_formed"}],
+        ),
+        action(
+            "drift_the_pintle",
+            "Drift the pintle",
+            "do",
+            {
+                "all": [
+                    {"at": "hinge.pintle"},
+                    {"has_flag": "hinge_trust"},
+                    {"has_flag": "hinge_formed"},
+                    {"not_flag": "hinge_drifted"},
+                    {"not_flag": "gudgeon_shipped"},
+                ]
+            },
+            "You drift the pintle. The iron comes true.",
+            [{"op": "set_flag", "flag": "hinge_drifted"}],
+        ),
+        action(
+            "ship_the_gudgeon",
+            "Ship the gudgeon",
+            "do",
+            {
+                "all": [
+                    {"at": "hinge.gudgeon"},
+                    {"has_flag": "hinge_trust"},
+                    {"has_flag": "hinge_drifted"},
+                    {"has_item": "pintle_pin"},
+                    {"not_flag": "gudgeon_shipped"},
+                ]
+            },
+            "You ship the gudgeon. Gudgeon pins the cheek.",
+            [
+                {"op": "remove_item", "item": "pintle_pin"},
+                {"op": "set_flag", "flag": "gudgeon_shipped"},
+                {"op": "remember", "actor": "gudgeon", "fact": "cheek"},
+            ],
+        ),
+        action(
+            "ask_knuckle_rule",
+            "Ask Knuckle the rule",
+            "talk",
+            {"at": "hinge.yard"},
+            "Knuckle says form the knuckle. Then drift and ship.",
+            [{"op": "set_flag", "flag": "heard_hinge_rule"}],
+        ),
+        action(
+            "ask_pintle_iron",
+            "Ask Pintle the iron",
+            "talk",
+            {"at": "hinge.pintle"},
+            "Pintle says drift until the pin is true.",
+            [{"op": "set_flag", "flag": "heard_hinge_rule"}],
+        ),
+        action(
+            "ask_gudgeon_cheek",
+            "Ask Gudgeon the cheek",
+            "talk",
+            {"at": "hinge.gudgeon"},
+            "Gudgeon ships only drifted pintles.",
+            [{"op": "set_flag", "flag": "heard_hinge_rule"}],
+        ),
+        action(
+            "know_the_slot",
+            "Know the slot",
+            "talk",
+            {
+                "all": [
+                    {"at": "stay.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "stay_trust"},
+                ]
+            },
+            "You name the slot. Slot lets you rivet and peg.",
+            [
+                {"op": "set_flag", "flag": "stay_trust"},
+                {"op": "remember", "actor": "slot", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_stay_list",
+            "Read the stay list",
+            "do",
+            {
+                "all": [
+                    {"at": "stay.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "stay_trust"},
+                ]
+            },
+            "You read the stay list. Slot lets you rivet and peg.",
+            [
+                {"op": "set_flag", "flag": "stay_trust"},
+                {"op": "remember", "actor": "slot", "fact": "list"},
+            ],
+        ),
+        action(
+            "hinge_the_slot",
+            "Hinge the slot",
+            "do",
+            {
+                "all": [
+                    {"at": "stay.slot"},
+                    {"has_flag": "gudgeon_shipped"},
+                    {"not_flag": "stay_primed"},
+                ]
+            },
+            "You set the gudgeon. The slot takes the cheek.",
+            [
+                {"op": "set_flag", "flag": "stay_primed"},
+                {"op": "set_flag", "flag": "stay_trust"},
+                {"op": "remember", "actor": "slot", "fact": "cheek"},
+            ],
+        ),
+        action(
+            "slot_the_bar",
+            "Slot the bar",
+            "do",
+            {
+                "all": [
+                    {"at": "stay.slot"},
+                    {"has_flag": "stay_trust"},
+                    {"not_flag": "stay_slotted"},
+                    {"not_flag": "casement_stayed"},
+                ]
+            },
+            "You slot the bar. The cut sits even.",
+            [{"op": "set_flag", "flag": "stay_slotted"}],
+        ),
+        action(
+            "rivet_the_arm",
+            "Rivet the arm",
+            "do",
+            {
+                "all": [
+                    {"at": "stay.arm"},
+                    {"has_flag": "stay_trust"},
+                    {"has_flag": "stay_slotted"},
+                    {"not_flag": "stay_riveted"},
+                    {"not_flag": "casement_stayed"},
+                ]
+            },
+            "You rivet the arm. The stay comes true.",
+            [{"op": "set_flag", "flag": "stay_riveted"}],
+        ),
+        action(
+            "peg_the_stay",
+            "Peg the stay",
+            "do",
+            {
+                "all": [
+                    {"at": "stay.eye"},
+                    {"has_flag": "stay_trust"},
+                    {"has_flag": "stay_riveted"},
+                    {"has_item": "stay_peg"},
+                    {"not_flag": "casement_stayed"},
+                ]
+            },
+            "You peg the stay. Eye pins the casement.",
+            [
+                {"op": "remove_item", "item": "stay_peg"},
+                {"op": "set_flag", "flag": "casement_stayed"},
+                {"op": "remember", "actor": "eye", "fact": "stay"},
+            ],
+        ),
+        action(
+            "ask_slot_rule",
+            "Ask Slot the rule",
+            "talk",
+            {"at": "stay.yard"},
+            "Slot says slot the bar. Then rivet and peg.",
+            [{"op": "set_flag", "flag": "heard_stay_rule"}],
+        ),
+        action(
+            "ask_arm_rivet",
+            "Ask Arm the plate",
+            "talk",
+            {"at": "stay.arm"},
+            "Arm says rivet until the joint is tight.",
+            [{"op": "set_flag", "flag": "heard_stay_rule"}],
+        ),
+        action(
+            "ask_eye_casement",
+            "Ask Eye the casement",
+            "talk",
+            {"at": "stay.eye"},
+            "Eye pegs only riveted arms.",
+            [{"op": "set_flag", "flag": "heard_stay_rule"}],
+        ),
+        action(
+            "know_the_sill",
+            "Know the sill",
+            "talk",
+            {
+                "all": [
+                    {"at": "sill.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "sill_trust"},
+                ]
+            },
+            "You name the sill. Sill lets you kerf and seat.",
+            [
+                {"op": "set_flag", "flag": "sill_trust"},
+                {"op": "remember", "actor": "sill", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_sill_list",
+            "Read the sill list",
+            "do",
+            {
+                "all": [
+                    {"at": "sill.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "sill_trust"},
+                ]
+            },
+            "You read the sill list. Sill lets you kerf and seat.",
+            [
+                {"op": "set_flag", "flag": "sill_trust"},
+                {"op": "remember", "actor": "sill", "fact": "list"},
+            ],
+        ),
+        action(
+            "stay_the_sill",
+            "Stay the sill",
+            "do",
+            {
+                "all": [
+                    {"at": "sill.bed"},
+                    {"has_flag": "casement_stayed"},
+                    {"not_flag": "sill_primed"},
+                ]
+            },
+            "You set the stay. The sill takes the casement.",
+            [
+                {"op": "set_flag", "flag": "sill_primed"},
+                {"op": "set_flag", "flag": "sill_trust"},
+                {"op": "remember", "actor": "sill", "fact": "stay"},
+            ],
+        ),
+        action(
+            "bed_the_sill",
+            "Bed the sill",
+            "do",
+            {
+                "all": [
+                    {"at": "sill.bed"},
+                    {"has_flag": "sill_trust"},
+                    {"not_flag": "sill_bedded"},
+                    {"not_flag": "stool_seated"},
+                ]
+            },
+            "You bed the sill. The oak sits even.",
+            [{"op": "set_flag", "flag": "sill_bedded"}],
+        ),
+        action(
+            "kerf_the_drip",
+            "Kerf the drip",
+            "do",
+            {
+                "all": [
+                    {"at": "sill.drip"},
+                    {"has_flag": "sill_trust"},
+                    {"has_flag": "sill_bedded"},
+                    {"not_flag": "sill_kerfed"},
+                    {"not_flag": "stool_seated"},
+                ]
+            },
+            "You kerf the drip. The groove comes true.",
+            [{"op": "set_flag", "flag": "sill_kerfed"}],
+        ),
+        action(
+            "seat_the_stool",
+            "Seat the stool",
+            "do",
+            {
+                "all": [
+                    {"at": "sill.stool"},
+                    {"has_flag": "sill_trust"},
+                    {"has_flag": "sill_kerfed"},
+                    {"has_item": "drip_iron"},
+                    {"not_flag": "stool_seated"},
+                ]
+            },
+            "You seat the stool. Stool pins the board.",
+            [
+                {"op": "remove_item", "item": "drip_iron"},
+                {"op": "set_flag", "flag": "stool_seated"},
+                {"op": "remember", "actor": "stool", "fact": "board"},
+            ],
+        ),
+        action(
+            "ask_sill_rule",
+            "Ask Sill the rule",
+            "talk",
+            {"at": "sill.yard"},
+            "Sill says bed the sill. Then kerf and seat.",
+            [{"op": "set_flag", "flag": "heard_sill_rule"}],
+        ),
+        action(
+            "ask_drip_groove",
+            "Ask Drip the groove",
+            "talk",
+            {"at": "sill.drip"},
+            "Drip says kerf until the water runs off.",
+            [{"op": "set_flag", "flag": "heard_sill_rule"}],
+        ),
+        action(
+            "ask_stool_board",
+            "Ask Stool the board",
+            "talk",
+            {"at": "sill.stool"},
+            "Stool seats only kerfed sills.",
+            [{"op": "set_flag", "flag": "heard_sill_rule"}],
+        ),
+        action(
+            "know_the_mitre",
+            "Know the mitre",
+            "talk",
+            {
+                "all": [
+                    {"at": "case.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "case_trust"},
+                ]
+            },
+            "You name the mitre. Mitre lets you scribe and tack.",
+            [
+                {"op": "set_flag", "flag": "case_trust"},
+                {"op": "remember", "actor": "mitre", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_casing_list",
+            "Read the casing list",
+            "do",
+            {
+                "all": [
+                    {"at": "case.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "case_trust"},
+                ]
+            },
+            "You read the casing list. Mitre lets you scribe and tack.",
+            [
+                {"op": "set_flag", "flag": "case_trust"},
+                {"op": "remember", "actor": "mitre", "fact": "list"},
+            ],
+        ),
+        action(
+            "stool_the_mitre",
+            "Stool the mitre",
+            "do",
+            {
+                "all": [
+                    {"at": "case.mitre"},
+                    {"has_flag": "stool_seated"},
+                    {"not_flag": "case_primed"},
+                ]
+            },
+            "You set the stool. The mitre takes the board.",
+            [
+                {"op": "set_flag", "flag": "case_primed"},
+                {"op": "set_flag", "flag": "case_trust"},
+                {"op": "remember", "actor": "mitre", "fact": "stool"},
+            ],
+        ),
+        action(
+            "mitre_the_head",
+            "Mitre the head",
+            "do",
+            {
+                "all": [
+                    {"at": "case.mitre"},
+                    {"has_flag": "case_trust"},
+                    {"not_flag": "case_mitred"},
+                    {"not_flag": "casing_tacked"},
+                ]
+            },
+            "You mitre the head. The cut sits even.",
+            [{"op": "set_flag", "flag": "case_mitred"}],
+        ),
+        action(
+            "scribe_the_jamb",
+            "Scribe the jamb",
+            "do",
+            {
+                "all": [
+                    {"at": "case.jamb"},
+                    {"has_flag": "case_trust"},
+                    {"has_flag": "case_mitred"},
+                    {"not_flag": "case_scribed"},
+                    {"not_flag": "casing_tacked"},
+                ]
+            },
+            "You scribe the jamb. The casing comes true.",
+            [{"op": "set_flag", "flag": "case_scribed"}],
+        ),
+        action(
+            "tack_the_return",
+            "Tack the return",
+            "do",
+            {
+                "all": [
+                    {"at": "case.tack"},
+                    {"has_flag": "case_trust"},
+                    {"has_flag": "case_scribed"},
+                    {"has_item": "return_sprig"},
+                    {"not_flag": "casing_tacked"},
+                ]
+            },
+            "You tack the return. Tack pins the casing.",
+            [
+                {"op": "remove_item", "item": "return_sprig"},
+                {"op": "set_flag", "flag": "casing_tacked"},
+                {"op": "remember", "actor": "tack", "fact": "return"},
+            ],
+        ),
+        action(
+            "ask_mitre_rule",
+            "Ask Mitre the rule",
+            "talk",
+            {"at": "case.yard"},
+            "Mitre says mitre the head. Then scribe and tack.",
+            [{"op": "set_flag", "flag": "heard_case_rule"}],
+        ),
+        action(
+            "ask_jamb_scribe",
+            "Ask Jamb the fit",
+            "talk",
+            {"at": "case.jamb"},
+            "Jamb says scribe until the joint is tight.",
+            [{"op": "set_flag", "flag": "heard_case_rule"}],
+        ),
+        action(
+            "ask_tack_sprig",
+            "Ask Tack the sprig",
+            "talk",
+            {"at": "case.tack"},
+            "Tack sets only scribed jambs.",
+            [{"op": "set_flag", "flag": "heard_case_rule"}],
+        ),
+        action(
+            "know_the_cope",
+            "Know the cope",
+            "talk",
+            {
+                "all": [
+                    {"at": "skirt.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "skirt_trust"},
+                ]
+            },
+            "You name the cope. Cope lets you plane and fix.",
+            [
+                {"op": "set_flag", "flag": "skirt_trust"},
+                {"op": "remember", "actor": "cope", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_skirting_list",
+            "Read the skirting list",
+            "do",
+            {
+                "all": [
+                    {"at": "skirt.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "skirt_trust"},
+                ]
+            },
+            "You read the skirting list. Cope lets you plane and fix.",
+            [
+                {"op": "set_flag", "flag": "skirt_trust"},
+                {"op": "remember", "actor": "cope", "fact": "list"},
+            ],
+        ),
+        action(
+            "case_the_cope",
+            "Case the cope",
+            "do",
+            {
+                "all": [
+                    {"at": "skirt.cope"},
+                    {"has_flag": "casing_tacked"},
+                    {"not_flag": "skirt_primed"},
+                ]
+            },
+            "You set the casing. The cope takes the return.",
+            [
+                {"op": "set_flag", "flag": "skirt_primed"},
+                {"op": "set_flag", "flag": "skirt_trust"},
+                {"op": "remember", "actor": "cope", "fact": "case"},
+            ],
+        ),
+        action(
+            "cope_the_inside",
+            "Cope the inside",
+            "do",
+            {
+                "all": [
+                    {"at": "skirt.cope"},
+                    {"has_flag": "skirt_trust"},
+                    {"not_flag": "skirt_coped"},
+                    {"not_flag": "plinth_fixed"},
+                ]
+            },
+            "You cope the inside. The cut sits even.",
+            [{"op": "set_flag", "flag": "skirt_coped"}],
+        ),
+        action(
+            "plane_the_base",
+            "Plane the base",
+            "do",
+            {
+                "all": [
+                    {"at": "skirt.base"},
+                    {"has_flag": "skirt_trust"},
+                    {"has_flag": "skirt_coped"},
+                    {"not_flag": "skirt_planed"},
+                    {"not_flag": "plinth_fixed"},
+                ]
+            },
+            "You plane the base. The board comes true.",
+            [{"op": "set_flag", "flag": "skirt_planed"}],
+        ),
+        action(
+            "fix_the_plinth",
+            "Fix the plinth",
+            "do",
+            {
+                "all": [
+                    {"at": "skirt.plinth"},
+                    {"has_flag": "skirt_trust"},
+                    {"has_flag": "skirt_planed"},
+                    {"has_item": "plinth_block"},
+                    {"not_flag": "plinth_fixed"},
+                ]
+            },
+            "You fix the plinth. Plinth pins the shoe.",
+            [
+                {"op": "remove_item", "item": "plinth_block"},
+                {"op": "set_flag", "flag": "plinth_fixed"},
+                {"op": "remember", "actor": "plinth", "fact": "shoe"},
+            ],
+        ),
+        action(
+            "ask_cope_rule",
+            "Ask Cope the rule",
+            "talk",
+            {"at": "skirt.yard"},
+            "Cope says cope the inside. Then plane and fix.",
+            [{"op": "set_flag", "flag": "heard_skirt_rule"}],
+        ),
+        action(
+            "ask_base_plane",
+            "Ask Base the edge",
+            "talk",
+            {"at": "skirt.base"},
+            "Base says plane until the board is true.",
+            [{"op": "set_flag", "flag": "heard_skirt_rule"}],
+        ),
+        action(
+            "ask_plinth_shoe",
+            "Ask Plinth the shoe",
+            "talk",
+            {"at": "skirt.plinth"},
+            "Plinth fixes only planed bases.",
+            [{"op": "set_flag", "flag": "heard_skirt_rule"}],
+        ),
+        action(
+            "know_the_plough",
+            "Know the plough",
+            "talk",
+            {
+                "all": [
+                    {"at": "dado.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dado_trust"},
+                ]
+            },
+            "You name the plough. Plough lets you house and cap.",
+            [
+                {"op": "set_flag", "flag": "dado_trust"},
+                {"op": "remember", "actor": "plough", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_dado_list",
+            "Read the dado list",
+            "do",
+            {
+                "all": [
+                    {"at": "dado.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dado_trust"},
+                ]
+            },
+            "You read the dado list. Plough lets you house and cap.",
+            [
+                {"op": "set_flag", "flag": "dado_trust"},
+                {"op": "remember", "actor": "plough", "fact": "list"},
+            ],
+        ),
+        action(
+            "plinth_the_dado",
+            "Plinth the dado",
+            "do",
+            {
+                "all": [
+                    {"at": "dado.plough"},
+                    {"has_flag": "plinth_fixed"},
+                    {"not_flag": "dado_primed"},
+                ]
+            },
+            "You set the plinth. The dado takes the shoe.",
+            [
+                {"op": "set_flag", "flag": "dado_primed"},
+                {"op": "set_flag", "flag": "dado_trust"},
+                {"op": "remember", "actor": "plough", "fact": "plinth"},
+            ],
+        ),
+        action(
+            "plough_the_dado",
+            "Plough the dado",
+            "do",
+            {
+                "all": [
+                    {"at": "dado.plough"},
+                    {"has_flag": "dado_trust"},
+                    {"not_flag": "dado_ploughed"},
+                    {"not_flag": "rail_capped"},
+                ]
+            },
+            "You plough the dado. The groove sits even.",
+            [{"op": "set_flag", "flag": "dado_ploughed"}],
+        ),
+        action(
+            "house_the_panel",
+            "House the panel",
+            "do",
+            {
+                "all": [
+                    {"at": "dado.panel"},
+                    {"has_flag": "dado_trust"},
+                    {"has_flag": "dado_ploughed"},
+                    {"not_flag": "dado_housed"},
+                    {"not_flag": "rail_capped"},
+                ]
+            },
+            "You house the panel. The rail comes true.",
+            [{"op": "set_flag", "flag": "dado_housed"}],
+        ),
+        action(
+            "cap_the_rail",
+            "Cap the rail",
+            "do",
+            {
+                "all": [
+                    {"at": "dado.cap"},
+                    {"has_flag": "dado_trust"},
+                    {"has_flag": "dado_housed"},
+                    {"has_item": "rail_cap"},
+                    {"not_flag": "rail_capped"},
+                ]
+            },
+            "You cap the rail. Cap pins the bead.",
+            [
+                {"op": "remove_item", "item": "rail_cap"},
+                {"op": "set_flag", "flag": "rail_capped"},
+                {"op": "remember", "actor": "cap", "fact": "rail"},
+            ],
+        ),
+        action(
+            "ask_plough_rule",
+            "Ask Plough the rule",
+            "talk",
+            {"at": "dado.yard"},
+            "Plough says plough the dado. Then house and cap.",
+            [{"op": "set_flag", "flag": "heard_dado_rule"}],
+        ),
+        action(
+            "ask_panel_fit",
+            "Ask Panel the fit",
+            "talk",
+            {"at": "dado.panel"},
+            "Panel says house until the groove is tight.",
+            [{"op": "set_flag", "flag": "heard_dado_rule"}],
+        ),
+        action(
+            "ask_cap_bead",
+            "Ask Cap the bead",
+            "talk",
+            {"at": "dado.cap"},
+            "Cap sets only housed panels.",
+            [{"op": "set_flag", "flag": "heard_dado_rule"}],
+        ),
+        action(
+            "know_the_chalk",
+            "Know the chalk",
+            "talk",
+            {
+                "all": [
+                    {"at": "pic.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "pic_trust"},
+                ]
+            },
+            "You name the chalk. Chalk lets you plug and spring.",
+            [
+                {"op": "set_flag", "flag": "pic_trust"},
+                {"op": "remember", "actor": "chalk", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_picture_list",
+            "Read the picture list",
+            "do",
+            {
+                "all": [
+                    {"at": "pic.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "pic_trust"},
+                ]
+            },
+            "You read the picture list. Chalk lets you plug and spring.",
+            [
+                {"op": "set_flag", "flag": "pic_trust"},
+                {"op": "remember", "actor": "chalk", "fact": "list"},
+            ],
+        ),
+        action(
+            "rail_the_chalk",
+            "Rail the chalk",
+            "do",
+            {
+                "all": [
+                    {"at": "pic.chalk"},
+                    {"has_flag": "rail_capped"},
+                    {"not_flag": "pic_primed"},
+                ]
+            },
+            "You set the rail. The chalk takes the height.",
+            [
+                {"op": "set_flag", "flag": "pic_primed"},
+                {"op": "set_flag", "flag": "pic_trust"},
+                {"op": "remember", "actor": "chalk", "fact": "rail"},
+            ],
+        ),
+        action(
+            "snap_the_line",
+            "Snap the line",
+            "do",
+            {
+                "all": [
+                    {"at": "pic.chalk"},
+                    {"has_flag": "pic_trust"},
+                    {"not_flag": "pic_snapped"},
+                    {"not_flag": "rail_sprung"},
+                ]
+            },
+            "You snap the line. The height sits true.",
+            [{"op": "set_flag", "flag": "pic_snapped"}],
+        ),
+        action(
+            "plug_the_brick",
+            "Plug the brick",
+            "do",
+            {
+                "all": [
+                    {"at": "pic.plug"},
+                    {"has_flag": "pic_trust"},
+                    {"has_flag": "pic_snapped"},
+                    {"not_flag": "pic_plugged"},
+                    {"not_flag": "rail_sprung"},
+                ]
+            },
+            "You plug the brick. The plug sits flush.",
+            [{"op": "set_flag", "flag": "pic_plugged"}],
+        ),
+        action(
+            "spring_the_mould",
+            "Spring the mould",
+            "do",
+            {
+                "all": [
+                    {"at": "pic.spring"},
+                    {"has_flag": "pic_trust"},
+                    {"has_flag": "pic_plugged"},
+                    {"has_item": "wall_plug"},
+                    {"not_flag": "rail_sprung"},
+                ]
+            },
+            "You spring the mould. Spring pins the hang.",
+            [
+                {"op": "remove_item", "item": "wall_plug"},
+                {"op": "set_flag", "flag": "rail_sprung"},
+                {"op": "remember", "actor": "spring", "fact": "rail"},
+            ],
+        ),
+        action(
+            "ask_chalk_rule",
+            "Ask Chalk the rule",
+            "talk",
+            {"at": "pic.yard"},
+            "Chalk says snap the line. Then plug and spring.",
+            [{"op": "set_flag", "flag": "heard_pic_rule"}],
+        ),
+        action(
+            "ask_plug_hole",
+            "Ask Plug the hole",
+            "talk",
+            {"at": "pic.plug"},
+            "Plug says drive until the brick is tight.",
+            [{"op": "set_flag", "flag": "heard_pic_rule"}],
+        ),
+        action(
+            "ask_spring_hang",
+            "Ask Spring the hang",
+            "talk",
+            {"at": "pic.spring"},
+            "Spring sets only plugged walls.",
+            [{"op": "set_flag", "flag": "heard_pic_rule"}],
+        ),
+        action(
+            "know_the_cove",
+            "Know the cove",
+            "talk",
+            {
+                "all": [
+                    {"at": "corn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "corn_trust"},
+                ]
+            },
+            "You name the cove. Cove lets you key and float.",
+            [
+                {"op": "set_flag", "flag": "corn_trust"},
+                {"op": "remember", "actor": "cove", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cornice_list",
+            "Read the cornice list",
+            "do",
+            {
+                "all": [
+                    {"at": "corn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "corn_trust"},
+                ]
+            },
+            "You read the cornice list. Cove lets you key and float.",
+            [
+                {"op": "set_flag", "flag": "corn_trust"},
+                {"op": "remember", "actor": "cove", "fact": "list"},
+            ],
+        ),
+        action(
+            "spring_the_cove",
+            "Spring the cove",
+            "do",
+            {
+                "all": [
+                    {"at": "corn.cove"},
+                    {"has_flag": "rail_sprung"},
+                    {"not_flag": "corn_primed"},
+                ]
+            },
+            "You set the sprung rail. The cove takes the height.",
+            [
+                {"op": "set_flag", "flag": "corn_primed"},
+                {"op": "set_flag", "flag": "corn_trust"},
+                {"op": "remember", "actor": "cove", "fact": "spring"},
+            ],
+        ),
+        action(
+            "run_the_cove",
+            "Run the cove",
+            "do",
+            {
+                "all": [
+                    {"at": "corn.cove"},
+                    {"has_flag": "corn_trust"},
+                    {"not_flag": "corn_run"},
+                    {"not_flag": "cornice_floated"},
+                ]
+            },
+            "You run the cove. The mould sits even.",
+            [{"op": "set_flag", "flag": "corn_run"}],
+        ),
+        action(
+            "key_the_scratch",
+            "Key the scratch",
+            "do",
+            {
+                "all": [
+                    {"at": "corn.scratch"},
+                    {"has_flag": "corn_trust"},
+                    {"has_flag": "corn_run"},
+                    {"not_flag": "corn_keyed"},
+                    {"not_flag": "cornice_floated"},
+                ]
+            },
+            "You key the scratch. The plaster bites.",
+            [{"op": "set_flag", "flag": "corn_keyed"}],
+        ),
+        action(
+            "float_the_cornice",
+            "Float the cornice",
+            "do",
+            {
+                "all": [
+                    {"at": "corn.float"},
+                    {"has_flag": "corn_trust"},
+                    {"has_flag": "corn_keyed"},
+                    {"has_item": "scratch_key"},
+                    {"not_flag": "cornice_floated"},
+                ]
+            },
+            "You float the cornice. Float pins the set.",
+            [
+                {"op": "remove_item", "item": "scratch_key"},
+                {"op": "set_flag", "flag": "cornice_floated"},
+                {"op": "remember", "actor": "float", "fact": "cornice"},
+            ],
+        ),
+        action(
+            "ask_cove_rule",
+            "Ask Cove the rule",
+            "talk",
+            {"at": "corn.yard"},
+            "Cove says run the cove. Then key and float.",
+            [{"op": "set_flag", "flag": "heard_corn_rule"}],
+        ),
+        action(
+            "ask_scratch_key",
+            "Ask Scratch the key",
+            "talk",
+            {"at": "corn.scratch"},
+            "Scratch says key until the plaster bites.",
+            [{"op": "set_flag", "flag": "heard_corn_rule"}],
+        ),
+        action(
+            "ask_float_set",
+            "Ask Float the set",
+            "talk",
+            {"at": "corn.float"},
+            "Float sets only keyed coves.",
+            [{"op": "set_flag", "flag": "heard_corn_rule"}],
+        ),
+        action(
+            "know_the_string",
+            "Know the string",
+            "talk",
+            {
+                "all": [
+                    {"at": "stair.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "stair_trust"},
+                ]
+            },
+            "You name the string. String lets you saw and wedge.",
+            [
+                {"op": "set_flag", "flag": "stair_trust"},
+                {"op": "remember", "actor": "string", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_stair_list",
+            "Read the stair list",
+            "do",
+            {
+                "all": [
+                    {"at": "stair.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "stair_trust"},
+                ]
+            },
+            "You read the stair list. String lets you saw and wedge.",
+            [
+                {"op": "set_flag", "flag": "stair_trust"},
+                {"op": "remember", "actor": "string", "fact": "list"},
+            ],
+        ),
+        action(
+            "float_the_string",
+            "Float the string",
+            "do",
+            {
+                "all": [
+                    {"at": "stair.string"},
+                    {"has_flag": "cornice_floated"},
+                    {"not_flag": "stair_primed"},
+                ]
+            },
+            "You set the cornice. The string takes the pitch.",
+            [
+                {"op": "set_flag", "flag": "stair_primed"},
+                {"op": "set_flag", "flag": "stair_trust"},
+                {"op": "remember", "actor": "string", "fact": "float"},
+            ],
+        ),
+        action(
+            "gauge_the_string",
+            "Gauge the string",
+            "do",
+            {
+                "all": [
+                    {"at": "stair.string"},
+                    {"has_flag": "stair_trust"},
+                    {"not_flag": "stair_gauged"},
+                    {"not_flag": "riser_wedged"},
+                ]
+            },
+            "You gauge the string. The pitch sits even.",
+            [{"op": "set_flag", "flag": "stair_gauged"}],
+        ),
+        action(
+            "saw_the_housing",
+            "Saw the housing",
+            "do",
+            {
+                "all": [
+                    {"at": "stair.housing"},
+                    {"has_flag": "stair_trust"},
+                    {"has_flag": "stair_gauged"},
+                    {"not_flag": "stair_sawn"},
+                    {"not_flag": "riser_wedged"},
+                ]
+            },
+            "You saw the housing. The tread seat is true.",
+            [{"op": "set_flag", "flag": "stair_sawn"}],
+        ),
+        action(
+            "wedge_the_riser",
+            "Wedge the riser",
+            "do",
+            {
+                "all": [
+                    {"at": "stair.riser"},
+                    {"has_flag": "stair_trust"},
+                    {"has_flag": "stair_sawn"},
+                    {"has_item": "riser_wedge"},
+                    {"not_flag": "riser_wedged"},
+                ]
+            },
+            "You wedge the riser. Riser pins the flight.",
+            [
+                {"op": "remove_item", "item": "riser_wedge"},
+                {"op": "set_flag", "flag": "riser_wedged"},
+                {"op": "remember", "actor": "riser", "fact": "flight"},
+            ],
+        ),
+        action(
+            "ask_string_rule",
+            "Ask String the rule",
+            "talk",
+            {"at": "stair.yard"},
+            "String says gauge the string. Then saw and wedge.",
+            [{"op": "set_flag", "flag": "heard_stair_rule"}],
+        ),
+        action(
+            "ask_housing_cut",
+            "Ask Housing the cut",
+            "talk",
+            {"at": "stair.housing"},
+            "Housing says saw until the tread seat is tight.",
+            [{"op": "set_flag", "flag": "heard_stair_rule"}],
+        ),
+        action(
+            "ask_riser_wedge",
+            "Ask Riser the wedge",
+            "talk",
+            {"at": "stair.riser"},
+            "Riser sets only sawn housings.",
+            [{"op": "set_flag", "flag": "heard_stair_rule"}],
+        ),
+        action(
+            "know_the_blank",
+            "Know the blank",
+            "talk",
+            {
+                "all": [
+                    {"at": "newel.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "newel_trust"},
+                ]
+            },
+            "You name the blank. Blank lets you mortise and dowel.",
+            [
+                {"op": "set_flag", "flag": "newel_trust"},
+                {"op": "remember", "actor": "blank", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_newel_list",
+            "Read the newel list",
+            "do",
+            {
+                "all": [
+                    {"at": "newel.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "newel_trust"},
+                ]
+            },
+            "You read the newel list. Blank lets you mortise and dowel.",
+            [
+                {"op": "set_flag", "flag": "newel_trust"},
+                {"op": "remember", "actor": "blank", "fact": "list"},
+            ],
+        ),
+        action(
+            "wedge_the_blank",
+            "Wedge the blank",
+            "do",
+            {
+                "all": [
+                    {"at": "newel.blank"},
+                    {"has_flag": "riser_wedged"},
+                    {"not_flag": "newel_primed"},
+                ]
+            },
+            "You set the riser. The blank takes the pitch.",
+            [
+                {"op": "set_flag", "flag": "newel_primed"},
+                {"op": "set_flag", "flag": "newel_trust"},
+                {"op": "remember", "actor": "blank", "fact": "wedge"},
+            ],
+        ),
+        action(
+            "turn_the_blank",
+            "Turn the blank",
+            "do",
+            {
+                "all": [
+                    {"at": "newel.blank"},
+                    {"has_flag": "newel_trust"},
+                    {"not_flag": "newel_turned"},
+                    {"not_flag": "finial_dowelled"},
+                ]
+            },
+            "You turn the blank. The newel sits round.",
+            [{"op": "set_flag", "flag": "newel_turned"}],
+        ),
+        action(
+            "mortise_the_newel",
+            "Mortise the newel",
+            "do",
+            {
+                "all": [
+                    {"at": "newel.mortise"},
+                    {"has_flag": "newel_trust"},
+                    {"has_flag": "newel_turned"},
+                    {"not_flag": "newel_mortised"},
+                    {"not_flag": "finial_dowelled"},
+                ]
+            },
+            "You mortise the newel. The seat comes true.",
+            [{"op": "set_flag", "flag": "newel_mortised"}],
+        ),
+        action(
+            "dowel_the_finial",
+            "Dowel the finial",
+            "do",
+            {
+                "all": [
+                    {"at": "newel.dowel"},
+                    {"has_flag": "newel_trust"},
+                    {"has_flag": "newel_mortised"},
+                    {"has_item": "finial_dowel"},
+                    {"not_flag": "finial_dowelled"},
+                ]
+            },
+            "You dowel the finial. Dowel pins the cap.",
+            [
+                {"op": "remove_item", "item": "finial_dowel"},
+                {"op": "set_flag", "flag": "finial_dowelled"},
+                {"op": "remember", "actor": "dowel", "fact": "finial"},
+            ],
+        ),
+        action(
+            "ask_blank_rule",
+            "Ask Blank the rule",
+            "talk",
+            {"at": "newel.yard"},
+            "Blank says turn the blank. Then mortise and dowel.",
+            [{"op": "set_flag", "flag": "heard_newel_rule"}],
+        ),
+        action(
+            "ask_mortise_seat",
+            "Ask Mortise the seat",
+            "talk",
+            {"at": "newel.mortise"},
+            "Mortise says cut until the string seat is tight.",
+            [{"op": "set_flag", "flag": "heard_newel_rule"}],
+        ),
+        action(
+            "ask_dowel_pin",
+            "Ask Dowel the pin",
+            "talk",
+            {"at": "newel.dowel"},
+            "Dowel sets only mortised newels.",
+            [{"op": "set_flag", "flag": "heard_newel_rule"}],
+        ),
+        action(
+            "know_the_stick",
+            "Know the stick",
+            "talk",
+            {
+                "all": [
+                    {"at": "hand.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "hand_trust"},
+                ]
+            },
+            "You name the stick. Stick lets you scarf and wreath.",
+            [
+                {"op": "set_flag", "flag": "hand_trust"},
+                {"op": "remember", "actor": "stick", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_handrail_list",
+            "Read the handrail list",
+            "do",
+            {
+                "all": [
+                    {"at": "hand.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "hand_trust"},
+                ]
+            },
+            "You read the handrail list. Stick lets you scarf and wreath.",
+            [
+                {"op": "set_flag", "flag": "hand_trust"},
+                {"op": "remember", "actor": "stick", "fact": "list"},
+            ],
+        ),
+        action(
+            "newel_the_stick",
+            "Newel the stick",
+            "do",
+            {
+                "all": [
+                    {"at": "hand.stick"},
+                    {"has_flag": "finial_dowelled"},
+                    {"not_flag": "hand_primed"},
+                ]
+            },
+            "You set the newel. The stick takes the height.",
+            [
+                {"op": "set_flag", "flag": "hand_primed"},
+                {"op": "set_flag", "flag": "hand_trust"},
+                {"op": "remember", "actor": "stick", "fact": "newel"},
+            ],
+        ),
+        action(
+            "stick_the_mould",
+            "Stick the mould",
+            "do",
+            {
+                "all": [
+                    {"at": "hand.stick"},
+                    {"has_flag": "hand_trust"},
+                    {"not_flag": "hand_stuck"},
+                    {"not_flag": "ramp_wreathed"},
+                ]
+            },
+            "You stick the mould. The profile sits even.",
+            [{"op": "set_flag", "flag": "hand_stuck"}],
+        ),
+        action(
+            "scarf_the_joint",
+            "Scarf the joint",
+            "do",
+            {
+                "all": [
+                    {"at": "hand.scarf"},
+                    {"has_flag": "hand_trust"},
+                    {"has_flag": "hand_stuck"},
+                    {"not_flag": "hand_scarfed"},
+                    {"not_flag": "ramp_wreathed"},
+                ]
+            },
+            "You scarf the joint. The length comes true.",
+            [{"op": "set_flag", "flag": "hand_scarfed"}],
+        ),
+        action(
+            "wreath_the_ramp",
+            "Wreath the ramp",
+            "do",
+            {
+                "all": [
+                    {"at": "hand.wreath"},
+                    {"has_flag": "hand_trust"},
+                    {"has_flag": "hand_scarfed"},
+                    {"has_item": "wreath_block"},
+                    {"not_flag": "ramp_wreathed"},
+                ]
+            },
+            "You wreath the ramp. Wreath pins the turn.",
+            [
+                {"op": "remove_item", "item": "wreath_block"},
+                {"op": "set_flag", "flag": "ramp_wreathed"},
+                {"op": "remember", "actor": "wreath", "fact": "ramp"},
+            ],
+        ),
+        action(
+            "ask_stick_rule",
+            "Ask Stick the rule",
+            "talk",
+            {"at": "hand.yard"},
+            "Stick says stick the mould. Then scarf and wreath.",
+            [{"op": "set_flag", "flag": "heard_hand_rule"}],
+        ),
+        action(
+            "ask_scarf_bevel",
+            "Ask Scarf the bevel",
+            "talk",
+            {"at": "hand.scarf"},
+            "Scarf says cut until the bevel is tight.",
+            [{"op": "set_flag", "flag": "heard_hand_rule"}],
+        ),
+        action(
+            "ask_wreath_turn",
+            "Ask Wreath the turn",
+            "talk",
+            {"at": "hand.wreath"},
+            "Wreath sets only scarfed rails.",
+            [{"op": "set_flag", "flag": "heard_hand_rule"}],
+        ),
+        action(
+            "know_the_square",
+            "Know the square",
+            "talk",
+            {
+                "all": [
+                    {"at": "bal.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "bal_trust"},
+                ]
+            },
+            "You name the square. Square lets you flute and shoulder.",
+            [
+                {"op": "set_flag", "flag": "bal_trust"},
+                {"op": "remember", "actor": "square", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_baluster_list",
+            "Read the baluster list",
+            "do",
+            {
+                "all": [
+                    {"at": "bal.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "bal_trust"},
+                ]
+            },
+            "You read the baluster list. Square lets you flute and shoulder.",
+            [
+                {"op": "set_flag", "flag": "bal_trust"},
+                {"op": "remember", "actor": "square", "fact": "list"},
+            ],
+        ),
+        action(
+            "wreath_the_square",
+            "Wreath the square",
+            "do",
+            {
+                "all": [
+                    {"at": "bal.square"},
+                    {"has_flag": "ramp_wreathed"},
+                    {"not_flag": "bal_primed"},
+                ]
+            },
+            "You set the ramp. The square takes the height.",
+            [
+                {"op": "set_flag", "flag": "bal_primed"},
+                {"op": "set_flag", "flag": "bal_trust"},
+                {"op": "remember", "actor": "square", "fact": "wreath"},
+            ],
+        ),
+        action(
+            "rip_the_square",
+            "Rip the square",
+            "do",
+            {
+                "all": [
+                    {"at": "bal.square"},
+                    {"has_flag": "bal_trust"},
+                    {"not_flag": "bal_ripped"},
+                    {"not_flag": "neck_shouldered"},
+                ]
+            },
+            "You rip the square. The blank sits true.",
+            [{"op": "set_flag", "flag": "bal_ripped"}],
+        ),
+        action(
+            "flute_the_shaft",
+            "Flute the shaft",
+            "do",
+            {
+                "all": [
+                    {"at": "bal.flute"},
+                    {"has_flag": "bal_trust"},
+                    {"has_flag": "bal_ripped"},
+                    {"not_flag": "bal_fluted"},
+                    {"not_flag": "neck_shouldered"},
+                ]
+            },
+            "You flute the shaft. The reeds sit even.",
+            [{"op": "set_flag", "flag": "bal_fluted"}],
+        ),
+        action(
+            "shoulder_the_neck",
+            "Shoulder the neck",
+            "do",
+            {
+                "all": [
+                    {"at": "bal.neck"},
+                    {"has_flag": "bal_trust"},
+                    {"has_flag": "bal_fluted"},
+                    {"has_item": "flute_iron"},
+                    {"not_flag": "neck_shouldered"},
+                ]
+            },
+            "You shoulder the neck. Neck pins the tenon.",
+            [
+                {"op": "remove_item", "item": "flute_iron"},
+                {"op": "set_flag", "flag": "neck_shouldered"},
+                {"op": "remember", "actor": "neck", "fact": "tenon"},
+            ],
+        ),
+        action(
+            "ask_square_rule",
+            "Ask Square the rule",
+            "talk",
+            {"at": "bal.yard"},
+            "Square says rip the square. Then flute and shoulder.",
+            [{"op": "set_flag", "flag": "heard_bal_rule"}],
+        ),
+        action(
+            "ask_flute_reed",
+            "Ask Flute the reed",
+            "talk",
+            {"at": "bal.flute"},
+            "Flute says cut until the reed is even.",
+            [{"op": "set_flag", "flag": "heard_bal_rule"}],
+        ),
+        action(
+            "ask_neck_seat",
+            "Ask Neck the seat",
+            "talk",
+            {"at": "bal.neck"},
+            "Neck sets only fluted shafts.",
+            [{"op": "set_flag", "flag": "heard_bal_rule"}],
+        ),
+        action(
+            "know_the_going",
+            "Know the going",
+            "talk",
+            {
+                "all": [
+                    {"at": "tread.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "tread_trust"},
+                ]
+            },
+            "You name the going. Going lets you nosing and return.",
+            [
+                {"op": "set_flag", "flag": "tread_trust"},
+                {"op": "remember", "actor": "going", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_tread_list",
+            "Read the tread list",
+            "do",
+            {
+                "all": [
+                    {"at": "tread.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "tread_trust"},
+                ]
+            },
+            "You read the tread list. Going lets you nosing and return.",
+            [
+                {"op": "set_flag", "flag": "tread_trust"},
+                {"op": "remember", "actor": "going", "fact": "list"},
+            ],
+        ),
+        action(
+            "shoulder_the_going",
+            "Shoulder the going",
+            "do",
+            {
+                "all": [
+                    {"at": "tread.going"},
+                    {"has_flag": "neck_shouldered"},
+                    {"not_flag": "tread_primed"},
+                ]
+            },
+            "You set the neck. The going takes the pitch.",
+            [
+                {"op": "set_flag", "flag": "tread_primed"},
+                {"op": "set_flag", "flag": "tread_trust"},
+                {"op": "remember", "actor": "going", "fact": "shoulder"},
+            ],
+        ),
+        action(
+            "mark_the_going",
+            "Mark the going",
+            "do",
+            {
+                "all": [
+                    {"at": "tread.going"},
+                    {"has_flag": "tread_trust"},
+                    {"not_flag": "tread_marked"},
+                    {"not_flag": "end_returned"},
+                ]
+            },
+            "You mark the going. The pitch sits even.",
+            [{"op": "set_flag", "flag": "tread_marked"}],
+        ),
+        action(
+            "nosing_the_edge",
+            "Nosing the edge",
+            "do",
+            {
+                "all": [
+                    {"at": "tread.nosing"},
+                    {"has_flag": "tread_trust"},
+                    {"has_flag": "tread_marked"},
+                    {"not_flag": "tread_nosed"},
+                    {"not_flag": "end_returned"},
+                ]
+            },
+            "You nosing the edge. The bull sits round.",
+            [{"op": "set_flag", "flag": "tread_nosed"}],
+        ),
+        action(
+            "return_the_end",
+            "Return the end",
+            "do",
+            {
+                "all": [
+                    {"at": "tread.end"},
+                    {"has_flag": "tread_trust"},
+                    {"has_flag": "tread_nosed"},
+                    {"has_item": "nosing_iron"},
+                    {"not_flag": "end_returned"},
+                ]
+            },
+            "You return the end. Return pins the wrap.",
+            [
+                {"op": "remove_item", "item": "nosing_iron"},
+                {"op": "set_flag", "flag": "end_returned"},
+                {"op": "remember", "actor": "wrap", "fact": "end"},
+            ],
+        ),
+        action(
+            "ask_going_rule",
+            "Ask Going the rule",
+            "talk",
+            {"at": "tread.yard"},
+            "Going says mark the going. Then nosing and return.",
+            [{"op": "set_flag", "flag": "heard_tread_rule"}],
+        ),
+        action(
+            "ask_nosing_bull",
+            "Ask Nosing the bull",
+            "talk",
+            {"at": "tread.nosing"},
+            "Nosing says round until the bull is even.",
+            [{"op": "set_flag", "flag": "heard_tread_rule"}],
+        ),
+        action(
+            "ask_return_wrap",
+            "Ask Return the wrap",
+            "talk",
+            {"at": "tread.end"},
+            "Return sets only nosed edges.",
+            [{"op": "set_flag", "flag": "heard_tread_rule"}],
+        ),
+        action(
+            "know_the_shot",
+            "Know the shot",
+            "talk",
+            {
+                "all": [
+                    {"at": "floor.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "floor_trust"},
+                ]
+            },
+            "You name the shot. Shot lets you tongue and secret.",
+            [
+                {"op": "set_flag", "flag": "floor_trust"},
+                {"op": "remember", "actor": "shot", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_floor_list",
+            "Read the floor list",
+            "do",
+            {
+                "all": [
+                    {"at": "floor.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "floor_trust"},
+                ]
+            },
+            "You read the floor list. Shot lets you tongue and secret.",
+            [
+                {"op": "set_flag", "flag": "floor_trust"},
+                {"op": "remember", "actor": "shot", "fact": "list"},
+            ],
+        ),
+        action(
+            "return_the_shot",
+            "Return the shot",
+            "do",
+            {
+                "all": [
+                    {"at": "floor.shot"},
+                    {"has_flag": "end_returned"},
+                    {"not_flag": "floor_primed"},
+                ]
+            },
+            "You set the return. The shot takes the wrap.",
+            [
+                {"op": "set_flag", "flag": "floor_primed"},
+                {"op": "set_flag", "flag": "floor_trust"},
+                {"op": "remember", "actor": "shot", "fact": "return"},
+            ],
+        ),
+        action(
+            "shoot_the_edge",
+            "Shoot the edge",
+            "do",
+            {
+                "all": [
+                    {"at": "floor.shot"},
+                    {"has_flag": "floor_trust"},
+                    {"not_flag": "floor_shot"},
+                    {"not_flag": "nail_secreted"},
+                ]
+            },
+            "You shoot the edge. The arris sits true.",
+            [{"op": "set_flag", "flag": "floor_shot"}],
+        ),
+        action(
+            "tongue_the_groove",
+            "Tongue the groove",
+            "do",
+            {
+                "all": [
+                    {"at": "floor.tongue"},
+                    {"has_flag": "floor_trust"},
+                    {"has_flag": "floor_shot"},
+                    {"not_flag": "floor_tongued"},
+                    {"not_flag": "nail_secreted"},
+                ]
+            },
+            "You tongue the groove. The meeting sits tight.",
+            [{"op": "set_flag", "flag": "floor_tongued"}],
+        ),
+        action(
+            "secret_the_nail",
+            "Secret the nail",
+            "do",
+            {
+                "all": [
+                    {"at": "floor.secret"},
+                    {"has_flag": "floor_trust"},
+                    {"has_flag": "floor_tongued"},
+                    {"has_item": "groove_iron"},
+                    {"not_flag": "nail_secreted"},
+                ]
+            },
+            "You secret the nail. Blind hides the sprig.",
+            [
+                {"op": "remove_item", "item": "groove_iron"},
+                {"op": "set_flag", "flag": "nail_secreted"},
+                {"op": "remember", "actor": "blind", "fact": "secret"},
+            ],
+        ),
+        action(
+            "ask_shot_rule",
+            "Ask Shot the rule",
+            "talk",
+            {"at": "floor.yard"},
+            "Shot says shoot the edge. Then tongue and secret.",
+            [{"op": "set_flag", "flag": "heard_floor_rule"}],
+        ),
+        action(
+            "ask_groove_meet",
+            "Ask Groove the meeting",
+            "talk",
+            {"at": "floor.tongue"},
+            "Groove says plough until the meeting is even.",
+            [{"op": "set_flag", "flag": "heard_floor_rule"}],
+        ),
+        action(
+            "ask_blind_hide",
+            "Ask Blind the hide",
+            "talk",
+            {"at": "floor.secret"},
+            "Blind sets only tongued boards.",
+            [{"op": "set_flag", "flag": "heard_floor_rule"}],
+        ),
+        action(
+            "know_the_span",
+            "Know the span",
+            "talk",
+            {
+                "all": [
+                    {"at": "joist.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "joist_trust"},
+                ]
+            },
+            "You name the span. Span lets you notch and crown.",
+            [
+                {"op": "set_flag", "flag": "joist_trust"},
+                {"op": "remember", "actor": "span", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_joist_list",
+            "Read the joist list",
+            "do",
+            {
+                "all": [
+                    {"at": "joist.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "joist_trust"},
+                ]
+            },
+            "You read the joist list. Span lets you notch and crown.",
+            [
+                {"op": "set_flag", "flag": "joist_trust"},
+                {"op": "remember", "actor": "span", "fact": "list"},
+            ],
+        ),
+        action(
+            "board_the_span",
+            "Board the span",
+            "do",
+            {
+                "all": [
+                    {"at": "joist.space"},
+                    {"has_flag": "nail_secreted"},
+                    {"not_flag": "joist_primed"},
+                ]
+            },
+            "You set the boards. The span takes the secret.",
+            [
+                {"op": "set_flag", "flag": "joist_primed"},
+                {"op": "set_flag", "flag": "joist_trust"},
+                {"op": "remember", "actor": "span", "fact": "board"},
+            ],
+        ),
+        action(
+            "space_the_joist",
+            "Space the joist",
+            "do",
+            {
+                "all": [
+                    {"at": "joist.space"},
+                    {"has_flag": "joist_trust"},
+                    {"not_flag": "joist_spaced"},
+                    {"not_flag": "camber_crowned"},
+                ]
+            },
+            "You space the joist. The centres sit even.",
+            [{"op": "set_flag", "flag": "joist_spaced"}],
+        ),
+        action(
+            "notch_the_trimmer",
+            "Notch the trimmer",
+            "do",
+            {
+                "all": [
+                    {"at": "joist.trimmer"},
+                    {"has_flag": "joist_trust"},
+                    {"has_flag": "joist_spaced"},
+                    {"not_flag": "joist_notched"},
+                    {"not_flag": "camber_crowned"},
+                ]
+            },
+            "You notch the trimmer. The well sits square.",
+            [{"op": "set_flag", "flag": "joist_notched"}],
+        ),
+        action(
+            "crown_the_camber",
+            "Crown the camber",
+            "do",
+            {
+                "all": [
+                    {"at": "joist.crown"},
+                    {"has_flag": "joist_trust"},
+                    {"has_flag": "joist_notched"},
+                    {"has_item": "notch_saw"},
+                    {"not_flag": "camber_crowned"},
+                ]
+            },
+            "You crown the camber. Camber lifts the run.",
+            [
+                {"op": "remove_item", "item": "notch_saw"},
+                {"op": "set_flag", "flag": "camber_crowned"},
+                {"op": "remember", "actor": "camber", "fact": "crown"},
+            ],
+        ),
+        action(
+            "ask_span_rule",
+            "Ask Span the rule",
+            "talk",
+            {"at": "joist.yard"},
+            "Span says space the joist. Then notch and crown.",
+            [{"op": "set_flag", "flag": "heard_joist_rule"}],
+        ),
+        action(
+            "ask_trimmer_cut",
+            "Ask Trimmer the cut",
+            "talk",
+            {"at": "joist.trimmer"},
+            "Trimmer says house until the well is even.",
+            [{"op": "set_flag", "flag": "heard_joist_rule"}],
+        ),
+        action(
+            "ask_camber_lift",
+            "Ask Camber the lift",
+            "talk",
+            {"at": "joist.crown"},
+            "Camber sets only notched trimmers.",
+            [{"op": "set_flag", "flag": "heard_joist_rule"}],
+        ),
+        action(
+            "know_the_rive",
+            "Know the rive",
+            "talk",
+            {
+                "all": [
+                    {"at": "lath.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "lath_trust"},
+                ]
+            },
+            "You name the rive. Rive lets you prick and hair.",
+            [
+                {"op": "set_flag", "flag": "lath_trust"},
+                {"op": "remember", "actor": "rive", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_lath_list",
+            "Read the lath list",
+            "do",
+            {
+                "all": [
+                    {"at": "lath.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "lath_trust"},
+                ]
+            },
+            "You read the lath list. Rive lets you prick and hair.",
+            [
+                {"op": "set_flag", "flag": "lath_trust"},
+                {"op": "remember", "actor": "rive", "fact": "list"},
+            ],
+        ),
+        action(
+            "crown_the_rive",
+            "Crown the rive",
+            "do",
+            {
+                "all": [
+                    {"at": "lath.rive"},
+                    {"has_flag": "camber_crowned"},
+                    {"not_flag": "lath_primed"},
+                ]
+            },
+            "You set the crown. The rive takes the camber.",
+            [
+                {"op": "set_flag", "flag": "lath_primed"},
+                {"op": "set_flag", "flag": "lath_trust"},
+                {"op": "remember", "actor": "rive", "fact": "crown"},
+            ],
+        ),
+        action(
+            "rive_the_lath",
+            "Rive the lath",
+            "do",
+            {
+                "all": [
+                    {"at": "lath.rive"},
+                    {"has_flag": "lath_trust"},
+                    {"not_flag": "lath_riven"},
+                    {"not_flag": "coat_haired"},
+                ]
+            },
+            "You rive the lath. The split sits thin.",
+            [{"op": "set_flag", "flag": "lath_riven"}],
+        ),
+        action(
+            "prick_the_bay",
+            "Prick the bay",
+            "do",
+            {
+                "all": [
+                    {"at": "lath.bay"},
+                    {"has_flag": "lath_trust"},
+                    {"has_flag": "lath_riven"},
+                    {"not_flag": "lath_pricked"},
+                    {"not_flag": "coat_haired"},
+                ]
+            },
+            "You prick the bay. The studs sit even.",
+            [{"op": "set_flag", "flag": "lath_pricked"}],
+        ),
+        action(
+            "hair_the_coat",
+            "Hair the coat",
+            "do",
+            {
+                "all": [
+                    {"at": "lath.hair"},
+                    {"has_flag": "lath_trust"},
+                    {"has_flag": "lath_pricked"},
+                    {"has_item": "hair_lime"},
+                    {"not_flag": "coat_haired"},
+                ]
+            },
+            "You hair the coat. Hair binds the lime.",
+            [
+                {"op": "remove_item", "item": "hair_lime"},
+                {"op": "set_flag", "flag": "coat_haired"},
+                {"op": "remember", "actor": "hair", "fact": "coat"},
+            ],
+        ),
+        action(
+            "ask_rive_rule",
+            "Ask Rive the rule",
+            "talk",
+            {"at": "lath.yard"},
+            "Rive says rive the lath. Then prick and hair.",
+            [{"op": "set_flag", "flag": "heard_lath_rule"}],
+        ),
+        action(
+            "ask_bay_stud",
+            "Ask Bay the stud",
+            "talk",
+            {"at": "lath.bay"},
+            "Bay says nail until the studs are even.",
+            [{"op": "set_flag", "flag": "heard_lath_rule"}],
+        ),
+        action(
+            "ask_hair_mix",
+            "Ask Hair the mix",
+            "talk",
+            {"at": "lath.hair"},
+            "Hair sets only pricked bays.",
+            [{"op": "set_flag", "flag": "heard_lath_rule"}],
+        ),
+        action(
+            "know_the_flag",
+            "Know the flag",
+            "talk",
+            {
+                "all": [
+                    {"at": "chim.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "chim_trust"},
+                ]
+            },
+            "You name the flag. Flag lets you set and lime.",
+            [
+                {"op": "set_flag", "flag": "chim_trust"},
+                {"op": "remember", "actor": "flag", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_chimney_list",
+            "Read the chimney list",
+            "do",
+            {
+                "all": [
+                    {"at": "chim.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "chim_trust"},
+                ]
+            },
+            "You read the chimney list. Flag lets you set and lime.",
+            [
+                {"op": "set_flag", "flag": "chim_trust"},
+                {"op": "remember", "actor": "flag", "fact": "list"},
+            ],
+        ),
+        action(
+            "hair_the_flag",
+            "Hair the flag",
+            "do",
+            {
+                "all": [
+                    {"at": "chim.flag"},
+                    {"has_flag": "coat_haired"},
+                    {"not_flag": "chim_primed"},
+                ]
+            },
+            "You set the coat. The flag takes the hair.",
+            [
+                {"op": "set_flag", "flag": "chim_primed"},
+                {"op": "set_flag", "flag": "chim_trust"},
+                {"op": "remember", "actor": "flag", "fact": "hair"},
+            ],
+        ),
+        action(
+            "bed_the_flag",
+            "Bed the flag",
+            "do",
+            {
+                "all": [
+                    {"at": "chim.flag"},
+                    {"has_flag": "chim_trust"},
+                    {"not_flag": "chim_bedded"},
+                    {"not_flag": "breast_limed"},
+                ]
+            },
+            "You bed the flag. The stone sits level.",
+            [{"op": "set_flag", "flag": "chim_bedded"}],
+        ),
+        action(
+            "set_the_hob",
+            "Set the hob",
+            "do",
+            {
+                "all": [
+                    {"at": "chim.hob"},
+                    {"has_flag": "chim_trust"},
+                    {"has_flag": "chim_bedded"},
+                    {"not_flag": "chim_hobbled"},
+                    {"not_flag": "breast_limed"},
+                ]
+            },
+            "You set the hob. The plate sits tight.",
+            [{"op": "set_flag", "flag": "chim_hobbled"}],
+        ),
+        action(
+            "lime_the_breast",
+            "Lime the breast",
+            "do",
+            {
+                "all": [
+                    {"at": "chim.breast"},
+                    {"has_flag": "chim_trust"},
+                    {"has_flag": "chim_hobbled"},
+                    {"has_item": "hob_plate"},
+                    {"not_flag": "breast_limed"},
+                ]
+            },
+            "You lime the breast. Breast takes the wash.",
+            [
+                {"op": "remove_item", "item": "hob_plate"},
+                {"op": "set_flag", "flag": "breast_limed"},
+                {"op": "remember", "actor": "breast", "fact": "lime"},
+            ],
+        ),
+        action(
+            "ask_flag_rule",
+            "Ask Flag the rule",
+            "talk",
+            {"at": "chim.yard"},
+            "Flag says bed the flag. Then set and lime.",
+            [{"op": "set_flag", "flag": "heard_chim_rule"}],
+        ),
+        action(
+            "ask_hob_plate",
+            "Ask Hob the plate",
+            "talk",
+            {"at": "chim.hob"},
+            "Hob says seat until the plate is even.",
+            [{"op": "set_flag", "flag": "heard_chim_rule"}],
+        ),
+        action(
+            "ask_breast_wash",
+            "Ask Breast the wash",
+            "talk",
+            {"at": "chim.breast"},
+            "Breast sets only set hobs.",
+            [{"op": "set_flag", "flag": "heard_chim_rule"}],
+        ),
+        action(
+            "know_the_lintel",
+            "Know the lintel",
+            "talk",
+            {
+                "all": [
+                    {"at": "mant.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "mant_trust"},
+                ]
+            },
+            "You name the lintel. Lintel lets you set and pin.",
+            [
+                {"op": "set_flag", "flag": "mant_trust"},
+                {"op": "remember", "actor": "lintel", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_mantel_list",
+            "Read the mantel list",
+            "do",
+            {
+                "all": [
+                    {"at": "mant.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "mant_trust"},
+                ]
+            },
+            "You read the mantel list. Lintel lets you set and pin.",
+            [
+                {"op": "set_flag", "flag": "mant_trust"},
+                {"op": "remember", "actor": "lintel", "fact": "list"},
+            ],
+        ),
+        action(
+            "lime_the_lintel",
+            "Lime the lintel",
+            "do",
+            {
+                "all": [
+                    {"at": "mant.lintel"},
+                    {"has_flag": "breast_limed"},
+                    {"not_flag": "mant_primed"},
+                ]
+            },
+            "You set the breast. The lintel takes the lime.",
+            [
+                {"op": "set_flag", "flag": "mant_primed"},
+                {"op": "set_flag", "flag": "mant_trust"},
+                {"op": "remember", "actor": "lintel", "fact": "lime"},
+            ],
+        ),
+        action(
+            "bed_the_lintel",
+            "Bed the lintel",
+            "do",
+            {
+                "all": [
+                    {"at": "mant.lintel"},
+                    {"has_flag": "mant_trust"},
+                    {"not_flag": "mant_bedded"},
+                    {"not_flag": "mantel_pinned"},
+                ]
+            },
+            "You bed the lintel. The stone sits level.",
+            [{"op": "set_flag", "flag": "mant_bedded"}],
+        ),
+        action(
+            "set_the_corbel",
+            "Set the corbel",
+            "do",
+            {
+                "all": [
+                    {"at": "mant.corbel"},
+                    {"has_flag": "mant_trust"},
+                    {"has_flag": "mant_bedded"},
+                    {"not_flag": "mant_corbelled"},
+                    {"not_flag": "mantel_pinned"},
+                ]
+            },
+            "You set the corbel. The pad sits tight.",
+            [{"op": "set_flag", "flag": "mant_corbelled"}],
+        ),
+        action(
+            "pin_the_mantel",
+            "Pin the mantel",
+            "do",
+            {
+                "all": [
+                    {"at": "mant.over"},
+                    {"has_flag": "mant_trust"},
+                    {"has_flag": "mant_corbelled"},
+                    {"has_item": "corbel_pin"},
+                    {"not_flag": "mantel_pinned"},
+                ]
+            },
+            "You pin the mantel. Mantel holds the shelf.",
+            [
+                {"op": "remove_item", "item": "corbel_pin"},
+                {"op": "set_flag", "flag": "mantel_pinned"},
+                {"op": "remember", "actor": "mantel", "fact": "pin"},
+            ],
+        ),
+        action(
+            "ask_lintel_rule",
+            "Ask Lintel the rule",
+            "talk",
+            {"at": "mant.yard"},
+            "Lintel says bed the lintel. Then set and pin.",
+            [{"op": "set_flag", "flag": "heard_mant_rule"}],
+        ),
+        action(
+            "ask_corbel_pad",
+            "Ask Corbel the pad",
+            "talk",
+            {"at": "mant.corbel"},
+            "Corbel says seat until the pad is even.",
+            [{"op": "set_flag", "flag": "heard_mant_rule"}],
+        ),
+        action(
+            "ask_mantel_bar",
+            "Ask Mantel the bar",
+            "talk",
+            {"at": "mant.over"},
+            "Mantel sets only set corbels.",
+            [{"op": "set_flag", "flag": "heard_mant_rule"}],
+        ),
+        action(
+            "know_the_parge",
+            "Know the parge",
+            "talk",
+            {
+                "all": [
+                    {"at": "flue.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "flue_trust"},
+                ]
+            },
+            "You name the parge. Parge lets you wad and hang.",
+            [
+                {"op": "set_flag", "flag": "flue_trust"},
+                {"op": "remember", "actor": "parge", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_flue_list",
+            "Read the flue list",
+            "do",
+            {
+                "all": [
+                    {"at": "flue.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "flue_trust"},
+                ]
+            },
+            "You read the flue list. Parge lets you wad and hang.",
+            [
+                {"op": "set_flag", "flag": "flue_trust"},
+                {"op": "remember", "actor": "parge", "fact": "list"},
+            ],
+        ),
+        action(
+            "pin_the_parge",
+            "Pin the parge",
+            "do",
+            {
+                "all": [
+                    {"at": "flue.parge"},
+                    {"has_flag": "mantel_pinned"},
+                    {"not_flag": "flue_primed"},
+                ]
+            },
+            "You set the mantel. The parge takes the pin.",
+            [
+                {"op": "set_flag", "flag": "flue_primed"},
+                {"op": "set_flag", "flag": "flue_trust"},
+                {"op": "remember", "actor": "parge", "fact": "pin"},
+            ],
+        ),
+        action(
+            "parge_the_flue",
+            "Parge the flue",
+            "do",
+            {
+                "all": [
+                    {"at": "flue.parge"},
+                    {"has_flag": "flue_trust"},
+                    {"not_flag": "flue_parged"},
+                    {"not_flag": "cowl_hung"},
+                ]
+            },
+            "You parge the flue. The smear sits even.",
+            [{"op": "set_flag", "flag": "flue_parged"}],
+        ),
+        action(
+            "wad_the_throat",
+            "Wad the throat",
+            "do",
+            {
+                "all": [
+                    {"at": "flue.throat"},
+                    {"has_flag": "flue_trust"},
+                    {"has_flag": "flue_parged"},
+                    {"not_flag": "flue_wadded"},
+                    {"not_flag": "cowl_hung"},
+                ]
+            },
+            "You wad the throat. The pack sits tight.",
+            [{"op": "set_flag", "flag": "flue_wadded"}],
+        ),
+        action(
+            "hang_the_cowl",
+            "Hang the cowl",
+            "do",
+            {
+                "all": [
+                    {"at": "flue.cowl"},
+                    {"has_flag": "flue_trust"},
+                    {"has_flag": "flue_wadded"},
+                    {"has_item": "throat_wad"},
+                    {"not_flag": "cowl_hung"},
+                ]
+            },
+            "You hang the cowl. Cowl turns on the spin.",
+            [
+                {"op": "remove_item", "item": "throat_wad"},
+                {"op": "set_flag", "flag": "cowl_hung"},
+                {"op": "remember", "actor": "cowl", "fact": "hang"},
+            ],
+        ),
+        action(
+            "ask_parge_rule",
+            "Ask Parge the rule",
+            "talk",
+            {"at": "flue.yard"},
+            "Parge says parge the flue. Then wad and hang.",
+            [{"op": "set_flag", "flag": "heard_flue_rule"}],
+        ),
+        action(
+            "ask_throat_pack",
+            "Ask Throat the pack",
+            "talk",
+            {"at": "flue.throat"},
+            "Throat says pack until the wad is even.",
+            [{"op": "set_flag", "flag": "heard_flue_rule"}],
+        ),
+        action(
+            "ask_cowl_spin",
+            "Ask Cowl the spin",
+            "talk",
+            {"at": "flue.cowl"},
+            "Cowl sets only wadded throats.",
+            [{"op": "set_flag", "flag": "heard_flue_rule"}],
+        ),
+        action(
+            "know_the_sand",
+            "Know the sand",
+            "talk",
+            {
+                "all": [
+                    {"at": "fb.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "fb_trust"},
+                ]
+            },
+            "You name the sand. Sand lets you pour and bed.",
+            [
+                {"op": "set_flag", "flag": "fb_trust"},
+                {"op": "remember", "actor": "sand", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_fireback_list",
+            "Read the fireback list",
+            "do",
+            {
+                "all": [
+                    {"at": "fb.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "fb_trust"},
+                ]
+            },
+            "You read the fireback list. Sand lets you pour and bed.",
+            [
+                {"op": "set_flag", "flag": "fb_trust"},
+                {"op": "remember", "actor": "sand", "fact": "list"},
+            ],
+        ),
+        action(
+            "cowl_the_mould",
+            "Cowl the mould",
+            "do",
+            {
+                "all": [
+                    {"at": "fb.sand"},
+                    {"has_flag": "cowl_hung"},
+                    {"not_flag": "fb_primed"},
+                ]
+            },
+            "You set the cowl. The mould takes the hang.",
+            [
+                {"op": "set_flag", "flag": "fb_primed"},
+                {"op": "set_flag", "flag": "fb_trust"},
+                {"op": "remember", "actor": "sand", "fact": "cowl"},
+            ],
+        ),
+        action(
+            "sand_the_mould",
+            "Sand the mould",
+            "do",
+            {
+                "all": [
+                    {"at": "fb.sand"},
+                    {"has_flag": "fb_trust"},
+                    {"not_flag": "fb_sanded"},
+                    {"not_flag": "back_bedded"},
+                ]
+            },
+            "You sand the mould. The box sits even.",
+            [{"op": "set_flag", "flag": "fb_sanded"}],
+        ),
+        action(
+            "pour_the_plate",
+            "Pour the plate",
+            "do",
+            {
+                "all": [
+                    {"at": "fb.pour"},
+                    {"has_flag": "fb_trust"},
+                    {"has_flag": "fb_sanded"},
+                    {"not_flag": "fb_poured"},
+                    {"not_flag": "back_bedded"},
+                ]
+            },
+            "You pour the plate. The iron sits tight.",
+            [{"op": "set_flag", "flag": "fb_poured"}],
+        ),
+        action(
+            "bed_the_back",
+            "Bed the back",
+            "do",
+            {
+                "all": [
+                    {"at": "fb.bed"},
+                    {"has_flag": "fb_trust"},
+                    {"has_flag": "fb_poured"},
+                    {"has_item": "pour_flask"},
+                    {"not_flag": "back_bedded"},
+                ]
+            },
+            "You bed the back. Back takes the plate.",
+            [
+                {"op": "remove_item", "item": "pour_flask"},
+                {"op": "set_flag", "flag": "back_bedded"},
+                {"op": "remember", "actor": "back", "fact": "bed"},
+            ],
+        ),
+        action(
+            "ask_sand_rule",
+            "Ask Sand the rule",
+            "talk",
+            {"at": "fb.yard"},
+            "Sand says sand the mould. Then pour and bed.",
+            [{"op": "set_flag", "flag": "heard_fb_rule"}],
+        ),
+        action(
+            "ask_pour_gate",
+            "Ask Pour the gate",
+            "talk",
+            {"at": "fb.pour"},
+            "Pour says fill until the gate is even.",
+            [{"op": "set_flag", "flag": "heard_fb_rule"}],
+        ),
+        action(
+            "ask_back_seat",
+            "Ask Back the seat",
+            "talk",
+            {"at": "fb.bed"},
+            "Back sets only poured plates.",
+            [{"op": "set_flag", "flag": "heard_fb_rule"}],
+        ),
+        action(
+            "know_the_swage",
+            "Know the swage",
+            "talk",
+            {
+                "all": [
+                    {"at": "grate.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "grate_trust"},
+                ]
+            },
+            "You name the swage. Swage lets you rivet and register.",
+            [
+                {"op": "set_flag", "flag": "grate_trust"},
+                {"op": "remember", "actor": "swage", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_grate_list",
+            "Read the grate list",
+            "do",
+            {
+                "all": [
+                    {"at": "grate.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "grate_trust"},
+                ]
+            },
+            "You read the grate list. Swage lets you rivet and register.",
+            [
+                {"op": "set_flag", "flag": "grate_trust"},
+                {"op": "remember", "actor": "swage", "fact": "list"},
+            ],
+        ),
+        action(
+            "bed_the_swage",
+            "Bed the swage",
+            "do",
+            {
+                "all": [
+                    {"at": "grate.swage"},
+                    {"has_flag": "back_bedded"},
+                    {"not_flag": "grate_primed"},
+                ]
+            },
+            "You set the bed. The swage takes the plate.",
+            [
+                {"op": "set_flag", "flag": "grate_primed"},
+                {"op": "set_flag", "flag": "grate_trust"},
+                {"op": "remember", "actor": "swage", "fact": "bed"},
+            ],
+        ),
+        action(
+            "swage_the_bar",
+            "Swage the bar",
+            "do",
+            {
+                "all": [
+                    {"at": "grate.swage"},
+                    {"has_flag": "grate_trust"},
+                    {"not_flag": "grate_swaged"},
+                    {"not_flag": "slide_registered"},
+                ]
+            },
+            "You swage the bar. The section sits even.",
+            [{"op": "set_flag", "flag": "grate_swaged"}],
+        ),
+        action(
+            "rivet_the_basket",
+            "Rivet the basket",
+            "do",
+            {
+                "all": [
+                    {"at": "grate.basket"},
+                    {"has_flag": "grate_trust"},
+                    {"has_flag": "grate_swaged"},
+                    {"not_flag": "grate_riveted"},
+                    {"not_flag": "slide_registered"},
+                ]
+            },
+            "You rivet the basket. The cage sits tight.",
+            [{"op": "set_flag", "flag": "grate_riveted"}],
+        ),
+        action(
+            "register_the_slide",
+            "Register the slide",
+            "do",
+            {
+                "all": [
+                    {"at": "grate.slide"},
+                    {"has_flag": "grate_trust"},
+                    {"has_flag": "grate_riveted"},
+                    {"has_item": "basket_rivet"},
+                    {"not_flag": "slide_registered"},
+                ]
+            },
+            "You register the slide. Slide takes the basket.",
+            [
+                {"op": "remove_item", "item": "basket_rivet"},
+                {"op": "set_flag", "flag": "slide_registered"},
+                {"op": "remember", "actor": "slide", "fact": "register"},
+            ],
+        ),
+        action(
+            "ask_swage_rule",
+            "Ask Swage the rule",
+            "talk",
+            {"at": "grate.yard"},
+            "Swage says swage the bar. Then rivet and register.",
+            [{"op": "set_flag", "flag": "heard_grate_rule"}],
+        ),
+        action(
+            "ask_basket_pitch",
+            "Ask Basket the pitch",
+            "talk",
+            {"at": "grate.basket"},
+            "Basket says set until the pitch is even.",
+            [{"op": "set_flag", "flag": "heard_grate_rule"}],
+        ),
+        action(
+            "ask_slide_gate",
+            "Ask Slide the gate",
+            "talk",
+            {"at": "grate.slide"},
+            "Slide sets only riveted baskets.",
+            [{"op": "set_flag", "flag": "heard_grate_rule"}],
+        ),
+        action(
+            "know_the_pug",
+            "Know the pug",
+            "talk",
+            {
+                "all": [
+                    {"at": "brick.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "brick_trust"},
+                ]
+            },
+            "You name the pug. Pug lets you strike and set.",
+            [
+                {"op": "set_flag", "flag": "brick_trust"},
+                {"op": "remember", "actor": "pug", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_brick_list",
+            "Read the brick list",
+            "do",
+            {
+                "all": [
+                    {"at": "brick.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "brick_trust"},
+                ]
+            },
+            "You read the brick list. Pug lets you strike and set.",
+            [
+                {"op": "set_flag", "flag": "brick_trust"},
+                {"op": "remember", "actor": "pug", "fact": "list"},
+            ],
+        ),
+        action(
+            "grate_the_pug",
+            "Grate the pug",
+            "do",
+            {
+                "all": [
+                    {"at": "brick.pug"},
+                    {"has_flag": "slide_registered"},
+                    {"not_flag": "brick_primed"},
+                ]
+            },
+            "You set the grate. The pug takes the slide.",
+            [
+                {"op": "set_flag", "flag": "brick_primed"},
+                {"op": "set_flag", "flag": "brick_trust"},
+                {"op": "remember", "actor": "pug", "fact": "grate"},
+            ],
+        ),
+        action(
+            "pug_the_clay",
+            "Pug the clay",
+            "do",
+            {
+                "all": [
+                    {"at": "brick.pug"},
+                    {"has_flag": "brick_trust"},
+                    {"not_flag": "brick_pugged"},
+                    {"not_flag": "hack_set"},
+                ]
+            },
+            "You pug the clay. The trough sits even.",
+            [{"op": "set_flag", "flag": "brick_pugged"}],
+        ),
+        action(
+            "strike_the_green",
+            "Strike the green",
+            "do",
+            {
+                "all": [
+                    {"at": "brick.strike"},
+                    {"has_flag": "brick_trust"},
+                    {"has_flag": "brick_pugged"},
+                    {"not_flag": "brick_struck"},
+                    {"not_flag": "hack_set"},
+                ]
+            },
+            "You strike the green. The box sits tight.",
+            [{"op": "set_flag", "flag": "brick_struck"}],
+        ),
+        action(
+            "set_the_hack",
+            "Set the hack",
+            "do",
+            {
+                "all": [
+                    {"at": "brick.hack"},
+                    {"has_flag": "brick_trust"},
+                    {"has_flag": "brick_struck"},
+                    {"has_item": "strike_box"},
+                    {"not_flag": "hack_set"},
+                ]
+            },
+            "You set the hack. Hack takes the green.",
+            [
+                {"op": "remove_item", "item": "strike_box"},
+                {"op": "set_flag", "flag": "hack_set"},
+                {"op": "remember", "actor": "hack", "fact": "set"},
+            ],
+        ),
+        action(
+            "ask_pug_rule",
+            "Ask Pug the rule",
+            "talk",
+            {"at": "brick.yard"},
+            "Pug says pug the clay. Then strike and set.",
+            [{"op": "set_flag", "flag": "heard_brick_rule"}],
+        ),
+        action(
+            "ask_strike_lip",
+            "Ask Strike the lip",
+            "talk",
+            {"at": "brick.strike"},
+            "Strike says fill until the lip is even.",
+            [{"op": "set_flag", "flag": "heard_brick_rule"}],
+        ),
+        action(
+            "ask_hack_row",
+            "Ask Hack the row",
+            "talk",
+            {"at": "brick.hack"},
+            "Hack sets only struck greens.",
+            [{"op": "set_flag", "flag": "heard_brick_rule"}],
+        ),
+        action(
+            "know_the_horse",
+            "Know the horse",
+            "talk",
+            {
+                "all": [
+                    {"at": "tile.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "tile_trust"},
+                ]
+            },
+            "You name the horse. Horse lets you pallet and nick.",
+            [
+                {"op": "set_flag", "flag": "tile_trust"},
+                {"op": "remember", "actor": "horse", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_tile_list",
+            "Read the tile list",
+            "do",
+            {
+                "all": [
+                    {"at": "tile.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "tile_trust"},
+                ]
+            },
+            "You read the tile list. Horse lets you pallet and nick.",
+            [
+                {"op": "set_flag", "flag": "tile_trust"},
+                {"op": "remember", "actor": "horse", "fact": "list"},
+            ],
+        ),
+        action(
+            "hack_the_horse",
+            "Hack the horse",
+            "do",
+            {
+                "all": [
+                    {"at": "tile.horse"},
+                    {"has_flag": "hack_set"},
+                    {"not_flag": "tile_primed"},
+                ]
+            },
+            "You set the hack. The horse takes the row.",
+            [
+                {"op": "set_flag", "flag": "tile_primed"},
+                {"op": "set_flag", "flag": "tile_trust"},
+                {"op": "remember", "actor": "horse", "fact": "hack"},
+            ],
+        ),
+        action(
+            "drape_the_horse",
+            "Drape the horse",
+            "do",
+            {
+                "all": [
+                    {"at": "tile.horse"},
+                    {"has_flag": "tile_trust"},
+                    {"not_flag": "tile_draped"},
+                    {"not_flag": "arris_nicked"},
+                ]
+            },
+            "You drape the horse. The clay sits even.",
+            [{"op": "set_flag", "flag": "tile_draped"}],
+        ),
+        action(
+            "pallet_the_green",
+            "Pallet the green",
+            "do",
+            {
+                "all": [
+                    {"at": "tile.pallet"},
+                    {"has_flag": "tile_trust"},
+                    {"has_flag": "tile_draped"},
+                    {"not_flag": "tile_palleted"},
+                    {"not_flag": "arris_nicked"},
+                ]
+            },
+            "You pallet the green. The board sits tight.",
+            [{"op": "set_flag", "flag": "tile_palleted"}],
+        ),
+        action(
+            "nick_the_arris",
+            "Nick the arris",
+            "do",
+            {
+                "all": [
+                    {"at": "tile.arris"},
+                    {"has_flag": "tile_trust"},
+                    {"has_flag": "tile_palleted"},
+                    {"has_item": "pallet_board"},
+                    {"not_flag": "arris_nicked"},
+                ]
+            },
+            "You nick the arris. Arris takes the green.",
+            [
+                {"op": "remove_item", "item": "pallet_board"},
+                {"op": "set_flag", "flag": "arris_nicked"},
+                {"op": "remember", "actor": "arris", "fact": "nick"},
+            ],
+        ),
+        action(
+            "ask_horse_rule",
+            "Ask Horse the rule",
+            "talk",
+            {"at": "tile.yard"},
+            "Horse says drape the horse. Then pallet and nick.",
+            [{"op": "set_flag", "flag": "heard_tile_rule"}],
+        ),
+        action(
+            "ask_pallet_gap",
+            "Ask Pallet the gap",
+            "talk",
+            {"at": "tile.pallet"},
+            "Pallet says set until the gap is even.",
+            [{"op": "set_flag", "flag": "heard_tile_rule"}],
+        ),
+        action(
+            "ask_arris_cut",
+            "Ask Arris the cut",
+            "talk",
+            {"at": "tile.arris"},
+            "Arris sets only palleted greens.",
+            [{"op": "set_flag", "flag": "heard_tile_rule"}],
+        ),
+        action(
+            "know_the_scapple",
+            "Know the scapple",
+            "talk",
+            {
+                "all": [
+                    {"at": "slate.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "slate_trust"},
+                ]
+            },
+            "You name the scapple. Scapple lets you punch and lap.",
+            [
+                {"op": "set_flag", "flag": "slate_trust"},
+                {"op": "remember", "actor": "scapple", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_slate_list",
+            "Read the slate list",
+            "do",
+            {
+                "all": [
+                    {"at": "slate.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "slate_trust"},
+                ]
+            },
+            "You read the slate list. Scapple lets you punch and lap.",
+            [
+                {"op": "set_flag", "flag": "slate_trust"},
+                {"op": "remember", "actor": "scapple", "fact": "list"},
+            ],
+        ),
+        action(
+            "arris_the_face",
+            "Arris the face",
+            "do",
+            {
+                "all": [
+                    {"at": "slate.scapple"},
+                    {"has_flag": "arris_nicked"},
+                    {"not_flag": "slate_primed"},
+                ]
+            },
+            "You set the arris. The face takes the nick.",
+            [
+                {"op": "set_flag", "flag": "slate_primed"},
+                {"op": "set_flag", "flag": "slate_trust"},
+                {"op": "remember", "actor": "scapple", "fact": "arris"},
+            ],
+        ),
+        action(
+            "scapple_the_face",
+            "Scapple the face",
+            "do",
+            {
+                "all": [
+                    {"at": "slate.scapple"},
+                    {"has_flag": "slate_trust"},
+                    {"not_flag": "slate_scappled"},
+                    {"not_flag": "slate_lapped"},
+                ]
+            },
+            "You scapple the face. The block sits even.",
+            [{"op": "set_flag", "flag": "slate_scappled"}],
+        ),
+        action(
+            "punch_the_hole",
+            "Punch the hole",
+            "do",
+            {
+                "all": [
+                    {"at": "slate.punch"},
+                    {"has_flag": "slate_trust"},
+                    {"has_flag": "slate_scappled"},
+                    {"not_flag": "slate_punched"},
+                    {"not_flag": "slate_lapped"},
+                ]
+            },
+            "You punch the hole. The pin sits tight.",
+            [{"op": "set_flag", "flag": "slate_punched"}],
+        ),
+        action(
+            "lap_the_slate",
+            "Lap the slate",
+            "do",
+            {
+                "all": [
+                    {"at": "slate.lap"},
+                    {"has_flag": "slate_trust"},
+                    {"has_flag": "slate_punched"},
+                    {"has_item": "punch_pin"},
+                    {"not_flag": "slate_lapped"},
+                ]
+            },
+            "You lap the slate. Lap takes the course.",
+            [
+                {"op": "remove_item", "item": "punch_pin"},
+                {"op": "set_flag", "flag": "slate_lapped"},
+                {"op": "remember", "actor": "lap", "fact": "lap"},
+            ],
+        ),
+        action(
+            "ask_scapple_rule",
+            "Ask Scapple the rule",
+            "talk",
+            {"at": "slate.yard"},
+            "Scapple says scapple the face. Then punch and lap.",
+            [{"op": "set_flag", "flag": "heard_slate_rule"}],
+        ),
+        action(
+            "ask_punch_gauge",
+            "Ask Punch the gauge",
+            "talk",
+            {"at": "slate.punch"},
+            "Punch says set until the gauge is even.",
+            [{"op": "set_flag", "flag": "heard_slate_rule"}],
+        ),
+        action(
+            "ask_lap_cover",
+            "Ask Lap the cover",
+            "talk",
+            {"at": "slate.lap"},
+            "Lap sets only punched slates.",
+            [{"op": "set_flag", "flag": "heard_slate_rule"}],
+        ),
+        action(
+            "know_the_roll",
+            "Know the roll",
+            "talk",
+            {
+                "all": [
+                    {"at": "flash.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "flash_trust"},
+                ]
+            },
+            "You name the roll. Roll lets you boss and dress.",
+            [
+                {"op": "set_flag", "flag": "flash_trust"},
+                {"op": "remember", "actor": "roll", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_flash_list",
+            "Read the flash list",
+            "do",
+            {
+                "all": [
+                    {"at": "flash.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "flash_trust"},
+                ]
+            },
+            "You read the flash list. Roll lets you boss and dress.",
+            [
+                {"op": "set_flag", "flag": "flash_trust"},
+                {"op": "remember", "actor": "roll", "fact": "list"},
+            ],
+        ),
+        action(
+            "lap_the_sheet",
+            "Lap the sheet",
+            "do",
+            {
+                "all": [
+                    {"at": "flash.sheet"},
+                    {"has_flag": "slate_lapped"},
+                    {"not_flag": "flash_primed"},
+                ]
+            },
+            "You set the lap. The sheet takes the cover.",
+            [
+                {"op": "set_flag", "flag": "flash_primed"},
+                {"op": "set_flag", "flag": "flash_trust"},
+                {"op": "remember", "actor": "roll", "fact": "lap"},
+            ],
+        ),
+        action(
+            "roll_the_sheet",
+            "Roll the sheet",
+            "do",
+            {
+                "all": [
+                    {"at": "flash.sheet"},
+                    {"has_flag": "flash_trust"},
+                    {"not_flag": "flash_rolled"},
+                    {"not_flag": "flash_dressed"},
+                ]
+            },
+            "You roll the sheet. The lead sits even.",
+            [{"op": "set_flag", "flag": "flash_rolled"}],
+        ),
+        action(
+            "boss_the_welt",
+            "Boss the welt",
+            "do",
+            {
+                "all": [
+                    {"at": "flash.welt"},
+                    {"has_flag": "flash_trust"},
+                    {"has_flag": "flash_rolled"},
+                    {"not_flag": "flash_bossed"},
+                    {"not_flag": "flash_dressed"},
+                ]
+            },
+            "You boss the welt. The bead sits tight.",
+            [{"op": "set_flag", "flag": "flash_bossed"}],
+        ),
+        action(
+            "dress_the_flash",
+            "Dress the flash",
+            "do",
+            {
+                "all": [
+                    {"at": "flash.apron"},
+                    {"has_flag": "flash_trust"},
+                    {"has_flag": "flash_bossed"},
+                    {"has_item": "welt_boss"},
+                    {"not_flag": "flash_dressed"},
+                ]
+            },
+            "You dress the flash. Apron takes the welt.",
+            [
+                {"op": "remove_item", "item": "welt_boss"},
+                {"op": "set_flag", "flag": "flash_dressed"},
+                {"op": "remember", "actor": "apron", "fact": "dress"},
+            ],
+        ),
+        action(
+            "ask_roll_rule",
+            "Ask Roll the rule",
+            "talk",
+            {"at": "flash.yard"},
+            "Roll says roll the sheet. Then boss and dress.",
+            [{"op": "set_flag", "flag": "heard_flash_rule"}],
+        ),
+        action(
+            "ask_welt_bead",
+            "Ask Welt the bead",
+            "talk",
+            {"at": "flash.welt"},
+            "Welt says set until the bead is even.",
+            [{"op": "set_flag", "flag": "heard_flash_rule"}],
+        ),
+        action(
+            "ask_apron_lie",
+            "Ask Apron the lie",
+            "talk",
+            {"at": "flash.apron"},
+            "Apron sets only bossed welts.",
+            [{"op": "set_flag", "flag": "heard_flash_rule"}],
+        ),
+        action(
+            "know_the_cheek",
+            "Know the cheek",
+            "talk",
+            {
+                "all": [
+                    {"at": "block.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "block_trust"},
+                ]
+            },
+            "You name the cheek. Cheek lets you score and strop.",
+            [
+                {"op": "set_flag", "flag": "block_trust"},
+                {"op": "remember", "actor": "cheek", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_block_list",
+            "Read the block list",
+            "do",
+            {
+                "all": [
+                    {"at": "block.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "block_trust"},
+                ]
+            },
+            "You read the block list. Cheek lets you score and strop.",
+            [
+                {"op": "set_flag", "flag": "block_trust"},
+                {"op": "remember", "actor": "cheek", "fact": "list"},
+            ],
+        ),
+        action(
+            "dress_the_cheek",
+            "Dress the cheek",
+            "do",
+            {
+                "all": [
+                    {"at": "block.cheek"},
+                    {"has_flag": "flash_dressed"},
+                    {"not_flag": "block_primed"},
+                ]
+            },
+            "You set the dress. The cheek takes the flash.",
+            [
+                {"op": "set_flag", "flag": "block_primed"},
+                {"op": "set_flag", "flag": "block_trust"},
+                {"op": "remember", "actor": "cheek", "fact": "dress"},
+            ],
+        ),
+        action(
+            "bore_the_cheek",
+            "Bore the cheek",
+            "do",
+            {
+                "all": [
+                    {"at": "block.cheek"},
+                    {"has_flag": "block_trust"},
+                    {"not_flag": "block_bored"},
+                    {"not_flag": "block_stropped"},
+                ]
+            },
+            "You bore the cheek. The pin sits even.",
+            [{"op": "set_flag", "flag": "block_bored"}],
+        ),
+        action(
+            "score_the_sheave",
+            "Score the sheave",
+            "do",
+            {
+                "all": [
+                    {"at": "block.sheave"},
+                    {"has_flag": "block_trust"},
+                    {"has_flag": "block_bored"},
+                    {"not_flag": "block_scored"},
+                    {"not_flag": "block_stropped"},
+                ]
+            },
+            "You score the sheave. The groove sits tight.",
+            [{"op": "set_flag", "flag": "block_scored"}],
+        ),
+        action(
+            "strop_the_block",
+            "Strop the block",
+            "do",
+            {
+                "all": [
+                    {"at": "block.strop"},
+                    {"has_flag": "block_trust"},
+                    {"has_flag": "block_scored"},
+                    {"has_item": "sheave_score"},
+                    {"not_flag": "block_stropped"},
+                ]
+            },
+            "You strop the block. Strop takes the sheave.",
+            [
+                {"op": "remove_item", "item": "sheave_score"},
+                {"op": "set_flag", "flag": "block_stropped"},
+                {"op": "remember", "actor": "strop", "fact": "strop"},
+            ],
+        ),
+        action(
+            "ask_cheek_rule",
+            "Ask Cheek the rule",
+            "talk",
+            {"at": "block.yard"},
+            "Cheek says bore the cheek. Then score and strop.",
+            [{"op": "set_flag", "flag": "heard_block_rule"}],
+        ),
+        action(
+            "ask_sheave_groove",
+            "Ask Sheave the groove",
+            "talk",
+            {"at": "block.sheave"},
+            "Sheave says cut until the groove is even.",
+            [{"op": "set_flag", "flag": "heard_block_rule"}],
+        ),
+        action(
+            "ask_strop_hitch",
+            "Ask Strop the hitch",
+            "talk",
+            {"at": "block.strop"},
+            "Strop sets only scored sheaves.",
+            [{"op": "set_flag", "flag": "heard_block_rule"}],
+        ),
+        action(
+            "know_the_shaft",
+            "Know the shaft",
+            "talk",
+            {
+                "all": [
+                    {"at": "oar.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "oar_trust"},
+                ]
+            },
+            "You name the shaft. Shaft lets you spoon and bind.",
+            [
+                {"op": "set_flag", "flag": "oar_trust"},
+                {"op": "remember", "actor": "shaft", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_oar_list",
+            "Read the oar list",
+            "do",
+            {
+                "all": [
+                    {"at": "oar.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "oar_trust"},
+                ]
+            },
+            "You read the oar list. Shaft lets you spoon and bind.",
+            [
+                {"op": "set_flag", "flag": "oar_trust"},
+                {"op": "remember", "actor": "shaft", "fact": "list"},
+            ],
+        ),
+        action(
+            "strop_the_shaft",
+            "Strop the shaft",
+            "do",
+            {
+                "all": [
+                    {"at": "oar.shaft"},
+                    {"has_flag": "block_stropped"},
+                    {"not_flag": "oar_primed"},
+                ]
+            },
+            "You set the strop. The shaft takes the hitch.",
+            [
+                {"op": "set_flag", "flag": "oar_primed"},
+                {"op": "set_flag", "flag": "oar_trust"},
+                {"op": "remember", "actor": "shaft", "fact": "strop"},
+            ],
+        ),
+        action(
+            "round_the_shaft",
+            "Round the shaft",
+            "do",
+            {
+                "all": [
+                    {"at": "oar.shaft"},
+                    {"has_flag": "oar_trust"},
+                    {"not_flag": "oar_rounded"},
+                    {"not_flag": "grip_bound"},
+                ]
+            },
+            "You round the shaft. The ash sits even.",
+            [{"op": "set_flag", "flag": "oar_rounded"}],
+        ),
+        action(
+            "spoon_the_blade",
+            "Spoon the blade",
+            "do",
+            {
+                "all": [
+                    {"at": "oar.blade"},
+                    {"has_flag": "oar_trust"},
+                    {"has_flag": "oar_rounded"},
+                    {"not_flag": "oar_spooned"},
+                    {"not_flag": "grip_bound"},
+                ]
+            },
+            "You spoon the blade. The hollow sits tight.",
+            [{"op": "set_flag", "flag": "oar_spooned"}],
+        ),
+        action(
+            "bind_the_grip",
+            "Bind the grip",
+            "do",
+            {
+                "all": [
+                    {"at": "oar.grip"},
+                    {"has_flag": "oar_trust"},
+                    {"has_flag": "oar_spooned"},
+                    {"has_item": "blade_spoon"},
+                    {"not_flag": "grip_bound"},
+                ]
+            },
+            "You bind the grip. Grip takes the wrap.",
+            [
+                {"op": "remove_item", "item": "blade_spoon"},
+                {"op": "set_flag", "flag": "grip_bound"},
+                {"op": "remember", "actor": "grip", "fact": "bind"},
+            ],
+        ),
+        action(
+            "ask_shaft_rule",
+            "Ask Shaft the rule",
+            "talk",
+            {"at": "oar.yard"},
+            "Shaft says round the shaft. Then spoon and bind.",
+            [{"op": "set_flag", "flag": "heard_oar_rule"}],
+        ),
+        action(
+            "ask_blade_hollow",
+            "Ask Blade the hollow",
+            "talk",
+            {"at": "oar.blade"},
+            "Blade says cut until the hollow is even.",
+            [{"op": "set_flag", "flag": "heard_oar_rule"}],
+        ),
+        action(
+            "ask_grip_wrap",
+            "Ask Grip the wrap",
+            "talk",
+            {"at": "oar.grip"},
+            "Grip sets only spooned blades.",
+            [{"op": "set_flag", "flag": "heard_oar_rule"}],
+        ),
+        action(
+            "know_the_grease",
+            "Know the grease",
+            "talk",
+            {
+                "all": [
+                    {"at": "ways.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "ways_trust"},
+                ]
+            },
+            "You name the grease. Grease lets you poppet and trip.",
+            [
+                {"op": "set_flag", "flag": "ways_trust"},
+                {"op": "remember", "actor": "grease", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_ways_list",
+            "Read the ways list",
+            "do",
+            {
+                "all": [
+                    {"at": "ways.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "ways_trust"},
+                ]
+            },
+            "You read the ways list. Grease lets you poppet and trip.",
+            [
+                {"op": "set_flag", "flag": "ways_trust"},
+                {"op": "remember", "actor": "grease", "fact": "list"},
+            ],
+        ),
+        action(
+            "grip_the_grease",
+            "Grip the grease",
+            "do",
+            {
+                "all": [
+                    {"at": "ways.grease"},
+                    {"has_flag": "grip_bound"},
+                    {"not_flag": "ways_primed"},
+                ]
+            },
+            "You set the bound grip. The grease takes the wrap.",
+            [
+                {"op": "set_flag", "flag": "ways_primed"},
+                {"op": "set_flag", "flag": "ways_trust"},
+                {"op": "remember", "actor": "grease", "fact": "grip"},
+            ],
+        ),
+        action(
+            "grease_the_ways",
+            "Grease the ways",
+            "do",
+            {
+                "all": [
+                    {"at": "ways.grease"},
+                    {"has_flag": "ways_trust"},
+                    {"not_flag": "ways_greased"},
+                    {"not_flag": "hull_launched"},
+                ]
+            },
+            "You grease the ways. The tallow sits even.",
+            [{"op": "set_flag", "flag": "ways_greased"}],
+        ),
+        action(
+            "set_the_poppet",
+            "Set the poppet",
+            "do",
+            {
+                "all": [
+                    {"at": "ways.poppet"},
+                    {"has_flag": "ways_trust"},
+                    {"has_flag": "ways_greased"},
+                    {"not_flag": "ways_poppeted"},
+                    {"not_flag": "hull_launched"},
+                ]
+            },
+            "You set the poppet. The chock sits tight.",
+            [{"op": "set_flag", "flag": "ways_poppeted"}],
+        ),
+        action(
+            "trip_the_trigger",
+            "Trip the trigger",
+            "do",
+            {
+                "all": [
+                    {"at": "ways.trigger"},
+                    {"has_flag": "ways_trust"},
+                    {"has_flag": "ways_poppeted"},
+                    {"has_item": "poppet_wedge"},
+                    {"not_flag": "hull_launched"},
+                ]
+            },
+            "You trip the trigger. Trigger takes the wedge.",
+            [
+                {"op": "remove_item", "item": "poppet_wedge"},
+                {"op": "set_flag", "flag": "hull_launched"},
+                {"op": "remember", "actor": "trigger", "fact": "trip"},
+            ],
+        ),
+        action(
+            "ask_grease_rule",
+            "Ask Grease the rule",
+            "talk",
+            {"at": "ways.yard"},
+            "Grease says grease the ways. Then poppet and trip.",
+            [{"op": "set_flag", "flag": "heard_ways_rule"}],
+        ),
+        action(
+            "ask_poppet_chock",
+            "Ask Poppet the chock",
+            "talk",
+            {"at": "ways.poppet"},
+            "Poppet says set until the chock is even.",
+            [{"op": "set_flag", "flag": "heard_ways_rule"}],
+        ),
+        action(
+            "ask_trigger_dog",
+            "Ask Trigger the dog",
+            "talk",
+            {"at": "ways.trigger"},
+            "Trigger sets only wedged poppets.",
+            [{"op": "set_flag", "flag": "heard_ways_rule"}],
+        ),
+        action(
+            "know_the_steam",
+            "Know the steam",
+            "talk",
+            {
+                "all": [
+                    {"at": "clink.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "clink_trust"},
+                ]
+            },
+            "You name the steam. Steam lets you clench and fair.",
+            [
+                {"op": "set_flag", "flag": "clink_trust"},
+                {"op": "remember", "actor": "steam", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_clinker_list",
+            "Read the clinker list",
+            "do",
+            {
+                "all": [
+                    {"at": "clink.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "clink_trust"},
+                ]
+            },
+            "You read the clinker list. Steam lets you clench and fair.",
+            [
+                {"op": "set_flag", "flag": "clink_trust"},
+                {"op": "remember", "actor": "steam", "fact": "list"},
+            ],
+        ),
+        action(
+            "launch_the_steam",
+            "Launch the steam",
+            "do",
+            {
+                "all": [
+                    {"at": "clink.steam"},
+                    {"has_flag": "hull_launched"},
+                    {"not_flag": "clink_primed"},
+                ]
+            },
+            "You set the launched hull. The steam takes the run.",
+            [
+                {"op": "set_flag", "flag": "clink_primed"},
+                {"op": "set_flag", "flag": "clink_trust"},
+                {"op": "remember", "actor": "steam", "fact": "launch"},
+            ],
+        ),
+        action(
+            "steam_the_strake",
+            "Steam the strake",
+            "do",
+            {
+                "all": [
+                    {"at": "clink.steam"},
+                    {"has_flag": "clink_trust"},
+                    {"not_flag": "clink_steamed"},
+                    {"not_flag": "garboard_faired"},
+                ]
+            },
+            "You steam the strake. The oak sits even.",
+            [{"op": "set_flag", "flag": "clink_steamed"}],
+        ),
+        action(
+            "clench_the_land",
+            "Clench the land",
+            "do",
+            {
+                "all": [
+                    {"at": "clink.land"},
+                    {"has_flag": "clink_trust"},
+                    {"has_flag": "clink_steamed"},
+                    {"not_flag": "clink_clenched"},
+                    {"not_flag": "garboard_faired"},
+                ]
+            },
+            "You clench the land. The rove sits tight.",
+            [{"op": "set_flag", "flag": "clink_clenched"}],
+        ),
+        action(
+            "fair_the_garboard",
+            "Fair the garboard",
+            "do",
+            {
+                "all": [
+                    {"at": "clink.garboard"},
+                    {"has_flag": "clink_trust"},
+                    {"has_flag": "clink_clenched"},
+                    {"has_item": "land_rove"},
+                    {"not_flag": "garboard_faired"},
+                ]
+            },
+            "You fair the garboard. Garboard takes the run.",
+            [
+                {"op": "remove_item", "item": "land_rove"},
+                {"op": "set_flag", "flag": "garboard_faired"},
+                {"op": "remember", "actor": "garboard", "fact": "fair"},
+            ],
+        ),
+        action(
+            "ask_steam_rule",
+            "Ask Steam the rule",
+            "talk",
+            {"at": "clink.yard"},
+            "Steam says steam the strake. Then clench and fair.",
+            [{"op": "set_flag", "flag": "heard_clink_rule"}],
+        ),
+        action(
+            "ask_land_rove",
+            "Ask Land the rove",
+            "talk",
+            {"at": "clink.land"},
+            "Land says set until the rove is even.",
+            [{"op": "set_flag", "flag": "heard_clink_rule"}],
+        ),
+        action(
+            "ask_garboard_run",
+            "Ask Garboard the run",
+            "talk",
+            {"at": "clink.garboard"},
+            "Garboard sets only clenched lands.",
+            [{"op": "set_flag", "flag": "heard_clink_rule"}],
+        ),
+        action(
+            "know_the_bars",
+            "Know the bars",
+            "talk",
+            {
+                "all": [
+                    {"at": "wind.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wind_trust"},
+                ]
+            },
+            "You name the bars. Bars lets you pawl and heave.",
+            [
+                {"op": "set_flag", "flag": "wind_trust"},
+                {"op": "remember", "actor": "bars", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_windlass_list",
+            "Read the windlass list",
+            "do",
+            {
+                "all": [
+                    {"at": "wind.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wind_trust"},
+                ]
+            },
+            "You read the windlass list. Bars lets you pawl and heave.",
+            [
+                {"op": "set_flag", "flag": "wind_trust"},
+                {"op": "remember", "actor": "bars", "fact": "list"},
+            ],
+        ),
+        action(
+            "fair_the_bars",
+            "Fair the bars",
+            "do",
+            {
+                "all": [
+                    {"at": "wind.bars"},
+                    {"has_flag": "garboard_faired"},
+                    {"not_flag": "wind_primed"},
+                ]
+            },
+            "You set the faired hull. The bars take the sockets.",
+            [
+                {"op": "set_flag", "flag": "wind_primed"},
+                {"op": "set_flag", "flag": "wind_trust"},
+                {"op": "remember", "actor": "bars", "fact": "fair"},
+            ],
+        ),
+        action(
+            "ship_the_bars",
+            "Ship the bars",
+            "do",
+            {
+                "all": [
+                    {"at": "wind.bars"},
+                    {"has_flag": "wind_trust"},
+                    {"not_flag": "wind_shipped"},
+                    {"not_flag": "round_heaved"},
+                ]
+            },
+            "You ship the bars. The ash sits even.",
+            [{"op": "set_flag", "flag": "wind_shipped"}],
+        ),
+        action(
+            "drop_the_pawl",
+            "Drop the pawl",
+            "do",
+            {
+                "all": [
+                    {"at": "wind.pawl"},
+                    {"has_flag": "wind_trust"},
+                    {"has_flag": "wind_shipped"},
+                    {"not_flag": "wind_pawled"},
+                    {"not_flag": "round_heaved"},
+                ]
+            },
+            "You drop the pawl. The catch sits tight.",
+            [{"op": "set_flag", "flag": "wind_pawled"}],
+        ),
+        action(
+            "heave_the_round",
+            "Heave the round",
+            "do",
+            {
+                "all": [
+                    {"at": "wind.drum"},
+                    {"has_flag": "wind_trust"},
+                    {"has_flag": "wind_pawled"},
+                    {"has_item": "pawl_tooth"},
+                    {"not_flag": "round_heaved"},
+                ]
+            },
+            "You heave the round. Drum takes the cable.",
+            [
+                {"op": "remove_item", "item": "pawl_tooth"},
+                {"op": "set_flag", "flag": "round_heaved"},
+                {"op": "remember", "actor": "drum", "fact": "heave"},
+            ],
+        ),
+        action(
+            "ask_bars_rule",
+            "Ask Bars the rule",
+            "talk",
+            {"at": "wind.yard"},
+            "Bars says ship the bars. Then pawl and heave.",
+            [{"op": "set_flag", "flag": "heard_wind_rule"}],
+        ),
+        action(
+            "ask_pawl_catch",
+            "Ask Pawl the catch",
+            "talk",
+            {"at": "wind.pawl"},
+            "Pawl says set until the catch is even.",
+            [{"op": "set_flag", "flag": "heard_wind_rule"}],
+        ),
+        action(
+            "ask_drum_turn",
+            "Ask Drum the turn",
+            "talk",
+            {"at": "wind.drum"},
+            "Drum sets only pawled bars.",
+            [{"op": "set_flag", "flag": "heard_wind_rule"}],
+        ),
+        action(
+            "know_the_grid",
+            "Know the grid",
+            "talk",
+            {
+                "all": [
+                    {"at": "offs.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "offs_trust"},
+                ]
+            },
+            "You name the grid. Grid lets you spile and bevel.",
+            [
+                {"op": "set_flag", "flag": "offs_trust"},
+                {"op": "remember", "actor": "grid", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_offset_list",
+            "Read the offset list",
+            "do",
+            {
+                "all": [
+                    {"at": "offs.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "offs_trust"},
+                ]
+            },
+            "You read the offset list. Grid lets you spile and bevel.",
+            [
+                {"op": "set_flag", "flag": "offs_trust"},
+                {"op": "remember", "actor": "grid", "fact": "list"},
+            ],
+        ),
+        action(
+            "heave_the_grid",
+            "Heave the grid",
+            "do",
+            {
+                "all": [
+                    {"at": "offs.grid"},
+                    {"has_flag": "round_heaved"},
+                    {"not_flag": "offs_primed"},
+                ]
+            },
+            "You set the heaved round. The grid takes the run.",
+            [
+                {"op": "set_flag", "flag": "offs_primed"},
+                {"op": "set_flag", "flag": "offs_trust"},
+                {"op": "remember", "actor": "grid", "fact": "heave"},
+            ],
+        ),
+        action(
+            "loft_the_grid",
+            "Loft the grid",
+            "do",
+            {
+                "all": [
+                    {"at": "offs.grid"},
+                    {"has_flag": "offs_trust"},
+                    {"not_flag": "offs_lofted"},
+                    {"not_flag": "station_bevelled"},
+                ]
+            },
+            "You loft the grid. The chalk sits even.",
+            [{"op": "set_flag", "flag": "offs_lofted"}],
+        ),
+        action(
+            "spile_the_plank",
+            "Spile the plank",
+            "do",
+            {
+                "all": [
+                    {"at": "offs.spile"},
+                    {"has_flag": "offs_trust"},
+                    {"has_flag": "offs_lofted"},
+                    {"not_flag": "offs_spiled"},
+                    {"not_flag": "station_bevelled"},
+                ]
+            },
+            "You spile the plank. The edge sits tight.",
+            [{"op": "set_flag", "flag": "offs_spiled"}],
+        ),
+        action(
+            "bevel_the_station",
+            "Bevel the station",
+            "do",
+            {
+                "all": [
+                    {"at": "offs.bevel"},
+                    {"has_flag": "offs_trust"},
+                    {"has_flag": "offs_spiled"},
+                    {"has_item": "spile_staff"},
+                    {"not_flag": "station_bevelled"},
+                ]
+            },
+            "You bevel the station. Bevel takes the tick.",
+            [
+                {"op": "remove_item", "item": "spile_staff"},
+                {"op": "set_flag", "flag": "station_bevelled"},
+                {"op": "remember", "actor": "bevel", "fact": "bevel"},
+            ],
+        ),
+        action(
+            "ask_grid_rule",
+            "Ask Grid the rule",
+            "talk",
+            {"at": "offs.yard"},
+            "Grid says loft the grid. Then spile and bevel.",
+            [{"op": "set_flag", "flag": "heard_offs_rule"}],
+        ),
+        action(
+            "ask_spile_edge",
+            "Ask Spile the edge",
+            "talk",
+            {"at": "offs.spile"},
+            "Spile says set until the edge is even.",
+            [{"op": "set_flag", "flag": "heard_offs_rule"}],
+        ),
+        action(
+            "ask_bevel_tick",
+            "Ask Bevel the tick",
+            "talk",
+            {"at": "offs.bevel"},
+            "Bevel sets only spiled planks.",
+            [{"op": "set_flag", "flag": "heard_offs_rule"}],
+        ),
+        action(
+            "know_the_billet",
+            "Know the billet",
+            "talk",
+            {
+                "all": [
+                    {"at": "trun.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "trun_trust"},
+                ]
+            },
+            "You name the billet. Billet lets you auger and drive.",
+            [
+                {"op": "set_flag", "flag": "trun_trust"},
+                {"op": "remember", "actor": "billet", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_trunnel_list",
+            "Read the trunnel list",
+            "do",
+            {
+                "all": [
+                    {"at": "trun.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "trun_trust"},
+                ]
+            },
+            "You read the trunnel list. Billet lets you auger and drive.",
+            [
+                {"op": "set_flag", "flag": "trun_trust"},
+                {"op": "remember", "actor": "billet", "fact": "list"},
+            ],
+        ),
+        action(
+            "bevel_the_billet",
+            "Bevel the billet",
+            "do",
+            {
+                "all": [
+                    {"at": "trun.billet"},
+                    {"has_flag": "station_bevelled"},
+                    {"not_flag": "trun_primed"},
+                ]
+            },
+            "You set the bevelled station. The billet takes the tick.",
+            [
+                {"op": "set_flag", "flag": "trun_primed"},
+                {"op": "set_flag", "flag": "trun_trust"},
+                {"op": "remember", "actor": "billet", "fact": "bevel"},
+            ],
+        ),
+        action(
+            "shave_the_billet",
+            "Shave the billet",
+            "do",
+            {
+                "all": [
+                    {"at": "trun.billet"},
+                    {"has_flag": "trun_trust"},
+                    {"not_flag": "trun_shaved"},
+                    {"not_flag": "trunnel_driven"},
+                ]
+            },
+            "You shave the billet. The locust sits even.",
+            [{"op": "set_flag", "flag": "trun_shaved"}],
+        ),
+        action(
+            "auger_the_hole",
+            "Auger the hole",
+            "do",
+            {
+                "all": [
+                    {"at": "trun.auger"},
+                    {"has_flag": "trun_trust"},
+                    {"has_flag": "trun_shaved"},
+                    {"not_flag": "trun_augered"},
+                    {"not_flag": "trunnel_driven"},
+                ]
+            },
+            "You auger the hole. The bite sits tight.",
+            [{"op": "set_flag", "flag": "trun_augered"}],
+        ),
+        action(
+            "drive_the_trunnel",
+            "Drive the trunnel",
+            "do",
+            {
+                "all": [
+                    {"at": "trun.maul"},
+                    {"has_flag": "trun_trust"},
+                    {"has_flag": "trun_augered"},
+                    {"has_item": "auger_bit"},
+                    {"not_flag": "trunnel_driven"},
+                ]
+            },
+            "You drive the trunnel. Maul takes the set.",
+            [
+                {"op": "remove_item", "item": "auger_bit"},
+                {"op": "set_flag", "flag": "trunnel_driven"},
+                {"op": "remember", "actor": "maul", "fact": "drive"},
+            ],
+        ),
+        action(
+            "ask_billet_rule",
+            "Ask Billet the rule",
+            "talk",
+            {"at": "trun.yard"},
+            "Billet says shave the billet. Then auger and drive.",
+            [{"op": "set_flag", "flag": "heard_trun_rule"}],
+        ),
+        action(
+            "ask_auger_bite",
+            "Ask Auger the bite",
+            "talk",
+            {"at": "trun.auger"},
+            "Auger says set until the bite is even.",
+            [{"op": "set_flag", "flag": "heard_trun_rule"}],
+        ),
+        action(
+            "ask_maul_set",
+            "Ask Maul the set",
+            "talk",
+            {"at": "trun.maul"},
+            "Maul sets only augered holes.",
+            [{"op": "set_flag", "flag": "heard_trun_rule"}],
+        ),
+        action(
+            "know_the_dub",
+            "Know the dub",
+            "talk",
+            {
+                "all": [
+                    {"at": "dead.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dead_trust"},
+                ]
+            },
+            "You name the dub. Dub lets you rabbet and bolt.",
+            [
+                {"op": "set_flag", "flag": "dead_trust"},
+                {"op": "remember", "actor": "dub", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_deadwood_list",
+            "Read the deadwood list",
+            "do",
+            {
+                "all": [
+                    {"at": "dead.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dead_trust"},
+                ]
+            },
+            "You read the deadwood list. Dub lets you rabbet and bolt.",
+            [
+                {"op": "set_flag", "flag": "dead_trust"},
+                {"op": "remember", "actor": "dub", "fact": "list"},
+            ],
+        ),
+        action(
+            "drive_the_dub",
+            "Drive the dub",
+            "do",
+            {
+                "all": [
+                    {"at": "dead.dub"},
+                    {"has_flag": "trunnel_driven"},
+                    {"not_flag": "dead_primed"},
+                ]
+            },
+            "You set the driven trunnel. The dub takes the set.",
+            [
+                {"op": "set_flag", "flag": "dead_primed"},
+                {"op": "set_flag", "flag": "dead_trust"},
+                {"op": "remember", "actor": "dub", "fact": "drive"},
+            ],
+        ),
+        action(
+            "dub_the_timber",
+            "Dub the timber",
+            "do",
+            {
+                "all": [
+                    {"at": "dead.dub"},
+                    {"has_flag": "dead_trust"},
+                    {"not_flag": "dead_dubbed"},
+                    {"not_flag": "hog_bolted"},
+                ]
+            },
+            "You dub the timber. The oak sits even.",
+            [{"op": "set_flag", "flag": "dead_dubbed"}],
+        ),
+        action(
+            "cut_the_rabbet",
+            "Cut the rabbet",
+            "do",
+            {
+                "all": [
+                    {"at": "dead.rabbet"},
+                    {"has_flag": "dead_trust"},
+                    {"has_flag": "dead_dubbed"},
+                    {"not_flag": "dead_rabbetted"},
+                    {"not_flag": "hog_bolted"},
+                ]
+            },
+            "You cut the rabbet. The hood sits tight.",
+            [{"op": "set_flag", "flag": "dead_rabbetted"}],
+        ),
+        action(
+            "bolt_the_hog",
+            "Bolt the hog",
+            "do",
+            {
+                "all": [
+                    {"at": "dead.hog"},
+                    {"has_flag": "dead_trust"},
+                    {"has_flag": "dead_rabbetted"},
+                    {"has_item": "rabbet_iron"},
+                    {"not_flag": "hog_bolted"},
+                ]
+            },
+            "You bolt the hog. Hog takes the iron.",
+            [
+                {"op": "remove_item", "item": "rabbet_iron"},
+                {"op": "set_flag", "flag": "hog_bolted"},
+                {"op": "remember", "actor": "hog", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "ask_dub_rule",
+            "Ask Dub the rule",
+            "talk",
+            {"at": "dead.yard"},
+            "Dub says dub the timber. Then rabbet and bolt.",
+            [{"op": "set_flag", "flag": "heard_dead_rule"}],
+        ),
+        action(
+            "ask_rabbet_hood",
+            "Ask Rabbet the hood",
+            "talk",
+            {"at": "dead.rabbet"},
+            "Rabbet says set until the hood is even.",
+            [{"op": "set_flag", "flag": "heard_dead_rule"}],
+        ),
+        action(
+            "ask_hog_set",
+            "Ask Hog the set",
+            "talk",
+            {"at": "dead.hog"},
+            "Hog sets only rabbetted timber.",
+            [{"op": "set_flag", "flag": "heard_dead_rule"}],
+        ),
+        action(
+            "know_the_sink",
+            "Know the sink",
+            "talk",
+            {
+                "all": [
+                    {"at": "mast.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "mast_trust"},
+                ]
+            },
+            "You name the sink. Sink lets you range and hoop.",
+            [
+                {"op": "set_flag", "flag": "mast_trust"},
+                {"op": "remember", "actor": "sink", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_mast_list",
+            "Read the mast list",
+            "do",
+            {
+                "all": [
+                    {"at": "mast.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "mast_trust"},
+                ]
+            },
+            "You read the mast list. Sink lets you range and hoop.",
+            [
+                {"op": "set_flag", "flag": "mast_trust"},
+                {"op": "remember", "actor": "sink", "fact": "list"},
+            ],
+        ),
+        action(
+            "bolt_the_sink",
+            "Bolt the sink",
+            "do",
+            {
+                "all": [
+                    {"at": "mast.sink"},
+                    {"has_flag": "hog_bolted"},
+                    {"not_flag": "mast_primed"},
+                ]
+            },
+            "You set the bolted hog. The sink takes the run.",
+            [
+                {"op": "set_flag", "flag": "mast_primed"},
+                {"op": "set_flag", "flag": "mast_trust"},
+                {"op": "remember", "actor": "sink", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "sink_the_pole",
+            "Sink the pole",
+            "do",
+            {
+                "all": [
+                    {"at": "mast.sink"},
+                    {"has_flag": "mast_trust"},
+                    {"not_flag": "mast_sunk"},
+                    {"not_flag": "partner_hooped"},
+                ]
+            },
+            "You sink the pole. The fir sits even.",
+            [{"op": "set_flag", "flag": "mast_sunk"}],
+        ),
+        action(
+            "range_the_mast",
+            "Range the mast",
+            "do",
+            {
+                "all": [
+                    {"at": "mast.range"},
+                    {"has_flag": "mast_trust"},
+                    {"has_flag": "mast_sunk"},
+                    {"not_flag": "mast_ranged"},
+                    {"not_flag": "partner_hooped"},
+                ]
+            },
+            "You range the mast. The lie sits tight.",
+            [{"op": "set_flag", "flag": "mast_ranged"}],
+        ),
+        action(
+            "hoop_the_partner",
+            "Hoop the partner",
+            "do",
+            {
+                "all": [
+                    {"at": "mast.partner"},
+                    {"has_flag": "mast_trust"},
+                    {"has_flag": "mast_ranged"},
+                    {"has_item": "range_mark"},
+                    {"not_flag": "partner_hooped"},
+                ]
+            },
+            "You hoop the partner. Partner takes the mark.",
+            [
+                {"op": "remove_item", "item": "range_mark"},
+                {"op": "set_flag", "flag": "partner_hooped"},
+                {"op": "remember", "actor": "partner", "fact": "hoop"},
+            ],
+        ),
+        action(
+            "ask_sink_rule",
+            "Ask Sink the rule",
+            "talk",
+            {"at": "mast.yard"},
+            "Sink says sink the pole. Then range and hoop.",
+            [{"op": "set_flag", "flag": "heard_mast_rule"}],
+        ),
+        action(
+            "ask_range_lie",
+            "Ask Range the lie",
+            "talk",
+            {"at": "mast.range"},
+            "Range says set until the lie is even.",
+            [{"op": "set_flag", "flag": "heard_mast_rule"}],
+        ),
+        action(
+            "ask_partner_step",
+            "Ask Partner the step",
+            "talk",
+            {"at": "mast.partner"},
+            "Partner sets only ranged poles.",
+            [{"op": "set_flag", "flag": "heard_mast_rule"}],
+        ),
+        action(
+            "know_the_hew",
+            "Know the hew",
+            "talk",
+            {
+                "all": [
+                    {"at": "stem.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "stem_trust"},
+                ]
+            },
+            "You name the hew. Hew lets you gripe and hang.",
+            [
+                {"op": "set_flag", "flag": "stem_trust"},
+                {"op": "remember", "actor": "hew", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_stem_list",
+            "Read the stem list",
+            "do",
+            {
+                "all": [
+                    {"at": "stem.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "stem_trust"},
+                ]
+            },
+            "You read the stem list. Hew lets you gripe and hang.",
+            [
+                {"op": "set_flag", "flag": "stem_trust"},
+                {"op": "remember", "actor": "hew", "fact": "list"},
+            ],
+        ),
+        action(
+            "hoop_the_hew",
+            "Hoop the hew",
+            "do",
+            {
+                "all": [
+                    {"at": "stem.hew"},
+                    {"has_flag": "partner_hooped"},
+                    {"not_flag": "stem_primed"},
+                ]
+            },
+            "You set the hooped partner. The hew takes the run.",
+            [
+                {"op": "set_flag", "flag": "stem_primed"},
+                {"op": "set_flag", "flag": "stem_trust"},
+                {"op": "remember", "actor": "hew", "fact": "hoop"},
+            ],
+        ),
+        action(
+            "hew_the_stem",
+            "Hew the stem",
+            "do",
+            {
+                "all": [
+                    {"at": "stem.hew"},
+                    {"has_flag": "stem_trust"},
+                    {"not_flag": "stem_hewn"},
+                    {"not_flag": "knee_hung"},
+                ]
+            },
+            "You hew the stem. The oak sits even.",
+            [{"op": "set_flag", "flag": "stem_hewn"}],
+        ),
+        action(
+            "cut_the_gripe",
+            "Cut the gripe",
+            "do",
+            {
+                "all": [
+                    {"at": "stem.gripe"},
+                    {"has_flag": "stem_trust"},
+                    {"has_flag": "stem_hewn"},
+                    {"not_flag": "stem_griped"},
+                    {"not_flag": "knee_hung"},
+                ]
+            },
+            "You cut the gripe. The scarf sits tight.",
+            [{"op": "set_flag", "flag": "stem_griped"}],
+        ),
+        action(
+            "hang_the_knee",
+            "Hang the knee",
+            "do",
+            {
+                "all": [
+                    {"at": "stem.knee"},
+                    {"has_flag": "stem_trust"},
+                    {"has_flag": "stem_griped"},
+                    {"has_item": "gripe_iron"},
+                    {"not_flag": "knee_hung"},
+                ]
+            },
+            "You hang the knee. Knee takes the iron.",
+            [
+                {"op": "remove_item", "item": "gripe_iron"},
+                {"op": "set_flag", "flag": "knee_hung"},
+                {"op": "remember", "actor": "knee", "fact": "hang"},
+            ],
+        ),
+        action(
+            "ask_hew_rule",
+            "Ask Hew the rule",
+            "talk",
+            {"at": "stem.yard"},
+            "Hew says hew the stem. Then gripe and hang.",
+            [{"op": "set_flag", "flag": "heard_stem_rule"}],
+        ),
+        action(
+            "ask_gripe_scarf",
+            "Ask Gripe the scarf",
+            "talk",
+            {"at": "stem.gripe"},
+            "Gripe says set until the scarf is even.",
+            [{"op": "set_flag", "flag": "heard_stem_rule"}],
+        ),
+        action(
+            "ask_knee_throat",
+            "Ask Knee the throat",
+            "talk",
+            {"at": "stem.knee"},
+            "Knee sets only griped stems.",
+            [{"op": "set_flag", "flag": "heard_stem_rule"}],
+        ),
+        action(
+            "know_the_turn",
+            "Know the turn",
+            "talk",
+            {
+                "all": [
+                    {"at": "fid.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "fid_trust"},
+                ]
+            },
+            "You name the turn. Turn lets you ream and seize.",
+            [
+                {"op": "set_flag", "flag": "fid_trust"},
+                {"op": "remember", "actor": "turn", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_fid_list",
+            "Read the fid list",
+            "do",
+            {
+                "all": [
+                    {"at": "fid.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "fid_trust"},
+                ]
+            },
+            "You read the fid list. Turn lets you ream and seize.",
+            [
+                {"op": "set_flag", "flag": "fid_trust"},
+                {"op": "remember", "actor": "turn", "fact": "list"},
+            ],
+        ),
+        action(
+            "hang_the_fid",
+            "Hang the fid",
+            "do",
+            {
+                "all": [
+                    {"at": "fid.turn"},
+                    {"has_flag": "knee_hung"},
+                    {"not_flag": "fid_primed"},
+                ]
+            },
+            "You set the hung knee. The turn takes the run.",
+            [
+                {"op": "set_flag", "flag": "fid_primed"},
+                {"op": "set_flag", "flag": "fid_trust"},
+                {"op": "remember", "actor": "turn", "fact": "hang"},
+            ],
+        ),
+        action(
+            "turn_the_fid",
+            "Turn the fid",
+            "do",
+            {
+                "all": [
+                    {"at": "fid.turn"},
+                    {"has_flag": "fid_trust"},
+                    {"not_flag": "fid_turned"},
+                    {"not_flag": "eye_seized"},
+                ]
+            },
+            "You turn the fid. The lignum sits even.",
+            [{"op": "set_flag", "flag": "fid_turned"}],
+        ),
+        action(
+            "ream_the_eye",
+            "Ream the eye",
+            "do",
+            {
+                "all": [
+                    {"at": "fid.ream"},
+                    {"has_flag": "fid_trust"},
+                    {"has_flag": "fid_turned"},
+                    {"not_flag": "fid_reamed"},
+                    {"not_flag": "eye_seized"},
+                ]
+            },
+            "You ream the eye. The bite sits tight.",
+            [{"op": "set_flag", "flag": "fid_reamed"}],
+        ),
+        action(
+            "seize_the_eye",
+            "Seize the eye",
+            "do",
+            {
+                "all": [
+                    {"at": "fid.splice"},
+                    {"has_flag": "fid_trust"},
+                    {"has_flag": "fid_reamed"},
+                    {"has_item": "ream_bit"},
+                    {"not_flag": "eye_seized"},
+                ]
+            },
+            "You seize the eye. Seize takes the hitch.",
+            [
+                {"op": "remove_item", "item": "ream_bit"},
+                {"op": "set_flag", "flag": "eye_seized"},
+                {"op": "remember", "actor": "seize", "fact": "seize"},
+            ],
+        ),
+        action(
+            "ask_turn_rule",
+            "Ask Turn the rule",
+            "talk",
+            {"at": "fid.yard"},
+            "Turn says turn the fid. Then ream and seize.",
+            [{"op": "set_flag", "flag": "heard_fid_rule"}],
+        ),
+        action(
+            "ask_ream_bite",
+            "Ask Ream the bite",
+            "talk",
+            {"at": "fid.ream"},
+            "Ream says set until the bite is even.",
+            [{"op": "set_flag", "flag": "heard_fid_rule"}],
+        ),
+        action(
+            "ask_seize_hitch",
+            "Ask Seize the hitch",
+            "talk",
+            {"at": "fid.splice"},
+            "Seize sets only reamed eyes.",
+            [{"op": "set_flag", "flag": "heard_fid_rule"}],
+        ),
+        action(
+            "know_the_saw",
+            "Know the saw",
+            "talk",
+            {
+                "all": [
+                    {"at": "cleat.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cleat_trust"},
+                ]
+            },
+            "You name the saw. Saw lets you gouge and bolt.",
+            [
+                {"op": "set_flag", "flag": "cleat_trust"},
+                {"op": "remember", "actor": "saw", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cleat_list",
+            "Read the cleat list",
+            "do",
+            {
+                "all": [
+                    {"at": "cleat.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cleat_trust"},
+                ]
+            },
+            "You read the cleat list. Saw lets you gouge and bolt.",
+            [
+                {"op": "set_flag", "flag": "cleat_trust"},
+                {"op": "remember", "actor": "saw", "fact": "list"},
+            ],
+        ),
+        action(
+            "seize_the_saw",
+            "Seize the saw",
+            "do",
+            {
+                "all": [
+                    {"at": "cleat.saw"},
+                    {"has_flag": "eye_seized"},
+                    {"not_flag": "cleat_primed"},
+                ]
+            },
+            "You set the seized eye. The saw takes the run.",
+            [
+                {"op": "set_flag", "flag": "cleat_primed"},
+                {"op": "set_flag", "flag": "cleat_trust"},
+                {"op": "remember", "actor": "saw", "fact": "seize"},
+            ],
+        ),
+        action(
+            "saw_the_cleat",
+            "Saw the cleat",
+            "do",
+            {
+                "all": [
+                    {"at": "cleat.saw"},
+                    {"has_flag": "cleat_trust"},
+                    {"not_flag": "cleat_sawn"},
+                    {"not_flag": "base_bolted"},
+                ]
+            },
+            "You saw the cleat. The oak sits even.",
+            [{"op": "set_flag", "flag": "cleat_sawn"}],
+        ),
+        action(
+            "gouge_the_horn",
+            "Gouge the horn",
+            "do",
+            {
+                "all": [
+                    {"at": "cleat.horn"},
+                    {"has_flag": "cleat_trust"},
+                    {"has_flag": "cleat_sawn"},
+                    {"not_flag": "cleat_gouged"},
+                    {"not_flag": "base_bolted"},
+                ]
+            },
+            "You gouge the horn. The throat sits tight.",
+            [{"op": "set_flag", "flag": "cleat_gouged"}],
+        ),
+        action(
+            "bolt_the_base",
+            "Bolt the base",
+            "do",
+            {
+                "all": [
+                    {"at": "cleat.bolt"},
+                    {"has_flag": "cleat_trust"},
+                    {"has_flag": "cleat_gouged"},
+                    {"has_item": "horn_gouge"},
+                    {"not_flag": "base_bolted"},
+                ]
+            },
+            "You bolt the base. Bolt takes the gouge.",
+            [
+                {"op": "remove_item", "item": "horn_gouge"},
+                {"op": "set_flag", "flag": "base_bolted"},
+                {"op": "remember", "actor": "bolt", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "ask_saw_rule",
+            "Ask Saw the rule",
+            "talk",
+            {"at": "cleat.yard"},
+            "Saw says saw the cleat. Then gouge and bolt.",
+            [{"op": "set_flag", "flag": "heard_cleat_rule"}],
+        ),
+        action(
+            "ask_horn_throat",
+            "Ask Horn the throat",
+            "talk",
+            {"at": "cleat.horn"},
+            "Horn says set until the throat is even.",
+            [{"op": "set_flag", "flag": "heard_cleat_rule"}],
+        ),
+        action(
+            "ask_bolt_set",
+            "Ask Bolt the set",
+            "talk",
+            {"at": "cleat.bolt"},
+            "Bolt sets only gouged horns.",
+            [{"op": "set_flag", "flag": "heard_cleat_rule"}],
+        ),
+        action(
+            "know_the_bore",
+            "Know the bore",
+            "talk",
+            {
+                "all": [
+                    {"at": "haw.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "haw_trust"},
+                ]
+            },
+            "You name the bore. Bore lets you seat and pay.",
+            [
+                {"op": "set_flag", "flag": "haw_trust"},
+                {"op": "remember", "actor": "bore", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_hawse_list",
+            "Read the hawse list",
+            "do",
+            {
+                "all": [
+                    {"at": "haw.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "haw_trust"},
+                ]
+            },
+            "You read the hawse list. Bore lets you seat and pay.",
+            [
+                {"op": "set_flag", "flag": "haw_trust"},
+                {"op": "remember", "actor": "bore", "fact": "list"},
+            ],
+        ),
+        action(
+            "bolt_the_bore",
+            "Bolt the bore",
+            "do",
+            {
+                "all": [
+                    {"at": "haw.bore"},
+                    {"has_flag": "base_bolted"},
+                    {"not_flag": "haw_primed"},
+                ]
+            },
+            "You set the bolted base. The bore takes the run.",
+            [
+                {"op": "set_flag", "flag": "haw_primed"},
+                {"op": "set_flag", "flag": "haw_trust"},
+                {"op": "remember", "actor": "bore", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "bore_the_hawse",
+            "Bore the hawse",
+            "do",
+            {
+                "all": [
+                    {"at": "haw.bore"},
+                    {"has_flag": "haw_trust"},
+                    {"not_flag": "haw_bored"},
+                    {"not_flag": "collar_paid"},
+                ]
+            },
+            "You bore the hawse. The oak sits even.",
+            [{"op": "set_flag", "flag": "haw_bored"}],
+        ),
+        action(
+            "seat_the_pipe",
+            "Seat the pipe",
+            "do",
+            {
+                "all": [
+                    {"at": "haw.lip"},
+                    {"has_flag": "haw_trust"},
+                    {"has_flag": "haw_bored"},
+                    {"not_flag": "haw_seated"},
+                    {"not_flag": "collar_paid"},
+                ]
+            },
+            "You seat the pipe. The lip sits tight.",
+            [{"op": "set_flag", "flag": "haw_seated"}],
+        ),
+        action(
+            "pay_the_collar",
+            "Pay the collar",
+            "do",
+            {
+                "all": [
+                    {"at": "haw.collar"},
+                    {"has_flag": "haw_trust"},
+                    {"has_flag": "haw_seated"},
+                    {"has_item": "pipe_lip"},
+                    {"not_flag": "collar_paid"},
+                ]
+            },
+            "You pay the collar. Collar takes the lip.",
+            [
+                {"op": "remove_item", "item": "pipe_lip"},
+                {"op": "set_flag", "flag": "collar_paid"},
+                {"op": "remember", "actor": "collar", "fact": "pay"},
+            ],
+        ),
+        action(
+            "ask_bore_rule",
+            "Ask Bore the rule",
+            "talk",
+            {"at": "haw.yard"},
+            "Bore says bore the hawse. Then seat and pay.",
+            [{"op": "set_flag", "flag": "heard_haw_rule"}],
+        ),
+        action(
+            "ask_pipe_lip",
+            "Ask Pipe the lip",
+            "talk",
+            {"at": "haw.lip"},
+            "Pipe says set until the lip is even.",
+            [{"op": "set_flag", "flag": "heard_haw_rule"}],
+        ),
+        action(
+            "ask_collar_pay",
+            "Ask Collar the pay",
+            "talk",
+            {"at": "haw.collar"},
+            "Collar sets only seated pipes.",
+            [{"op": "set_flag", "flag": "heard_haw_rule"}],
+        ),
+        action(
+            "know_the_rim",
+            "Know the rim",
+            "talk",
+            {
+                "all": [
+                    {"at": "deye.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "deye_trust"},
+                ]
+            },
+            "You name the rim. Rim lets you reeve and seize.",
+            [
+                {"op": "set_flag", "flag": "deye_trust"},
+                {"op": "remember", "actor": "rim", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_deadeye_list",
+            "Read the deadeye list",
+            "do",
+            {
+                "all": [
+                    {"at": "deye.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "deye_trust"},
+                ]
+            },
+            "You read the deadeye list. Rim lets you reeve and seize.",
+            [
+                {"op": "set_flag", "flag": "deye_trust"},
+                {"op": "remember", "actor": "rim", "fact": "list"},
+            ],
+        ),
+        action(
+            "pay_the_rim",
+            "Pay the rim",
+            "do",
+            {
+                "all": [
+                    {"at": "deye.rim"},
+                    {"has_flag": "collar_paid"},
+                    {"not_flag": "deye_primed"},
+                ]
+            },
+            "You set the paid collar. The rim takes the run.",
+            [
+                {"op": "set_flag", "flag": "deye_primed"},
+                {"op": "set_flag", "flag": "deye_trust"},
+                {"op": "remember", "actor": "rim", "fact": "pay"},
+            ],
+        ),
+        action(
+            "score_the_deadeye",
+            "Score the deadeye",
+            "do",
+            {
+                "all": [
+                    {"at": "deye.rim"},
+                    {"has_flag": "deye_trust"},
+                    {"not_flag": "deye_scored"},
+                    {"not_flag": "lanyard_seized"},
+                ]
+            },
+            "You score the deadeye. The lignum sits even.",
+            [{"op": "set_flag", "flag": "deye_scored"}],
+        ),
+        action(
+            "reeve_the_strop",
+            "Reeve the strop",
+            "do",
+            {
+                "all": [
+                    {"at": "deye.reeve"},
+                    {"has_flag": "deye_trust"},
+                    {"has_flag": "deye_scored"},
+                    {"not_flag": "deye_reeved"},
+                    {"not_flag": "lanyard_seized"},
+                ]
+            },
+            "You reeve the strop. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "deye_reeved"}],
+        ),
+        action(
+            "seize_the_lanyard",
+            "Seize the lanyard",
+            "do",
+            {
+                "all": [
+                    {"at": "deye.lanyard"},
+                    {"has_flag": "deye_trust"},
+                    {"has_flag": "deye_reeved"},
+                    {"has_item": "reeve_pin"},
+                    {"not_flag": "lanyard_seized"},
+                ]
+            },
+            "You seize the lanyard. Lanyard takes the pin.",
+            [
+                {"op": "remove_item", "item": "reeve_pin"},
+                {"op": "set_flag", "flag": "lanyard_seized"},
+                {"op": "remember", "actor": "lanyard", "fact": "seize"},
+            ],
+        ),
+        action(
+            "ask_rim_rule",
+            "Ask Rim the rule",
+            "talk",
+            {"at": "deye.yard"},
+            "Rim says score the deadeye. Then reeve and seize.",
+            [{"op": "set_flag", "flag": "heard_deye_rule"}],
+        ),
+        action(
+            "ask_reeve_hitch",
+            "Ask Reeve the hitch",
+            "talk",
+            {"at": "deye.reeve"},
+            "Reeve says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_deye_rule"}],
+        ),
+        action(
+            "ask_lanyard_fall",
+            "Ask Lanyard the fall",
+            "talk",
+            {"at": "deye.lanyard"},
+            "Lanyard sets only reeved strops.",
+            [{"op": "set_flag", "flag": "heard_deye_rule"}],
+        ),
+        action(
+            "know_the_truck",
+            "Know the truck",
+            "talk",
+            {
+                "all": [
+                    {"at": "par.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "par_trust"},
+                ]
+            },
+            "You name the truck. Truck lets you groove and truss.",
+            [
+                {"op": "set_flag", "flag": "par_trust"},
+                {"op": "remember", "actor": "truck", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_parrel_list",
+            "Read the parrel list",
+            "do",
+            {
+                "all": [
+                    {"at": "par.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "par_trust"},
+                ]
+            },
+            "You read the parrel list. Truck lets you groove and truss.",
+            [
+                {"op": "set_flag", "flag": "par_trust"},
+                {"op": "remember", "actor": "truck", "fact": "list"},
+            ],
+        ),
+        action(
+            "seize_the_truck",
+            "Seize the truck",
+            "do",
+            {
+                "all": [
+                    {"at": "par.truck"},
+                    {"has_flag": "lanyard_seized"},
+                    {"not_flag": "par_primed"},
+                ]
+            },
+            "You set the seized lanyard. The truck takes the run.",
+            [
+                {"op": "set_flag", "flag": "par_primed"},
+                {"op": "set_flag", "flag": "par_trust"},
+                {"op": "remember", "actor": "truck", "fact": "seize"},
+            ],
+        ),
+        action(
+            "groove_the_truck",
+            "Groove the truck",
+            "do",
+            {
+                "all": [
+                    {"at": "par.truck"},
+                    {"has_flag": "par_trust"},
+                    {"not_flag": "par_grooved"},
+                    {"not_flag": "parrel_trussed"},
+                ]
+            },
+            "You groove the truck. The lignum sits even.",
+            [{"op": "set_flag", "flag": "par_grooved"}],
+        ),
+        action(
+            "thread_the_rib",
+            "Thread the rib",
+            "do",
+            {
+                "all": [
+                    {"at": "par.rib"},
+                    {"has_flag": "par_trust"},
+                    {"has_flag": "par_grooved"},
+                    {"not_flag": "par_threaded"},
+                    {"not_flag": "parrel_trussed"},
+                ]
+            },
+            "You thread the rib. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "par_threaded"}],
+        ),
+        action(
+            "truss_the_parrel",
+            "Truss the parrel",
+            "do",
+            {
+                "all": [
+                    {"at": "par.truss"},
+                    {"has_flag": "par_trust"},
+                    {"has_flag": "par_threaded"},
+                    {"has_item": "rib_cord"},
+                    {"not_flag": "parrel_trussed"},
+                ]
+            },
+            "You truss the parrel. Truss takes the cord.",
+            [
+                {"op": "remove_item", "item": "rib_cord"},
+                {"op": "set_flag", "flag": "parrel_trussed"},
+                {"op": "remember", "actor": "truss", "fact": "truss"},
+            ],
+        ),
+        action(
+            "ask_truck_rule",
+            "Ask Truck the rule",
+            "talk",
+            {"at": "par.yard"},
+            "Truck says groove the truck. Then thread and truss.",
+            [{"op": "set_flag", "flag": "heard_par_rule"}],
+        ),
+        action(
+            "ask_rib_hitch",
+            "Ask Rib the hitch",
+            "talk",
+            {"at": "par.rib"},
+            "Rib says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_par_rule"}],
+        ),
+        action(
+            "ask_truss_yard",
+            "Ask Truss the fall",
+            "talk",
+            {"at": "par.truss"},
+            "Truss sets only threaded ribs.",
+            [{"op": "set_flag", "flag": "heard_par_rule"}],
+        ),
+        action(
+            "know_the_step",
+            "Know the step",
+            "talk",
+            {
+                "all": [
+                    {"at": "bitt.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "bitt_trust"},
+                ]
+            },
+            "You name the step. Step lets you cross and belay.",
+            [
+                {"op": "set_flag", "flag": "bitt_trust"},
+                {"op": "remember", "actor": "step", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_bitts_list",
+            "Read the bitts list",
+            "do",
+            {
+                "all": [
+                    {"at": "bitt.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "bitt_trust"},
+                ]
+            },
+            "You read the bitts list. Step lets you cross and belay.",
+            [
+                {"op": "set_flag", "flag": "bitt_trust"},
+                {"op": "remember", "actor": "step", "fact": "list"},
+            ],
+        ),
+        action(
+            "truss_the_step",
+            "Truss the step",
+            "do",
+            {
+                "all": [
+                    {"at": "bitt.step"},
+                    {"has_flag": "parrel_trussed"},
+                    {"not_flag": "bitt_primed"},
+                ]
+            },
+            "You set the trussed parrel. The step takes the run.",
+            [
+                {"op": "set_flag", "flag": "bitt_primed"},
+                {"op": "set_flag", "flag": "bitt_trust"},
+                {"op": "remember", "actor": "step", "fact": "truss"},
+            ],
+        ),
+        action(
+            "step_the_bitts",
+            "Step the bitts",
+            "do",
+            {
+                "all": [
+                    {"at": "bitt.step"},
+                    {"has_flag": "bitt_trust"},
+                    {"not_flag": "bitt_stepped"},
+                    {"not_flag": "cable_belayed"},
+                ]
+            },
+            "You step the bitts. The oak sits even.",
+            [{"op": "set_flag", "flag": "bitt_stepped"}],
+        ),
+        action(
+            "cross_the_thwart",
+            "Cross the thwart",
+            "do",
+            {
+                "all": [
+                    {"at": "bitt.thwart"},
+                    {"has_flag": "bitt_trust"},
+                    {"has_flag": "bitt_stepped"},
+                    {"not_flag": "bitt_crossed"},
+                    {"not_flag": "cable_belayed"},
+                ]
+            },
+            "You cross the thwart. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "bitt_crossed"}],
+        ),
+        action(
+            "belay_the_cable",
+            "Belay the cable",
+            "do",
+            {
+                "all": [
+                    {"at": "bitt.belay"},
+                    {"has_flag": "bitt_trust"},
+                    {"has_flag": "bitt_crossed"},
+                    {"has_item": "thwart_bolt"},
+                    {"not_flag": "cable_belayed"},
+                ]
+            },
+            "You belay the cable. Belay takes the bolt.",
+            [
+                {"op": "remove_item", "item": "thwart_bolt"},
+                {"op": "set_flag", "flag": "cable_belayed"},
+                {"op": "remember", "actor": "belay", "fact": "belay"},
+            ],
+        ),
+        action(
+            "ask_step_rule",
+            "Ask Step the rule",
+            "talk",
+            {"at": "bitt.yard"},
+            "Step says step the bitts. Then cross and belay.",
+            [{"op": "set_flag", "flag": "heard_bitt_rule"}],
+        ),
+        action(
+            "ask_thwart_hitch",
+            "Ask Thwart the hitch",
+            "talk",
+            {"at": "bitt.thwart"},
+            "Thwart says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_bitt_rule"}],
+        ),
+        action(
+            "ask_belay_fall",
+            "Ask Belay the fall",
+            "talk",
+            {"at": "bitt.belay"},
+            "Belay sets only crossed thwarts.",
+            [{"op": "set_flag", "flag": "heard_bitt_rule"}],
+        ),
+        action(
+            "know_the_woold",
+            "Know the woold",
+            "talk",
+            {
+                "all": [
+                    {"at": "gam.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "gam_trust"},
+                ]
+            },
+            "You name the woold. Woold lets you ride and frap.",
+            [
+                {"op": "set_flag", "flag": "gam_trust"},
+                {"op": "remember", "actor": "woold", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_gammon_list",
+            "Read the gammon list",
+            "do",
+            {
+                "all": [
+                    {"at": "gam.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "gam_trust"},
+                ]
+            },
+            "You read the gammon list. Woold lets you ride and frap.",
+            [
+                {"op": "set_flag", "flag": "gam_trust"},
+                {"op": "remember", "actor": "woold", "fact": "list"},
+            ],
+        ),
+        action(
+            "belay_the_woold",
+            "Belay the woold",
+            "do",
+            {
+                "all": [
+                    {"at": "gam.woold"},
+                    {"has_flag": "cable_belayed"},
+                    {"not_flag": "gam_primed"},
+                ]
+            },
+            "You set the belayed cable. The woold takes the run.",
+            [
+                {"op": "set_flag", "flag": "gam_primed"},
+                {"op": "set_flag", "flag": "gam_trust"},
+                {"op": "remember", "actor": "woold", "fact": "belay"},
+            ],
+        ),
+        action(
+            "woold_the_bowsprit",
+            "Woold the bowsprit",
+            "do",
+            {
+                "all": [
+                    {"at": "gam.woold"},
+                    {"has_flag": "gam_trust"},
+                    {"not_flag": "gam_woolded"},
+                    {"not_flag": "gammon_frapped"},
+                ]
+            },
+            "You woold the bowsprit. The hemp sits even.",
+            [{"op": "set_flag", "flag": "gam_woolded"}],
+        ),
+        action(
+            "ride_the_turns",
+            "Ride the turns",
+            "do",
+            {
+                "all": [
+                    {"at": "gam.riding"},
+                    {"has_flag": "gam_trust"},
+                    {"has_flag": "gam_woolded"},
+                    {"not_flag": "gam_ridden"},
+                    {"not_flag": "gammon_frapped"},
+                ]
+            },
+            "You ride the turns. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "gam_ridden"}],
+        ),
+        action(
+            "frap_the_gammon",
+            "Frap the gammon",
+            "do",
+            {
+                "all": [
+                    {"at": "gam.frap"},
+                    {"has_flag": "gam_trust"},
+                    {"has_flag": "gam_ridden"},
+                    {"has_item": "riding_yarn"},
+                    {"not_flag": "gammon_frapped"},
+                ]
+            },
+            "You frap the gammon. Frap takes the yarn.",
+            [
+                {"op": "remove_item", "item": "riding_yarn"},
+                {"op": "set_flag", "flag": "gammon_frapped"},
+                {"op": "remember", "actor": "frap", "fact": "frap"},
+            ],
+        ),
+        action(
+            "ask_woold_rule",
+            "Ask Woold the rule",
+            "talk",
+            {"at": "gam.yard"},
+            "Woold says woold the bowsprit. Then ride and frap.",
+            [{"op": "set_flag", "flag": "heard_gam_rule"}],
+        ),
+        action(
+            "ask_riding_hitch",
+            "Ask Riding the hitch",
+            "talk",
+            {"at": "gam.riding"},
+            "Riding says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_gam_rule"}],
+        ),
+        action(
+            "ask_frap_fall",
+            "Ask Frap the fall",
+            "talk",
+            {"at": "gam.frap"},
+            "Frap sets only ridden turns.",
+            [{"op": "set_flag", "flag": "heard_gam_rule"}],
+        ),
+        action(
+            "know_the_shape",
+            "Know the shape",
+            "talk",
+            {
+                "all": [
+                    {"at": "till.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "till_trust"},
+                ]
+            },
+            "You name the shape. Shape lets you fit and yoke.",
+            [
+                {"op": "set_flag", "flag": "till_trust"},
+                {"op": "remember", "actor": "shape", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_tiller_list",
+            "Read the tiller list",
+            "do",
+            {
+                "all": [
+                    {"at": "till.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "till_trust"},
+                ]
+            },
+            "You read the tiller list. Shape lets you fit and yoke.",
+            [
+                {"op": "set_flag", "flag": "till_trust"},
+                {"op": "remember", "actor": "shape", "fact": "list"},
+            ],
+        ),
+        action(
+            "frap_the_shape",
+            "Frap the shape",
+            "do",
+            {
+                "all": [
+                    {"at": "till.shape"},
+                    {"has_flag": "gammon_frapped"},
+                    {"not_flag": "till_primed"},
+                ]
+            },
+            "You set the frapped gammon. The shape takes the run.",
+            [
+                {"op": "set_flag", "flag": "till_primed"},
+                {"op": "set_flag", "flag": "till_trust"},
+                {"op": "remember", "actor": "shape", "fact": "frap"},
+            ],
+        ),
+        action(
+            "shape_the_tiller",
+            "Shape the tiller",
+            "do",
+            {
+                "all": [
+                    {"at": "till.shape"},
+                    {"has_flag": "till_trust"},
+                    {"not_flag": "till_shaped"},
+                    {"not_flag": "tiller_yoked"},
+                ]
+            },
+            "You shape the tiller. The ash sits even.",
+            [{"op": "set_flag", "flag": "till_shaped"}],
+        ),
+        action(
+            "fit_the_helm",
+            "Fit the helm",
+            "do",
+            {
+                "all": [
+                    {"at": "till.helm"},
+                    {"has_flag": "till_trust"},
+                    {"has_flag": "till_shaped"},
+                    {"not_flag": "till_fitted"},
+                    {"not_flag": "tiller_yoked"},
+                ]
+            },
+            "You fit the helm. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "till_fitted"}],
+        ),
+        action(
+            "yoke_the_tiller",
+            "Yoke the tiller",
+            "do",
+            {
+                "all": [
+                    {"at": "till.yoke"},
+                    {"has_flag": "till_trust"},
+                    {"has_flag": "till_fitted"},
+                    {"has_item": "helm_iron"},
+                    {"not_flag": "tiller_yoked"},
+                ]
+            },
+            "You yoke the tiller. Yoke takes the iron.",
+            [
+                {"op": "remove_item", "item": "helm_iron"},
+                {"op": "set_flag", "flag": "tiller_yoked"},
+                {"op": "remember", "actor": "yoke", "fact": "yoke"},
+            ],
+        ),
+        action(
+            "ask_shape_rule",
+            "Ask Shape the rule",
+            "talk",
+            {"at": "till.yard"},
+            "Shape says shape the tiller. Then fit and yoke.",
+            [{"op": "set_flag", "flag": "heard_till_rule"}],
+        ),
+        action(
+            "ask_helm_hitch",
+            "Ask Helm the hitch",
+            "talk",
+            {"at": "till.helm"},
+            "Helm says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_till_rule"}],
+        ),
+        action(
+            "ask_yoke_fall",
+            "Ask Yoke the fall",
+            "talk",
+            {"at": "till.yoke"},
+            "Yoke sets only fitted helms.",
+            [{"op": "set_flag", "flag": "heard_till_rule"}],
+        ),
+        action(
+            "know_the_bill",
+            "Know the bill",
+            "talk",
+            {
+                "all": [
+                    {"at": "cath.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cath_trust"},
+                ]
+            },
+            "You name the bill. Bill lets you bush and fish.",
+            [
+                {"op": "set_flag", "flag": "cath_trust"},
+                {"op": "remember", "actor": "bill", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_cathead_list",
+            "Read the cathead list",
+            "do",
+            {
+                "all": [
+                    {"at": "cath.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cath_trust"},
+                ]
+            },
+            "You read the cathead list. Bill lets you bush and fish.",
+            [
+                {"op": "set_flag", "flag": "cath_trust"},
+                {"op": "remember", "actor": "bill", "fact": "list"},
+            ],
+        ),
+        action(
+            "yoke_the_bill",
+            "Yoke the bill",
+            "do",
+            {
+                "all": [
+                    {"at": "cath.bill"},
+                    {"has_flag": "tiller_yoked"},
+                    {"not_flag": "cath_primed"},
+                ]
+            },
+            "You set the yoked tiller. The bill takes the run.",
+            [
+                {"op": "set_flag", "flag": "cath_primed"},
+                {"op": "set_flag", "flag": "cath_trust"},
+                {"op": "remember", "actor": "bill", "fact": "yoke"},
+            ],
+        ),
+        action(
+            "adze_the_bill",
+            "Adze the bill",
+            "do",
+            {
+                "all": [
+                    {"at": "cath.bill"},
+                    {"has_flag": "cath_trust"},
+                    {"not_flag": "cath_adzed"},
+                    {"not_flag": "fluke_fished"},
+                ]
+            },
+            "You adze the bill. The oak sits even.",
+            [{"op": "set_flag", "flag": "cath_adzed"}],
+        ),
+        action(
+            "bush_the_roller",
+            "Bush the roller",
+            "do",
+            {
+                "all": [
+                    {"at": "cath.roller"},
+                    {"has_flag": "cath_trust"},
+                    {"has_flag": "cath_adzed"},
+                    {"not_flag": "cath_bushed"},
+                    {"not_flag": "fluke_fished"},
+                ]
+            },
+            "You bush the roller. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "cath_bushed"}],
+        ),
+        action(
+            "fish_the_fluke",
+            "Fish the fluke",
+            "do",
+            {
+                "all": [
+                    {"at": "cath.fluke"},
+                    {"has_flag": "cath_trust"},
+                    {"has_flag": "cath_bushed"},
+                    {"has_item": "roller_bush"},
+                    {"not_flag": "fluke_fished"},
+                ]
+            },
+            "You fish the fluke. Fluke takes the bush.",
+            [
+                {"op": "remove_item", "item": "roller_bush"},
+                {"op": "set_flag", "flag": "fluke_fished"},
+                {"op": "remember", "actor": "fluke", "fact": "fish"},
+            ],
+        ),
+        action(
+            "ask_bill_rule",
+            "Ask Bill the rule",
+            "talk",
+            {"at": "cath.yard"},
+            "Bill says adze the bill. Then bush and fish.",
+            [{"op": "set_flag", "flag": "heard_cath_rule"}],
+        ),
+        action(
+            "ask_roller_hitch",
+            "Ask Roller the hitch",
+            "talk",
+            {"at": "cath.roller"},
+            "Roller says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_cath_rule"}],
+        ),
+        action(
+            "ask_fluke_fall",
+            "Ask Fluke the fall",
+            "talk",
+            {"at": "cath.fluke"},
+            "Fluke sets only bushed rollers.",
+            [{"op": "set_flag", "flag": "heard_cath_rule"}],
+        ),
+        action(
+            "know_the_wing",
+            "Know the wing",
+            "talk",
+            {
+                "all": [
+                    {"at": "tran.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "tran_trust"},
+                ]
+            },
+            "You name the wing. Wing lets you fit and spike.",
+            [
+                {"op": "set_flag", "flag": "tran_trust"},
+                {"op": "remember", "actor": "wing", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_transom_list",
+            "Read the transom list",
+            "do",
+            {
+                "all": [
+                    {"at": "tran.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "tran_trust"},
+                ]
+            },
+            "You read the transom list. Wing lets you fit and spike.",
+            [
+                {"op": "set_flag", "flag": "tran_trust"},
+                {"op": "remember", "actor": "wing", "fact": "list"},
+            ],
+        ),
+        action(
+            "fish_the_wing",
+            "Fish the wing",
+            "do",
+            {
+                "all": [
+                    {"at": "tran.wing"},
+                    {"has_flag": "fluke_fished"},
+                    {"not_flag": "tran_primed"},
+                ]
+            },
+            "You set the fished fluke. The wing takes the run.",
+            [
+                {"op": "set_flag", "flag": "tran_primed"},
+                {"op": "set_flag", "flag": "tran_trust"},
+                {"op": "remember", "actor": "wing", "fact": "fish"},
+            ],
+        ),
+        action(
+            "scribe_the_wing",
+            "Scribe the wing",
+            "do",
+            {
+                "all": [
+                    {"at": "tran.wing"},
+                    {"has_flag": "tran_trust"},
+                    {"not_flag": "tran_scribed"},
+                    {"not_flag": "stern_spiked"},
+                ]
+            },
+            "You scribe the wing. The oak sits even.",
+            [{"op": "set_flag", "flag": "tran_scribed"}],
+        ),
+        action(
+            "fit_the_fashion",
+            "Fit the fashion",
+            "do",
+            {
+                "all": [
+                    {"at": "tran.fashion"},
+                    {"has_flag": "tran_trust"},
+                    {"has_flag": "tran_scribed"},
+                    {"not_flag": "tran_fitted"},
+                    {"not_flag": "stern_spiked"},
+                ]
+            },
+            "You fit the fashion. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "tran_fitted"}],
+        ),
+        action(
+            "spike_the_stern",
+            "Spike the stern",
+            "do",
+            {
+                "all": [
+                    {"at": "tran.stern"},
+                    {"has_flag": "tran_trust"},
+                    {"has_flag": "tran_fitted"},
+                    {"has_item": "fashion_iron"},
+                    {"not_flag": "stern_spiked"},
+                ]
+            },
+            "You spike the stern. Stern takes the iron.",
+            [
+                {"op": "remove_item", "item": "fashion_iron"},
+                {"op": "set_flag", "flag": "stern_spiked"},
+                {"op": "remember", "actor": "stern", "fact": "spike"},
+            ],
+        ),
+        action(
+            "ask_wing_rule",
+            "Ask Wing the rule",
+            "talk",
+            {"at": "tran.yard"},
+            "Wing says scribe the wing. Then fit and spike.",
+            [{"op": "set_flag", "flag": "heard_tran_rule"}],
+        ),
+        action(
+            "ask_fashion_hitch",
+            "Ask Fashion the hitch",
+            "talk",
+            {"at": "tran.fashion"},
+            "Fashion says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_tran_rule"}],
+        ),
+        action(
+            "ask_stern_fall",
+            "Ask Stern the fall",
+            "talk",
+            {"at": "tran.stern"},
+            "Stern sets only fitted fashions.",
+            [{"op": "set_flag", "flag": "heard_tran_rule"}],
+        ),
+        action(
+            "know_the_broach",
+            "Know the broach",
+            "talk",
+            {
+                "all": [
+                    {"at": "scup.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "scup_trust"},
+                ]
+            },
+            "You name the broach. Broach lets you chase and plug.",
+            [
+                {"op": "set_flag", "flag": "scup_trust"},
+                {"op": "remember", "actor": "broach", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_scupper_list",
+            "Read the scupper list",
+            "do",
+            {
+                "all": [
+                    {"at": "scup.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "scup_trust"},
+                ]
+            },
+            "You read the scupper list. Broach lets you chase and plug.",
+            [
+                {"op": "set_flag", "flag": "scup_trust"},
+                {"op": "remember", "actor": "broach", "fact": "list"},
+            ],
+        ),
+        action(
+            "spike_the_broach",
+            "Spike the broach",
+            "do",
+            {
+                "all": [
+                    {"at": "scup.broach"},
+                    {"has_flag": "stern_spiked"},
+                    {"not_flag": "scup_primed"},
+                ]
+            },
+            "You set the spiked stern. The broach takes the run.",
+            [
+                {"op": "set_flag", "flag": "scup_primed"},
+                {"op": "set_flag", "flag": "scup_trust"},
+                {"op": "remember", "actor": "broach", "fact": "spike"},
+            ],
+        ),
+        action(
+            "broach_the_scupper",
+            "Broach the scupper",
+            "do",
+            {
+                "all": [
+                    {"at": "scup.broach"},
+                    {"has_flag": "scup_trust"},
+                    {"not_flag": "scup_broached"},
+                    {"not_flag": "mouth_plugged"},
+                ]
+            },
+            "You broach the scupper. The oak sits even.",
+            [{"op": "set_flag", "flag": "scup_broached"}],
+        ),
+        action(
+            "chase_the_drain",
+            "Chase the drain",
+            "do",
+            {
+                "all": [
+                    {"at": "scup.drain"},
+                    {"has_flag": "scup_trust"},
+                    {"has_flag": "scup_broached"},
+                    {"not_flag": "scup_chased"},
+                    {"not_flag": "mouth_plugged"},
+                ]
+            },
+            "You chase the drain. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "scup_chased"}],
+        ),
+        action(
+            "plug_the_mouth",
+            "Plug the mouth",
+            "do",
+            {
+                "all": [
+                    {"at": "scup.mouth"},
+                    {"has_flag": "scup_trust"},
+                    {"has_flag": "scup_chased"},
+                    {"has_item": "drain_lead"},
+                    {"not_flag": "mouth_plugged"},
+                ]
+            },
+            "You plug the mouth. Mouth takes the lead.",
+            [
+                {"op": "remove_item", "item": "drain_lead"},
+                {"op": "set_flag", "flag": "mouth_plugged"},
+                {"op": "remember", "actor": "mouth", "fact": "plug"},
+            ],
+        ),
+        action(
+            "ask_broach_rule",
+            "Ask Broach the rule",
+            "talk",
+            {"at": "scup.yard"},
+            "Broach says broach the scupper. Then chase and plug.",
+            [{"op": "set_flag", "flag": "heard_scup_rule"}],
+        ),
+        action(
+            "ask_drain_hitch",
+            "Ask Drain the hitch",
+            "talk",
+            {"at": "scup.drain"},
+            "Drain says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_scup_rule"}],
+        ),
+        action(
+            "ask_mouth_fall",
+            "Ask Mouth the fall",
+            "talk",
+            {"at": "scup.mouth"},
+            "Mouth sets only chased drains.",
+            [{"op": "set_flag", "flag": "heard_scup_rule"}],
+        ),
+        action(
+            "know_the_hood",
+            "Know the hood",
+            "talk",
+            {
+                "all": [
+                    {"at": "binn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "binn_trust"},
+                ]
+            },
+            "You name the hood. Hood lets you fill and lock.",
+            [
+                {"op": "set_flag", "flag": "binn_trust"},
+                {"op": "remember", "actor": "hood", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_binnacle_list",
+            "Read the binnacle list",
+            "do",
+            {
+                "all": [
+                    {"at": "binn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "binn_trust"},
+                ]
+            },
+            "You read the binnacle list. Hood lets you fill and lock.",
+            [
+                {"op": "set_flag", "flag": "binn_trust"},
+                {"op": "remember", "actor": "hood", "fact": "list"},
+            ],
+        ),
+        action(
+            "plug_the_hood",
+            "Plug the hood",
+            "do",
+            {
+                "all": [
+                    {"at": "binn.hood"},
+                    {"has_flag": "mouth_plugged"},
+                    {"not_flag": "binn_primed"},
+                ]
+            },
+            "You set the plugged mouth. The hood takes the run.",
+            [
+                {"op": "set_flag", "flag": "binn_primed"},
+                {"op": "set_flag", "flag": "binn_trust"},
+                {"op": "remember", "actor": "hood", "fact": "plug"},
+            ],
+        ),
+        action(
+            "true_the_hood",
+            "True the hood",
+            "do",
+            {
+                "all": [
+                    {"at": "binn.hood"},
+                    {"has_flag": "binn_trust"},
+                    {"not_flag": "binn_trued"},
+                    {"not_flag": "card_locked"},
+                ]
+            },
+            "You true the hood. The brass sits even.",
+            [{"op": "set_flag", "flag": "binn_trued"}],
+        ),
+        action(
+            "fill_the_lamp",
+            "Fill the lamp",
+            "do",
+            {
+                "all": [
+                    {"at": "binn.lamp"},
+                    {"has_flag": "binn_trust"},
+                    {"has_flag": "binn_trued"},
+                    {"not_flag": "binn_filled"},
+                    {"not_flag": "card_locked"},
+                ]
+            },
+            "You fill the lamp. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "binn_filled"}],
+        ),
+        action(
+            "lock_the_card",
+            "Lock the card",
+            "do",
+            {
+                "all": [
+                    {"at": "binn.card"},
+                    {"has_flag": "binn_trust"},
+                    {"has_flag": "binn_filled"},
+                    {"has_item": "lamp_oil"},
+                    {"not_flag": "card_locked"},
+                ]
+            },
+            "You lock the card. Card takes the oil.",
+            [
+                {"op": "remove_item", "item": "lamp_oil"},
+                {"op": "set_flag", "flag": "card_locked"},
+                {"op": "remember", "actor": "card", "fact": "lock"},
+            ],
+        ),
+        action(
+            "ask_hood_rule",
+            "Ask Hood the rule",
+            "talk",
+            {"at": "binn.yard"},
+            "Hood says true the hood. Then fill and lock.",
+            [{"op": "set_flag", "flag": "heard_binn_rule"}],
+        ),
+        action(
+            "ask_lamp_hitch",
+            "Ask Lamp the hitch",
+            "talk",
+            {"at": "binn.lamp"},
+            "Lamp says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_binn_rule"}],
+        ),
+        action(
+            "ask_card_fall",
+            "Ask Card the fall",
+            "talk",
+            {"at": "binn.card"},
+            "Card sets only filled lamps.",
+            [{"op": "set_flag", "flag": "heard_binn_rule"}],
+        ),
+        action(
+            "know_the_cant",
+            "Know the cant",
+            "talk",
+            {
+                "all": [
+                    {"at": "futt.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "futt_trust"},
+                ]
+            },
+            "You name the cant. Cant lets you scarph and clench.",
+            [
+                {"op": "set_flag", "flag": "futt_trust"},
+                {"op": "remember", "actor": "cant", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_futtock_list",
+            "Read the futtock list",
+            "do",
+            {
+                "all": [
+                    {"at": "futt.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "futt_trust"},
+                ]
+            },
+            "You read the futtock list. Cant lets you scarph and clench.",
+            [
+                {"op": "set_flag", "flag": "futt_trust"},
+                {"op": "remember", "actor": "cant", "fact": "list"},
+            ],
+        ),
+        action(
+            "lock_the_cant",
+            "Lock the cant",
+            "do",
+            {
+                "all": [
+                    {"at": "futt.cant"},
+                    {"has_flag": "card_locked"},
+                    {"not_flag": "futt_primed"},
+                ]
+            },
+            "You set the locked card. The cant takes the run.",
+            [
+                {"op": "set_flag", "flag": "futt_primed"},
+                {"op": "set_flag", "flag": "futt_trust"},
+                {"op": "remember", "actor": "cant", "fact": "lock"},
+            ],
+        ),
+        action(
+            "cant_the_futtock",
+            "Cant the futtock",
+            "do",
+            {
+                "all": [
+                    {"at": "futt.cant"},
+                    {"has_flag": "futt_trust"},
+                    {"not_flag": "futt_canted"},
+                    {"not_flag": "belly_clenched"},
+                ]
+            },
+            "You cant the futtock. The oak sits even.",
+            [{"op": "set_flag", "flag": "futt_canted"}],
+        ),
+        action(
+            "scarph_the_butt",
+            "Scarph the butt",
+            "do",
+            {
+                "all": [
+                    {"at": "futt.butt"},
+                    {"has_flag": "futt_trust"},
+                    {"has_flag": "futt_canted"},
+                    {"not_flag": "futt_scarphed"},
+                    {"not_flag": "belly_clenched"},
+                ]
+            },
+            "You scarph the butt. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "futt_scarphed"}],
+        ),
+        action(
+            "clench_the_belly",
+            "Clench the belly",
+            "do",
+            {
+                "all": [
+                    {"at": "futt.belly"},
+                    {"has_flag": "futt_trust"},
+                    {"has_flag": "futt_scarphed"},
+                    {"has_item": "butt_scarph"},
+                    {"not_flag": "belly_clenched"},
+                ]
+            },
+            "You clench the belly. Belly takes the scarph.",
+            [
+                {"op": "remove_item", "item": "butt_scarph"},
+                {"op": "set_flag", "flag": "belly_clenched"},
+                {"op": "remember", "actor": "belly", "fact": "clench"},
+            ],
+        ),
+        action(
+            "ask_cant_rule",
+            "Ask Cant the rule",
+            "talk",
+            {"at": "futt.yard"},
+            "Cant says cant the futtock. Then scarph and clench.",
+            [{"op": "set_flag", "flag": "heard_futt_rule"}],
+        ),
+        action(
+            "ask_butt_hitch",
+            "Ask Butt the hitch",
+            "talk",
+            {"at": "futt.butt"},
+            "Butt says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_futt_rule"}],
+        ),
+        action(
+            "ask_belly_fall",
+            "Ask Belly the fall",
+            "talk",
+            {"at": "futt.belly"},
+            "Belly sets only scarphed butts.",
+            [{"op": "set_flag", "flag": "heard_futt_rule"}],
+        ),
+        action(
+            "know_the_tree",
+            "Know the tree",
+            "talk",
+            {
+                "all": [
+                    {"at": "cros.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cros_trust"},
+                ]
+            },
+            "You name the tree. Tree lets you spread and seize.",
+            [
+                {"op": "set_flag", "flag": "cros_trust"},
+                {"op": "remember", "actor": "tree", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_crosstree_list",
+            "Read the crosstree list",
+            "do",
+            {
+                "all": [
+                    {"at": "cros.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cros_trust"},
+                ]
+            },
+            "You read the crosstree list. Tree lets you spread and seize.",
+            [
+                {"op": "set_flag", "flag": "cros_trust"},
+                {"op": "remember", "actor": "tree", "fact": "list"},
+            ],
+        ),
+        action(
+            "clench_the_tree",
+            "Clench the tree",
+            "do",
+            {
+                "all": [
+                    {"at": "cros.tree"},
+                    {"has_flag": "belly_clenched"},
+                    {"not_flag": "cros_primed"},
+                ]
+            },
+            "You set the clenched belly. The tree takes the run.",
+            [
+                {"op": "set_flag", "flag": "cros_primed"},
+                {"op": "set_flag", "flag": "cros_trust"},
+                {"op": "remember", "actor": "tree", "fact": "clench"},
+            ],
+        ),
+        action(
+            "square_the_crosstree",
+            "Square the crosstree",
+            "do",
+            {
+                "all": [
+                    {"at": "cros.tree"},
+                    {"has_flag": "cros_trust"},
+                    {"not_flag": "cros_squared"},
+                    {"not_flag": "bolster_seized"},
+                ]
+            },
+            "You square the crosstree. The oak sits even.",
+            [{"op": "set_flag", "flag": "cros_squared"}],
+        ),
+        action(
+            "spread_the_hounds",
+            "Spread the hounds",
+            "do",
+            {
+                "all": [
+                    {"at": "cros.hounds"},
+                    {"has_flag": "cros_trust"},
+                    {"has_flag": "cros_squared"},
+                    {"not_flag": "cros_spread"},
+                    {"not_flag": "bolster_seized"},
+                ]
+            },
+            "You spread the hounds. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "cros_spread"}],
+        ),
+        action(
+            "seize_the_bolster",
+            "Seize the bolster",
+            "do",
+            {
+                "all": [
+                    {"at": "cros.bolster"},
+                    {"has_flag": "cros_trust"},
+                    {"has_flag": "cros_spread"},
+                    {"has_item": "hounds_spread"},
+                    {"not_flag": "bolster_seized"},
+                ]
+            },
+            "You seize the bolster. Bolster takes the spread.",
+            [
+                {"op": "remove_item", "item": "hounds_spread"},
+                {"op": "set_flag", "flag": "bolster_seized"},
+                {"op": "remember", "actor": "bolster", "fact": "seize"},
+            ],
+        ),
+        action(
+            "ask_tree_rule",
+            "Ask Tree the rule",
+            "talk",
+            {"at": "cros.yard"},
+            "Tree says square the crosstree. Then spread and seize.",
+            [{"op": "set_flag", "flag": "heard_cros_rule"}],
+        ),
+        action(
+            "ask_hounds_hitch",
+            "Ask Hounds the hitch",
+            "talk",
+            {"at": "cros.hounds"},
+            "Hounds say set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_cros_rule"}],
+        ),
+        action(
+            "ask_bolster_fall",
+            "Ask Bolster the fall",
+            "talk",
+            {"at": "cros.bolster"},
+            "Bolster sets only spread hounds.",
+            [{"op": "set_flag", "flag": "heard_cros_rule"}],
+        ),
+        action(
+            "know_the_snipe",
+            "Know the snipe",
+            "talk",
+            {
+                "all": [
+                    {"at": "wtr.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wtr_trust"},
+                ]
+            },
+            "You name the snipe. Snipe lets you dowel and pay.",
+            [
+                {"op": "set_flag", "flag": "wtr_trust"},
+                {"op": "remember", "actor": "snipe", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_waterway_list",
+            "Read the waterway list",
+            "do",
+            {
+                "all": [
+                    {"at": "wtr.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wtr_trust"},
+                ]
+            },
+            "You read the waterway list. Snipe lets you dowel and pay.",
+            [
+                {"op": "set_flag", "flag": "wtr_trust"},
+                {"op": "remember", "actor": "snipe", "fact": "list"},
+            ],
+        ),
+        action(
+            "seize_the_snipe",
+            "Seize the snipe",
+            "do",
+            {
+                "all": [
+                    {"at": "wtr.snipe"},
+                    {"has_flag": "bolster_seized"},
+                    {"not_flag": "wtr_primed"},
+                ]
+            },
+            "You set the seized bolster. The snipe takes the run.",
+            [
+                {"op": "set_flag", "flag": "wtr_primed"},
+                {"op": "set_flag", "flag": "wtr_trust"},
+                {"op": "remember", "actor": "snipe", "fact": "seize"},
+            ],
+        ),
+        action(
+            "snipe_the_waterway",
+            "Snipe the waterway",
+            "do",
+            {
+                "all": [
+                    {"at": "wtr.snipe"},
+                    {"has_flag": "wtr_trust"},
+                    {"not_flag": "wtr_sniped"},
+                    {"not_flag": "waterway_paid"},
+                ]
+            },
+            "You snipe the waterway. The oak sits even.",
+            [{"op": "set_flag", "flag": "wtr_sniped"}],
+        ),
+        action(
+            "dowel_the_margin",
+            "Dowel the margin",
+            "do",
+            {
+                "all": [
+                    {"at": "wtr.margin"},
+                    {"has_flag": "wtr_trust"},
+                    {"has_flag": "wtr_sniped"},
+                    {"not_flag": "wtr_doweled"},
+                    {"not_flag": "waterway_paid"},
+                ]
+            },
+            "You dowel the margin. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "wtr_doweled"}],
+        ),
+        action(
+            "pay_the_waterway",
+            "Pay the waterway",
+            "do",
+            {
+                "all": [
+                    {"at": "wtr.pay"},
+                    {"has_flag": "wtr_trust"},
+                    {"has_flag": "wtr_doweled"},
+                    {"has_item": "margin_dowel"},
+                    {"not_flag": "waterway_paid"},
+                ]
+            },
+            "You pay the waterway. Pay takes the dowel.",
+            [
+                {"op": "remove_item", "item": "margin_dowel"},
+                {"op": "set_flag", "flag": "waterway_paid"},
+                {"op": "remember", "actor": "pay", "fact": "pay"},
+            ],
+        ),
+        action(
+            "ask_snipe_rule",
+            "Ask Snipe the rule",
+            "talk",
+            {"at": "wtr.yard"},
+            "Snipe says snipe the waterway. Then dowel and pay.",
+            [{"op": "set_flag", "flag": "heard_wtr_rule"}],
+        ),
+        action(
+            "ask_margin_hitch",
+            "Ask Margin the hitch",
+            "talk",
+            {"at": "wtr.margin"},
+            "Margin says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_wtr_rule"}],
+        ),
+        action(
+            "ask_pay_fall",
+            "Ask Pay the fall",
+            "talk",
+            {"at": "wtr.pay"},
+            "Pay sets only doweled margins.",
+            [{"op": "set_flag", "flag": "heard_wtr_rule"}],
+        ),
+        action(
+            "know_the_joggle",
+            "Know the joggle",
+            "talk",
+            {
+                "all": [
+                    {"at": "coam.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "coam_trust"},
+                ]
+            },
+            "You name the joggle. Joggle lets you lodge and coak.",
+            [
+                {"op": "set_flag", "flag": "coam_trust"},
+                {"op": "remember", "actor": "joggle", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_coaming_list",
+            "Read the coaming list",
+            "do",
+            {
+                "all": [
+                    {"at": "coam.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "coam_trust"},
+                ]
+            },
+            "You read the coaming list. Joggle lets you lodge and coak.",
+            [
+                {"op": "set_flag", "flag": "coam_trust"},
+                {"op": "remember", "actor": "joggle", "fact": "list"},
+            ],
+        ),
+        action(
+            "pay_the_joggle",
+            "Pay the joggle",
+            "do",
+            {
+                "all": [
+                    {"at": "coam.joggle"},
+                    {"has_flag": "waterway_paid"},
+                    {"not_flag": "coam_primed"},
+                ]
+            },
+            "You set the paid waterway. The joggle takes the run.",
+            [
+                {"op": "set_flag", "flag": "coam_primed"},
+                {"op": "set_flag", "flag": "coam_trust"},
+                {"op": "remember", "actor": "joggle", "fact": "pay"},
+            ],
+        ),
+        action(
+            "joggle_the_coaming",
+            "Joggle the coaming",
+            "do",
+            {
+                "all": [
+                    {"at": "coam.joggle"},
+                    {"has_flag": "coam_trust"},
+                    {"not_flag": "coam_joggled"},
+                    {"not_flag": "coaming_coaked"},
+                ]
+            },
+            "You joggle the coaming. The oak sits even.",
+            [{"op": "set_flag", "flag": "coam_joggled"}],
+        ),
+        action(
+            "lodge_the_end",
+            "Lodge the end",
+            "do",
+            {
+                "all": [
+                    {"at": "coam.lodge"},
+                    {"has_flag": "coam_trust"},
+                    {"has_flag": "coam_joggled"},
+                    {"not_flag": "coam_lodged"},
+                    {"not_flag": "coaming_coaked"},
+                ]
+            },
+            "You lodge the end. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "coam_lodged"}],
+        ),
+        action(
+            "coak_the_coaming",
+            "Coak the coaming",
+            "do",
+            {
+                "all": [
+                    {"at": "coam.coak"},
+                    {"has_flag": "coam_trust"},
+                    {"has_flag": "coam_lodged"},
+                    {"has_item": "end_lodge"},
+                    {"not_flag": "coaming_coaked"},
+                ]
+            },
+            "You coak the coaming. Coak takes the lodge.",
+            [
+                {"op": "remove_item", "item": "end_lodge"},
+                {"op": "set_flag", "flag": "coaming_coaked"},
+                {"op": "remember", "actor": "coak", "fact": "coak"},
+            ],
+        ),
+        action(
+            "ask_joggle_rule",
+            "Ask Joggle the rule",
+            "talk",
+            {"at": "coam.yard"},
+            "Joggle says joggle the coaming. Then lodge and coak.",
+            [{"op": "set_flag", "flag": "heard_coam_rule"}],
+        ),
+        action(
+            "ask_lodge_hitch",
+            "Ask Lodge the hitch",
+            "talk",
+            {"at": "coam.lodge"},
+            "Lodge says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_coam_rule"}],
+        ),
+        action(
+            "ask_coak_fall",
+            "Ask Coak the fall",
+            "talk",
+            {"at": "coam.coak"},
+            "Coak sets only lodged ends.",
+            [{"op": "set_flag", "flag": "heard_coam_rule"}],
+        ),
+        action(
+            "know_the_covering",
+            "Know the covering",
+            "talk",
+            {
+                "all": [
+                    {"at": "wale.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "wale_trust"},
+                ]
+            },
+            "You name the covering. Covering lets you hance and dump.",
+            [
+                {"op": "set_flag", "flag": "wale_trust"},
+                {"op": "remember", "actor": "covering", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_gunwale_list",
+            "Read the gunwale list",
+            "do",
+            {
+                "all": [
+                    {"at": "wale.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "wale_trust"},
+                ]
+            },
+            "You read the gunwale list. Covering lets you hance and dump.",
+            [
+                {"op": "set_flag", "flag": "wale_trust"},
+                {"op": "remember", "actor": "covering", "fact": "list"},
+            ],
+        ),
+        action(
+            "coak_the_covering",
+            "Coak the covering",
+            "do",
+            {
+                "all": [
+                    {"at": "wale.covering"},
+                    {"has_flag": "coaming_coaked"},
+                    {"not_flag": "wale_primed"},
+                ]
+            },
+            "You set the coaked coaming. The covering takes the run.",
+            [
+                {"op": "set_flag", "flag": "wale_primed"},
+                {"op": "set_flag", "flag": "wale_trust"},
+                {"op": "remember", "actor": "covering", "fact": "coak"},
+            ],
+        ),
+        action(
+            "snape_the_covering",
+            "Snape the covering",
+            "do",
+            {
+                "all": [
+                    {"at": "wale.covering"},
+                    {"has_flag": "wale_trust"},
+                    {"not_flag": "wale_snaped"},
+                    {"not_flag": "bolt_dumped"},
+                ]
+            },
+            "You snape the covering. The oak sits even.",
+            [{"op": "set_flag", "flag": "wale_snaped"}],
+        ),
+        action(
+            "hance_the_rail",
+            "Hance the rail",
+            "do",
+            {
+                "all": [
+                    {"at": "wale.hance"},
+                    {"has_flag": "wale_trust"},
+                    {"has_flag": "wale_snaped"},
+                    {"not_flag": "wale_hanced"},
+                    {"not_flag": "bolt_dumped"},
+                ]
+            },
+            "You hance the rail. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "wale_hanced"}],
+        ),
+        action(
+            "dump_the_bolt",
+            "Dump the bolt",
+            "do",
+            {
+                "all": [
+                    {"at": "wale.dump"},
+                    {"has_flag": "wale_trust"},
+                    {"has_flag": "wale_hanced"},
+                    {"has_item": "rail_hance"},
+                    {"not_flag": "bolt_dumped"},
+                ]
+            },
+            "You dump the bolt. Dump takes the hance.",
+            [
+                {"op": "remove_item", "item": "rail_hance"},
+                {"op": "set_flag", "flag": "bolt_dumped"},
+                {"op": "remember", "actor": "dump", "fact": "dump"},
+            ],
+        ),
+        action(
+            "ask_covering_rule",
+            "Ask Covering the rule",
+            "talk",
+            {"at": "wale.yard"},
+            "Covering says snape the covering. Then hance and dump.",
+            [{"op": "set_flag", "flag": "heard_wale_rule"}],
+        ),
+        action(
+            "ask_hance_hitch",
+            "Ask Hance the hitch",
+            "talk",
+            {"at": "wale.hance"},
+            "Hance says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_wale_rule"}],
+        ),
+        action(
+            "ask_dump_fall",
+            "Ask Dump the fall",
+            "talk",
+            {"at": "wale.dump"},
+            "Dump sets only hanced rails.",
+            [{"op": "set_flag", "flag": "heard_wale_rule"}],
+        ),
+        action(
+            "know_the_sweep",
+            "Know the sweep",
+            "talk",
+            {
+                "all": [
+                    {"at": "dav.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dav_trust"},
+                ]
+            },
+            "You name the sweep. Sweep lets you band and ship.",
+            [
+                {"op": "set_flag", "flag": "dav_trust"},
+                {"op": "remember", "actor": "sweep", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_davit_list",
+            "Read the davit list",
+            "do",
+            {
+                "all": [
+                    {"at": "dav.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dav_trust"},
+                ]
+            },
+            "You read the davit list. Sweep lets you band and ship.",
+            [
+                {"op": "set_flag", "flag": "dav_trust"},
+                {"op": "remember", "actor": "sweep", "fact": "list"},
+            ],
+        ),
+        action(
+            "dump_the_sweep",
+            "Dump the sweep",
+            "do",
+            {
+                "all": [
+                    {"at": "dav.sweep"},
+                    {"has_flag": "bolt_dumped"},
+                    {"not_flag": "dav_primed"},
+                ]
+            },
+            "You set the dumped bolt. The sweep takes the run.",
+            [
+                {"op": "set_flag", "flag": "dav_primed"},
+                {"op": "set_flag", "flag": "dav_trust"},
+                {"op": "remember", "actor": "sweep", "fact": "dump"},
+            ],
+        ),
+        action(
+            "sweep_the_davit",
+            "Sweep the davit",
+            "do",
+            {
+                "all": [
+                    {"at": "dav.sweep"},
+                    {"has_flag": "dav_trust"},
+                    {"not_flag": "dav_swept"},
+                    {"not_flag": "davit_shipped"},
+                ]
+            },
+            "You sweep the davit. The oak sits even.",
+            [{"op": "set_flag", "flag": "dav_swept"}],
+        ),
+        action(
+            "band_the_crane",
+            "Band the crane",
+            "do",
+            {
+                "all": [
+                    {"at": "dav.crane"},
+                    {"has_flag": "dav_trust"},
+                    {"has_flag": "dav_swept"},
+                    {"not_flag": "dav_banded"},
+                    {"not_flag": "davit_shipped"},
+                ]
+            },
+            "You band the crane. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "dav_banded"}],
+        ),
+        action(
+            "ship_the_davit",
+            "Ship the davit",
+            "do",
+            {
+                "all": [
+                    {"at": "dav.ship"},
+                    {"has_flag": "dav_trust"},
+                    {"has_flag": "dav_banded"},
+                    {"has_item": "crane_band"},
+                    {"not_flag": "davit_shipped"},
+                ]
+            },
+            "You ship the davit. Ship takes the band.",
+            [
+                {"op": "remove_item", "item": "crane_band"},
+                {"op": "set_flag", "flag": "davit_shipped"},
+                {"op": "remember", "actor": "ship", "fact": "ship"},
+            ],
+        ),
+        action(
+            "ask_sweep_rule",
+            "Ask Sweep the rule",
+            "talk",
+            {"at": "dav.yard"},
+            "Sweep says sweep the davit. Then band and ship.",
+            [{"op": "set_flag", "flag": "heard_dav_rule"}],
+        ),
+        action(
+            "ask_crane_hitch",
+            "Ask Crane the hitch",
+            "talk",
+            {"at": "dav.crane"},
+            "Crane says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_dav_rule"}],
+        ),
+        action(
+            "ask_ship_fall",
+            "Ask Ship the fall",
+            "talk",
+            {"at": "dav.ship"},
+            "Ship sets only banded cranes.",
+            [{"op": "set_flag", "flag": "heard_dav_rule"}],
+        ),
+        action(
+            "know_the_steeve",
+            "Know the steeve",
+            "talk",
+            {
+                "all": [
+                    {"at": "boom.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "boom_trust"},
+                ]
+            },
+            "You name the steeve. Steeve lets you bee and seize.",
+            [
+                {"op": "set_flag", "flag": "boom_trust"},
+                {"op": "remember", "actor": "steeve", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_boomkin_list",
+            "Read the boomkin list",
+            "do",
+            {
+                "all": [
+                    {"at": "boom.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "boom_trust"},
+                ]
+            },
+            "You read the boomkin list. Steeve lets you bee and seize.",
+            [
+                {"op": "set_flag", "flag": "boom_trust"},
+                {"op": "remember", "actor": "steeve", "fact": "list"},
+            ],
+        ),
+        action(
+            "ship_the_steeve",
+            "Ship the steeve",
+            "do",
+            {
+                "all": [
+                    {"at": "boom.steeve"},
+                    {"has_flag": "davit_shipped"},
+                    {"not_flag": "boom_primed"},
+                ]
+            },
+            "You set the shipped davit. The steeve takes the run.",
+            [
+                {"op": "set_flag", "flag": "boom_primed"},
+                {"op": "set_flag", "flag": "boom_trust"},
+                {"op": "remember", "actor": "steeve", "fact": "ship"},
+            ],
+        ),
+        action(
+            "steeve_the_boomkin",
+            "Steeve the boomkin",
+            "do",
+            {
+                "all": [
+                    {"at": "boom.steeve"},
+                    {"has_flag": "boom_trust"},
+                    {"not_flag": "boom_steeved"},
+                    {"not_flag": "guy_seized"},
+                ]
+            },
+            "You steeve the boomkin. The oak sits even.",
+            [{"op": "set_flag", "flag": "boom_steeved"}],
+        ),
+        action(
+            "bee_the_iron",
+            "Bee the iron",
+            "do",
+            {
+                "all": [
+                    {"at": "boom.bee"},
+                    {"has_flag": "boom_trust"},
+                    {"has_flag": "boom_steeved"},
+                    {"not_flag": "boom_beed"},
+                    {"not_flag": "guy_seized"},
+                ]
+            },
+            "You bee the iron. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "boom_beed"}],
+        ),
+        action(
+            "seize_the_guy",
+            "Seize the guy",
+            "do",
+            {
+                "all": [
+                    {"at": "boom.guy"},
+                    {"has_flag": "boom_trust"},
+                    {"has_flag": "boom_beed"},
+                    {"has_item": "iron_bee"},
+                    {"not_flag": "guy_seized"},
+                ]
+            },
+            "You seize the guy. Guy takes the bee.",
+            [
+                {"op": "remove_item", "item": "iron_bee"},
+                {"op": "set_flag", "flag": "guy_seized"},
+                {"op": "remember", "actor": "guy", "fact": "seize"},
+            ],
+        ),
+        action(
+            "ask_steeve_rule",
+            "Ask Steeve the rule",
+            "talk",
+            {"at": "boom.yard"},
+            "Steeve says steeve the boomkin. Then bee and seize.",
+            [{"op": "set_flag", "flag": "heard_boom_rule"}],
+        ),
+        action(
+            "ask_bee_hitch",
+            "Ask Bee the hitch",
+            "talk",
+            {"at": "boom.bee"},
+            "Bee says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_boom_rule"}],
+        ),
+        action(
+            "ask_guy_fall",
+            "Ask Guy the fall",
+            "talk",
+            {"at": "boom.guy"},
+            "Guy sets only beed irons.",
+            [{"op": "set_flag", "flag": "heard_boom_rule"}],
+        ),
+        action(
+            "know_the_channel",
+            "Know the channel",
+            "talk",
+            {
+                "all": [
+                    {"at": "chan.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "chan_trust"},
+                ]
+            },
+            "You name the channel. Channel lets you bolt and set.",
+            [
+                {"op": "set_flag", "flag": "chan_trust"},
+                {"op": "remember", "actor": "channel", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_channel_list",
+            "Read the channel list",
+            "do",
+            {
+                "all": [
+                    {"at": "chan.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "chan_trust"},
+                ]
+            },
+            "You read the channel list. Channel lets you bolt and set.",
+            [
+                {"op": "set_flag", "flag": "chan_trust"},
+                {"op": "remember", "actor": "channel", "fact": "list"},
+            ],
+        ),
+        action(
+            "seize_the_face",
+            "Seize the face",
+            "do",
+            {
+                "all": [
+                    {"at": "chan.face"},
+                    {"has_flag": "guy_seized"},
+                    {"not_flag": "chan_primed"},
+                ]
+            },
+            "You set the seized guy. The face takes the run.",
+            [
+                {"op": "set_flag", "flag": "chan_primed"},
+                {"op": "set_flag", "flag": "chan_trust"},
+                {"op": "remember", "actor": "channel", "fact": "seize"},
+            ],
+        ),
+        action(
+            "score_the_channel",
+            "Score the channel",
+            "do",
+            {
+                "all": [
+                    {"at": "chan.face"},
+                    {"has_flag": "chan_trust"},
+                    {"not_flag": "chan_scored"},
+                    {"not_flag": "strap_set"},
+                ]
+            },
+            "You score the channel. The oak sits even.",
+            [{"op": "set_flag", "flag": "chan_scored"}],
+        ),
+        action(
+            "bolt_the_plate",
+            "Bolt the plate",
+            "do",
+            {
+                "all": [
+                    {"at": "chan.plate"},
+                    {"has_flag": "chan_trust"},
+                    {"has_flag": "chan_scored"},
+                    {"not_flag": "chan_bolted"},
+                    {"not_flag": "strap_set"},
+                ]
+            },
+            "You bolt the plate. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "chan_bolted"}],
+        ),
+        action(
+            "set_the_strap",
+            "Set the strap",
+            "do",
+            {
+                "all": [
+                    {"at": "chan.strap"},
+                    {"has_flag": "chan_trust"},
+                    {"has_flag": "chan_bolted"},
+                    {"has_item": "plate_iron"},
+                    {"not_flag": "strap_set"},
+                ]
+            },
+            "You set the strap. Strap takes the iron.",
+            [
+                {"op": "remove_item", "item": "plate_iron"},
+                {"op": "set_flag", "flag": "strap_set"},
+                {"op": "remember", "actor": "strap", "fact": "set"},
+            ],
+        ),
+        action(
+            "ask_channel_rule",
+            "Ask Channel the rule",
+            "talk",
+            {"at": "chan.yard"},
+            "Channel says score the channel. Then bolt and set.",
+            [{"op": "set_flag", "flag": "heard_chan_rule"}],
+        ),
+        action(
+            "ask_plate_hitch",
+            "Ask Plate the hitch",
+            "talk",
+            {"at": "chan.plate"},
+            "Plate says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_chan_rule"}],
+        ),
+        action(
+            "ask_strap_fall",
+            "Ask Strap the fall",
+            "talk",
+            {"at": "chan.strap"},
+            "Strap sets only bolted plates.",
+            [{"op": "set_flag", "flag": "heard_chan_rule"}],
+        ),
+        action(
+            "know_the_kevel",
+            "Know the kevel",
+            "talk",
+            {
+                "all": [
+                    {"at": "kev.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "kev_trust"},
+                ]
+            },
+            "You name the kevel. Kevel lets you mortise and clench.",
+            [
+                {"op": "set_flag", "flag": "kev_trust"},
+                {"op": "remember", "actor": "kevel", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_kevel_list",
+            "Read the kevel list",
+            "do",
+            {
+                "all": [
+                    {"at": "kev.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "kev_trust"},
+                ]
+            },
+            "You read the kevel list. Kevel lets you mortise and clench.",
+            [
+                {"op": "set_flag", "flag": "kev_trust"},
+                {"op": "remember", "actor": "kevel", "fact": "list"},
+            ],
+        ),
+        action(
+            "set_the_chamfer",
+            "Set the chamfer",
+            "do",
+            {
+                "all": [
+                    {"at": "kev.chamfer"},
+                    {"has_flag": "strap_set"},
+                    {"not_flag": "kev_primed"},
+                ]
+            },
+            "You set the strapped chain. The chamfer takes the run.",
+            [
+                {"op": "set_flag", "flag": "kev_primed"},
+                {"op": "set_flag", "flag": "kev_trust"},
+                {"op": "remember", "actor": "kevel", "fact": "set"},
+            ],
+        ),
+        action(
+            "chamfer_the_kevel",
+            "Chamfer the kevel",
+            "do",
+            {
+                "all": [
+                    {"at": "kev.chamfer"},
+                    {"has_flag": "kev_trust"},
+                    {"not_flag": "kev_chamfered"},
+                    {"not_flag": "kevel_clenched"},
+                ]
+            },
+            "You chamfer the kevel. The oak sits even.",
+            [{"op": "set_flag", "flag": "kev_chamfered"}],
+        ),
+        action(
+            "mortise_the_jaw",
+            "Mortise the jaw",
+            "do",
+            {
+                "all": [
+                    {"at": "kev.jaw"},
+                    {"has_flag": "kev_trust"},
+                    {"has_flag": "kev_chamfered"},
+                    {"not_flag": "kev_mortised"},
+                    {"not_flag": "kevel_clenched"},
+                ]
+            },
+            "You mortise the jaw. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "kev_mortised"}],
+        ),
+        action(
+            "clench_the_kevel",
+            "Clench the kevel",
+            "do",
+            {
+                "all": [
+                    {"at": "kev.clench"},
+                    {"has_flag": "kev_trust"},
+                    {"has_flag": "kev_mortised"},
+                    {"has_item": "jaw_mortise"},
+                    {"not_flag": "kevel_clenched"},
+                ]
+            },
+            "You clench the kevel. Clench takes the mortise.",
+            [
+                {"op": "remove_item", "item": "jaw_mortise"},
+                {"op": "set_flag", "flag": "kevel_clenched"},
+                {"op": "remember", "actor": "clench", "fact": "clench"},
+            ],
+        ),
+        action(
+            "ask_kevel_rule",
+            "Ask Kevel the rule",
+            "talk",
+            {"at": "kev.yard"},
+            "Kevel says chamfer the kevel. Then mortise and clench.",
+            [{"op": "set_flag", "flag": "heard_kev_rule"}],
+        ),
+        action(
+            "ask_jaw_hitch",
+            "Ask Jaw the hitch",
+            "talk",
+            {"at": "kev.jaw"},
+            "Jaw says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_kev_rule"}],
+        ),
+        action(
+            "ask_clench_fall",
+            "Ask Clench the fall",
+            "talk",
+            {"at": "kev.clench"},
+            "Clench sets only mortised jaws.",
+            [{"op": "set_flag", "flag": "heard_kev_rule"}],
+        ),
+        action(
+            "know_the_knight",
+            "Know the knight",
+            "talk",
+            {
+                "all": [
+                    {"at": "kni.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "kni_trust"},
+                ]
+            },
+            "You name the knight. Knight lets you box and lash.",
+            [
+                {"op": "set_flag", "flag": "kni_trust"},
+                {"op": "remember", "actor": "knight", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_knighthead_list",
+            "Read the knighthead list",
+            "do",
+            {
+                "all": [
+                    {"at": "kni.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "kni_trust"},
+                ]
+            },
+            "You read the knighthead list. Knight lets you box and lash.",
+            [
+                {"op": "set_flag", "flag": "kni_trust"},
+                {"op": "remember", "actor": "knight", "fact": "list"},
+            ],
+        ),
+        action(
+            "clench_the_knight",
+            "Clench the knight",
+            "do",
+            {
+                "all": [
+                    {"at": "kni.knight"},
+                    {"has_flag": "kevel_clenched"},
+                    {"not_flag": "kni_primed"},
+                ]
+            },
+            "You set the clenched kevel. The knight takes the run.",
+            [
+                {"op": "set_flag", "flag": "kni_primed"},
+                {"op": "set_flag", "flag": "kni_trust"},
+                {"op": "remember", "actor": "knight", "fact": "clench"},
+            ],
+        ),
+        action(
+            "score_the_knight",
+            "Score the knight",
+            "do",
+            {
+                "all": [
+                    {"at": "kni.knight"},
+                    {"has_flag": "kni_trust"},
+                    {"not_flag": "kni_scored"},
+                    {"not_flag": "knight_lashed"},
+                ]
+            },
+            "You score the knight. The oak sits even.",
+            [{"op": "set_flag", "flag": "kni_scored"}],
+        ),
+        action(
+            "box_the_bit",
+            "Box the bit",
+            "do",
+            {
+                "all": [
+                    {"at": "kni.box"},
+                    {"has_flag": "kni_trust"},
+                    {"has_flag": "kni_scored"},
+                    {"not_flag": "kni_boxed"},
+                    {"not_flag": "knight_lashed"},
+                ]
+            },
+            "You box the bit. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "kni_boxed"}],
+        ),
+        action(
+            "lash_the_knight",
+            "Lash the knight",
+            "do",
+            {
+                "all": [
+                    {"at": "kni.lash"},
+                    {"has_flag": "kni_trust"},
+                    {"has_flag": "kni_boxed"},
+                    {"has_item": "bit_box"},
+                    {"not_flag": "knight_lashed"},
+                ]
+            },
+            "You lash the knight. Lash takes the box.",
+            [
+                {"op": "remove_item", "item": "bit_box"},
+                {"op": "set_flag", "flag": "knight_lashed"},
+                {"op": "remember", "actor": "lash", "fact": "lash"},
+            ],
+        ),
+        action(
+            "ask_knight_rule",
+            "Ask Knight the rule",
+            "talk",
+            {"at": "kni.yard"},
+            "Knight says score the knight. Then box and lash.",
+            [{"op": "set_flag", "flag": "heard_kni_rule"}],
+        ),
+        action(
+            "ask_box_hitch",
+            "Ask Box the hitch",
+            "talk",
+            {"at": "kni.box"},
+            "Box says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_kni_rule"}],
+        ),
+        action(
+            "ask_lash_fall",
+            "Ask Lash the fall",
+            "talk",
+            {"at": "kni.lash"},
+            "Lash sets only boxed bits.",
+            [{"op": "set_flag", "flag": "heard_kni_rule"}],
+        ),
+        action(
+            "know_the_notch",
+            "Know the notch",
+            "talk",
+            {
+                "all": [
+                    {"at": "carl.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "carl_trust"},
+                ]
+            },
+            "You name the notch. Notch lets you lodge and spike.",
+            [
+                {"op": "set_flag", "flag": "carl_trust"},
+                {"op": "remember", "actor": "notch", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_carling_list",
+            "Read the carling list",
+            "do",
+            {
+                "all": [
+                    {"at": "carl.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "carl_trust"},
+                ]
+            },
+            "You read the carling list. Notch lets you lodge and spike.",
+            [
+                {"op": "set_flag", "flag": "carl_trust"},
+                {"op": "remember", "actor": "notch", "fact": "list"},
+            ],
+        ),
+        action(
+            "lash_the_notch",
+            "Lash the notch",
+            "do",
+            {
+                "all": [
+                    {"at": "carl.notch"},
+                    {"has_flag": "knight_lashed"},
+                    {"not_flag": "carl_primed"},
+                ]
+            },
+            "You set the lashed knight. The notch takes the run.",
+            [
+                {"op": "set_flag", "flag": "carl_primed"},
+                {"op": "set_flag", "flag": "carl_trust"},
+                {"op": "remember", "actor": "notch", "fact": "lash"},
+            ],
+        ),
+        action(
+            "notch_the_carling",
+            "Notch the carling",
+            "do",
+            {
+                "all": [
+                    {"at": "carl.notch"},
+                    {"has_flag": "carl_trust"},
+                    {"not_flag": "carl_notched"},
+                    {"not_flag": "carling_spiked"},
+                ]
+            },
+            "You notch the carling. The oak sits even.",
+            [{"op": "set_flag", "flag": "carl_notched"}],
+        ),
+        action(
+            "lodge_the_ledge",
+            "Lodge the ledge",
+            "do",
+            {
+                "all": [
+                    {"at": "carl.ledge"},
+                    {"has_flag": "carl_trust"},
+                    {"has_flag": "carl_notched"},
+                    {"not_flag": "carl_lodged"},
+                    {"not_flag": "carling_spiked"},
+                ]
+            },
+            "You lodge the ledge. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "carl_lodged"}],
+        ),
+        action(
+            "spike_the_carling",
+            "Spike the carling",
+            "do",
+            {
+                "all": [
+                    {"at": "carl.spike"},
+                    {"has_flag": "carl_trust"},
+                    {"has_flag": "carl_lodged"},
+                    {"has_item": "ledge_lodge"},
+                    {"not_flag": "carling_spiked"},
+                ]
+            },
+            "You spike the carling. Spike takes the lodge.",
+            [
+                {"op": "remove_item", "item": "ledge_lodge"},
+                {"op": "set_flag", "flag": "carling_spiked"},
+                {"op": "remember", "actor": "spike", "fact": "spike"},
+            ],
+        ),
+        action(
+            "ask_notch_rule",
+            "Ask Notch the rule",
+            "talk",
+            {"at": "carl.yard"},
+            "Notch says notch the carling. Then lodge and spike.",
+            [{"op": "set_flag", "flag": "heard_carl_rule"}],
+        ),
+        action(
+            "ask_ledge_hitch",
+            "Ask Ledge the hitch",
+            "talk",
+            {"at": "carl.ledge"},
+            "Ledge says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_carl_rule"}],
+        ),
+        action(
+            "ask_spike_fall",
+            "Ask Spike the fall",
+            "talk",
+            {"at": "carl.spike"},
+            "Spike sets only lodged ledges.",
+            [{"op": "set_flag", "flag": "heard_carl_rule"}],
+        ),
+        action(
+            "know_the_tabernacle",
+            "Know the tabernacle",
+            "talk",
+            {
+                "all": [
+                    {"at": "tab.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "tab_trust"},
+                ]
+            },
+            "You name the tabernacle. Tabernacle lets you mortise and pin.",
+            [
+                {"op": "set_flag", "flag": "tab_trust"},
+                {"op": "remember", "actor": "tabernacle", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_tabernacle_list",
+            "Read the tabernacle list",
+            "do",
+            {
+                "all": [
+                    {"at": "tab.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "tab_trust"},
+                ]
+            },
+            "You read the tabernacle list. Tabernacle lets you mortise and pin.",
+            [
+                {"op": "set_flag", "flag": "tab_trust"},
+                {"op": "remember", "actor": "tabernacle", "fact": "list"},
+            ],
+        ),
+        action(
+            "spike_the_socket",
+            "Spike the socket",
+            "do",
+            {
+                "all": [
+                    {"at": "tab.socket"},
+                    {"has_flag": "carling_spiked"},
+                    {"not_flag": "tab_primed"},
+                ]
+            },
+            "You set the spiked carling. The socket takes the run.",
+            [
+                {"op": "set_flag", "flag": "tab_primed"},
+                {"op": "set_flag", "flag": "tab_trust"},
+                {"op": "remember", "actor": "tabernacle", "fact": "spike"},
+            ],
+        ),
+        action(
+            "score_the_tabernacle",
+            "Score the tabernacle",
+            "do",
+            {
+                "all": [
+                    {"at": "tab.socket"},
+                    {"has_flag": "tab_trust"},
+                    {"not_flag": "tab_scored"},
+                    {"not_flag": "keeper_pinned"},
+                ]
+            },
+            "You score the tabernacle. The oak sits even.",
+            [{"op": "set_flag", "flag": "tab_scored"}],
+        ),
+        action(
+            "mortise_the_gate",
+            "Mortise the gate",
+            "do",
+            {
+                "all": [
+                    {"at": "tab.gate"},
+                    {"has_flag": "tab_trust"},
+                    {"has_flag": "tab_scored"},
+                    {"not_flag": "tab_mortised"},
+                    {"not_flag": "keeper_pinned"},
+                ]
+            },
+            "You mortise the gate. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "tab_mortised"}],
+        ),
+        action(
+            "pin_the_keeper",
+            "Pin the keeper",
+            "do",
+            {
+                "all": [
+                    {"at": "tab.keeper"},
+                    {"has_flag": "tab_trust"},
+                    {"has_flag": "tab_mortised"},
+                    {"has_item": "gate_mortise"},
+                    {"not_flag": "keeper_pinned"},
+                ]
+            },
+            "You pin the keeper. Keeper takes the mortise.",
+            [
+                {"op": "remove_item", "item": "gate_mortise"},
+                {"op": "set_flag", "flag": "keeper_pinned"},
+                {"op": "remember", "actor": "keeper", "fact": "pin"},
+            ],
+        ),
+        action(
+            "ask_tabernacle_rule",
+            "Ask Tabernacle the rule",
+            "talk",
+            {"at": "tab.yard"},
+            "Tabernacle says score the tabernacle. Then mortise and pin.",
+            [{"op": "set_flag", "flag": "heard_tab_rule"}],
+        ),
+        action(
+            "ask_gate_hitch",
+            "Ask Gate the hitch",
+            "talk",
+            {"at": "tab.gate"},
+            "Gate says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_tab_rule"}],
+        ),
+        action(
+            "ask_keeper_fall",
+            "Ask Keeper the fall",
+            "talk",
+            {"at": "tab.keeper"},
+            "Keeper sets only mortised gates.",
+            [{"op": "set_flag", "flag": "heard_tab_rule"}],
+        ),
+        action(
+            "know_the_sheer",
+            "Know the sheer",
+            "talk",
+            {
+                "all": [
+                    {"at": "psh.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "psh_trust"},
+                ]
+            },
+            "You name the sheer. Sheer lets you plane and dump.",
+            [
+                {"op": "set_flag", "flag": "psh_trust"},
+                {"op": "remember", "actor": "sheer", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_planksheer_list",
+            "Read the planksheer list",
+            "do",
+            {
+                "all": [
+                    {"at": "psh.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "psh_trust"},
+                ]
+            },
+            "You read the planksheer list. Sheer lets you plane and dump.",
+            [
+                {"op": "set_flag", "flag": "psh_trust"},
+                {"op": "remember", "actor": "sheer", "fact": "list"},
+            ],
+        ),
+        action(
+            "pin_the_sheer",
+            "Pin the sheer",
+            "do",
+            {
+                "all": [
+                    {"at": "psh.sheer"},
+                    {"has_flag": "keeper_pinned"},
+                    {"not_flag": "psh_primed"},
+                ]
+            },
+            "You set the pinned keeper. The sheer takes the run.",
+            [
+                {"op": "set_flag", "flag": "psh_primed"},
+                {"op": "set_flag", "flag": "psh_trust"},
+                {"op": "remember", "actor": "sheer", "fact": "pin"},
+            ],
+        ),
+        action(
+            "score_the_sheer",
+            "Score the sheer",
+            "do",
+            {
+                "all": [
+                    {"at": "psh.sheer"},
+                    {"has_flag": "psh_trust"},
+                    {"not_flag": "psh_scored"},
+                    {"not_flag": "edge_dumped"},
+                ]
+            },
+            "You score the sheer. The oak sits even.",
+            [{"op": "set_flag", "flag": "psh_scored"}],
+        ),
+        action(
+            "plane_the_plank",
+            "Plane the plank",
+            "do",
+            {
+                "all": [
+                    {"at": "psh.plank"},
+                    {"has_flag": "psh_trust"},
+                    {"has_flag": "psh_scored"},
+                    {"not_flag": "psh_planed"},
+                    {"not_flag": "edge_dumped"},
+                ]
+            },
+            "You plane the plank. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "psh_planed"}],
+        ),
+        action(
+            "dump_the_edge",
+            "Dump the edge",
+            "do",
+            {
+                "all": [
+                    {"at": "psh.edge"},
+                    {"has_flag": "psh_trust"},
+                    {"has_flag": "psh_planed"},
+                    {"has_item": "plank_plane"},
+                    {"not_flag": "edge_dumped"},
+                ]
+            },
+            "You dump the edge. Edge takes the plane.",
+            [
+                {"op": "remove_item", "item": "plank_plane"},
+                {"op": "set_flag", "flag": "edge_dumped"},
+                {"op": "remember", "actor": "edge", "fact": "dump"},
+            ],
+        ),
+        action(
+            "ask_sheer_rule",
+            "Ask Sheer the rule",
+            "talk",
+            {"at": "psh.yard"},
+            "Sheer says score the sheer. Then plane and dump.",
+            [{"op": "set_flag", "flag": "heard_psh_rule"}],
+        ),
+        action(
+            "ask_plank_hitch",
+            "Ask Plank the hitch",
+            "talk",
+            {"at": "psh.plank"},
+            "Plank says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_psh_rule"}],
+        ),
+        action(
+            "ask_edge_fall",
+            "Ask Edge the fall",
+            "talk",
+            {"at": "psh.edge"},
+            "Edge sets only planed planks.",
+            [{"op": "set_flag", "flag": "heard_psh_rule"}],
+        ),
+        action(
+            "know_the_spirket",
+            "Know the spirket",
+            "talk",
+            {
+                "all": [
+                    {"at": "spi.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "spi_trust"},
+                ]
+            },
+            "You name the spirket. Spirket lets you plane and clench.",
+            [
+                {"op": "set_flag", "flag": "spi_trust"},
+                {"op": "remember", "actor": "spirket", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_spirketting_list",
+            "Read the spirketting list",
+            "do",
+            {
+                "all": [
+                    {"at": "spi.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "spi_trust"},
+                ]
+            },
+            "You read the spirketting list. Spirket lets you plane and clench.",
+            [
+                {"op": "set_flag", "flag": "spi_trust"},
+                {"op": "remember", "actor": "spirket", "fact": "list"},
+            ],
+        ),
+        action(
+            "dump_the_spirket",
+            "Dump the spirket",
+            "do",
+            {
+                "all": [
+                    {"at": "spi.spirket"},
+                    {"has_flag": "edge_dumped"},
+                    {"not_flag": "spi_primed"},
+                ]
+            },
+            "You set the dumped edge. The spirket takes the run.",
+            [
+                {"op": "set_flag", "flag": "spi_primed"},
+                {"op": "set_flag", "flag": "spi_trust"},
+                {"op": "remember", "actor": "spirket", "fact": "dump"},
+            ],
+        ),
+        action(
+            "score_the_spirket",
+            "Score the spirket",
+            "do",
+            {
+                "all": [
+                    {"at": "spi.spirket"},
+                    {"has_flag": "spi_trust"},
+                    {"not_flag": "spi_scored"},
+                    {"not_flag": "spirket_clenched"},
+                ]
+            },
+            "You score the spirket. The oak sits even.",
+            [{"op": "set_flag", "flag": "spi_scored"}],
+        ),
+        action(
+            "plane_the_strake",
+            "Plane the strake",
+            "do",
+            {
+                "all": [
+                    {"at": "spi.strake"},
+                    {"has_flag": "spi_trust"},
+                    {"has_flag": "spi_scored"},
+                    {"not_flag": "spi_planed"},
+                    {"not_flag": "spirket_clenched"},
+                ]
+            },
+            "You plane the strake. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "spi_planed"}],
+        ),
+        action(
+            "clench_the_spirket",
+            "Clench the spirket",
+            "do",
+            {
+                "all": [
+                    {"at": "spi.ring"},
+                    {"has_flag": "spi_trust"},
+                    {"has_flag": "spi_planed"},
+                    {"has_item": "strake_plane"},
+                    {"not_flag": "spirket_clenched"},
+                ]
+            },
+            "You clench the spirket. Ring takes the plane.",
+            [
+                {"op": "remove_item", "item": "strake_plane"},
+                {"op": "set_flag", "flag": "spirket_clenched"},
+                {"op": "remember", "actor": "ring", "fact": "clench"},
+            ],
+        ),
+        action(
+            "ask_spirket_rule",
+            "Ask Spirket the rule",
+            "talk",
+            {"at": "spi.yard"},
+            "Spirket says score the spirket. Then plane and clench.",
+            [{"op": "set_flag", "flag": "heard_spi_rule"}],
+        ),
+        action(
+            "ask_strake_hitch",
+            "Ask Strake the hitch",
+            "talk",
+            {"at": "spi.strake"},
+            "Strake says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_spi_rule"}],
+        ),
+        action(
+            "ask_ring_fall",
+            "Ask Ring the fall",
+            "talk",
+            {"at": "spi.ring"},
+            "Ring sets only planed strakes.",
+            [{"op": "set_flag", "flag": "heard_spi_rule"}],
+        ),
+        action(
+            "know_the_trestle",
+            "Know the trestle",
+            "talk",
+            {
+                "all": [
+                    {"at": "trs.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "trs_trust"},
+                ]
+            },
+            "You name the trestle. Trestle lets you tenon and seize.",
+            [
+                {"op": "set_flag", "flag": "trs_trust"},
+                {"op": "remember", "actor": "trestle", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_trestle_list",
+            "Read the trestle list",
+            "do",
+            {
+                "all": [
+                    {"at": "trs.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "trs_trust"},
+                ]
+            },
+            "You read the trestle list. Trestle lets you tenon and seize.",
+            [
+                {"op": "set_flag", "flag": "trs_trust"},
+                {"op": "remember", "actor": "trestle", "fact": "list"},
+            ],
+        ),
+        action(
+            "clench_the_trestle",
+            "Clench the trestle",
+            "do",
+            {
+                "all": [
+                    {"at": "trs.trestle"},
+                    {"has_flag": "spirket_clenched"},
+                    {"not_flag": "trs_primed"},
+                ]
+            },
+            "You set the clenched spirket. The trestle takes the run.",
+            [
+                {"op": "set_flag", "flag": "trs_primed"},
+                {"op": "set_flag", "flag": "trs_trust"},
+                {"op": "remember", "actor": "trestle", "fact": "clench"},
+            ],
+        ),
+        action(
+            "score_the_trestle",
+            "Score the trestle",
+            "do",
+            {
+                "all": [
+                    {"at": "trs.trestle"},
+                    {"has_flag": "trs_trust"},
+                    {"not_flag": "trs_scored"},
+                    {"not_flag": "bib_seized"},
+                ]
+            },
+            "You score the trestle. The oak sits even.",
+            [{"op": "set_flag", "flag": "trs_scored"}],
+        ),
+        action(
+            "tenon_the_rest",
+            "Tenon the rest",
+            "do",
+            {
+                "all": [
+                    {"at": "trs.rest"},
+                    {"has_flag": "trs_trust"},
+                    {"has_flag": "trs_scored"},
+                    {"not_flag": "trs_tenoned"},
+                    {"not_flag": "bib_seized"},
+                ]
+            },
+            "You tenon the rest. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "trs_tenoned"}],
+        ),
+        action(
+            "seize_the_bib",
+            "Seize the bib",
+            "do",
+            {
+                "all": [
+                    {"at": "trs.bib"},
+                    {"has_flag": "trs_trust"},
+                    {"has_flag": "trs_tenoned"},
+                    {"has_item": "rest_tenon"},
+                    {"not_flag": "bib_seized"},
+                ]
+            },
+            "You seize the bib. Bib takes the tenon.",
+            [
+                {"op": "remove_item", "item": "rest_tenon"},
+                {"op": "set_flag", "flag": "bib_seized"},
+                {"op": "remember", "actor": "bib", "fact": "seize"},
+            ],
+        ),
+        action(
+            "ask_trestle_rule",
+            "Ask Trestle the rule",
+            "talk",
+            {"at": "trs.yard"},
+            "Trestle says score the trestle. Then tenon and seize.",
+            [{"op": "set_flag", "flag": "heard_trs_rule"}],
+        ),
+        action(
+            "ask_rest_hitch",
+            "Ask Rest the hitch",
+            "talk",
+            {"at": "trs.rest"},
+            "Rest says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_trs_rule"}],
+        ),
+        action(
+            "ask_bib_fall",
+            "Ask Bib the fall",
+            "talk",
+            {"at": "trs.bib"},
+            "Bib sets only tenoned rests.",
+            [{"op": "set_flag", "flag": "heard_trs_rule"}],
+        ),
+        action(
+            "know_the_crook",
+            "Know the crook",
+            "talk",
+            {
+                "all": [
+                    {"at": "brh.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "brh_trust"},
+                ]
+            },
+            "You name the crook. Crook lets you bolt and fay.",
+            [
+                {"op": "set_flag", "flag": "brh_trust"},
+                {"op": "remember", "actor": "crook", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_hook_list",
+            "Read the hook list",
+            "do",
+            {
+                "all": [
+                    {"at": "brh.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "brh_trust"},
+                ]
+            },
+            "You read the hook list. Crook lets you bolt and fay.",
+            [
+                {"op": "set_flag", "flag": "brh_trust"},
+                {"op": "remember", "actor": "crook", "fact": "list"},
+            ],
+        ),
+        action(
+            "seize_the_crook",
+            "Seize the crook",
+            "do",
+            {
+                "all": [
+                    {"at": "brh.crook"},
+                    {"has_flag": "bib_seized"},
+                    {"not_flag": "brh_primed"},
+                ]
+            },
+            "You set the seized bib. The crook takes the run.",
+            [
+                {"op": "set_flag", "flag": "brh_primed"},
+                {"op": "set_flag", "flag": "brh_trust"},
+                {"op": "remember", "actor": "crook", "fact": "seize"},
+            ],
+        ),
+        action(
+            "score_the_crook",
+            "Score the crook",
+            "do",
+            {
+                "all": [
+                    {"at": "brh.crook"},
+                    {"has_flag": "brh_trust"},
+                    {"not_flag": "brh_scored"},
+                    {"not_flag": "hook_fayed"},
+                ]
+            },
+            "You score the crook. The oak sits even.",
+            [{"op": "set_flag", "flag": "brh_scored"}],
+        ),
+        action(
+            "bolt_the_palm",
+            "Bolt the palm",
+            "do",
+            {
+                "all": [
+                    {"at": "brh.palm"},
+                    {"has_flag": "brh_trust"},
+                    {"has_flag": "brh_scored"},
+                    {"not_flag": "brh_bolted"},
+                    {"not_flag": "hook_fayed"},
+                ]
+            },
+            "You bolt the palm. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "brh_bolted"}],
+        ),
+        action(
+            "fay_the_hook",
+            "Fay the hook",
+            "do",
+            {
+                "all": [
+                    {"at": "brh.fay"},
+                    {"has_flag": "brh_trust"},
+                    {"has_flag": "brh_bolted"},
+                    {"has_item": "palm_bolt"},
+                    {"not_flag": "hook_fayed"},
+                ]
+            },
+            "You fay the hook. Fay takes the bolt.",
+            [
+                {"op": "remove_item", "item": "palm_bolt"},
+                {"op": "set_flag", "flag": "hook_fayed"},
+                {"op": "remember", "actor": "fay", "fact": "fay"},
+            ],
+        ),
+        action(
+            "ask_crook_rule",
+            "Ask Crook the rule",
+            "talk",
+            {"at": "brh.yard"},
+            "Crook says score the crook. Then bolt and fay.",
+            [{"op": "set_flag", "flag": "heard_brh_rule"}],
+        ),
+        action(
+            "ask_palm_hitch",
+            "Ask Palm the hitch",
+            "talk",
+            {"at": "brh.palm"},
+            "Palm says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_brh_rule"}],
+        ),
+        action(
+            "ask_fay_fall",
+            "Ask Fay the fall",
+            "talk",
+            {"at": "brh.fay"},
+            "Fay sets only bolted palms.",
+            [{"op": "set_flag", "flag": "heard_brh_rule"}],
+        ),
+        action(
+            "know_the_lodging",
+            "Know the lodging",
+            "talk",
+            {
+                "all": [
+                    {"at": "lod.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "lod_trust"},
+                ]
+            },
+            "You name the lodging. Lodging lets you bolt and nick.",
+            [
+                {"op": "set_flag", "flag": "lod_trust"},
+                {"op": "remember", "actor": "lodging", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_lodging_list",
+            "Read the lodging list",
+            "do",
+            {
+                "all": [
+                    {"at": "lod.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "lod_trust"},
+                ]
+            },
+            "You read the lodging list. Lodging lets you bolt and nick.",
+            [
+                {"op": "set_flag", "flag": "lod_trust"},
+                {"op": "remember", "actor": "lodging", "fact": "list"},
+            ],
+        ),
+        action(
+            "fay_the_lodging",
+            "Fay the lodging",
+            "do",
+            {
+                "all": [
+                    {"at": "lod.lodging"},
+                    {"has_flag": "hook_fayed"},
+                    {"not_flag": "lod_primed"},
+                ]
+            },
+            "You set the fayed hook. The lodging takes the run.",
+            [
+                {"op": "set_flag", "flag": "lod_primed"},
+                {"op": "set_flag", "flag": "lod_trust"},
+                {"op": "remember", "actor": "lodging", "fact": "fay"},
+            ],
+        ),
+        action(
+            "scribe_the_lodging",
+            "Scribe the lodging",
+            "do",
+            {
+                "all": [
+                    {"at": "lod.lodging"},
+                    {"has_flag": "lod_trust"},
+                    {"not_flag": "lod_scribed"},
+                    {"not_flag": "lodging_nicked"},
+                ]
+            },
+            "You scribe the lodging. The oak sits even.",
+            [{"op": "set_flag", "flag": "lod_scribed"}],
+        ),
+        action(
+            "bolt_the_chock",
+            "Bolt the chock",
+            "do",
+            {
+                "all": [
+                    {"at": "lod.chock"},
+                    {"has_flag": "lod_trust"},
+                    {"has_flag": "lod_scribed"},
+                    {"not_flag": "lod_bolted"},
+                    {"not_flag": "lodging_nicked"},
+                ]
+            },
+            "You bolt the chock. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "lod_bolted"}],
+        ),
+        action(
+            "nick_the_lodging",
+            "Nick the lodging",
+            "do",
+            {
+                "all": [
+                    {"at": "lod.nick"},
+                    {"has_flag": "lod_trust"},
+                    {"has_flag": "lod_bolted"},
+                    {"has_item": "chock_bolt"},
+                    {"not_flag": "lodging_nicked"},
+                ]
+            },
+            "You nick the lodging. Nick takes the bolt.",
+            [
+                {"op": "remove_item", "item": "chock_bolt"},
+                {"op": "set_flag", "flag": "lodging_nicked"},
+                {"op": "remember", "actor": "nick", "fact": "nick"},
+            ],
+        ),
+        action(
+            "ask_lodging_rule",
+            "Ask Lodging the rule",
+            "talk",
+            {"at": "lod.yard"},
+            "Lodging says scribe the lodging. Then bolt and nick.",
+            [{"op": "set_flag", "flag": "heard_lod_rule"}],
+        ),
+        action(
+            "ask_chock_hitch",
+            "Ask Chock the hitch",
+            "talk",
+            {"at": "lod.chock"},
+            "Chock says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_lod_rule"}],
+        ),
+        action(
+            "ask_nick_fall",
+            "Ask Nick the fall",
+            "talk",
+            {"at": "lod.nick"},
+            "Nick sets only bolted chocks.",
+            [{"op": "set_flag", "flag": "heard_lod_rule"}],
+        ),
+        action(
+            "know_the_dagger",
+            "Know the dagger",
+            "talk",
+            {
+                "all": [
+                    {"at": "dag.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "dag_trust"},
+                ]
+            },
+            "You name the dagger. Dagger lets you side and mark.",
+            [
+                {"op": "set_flag", "flag": "dag_trust"},
+                {"op": "remember", "actor": "dagger", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_dagger_list",
+            "Read the dagger list",
+            "do",
+            {
+                "all": [
+                    {"at": "dag.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "dag_trust"},
+                ]
+            },
+            "You read the dagger list. Dagger lets you side and mark.",
+            [
+                {"op": "set_flag", "flag": "dag_trust"},
+                {"op": "remember", "actor": "dagger", "fact": "list"},
+            ],
+        ),
+        action(
+            "nick_the_dagger",
+            "Nick the dagger",
+            "do",
+            {
+                "all": [
+                    {"at": "dag.dagger"},
+                    {"has_flag": "lodging_nicked"},
+                    {"not_flag": "dag_primed"},
+                ]
+            },
+            "You set the nicked lodging. The dagger takes the run.",
+            [
+                {"op": "set_flag", "flag": "dag_primed"},
+                {"op": "set_flag", "flag": "dag_trust"},
+                {"op": "remember", "actor": "dagger", "fact": "nick"},
+            ],
+        ),
+        action(
+            "fair_the_dagger",
+            "Fair the dagger",
+            "do",
+            {
+                "all": [
+                    {"at": "dag.dagger"},
+                    {"has_flag": "dag_trust"},
+                    {"not_flag": "dag_faired"},
+                    {"not_flag": "sirmark_marked"},
+                ]
+            },
+            "You fair the dagger. The oak sits even.",
+            [{"op": "set_flag", "flag": "dag_faired"}],
+        ),
+        action(
+            "side_the_siding",
+            "Side the siding",
+            "do",
+            {
+                "all": [
+                    {"at": "dag.siding"},
+                    {"has_flag": "dag_trust"},
+                    {"has_flag": "dag_faired"},
+                    {"not_flag": "dag_sided"},
+                    {"not_flag": "sirmark_marked"},
+                ]
+            },
+            "You side the siding. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "dag_sided"}],
+        ),
+        action(
+            "mark_the_sirmark",
+            "Mark the sirmark",
+            "do",
+            {
+                "all": [
+                    {"at": "dag.sirmark"},
+                    {"has_flag": "dag_trust"},
+                    {"has_flag": "dag_sided"},
+                    {"has_item": "siding_iron"},
+                    {"not_flag": "sirmark_marked"},
+                ]
+            },
+            "You mark the sirmark. Sirmark takes the iron.",
+            [
+                {"op": "remove_item", "item": "siding_iron"},
+                {"op": "set_flag", "flag": "sirmark_marked"},
+                {"op": "remember", "actor": "sirmark", "fact": "mark"},
+            ],
+        ),
+        action(
+            "ask_dagger_rule",
+            "Ask Dagger the rule",
+            "talk",
+            {"at": "dag.yard"},
+            "Dagger says fair the dagger. Then side and mark.",
+            [{"op": "set_flag", "flag": "heard_dag_rule"}],
+        ),
+        action(
+            "ask_siding_hitch",
+            "Ask Siding the hitch",
+            "talk",
+            {"at": "dag.siding"},
+            "Siding says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_dag_rule"}],
+        ),
+        action(
+            "ask_sirmark_fall",
+            "Ask Sirmark the fall",
+            "talk",
+            {"at": "dag.sirmark"},
+            "Sirmark sets only sided iron.",
+            [{"op": "set_flag", "flag": "heard_dag_rule"}],
+        ),
+        action(
+            "know_the_rider",
+            "Know the rider",
+            "talk",
+            {
+                "all": [
+                    {"at": "rid.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "rid_trust"},
+                ]
+            },
+            "You name the rider. Rider lets you seat and dump.",
+            [
+                {"op": "set_flag", "flag": "rid_trust"},
+                {"op": "remember", "actor": "rider", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_rider_list",
+            "Read the rider list",
+            "do",
+            {
+                "all": [
+                    {"at": "rid.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "rid_trust"},
+                ]
+            },
+            "You read the rider list. Rider lets you seat and dump.",
+            [
+                {"op": "set_flag", "flag": "rid_trust"},
+                {"op": "remember", "actor": "rider", "fact": "list"},
+            ],
+        ),
+        action(
+            "mark_the_rider",
+            "Mark the rider",
+            "do",
+            {
+                "all": [
+                    {"at": "rid.rider"},
+                    {"has_flag": "sirmark_marked"},
+                    {"not_flag": "rid_primed"},
+                ]
+            },
+            "You set the marked sirmark. The rider takes the run.",
+            [
+                {"op": "set_flag", "flag": "rid_primed"},
+                {"op": "set_flag", "flag": "rid_trust"},
+                {"op": "remember", "actor": "rider", "fact": "mark"},
+            ],
+        ),
+        action(
+            "wring_the_rider",
+            "Wring the rider",
+            "do",
+            {
+                "all": [
+                    {"at": "rid.rider"},
+                    {"has_flag": "rid_trust"},
+                    {"not_flag": "rid_wrung"},
+                    {"not_flag": "wring_dumped"},
+                ]
+            },
+            "You wring the rider. The oak sits even.",
+            [{"op": "set_flag", "flag": "rid_wrung"}],
+        ),
+        action(
+            "seat_the_filling",
+            "Seat the filling",
+            "do",
+            {
+                "all": [
+                    {"at": "rid.filling"},
+                    {"has_flag": "rid_trust"},
+                    {"has_flag": "rid_wrung"},
+                    {"not_flag": "rid_seated"},
+                    {"not_flag": "wring_dumped"},
+                ]
+            },
+            "You seat the filling. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "rid_seated"}],
+        ),
+        action(
+            "dump_the_wring",
+            "Dump the wring",
+            "do",
+            {
+                "all": [
+                    {"at": "rid.wring"},
+                    {"has_flag": "rid_trust"},
+                    {"has_flag": "rid_seated"},
+                    {"has_item": "filling_iron"},
+                    {"not_flag": "wring_dumped"},
+                ]
+            },
+            "You dump the wring. Wring takes the iron.",
+            [
+                {"op": "remove_item", "item": "filling_iron"},
+                {"op": "set_flag", "flag": "wring_dumped"},
+                {"op": "remember", "actor": "wring", "fact": "dump"},
+            ],
+        ),
+        action(
+            "ask_rider_rule",
+            "Ask Rider the rule",
+            "talk",
+            {"at": "rid.yard"},
+            "Rider says wring the rider. Then seat and dump.",
+            [{"op": "set_flag", "flag": "heard_rid_rule"}],
+        ),
+        action(
+            "ask_filling_hitch",
+            "Ask Filling the hitch",
+            "talk",
+            {"at": "rid.filling"},
+            "Filling says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_rid_rule"}],
+        ),
+        action(
+            "ask_wring_fall",
+            "Ask Wring the fall",
+            "talk",
+            {"at": "rid.wring"},
+            "Wring sets only seated iron.",
+            [{"op": "set_flag", "flag": "heard_rid_rule"}],
+        ),
+        action(
+            "know_the_keelson",
+            "Know the keelson",
+            "talk",
+            {
+                "all": [
+                    {"at": "ksn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "ksn_trust"},
+                ]
+            },
+            "You name the keelson. Keelson lets you pack and bolt.",
+            [
+                {"op": "set_flag", "flag": "ksn_trust"},
+                {"op": "remember", "actor": "keelson", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_keelson_list",
+            "Read the keelson list",
+            "do",
+            {
+                "all": [
+                    {"at": "ksn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "ksn_trust"},
+                ]
+            },
+            "You read the keelson list. Keelson lets you pack and bolt.",
+            [
+                {"op": "set_flag", "flag": "ksn_trust"},
+                {"op": "remember", "actor": "keelson", "fact": "list"},
+            ],
+        ),
+        action(
+            "wring_the_keelson",
+            "Wring the keelson",
+            "do",
+            {
+                "all": [
+                    {"at": "ksn.scarph"},
+                    {"has_flag": "wring_dumped"},
+                    {"not_flag": "ksn_primed"},
+                ]
+            },
+            "You set the dumped wring. The keelson takes the run.",
+            [
+                {"op": "set_flag", "flag": "ksn_primed"},
+                {"op": "set_flag", "flag": "ksn_trust"},
+                {"op": "remember", "actor": "keelson", "fact": "wring"},
+            ],
+        ),
+        action(
+            "scarph_the_keelson",
+            "Scarph the keelson",
+            "do",
+            {
+                "all": [
+                    {"at": "ksn.scarph"},
+                    {"has_flag": "ksn_trust"},
+                    {"not_flag": "ksn_scarphed"},
+                    {"not_flag": "sister_bolted"},
+                ]
+            },
+            "You scarph the keelson. The oak sits even.",
+            [{"op": "set_flag", "flag": "ksn_scarphed"}],
+        ),
+        action(
+            "pack_the_stopwater",
+            "Pack the stopwater",
+            "do",
+            {
+                "all": [
+                    {"at": "ksn.stopwater"},
+                    {"has_flag": "ksn_trust"},
+                    {"has_flag": "ksn_scarphed"},
+                    {"not_flag": "ksn_packed"},
+                    {"not_flag": "sister_bolted"},
+                ]
+            },
+            "You pack the stopwater. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "ksn_packed"}],
+        ),
+        action(
+            "bolt_the_sister",
+            "Bolt the sister",
+            "do",
+            {
+                "all": [
+                    {"at": "ksn.sister"},
+                    {"has_flag": "ksn_trust"},
+                    {"has_flag": "ksn_packed"},
+                    {"has_item": "stopwater_iron"},
+                    {"not_flag": "sister_bolted"},
+                ]
+            },
+            "You bolt the sister. Sister takes the iron.",
+            [
+                {"op": "remove_item", "item": "stopwater_iron"},
+                {"op": "set_flag", "flag": "sister_bolted"},
+                {"op": "remember", "actor": "sister", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "ask_keelson_rule",
+            "Ask Keelson the rule",
+            "talk",
+            {"at": "ksn.yard"},
+            "Keelson says scarph the keelson. Then pack and bolt.",
+            [{"op": "set_flag", "flag": "heard_ksn_rule"}],
+        ),
+        action(
+            "ask_stopwater_hitch",
+            "Ask Stopwater the hitch",
+            "talk",
+            {"at": "ksn.stopwater"},
+            "Stopwater says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_ksn_rule"}],
+        ),
+        action(
+            "ask_sister_fall",
+            "Ask Sister the fall",
+            "talk",
+            {"at": "ksn.sister"},
+            "Sister sets only packed iron.",
+            [{"op": "set_flag", "flag": "heard_ksn_rule"}],
+        ),
+        action(
+            "know_the_crutch",
+            "Know the crutch",
+            "talk",
+            {
+                "all": [
+                    {"at": "cru.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "cru_trust"},
+                ]
+            },
+            "You name the crutch. Crutch lets you fit and spike.",
+            [
+                {"op": "set_flag", "flag": "cru_trust"},
+                {"op": "remember", "actor": "crutch", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_crutch_list",
+            "Read the crutch list",
+            "do",
+            {
+                "all": [
+                    {"at": "cru.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "cru_trust"},
+                ]
+            },
+            "You read the crutch list. Crutch lets you fit and spike.",
+            [
+                {"op": "set_flag", "flag": "cru_trust"},
+                {"op": "remember", "actor": "crutch", "fact": "list"},
+            ],
+        ),
+        action(
+            "bolt_the_crutch",
+            "Bolt the crutch",
+            "do",
+            {
+                "all": [
+                    {"at": "cru.adze"},
+                    {"has_flag": "sister_bolted"},
+                    {"not_flag": "cru_primed"},
+                ]
+            },
+            "You set the bolted sister. The crutch takes the run.",
+            [
+                {"op": "set_flag", "flag": "cru_primed"},
+                {"op": "set_flag", "flag": "cru_trust"},
+                {"op": "remember", "actor": "crutch", "fact": "bolt"},
+            ],
+        ),
+        action(
+            "adze_the_crutch",
+            "Adze the crutch",
+            "do",
+            {
+                "all": [
+                    {"at": "cru.adze"},
+                    {"has_flag": "cru_trust"},
+                    {"not_flag": "cru_adzed"},
+                    {"not_flag": "crotch_spiked"},
+                ]
+            },
+            "You adze the crutch. The oak sits even.",
+            [{"op": "set_flag", "flag": "cru_adzed"}],
+        ),
+        action(
+            "fit_the_counter",
+            "Fit the counter",
+            "do",
+            {
+                "all": [
+                    {"at": "cru.counter"},
+                    {"has_flag": "cru_trust"},
+                    {"has_flag": "cru_adzed"},
+                    {"not_flag": "cru_fitted"},
+                    {"not_flag": "crotch_spiked"},
+                ]
+            },
+            "You fit the counter. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "cru_fitted"}],
+        ),
+        action(
+            "spike_the_crotch",
+            "Spike the crotch",
+            "do",
+            {
+                "all": [
+                    {"at": "cru.crotch"},
+                    {"has_flag": "cru_trust"},
+                    {"has_flag": "cru_fitted"},
+                    {"has_item": "counter_iron"},
+                    {"not_flag": "crotch_spiked"},
+                ]
+            },
+            "You spike the crotch. Crotch takes the iron.",
+            [
+                {"op": "remove_item", "item": "counter_iron"},
+                {"op": "set_flag", "flag": "crotch_spiked"},
+                {"op": "remember", "actor": "crotch", "fact": "spike"},
+            ],
+        ),
+        action(
+            "ask_crutch_rule",
+            "Ask Crutch the rule",
+            "talk",
+            {"at": "cru.yard"},
+            "Crutch says adze the crutch. Then fit and spike.",
+            [{"op": "set_flag", "flag": "heard_cru_rule"}],
+        ),
+        action(
+            "ask_counter_hitch",
+            "Ask Counter the hitch",
+            "talk",
+            {"at": "cru.counter"},
+            "Counter says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_cru_rule"}],
+        ),
+        action(
+            "ask_crotch_fall",
+            "Ask Crotch the fall",
+            "talk",
+            {"at": "cru.crotch"},
+            "Crotch sets only fitted iron.",
+            [{"op": "set_flag", "flag": "heard_cru_rule"}],
+        ),
+        action(
+            "know_the_pointer",
+            "Know the pointer",
+            "talk",
+            {
+                "all": [
+                    {"at": "ptr.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "ptr_trust"},
+                ]
+            },
+            "You name the pointer. Pointer lets you bed and dump.",
+            [
+                {"op": "set_flag", "flag": "ptr_trust"},
+                {"op": "remember", "actor": "pointer", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_pointer_list",
+            "Read the pointer list",
+            "do",
+            {
+                "all": [
+                    {"at": "ptr.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "ptr_trust"},
+                ]
+            },
+            "You read the pointer list. Pointer lets you bed and dump.",
+            [
+                {"op": "set_flag", "flag": "ptr_trust"},
+                {"op": "remember", "actor": "pointer", "fact": "list"},
+            ],
+        ),
+        action(
+            "spike_the_pointer",
+            "Spike the pointer",
+            "do",
+            {
+                "all": [
+                    {"at": "ptr.diagonal"},
+                    {"has_flag": "crotch_spiked"},
+                    {"not_flag": "ptr_primed"},
+                ]
+            },
+            "You set the spiked crotch. The pointer takes the run.",
+            [
+                {"op": "set_flag", "flag": "ptr_primed"},
+                {"op": "set_flag", "flag": "ptr_trust"},
+                {"op": "remember", "actor": "pointer", "fact": "spike"},
+            ],
+        ),
+        action(
+            "bevel_the_pointer",
+            "Bevel the pointer",
+            "do",
+            {
+                "all": [
+                    {"at": "ptr.diagonal"},
+                    {"has_flag": "ptr_trust"},
+                    {"not_flag": "ptr_bevelled"},
+                    {"not_flag": "compound_dumped"},
+                ]
+            },
+            "You bevel the pointer. The oak sits even.",
+            [{"op": "set_flag", "flag": "ptr_bevelled"}],
+        ),
+        action(
+            "bed_the_inner",
+            "Bed the inner",
+            "do",
+            {
+                "all": [
+                    {"at": "ptr.inner"},
+                    {"has_flag": "ptr_trust"},
+                    {"has_flag": "ptr_bevelled"},
+                    {"not_flag": "ptr_bedded"},
+                    {"not_flag": "compound_dumped"},
+                ]
+            },
+            "You bed the inner. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "ptr_bedded"}],
+        ),
+        action(
+            "dump_the_compound",
+            "Dump the compound",
+            "do",
+            {
+                "all": [
+                    {"at": "ptr.compound"},
+                    {"has_flag": "ptr_trust"},
+                    {"has_flag": "ptr_bedded"},
+                    {"has_item": "inner_iron"},
+                    {"not_flag": "compound_dumped"},
+                ]
+            },
+            "You dump the compound. Compound takes the iron.",
+            [
+                {"op": "remove_item", "item": "inner_iron"},
+                {"op": "set_flag", "flag": "compound_dumped"},
+                {"op": "remember", "actor": "compound", "fact": "dump"},
+            ],
+        ),
+        action(
+            "ask_pointer_rule",
+            "Ask Pointer the rule",
+            "talk",
+            {"at": "ptr.yard"},
+            "Pointer says bevel the pointer. Then bed and dump.",
+            [{"op": "set_flag", "flag": "heard_ptr_rule"}],
+        ),
+        action(
+            "ask_inner_hitch",
+            "Ask Inner the hitch",
+            "talk",
+            {"at": "ptr.inner"},
+            "Inner says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_ptr_rule"}],
+        ),
+        action(
+            "ask_compound_fall",
+            "Ask Compound the fall",
+            "talk",
+            {"at": "ptr.compound"},
+            "Compound sets only bedded iron.",
+            [{"op": "set_flag", "flag": "heard_ptr_rule"}],
+        ),
+        action(
+            "know_the_stanchion",
+            "Know the stanchion",
+            "talk",
+            {
+                "all": [
+                    {"at": "stn.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "stn_trust"},
+                ]
+            },
+            "You name the stanchion. Stanchion lets you wedge and spike.",
+            [
+                {"op": "set_flag", "flag": "stn_trust"},
+                {"op": "remember", "actor": "stanchion", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_stanchion_list",
+            "Read the stanchion list",
+            "do",
+            {
+                "all": [
+                    {"at": "stn.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "stn_trust"},
+                ]
+            },
+            "You read the stanchion list. Stanchion lets you wedge and spike.",
+            [
+                {"op": "set_flag", "flag": "stn_trust"},
+                {"op": "remember", "actor": "stanchion", "fact": "list"},
+            ],
+        ),
+        action(
+            "dump_the_stanchion",
+            "Dump the stanchion",
+            "do",
+            {
+                "all": [
+                    {"at": "stn.true"},
+                    {"has_flag": "compound_dumped"},
+                    {"not_flag": "stn_primed"},
+                ]
+            },
+            "You set the dumped compound. The stanchion takes the run.",
+            [
+                {"op": "set_flag", "flag": "stn_primed"},
+                {"op": "set_flag", "flag": "stn_trust"},
+                {"op": "remember", "actor": "stanchion", "fact": "dump"},
+            ],
+        ),
+        action(
+            "true_the_stanchion",
+            "True the stanchion",
+            "do",
+            {
+                "all": [
+                    {"at": "stn.true"},
+                    {"has_flag": "stn_trust"},
+                    {"not_flag": "stn_trued"},
+                    {"not_flag": "foot_spiked"},
+                ]
+            },
+            "You true the stanchion. The oak sits even.",
+            [{"op": "set_flag", "flag": "stn_trued"}],
+        ),
+        action(
+            "wedge_the_prop",
+            "Wedge the prop",
+            "do",
+            {
+                "all": [
+                    {"at": "stn.prop"},
+                    {"has_flag": "stn_trust"},
+                    {"has_flag": "stn_trued"},
+                    {"not_flag": "stn_wedged"},
+                    {"not_flag": "foot_spiked"},
+                ]
+            },
+            "You wedge the prop. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "stn_wedged"}],
+        ),
+        action(
+            "spike_the_foot",
+            "Spike the foot",
+            "do",
+            {
+                "all": [
+                    {"at": "stn.foot"},
+                    {"has_flag": "stn_trust"},
+                    {"has_flag": "stn_wedged"},
+                    {"has_item": "prop_iron"},
+                    {"not_flag": "foot_spiked"},
+                ]
+            },
+            "You spike the foot. Foot takes the iron.",
+            [
+                {"op": "remove_item", "item": "prop_iron"},
+                {"op": "set_flag", "flag": "foot_spiked"},
+                {"op": "remember", "actor": "foot", "fact": "spike"},
+            ],
+        ),
+        action(
+            "ask_stanchion_rule",
+            "Ask Stanchion the rule",
+            "talk",
+            {"at": "stn.yard"},
+            "Stanchion says true the stanchion. Then wedge and spike.",
+            [{"op": "set_flag", "flag": "heard_stn_rule"}],
+        ),
+        action(
+            "ask_prop_hitch",
+            "Ask Prop the hitch",
+            "talk",
+            {"at": "stn.prop"},
+            "Prop says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_stn_rule"}],
+        ),
+        action(
+            "ask_foot_fall",
+            "Ask Foot the fall",
+            "talk",
+            {"at": "stn.foot"},
+            "Foot sets only wedged iron.",
+            [{"op": "set_flag", "flag": "heard_stn_rule"}],
+        ),
+        action(
+            "know_the_pillar",
+            "Know the pillar",
+            "talk",
+            {
+                "all": [
+                    {"at": "pil.yard"},
+                    {
+                        "any": [
+                            {"sheet": ["origin", "marshborn"]},
+                            {"sheet": ["skill", "hunt"]},
+                        ]
+                    },
+                    {"not_flag": "pil_trust"},
+                ]
+            },
+            "You name the pillar. Pillar lets you square and shore.",
+            [
+                {"op": "set_flag", "flag": "pil_trust"},
+                {"op": "remember", "actor": "pillar", "fact": "run"},
+            ],
+        ),
+        action(
+            "read_the_pillar_list",
+            "Read the pillar list",
+            "do",
+            {
+                "all": [
+                    {"at": "pil.yard"},
+                    {"sheet": ["skill", "letters"]},
+                    {"not_flag": "pil_trust"},
+                ]
+            },
+            "You read the pillar list. Pillar lets you square and shore.",
+            [
+                {"op": "set_flag", "flag": "pil_trust"},
+                {"op": "remember", "actor": "pillar", "fact": "list"},
+            ],
+        ),
+        action(
+            "spike_the_pillar",
+            "Spike the pillar",
+            "do",
+            {
+                "all": [
+                    {"at": "pil.samson"},
+                    {"has_flag": "foot_spiked"},
+                    {"not_flag": "pil_primed"},
+                ]
+            },
+            "You set the spiked foot. The pillar takes the run.",
+            [
+                {"op": "set_flag", "flag": "pil_primed"},
+                {"op": "set_flag", "flag": "pil_trust"},
+                {"op": "remember", "actor": "pillar", "fact": "spike"},
+            ],
+        ),
+        action(
+            "hew_the_pillar",
+            "Hew the pillar",
+            "do",
+            {
+                "all": [
+                    {"at": "pil.samson"},
+                    {"has_flag": "pil_trust"},
+                    {"not_flag": "pil_hewn"},
+                    {"not_flag": "queen_shored"},
+                ]
+            },
+            "You hew the pillar. The oak sits even.",
+            [{"op": "set_flag", "flag": "pil_hewn"}],
+        ),
+        action(
+            "square_the_king",
+            "Square the king",
+            "do",
+            {
+                "all": [
+                    {"at": "pil.king"},
+                    {"has_flag": "pil_trust"},
+                    {"has_flag": "pil_hewn"},
+                    {"not_flag": "pil_squared"},
+                    {"not_flag": "queen_shored"},
+                ]
+            },
+            "You square the king. The hitch sits tight.",
+            [{"op": "set_flag", "flag": "pil_squared"}],
+        ),
+        action(
+            "shore_the_queen",
+            "Shore the queen",
+            "do",
+            {
+                "all": [
+                    {"at": "pil.queen"},
+                    {"has_flag": "pil_trust"},
+                    {"has_flag": "pil_squared"},
+                    {"has_item": "king_iron"},
+                    {"not_flag": "queen_shored"},
+                ]
+            },
+            "You shore the queen. Queen takes the iron.",
+            [
+                {"op": "remove_item", "item": "king_iron"},
+                {"op": "set_flag", "flag": "queen_shored"},
+                {"op": "remember", "actor": "queen", "fact": "shore"},
+            ],
+        ),
+        action(
+            "ask_pillar_rule",
+            "Ask Pillar the rule",
+            "talk",
+            {"at": "pil.yard"},
+            "Pillar says hew the pillar. Then square and shore.",
+            [{"op": "set_flag", "flag": "heard_pil_rule"}],
+        ),
+        action(
+            "ask_king_hitch",
+            "Ask King the hitch",
+            "talk",
+            {"at": "pil.king"},
+            "King says set until the hitch is even.",
+            [{"op": "set_flag", "flag": "heard_pil_rule"}],
+        ),
+        action(
+            "ask_queen_fall",
+            "Ask Queen the fall",
+            "talk",
+            {"at": "pil.queen"},
+            "Queen sets only squared iron.",
+            [{"op": "set_flag", "flag": "heard_pil_rule"}],
+        ),
     ]
 
     pack = {
@@ -5418,6 +30342,486 @@ def build() -> dict:
             "pickle_house": {
                 "name": "Pickle House",
                 "mechanic": "pack-brine-lid-cask",
+            },
+            "tide_forge": {
+                "name": "Tide Forge",
+                "mechanic": "bellows-bloom-quench",
+            },
+            "decoy_pond": {
+                "name": "Decoy Pond",
+                "mechanic": "pipe-drive-bag-fowl",
+            },
+            "rushlight_house": {
+                "name": "Rushlight House",
+                "mechanic": "peel-tallow-bind-lights",
+            },
+            "caulk_yard": {
+                "name": "Caulk Yard",
+                "mechanic": "oakum-pitch-caulk-seam",
+            },
+            "net_loft": {
+                "name": "Net Loft",
+                "mechanic": "rig-mend-tar-mesh",
+            },
+            "sail_loft": {
+                "name": "Sail Loft",
+                "mechanic": "cut-stitch-hoist-sail",
+            },
+            "sounding_stage": {
+                "name": "Sounding Stage",
+                "mechanic": "coil-mark-cast-lead",
+            },
+            "chart_house": {
+                "name": "Chart House",
+                "mechanic": "ruler-ink-seal-rutter",
+            },
+            "buoy_yard": {
+                "name": "Buoy Yard",
+                "mechanic": "stuff-lash-drop-buoy",
+            },
+            "kelp_shore": {
+                "name": "Kelp Shore",
+                "mechanic": "cut-dry-burn-wrack",
+            },
+            "soap_house": {
+                "name": "Soap House",
+                "mechanic": "leach-boil-cut-soap",
+            },
+            "fulling_mill": {
+                "name": "Fulling Mill",
+                "mechanic": "wet-walk-hang-cloth",
+            },
+            "charcoal_clamp": {
+                "name": "Charcoal Clamp",
+                "mechanic": "cut-stack-draw-coal",
+            },
+            "lime_kiln": {
+                "name": "Lime Kiln",
+                "mechanic": "break-charge-slake-lime",
+            },
+            "mason_yard": {
+                "name": "Mason Yard",
+                "mechanic": "mix-lay-point-stone",
+            },
+            "thatch_croft": {
+                "name": "Thatch Croft",
+                "mechanic": "cut-bind-set-roof",
+            },
+            "rain_cistern": {
+                "name": "Rain Cistern",
+                "mechanic": "hang-set-dip-rain",
+            },
+            "wash_house": {
+                "name": "Wash House",
+                "mechanic": "soak-beat-hang-wash",
+            },
+            "rag_mill": {
+                "name": "Rag Mill",
+                "mechanic": "stamp-couch-pack-paper",
+            },
+            "osier_holt": {
+                "name": "Osier Holt",
+                "mechanic": "cut-brake-weave-frail",
+            },
+            "bake_house": {
+                "name": "Bakehouse",
+                "mechanic": "set-heat-draw-loaf",
+            },
+            "dairy_house": {
+                "name": "Dairy",
+                "mechanic": "set-wrap-salt-cheese",
+            },
+            "loom_shed": {
+                "name": "Loom Shed",
+                "mechanic": "warp-throw-shear-web",
+            },
+            "horn_lantern": {
+                "name": "Horn Lantern",
+                "mechanic": "scrape-set-hang-lantern",
+            },
+            "gall_house": {
+                "name": "Gall House",
+                "mechanic": "crush-mix-cut-ink",
+            },
+            "cobble_shop": {
+                "name": "Cobble Shop",
+                "mechanic": "last-awl-peg-heel",
+            },
+            "cider_house": {
+                "name": "Cider House",
+                "mechanic": "mill-wrap-bung-cider",
+            },
+            "mustard_mill": {
+                "name": "Mustard Mill",
+                "mechanic": "mill-wet-pot-mustard",
+            },
+            "sausage_house": {
+                "name": "Sausage House",
+                "mechanic": "chop-fill-tie-link",
+            },
+            "pie_house": {
+                "name": "Pie House",
+                "mechanic": "roll-fill-crimp-pie",
+            },
+            "jam_house": {
+                "name": "Jam House",
+                "mechanic": "boil-skim-jar-jam",
+            },
+            "crock_yard": {
+                "name": "Crock Yard",
+                "mechanic": "throw-fire-glaze-crock",
+            },
+            "tannery": {
+                "name": "Tannery",
+                "mechanic": "flesh-bate-tan-hide",
+            },
+            "flax_house": {
+                "name": "Flax House",
+                "mechanic": "ret-heckle-spin-line",
+            },
+            "nailery": {
+                "name": "Nailery",
+                "mechanic": "snip-head-point-nail",
+            },
+            "wheelwright": {
+                "name": "Wheelwright",
+                "mechanic": "dish-spoke-tyre-wain",
+            },
+            "malt_house": {
+                "name": "Malt House",
+                "mechanic": "steep-turn-oast-malt",
+            },
+            "brew_house": {
+                "name": "Brew House",
+                "mechanic": "charge-hop-rack-gyle",
+            },
+            "vinegar_house": {
+                "name": "Vinegar House",
+                "mechanic": "pitch-sour-cork-cruet",
+            },
+            "glue_house": {
+                "name": "Glue House",
+                "mechanic": "trim-seethe-cake-glue",
+            },
+            "bindery": {
+                "name": "Bindery",
+                "mechanic": "gather-sew-nip-book",
+            },
+            "gilders_loft": {
+                "name": "Gilder's Loft",
+                "mechanic": "bole-lay-burnish-gold",
+            },
+            "jeweler": {
+                "name": "Jeweler",
+                "mechanic": "beat-seat-close-collet",
+            },
+            "glazier": {
+                "name": "Glazier",
+                "mechanic": "score-groze-came-pane",
+            },
+            "sash_house": {
+                "name": "Sash House",
+                "mechanic": "rebate-tenon-pin-sash",
+            },
+            "putty_house": {
+                "name": "Putty House",
+                "mechanic": "whip-knife-dust-light",
+            },
+            "paint_house": {
+                "name": "Paint House",
+                "mechanic": "mull-mix-brush-coat",
+            },
+            "varnish_house": {
+                "name": "Varnish House",
+                "mechanic": "cook-strain-flow-varnish",
+            },
+            "latch_house": {
+                "name": "Latch House",
+                "mechanic": "file-fit-throw-latch",
+            },
+            "hinge_house": {
+                "name": "Hinge House",
+                "mechanic": "form-drift-ship-gudgeon",
+            },
+            "stay_house": {
+                "name": "Stay House",
+                "mechanic": "slot-rivet-peg-stay",
+            },
+            "sill_house": {
+                "name": "Sill House",
+                "mechanic": "bed-kerf-seat-stool",
+            },
+            "casing_house": {
+                "name": "Casing House",
+                "mechanic": "mitre-scribe-tack-casing",
+            },
+            "skirting_house": {
+                "name": "Skirting House",
+                "mechanic": "cope-plane-fix-plinth",
+            },
+            "dado_house": {
+                "name": "Dado House",
+                "mechanic": "plough-house-cap-rail",
+            },
+            "picture_rail": {
+                "name": "Picture Rail",
+                "mechanic": "snap-plug-spring-mould",
+            },
+            "cornice_house": {
+                "name": "Cornice House",
+                "mechanic": "run-key-float-cornice",
+            },
+            "stair_house": {
+                "name": "Stair House",
+                "mechanic": "gauge-saw-wedge-riser",
+            },
+            "newel_house": {
+                "name": "Newel House",
+                "mechanic": "turn-mortise-dowel-finial",
+            },
+            "handrail_house": {
+                "name": "Handrail House",
+                "mechanic": "stick-scarf-wreath-ramp",
+            },
+            "baluster_house": {
+                "name": "Baluster House",
+                "mechanic": "rip-flute-shoulder-neck",
+            },
+            "tread_house": {
+                "name": "Tread House",
+                "mechanic": "mark-nosing-return-end",
+            },
+            "floorboard_house": {
+                "name": "Floorboard House",
+                "mechanic": "shoot-tongue-secret-nail",
+            },
+            "joist_house": {
+                "name": "Joist House",
+                "mechanic": "space-notch-crown-camber",
+            },
+            "lath_house": {
+                "name": "Lath House",
+                "mechanic": "rive-prick-hair-coat",
+            },
+            "chimney_house": {
+                "name": "Chimney House",
+                "mechanic": "bed-set-lime-breast",
+            },
+            "mantel_house": {
+                "name": "Mantel House",
+                "mechanic": "bed-set-pin-mantel",
+            },
+            "flue_house": {
+                "name": "Flue House",
+                "mechanic": "parge-wad-hang-cowl",
+            },
+            "fireback_house": {
+                "name": "Fireback House",
+                "mechanic": "sand-pour-bed-back",
+            },
+            "grate_house": {
+                "name": "Grate House",
+                "mechanic": "swage-rivet-register-slide",
+            },
+            "brick_yard": {
+                "name": "Brick Yard",
+                "mechanic": "pug-strike-hack-set",
+            },
+            "tile_house": {
+                "name": "Tile House",
+                "mechanic": "drape-pallet-nick-arris",
+            },
+            "slate_yard": {
+                "name": "Slate Yard",
+                "mechanic": "scapple-punch-lap-slate",
+            },
+            "flash_house": {
+                "name": "Flashing House",
+                "mechanic": "roll-boss-dress-flash",
+            },
+            "block_loft": {
+                "name": "Block Loft",
+                "mechanic": "bore-score-strop-block",
+            },
+            "oar_loft": {
+                "name": "Oar Loft",
+                "mechanic": "round-spoon-bind-grip",
+            },
+            "launch_ways": {
+                "name": "Launch Ways",
+                "mechanic": "grease-poppet-trip-trigger",
+            },
+            "clinker_shed": {
+                "name": "Clinker Shed",
+                "mechanic": "steam-clench-fair-garboard",
+            },
+            "windlass_house": {
+                "name": "Windlass House",
+                "mechanic": "ship-pawl-heave-round",
+            },
+            "mould_loft": {
+                "name": "Mould Loft",
+                "mechanic": "loft-spile-bevel-station",
+            },
+            "treenail_house": {
+                "name": "Treenail House",
+                "mechanic": "shave-auger-drive-trunnel",
+            },
+            "deadwood_yard": {
+                "name": "Deadwood Yard",
+                "mechanic": "dub-rabbet-bolt-hog",
+            },
+            "mast_pond": {
+                "name": "Mast Pond",
+                "mechanic": "sink-range-hoop-partner",
+            },
+            "stem_house": {
+                "name": "Stem House",
+                "mechanic": "hew-gripe-hang-knee",
+            },
+            "fid_house": {
+                "name": "Fid House",
+                "mechanic": "turn-ream-seize-eye",
+            },
+            "cleat_house": {
+                "name": "Cleat House",
+                "mechanic": "saw-gouge-bolt-base",
+            },
+            "hawse_house": {
+                "name": "Hawse House",
+                "mechanic": "bore-seat-pay-collar",
+            },
+            "deadeye_loft": {
+                "name": "Deadeye Loft",
+                "mechanic": "score-reeve-seize-lanyard",
+            },
+            "parrel_house": {
+                "name": "Parrel House",
+                "mechanic": "groove-thread-truss-parrel",
+            },
+            "bitts_house": {
+                "name": "Bitts House",
+                "mechanic": "step-cross-belay-cable",
+            },
+            "gammon_house": {
+                "name": "Gammoning House",
+                "mechanic": "woold-ride-frap-gammon",
+            },
+            "tiller_house": {
+                "name": "Tiller House",
+                "mechanic": "shape-fit-yoke-tiller",
+            },
+            "cathead_house": {
+                "name": "Cathead House",
+                "mechanic": "adze-bush-fish-fluke",
+            },
+            "transom_house": {
+                "name": "Transom House",
+                "mechanic": "scribe-fit-spike-stern",
+            },
+            "scupper_house": {
+                "name": "Scupper House",
+                "mechanic": "broach-chase-plug-mouth",
+            },
+            "binnacle_house": {
+                "name": "Binnacle House",
+                "mechanic": "true-fill-lock-card",
+            },
+            "futtock_house": {
+                "name": "Futtock House",
+                "mechanic": "cant-scarph-clench-belly",
+            },
+            "crosstree_house": {
+                "name": "Crosstree House",
+                "mechanic": "square-spread-seize-bolster",
+            },
+            "waterway_house": {
+                "name": "Waterway House",
+                "mechanic": "snipe-dowel-pay-waterway",
+            },
+            "coaming_house": {
+                "name": "Coaming House",
+                "mechanic": "joggle-lodge-coak-coaming",
+            },
+            "gunwale_house": {
+                "name": "Gunwale House",
+                "mechanic": "snape-hance-dump-gunwale",
+            },
+            "davit_house": {
+                "name": "Davit House",
+                "mechanic": "sweep-band-ship-davit",
+            },
+            "boomkin_house": {
+                "name": "Boomkin House",
+                "mechanic": "steeve-bee-seize-guy",
+            },
+            "channel_house": {
+                "name": "Channel House",
+                "mechanic": "score-bolt-set-strap",
+            },
+            "kevel_house": {
+                "name": "Kevel House",
+                "mechanic": "chamfer-mortise-clench-kevel",
+            },
+            "knighthead_house": {
+                "name": "Knighthead House",
+                "mechanic": "score-box-lash-knight",
+            },
+            "carling_house": {
+                "name": "Carling House",
+                "mechanic": "notch-lodge-spike-carling",
+            },
+            "tabernacle_house": {
+                "name": "Tabernacle House",
+                "mechanic": "score-mortise-pin-keeper",
+            },
+            "planksheer_house": {
+                "name": "Planksheer House",
+                "mechanic": "score-plane-dump-edge",
+            },
+            "spirketting_house": {
+                "name": "Spirketting House",
+                "mechanic": "score-plane-clench-spirket",
+            },
+            "trestle_house": {
+                "name": "Trestle-tree House",
+                "mechanic": "score-tenon-seize-bib",
+            },
+            "breast_hook_house": {
+                "name": "Breast-hook House",
+                "mechanic": "score-bolt-fay-hook",
+            },
+            "lodging_knee_house": {
+                "name": "Lodging-knee House",
+                "mechanic": "scribe-bolt-nick-lodging",
+            },
+            "dagger_knee_house": {
+                "name": "Dagger-knee House",
+                "mechanic": "fair-side-mark-sirmark",
+            },
+            "rider_house": {
+                "name": "Rider House",
+                "mechanic": "wring-seat-dump-wring",
+            },
+            "keelson_house": {
+                "name": "Keelson House",
+                "mechanic": "scarph-pack-bolt-sister",
+            },
+            "crutch_house": {
+                "name": "Crutch House",
+                "mechanic": "adze-fit-spike-crotch",
+            },
+            "pointer_house": {
+                "name": "Pointer House",
+                "mechanic": "bevel-bed-dump-compound",
+            },
+            "stanchion_house": {
+                "name": "Stanchion House",
+                "mechanic": "true-wedge-spike-foot",
+            },
+            "pillar_house": {
+                "name": "Pillar House",
+                "mechanic": "hew-square-shore-queen",
             },
         },
         "locations": locations,
@@ -5521,11 +30925,491 @@ def build() -> dict:
                 "name": "Pickle Lidded",
                 "when": {"has_flag": "pickle_lidded"},
             },
+            "iron_quenched": {
+                "name": "Iron Quenched",
+                "when": {"has_flag": "iron_quenched"},
+            },
+            "fowl_taken": {
+                "name": "Fowl Taken",
+                "when": {"has_flag": "fowl_taken"},
+            },
+            "lights_bound": {
+                "name": "Lights Bound",
+                "when": {"has_flag": "lights_bound"},
+            },
+            "seam_caulked": {
+                "name": "Seam Caulked",
+                "when": {"has_flag": "seam_caulked"},
+            },
+            "net_tarred": {
+                "name": "Net Tarred",
+                "when": {"has_flag": "net_tarred"},
+            },
+            "sail_hoisted": {
+                "name": "Sail Hoisted",
+                "when": {"has_flag": "sail_hoisted"},
+            },
+            "lead_cast": {
+                "name": "Lead Cast",
+                "when": {"has_flag": "lead_cast"},
+            },
+            "rutter_sealed": {
+                "name": "Rutter Sealed",
+                "when": {"has_flag": "rutter_sealed"},
+            },
+            "buoy_set": {
+                "name": "Buoy Set",
+                "when": {"has_flag": "buoy_set"},
+            },
+            "kelp_burned": {
+                "name": "Kelp Burned",
+                "when": {"has_flag": "kelp_burned"},
+            },
+            "soap_cut": {
+                "name": "Soap Cut",
+                "when": {"has_flag": "soap_cut"},
+            },
+            "cloth_fulled": {
+                "name": "Cloth Fulled",
+                "when": {"has_flag": "cloth_fulled"},
+            },
+            "coal_drawn": {
+                "name": "Coal Drawn",
+                "when": {"has_flag": "coal_drawn"},
+            },
+            "lime_slaked": {
+                "name": "Lime Slaked",
+                "when": {"has_flag": "lime_slaked"},
+            },
+            "joint_pointed": {
+                "name": "Joint Pointed",
+                "when": {"has_flag": "joint_pointed"},
+            },
+            "roof_set": {
+                "name": "Roof Set",
+                "when": {"has_flag": "roof_set"},
+            },
+            "cistern_filled": {
+                "name": "Cistern Filled",
+                "when": {"has_flag": "cistern_filled"},
+            },
+            "wash_hung": {
+                "name": "Wash Hung",
+                "when": {"has_flag": "wash_hung"},
+            },
+            "paper_laid": {
+                "name": "Paper Laid",
+                "when": {"has_flag": "paper_laid"},
+            },
+            "frail_woven": {
+                "name": "Frail Woven",
+                "when": {"has_flag": "frail_woven"},
+            },
+            "loaf_drawn": {
+                "name": "Loaf Drawn",
+                "when": {"has_flag": "loaf_drawn"},
+            },
+            "wheel_salted": {
+                "name": "Wheel Salted",
+                "when": {"has_flag": "wheel_salted"},
+            },
+            "web_sheared": {
+                "name": "Web Sheared",
+                "when": {"has_flag": "web_sheared"},
+            },
+            "lantern_hung": {
+                "name": "Lantern Hung",
+                "when": {"has_flag": "lantern_hung"},
+            },
+            "nib_cut": {
+                "name": "Nib Cut",
+                "when": {"has_flag": "nib_cut"},
+            },
+            "heel_pegged": {
+                "name": "Heel Pegged",
+                "when": {"has_flag": "heel_pegged"},
+            },
+            "keeve_bunged": {
+                "name": "Keeve Bunged",
+                "when": {"has_flag": "keeve_bunged"},
+            },
+            "mustard_potted": {
+                "name": "Mustard Potted",
+                "when": {"has_flag": "mustard_potted"},
+            },
+            "sausage_linked": {
+                "name": "Sausage Linked",
+                "when": {"has_flag": "sausage_linked"},
+            },
+            "pie_crimped": {
+                "name": "Pie Crimped",
+                "when": {"has_flag": "pie_crimped"},
+            },
+            "jam_jarred": {
+                "name": "Jam Jarred",
+                "when": {"has_flag": "jam_jarred"},
+            },
+            "crock_glazed": {
+                "name": "Crock Glazed",
+                "when": {"has_flag": "crock_glazed"},
+            },
+            "hide_tanned": {
+                "name": "Hide Tanned",
+                "when": {"has_flag": "hide_tanned"},
+            },
+            "flax_spun": {
+                "name": "Flax Spun",
+                "when": {"has_flag": "flax_spun"},
+            },
+            "nail_pointed": {
+                "name": "Nail Pointed",
+                "when": {"has_flag": "nail_pointed"},
+            },
+            "tyre_set": {
+                "name": "Tyre Set",
+                "when": {"has_flag": "tyre_set"},
+            },
+            "malt_oasted": {
+                "name": "Malt Oasted",
+                "when": {"has_flag": "malt_oasted"},
+            },
+            "gyle_racked": {
+                "name": "Gyle Racked",
+                "when": {"has_flag": "gyle_racked"},
+            },
+            "cruet_corked": {
+                "name": "Cruet Corked",
+                "when": {"has_flag": "cruet_corked"},
+            },
+            "glue_caked": {
+                "name": "Glue Caked",
+                "when": {"has_flag": "glue_caked"},
+            },
+            "book_bound": {
+                "name": "Book Bound",
+                "when": {"has_flag": "book_bound"},
+            },
+            "plate_burnished": {
+                "name": "Plate Burnished",
+                "when": {"has_flag": "plate_burnished"},
+            },
+            "collet_closed": {
+                "name": "Collet Closed",
+                "when": {"has_flag": "collet_closed"},
+            },
+            "pane_camed": {
+                "name": "Pane Camed",
+                "when": {"has_flag": "pane_camed"},
+            },
+            "sash_pinned": {
+                "name": "Sash Pinned",
+                "when": {"has_flag": "sash_pinned"},
+            },
+            "light_dusted": {
+                "name": "Light Dusted",
+                "when": {"has_flag": "light_dusted"},
+            },
+            "coat_brushed": {
+                "name": "Coat Brushed",
+                "when": {"has_flag": "coat_brushed"},
+            },
+            "varnish_flowed": {
+                "name": "Varnish Flowed",
+                "when": {"has_flag": "varnish_flowed"},
+            },
+            "latch_thrown": {
+                "name": "Latch Thrown",
+                "when": {"has_flag": "latch_thrown"},
+            },
+            "gudgeon_shipped": {
+                "name": "Gudgeon Shipped",
+                "when": {"has_flag": "gudgeon_shipped"},
+            },
+            "casement_stayed": {
+                "name": "Casement Stayed",
+                "when": {"has_flag": "casement_stayed"},
+            },
+            "stool_seated": {
+                "name": "Stool Seated",
+                "when": {"has_flag": "stool_seated"},
+            },
+            "casing_tacked": {
+                "name": "Casing Tacked",
+                "when": {"has_flag": "casing_tacked"},
+            },
+            "plinth_fixed": {
+                "name": "Plinth Fixed",
+                "when": {"has_flag": "plinth_fixed"},
+            },
+            "rail_capped": {
+                "name": "Rail Capped",
+                "when": {"has_flag": "rail_capped"},
+            },
+            "rail_sprung": {
+                "name": "Rail Sprung",
+                "when": {"has_flag": "rail_sprung"},
+            },
+            "cornice_floated": {
+                "name": "Cornice Floated",
+                "when": {"has_flag": "cornice_floated"},
+            },
+            "riser_wedged": {
+                "name": "Riser Wedged",
+                "when": {"has_flag": "riser_wedged"},
+            },
+            "finial_dowelled": {
+                "name": "Finial Dowelled",
+                "when": {"has_flag": "finial_dowelled"},
+            },
+            "ramp_wreathed": {
+                "name": "Ramp Wreathed",
+                "when": {"has_flag": "ramp_wreathed"},
+            },
+            "neck_shouldered": {
+                "name": "Neck Shouldered",
+                "when": {"has_flag": "neck_shouldered"},
+            },
+            "end_returned": {
+                "name": "End Returned",
+                "when": {"has_flag": "end_returned"},
+            },
+            "nail_secreted": {
+                "name": "Nail Secreted",
+                "when": {"has_flag": "nail_secreted"},
+            },
+            "camber_crowned": {
+                "name": "Camber Crowned",
+                "when": {"has_flag": "camber_crowned"},
+            },
+            "coat_haired": {
+                "name": "Coat Haired",
+                "when": {"has_flag": "coat_haired"},
+            },
+            "breast_limed": {
+                "name": "Breast Limed",
+                "when": {"has_flag": "breast_limed"},
+            },
+            "mantel_pinned": {
+                "name": "Mantel Pinned",
+                "when": {"has_flag": "mantel_pinned"},
+            },
+            "cowl_hung": {
+                "name": "Cowl Hung",
+                "when": {"has_flag": "cowl_hung"},
+            },
+            "back_bedded": {
+                "name": "Back Bedded",
+                "when": {"has_flag": "back_bedded"},
+            },
+            "slide_registered": {
+                "name": "Slide Registered",
+                "when": {"has_flag": "slide_registered"},
+            },
+            "hack_set": {
+                "name": "Hack Set",
+                "when": {"has_flag": "hack_set"},
+            },
+            "arris_nicked": {
+                "name": "Arris Nicked",
+                "when": {"has_flag": "arris_nicked"},
+            },
+            "slate_lapped": {
+                "name": "Slate Lapped",
+                "when": {"has_flag": "slate_lapped"},
+            },
+            "flash_dressed": {
+                "name": "Flash Dressed",
+                "when": {"has_flag": "flash_dressed"},
+            },
+            "block_stropped": {
+                "name": "Block Stropped",
+                "when": {"has_flag": "block_stropped"},
+            },
+            "grip_bound": {
+                "name": "Grip Bound",
+                "when": {"has_flag": "grip_bound"},
+            },
+            "hull_launched": {
+                "name": "Hull Launched",
+                "when": {"has_flag": "hull_launched"},
+            },
+            "garboard_faired": {
+                "name": "Garboard Faired",
+                "when": {"has_flag": "garboard_faired"},
+            },
+            "round_heaved": {
+                "name": "Round Heaved",
+                "when": {"has_flag": "round_heaved"},
+            },
+            "station_bevelled": {
+                "name": "Station Bevelled",
+                "when": {"has_flag": "station_bevelled"},
+            },
+            "trunnel_driven": {
+                "name": "Trunnel Driven",
+                "when": {"has_flag": "trunnel_driven"},
+            },
+            "hog_bolted": {
+                "name": "Hog Bolted",
+                "when": {"has_flag": "hog_bolted"},
+            },
+            "partner_hooped": {
+                "name": "Partner Hooped",
+                "when": {"has_flag": "partner_hooped"},
+            },
+            "knee_hung": {
+                "name": "Knee Hung",
+                "when": {"has_flag": "knee_hung"},
+            },
+            "eye_seized": {
+                "name": "Eye Seized",
+                "when": {"has_flag": "eye_seized"},
+            },
+            "base_bolted": {
+                "name": "Base Bolted",
+                "when": {"has_flag": "base_bolted"},
+            },
+            "collar_paid": {
+                "name": "Collar Paid",
+                "when": {"has_flag": "collar_paid"},
+            },
+            "lanyard_seized": {
+                "name": "Lanyard Seized",
+                "when": {"has_flag": "lanyard_seized"},
+            },
+            "parrel_trussed": {
+                "name": "Parrel Trussed",
+                "when": {"has_flag": "parrel_trussed"},
+            },
+            "cable_belayed": {
+                "name": "Cable Belayed",
+                "when": {"has_flag": "cable_belayed"},
+            },
+            "gammon_frapped": {
+                "name": "Gammon Frapped",
+                "when": {"has_flag": "gammon_frapped"},
+            },
+            "tiller_yoked": {
+                "name": "Tiller Yoked",
+                "when": {"has_flag": "tiller_yoked"},
+            },
+            "fluke_fished": {
+                "name": "Fluke Fished",
+                "when": {"has_flag": "fluke_fished"},
+            },
+            "stern_spiked": {
+                "name": "Stern Spiked",
+                "when": {"has_flag": "stern_spiked"},
+            },
+            "mouth_plugged": {
+                "name": "Mouth Plugged",
+                "when": {"has_flag": "mouth_plugged"},
+            },
+            "card_locked": {
+                "name": "Card Locked",
+                "when": {"has_flag": "card_locked"},
+            },
+            "belly_clenched": {
+                "name": "Belly Clenched",
+                "when": {"has_flag": "belly_clenched"},
+            },
+            "bolster_seized": {
+                "name": "Bolster Seized",
+                "when": {"has_flag": "bolster_seized"},
+            },
+            "waterway_paid": {
+                "name": "Waterway Paid",
+                "when": {"has_flag": "waterway_paid"},
+            },
+            "coaming_coaked": {
+                "name": "Coaming Coaked",
+                "when": {"has_flag": "coaming_coaked"},
+            },
+            "bolt_dumped": {
+                "name": "Bolt Dumped",
+                "when": {"has_flag": "bolt_dumped"},
+            },
+            "davit_shipped": {
+                "name": "Davit Shipped",
+                "when": {"has_flag": "davit_shipped"},
+            },
+            "guy_seized": {
+                "name": "Guy Seized",
+                "when": {"has_flag": "guy_seized"},
+            },
+            "strap_set": {
+                "name": "Strap Set",
+                "when": {"has_flag": "strap_set"},
+            },
+            "kevel_clenched": {
+                "name": "Kevel Clenched",
+                "when": {"has_flag": "kevel_clenched"},
+            },
+            "knight_lashed": {
+                "name": "Knight Lashed",
+                "when": {"has_flag": "knight_lashed"},
+            },
+            "carling_spiked": {
+                "name": "Carling Spiked",
+                "when": {"has_flag": "carling_spiked"},
+            },
+            "keeper_pinned": {
+                "name": "Keeper Pinned",
+                "when": {"has_flag": "keeper_pinned"},
+            },
+            "edge_dumped": {
+                "name": "Edge Dumped",
+                "when": {"has_flag": "edge_dumped"},
+            },
+            "spirket_clenched": {
+                "name": "Spirket Clenched",
+                "when": {"has_flag": "spirket_clenched"},
+            },
+            "bib_seized": {
+                "name": "Bib Seized",
+                "when": {"has_flag": "bib_seized"},
+            },
+            "hook_fayed": {
+                "name": "Hook Fayed",
+                "when": {"has_flag": "hook_fayed"},
+            },
+            "lodging_nicked": {
+                "name": "Lodging Nicked",
+                "when": {"has_flag": "lodging_nicked"},
+            },
+            "sirmark_marked": {
+                "name": "Sirmark Marked",
+                "when": {"has_flag": "sirmark_marked"},
+            },
+            "wring_dumped": {
+                "name": "Wring Dumped",
+                "when": {"has_flag": "wring_dumped"},
+            },
+            "sister_bolted": {
+                "name": "Sister Bolted",
+                "when": {"has_flag": "sister_bolted"},
+            },
+            "crotch_spiked": {
+                "name": "Crotch Spiked",
+                "when": {"has_flag": "crotch_spiked"},
+            },
+            "compound_dumped": {
+                "name": "Compound Dumped",
+                "when": {"has_flag": "compound_dumped"},
+            },
+            "foot_spiked": {
+                "name": "Foot Spiked",
+                "when": {"has_flag": "foot_spiked"},
+            },
+            "queen_shored": {
+                "name": "Queen Shored",
+                "when": {"has_flag": "queen_shored"},
+            },
         },
         "start": {
             "location": "saltfen.dock",
             "hp": 6,
-            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0, "coop": 0, "pickle": 0},
+            "rep": {"watch": 0, "dockers": 0, "stackers": 0, "millers": 0, "court": 0, "road": 0, "camp": 0, "names": 0, "fold": 0, "glass": 0, "rope": 0, "salt": 0, "smoke": 0, "weir": 0, "dye": 0, "ferry": 0, "pump": 0, "oyster": 0, "count": 0, "ice": 0, "wreck": 0, "hive": 0, "mead": 0, "coop": 0, "pickle": 0, "forge": 0, "decoy": 0, "rush": 0, "caulk": 0, "net": 0, "sail": 0, "lead": 0, "chart": 0, "buoy": 0, "kelp": 0, "soap": 0, "full": 0, "char": 0, "lime": 0, "mason": 0, "thatch": 0, "cistern": 0, "wash": 0, "rag": 0, "osier": 0, "bake": 0, "dairy": 0, "loom": 0, "horn": 0, "gall": 0, "cobble": 0, "cider": 0, "must": 0, "link": 0, "pie": 0, "jam": 0, "crock": 0, "hide": 0, "flax": 0, "nail": 0, "wain": 0, "malt": 0, "brew": 0, "acet": 0, "glue": 0, "bind": 0, "gilt": 0, "gem": 0, "glaz": 0, "sash": 0, "putty": 0, "paint": 0, "varn": 0, "latch": 0, "hinge": 0, "stay": 0, "sill": 0, "case": 0, "skirt": 0, "dado": 0, "pic": 0, "corn": 0, "stair": 0, "newel": 0, "hand": 0, "bal": 0, "tread": 0, "floor": 0, "joist": 0, "lath": 0, "chim": 0, "mant": 0, "flue": 0, "fb": 0, "grate": 0, "brick": 0, "tile": 0, "slate": 0, "flash": 0, "block": 0, "oar": 0, "ways": 0, "clink": 0, "wind": 0, "offs": 0, "trun": 0, "dead": 0, "mast": 0, "stem": 0, "fid": 0, "cleat": 0, "haw": 0, "deye": 0, "par": 0, "bitt": 0, "gam": 0, "till": 0, "cath": 0, "tran": 0, "scup": 0, "binn": 0, "futt": 0, "cros": 0, "wtr": 0, "coam": 0, "wale": 0, "dav": 0, "boom": 0, "chan": 0, "kev": 0, "kni": 0, "carl": 0, "tab": 0, "psh": 0, "spi": 0, "trs": 0, "brh": 0, "lod": 0, "dag": 0, "rid": 0, "ksn": 0, "cru": 0, "ptr": 0, "stn": 0, "pil": 0},
             "inventory": [],
             "flags": {},
         },

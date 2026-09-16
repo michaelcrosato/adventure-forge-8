@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:loom.path",
+    "go:loom.yard",
+    "know_the_warp",
+    "go:loom.beam",
+    "warp_the_beam",
+    "go:loom.yard",
+    "go:loom.sley",
+    "throw_the_shuttle",
+    "take:shuttle_bob",
+    "go:loom.yard",
+    "go:loom.batten",
+    "shear_the_web",
+    "go:loom.yard",
+    "go:loom.path",
+    "go:horn.path",
+    "go:horn.yard",
+    "go:horn.scrape"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "44c61caf7750c716e0254440472ca01ee4b7af86b5b63b85e6fea86b91c09f7b",
+  "id": "cross_loom_horn",
+  "location": "horn.scrape",
+  "outcomes": [
+    "web_sheared"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

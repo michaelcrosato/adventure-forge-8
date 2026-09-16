@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:bake.path",
+    "go:bake.yard",
+    "go:bake.sponge"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "c6e604b841c35c419b726121a12475bf443a23304f66b633ca1a613875d8c4ca",
+  "id": "cross_plain_bake",
+  "location": "bake.sponge",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

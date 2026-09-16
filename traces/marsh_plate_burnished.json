@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:gilt.path",
+    "go:gilt.yard",
+    "know_the_bole",
+    "go:gilt.bole",
+    "bole_the_ground",
+    "go:gilt.yard",
+    "go:gilt.leaf",
+    "lay_the_leaf",
+    "take:gold_leaf",
+    "go:gilt.yard",
+    "go:gilt.burnish",
+    "burnish_the_plate"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "c6c1e3af5e86b9f6110c11683db958530c7af603333b17525e8a5a800d374345",
+  "id": "marsh_plate_burnished",
+  "location": "gilt.burnish",
+  "outcome": "plate_burnished",
+  "outcomes": [
+    "plate_burnished"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

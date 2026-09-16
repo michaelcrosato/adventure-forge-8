@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:osier.path",
+    "go:osier.yard",
+    "know_the_holt_cut",
+    "go:osier.holt",
+    "cut_the_holt",
+    "go:osier.yard",
+    "go:osier.brake",
+    "brake_the_rod",
+    "take:withy_rod",
+    "go:osier.yard",
+    "go:osier.frame",
+    "weave_the_frail"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "fd72938e2e9823f1dfc244df654907110d04a06ebe5b5c7532ca37724741baac",
+  "id": "marsh_frail_woven",
+  "location": "osier.frame",
+  "outcome": "frail_woven",
+  "outcomes": [
+    "frail_woven"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

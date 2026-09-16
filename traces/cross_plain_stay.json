@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:stay.path",
+    "go:stay.yard",
+    "go:stay.slot"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "ef33b57df71a6a14ea6f85ef5635c09e0b46edae91f0adba9909e7e8c59c14fa",
+  "id": "cross_plain_stay",
+  "location": "stay.slot",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

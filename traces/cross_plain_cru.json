@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cru.path",
+    "go:cru.yard",
+    "go:cru.adze"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "df5160885187ab7d7b8247be4422f737faf55e92cf704c0f1b65a85e04c3be40",
+  "id": "cross_plain_cru",
+  "location": "cru.adze",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

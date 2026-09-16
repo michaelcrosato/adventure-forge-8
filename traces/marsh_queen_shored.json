@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:pil.path",
+    "go:pil.yard",
+    "know_the_pillar",
+    "go:pil.samson",
+    "hew_the_pillar",
+    "go:pil.yard",
+    "go:pil.king",
+    "square_the_king",
+    "take:king_iron",
+    "go:pil.yard",
+    "go:pil.queen",
+    "shore_the_queen"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "3f78ae79c84427f666f07dd79e49b61f7bb769aa55411d69ba13829e985bda1a",
+  "id": "marsh_queen_shored",
+  "location": "pil.queen",
+  "outcome": "queen_shored",
+  "outcomes": [
+    "queen_shored"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

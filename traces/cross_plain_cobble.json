@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cobble.path",
+    "go:cobble.yard",
+    "go:cobble.sole"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "876530731f835c97610e06b1027814289bb75e7bbc4bcc3af9d479f7ca84b63c",
+  "id": "cross_plain_cobble",
+  "location": "cobble.sole",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

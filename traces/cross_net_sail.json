@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:net.path",
+    "go:net.yard",
+    "know_the_mesh_hang",
+    "go:net.rig",
+    "rig_the_net",
+    "go:net.yard",
+    "go:net.mesh",
+    "mend_the_mesh",
+    "take:mesh_needle",
+    "go:net.yard",
+    "go:net.tar",
+    "tar_the_net",
+    "go:net.yard",
+    "go:net.path",
+    "go:sail.path",
+    "go:sail.yard",
+    "go:sail.hoist"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "29ce6ca6079ae162c304736e805b3d5faa5209cf5ec4d671d467ecc91454c3ac",
+  "id": "cross_net_sail",
+  "location": "sail.hoist",
+  "outcomes": [
+    "net_tarred"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

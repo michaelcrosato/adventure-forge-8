@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:sill.path",
+    "go:sill.yard",
+    "know_the_sill",
+    "go:sill.bed",
+    "bed_the_sill",
+    "go:sill.yard",
+    "go:sill.drip",
+    "kerf_the_drip",
+    "take:drip_iron",
+    "go:sill.yard",
+    "go:sill.stool",
+    "seat_the_stool"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a13eafa013f4203b3c0eb6e97f526428bb726326b53fed980fb66403556eec56",
+  "id": "marsh_stool_seated",
+  "location": "sill.stool",
+  "outcome": "stool_seated",
+  "outcomes": [
+    "stool_seated"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

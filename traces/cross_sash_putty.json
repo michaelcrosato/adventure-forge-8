@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:sash.path",
+    "go:sash.yard",
+    "know_the_stile",
+    "go:sash.stile",
+    "rebate_the_stile",
+    "go:sash.yard",
+    "go:sash.rail",
+    "tenon_the_rail",
+    "take:sash_peg",
+    "go:sash.yard",
+    "go:sash.pin",
+    "pin_the_sash",
+    "go:sash.yard",
+    "go:sash.path",
+    "go:putty.path",
+    "go:putty.yard",
+    "go:putty.whip"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "47e7ebc221f6c36dd6fc52975550f94e649ca34d612b41bfb3c4914fd24c523f",
+  "id": "cross_sash_putty",
+  "location": "putty.whip",
+  "outcomes": [
+    "sash_pinned"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:lath.path",
+    "go:lath.yard",
+    "go:lath.rive"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "6c46961907cb82ca720f9fecf2be080e3adcbcccb76da164f96893cdc279cb50",
+  "id": "cross_plain_lath",
+  "location": "lath.rive",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

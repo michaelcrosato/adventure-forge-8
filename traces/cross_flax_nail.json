@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:flax.path",
+    "go:flax.yard",
+    "know_the_rett",
+    "go:flax.rett",
+    "ret_the_flax",
+    "go:flax.yard",
+    "go:flax.heckle",
+    "heckle_the_tow",
+    "take:flax_tow",
+    "go:flax.yard",
+    "go:flax.spin",
+    "spin_the_line",
+    "go:flax.yard",
+    "go:flax.path",
+    "go:nail.path",
+    "go:nail.yard",
+    "go:nail.snip"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2f0e862826616f70792de05a5105dc206c3c432f06df777d3b7dee5c7ca8c420",
+  "id": "cross_flax_nail",
+  "location": "nail.snip",
+  "outcomes": [
+    "flax_spun"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

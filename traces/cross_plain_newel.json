@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:newel.path",
+    "go:newel.yard",
+    "go:newel.blank"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "093f8f9e360a64ba3df19741171c19c61a4a7a886a70e81a59672a2a6af322db",
+  "id": "cross_plain_newel",
+  "location": "newel.blank",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

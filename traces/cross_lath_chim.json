@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:lath.path",
+    "go:lath.yard",
+    "know_the_rive",
+    "go:lath.rive",
+    "rive_the_lath",
+    "go:lath.yard",
+    "go:lath.bay",
+    "prick_the_bay",
+    "take:hair_lime",
+    "go:lath.yard",
+    "go:lath.hair",
+    "hair_the_coat",
+    "go:lath.yard",
+    "go:lath.path",
+    "go:chim.path",
+    "go:chim.yard",
+    "go:chim.flag"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2ea825b8f6c32bfe9f43a38c0652b6f6b0827068e4ce5e61b5fbeec4e737e193",
+  "id": "cross_lath_chim",
+  "location": "chim.flag",
+  "outcomes": [
+    "coat_haired"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

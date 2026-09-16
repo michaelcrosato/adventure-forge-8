@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wale.path",
+    "go:wale.yard",
+    "know_the_covering",
+    "go:wale.covering",
+    "snape_the_covering",
+    "go:wale.yard",
+    "go:wale.hance",
+    "hance_the_rail",
+    "take:rail_hance",
+    "go:wale.yard",
+    "go:wale.dump",
+    "dump_the_bolt"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "ed316c4137aedebe44fad85dcb1d46f60717861b9419da33920da351c2b7a1f1",
+  "id": "marsh_bolt_dumped",
+  "location": "wale.dump",
+  "outcome": "bolt_dumped",
+  "outcomes": [
+    "bolt_dumped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

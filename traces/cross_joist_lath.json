@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:joist.path",
+    "go:joist.yard",
+    "know_the_span",
+    "go:joist.space",
+    "space_the_joist",
+    "go:joist.yard",
+    "go:joist.trimmer",
+    "notch_the_trimmer",
+    "take:notch_saw",
+    "go:joist.yard",
+    "go:joist.crown",
+    "crown_the_camber",
+    "go:joist.yard",
+    "go:joist.path",
+    "go:lath.path",
+    "go:lath.yard",
+    "go:lath.rive"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "4252667992f3bba42836aeef85bde44118ba893461db824d438612542a741b2a",
+  "id": "cross_joist_lath",
+  "location": "lath.rive",
+  "outcomes": [
+    "camber_crowned"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

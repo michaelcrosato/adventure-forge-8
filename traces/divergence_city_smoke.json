@@ -5,8 +5,8 @@
     "go:smoke.path",
     "go:smoke.yard"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "7e4471468b986d57146e647ac009dca2adb04df43f296cfe7c9ce8a8df3a8f62",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "4018b573d56ea80b6a58fa5e07357d7f2984c4b5e056edd97b6012bb9010baf7",
   "id": "divergence_city_smoke",
   "location": "smoke.yard",
   "outcomes": [],

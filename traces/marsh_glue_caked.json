@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:glue.path",
+    "go:glue.yard",
+    "know_the_paring",
+    "go:glue.paring",
+    "trim_the_paring",
+    "go:glue.yard",
+    "go:glue.seethe",
+    "seethe_the_size",
+    "take:size_cake",
+    "go:glue.yard",
+    "go:glue.slab",
+    "cake_the_glue"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "73842d5bc17b880ee490500d1bf2c12f1f456461522c46626ec3c3ed2c89e6ca",
+  "id": "marsh_glue_caked",
+  "location": "glue.slab",
+  "outcome": "glue_caked",
+  "outcomes": [
+    "glue_caked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

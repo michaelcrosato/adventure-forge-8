@@ -6,8 +6,8 @@
     "go:pump.yard",
     "go:pump.tower"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "94edc8bdaadbb144b3e25cb823e05d5a458860c674d3186790293e5d396eeb9b",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "7d2a2e170b3749dcb6ae96e25b82315f6098e5a0bc485c4d69e9f6b9bbf22db5",
   "id": "cross_plain_pump",
   "location": "pump.tower",
   "outcomes": [],

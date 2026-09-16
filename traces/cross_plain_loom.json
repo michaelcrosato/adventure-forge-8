@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:loom.path",
+    "go:loom.yard",
+    "go:loom.beam"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9097b155f3958abeac946db3413cce1883f2a3f8d8639767ba5ffdee0a2f96b9",
+  "id": "cross_plain_loom",
+  "location": "loom.beam",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

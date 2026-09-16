@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:stair.path",
+    "go:stair.yard",
+    "know_the_string",
+    "go:stair.string",
+    "gauge_the_string",
+    "go:stair.yard",
+    "go:stair.housing",
+    "saw_the_housing",
+    "take:riser_wedge",
+    "go:stair.yard",
+    "go:stair.riser",
+    "wedge_the_riser"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "1f2baf57d30dfbc196d4699868e631ce9601601b96f9449223dbae83e9b7c2ca",
+  "id": "marsh_riser_wedged",
+  "location": "stair.riser",
+  "outcome": "riser_wedged",
+  "outcomes": [
+    "riser_wedged"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

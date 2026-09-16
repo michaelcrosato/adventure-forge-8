@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:skirt.path",
+    "go:skirt.yard",
+    "know_the_cope",
+    "go:skirt.cope",
+    "cope_the_inside",
+    "go:skirt.yard",
+    "go:skirt.base",
+    "plane_the_base",
+    "take:plinth_block",
+    "go:skirt.yard",
+    "go:skirt.plinth",
+    "fix_the_plinth"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "847dc9ab33002ffca8a8167ca117b7a814715f2051159f287a4df9e17c6ba038",
+  "id": "marsh_plinth_fixed",
+  "location": "skirt.plinth",
+  "outcome": "plinth_fixed",
+  "outcomes": [
+    "plinth_fixed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

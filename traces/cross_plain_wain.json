@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wain.path",
+    "go:wain.yard",
+    "go:wain.hub"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "8c7cc48ac67c346c65254104354cee9edf5c6e7be28dfc73b28c09f5491ac6b2",
+  "id": "cross_plain_wain",
+  "location": "wain.hub",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

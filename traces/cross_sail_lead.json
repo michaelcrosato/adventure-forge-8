@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:sail.path",
+    "go:sail.yard",
+    "know_the_canvas_cut",
+    "go:sail.canvas",
+    "cut_the_canvas",
+    "go:sail.yard",
+    "go:sail.stitch",
+    "stitch_the_sail",
+    "take:sail_needle",
+    "go:sail.yard",
+    "go:sail.hoist",
+    "hoist_the_sail",
+    "go:sail.yard",
+    "go:sail.path",
+    "go:lead.path",
+    "go:lead.yard",
+    "go:lead.cast"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "1abac7b7f7334755ddbbaf8105792379e2fe981103ca51efc1c8c0042066829c",
+  "id": "cross_sail_lead",
+  "location": "lead.cast",
+  "outcomes": [
+    "sail_hoisted"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:decoy.path",
+    "go:decoy.yard",
+    "go:decoy.tunnel"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "94e47e6851c31c247abbaf9ad4ca3ea19360a740a8592432446aecc6726fc92b",
+  "id": "cross_plain_decoy",
+  "location": "decoy.tunnel",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

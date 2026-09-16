@@ -5,8 +5,8 @@
     "go:pans.path",
     "go:pans.yard"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "a2a7923b1ec9efb037ba60031fe09cd08148c7a10e3487719e6f5120a774801e",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "b68225115b83b928001bddea70ae401b4b824c945e6cf290929599f9c20ad6e0",
   "id": "divergence_city_salt",
   "location": "pans.yard",
   "outcomes": [],

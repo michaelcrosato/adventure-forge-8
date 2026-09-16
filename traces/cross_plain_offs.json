@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:offs.path",
+    "go:offs.yard",
+    "go:offs.grid"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "8da186dd729901929b57f70824e4c89a10909be6ff5979342b4c4d7f74c920b9",
+  "id": "cross_plain_offs",
+  "location": "offs.grid",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:par.path",
+    "go:par.yard",
+    "go:par.truck"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9f3958b3ee849fc092af5d50b9909bfb9e14604b69ef59c1d7bc0f3a9b48842c",
+  "id": "cross_plain_par",
+  "location": "par.truck",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

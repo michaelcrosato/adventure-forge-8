@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dav.path",
+    "go:dav.yard",
+    "know_the_sweep",
+    "go:dav.sweep",
+    "sweep_the_davit",
+    "go:dav.yard",
+    "go:dav.crane",
+    "band_the_crane",
+    "take:crane_band",
+    "go:dav.yard",
+    "go:dav.ship",
+    "ship_the_davit"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "d01c70a9bcbc942e0a0922a68de4dd264d7676dc4d1f8d70d740febfb99e803c",
+  "id": "marsh_davit_shipped",
+  "location": "dav.ship",
+  "outcome": "davit_shipped",
+  "outcomes": [
+    "davit_shipped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

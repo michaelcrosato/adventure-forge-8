@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:till.path",
+    "go:till.yard",
+    "know_the_shape",
+    "go:till.shape",
+    "shape_the_tiller",
+    "go:till.yard",
+    "go:till.helm",
+    "fit_the_helm",
+    "take:helm_iron",
+    "go:till.yard",
+    "go:till.yoke",
+    "yoke_the_tiller"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "b6e93f41e06626d75cd519a68f0cc4d69961248c84bd0b3d03d9f7b68ada367d",
+  "id": "marsh_tiller_yoked",
+  "location": "till.yoke",
+  "outcome": "tiller_yoked",
+  "outcomes": [
+    "tiller_yoked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

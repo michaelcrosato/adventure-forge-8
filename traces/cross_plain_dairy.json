@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dairy.path",
+    "go:dairy.yard",
+    "go:dairy.keel"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "1dec74f144802f63520911812ebb1f027201d575a02b2ccdcfe34cf9123096c5",
+  "id": "cross_plain_dairy",
+  "location": "dairy.keel",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -5,8 +5,8 @@
     "go:hive.path",
     "go:hive.yard"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "15d799215297eab4680ce63246c8372fe21a74de3b0dbd822677ce99275d4d26",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "fd896b6c66fa3e851f79e5676bcf547b928bbf69d709528effc6361fc0ad51dc",
   "id": "divergence_city_hive",
   "location": "hive.yard",
   "outcomes": [],

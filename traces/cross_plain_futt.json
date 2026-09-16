@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:futt.path",
+    "go:futt.yard",
+    "go:futt.cant"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "782f1d2267d5a9e67fbae09e97096374e1d123099c45e0df787493eb04936114",
+  "id": "cross_plain_futt",
+  "location": "futt.cant",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

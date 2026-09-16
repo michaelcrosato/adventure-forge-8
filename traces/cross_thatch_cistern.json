@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:thatch.path",
+    "go:thatch.yard",
+    "know_the_yealm",
+    "go:thatch.stand",
+    "cut_the_thatch",
+    "go:thatch.yard",
+    "go:thatch.yealm",
+    "bind_the_yealm",
+    "take:thatch_yealm",
+    "go:thatch.yard",
+    "go:thatch.ridge",
+    "set_the_roof",
+    "go:thatch.yard",
+    "go:thatch.path",
+    "go:cistern.path",
+    "go:cistern.yard",
+    "go:cistern.eave"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "0572d970d0344849b1504a408ec0800583e55da81b47aeb2d206a9da3648b65b",
+  "id": "cross_thatch_cistern",
+  "location": "cistern.eave",
+  "outcomes": [
+    "roof_set"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:chim.path",
+    "go:chim.yard",
+    "know_the_flag",
+    "go:chim.flag",
+    "bed_the_flag",
+    "go:chim.yard",
+    "go:chim.hob",
+    "set_the_hob",
+    "take:hob_plate",
+    "go:chim.yard",
+    "go:chim.breast",
+    "lime_the_breast",
+    "go:chim.yard",
+    "go:chim.path",
+    "go:mant.path",
+    "go:mant.yard",
+    "go:mant.lintel"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "3fbd9c3dc39de824b16954e89fd129967340caa1737e526fd304935fa7f0082b",
+  "id": "cross_chim_mant",
+  "location": "mant.lintel",
+  "outcomes": [
+    "breast_limed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

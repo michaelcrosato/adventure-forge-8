@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:futt.path",
+    "go:futt.yard",
+    "know_the_cant",
+    "go:futt.cant",
+    "cant_the_futtock",
+    "go:futt.yard",
+    "go:futt.butt",
+    "scarph_the_butt",
+    "take:butt_scarph",
+    "go:futt.yard",
+    "go:futt.belly",
+    "clench_the_belly"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "93c2f0a4b0fa20f3ba51837f12241bbde003f112f9903bc2fe560dacee93d7d0",
+  "id": "marsh_belly_clenched",
+  "location": "futt.belly",
+  "outcome": "belly_clenched",
+  "outcomes": [
+    "belly_clenched"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dado.path",
+    "go:dado.yard",
+    "know_the_plough",
+    "go:dado.plough",
+    "plough_the_dado",
+    "go:dado.yard",
+    "go:dado.panel",
+    "house_the_panel",
+    "take:rail_cap",
+    "go:dado.yard",
+    "go:dado.cap",
+    "cap_the_rail",
+    "go:dado.yard",
+    "go:dado.path",
+    "go:pic.path",
+    "go:pic.yard",
+    "go:pic.chalk"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "39ba79795dd79a3cea1e5514d865cd841bea59572eaa3a1b9b025574f53b4929",
+  "id": "cross_dado_pic",
+  "location": "pic.chalk",
+  "outcomes": [
+    "rail_capped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

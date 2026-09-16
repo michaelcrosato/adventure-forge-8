@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:psh.path",
+    "go:psh.yard",
+    "know_the_sheer",
+    "go:psh.sheer",
+    "score_the_sheer",
+    "go:psh.yard",
+    "go:psh.plank",
+    "plane_the_plank",
+    "take:plank_plane",
+    "go:psh.yard",
+    "go:psh.edge",
+    "dump_the_edge",
+    "go:psh.yard",
+    "go:psh.path",
+    "go:spi.path",
+    "go:spi.yard",
+    "go:spi.spirket"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "dad52106037a728714220d8ee05b90fd6db6e8ece82aff4756cb9f3631a53101",
+  "id": "cross_psh_spi",
+  "location": "spi.spirket",
+  "outcomes": [
+    "edge_dumped"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

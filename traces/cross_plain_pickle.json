@@ -6,8 +6,8 @@
     "go:pickle.yard",
     "go:pickle.lid"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "0936658bbf586e39e49c36eb447b9c840ac96ad284d8948c9ca247ebd8ce5cc5",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "ae62b1535f9b5e01fa03ce3a6dacd232f7081393c393898b5bca528c24b25d60",
   "id": "cross_plain_pickle",
   "location": "pickle.lid",
   "outcomes": [],

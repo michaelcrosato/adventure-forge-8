@@ -1,0 +1,27 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:rush.path",
+    "go:rush.yard",
+    "know_the_rush_peel",
+    "go:rush.peel",
+    "peel_the_rush",
+    "go:rush.yard",
+    "go:rush.pith",
+    "take:rush_pith",
+    "go:rush.yard",
+    "go:rush.bind",
+    "bind_the_lights"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "fe267f1fa5847de9d1ddd7692c1d8feb3f048a57acca7e144243bdc681ed22c8",
+  "id": "marsh_lights_bound",
+  "location": "rush.bind",
+  "outcome": "lights_bound",
+  "outcomes": [
+    "lights_bound"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -19,8 +19,8 @@
     "go:pickle.yard",
     "go:pickle.lid"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "5266f010d8f6958619ce11217713899367e4463e94d080f56c29caaf1627e30a",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "883d9e72251f0fac9780c1f8fc08d9b83aeac3992242bf3f0374605616068247",
   "id": "cross_coop_pickle",
   "location": "pickle.lid",
   "outcomes": [

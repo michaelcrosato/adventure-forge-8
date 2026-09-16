@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:rid.path",
+    "go:rid.yard",
+    "go:rid.rider"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "89951208ed195ef8ef9bb87322c7d1e427698ed4199ffdd3e99279b28f92063d",
+  "id": "cross_plain_rid",
+  "location": "rid.rider",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

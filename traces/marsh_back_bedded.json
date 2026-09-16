@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:fb.path",
+    "go:fb.yard",
+    "know_the_sand",
+    "go:fb.sand",
+    "sand_the_mould",
+    "go:fb.yard",
+    "go:fb.pour",
+    "pour_the_plate",
+    "take:pour_flask",
+    "go:fb.yard",
+    "go:fb.bed",
+    "bed_the_back"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "f8425f7c6ecddbc7d991bde5629f7162261103b80f41ba1ee8b7b116da5ad43d",
+  "id": "marsh_back_bedded",
+  "location": "fb.bed",
+  "outcome": "back_bedded",
+  "outcomes": [
+    "back_bedded"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

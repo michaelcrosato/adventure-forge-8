@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:oar.path",
+    "go:oar.yard",
+    "know_the_shaft",
+    "go:oar.shaft",
+    "round_the_shaft",
+    "go:oar.yard",
+    "go:oar.blade",
+    "spoon_the_blade",
+    "take:blade_spoon",
+    "go:oar.yard",
+    "go:oar.grip",
+    "bind_the_grip",
+    "go:oar.yard",
+    "go:oar.path",
+    "go:ways.path",
+    "go:ways.yard",
+    "go:ways.grease"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "5189d49007d5620cc58239f90237e6434e64d57b06930e39732e0bd7978b20b7",
+  "id": "cross_oar_ways",
+  "location": "ways.grease",
+  "outcomes": [
+    "grip_bound"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

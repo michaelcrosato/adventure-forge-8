@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:rush.path",
+    "go:rush.yard",
+    "go:rush.bind"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "e0668d49de7ccc025fe9187fa5bbdb5340ed122b65b136b8718d234930b3c199",
+  "id": "cross_plain_rush",
+  "location": "rush.bind",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

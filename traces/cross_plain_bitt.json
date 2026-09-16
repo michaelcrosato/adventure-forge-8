@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:bitt.path",
+    "go:bitt.yard",
+    "go:bitt.step"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "76dd8a282ad95be169c8f7d16a1b7ed4c109ed1a5eba69ab91e2770564ea6ca6",
+  "id": "cross_plain_bitt",
+  "location": "bitt.step",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

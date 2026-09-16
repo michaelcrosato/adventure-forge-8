@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:wain.path",
+    "go:wain.yard",
+    "know_the_hub",
+    "go:wain.hub",
+    "dish_the_hub",
+    "go:wain.yard",
+    "go:wain.spoke",
+    "set_the_spoke",
+    "take:felloe_strake",
+    "go:wain.yard",
+    "go:wain.felloe",
+    "tyre_the_felloe"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "903296f3f1b0d0026090a732ff2ff5ac5769a050ac4a73954be427a0d7eb3a3a",
+  "id": "marsh_tyre_set",
+  "location": "wain.felloe",
+  "outcome": "tyre_set",
+  "outcomes": [
+    "tyre_set"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

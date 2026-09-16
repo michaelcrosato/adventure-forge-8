@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:chim.path",
+    "go:chim.yard",
+    "go:chim.flag"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "604b2e417851534614d8ee608781c5fe3e2413aeb83fca30367ce1fa3684d747",
+  "id": "cross_plain_chim",
+  "location": "chim.flag",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

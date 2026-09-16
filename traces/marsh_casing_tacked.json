@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:case.path",
+    "go:case.yard",
+    "know_the_mitre",
+    "go:case.mitre",
+    "mitre_the_head",
+    "go:case.yard",
+    "go:case.jamb",
+    "scribe_the_jamb",
+    "take:return_sprig",
+    "go:case.yard",
+    "go:case.tack",
+    "tack_the_return"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "9e949671e17f77904259ad8a55f51764f599300e863596abbbda26b4035d95e0",
+  "id": "marsh_casing_tacked",
+  "location": "case.tack",
+  "outcome": "casing_tacked",
+  "outcomes": [
+    "casing_tacked"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

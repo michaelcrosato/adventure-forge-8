@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:cros.path",
+    "go:cros.yard",
+    "know_the_tree",
+    "go:cros.tree",
+    "square_the_crosstree",
+    "go:cros.yard",
+    "go:cros.hounds",
+    "spread_the_hounds",
+    "take:hounds_spread",
+    "go:cros.yard",
+    "go:cros.bolster",
+    "seize_the_bolster"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "a733fca040693c1a917959ad494a6096e76fa2a13165388b7dfc0d2ee69b0e05",
+  "id": "marsh_bolster_seized",
+  "location": "cros.bolster",
+  "outcome": "bolster_seized",
+  "outcomes": [
+    "bolster_seized"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

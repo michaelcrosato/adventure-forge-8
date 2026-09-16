@@ -5,8 +5,8 @@
     "go:coop.path",
     "go:coop.yard"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "473f1d3a0f972198b20773ac9e4979b36dc164fa41083c6fae7af43cdc7706a0",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "abafd611d835d620de717f1b13ea8c6032c3011fc756f317fcd16c3a45ca2db3",
   "id": "divergence_marsh_coop",
   "location": "coop.yard",
   "outcomes": [],

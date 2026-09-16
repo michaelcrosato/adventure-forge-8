@@ -1,0 +1,16 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:dado.path",
+    "go:dado.yard",
+    "go:dado.plough"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "13e0580e3456a70b329b02ae04fcaeded6358bce27287e675b3cfc352c20d323",
+  "id": "cross_plain_dado",
+  "location": "dado.plough",
+  "outcomes": [],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:newel.path",
+    "go:newel.yard",
+    "know_the_blank",
+    "go:newel.blank",
+    "turn_the_blank",
+    "go:newel.yard",
+    "go:newel.mortise",
+    "mortise_the_newel",
+    "take:finial_dowel",
+    "go:newel.yard",
+    "go:newel.dowel",
+    "dowel_the_finial"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "2f74f2076155e1cb26773f17ece4b201540bd6d93f6347a719957b3bf905b711",
+  "id": "marsh_finial_dowelled",
+  "location": "newel.dowel",
+  "outcome": "finial_dowelled",
+  "outcomes": [
+    "finial_dowelled"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

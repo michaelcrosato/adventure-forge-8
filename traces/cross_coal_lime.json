@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:char.path",
+    "go:char.yard",
+    "know_the_coppice",
+    "go:char.copse",
+    "cut_the_coppice",
+    "go:char.yard",
+    "go:char.clamp",
+    "stack_the_clamp",
+    "take:coal_lump",
+    "go:char.yard",
+    "go:char.draw",
+    "draw_the_coal",
+    "go:char.yard",
+    "go:char.path",
+    "go:lime.path",
+    "go:lime.yard",
+    "go:lime.charge"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "f9a3c1b559cd55829f0c98fb71043eac7dc3f654d4d27f89f851a013128c301a",
+  "id": "cross_coal_lime",
+  "location": "lime.charge",
+  "outcomes": [
+    "coal_drawn"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

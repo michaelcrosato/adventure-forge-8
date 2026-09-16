@@ -15,8 +15,8 @@
     "go:smoke.loft",
     "take_the_cure"
   ],
-  "build_id": "067853cd4d04c1a8e7d605c4218434406a9cc292613bfabc84af408d52383555",
-  "final_fingerprint": "f1c262c18be012ba7ea12b79f402bb0a82fb507403be7c010797aef41b22eae5",
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "f527e5f632ec21c50afaec2226cbd7d1db226abfa4e515c549f18c6ce8ea075d",
   "id": "marsh_smoke_cured",
   "location": "smoke.loft",
   "outcome": "smoke_cured",

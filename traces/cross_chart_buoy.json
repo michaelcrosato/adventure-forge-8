@@ -1,0 +1,32 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:chart.path",
+    "go:chart.yard",
+    "know_the_coast_hand",
+    "go:chart.board",
+    "lay_the_ruler",
+    "go:chart.yard",
+    "go:chart.ink",
+    "ink_the_rutter",
+    "take:chart_quill",
+    "go:chart.yard",
+    "go:chart.press",
+    "seal_the_rutter",
+    "go:chart.yard",
+    "go:chart.path",
+    "go:buoy.path",
+    "go:buoy.yard",
+    "go:buoy.drop"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "00fb886e4bba6f7c127202dca7def8905d926f3de3dbb54226da452982298c8b",
+  "id": "cross_chart_buoy",
+  "location": "buoy.drop",
+  "outcomes": [
+    "rutter_sealed"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}

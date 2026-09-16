@@ -1,0 +1,28 @@
+{
+  "actions": [
+    "go:saltfen.market",
+    "go:ashfen.causeway",
+    "go:gall.path",
+    "go:gall.yard",
+    "know_the_gall_run",
+    "go:gall.crush",
+    "crush_the_gall",
+    "go:gall.yard",
+    "go:gall.copper",
+    "mix_the_ink",
+    "take:ink_nib",
+    "go:gall.yard",
+    "go:gall.nib",
+    "cut_the_nib"
+  ],
+  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
+  "final_fingerprint": "fd04ad711eb25519cea2ef09f8e8c4b0059af8ff76787efcd925043a1356a887",
+  "id": "marsh_nib_cut",
+  "location": "gall.nib",
+  "outcome": "nib_cut",
+  "outcomes": [
+    "nib_cut"
+  ],
+  "seed": 1,
+  "sheet": "marsh_scout"
+}
