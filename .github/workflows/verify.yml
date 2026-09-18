@@ -1,0 +1,51 @@
+name: verify
+
+# The bar only protects the repo if something runs it. Until this file existed,
+# `verify` ran when someone remembered to run it — and the commit that shipped
+# 118 indistinguishable regions was green because nothing in the bar could see
+# them, not because nobody looked.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run the bar
+        run: scripts/verify
+
+      - name: Pack must be reproducible from its source
+        # pack.json is generated. If it drifts from tools/build_pack.py, the
+        # traces are bound to a build nobody can rebuild.
+        run: |
+          python3 tools/build_pack.py
+          if ! git diff --quiet -- content/ashfen/pack.json; then
+            echo "::error::content/ashfen/pack.json does not match tools/build_pack.py"
+            git diff --stat -- content/ashfen/pack.json
+            exit 1
+          fi
+
+      - name: Sameness numbers for this commit
+        if: always()
+        run: |
+          PYTHONPATH=src python3 -c "
+          import json
+          from adventure_forge.kernel.content import load_pack
+          from adventure_forge.verify.sameness import measure
+          print(json.dumps(measure(load_pack()), indent=2))
+          " >> "$GITHUB_STEP_SUMMARY"

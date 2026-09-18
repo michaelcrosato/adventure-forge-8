@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Fast pre-commit gate. The full bar takes minutes; this runs the checks that
+# catch the failure modes this repo has actually shipped, in seconds.
+#
+# Install with: scripts/install-hooks
+set -euo pipefail
+# Resolve via git, not $0: this file runs through the .git/hooks symlink, where
+# dirname-based resolution lands in .git instead of the repo root.
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+export PYTHONPATH="$ROOT/src${PYTHONPATH:+:$PYTHONPATH}"
+
+fail() { echo "pre-commit: $1" >&2; exit 1; }
+
+# 1. Sameness ratchet: the world may not get more same than it already is.
+python3 -c "
+from adventure_forge.kernel.content import load_pack
+from adventure_forge.verify.sameness import check_sameness
+check_sameness(load_pack())
+" || fail "sameness ratchet failed (see sameness-baseline.json)"
+
+# 2. The public surface may not accept a world it did not compute.
+python3 -c "
+from adventure_forge.kernel.content import load_pack
+from adventure_forge.verify.web_surface import check_web_surface
+check_web_surface(load_pack())
+" || fail "web surface check failed"
+
+# 3. The guards themselves must still guard.
+python3 -m unittest tests.test_regression_guards -q >/dev/null 2>&1 \
+  || fail "regression guards failed — run: python3 -m unittest tests.test_regression_guards"
+
+# 4. pack.json must be rebuildable from its source.
+if git diff --cached --name-only | grep -qE '^(tools/build_pack\.py|content/ashfen/pack\.json)$'; then
+  python3 tools/build_pack.py >/dev/null
+  git diff --quiet -- content/ashfen/pack.json \
+    || fail "pack.json does not match tools/build_pack.py — rebuild and stage it"
+fi
+
+echo "pre-commit: ok (run scripts/verify for the full bar)"

@@ -13,6 +13,10 @@ from adventure_forge.kernel.step import step
 from adventure_forge.play.mapper import map_text
 from adventure_forge.play.observe import PAGE_SIZE, Observation, observe
 
+# An untrusted dump is rebuilt by replaying every id, so its cost is linear in
+# the history. Bound it so one request cannot buy unbounded server work.
+MAX_CLIENT_ACTIONS = 1000
+
 
 @dataclass
 class TurnResult:
@@ -128,28 +132,66 @@ class PlaySession:
         }
 
     @classmethod
-    def from_dump(cls, content: Content, payload: dict) -> PlaySession:
+    def from_dump(cls, content: Content, payload: dict, *, trusted: bool = True) -> PlaySession:
+        """Rebuild a session from a dump.
+
+        `trusted=True` is the local save file: the owner may hand back a
+        materialized `state`/`cursor` and we restore it directly.
+
+        `trusted=False` is any dump that crossed a network boundary. A caller
+        there does not get to declare the world. We accept seed + sheet +
+        accepted action ids only, and rebuild by replaying every id through the
+        real `step`, so the reconstructed state is one the engine agreed to.
+        """
+        if not isinstance(payload, dict):
+            raise ValueError("session must be an object")
         if payload.get("build_id") != content.build_id:
             raise ValueError("save build does not match current pack")
-        if "state" in payload and "cursor" in payload:
+
+        materialized = "state" in payload or "cursor" in payload
+        if materialized and not trusted:
+            # The whole product claim is that the world moves only through step.
+            # A client-supplied state is the world moving without step.
+            raise ValueError("session state is not accepted from this surface")
+
+        if materialized and trusted:
+            if "state" not in payload or "cursor" not in payload:
+                raise ValueError("save is missing state or cursor")
             state = GameState.from_dict(payload["state"])
             cursor = SeedCursor.from_dict(payload["cursor"])
             session = cls(content, state, cursor)
             session.history = list(payload.get("actions", []))
-            session.page = int(payload.get("page", 0))
-            group = payload.get("group")
-            session.group = None if group in {None, ""} else str(group)
+            session._restore_view(payload)
             return session
+
+        actions = payload.get("actions", [])
+        if not isinstance(actions, list):
+            raise ValueError("session actions must be a list")
+        if not trusted and len(actions) > MAX_CLIENT_ACTIONS:
+            raise ValueError("session too long to replay")
+        try:
+            seed = int(payload.get("seed", 1))
+        except (TypeError, ValueError) as exc:
+            raise ValueError("session seed must be an integer") from exc
         sheet = payload.get("sheet") or "marsh_scout"
-        session = cls.start(content, int(payload.get("seed", 1)), sheet)
-        for action_id in payload.get("actions", []):
+        if not isinstance(sheet, (str, dict)):
+            raise ValueError("session sheet must be a name or a sheet object")
+        session = cls.start(content, seed, sheet)
+        for action_id in actions:
             result = session._step(str(action_id))
             if not result.accepted:
                 raise ValueError("session replay rejected")
-        session.page = int(payload.get("page", 0))
-        group = payload.get("group")
-        session.group = None if group in {None, ""} else str(group)
+        session._restore_view(payload)
         return session
+
+    def _restore_view(self, payload: dict) -> None:
+        """Restore presentation-only fields. These never touch the world."""
+        try:
+            self.page = max(0, int(payload.get("page", 0)))
+        except (TypeError, ValueError):
+            self.page = 0
+        group = payload.get("group")
+        self.group = None if group in {None, ""} else str(group)
 
     def save(self, path: Path) -> None:
         path.write_text(json.dumps(self.dump(), indent=2, sort_keys=True) + "\n", encoding="utf-8")

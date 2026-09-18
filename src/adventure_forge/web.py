@@ -72,7 +72,9 @@ def play_turn(
     """Drive the shipped PlaySession. Illegal text does not call step."""
     content = _content()
     if session:
-        player = PlaySession.from_dump(content, session)
+        # Across HTTP the caller is untrusted: it may hand us ids to replay,
+        # never a world to adopt.
+        player = PlaySession.from_dump(content, session, trusted=False)
     else:
         player = PlaySession.start(content, int(seed), sheet or "marsh_scout")
     accepted = False
@@ -89,6 +91,9 @@ def play_turn(
         "accepted": accepted,
         "mapped": mapped,
         "text": text,
+        # The page is the observation (I8). Keep it available even when the
+        # turn message is a rejection, so a miss never blanks the room.
+        "observation": obs.text,
         "location": player.state.location,
         "fingerprint": player.fingerprint(),
         "outcomes": list(player.state.outcomes),
@@ -99,6 +104,13 @@ def play_turn(
 
 def _html_page(payload: dict[str, Any]) -> bytes:
     session_json = json.dumps(payload["session"], separators=(",", ":"))
+    # I8: a competent agent takes a full turn from one observation. Render the
+    # room every time, and put any rejection above it as a short notice.
+    observation = payload.get("observation") or payload["text"]
+    message = payload["text"]
+    notice = ""
+    if message and message != observation:
+        notice = f"<p role=\"status\"><strong>{html.escape(message)}</strong></p>"
     verbs = "".join(
         f"<li><code>{html.escape(v['id'])}</code> {html.escape(v['label'])}</li>"
         for v in payload.get("verbs", [])
@@ -112,7 +124,8 @@ def _html_page(payload: dict[str, Any]) -> bytes:
         "input[type=text]{width:100%;padding:.4rem}button{margin-top:.5rem}</style>"
         "<body><main><h1>Adventure Forge</h1>"
         "<p>Type a verb. Illegal text does not move the world.</p>"
-        f"<pre>{html.escape(payload['text'])}</pre>"
+        f"{notice}"
+        f"<pre>{html.escape(observation)}</pre>"
         "<form method=\"post\" action=\"/\">"
         f"<input type=\"hidden\" name=\"session\" value=\"{html.escape(session_json, quote=True)}\">"
         "<label>What do you do?<br>"
@@ -163,6 +176,26 @@ async def app(scope: dict[str, Any], receive: Receive, send: Send) -> None:
                 extra_headers=[(b"allow", b"GET, HEAD")],
             )
             return
+        # A health check that never loads the pack cannot detect the one
+        # failure this deployment is actually shaped to have.
+        try:
+            content = _content()
+        except Exception as exc:  # noqa: BLE001 — report any load failure as unhealthy
+            await _send_response(
+                send,
+                status=503,
+                body=_json_bytes(
+                    {
+                        "engine_version": ENGINE_VERSION,
+                        "service": "adventure-forge",
+                        "status": "unavailable",
+                        "error": type(exc).__name__,
+                    }
+                ),
+                content_type=b"application/json; charset=utf-8",
+                include_body=include_body,
+            )
+            return
         await _send_response(
             send,
             status=200,
@@ -172,6 +205,8 @@ async def app(scope: dict[str, Any], receive: Receive, send: Send) -> None:
                     "service": "adventure-forge",
                     "status": "ok",
                     "play": "/play",
+                    "build_id": content.build_id,
+                    "locations": len(content.locations),
                 }
             ),
             content_type=b"application/json; charset=utf-8",
@@ -207,13 +242,55 @@ async def app(scope: dict[str, Any], receive: Receive, send: Send) -> None:
                         content_type=b"application/json; charset=utf-8",
                     )
                     return
-                seed = int(data.get("seed") or 1)
+                if not isinstance(data, dict):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "body must be a JSON object"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
+                try:
+                    seed = int(data.get("seed") or 1)
+                except (TypeError, ValueError):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "seed must be an integer"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
                 sheet = str(data.get("sheet") or "marsh_scout")
                 session = data.get("session")
+                if session is not None and not isinstance(session, dict):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "session must be an object"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
                 line = data.get("line")
+                if line is not None and not isinstance(line, str):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "line must be a string"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
             else:
-                form = parse_qs(raw.decode("utf-8"), keep_blank_values=True)
-                seed = int((form.get("seed") or ["1"])[0] or 1)
+                form = parse_qs(raw.decode("utf-8", "replace"), keep_blank_values=True)
+                try:
+                    seed = int((form.get("seed") or ["1"])[0] or 1)
+                except (TypeError, ValueError):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "seed must be an integer"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
                 sheet = (form.get("sheet") or ["marsh_scout"])[0] or "marsh_scout"
                 line = (form.get("line") or [None])[0]
                 raw_session = (form.get("session") or [""])[0]
@@ -228,20 +305,37 @@ async def app(scope: dict[str, Any], receive: Receive, send: Send) -> None:
                             content_type=b"application/json; charset=utf-8",
                         )
                         return
+                    if not isinstance(session, dict):
+                        await _send_response(
+                            send,
+                            status=400,
+                            body=_json_bytes({"error": "bad_session"}),
+                            content_type=b"application/json; charset=utf-8",
+                        )
+                        return
         else:
             if query.get("seed"):
-                seed = int(query["seed"][0])
+                try:
+                    seed = int(query["seed"][0])
+                except (TypeError, ValueError):
+                    await _send_response(
+                        send,
+                        status=400,
+                        body=_json_bytes({"error": "seed must be an integer"}),
+                        content_type=b"application/json; charset=utf-8",
+                    )
+                    return
             if query.get("sheet"):
                 sheet = query["sheet"][0]
             if query.get("line"):
                 line = query["line"][0]
         try:
             payload = play_turn(seed=seed, sheet=sheet, session=session, line=line)
-        except ValueError as exc:
+        except (ValueError, TypeError, KeyError) as exc:
             await _send_response(
                 send,
                 status=400,
-                body=_json_bytes({"error": str(exc)}),
+                body=_json_bytes({"error": str(exc) or type(exc).__name__}),
                 content_type=b"application/json; charset=utf-8",
             )
             return

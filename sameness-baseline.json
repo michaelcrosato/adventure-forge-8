@@ -1,0 +1,61 @@
+{
+  "_": [
+    "Sameness ratchet. Read this before shipping content.",
+    "",
+    "PLAN.md G4: 'stop counting a cell when a sameness crawler cannot tell it",
+    "from another cell by verbs + inhabitants + effects.' This file is that",
+    "rule with teeth. `limits` is what the pack measures today. `verify` fails",
+    "if any number moves the wrong way, so the world cannot get more same than",
+    "it already is.",
+    "",
+    "These limits are DEBT, not a target. They record a real regression: 118 of",
+    "144 regions are structurally identical, shipped in one commit. The targets",
+    "below are where an honest G4 claim would sit. Moving a limit toward its",
+    "target is the work. Moving one away from its target needs a reason in the",
+    "commit message."
+  ],
+  "limits": {
+    "distinct_region_fingerprints": 21,
+    "largest_clone_class": 118,
+    "regions_in_clone_classes": 126,
+    "wallpaper_locations": 148,
+    "worst_hub_cut_fraction": 0.9972,
+    "sheet_gated_outcome_actions": 1,
+    "unused_effect_ops": [
+      "check",
+      "drop_here",
+      "hurt",
+      "open_exit",
+      "outcome",
+      "take_here",
+      "text"
+    ],
+    "unused_condition_kinds": [
+      "has_outcome",
+      "hp_gte",
+      "in_region",
+      "remembers",
+      "rep_lt"
+    ]
+  },
+  "targets": {
+    "largest_clone_class": 3,
+    "regions_in_clone_classes": 12,
+    "wallpaper_locations": 0,
+    "worst_hub_cut_fraction": 0.5,
+    "sheet_gated_outcome_actions": 10,
+    "unused_effect_ops": [],
+    "unused_condition_kinds": []
+  },
+  "notes": {
+    "largest_clone_class": "118 regions a player cannot tell apart. G4 counts these once, not 118 times.",
+    "wallpaper_locations": "Rooms with no verb of their own. PLAN.md: 'Empty miles are a disqualification.'",
+    "worst_hub_cut_fraction": "Removing one location strands this fraction of the world. G1 wants one contiguous world, not a hub with pockets.",
+    "sheet_gated_outcome_actions": "G3 asks the sheet to change what you can achieve. Exactly 1 action does that (`sign_the_compact`: an oathbound creed signs without dock standing) against 143 outcome-gating flags. The other 311 sheet-gated actions only change which verb is printed; both branches set the same flag.",
+    "unused_effect_ops": "Implemented verbs the world never calls. `hurt` unused means nothing can go wrong anywhere.",
+    "unused_condition_kinds": "`remembers` unused means 566 NPC memory writes are read by nobody."
+  },
+  "not_measured": {
+    "g2_plain_speech": "G2 asks for plain speech. `verify/language.py` enforces SHORT speech: 20-word sentences, 8-word labels, 7 banned phrases. 'Woold bowsprit, ride turns, frap gammon' passes every one of them. A glossary heuristic was tried and rejected: scoring label words against the region's own prose ranks the generated clones BEST (they echo their jargon back: 'Pillar says hew the pillar') and the hand-authored regions WORST, so it would have punished the good writing. Detecting jargon needs a real word-frequency list; until then this gap is open and is not silently counted as passing."
+  }
+}

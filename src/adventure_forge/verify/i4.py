@@ -30,6 +30,16 @@ def accept_trace(content: Content, trace: dict):
     outcome = trace.get("outcome")
     if outcome and outcome not in result.state.outcomes:
         raise TraceReject(f"{tid} missing outcome {outcome}: {result.state.outcomes}")
+    # Traces record an `outcomes` list as well as the singular headline outcome.
+    # Only the singular one used to be asserted, so 570 of 714 traces proved
+    # nothing beyond "this replays to the hash we took of it replaying".
+    recorded = trace.get("outcomes") or []
+    if not isinstance(recorded, list):
+        raise TraceReject(f"{tid} outcomes must be a list")
+    reached = set(result.state.outcomes)
+    missing = [o for o in recorded if o not in reached]
+    if missing:
+        raise TraceReject(f"{tid} missing recorded outcomes {missing}: {sorted(reached)}")
     return result
 
 

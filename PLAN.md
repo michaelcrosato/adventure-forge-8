@@ -418,7 +418,10 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 142. **Slice 141:** Stanchion House — true stanchion, wedge prop, spike foot. Cross-effect: dumped compound unlocks setting the stanchion.
 143. **Slice 142:** Pillar House — hew pillar, square king, shore queen. Cross-effect: spiked foot unlocks setting the pillar.
 144. **Slice 143+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-55. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+145. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+    This rule is now enforced mechanically by `verify`'s `sameness` job
+    against `sameness-baseline.json`. It was unenforced until then, which is
+    how 118 indistinguishable regions shipped under a green bar.
 
 The factory may generate substrate. Authored depth is what we claim.
 

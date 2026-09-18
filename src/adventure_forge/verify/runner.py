@@ -8,14 +8,16 @@ from adventure_forge.kernel.content import load_pack
 from adventure_forge.kernel.legal import enumerate_legal
 from adventure_forge.kernel.replay import new_game
 from adventure_forge.paths import repo_root, traces_dir
-from adventure_forge.verify.crawler import crawl
+from adventure_forge.verify.crawler import crawl, trace_seeds
 from adventure_forge.verify.player_crawl import player_crawl
 from adventure_forge.verify.firewall import check_firewall
 from adventure_forge.verify.i1 import check_i1
 from adventure_forge.verify.i4 import check_i4
 from adventure_forge.verify.language import check_pack_language, check_walkthrough_budget
+from adventure_forge.verify.sameness import check_sameness, measure
 from adventure_forge.verify.tamper import check_tamper
 from adventure_forge.verify.units import run_units
+from adventure_forge.verify.web_surface import check_web_surface
 
 
 def load_traces() -> list[dict]:
@@ -104,7 +106,7 @@ def run_verify() -> int:
         traces = load_traces()
 
         def i1() -> None:
-            check_i1(content, [t for t in traces if t.get("outcome")])
+            check_i1(content, traces)
 
         def i4() -> None:
             check_i4(content, traces)
@@ -116,7 +118,15 @@ def run_verify() -> int:
                 raise AssertionError("language\n" + "\n".join(errors[:20]))
 
         def crawler() -> None:
-            crawl(content)
+            # Seed from the end state of every recorded trace, so the walk
+            # starts inside all 144 regions instead of only near the dock.
+            crawl(content, seeds=trace_seeds(content, traces))
+
+        def sameness() -> None:
+            check_sameness(content)
+
+        def web_surface() -> None:
+            check_web_surface(content)
 
         def play_crawler() -> None:
             player_crawl(content)
@@ -128,7 +138,9 @@ def run_verify() -> int:
             ("I1 determinism", i1),
             ("I4 witnesses", i4),
             ("crawler", crawler),
+            ("sameness", sameness),
             ("player-crawler", play_crawler),
+            ("web-surface", web_surface),
             ("kernel-purity", check_kernel_source_purity),
             ("language-budget", language),
             ("large-legal", check_large_legal),
@@ -139,8 +151,23 @@ def run_verify() -> int:
         ]
         for name, fn in jobs:
             _job(name, fn)
+        _print_sameness_debt(content)
     except Exception as exc:  # noqa: BLE001 — the bar must surface any failure
         print(f"FAIL: {exc}", file=sys.stderr)
         return 1
     print("PASS")
     return 0
+
+
+def _print_sameness_debt(content) -> None:
+    """Green does not mean good. Say what the world still measures."""
+    now = measure(content)
+    print(
+        "  sameness debt: "
+        f"{now['largest_clone_class']} regions in the largest clone class, "
+        f"{now['distinct_region_fingerprints']} distinct of {now['regions']}, "
+        f"{now['wallpaper_locations']} rooms with no verb, "
+        f"{len(now['unused_effect_ops'])} unused effect ops, "
+        f"{now['sheet_gated_outcome_actions']} sheet-gated outcomes"
+    )
+    print("  (limits in sameness-baseline.json; targets in the same file)")

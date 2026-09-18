@@ -1,6 +1,26 @@
 # G4 inventory — shipped unique areas vs substrate
 
-Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pieces in one authored yard, not 100 rooms.
+Ashfen Coast. Measured by `verify`'s sameness crawler, not asserted.
+
+**This file previously read "Generated wallpaper: none." That was false.** The
+numbers below come from `python -m adventure_forge verify` and are re-checked on
+every run; limits live in `sameness-baseline.json`.
+
+| Measure | Value |
+|---|---|
+| Regions shipped | 144 |
+| Regions a crawler can tell apart | **21** |
+| Largest class of indistinguishable regions | **118** |
+| Locations with no verb of their own | **148** of 724 |
+| Removing one location strands | **99.7%** of the world |
+| Actions where the sheet decides an outcome | **1** of 143 |
+
+By PLAN.md's own scale rule — "stop counting a cell when a sameness crawler
+cannot tell it from another cell by verbs + inhabitants + effects" — this world
+counts **21 areas**, not 144.
+
+The salvage catalog is 100 tagged pieces in one authored yard, not 100 rooms.
+They are also referenced by zero actions, so they are litter, not depth.
 
 ## Authored unique locations
 
@@ -737,8 +757,17 @@ Ashfen Coast. Generated wallpaper: none. Salvage catalog is 100 unique tagged pi
 
 ## Substrate
 
-None claimed. Salvage items are contents of one location, not map cells.
+**123 regions are substrate**, not authored depth: they fall into
+classes the sameness crawler cannot distinguish. The largest single class holds
+118 regions. PLAN.md G4: "Procedural fill is substrate. Authored depth is
+what the rubric scores."
+
+Structurally distinct regions (18): drowned_road, dye_works, eel_weir, fever_camp, hollow_stacks, kiln_mill, lens_ruin, namehouse, oyster_park, peat_fold, pillar_house, reed_court, ropewalk, salt_pans, saltfen, smokehouse, toll_ferry, windpump.
+
+Salvage items are contents of one location, not map cells.
 
 ## Not counted
 
-Empty wilderness, duplicated hallways, renamed stalls.
+Empty wilderness, duplicated hallways, renamed stalls — including the 118
+regions in this pack that differ from one another only by proper noun. A region
+that is a previous region with the vocabulary swapped is a renamed stall.
