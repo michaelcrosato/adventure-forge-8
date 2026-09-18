@@ -14,7 +14,7 @@ Hew, square, shore. The pillar is hewn, the king is squared, and the queen is sh
 
 ## Locations
 
-`pil.path`, `pil.yard`, `pil.samson`, `pil.king`, `pil.queen`. Linked from `ashfen.causeway` and `stn.path`. Thatch owns “Go to the stand”; rag owns “Go to the post”; dado owns “Go to the cap”; stanchion owns “Go to the true/prop/foot”.
+`pil.path`, `pil.yard`, `pil.samson`, `pil.king`, `pil.queen`. Linked from `ashfen.causeway`.
 
 ## Outcome
 
@@ -26,4 +26,4 @@ Same scene `pil.yard`: marshborn/hunt `know_the_pillar`; letters `read_the_pilla
 
 ## Cross-effect
 
-Spiked foot (`foot_spiked`) unlocks `spike_the_pillar` at the samson bench. Proven by `cross_stn_pil` vs `cross_plain_pil`.
+Ungated. The stanchion clone that primed `spike_the_pillar` was removed; the pillar still hews, squares, and shores on its own verbs.

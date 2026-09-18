@@ -8,18 +8,17 @@
     "if any number moves the wrong way, so the world cannot get more same than",
     "it already is.",
     "",
-    "These limits are DEBT, not a target. They record a real regression: 118 of",
-    "144 regions are structurally identical, shipped in one commit. The targets",
-    "below are where an honest G4 claim would sit. Moving a limit toward its",
-    "target is the work. Moving one away from its target needs a reason in the",
-    "commit message."
+    "These limits are DEBT, not a target. The 118-region vocabulary-swap class",
+    "was removed. Remaining same-kind shops may still share a fingerprint",
+    "(largest class 3). Moving a limit toward its target is the work. Moving",
+    "one away from its target needs a reason in the commit message."
   ],
   "limits": {
     "distinct_region_fingerprints": 21,
-    "largest_clone_class": 118,
-    "regions_in_clone_classes": 126,
-    "wallpaper_locations": 148,
-    "worst_hub_cut_fraction": 0.9972,
+    "largest_clone_class": 3,
+    "regions_in_clone_classes": 5,
+    "wallpaper_locations": 26,
+    "worst_hub_cut_fraction": 0.9837,
     "sheet_gated_outcome_actions": 1,
     "unused_effect_ops": [
       "check",
@@ -48,10 +47,10 @@
     "unused_condition_kinds": []
   },
   "notes": {
-    "largest_clone_class": "118 regions a player cannot tell apart. G4 counts these once, not 118 times.",
+    "largest_clone_class": "3 same-kind shops a player cannot tell apart (counting house, ice cellar, wreck chapel). G4 counts these once, not 3 times.",
     "wallpaper_locations": "Rooms with no verb of their own. PLAN.md: 'Empty miles are a disqualification.'",
     "worst_hub_cut_fraction": "Removing one location strands this fraction of the world. G1 wants one contiguous world, not a hub with pockets.",
-    "sheet_gated_outcome_actions": "G3 asks the sheet to change what you can achieve. Exactly 1 action does that (`sign_the_compact`: an oathbound creed signs without dock standing) against 143 outcome-gating flags. The other 311 sheet-gated actions only change which verb is printed; both branches set the same flag.",
+    "sheet_gated_outcome_actions": "G3 asks the sheet to change what you can achieve. Exactly 1 action does that (`sign_the_compact`: an oathbound creed signs without dock standing).",
     "unused_effect_ops": "Implemented verbs the world never calls. `hurt` unused means nothing can go wrong anywhere.",
     "unused_condition_kinds": "`remembers` unused means 566 NPC memory writes are read by nobody."
   },

@@ -19,8 +19,8 @@
     "go:count.yard",
     "go:count.desk"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "44a9a71983f0630fd30a5656a70f92efd350f4d9bc6cd628a210c5989916131a",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "785ec6a91b8a318cbd2122bf0fe99babb80e7e4aebe665926a790a83de52caef",
   "id": "cross_oyster_count",
   "location": "count.desk",
   "outcomes": [

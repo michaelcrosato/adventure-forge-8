@@ -5,8 +5,8 @@
     "go:camp.gate",
     "go:camp.yard"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "85f7b3494b6f43593ee9d2265ade66de6ef3e9442c414908665222663c40e7ec",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "c41b38da626538c8510a9884b1640b512927ce320496890d66c1fd1adeb8f9a7",
   "id": "divergence_city_camp",
   "location": "camp.yard",
   "outcomes": [],

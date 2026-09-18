@@ -6,8 +6,8 @@
     "go:coop.yard",
     "go:coop.hoop"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "63fb5dc0bf592feedb8bfbe20e74e26da029e7a9da2f08411db34e6cb4c5ef62",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "957941c01c026086f1cbb6c95c5dec6265204466c85ae6d9264f69873a4c52b8",
   "id": "cross_plain_coop",
   "location": "coop.hoop",
   "outcomes": [],

@@ -19,8 +19,8 @@
     "go:wreck.yard",
     "go:wreck.hull"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "89f65dc48841dd0a11cd65133664b59ef2c5833819fe4709c2ba6e35c97ef075",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "dfdfec3e7727201bd2362c796429248e73e8ad0e35bdd737ce925f5a1c9405d8",
   "id": "cross_ice_wreck",
   "location": "wreck.hull",
   "outcomes": [

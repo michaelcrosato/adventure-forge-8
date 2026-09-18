@@ -6,8 +6,8 @@
     "go:hive.yard",
     "go:hive.skeps"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "559b1d6791396f9183cee64956dbb974111e0df73e266c99abaa0e7ab08c64a9",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "201eb6f6bbe2908c8e74dfa2586c652357ed0956f1596b37df9caf1197ade3bf",
   "id": "cross_plain_hive",
   "location": "hive.skeps",
   "outcomes": [],

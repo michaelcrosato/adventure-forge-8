@@ -5,8 +5,8 @@
     "go:oyster.path",
     "go:oyster.yard"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "cbe5c84008d9cc6d43a4fb5c7f2e63e53e15d4ea0bb61924d17ec9e15daf2ebe",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "949a77556b3b9b7cb16eebb96cddf9735776be05e357bd199635ce30d860a796",
   "id": "divergence_marsh_oyster",
   "location": "oyster.yard",
   "outcomes": [],

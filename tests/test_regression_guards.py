@@ -61,6 +61,20 @@ class SamenessRatchetTests(unittest.TestCase):
         for metric in doc["limits"]:
             self.assertIn(metric, now, f"baseline records {metric}, which is no longer measured")
 
+    def test_live_pack_largest_clone_class_is_at_most_three(self) -> None:
+        """Shipped pack via the real loader and real `measure`.
+
+        The 118-region vocabulary-swap class must not return. Same-kind shops
+        may still share a fingerprint; that class is capped at the G4 target.
+        """
+        now = measure(self.content)
+        self.assertLessEqual(now["largest_clone_class"], 3)
+        classes = clone_classes(self.content)
+        self.assertTrue(
+            any(len(members) == 1 for members in classes.values()),
+            "unique coast regions disappeared with the clones",
+        )
+
     def test_current_pack_passes_its_own_ratchet(self) -> None:
         check_sameness(self.content)
 

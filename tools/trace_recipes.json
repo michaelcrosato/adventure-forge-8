@@ -1,0 +1,1737 @@
+[
+  {
+    "id": "marsh_harbor_compact",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "harbor_compact",
+    "actions": [
+      "go:saltfen.market",
+      "use_marsh_cant",
+      "ask_about_tablet",
+      "slip_inside",
+      "take:compact_tablet",
+      "go:saltfen.market",
+      "go:saltfen.dock",
+      "give_tablet",
+      "sign_the_compact"
+    ]
+  },
+  {
+    "id": "marsh_stack_relic",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "stack_relic",
+    "actions": [
+      "take:frayed_rope",
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:stacks.base",
+      "climb_switchback",
+      "climb_to_mid",
+      "climb_to_bridge",
+      "crawl_across",
+      "take:ash_relic"
+    ]
+  },
+  {
+    "id": "divergence_marsh_market",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market"
+    ]
+  },
+  {
+    "id": "divergence_city_market",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market"
+    ]
+  },
+  {
+    "id": "marsh_kiln_pact",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "kiln_pact",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard",
+      "offer_reed_grain",
+      "go:mill.kiln",
+      "kindle_kiln",
+      "stoke_kiln",
+      "fire_the_pact"
+    ]
+  },
+  {
+    "id": "divergence_marsh_mill",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_mill",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_mill",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard"
+    ]
+  },
+  {
+    "id": "cross_compact_mill",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "use_marsh_cant",
+      "ask_about_tablet",
+      "slip_inside",
+      "take:compact_tablet",
+      "go:saltfen.market",
+      "go:saltfen.dock",
+      "give_tablet",
+      "sign_the_compact",
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard"
+    ]
+  },
+  {
+    "id": "marsh_reed_sentence",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "reed_sentence",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall",
+      "speak_reed_custom",
+      "go:court.yard",
+      "go:court.cell",
+      "hear_tam_witness",
+      "go:court.yard",
+      "go:court.hall",
+      "pass_reed_sentence"
+    ]
+  },
+  {
+    "id": "divergence_marsh_court",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall"
+    ]
+  },
+  {
+    "id": "divergence_city_court",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall"
+    ]
+  },
+  {
+    "id": "cross_plain_court",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall"
+    ]
+  },
+  {
+    "id": "cross_kiln_court",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mill.lane",
+      "go:mill.yard",
+      "offer_reed_grain",
+      "go:mill.kiln",
+      "kindle_kiln",
+      "stoke_kiln",
+      "fire_the_pact",
+      "go:mill.yard",
+      "go:mill.lane",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall"
+    ]
+  },
+  {
+    "id": "marsh_road_beacon",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "road_beacon",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut",
+      "track_drowned_prints",
+      "go:road.beacon",
+      "light_the_beacon"
+    ]
+  },
+  {
+    "id": "divergence_marsh_road",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut"
+    ]
+  },
+  {
+    "id": "divergence_city_road",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut"
+    ]
+  },
+  {
+    "id": "cross_plain_road",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut"
+    ]
+  },
+  {
+    "id": "cross_court_road",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:court.gate",
+      "go:court.yard",
+      "go:court.hall",
+      "speak_reed_custom",
+      "go:court.yard",
+      "go:court.cell",
+      "hear_tam_witness",
+      "go:court.yard",
+      "go:court.hall",
+      "pass_reed_sentence",
+      "go:court.yard",
+      "go:court.gate",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut"
+    ]
+  },
+  {
+    "id": "marsh_fever_broken",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "fever_broken",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:camp.gate",
+      "go:camp.yard",
+      "cut_reed_herb",
+      "go:camp.still",
+      "brew_fever_broth",
+      "go:camp.yard",
+      "go:camp.ward",
+      "give_broth_to_ren"
+    ]
+  },
+  {
+    "id": "divergence_marsh_camp",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:camp.gate",
+      "go:camp.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_camp",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:camp.gate",
+      "go:camp.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_camp",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:camp.gate"
+    ]
+  },
+  {
+    "id": "cross_beacon_camp",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:road.ford",
+      "go:road.dike",
+      "go:road.hut",
+      "track_drowned_prints",
+      "go:road.beacon",
+      "light_the_beacon",
+      "go:road.hut",
+      "go:road.dike",
+      "go:road.ford",
+      "go:camp.gate"
+    ]
+  },
+  {
+    "id": "marsh_name_restored",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "name_restored",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall",
+      "speak_the_old_name",
+      "go:name.yard",
+      "go:name.crypt",
+      "take:bone_name",
+      "go:name.yard",
+      "go:name.hall",
+      "restore_the_name"
+    ]
+  },
+  {
+    "id": "divergence_marsh_name",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall"
+    ]
+  },
+  {
+    "id": "divergence_city_name",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall"
+    ]
+  },
+  {
+    "id": "cross_plain_name",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall"
+    ]
+  },
+  {
+    "id": "cross_fever_name",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:camp.gate",
+      "go:camp.yard",
+      "cut_reed_herb",
+      "go:camp.still",
+      "brew_fever_broth",
+      "go:camp.yard",
+      "go:camp.ward",
+      "give_broth_to_ren",
+      "go:camp.yard",
+      "go:camp.gate",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall"
+    ]
+  },
+  {
+    "id": "marsh_fold_held",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "fold_held",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:fold.lane",
+      "go:fold.green",
+      "know_the_soft_cut",
+      "go:fold.cut",
+      "cut_safe_peat",
+      "go:fold.green",
+      "go:fold.shed",
+      "set_the_share"
+    ]
+  },
+  {
+    "id": "divergence_marsh_fold",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:fold.lane",
+      "go:fold.green"
+    ]
+  },
+  {
+    "id": "divergence_city_fold",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:fold.lane",
+      "go:fold.green"
+    ]
+  },
+  {
+    "id": "cross_plain_fold",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:fold.lane",
+      "go:fold.green"
+    ]
+  },
+  {
+    "id": "cross_name_fold",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:name.path",
+      "go:name.yard",
+      "go:name.hall",
+      "speak_the_old_name",
+      "go:name.yard",
+      "go:name.crypt",
+      "take:bone_name",
+      "go:name.yard",
+      "go:name.hall",
+      "restore_the_name",
+      "go:name.yard",
+      "go:name.path",
+      "go:fold.lane",
+      "go:fold.green"
+    ]
+  },
+  {
+    "id": "marsh_lens_set",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "lens_set",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:glass.path",
+      "go:glass.yard",
+      "go:glass.nave",
+      "know_the_low_sun",
+      "go:glass.yard",
+      "go:glass.pit",
+      "take:lens_shard",
+      "go:glass.yard",
+      "go:glass.nave",
+      "go:glass.loft",
+      "set_the_lens"
+    ]
+  },
+  {
+    "id": "divergence_marsh_glass",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:glass.path",
+      "go:glass.yard",
+      "go:glass.nave"
+    ]
+  },
+  {
+    "id": "divergence_city_glass",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:glass.path",
+      "go:glass.yard",
+      "go:glass.nave"
+    ]
+  },
+  {
+    "id": "cross_plain_glass",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:glass.path",
+      "go:glass.yard"
+    ]
+  },
+  {
+    "id": "cross_fold_glass",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:fold.lane",
+      "go:fold.green",
+      "know_the_soft_cut",
+      "go:fold.cut",
+      "cut_safe_peat",
+      "go:fold.green",
+      "go:fold.shed",
+      "set_the_share",
+      "go:fold.green",
+      "go:fold.lane",
+      "go:glass.path",
+      "go:glass.yard"
+    ]
+  },
+  {
+    "id": "marsh_rope_walked",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "rope_walked",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:rope.path",
+      "go:rope.yard",
+      "know_the_hemp_twist",
+      "go:rope.loft",
+      "take:hemp_hank",
+      "go:rope.yard",
+      "go:rope.walk",
+      "walk_the_rope"
+    ]
+  },
+  {
+    "id": "divergence_marsh_rope",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:rope.path",
+      "go:rope.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_rope",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:rope.path",
+      "go:rope.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_rope",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:rope.path",
+      "go:rope.yard",
+      "go:rope.walk"
+    ]
+  },
+  {
+    "id": "cross_lens_rope",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:glass.path",
+      "go:glass.yard",
+      "go:glass.nave",
+      "know_the_low_sun",
+      "go:glass.yard",
+      "go:glass.pit",
+      "take:lens_shard",
+      "go:glass.yard",
+      "go:glass.nave",
+      "go:glass.loft",
+      "set_the_lens",
+      "go:glass.nave",
+      "go:glass.yard",
+      "go:glass.path",
+      "go:rope.path",
+      "go:rope.yard",
+      "go:rope.walk"
+    ]
+  },
+  {
+    "id": "marsh_salt_raked",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "salt_raked",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pans.path",
+      "go:pans.yard",
+      "know_the_brine_cut",
+      "go:pans.well",
+      "draw_the_brine",
+      "go:pans.yard",
+      "go:pans.beds",
+      "rake_the_cake",
+      "go:pans.yard",
+      "go:pans.shed",
+      "weigh_the_cake"
+    ]
+  },
+  {
+    "id": "divergence_marsh_salt",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pans.path",
+      "go:pans.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_salt",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pans.path",
+      "go:pans.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_salt",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pans.path",
+      "go:pans.yard",
+      "go:pans.beds"
+    ]
+  },
+  {
+    "id": "cross_rope_salt",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:rope.path",
+      "go:rope.yard",
+      "know_the_hemp_twist",
+      "go:rope.loft",
+      "take:hemp_hank",
+      "go:rope.yard",
+      "go:rope.walk",
+      "walk_the_rope",
+      "go:rope.yard",
+      "go:rope.path",
+      "go:pans.path",
+      "go:pans.yard",
+      "go:pans.beds"
+    ]
+  },
+  {
+    "id": "marsh_smoke_cured",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "smoke_cured",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:smoke.path",
+      "go:smoke.yard",
+      "know_the_wet_fish",
+      "go:smoke.racks",
+      "take:wet_fish",
+      "hang_the_fish",
+      "go:smoke.yard",
+      "go:smoke.hearth",
+      "tend_the_smoke",
+      "go:smoke.yard",
+      "go:smoke.loft",
+      "take_the_cure"
+    ]
+  },
+  {
+    "id": "divergence_marsh_smoke",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:smoke.path",
+      "go:smoke.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_smoke",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:smoke.path",
+      "go:smoke.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_smoke",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:smoke.path",
+      "go:smoke.yard",
+      "go:smoke.racks"
+    ]
+  },
+  {
+    "id": "cross_salt_smoke",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pans.path",
+      "go:pans.yard",
+      "know_the_brine_cut",
+      "go:pans.well",
+      "draw_the_brine",
+      "go:pans.yard",
+      "go:pans.beds",
+      "rake_the_cake",
+      "go:pans.yard",
+      "go:pans.shed",
+      "weigh_the_cake",
+      "go:pans.yard",
+      "go:pans.path",
+      "go:smoke.path",
+      "go:smoke.yard",
+      "go:smoke.racks"
+    ]
+  },
+  {
+    "id": "marsh_weir_lifted",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "weir_lifted",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:weir.path",
+      "go:weir.yard",
+      "know_the_eel_run",
+      "go:weir.hut",
+      "take:weir_basket",
+      "go:weir.yard",
+      "go:weir.stakes",
+      "set_the_baskets",
+      "lift_the_weir"
+    ]
+  },
+  {
+    "id": "divergence_marsh_weir",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:weir.path",
+      "go:weir.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_weir",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:weir.path",
+      "go:weir.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_weir",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:weir.path",
+      "go:weir.yard",
+      "go:weir.stakes"
+    ]
+  },
+  {
+    "id": "cross_smoke_weir",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:smoke.path",
+      "go:smoke.yard",
+      "know_the_wet_fish",
+      "go:smoke.racks",
+      "take:wet_fish",
+      "hang_the_fish",
+      "go:smoke.yard",
+      "go:smoke.hearth",
+      "tend_the_smoke",
+      "go:smoke.yard",
+      "go:smoke.loft",
+      "take_the_cure",
+      "go:smoke.yard",
+      "go:smoke.path",
+      "go:weir.path",
+      "go:weir.yard",
+      "go:weir.stakes"
+    ]
+  },
+  {
+    "id": "marsh_dye_struck",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "dye_struck",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:dye.path",
+      "go:dye.yard",
+      "know_the_reed_mordant",
+      "go:dye.store",
+      "take:undyed_cloth",
+      "go:dye.yard",
+      "go:dye.vats",
+      "charge_the_vat",
+      "dip_the_cloth",
+      "go:dye.yard",
+      "go:dye.loft",
+      "hang_the_color"
+    ]
+  },
+  {
+    "id": "divergence_marsh_dye",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:dye.path",
+      "go:dye.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_dye",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:dye.path",
+      "go:dye.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_dye",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:dye.path",
+      "go:dye.yard",
+      "go:dye.vats"
+    ]
+  },
+  {
+    "id": "cross_weir_dye",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:weir.path",
+      "go:weir.yard",
+      "know_the_eel_run",
+      "go:weir.hut",
+      "take:weir_basket",
+      "go:weir.yard",
+      "go:weir.stakes",
+      "set_the_baskets",
+      "lift_the_weir",
+      "go:weir.yard",
+      "go:weir.path",
+      "go:dye.path",
+      "go:dye.yard",
+      "go:dye.vats"
+    ]
+  },
+  {
+    "id": "marsh_ferry_crossed",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "ferry_crossed",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ferry.path",
+      "go:ferry.yard",
+      "know_the_channel_cut",
+      "take:toll_token",
+      "go:ferry.slip",
+      "load_the_boat",
+      "go:ferry.boat",
+      "pole_the_crossing",
+      "claim_the_landing"
+    ]
+  },
+  {
+    "id": "divergence_marsh_ferry",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ferry.path",
+      "go:ferry.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_ferry",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ferry.path",
+      "go:ferry.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_ferry",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ferry.path",
+      "go:ferry.yard"
+    ]
+  },
+  {
+    "id": "cross_dye_ferry",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:dye.path",
+      "go:dye.yard",
+      "know_the_reed_mordant",
+      "go:dye.store",
+      "take:undyed_cloth",
+      "go:dye.yard",
+      "go:dye.vats",
+      "charge_the_vat",
+      "dip_the_cloth",
+      "go:dye.yard",
+      "go:dye.loft",
+      "hang_the_color",
+      "go:dye.yard",
+      "go:dye.path",
+      "go:ferry.path",
+      "go:ferry.yard"
+    ]
+  },
+  {
+    "id": "marsh_flats_drained",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "flats_drained",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pump.path",
+      "go:pump.yard",
+      "know_the_wind_cut",
+      "go:pump.tower",
+      "take:vane_pin",
+      "set_the_vanes",
+      "go:pump.yard",
+      "go:pump.crank",
+      "crank_the_pump",
+      "go:pump.yard",
+      "go:pump.sump",
+      "hold_the_draw"
+    ]
+  },
+  {
+    "id": "divergence_marsh_pump",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pump.path",
+      "go:pump.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_pump",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pump.path",
+      "go:pump.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_pump",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pump.path",
+      "go:pump.yard",
+      "go:pump.tower"
+    ]
+  },
+  {
+    "id": "cross_ferry_pump",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ferry.path",
+      "go:ferry.yard",
+      "know_the_channel_cut",
+      "take:toll_token",
+      "go:ferry.slip",
+      "load_the_boat",
+      "go:ferry.boat",
+      "pole_the_crossing",
+      "claim_the_landing",
+      "go:pump.path",
+      "go:pump.yard",
+      "go:pump.tower"
+    ]
+  },
+  {
+    "id": "marsh_oyster_culled",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "oyster_culled",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:oyster.path",
+      "go:oyster.yard",
+      "know_the_spat_set",
+      "go:oyster.spat",
+      "take:spat_bag",
+      "go:oyster.yard",
+      "go:oyster.beds",
+      "seed_the_beds",
+      "go:oyster.yard",
+      "go:oyster.shed",
+      "cull_the_beds"
+    ]
+  },
+  {
+    "id": "divergence_marsh_oyster",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:oyster.path",
+      "go:oyster.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_oyster",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:oyster.path",
+      "go:oyster.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_oyster",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:oyster.path",
+      "go:oyster.yard",
+      "go:oyster.beds"
+    ]
+  },
+  {
+    "id": "cross_pump_oyster",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pump.path",
+      "go:pump.yard",
+      "know_the_wind_cut",
+      "go:pump.tower",
+      "take:vane_pin",
+      "set_the_vanes",
+      "go:pump.yard",
+      "go:pump.crank",
+      "crank_the_pump",
+      "go:pump.yard",
+      "go:pump.sump",
+      "hold_the_draw",
+      "go:pump.yard",
+      "go:pump.path",
+      "go:oyster.path",
+      "go:oyster.yard",
+      "go:oyster.beds"
+    ]
+  },
+  {
+    "id": "marsh_tally_closed",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "tally_closed",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:count.path",
+      "go:count.yard",
+      "know_the_shell_count",
+      "go:count.loft",
+      "take:tally_slate",
+      "go:count.yard",
+      "go:count.desk",
+      "mark_the_tally",
+      "go:count.yard",
+      "go:count.vault",
+      "seal_the_count"
+    ]
+  },
+  {
+    "id": "divergence_marsh_count",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:count.path",
+      "go:count.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_count",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:count.path",
+      "go:count.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_count",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:count.path",
+      "go:count.yard",
+      "go:count.desk"
+    ]
+  },
+  {
+    "id": "cross_oyster_count",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:oyster.path",
+      "go:oyster.yard",
+      "know_the_spat_set",
+      "go:oyster.spat",
+      "take:spat_bag",
+      "go:oyster.yard",
+      "go:oyster.beds",
+      "seed_the_beds",
+      "go:oyster.yard",
+      "go:oyster.shed",
+      "cull_the_beds",
+      "go:oyster.yard",
+      "go:oyster.path",
+      "go:count.path",
+      "go:count.yard",
+      "go:count.desk"
+    ]
+  },
+  {
+    "id": "marsh_ice_held",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "ice_held",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ice.path",
+      "go:ice.yard",
+      "know_the_ice_cut",
+      "go:ice.pit",
+      "take:ice_block",
+      "go:ice.yard",
+      "go:ice.hold",
+      "pack_the_ice",
+      "go:ice.yard",
+      "go:ice.door",
+      "bar_the_door"
+    ]
+  },
+  {
+    "id": "divergence_marsh_ice",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ice.path",
+      "go:ice.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_ice",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ice.path",
+      "go:ice.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_ice",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ice.path",
+      "go:ice.yard"
+    ]
+  },
+  {
+    "id": "cross_count_ice",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:count.path",
+      "go:count.yard",
+      "know_the_shell_count",
+      "go:count.loft",
+      "take:tally_slate",
+      "go:count.yard",
+      "go:count.desk",
+      "mark_the_tally",
+      "go:count.yard",
+      "go:count.vault",
+      "seal_the_count",
+      "go:count.yard",
+      "go:count.path",
+      "go:ice.path",
+      "go:ice.yard"
+    ]
+  },
+  {
+    "id": "marsh_wreck_laid",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "wreck_laid",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:wreck.path",
+      "go:wreck.yard",
+      "know_the_drowned_mark",
+      "go:wreck.hull",
+      "take:drowned_token",
+      "go:wreck.yard",
+      "go:wreck.wash",
+      "wash_the_token",
+      "go:wreck.yard",
+      "go:wreck.altar",
+      "lay_the_token"
+    ]
+  },
+  {
+    "id": "divergence_marsh_wreck",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:wreck.path",
+      "go:wreck.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_wreck",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:wreck.path",
+      "go:wreck.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_wreck",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:wreck.path",
+      "go:wreck.yard",
+      "go:wreck.hull"
+    ]
+  },
+  {
+    "id": "cross_ice_wreck",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:ice.path",
+      "go:ice.yard",
+      "know_the_ice_cut",
+      "go:ice.pit",
+      "take:ice_block",
+      "go:ice.yard",
+      "go:ice.hold",
+      "pack_the_ice",
+      "go:ice.yard",
+      "go:ice.door",
+      "bar_the_door",
+      "go:ice.yard",
+      "go:ice.path",
+      "go:wreck.path",
+      "go:wreck.yard",
+      "go:wreck.hull"
+    ]
+  },
+  {
+    "id": "marsh_hive_kept",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "hive_kept",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:hive.path",
+      "go:hive.yard",
+      "know_the_hive_hum",
+      "go:hive.skeps",
+      "smoke_the_hive",
+      "go:hive.yard",
+      "go:hive.comb",
+      "take:comb_cake",
+      "go:hive.yard",
+      "go:hive.shed",
+      "set_the_skep"
+    ]
+  },
+  {
+    "id": "divergence_marsh_hive",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:hive.path",
+      "go:hive.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_hive",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:hive.path",
+      "go:hive.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_hive",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:hive.path",
+      "go:hive.yard",
+      "go:hive.skeps"
+    ]
+  },
+  {
+    "id": "cross_wreck_hive",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:wreck.path",
+      "go:wreck.yard",
+      "know_the_drowned_mark",
+      "go:wreck.hull",
+      "take:drowned_token",
+      "go:wreck.yard",
+      "go:wreck.wash",
+      "wash_the_token",
+      "go:wreck.yard",
+      "go:wreck.altar",
+      "lay_the_token",
+      "go:wreck.yard",
+      "go:wreck.path",
+      "go:hive.path",
+      "go:hive.yard",
+      "go:hive.skeps"
+    ]
+  },
+  {
+    "id": "marsh_mead_drawn",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "mead_drawn",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mead.path",
+      "go:mead.yard",
+      "know_the_wild_must",
+      "go:mead.mash",
+      "mash_the_must",
+      "go:mead.yard",
+      "go:mead.crock",
+      "take:cask_bung",
+      "go:mead.yard",
+      "go:mead.tap",
+      "tap_the_cask"
+    ]
+  },
+  {
+    "id": "divergence_marsh_mead",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mead.path",
+      "go:mead.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_mead",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mead.path",
+      "go:mead.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_mead",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mead.path",
+      "go:mead.yard",
+      "go:mead.mash"
+    ]
+  },
+  {
+    "id": "cross_hive_mead",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:hive.path",
+      "go:hive.yard",
+      "know_the_hive_hum",
+      "go:hive.skeps",
+      "smoke_the_hive",
+      "go:hive.yard",
+      "go:hive.comb",
+      "take:comb_cake",
+      "go:hive.yard",
+      "go:hive.shed",
+      "set_the_skep",
+      "go:hive.yard",
+      "go:hive.path",
+      "go:mead.path",
+      "go:mead.yard",
+      "go:mead.mash"
+    ]
+  },
+  {
+    "id": "marsh_barrel_raised",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "barrel_raised",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:coop.path",
+      "go:coop.yard",
+      "know_the_stave_soak",
+      "go:coop.soak",
+      "soak_the_stave",
+      "go:coop.yard",
+      "go:coop.hoop",
+      "take:stave_set",
+      "go:coop.yard",
+      "go:coop.raise",
+      "raise_the_barrel"
+    ]
+  },
+  {
+    "id": "divergence_marsh_coop",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:coop.path",
+      "go:coop.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_coop",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:coop.path",
+      "go:coop.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_coop",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:coop.path",
+      "go:coop.yard",
+      "go:coop.hoop"
+    ]
+  },
+  {
+    "id": "cross_mead_coop",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:mead.path",
+      "go:mead.yard",
+      "know_the_wild_must",
+      "go:mead.mash",
+      "mash_the_must",
+      "go:mead.yard",
+      "go:mead.crock",
+      "take:cask_bung",
+      "go:mead.yard",
+      "go:mead.tap",
+      "tap_the_cask",
+      "go:mead.yard",
+      "go:mead.path",
+      "go:coop.path",
+      "go:coop.yard",
+      "go:coop.hoop"
+    ]
+  },
+  {
+    "id": "marsh_queen_shored",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "outcome": "queen_shored",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pil.path",
+      "go:pil.yard",
+      "know_the_pillar",
+      "go:pil.samson",
+      "hew_the_pillar",
+      "go:pil.yard",
+      "go:pil.king",
+      "square_the_king",
+      "take:king_iron",
+      "go:pil.yard",
+      "go:pil.queen",
+      "shore_the_queen"
+    ]
+  },
+  {
+    "id": "divergence_marsh_pil",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pil.path",
+      "go:pil.yard"
+    ]
+  },
+  {
+    "id": "divergence_city_pil",
+    "seed": 1,
+    "sheet": "city_oath",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pil.path",
+      "go:pil.yard"
+    ]
+  },
+  {
+    "id": "cross_plain_pil",
+    "seed": 1,
+    "sheet": "marsh_scout",
+    "actions": [
+      "go:saltfen.market",
+      "go:ashfen.causeway",
+      "go:pil.path",
+      "go:pil.yard",
+      "go:pil.samson"
+    ]
+  }
+]

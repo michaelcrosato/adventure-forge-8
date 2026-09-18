@@ -167,25 +167,7 @@ World: **Ashfen Coast** — one drowned river mouth.
 | Bee Skeps | Smoke hive, take comb, set skep | Hamlet |
 | Mead House | Mash must, bung, tap cask | Hamlet |
 | Cooperage | Soak stave, hoop, raise barrel | Hamlet |
-| Pickle House | Pack brine, lid the pickle cask | Hamlet |
-| Tide Forge | Bank bellows, hammer bloom, quench iron | Craft |
-| Decoy Pond | Lay pipes, drive ducks, bag fowl | Hunt |
-| Rushlight House | Peel pith, tallow, bind lights | Craft |
-| Caulk Yard | Pick oakum, melt pitch, caulk seam | Craft |
-| Net Loft | Rig mesh, mend, tar the net | Hamlet |
-| Sail Loft | Cut canvas, stitch, hoist sail | Craft |
-| Sounding Stage | Coil line, mark fathom, cast lead | Travel |
-| Chart House | Lay ruler, ink rutter, seal book | Social / institutional |
-| Buoy Yard | Stuff cage, lash spar, drop buoy | Travel |
-| Kelp Shore | Cut wrack, dry stones, burn kelp ash | Hamlet |
-| Soap House | Leach ash, boil soap, cut cakes | Craft |
-| Fulling Mill | Wet web, walk stocks, hang tenters | Craft |
-| Charcoal Clamp | Cut coppice, stack clamp, draw coal | Craft |
-| Lime Kiln | Break shell, charge fire, slake lime | Craft |
-| Mason Yard | Mix mortar, lay course, point joint | Craft |
-| Thatch Croft | Cut thatch, bind yealm, set roof | Hamlet |
-| Rain Cistern | Hang gutter, set tun, dip pail | Craft |
-| Wash House | Soak cloth, beat wash, hang line | Hamlet |
+| Pillar House | Hew pillar, square king, shore queen | Craft |
 
 Character axes the world queries: origin, body, skill, creed, mark, tongue.
 
@@ -214,46 +196,7 @@ Authored outcomes:
 21. `hive_kept` — the hive is smoked, comb taken, and the skep set.
 22. `mead_drawn` — the must is mashed, bunged, and the cask tapped.
 23. `barrel_raised` — a stave is soaked, hooped, and the barrel raised.
-24. `pickle_lidded` — cut is packed under brine and the pickle cask is lidded.
-25. `iron_quenched` — bellows are banked, the bloom is hammered, and the iron is quenched.
-26. `fowl_taken` — pipes are laid, ducks are driven, and the fowl is bagged.
-27. `lights_bound` — rush is peeled to pith and bound into lights.
-28. `seam_caulked` — oakum is picked, pitch is melted, and the hull seam is caulked.
-29. `net_tarred` — mesh is rigged, mended, and tarred.
-30. `sail_hoisted` — canvas is cut, the sail is stitched, and the spar is hoisted.
-31. `lead_cast` — the line is coiled, fathoms are marked, and the lead is cast.
-32. `rutter_sealed` — a ruler is laid, the rutter is inked, and the book is sealed.
-33. `buoy_set` — a cage is stuffed, the spar is lashed, and the buoy is dropped.
-34. `kelp_burned` — wrack is cut, dried on the stones, and burned to ash.
-35. `soap_cut` — ash is leached, soap is boiled, and the cakes are cut.
-36. `cloth_fulled` — a web is wetted, walked in the stocks, and hung on tenters.
-37. `coal_drawn` — coppice is cut, stacked in a clamp, and drawn as coal.
-38. `lime_slaked` — shell is broken, charged on the fire, and slaked with water.
-39. `joint_pointed` — mortar is mixed, a course is laid, and the joint is pointed.
-40. `roof_set` — thatch is cut, bound into a yealm, and set on the ridge.
-41. `cistern_filled` — a gutter is hung, the tun is set, and a pail is dipped.
-42. `wash_hung` — cloth is soaked, beaten on the beetle, and hung on the line.
-43. `paper_laid` — rag is stamped, couched on a deckle, and packed on the post.
-44. `frail_woven` — withy is cut, braked, and woven into a frail.
-45. `loaf_drawn` — leaven is set, the oven is heated, and the batch is drawn.
-46. `wheel_salted` — curd is set, wrapped, and the cheese wheel is salted.
-47. `web_sheared` — warp is beamed, the shuttle is thrown, and the web is sheared.
-48. `lantern_hung` — horn is scraped, set as a pane, and hung as a lantern.
-49. `nib_cut` — oak gall is crushed, mixed to ink, and a nib is cut.
-50. `heel_pegged` — a sole is lasted, the upper is awled, and the heel is pegged.
-51. `keeve_bunged` — fruit is milled, pomace is wrapped, and the keeve is bunged.
-52. `mustard_potted` — seed is milled, wetted to paste, and potted.
-53. `sausage_linked` — forcemeat is chopped, the skin is filled, and the links are tied.
-54. `pie_crimped` — crust is rolled, the pie is filled, and the lid is crimped.
-55. `jam_jarred` — pulp is boiled, foam is skimmed, and the jam is jarred.
-56. `crock_glazed` — clay is thrown, biscuit-fired, and the crock is glazed.
-57. `hide_tanned` — hide is fleshed, bated, and tanned with oak bark.
-58. `flax_spun` — flax is retted, heckled to tow, and spun to line.
-59. `nail_pointed` — rod is snipped, the nail is headed, and the shank is pointed.
-60. `tyre_set` — the hub is dished, spokes are set, and the felloe is tyred.
-61. `malt_oasted` — barley is steeped, the piece is turned, and malt is oasted.
-62. `gyle_racked` — grist is charged, the wort is hopped, and the gyle is racked.
-63. `cruet_corked` — mother is pitched, ale is soured, and the cruet is corked.
+24. `queen_shored` — the pillar is hewn, the king squared, and the queen shored.
 
 Witness pair: Saltfen Market, `marsh_scout` vs `city_oath`, different legal verbs, both replayable.
 
@@ -296,132 +239,12 @@ Each new slice must add unique verbs, inhabitants, and consequences. Wallpaper c
 20. **Slice 19:** Bee Skeps — smoke hive, take comb, set skep. Cross-effect: wreck laid unlocks a drowned ward on the skeps.
 21. **Slice 20:** Mead House — mash must, bung, tap cask. Cross-effect: hive kept unlocks true comb pitch on the mash.
 22. **Slice 21:** Cooperage — soak stave, hoop, raise barrel. Cross-effect: mead drawn unlocks a mead-cask mark on the hoop.
-23. **Slice 22:** Pickle House — pack brine, lid the pickle cask. Cross-effect: barrel raised unlocks a hoop on the pickle lid.
-24. **Slice 23:** Tide Forge — bank bellows, hammer bloom, quench iron. Cross-effect: pickle lidded unlocks a brine quench at the trough.
-25. **Slice 24:** Decoy Pond — lay pipes, drive ducks, bag fowl. Cross-effect: iron quenched unlocks a taking hook in the tunnel.
-26. **Slice 25:** Rushlight House — peel pith, tallow, bind lights. Cross-effect: fowl taken unlocks fowl tallow at the bind.
-27. **Slice 26:** Caulk Yard — pick oakum, melt pitch, caulk seam. Cross-effect: lights bound unlocks a rushlight on the dark seam.
-28. **Slice 27:** Net Loft — rig mesh, mend, tar the net. Cross-effect: seam caulked unlocks hull pitch on the mesh.
-29. **Slice 28:** Sail Loft — cut canvas, stitch, hoist sail. Cross-effect: net tarred unlocks tarred twine on the hoist.
-30. **Slice 29:** Sounding Stage — coil line, mark fathom, cast lead. Cross-effect: sail hoisted unlocks sounding under way.
-31. **Slice 30:** Chart House — lay ruler, ink rutter, seal book. Cross-effect: lead cast unlocks a fathom prick on the chart.
-32. **Slice 31:** Buoy Yard — stuff cage, lash spar, drop buoy. Cross-effect: sealed rutter unlocks placing the buoy by the book.
-33. **Slice 32:** Kelp Shore — cut wrack, dry stones, burn kelp ash. Cross-effect: set buoy unlocks the outer wrack bank.
-34. **Slice 33:** Soap House — leach ash, boil soap, cut cakes. Cross-effect: burned kelp unlocks soda charge on the leach.
-35. **Slice 34:** Fulling Mill — wet web, walk stocks, hang tenters. Cross-effect: cut soap unlocks soaping the web.
-36. **Slice 35:** Charcoal Clamp — cut coppice, stack clamp, draw coal. Cross-effect: fulled cloth unlocks covering the clamp.
-37. **Slice 36:** Lime Kiln — break shell, charge fire, slake lime. Cross-effect: drawn coal unlocks firing the charge.
-38. **Slice 37:** Mason Yard — mix mortar, lay course, point joint. Cross-effect: slaked lime unlocks tempering the mix.
-39. **Slice 38:** Thatch Croft — cut thatch, bind yealm, set roof. Cross-effect: pointed wall unlocks setting the roof on stone.
-40. **Slice 39:** Rain Cistern — hang gutter, set tun, dip pail. Cross-effect: set roof unlocks hanging the gutter under the thatch.
-41. **Slice 40:** Wash House — soak cloth, beat wash, hang line. Cross-effect: filled cistern unlocks filling the wash pan.
-42. **Slice 41:** Rag Mill — stamp rag, couch sheet, pack post. Cross-effect: hung wash unlocks sorting white rags at the stamp.
-43. **Slice 42:** Osier Holt — cut holt, brake rod, weave frail. Cross-effect: laid paper unlocks wrapping the holt.
-44. **Slice 43:** Bakehouse — set leaven, heat oven, draw batch. Cross-effect: woven frail unlocks proofing the sponge.
-45. **Slice 44:** Dairy — set curd, wrap curd, salt wheel. Cross-effect: drawn loaf unlocks scalding the milk.
-46. **Slice 45:** Loom Shed — warp beam, throw shuttle, shear web. Cross-effect: salted wheel unlocks wrapping the warp.
-47. **Slice 46:** Horn Lantern — scrape horn, set pane, hang lantern. Cross-effect: sheared web unlocks wicking the horn.
-48. **Slice 47:** Gall House — crush gall, mix ink, cut nib. Cross-effect: hung lantern unlocks lighting the crush.
-49. **Slice 48:** Cobble Shop — last sole, awl upper, peg heel. Cross-effect: cut nib unlocks marking the last.
-50. **Slice 49:** Cider House — mill fruit, wrap pomace, bung keeve. Cross-effect: pegged heel unlocks leathering the hopper.
-51. **Slice 50:** Mustard Mill — mill seed, wet paste, pot mustard. Cross-effect: bunged cider unlocks cidering the quern.
-52. **Slice 51:** Sausage House — chop forcemeat, fill skin, tie links. Cross-effect: potted mustard unlocks seasoning the chop.
-53. **Slice 52:** Pie House — roll crust, fill pie, crimp lid. Cross-effect: linked sausage unlocks larding the crust.
-54. **Slice 53:** Jam House — boil pulp, skim foam, jar jam. Cross-effect: crimped pie unlocks glazing the pulp.
-55. **Slice 54:** Crock Yard — throw clay, fire biscuit, glaze crock. Cross-effect: jarred jam unlocks fluxing the clay.
-56. **Slice 55:** Tannery — flesh hide, bate skin, tan hide. Cross-effect: glazed crock unlocks rinsing the hide.
-57. **Slice 56:** Flax House — ret flax, heckle tow, spin line. Cross-effect: tanned hide unlocks gloving the rett.
-58. **Slice 57:** Nailery — snip rod, head nail, point shank. Cross-effect: spun flax unlocks wrapping the snip grip.
-59. **Slice 58:** Wheelwright — dish hub, set spoke, tyre felloe. Cross-effect: pointed nails unlock boxing the hub.
-60. **Slice 59:** Malt House — steep barley, turn piece, oast malt. Cross-effect: tyred wain unlocks filling the steep.
-61. **Slice 60:** Brew House — charge grist, hop wort, rack gyle. Cross-effect: oasted malt unlocks charging the hopper.
-62. **Slice 61:** Vinegar House — pitch mother, sour ale, cork cruet. Cross-effect: racked gyle unlocks pitching ale into the mother.
-63. **Slice 62:** Glue House — trim paring, seethe size, cake glue. Cross-effect: corked vinegar unlocks acetting the paring.
-64. **Slice 63:** Bindery — gather quire, sew band, nip board. Cross-effect: caked glue unlocks sizing the quire.
-65. **Slice 64:** Gilder's Loft — bole ground, lay leaf, burnish plate. Cross-effect: bound book unlocks setting the bole.
-66. **Slice 65:** Jeweler — beat foil, seat gem, close collet. Cross-effect: burnished plate unlocks gilting the foil.
-67. **Slice 66:** Glazier — score quarry, groze edge, came pane. Cross-effect: closed collet unlocks gemming the score.
-68. **Slice 67:** Sash House — rebate stile, tenon rail, pin sash. Cross-effect: camed pane unlocks setting the rebate.
-69. **Slice 68:** Putty House — whip putty, knife bed, dust light. Cross-effect: pinned sash unlocks bedding the frame.
-70. **Slice 69:** Paint House — mull colour, mix oil, brush coat. Cross-effect: dusted light unlocks priming the coat.
-71. **Slice 70:** Varnish House — cook resin, strain gum, flow coat. Cross-effect: brushed coat unlocks priming the gum.
-72. **Slice 71:** Latch House — file keep, fit catch, throw latch. Cross-effect: flowed varnish unlocks setting the keep.
-73. **Slice 72:** Hinge House — form knuckle, drift pintle, ship gudgeon. Cross-effect: thrown latch unlocks setting the knuckle.
-74. **Slice 73:** Stay House — slot bar, rivet arm, peg stay. Cross-effect: shipped gudgeon unlocks hinging the slot.
-75. **Slice 74:** Sill House — bed sill, kerf drip, seat stool. Cross-effect: stayed casement unlocks setting the sill.
-76. **Slice 75:** Casing House — mitre head, scribe jamb, tack return. Cross-effect: seated stool unlocks setting the mitre.
-77. **Slice 76:** Skirting House — cope inside, plane base, fix plinth. Cross-effect: tacked casing unlocks setting the cope.
-78. **Slice 77:** Dado House — plough dado, house panel, cap rail. Cross-effect: fixed plinth unlocks setting the dado.
-79. **Slice 78:** Picture Rail — snap line, plug brick, spring mould. Cross-effect: capped dado unlocks setting the chalk.
-80. **Slice 79:** Cornice House — run cove, key scratch, float cornice. Cross-effect: sprung rail unlocks setting the cove.
-81. **Slice 80:** Stair House — gauge string, saw housing, wedge riser. Cross-effect: floated cornice unlocks setting the string.
-82. **Slice 81:** Newel House — turn blank, mortise newel, dowel finial. Cross-effect: wedged riser unlocks setting the blank.
-83. **Slice 82:** Handrail House — stick mould, scarf joint, wreath ramp. Cross-effect: dowelled finial unlocks setting the stick.
-84. **Slice 83:** Baluster House — rip square, flute shaft, shoulder neck. Cross-effect: wreathed ramp unlocks setting the square.
-85. **Slice 84:** Tread House — mark going, nosing edge, return end. Cross-effect: shouldered neck unlocks setting the going.
-86. **Slice 85:** Floorboard House — shoot edge, tongue groove, secret nail. Cross-effect: returned end unlocks setting the shot.
-87. **Slice 86:** Joist House — space joist, notch trimmer, crown camber. Cross-effect: secreted nail unlocks boarding the span.
-88. **Slice 87:** Lath House — rive lath, prick bay, hair coat. Cross-effect: crowned camber unlocks setting the rive.
-89. **Slice 88:** Chimney House — bed flag, set hob, lime breast. Cross-effect: haired coat unlocks setting the flag.
-90. **Slice 89:** Mantel House — bed lintel, set corbel, pin mantel. Cross-effect: limed breast unlocks setting the lintel.
-91. **Slice 90:** Flue House — parge flue, wad throat, hang cowl. Cross-effect: pinned mantel unlocks setting the parge.
-92. **Slice 91:** Fireback House — sand mould, pour plate, bed back. Cross-effect: hung cowl unlocks setting the mould.
-93. **Slice 92:** Grate House — swage bar, rivet basket, register slide. Cross-effect: bedded back unlocks setting the swage.
-94. **Slice 93:** Brick Yard — pug clay, strike green, set hack. Cross-effect: registered slide unlocks setting the pug.
-95. **Slice 94:** Tile House — drape horse, pallet green, nick arris. Cross-effect: set hack unlocks setting the horse.
-96. **Slice 95:** Slate Yard — scapple face, punch hole, lap slate. Cross-effect: nicked arris unlocks setting the face.
-97. **Slice 96:** Flashing House — roll sheet, boss welt, dress flash. Cross-effect: lapped slate unlocks setting the sheet.
-98. **Slice 97:** Block Loft — bore cheek, score sheave, strop block. Cross-effect: dressed flash unlocks setting the cheek.
-99. **Slice 98:** Oar Loft — round shaft, spoon blade, bind grip. Cross-effect: stropped block unlocks setting the shaft.
-100. **Slice 99:** Launch Ways — grease ways, set poppet, trip trigger. Cross-effect: bound grip unlocks setting the grease.
-101. **Slice 100:** Clinker Shed — steam strake, clench land, fair garboard. Cross-effect: launched hull unlocks setting the steam.
-102. **Slice 101:** Windlass House — ship bars, drop pawl, heave round. Cross-effect: faired garboard unlocks setting the bars.
-103. **Slice 102:** Mould Loft — loft grid, spile plank, bevel station. Cross-effect: heaved round unlocks setting the grid.
-104. **Slice 103:** Treenail House — shave billet, auger hole, drive trunnel. Cross-effect: bevelled station unlocks setting the billet.
-105. **Slice 104:** Deadwood Yard — dub timber, cut rabbet, bolt hog. Cross-effect: driven trunnel unlocks setting the dub.
-106. **Slice 105:** Mast Pond — sink pole, range mast, hoop partner. Cross-effect: bolted hog unlocks setting the sink.
-107. **Slice 106:** Stem House — hew stem, cut gripe, hang knee. Cross-effect: hooped partner unlocks setting the hew.
-108. **Slice 107:** Fid House — turn fid, ream eye, seize eye. Cross-effect: hung knee unlocks setting the turn.
-109. **Slice 108:** Cleat House — saw cleat, gouge horn, bolt base. Cross-effect: seized eye unlocks setting the saw.
-110. **Slice 109:** Hawse House — bore hawse, seat pipe, pay collar. Cross-effect: bolted base unlocks setting the bore.
-111. **Slice 110:** Deadeye Loft — score deadeye, reeve strop, seize lanyard. Cross-effect: paid collar unlocks setting the rim.
-112. **Slice 111:** Parrel House — groove truck, thread rib, truss parrel. Cross-effect: seized lanyard unlocks setting the truck.
-113. **Slice 112:** Bitts House — step bitts, cross thwart, belay cable. Cross-effect: trussed parrel unlocks setting the step.
-114. **Slice 113:** Gammoning House — woold bowsprit, ride turns, frap gammon. Cross-effect: belayed cable unlocks setting the woold.
-115. **Slice 114:** Tiller House — shape tiller, fit helm, yoke tiller. Cross-effect: frapped gammon unlocks setting the shape.
-116. **Slice 115:** Cathead House — adze bill, bush roller, fish fluke. Cross-effect: yoked tiller unlocks setting the bill.
-117. **Slice 116:** Transom House — scribe wing, fit fashion, spike stern. Cross-effect: fished fluke unlocks setting the wing.
-118. **Slice 117:** Scupper House — broach scupper, chase drain, plug mouth. Cross-effect: spiked stern unlocks setting the broach.
-119. **Slice 118:** Binnacle House — true hood, fill lamp, lock card. Cross-effect: plugged mouth unlocks setting the hood.
-120. **Slice 119:** Futtock House — cant futtock, scarph butt, clench belly. Cross-effect: locked card unlocks setting the cant.
-121. **Slice 120:** Crosstree House — square crosstree, spread hounds, seize bolster. Cross-effect: clenched belly unlocks setting the tree.
-122. **Slice 121:** Waterway House — snipe waterway, dowel margin, pay waterway. Cross-effect: seized bolster unlocks setting the snipe.
-123. **Slice 122:** Coaming House — joggle coaming, lodge end, coak coaming. Cross-effect: paid waterway unlocks setting the joggle.
-124. **Slice 123:** Gunwale House — snape covering, hance rail, dump bolt. Cross-effect: coaked coaming unlocks setting the covering.
-125. **Slice 124:** Davit House — sweep davit, band crane, ship davit. Cross-effect: dumped bolt unlocks setting the sweep.
-126. **Slice 125:** Boomkin House — steeve boomkin, bee iron, seize guy. Cross-effect: shipped davit unlocks setting the steeve.
-127. **Slice 126:** Channel House — score channel, bolt plate, set strap. Cross-effect: seized guy unlocks setting the face.
-128. **Slice 127:** Kevel House — chamfer kevel, mortise jaw, clench kevel. Cross-effect: set strap unlocks setting the chamfer.
-129. **Slice 128:** Knighthead House — score knight, box bit, lash knight. Cross-effect: clenched kevel unlocks setting the knight.
-130. **Slice 129:** Carling House — notch carling, lodge ledge, spike carling. Cross-effect: lashed knight unlocks setting the notch.
-131. **Slice 130:** Tabernacle House — score tabernacle, mortise gate, pin keeper. Cross-effect: spiked carling unlocks setting the socket.
-132. **Slice 131:** Planksheer House — score sheer, plane plank, dump edge. Cross-effect: pinned keeper unlocks setting the sheer.
-133. **Slice 132:** Spirketting House — score spirket, plane strake, clench spirket. Cross-effect: dumped edge unlocks setting the spirket.
-134. **Slice 133:** Trestle-tree House — score trestle, tenon rest, seize bib. Cross-effect: clenched spirket unlocks setting the trestle.
-135. **Slice 134:** Breast-hook House — score crook, bolt palm, fay hook. Cross-effect: seized bib unlocks setting the crook.
-136. **Slice 135:** Lodging-knee House — scribe lodging, bolt chock, nick lodging. Cross-effect: fayed hook unlocks setting the lodging.
-137. **Slice 136:** Dagger-knee House — fair dagger, side siding, mark sirmark. Cross-effect: nicked lodging unlocks setting the dagger.
-138. **Slice 137:** Rider House — wring rider, seat filling, dump wring. Cross-effect: marked sirmark unlocks setting the rider.
-139. **Slice 138:** Keelson House — scarph keelson, pack stopwater, bolt sister. Cross-effect: dumped wring unlocks setting the keelson.
-140. **Slice 139:** Crutch House — adze crutch, fit counter, spike crotch. Cross-effect: bolted sister unlocks setting the crutch.
-141. **Slice 140:** Pointer House — bevel pointer, bed inner, dump compound. Cross-effect: spiked crotch unlocks setting the pointer.
-142. **Slice 141:** Stanchion House — true stanchion, wedge prop, spike foot. Cross-effect: dumped compound unlocks setting the stanchion.
-143. **Slice 142:** Pillar House — hew pillar, square king, shore queen. Cross-effect: spiked foot unlocks setting the pillar.
-144. **Slice 143+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
-145. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
+23. **Slice 22:** Pillar House — hew pillar, square king, shore queen. The 118-region vocabulary-swap class that used to follow pickle was removed; same-kind shops (counting/ice/wreck, hive/mead/cooperage) may remain similar.
+24. **Slice 23+:** More authored pockets. Crawler hunts *sameness* and rejects reskins.
+25. **Scale rule:** stop counting a cell when a sameness crawler cannot tell it from another cell by verbs + inhabitants + effects.
     This rule is now enforced mechanically by `verify`'s `sameness` job
-    against `sameness-baseline.json`. It was unenforced until then, which is
-    how 118 indistinguishable regions shipped under a green bar.
+    against `sameness-baseline.json`. The 118-region vocabulary-swap class was
+    removed; the ratchet will not let a class that large return under a green bar.
 
 The factory may generate substrate. Authored depth is what we claim.
 

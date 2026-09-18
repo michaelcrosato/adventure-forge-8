@@ -5,8 +5,8 @@
     "go:dye.path",
     "go:dye.yard"
   ],
-  "build_id": "b93805158f0f78c895e08469cd2d3169538d3de718fb195ae51f71b6d334176a",
-  "final_fingerprint": "66ab320cdd857cda8884ac6993df794daba349aa698672904e11b48435e18336",
+  "build_id": "0d4d279400f1bb55e9e33c9c0eeb80e17c396037f7ea78651426d3a18471fed2",
+  "final_fingerprint": "f911859937b6917ffb76489e81cbb88d9c445f7badf45b601e2c226c2ccd877f",
   "id": "divergence_city_dye",
   "location": "dye.yard",
   "outcomes": [],
